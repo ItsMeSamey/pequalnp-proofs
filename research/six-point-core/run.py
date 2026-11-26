@@ -70,6 +70,14 @@ require(all(any((1 << i) & ~n == 0 for n in full_neg) for i in range(13)),
 for p in full_pos:
     require(p.bit_count() == 2, 'expected an incidence edge')
 
+point_stars = [sum(edge ^ (1 << i) for edge in full_pos if edge & (1 << i))
+               for i in range(6)]
+require(all(star.bit_count() == 3 for star in point_stars), 'point-star degree')
+def star_output(row):
+    return any(row & (1 << i) and row & star for i, star in enumerate(point_stars))
+require(all(map(star_output, full_pos)) and not any(map(star_output, full_neg)),
+        '23-gate star witness')
+
 def permute(mask, permutation):
     return sum(1 << j for i,j in enumerate(permutation) if mask & (1 << i))
 

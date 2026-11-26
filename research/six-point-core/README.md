@@ -43,3 +43,5 @@ python3 run.py /tmp/l-meta-cofactor-base /tmp/l-meta-six ../seed-obstructions
 An independent native replay returned UNSAT on all six searches in the [result table](native-replay.log). Comparing each native input with the driver output from the pinned theorem showed identical positive rows, maximal negative rows and mandatory supports. The four symmetry-enabled inputs also agreed on the full permutation group. The independent triple-deletion searches used the weaker baseline without symmetry pruning.
 
 Separate proof and code review checked the cofactor and retention charges, the additional charge for live constants, both triple orbits and the surviving-neighbor condition. It independently reconstructed the 24 forbidden mask triples and confirmed the 5,760 qualifying entries of the 8,192-entry quota table. These are finite search and paper results.
+
+The six-point core optimum is 22 or 23. For the upper bound, OR the three line neighbors of each point, AND that result with the point, and OR the six resulting terms. The driver checks this 23-gate circuit on all 51 rows.
