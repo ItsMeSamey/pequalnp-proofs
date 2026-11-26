@@ -1,0 +1,5 @@
+# Cost-three protected continuations with six dirty comparators
+
+The two implementations of physical topological canonicalization generate byte-identical six-dirty catalogs with 313,318 entries, 275,014 at cost three. Their uncompressed SHA-256 is bf10f12e12173c7b858ae2829a851b63536de3e92e4fb6be9e05de79adc58d58. Of the cost-three entries, 1,028 have fewer than twelve observable direction signatures. A further 196,842 have fewer than two signatures exposing some signed port, contradicting the two-deficits-per-half theorem under the eleven-variable six-AND lower bound.
+
+Of the remaining 77,144 entries, 53,399 have at least three earliest dirty gates. The other 2,268 one-earliest and 21,477 two-earliest entries were processed by higher_two_tags.cpp and higher_two_chain.cpp. Their 246,462 and 87,589 surviving library/root cases yielded no volume passes. The explicit ID check uses the projected catalog and the two archived output tables. This excludes all cost-three protected continuations with six dirty gates; the zero-cost exclusion is in forest-six-complete.md. Positive costs one and two remain open.

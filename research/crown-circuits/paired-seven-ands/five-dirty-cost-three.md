@@ -1,0 +1,5 @@
+# Cost-three protected continuations with five dirty comparators
+
+Among 105,791 signed physical templates with five dirty comparators and two clean terminals, exactly 90,668 have minimum continuation synthesis cost three. A minimum-dirty size-28 paired circuit has five total nonraw union helpers. Two-tagged-helpers analysis therefore applies. At least three earliest dirty comparators eliminate 40,467 cases. Exactly one earliest comparator leaves 9,385 templates and 1,455,558 admissible tagged-helper libraries. With two earliest comparators the simultaneous tagged-helper form leaves 40,816 templates and 112,379 libraries with both necessary roots. No library passed the raw-deficit volume lower bound.
+
+The two-earliest restricted search uses the shared-chain deduction at the end of two-tagged-helpers.md. The full unshortened search, independently used in the four-dirty stratum, remains available as higher_two_earliest.cpp. Check the complete ID ledger with python verify_cost_three.py higher-five-catalog.tsv higher-five-one-earliest.tsv higher-five-two-earliest-chain.tsv. This excludes cost three for five dirty gates. Costs zero, one and two remain separate.
