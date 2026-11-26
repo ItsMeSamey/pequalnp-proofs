@@ -5,3 +5,5 @@ For n ≥ 2^402, let C be any unrestricted-fanout monotone circuit of fan-in at 
 The original serial build compiled the two signed-power endpoints with the three standard axioms. The manifest fixes all 187 sources. The direct real-power formulation and sharp leading coefficient require separate formal receipts.
 
 [Native declarations](sources/ThresholdPublicThird.lean) · [Axiom receipts](axioms.log) · [Portable manifest](ThresholdPublicThird-manifest.tsv)
+
+An independent clean build compiled all 187 source modules at commit fc2689f5, including the six PEqualNP modules. Each local dependency resolved to a freshly compiled object. The two public declarations reproduced the original axiom reports byte for byte. [Independent replay receipt](independent-replay/receipt.json) · [Build and verification instructions](independent-replay/README.md)

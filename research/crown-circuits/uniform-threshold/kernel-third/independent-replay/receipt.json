@@ -1,0 +1,37 @@
+{
+  "commit": "fc2689f558d055cae81ce3f2701019f7ed5ecd6e",
+  "tree": "5fc017c84cef80d0800f605bc9cbd7f3887c1792",
+  "version": "Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)",
+  "manifest_sha256": "28d951c109ba32f1bcaa1df0a21bde3a311234afe3d56a85833e45016695bdad",
+  "lake_manifest_sha256": "d0af863cde532caaef1b1bee0d63ec47100208e33e488309cb80abc88b8f1509",
+  "lean_sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "paths": [
+    "/dev/shm/review-third-power-JVXt5k/fresh",
+    "/dev/shm/gcycle-t2/mathlib",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/batteries/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "source_count": 187,
+  "package_revisions": {
+    "importGraph": "8370c640afcd1cc3fb1cb9bf1560cc66eafee5e0",
+    "plausible": "054b228ce0ac61d767c6e71ba73a24728f191b72",
+    "Cli": "50810f72af7618bee62fe9800dc26e806c188703",
+    "aesop": "66ff77cf0c4c898799e4b94d14db55f7a02d0c5a",
+    "batteries": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+    "LeanSearchClient": "4fb58e749ef3fc0395fe274f6cab70c2ea85f1c9",
+    "proofwidgets": "2f0f3520daeac2d9310ff25b7a877a0e5cdaa203",
+    "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "Qq": "ff055a2fcc835935e0ae607339b455a5f5896b4b"
+  },
+  "start": "2026-11-26T20:50:38.764514+00:00",
+  "finish": "2026-11-26T21:02:21.902502+00:00",
+  "outputs_sha256": "f15fda807b5ae04309e3566f4cd1b1ae5642f08584ead8dcab7ca00102e36099",
+  "resolution_sha256": "e44a4b8979e8eb94468fb1fb74752903060a098bedc2686301e6d861d951e7b4",
+  "axioms_sha256": "253969dbc456f7251fde0ae86521c24b4ce6be93557a5cb05449afa6f6ecb43d"
+}
