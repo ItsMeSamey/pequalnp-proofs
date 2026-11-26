@@ -73,3 +73,5 @@ The exact point costs at boundary widths eleven, twelve, thirteen and fourteen a
 The [nineteen-mixed classification](nineteen-mixed/README.md) excludes all six possible boundary-width and operand-reuse cases at exactly nineteen mixed gates.
 
 All ten allocations with twenty mixed gates require total size at least 34. [Complete case index](twenty-mixed/README.md)
+
+At width twelve with exactly five selected nonraw point signatures, there are 12,300 feasible point banks, including twelve nonlocal banks. The [classification and exact point prices](width-twelve-five-selected.zip) give the cost distribution through fifteen gates and check witnesses against the whole negative samples. This classifies the point side only.
