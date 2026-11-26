@@ -25,4 +25,4 @@ Running `python -B finite_types.py 6` rejected all 128 normalized charts. Thus e
 
 The original XOR-gate implementation separately rejected all 128 rank-six charts. At rank seven the explicit table implementation rejected all 240 permutation orbits, covering 1,024 raw charts. Reproduce the rank-seven result with `python -B finite_types.py 7 --orbits`. Thus an arbitrary-rank common contraction as in the [asymmetric linkage note](asymmetric-linkage.md) suffices whenever it leaves ambient rank at most seven.
 
-The rank-six archive contains independently checked DRAT proofs for every normalized chart. The rank-seven result uses a complete SAT-solver replay over 240 symmetry classes representing 1,024 charts. This release supplies no rank-seven DRAT verification.
+The rank-six archive contains independently checked DRAT proofs for every normalized chart. The rank-seven result uses a complete SAT-solver replay over 240 symmetry classes representing 1,024 charts. The separate [all-tail encoding](rank7-all-tails-review.md) supplies four independently DRAT-checked rank-seven cases without chart orbit reduction.
