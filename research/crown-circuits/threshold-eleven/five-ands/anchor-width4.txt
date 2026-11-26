@@ -1,0 +1,1 @@
+axes 5 weight 4 singleton 0 budget 17 inside 32 systems 45245 clique 10494 SAT 0
