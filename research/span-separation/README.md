@@ -20,3 +20,5 @@ For the supplied signed-graph representation, the [odd-cycle method](even-cycle.
 With unbounded terminal space, [span and avoidance](unbounded-terminals.md) is NP-complete even with four ordinary columns per block. In the signed-graph pure-lift subclass, [the Walsh determinant algorithm](signed-fourier.md) runs in 2^k times a polynomial and allows dense terminals. Run `python3 signed_fourier.py` for 150 exact comparisons.
 
 For graph columns with d binary edge labels, a pure target and a k-dimensional terminal space containing the full lift space, [the higher-lift construction](higher-lift.md) gives deterministic polynomial-time decision and witness recovery for fixed k,d. Its exponent depends on both parameters. The finite checker covers the reduction and path-weight identities and invokes no general disjoint-paths implementation.
+
+[Three-dimensional interface traces](three-dimensional-traces.md) reduce exact lines to a binary prescribed-triple circuit query and exact planes to its dual. The note gives the dimension-two terminal specialization. Its checker enumerates small instances for both reductions.
