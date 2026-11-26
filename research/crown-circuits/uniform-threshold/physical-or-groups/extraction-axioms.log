@@ -1,0 +1,5 @@
+'T2OrPartition.covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2OrPartition.boundary_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdOrExtraction.forest_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdOrExtraction.private_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdOrExtraction.book_of_earlier' depends on axioms: [propext, Classical.choice, Quot.sound]

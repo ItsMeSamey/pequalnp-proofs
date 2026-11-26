@@ -9,3 +9,5 @@ Write K for the total number of raw operand occurrences and V for the number of 
 The decomposition of an arbitrary regular normalized circuit into these certificates, the raw occurrence identity K=2n, and the subsequent threshold-two lower bound are separate results.
 
 The pinned Lean 4.36 kernel replay used the three standard axioms listed in replay.log. Compile GateSurplus first and include its compiled module on LEAN_PATH. [GateSurplus source](../../../seed-obstructions/pinned-surplus/GateSurplus.lean)
+
+The pinned extraction modules construct a forest from a backward binary physical layout and prove that each block checks against the circuit. Count transfer uses the local balance assumption. The book criterion uses the assumption that external roots occur earlier. The five endpoint axiom reports are recorded in extraction-axioms.log. A complete disjoint book with the raw-occurrence count remains a further formalization step.
