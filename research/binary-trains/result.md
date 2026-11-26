@@ -19,3 +19,5 @@ With the uniform fixed-width #SAT oracle bound poly(L) times 2^{O(k² n loglog n
 These results concern explicitly grouped inputs. The rank and total-scope hypotheses can fail for unrestricted polynomial-density CNFs. The randomized result is for decision, while the deterministic exact-count result uses a supplied bound on the number of models. Neither proves P=NP or its negation.
 
 The [rational transfer](rational.md) gives deterministic exact counting under its separate unfolding-rank and scope promises. The rational checker includes fractional basis entries and signed choices.
+
+An [explicit forbidden-codeword family](obstruction.md) forces high balanced-checkpoint rank in every original-variable multiplicative grouping of linear total scope. The same family has a direct exact count.

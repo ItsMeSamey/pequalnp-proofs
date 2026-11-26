@@ -10,3 +10,5 @@ g++ -std=c++20 -O2 one-active-check.cpp -o /tmp/crown-one-active
 ```
 
 [CrownGateCounts](../../lean/Research/CrownGateCounts.lean) formally proves that representing the 12-crown with at most 21 OR gates needs at least 132 AND gates. Every representation of total size at most 40 therefore has at least 22 OR gates.
+
+[Weighted covers](../../lean/Research/CrownWeightedCover.lean) and [paired OR-tree depth allowances](../../lean/Research/CrownKraftCover.lean) give a 33-rectangle lower bound for the 12-crown under the stated depth hypothesis. The [two-active-OR construction](../../lean/Research/CrownTwoActiveRectangle.lean) exhibits a seven-gate circuit containing a sixteen-cell off-diagonal rectangle. [Punctured Fano covers](../../lean/Research/PuncturedFanoCover.lean) have a unique minimum cover, with a [cyclic graph generalization](../../lean/Research/CyclicCover.lean).
