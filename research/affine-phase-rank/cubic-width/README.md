@@ -1,0 +1,11 @@
+# Recognizing affine restrictions of cubic Boolean phases
+
+Let f be a multilinear Boolean polynomial of degree at most three on V over the binary field. For every h≥0, one can decide in 2^{O(h²)} poly(dim V) time whether an affine restriction of codimension at most h has degree at most two, and construct its direction space. The same space works on every translate.
+
+The third additive derivative τ of f is an alternating trilinear form. An affine restriction with direction W has degree at most two exactly when τ vanishes on W³, independently of the base point. This follows by taking derivatives in a basis of W; the resulting coefficients are precisely the degree-three part in restricted coordinates.
+
+Compute R={x:τ(x,V,V)=0} by linear algebra. If codim R≤h, return R. If h=0 and τ is nonzero, reject. Otherwise select h+1 vectors independent modulo R, with span S. Any solution W meets S in a nonzero x because W has codimension at most h. For each such x form the nonzero alternating bilinear form B=τ(x,·,·). If x belongs to W, then B vanishes on W×W, hence rank B≤2h, since a matrix in a W-adapted basis has a zero W×W block. Moreover im B meets the annihilator of W nontrivially. If some w in W gives B(w,·) nonzero, it annihilates W. Otherwise W lies in the radical of B, so every member of im B annihilates W.
+
+Skip ranks exceeding 2h. For every nonzero functional a in im B recursively solve the problem on ker a with parameter h−1 and the restricted form. If W exists at least one branch contains it, with in-hyperplane codimension at most h−1. Conversely a recursively returned space has codimension at most h and is isotropic for τ. At each depth there are fewer than 2^{3h+1} branches, so multiplication of the branch counts down to depth zero gives the stated time. All linear systems and basis transformations are polynomial in the original dimension.
+
+A returned W partitions the domain into at most 2^h parallel affine spaces. The sum of (−1)^f is the sum of their quadratic Gauss sums, computable by binary quadratic elimination. An adaptive tree of affine restrictions with a quadratic leaf at depth h also gives one such W from that leaf. This is a parameterized computation for a supplied cubic phase.
