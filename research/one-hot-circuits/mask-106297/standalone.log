@@ -1,0 +1,45 @@
+L_meta_20960.lean:667:24: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+L_meta_20960.lean:670:24: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+L_meta_20960.lean:712:25: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+L_meta_20960.lean:712:29: warning: Unused tactic linter: `grind` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+L_meta_20960.lean:712:29: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+L_meta_20960.lean:865:55: warning: This simp argument is unused:
+  pairFlags
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [paint]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+L_meta_20960.lean:867:55: warning: This simp argument is unused:
+  pairFlags
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [paint]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+L_meta_20960.lean:869:55: warning: This simp argument is unused:
+  pairFlags
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [paint]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+L_meta_20960.lean:871:55: warning: This simp argument is unused:
+  pairFlags
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [paint]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
