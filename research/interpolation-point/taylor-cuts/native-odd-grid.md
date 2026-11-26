@@ -1,0 +1,27 @@
+# Exact native odd-node values for a stack of 3SAT instances
+
+## Exact values interpolate arbitrary native 3SAT counts
+
+Let an arbitrary 3CNF G have m old edges before subdivision; remove unused variables, restoring their known count factor separately. Let Z(z) be the sum over m subdivision bits of the product of all old tensor extensions at inputs z times the corresponding bits. This polynomial has degree ≤2m and Z(1)=#G. Put K=L−B odd, with B odd and B≥4m+1, L≥32m+32. Build K disjoint copies of G, then B layers each consisting of m disjoint negative units. Every layer has precisely m subdivision bits and 2m old ports. Arrange 2m full packets with one distinguished old port from every layer in the position equal to the layer number. A tail unit, one per old edge per tail layer, contributes its clause endpoint at one associated port and its neutral variable endpoint at the other. For every odd t=1,3,…,4m+1 the gadget scalar equals
+
+    2^(mt) · Z(h_t)^K · (2−h_t)^[m(B−t)].
+
+Indeed, the first t column layers are unused and every real source row layer routes to layer j+t. Each of the B−t remaining matched tail layers sums to (2−h_t)^m, and the last t zero-input tail layers have row value one. All source inputs participate even when G is unsatisfiable. This identity concerns the true summed initial contraction.
+
+The h_t for positive odd t are distinct (their absolute values strictly increase), with h_t=(−1)^t binom(2L−1,L)/binom(2L−1,L+t). The binomial denominators are odd since 2L is a power of two. Dividing known factors, taking the signed odd integer root after clearing denominators, and interpolating at 2m+1 nodes recovers Z(1) deterministically.
+
+## Explicit polynomial padding and modular precision
+
+Choose λ=ceil(log₂s) as a sufficiently large constant plus ceil((2/ε)log₂(m+2)). In the corresponding dyadic interval L=2^(2 floor(ελ)) is fixed, exceeds 64m+64, and is polynomial in m. Take B=4m+1 and choose s near the midpoint with the same parity as s_stack (variables plus clauses in the stacks). Pad with n_fill=(s−s_stack)/2 disjoint negative units. The stock required below is O(q³mL+q³)=o(s) with q=r^a=L^6, since 38ε<1/2. All constants are fixed and all tables have polynomial bit length in the original source size.
+
+For outside negative-unit clauses, each matched row contributes 1−h_t b and each unmatched row contributes one. An outside subdivision bit read by d rows contributes 1+(1−h_t)^d, an odd 2-local unit if d>0 and exactly two if d=0. At most Pt+E rows lack a match, with P≤3M/L and E≤r^(2a)(√(2MΔ)+L)=o(M). Since M=2n_fill+2mL and t≤L/16, a constant fraction of outside clauses are matched and every outside bit can be read at most twice. Removing the known powers of two, including 2^(mt), leaves Ω(n_fill) bits out of the native p_t≥n_vars+1. Remaining known factors, including 2−h_t, are invertible. For h_t=A/b with odd b, |A|,b≤2^(2L), the signed integer b^(2m)Z(h_t) has magnitude ≤2^m(2(|A|+b))^(2m). O(mL²) usable bits suffice to center-lift its K-th power and take the exact signed odd root. Our padding has n_fill≫mL².
+
+## A legal minimum conditional-expectation execution
+
+All stack vertices will take label zero on both shores. During the old-side stage, choosing color b for a degree-k old vertex v costs, up to a positive multiplier and additive constant, k L_b+(q−1)s_b(v), where L_b is the current assigned old-port load and s_b counts previously assigned old ports of color b that share a subdivision center with an incidence of v. Two distinct unseen centers match with probability 1/q while a single center always matches itself. Comparisons with unseen old vertices are color-independent.
+
+First expose one endpoint from each of many unary components, round-robin so old loads are equal. A mate of a zero-seeded component treats color zero as having adjusted load L_0+q−1 and treats every other color at its actual load. Use these mates to raise each nonzero load to L_0+q−1 under exact minimization. Assign any designated old vertex zero: since centers have two ports, s_0(v)≤k, so this choice is a minimizer. Restore the margin after each designated vertex using more zero-seed mates. Designate every old vertex in the stack and both endpoints of (q−1) additional negative-unit components per special stack center. Their total old-port volume J=O(qmL) requires at most (q−1)(J+q−1) zero seeds, hence at most q times this number of seed components. Complete all other old vertices greedily.
+
+Expose the special subdivision centers one by one, interleaving each with its q−1 dedicated pure-zero filler centers in cycles through all column colors. With all old-side labels fixed, a center with both old labels zero chooses a least-used ordered load (0,b); other future centers give a b-independent expected contribution. Thus every special center may choose zero as a genuine minimizer. Complete remaining centers greedily. The original variance bound applies. The diagonal class permits arbitrary slot order, so assign its special ports to the displayed full packets and finish the rest by the original class padding. This constructs one permitted deterministic exposure order, tie rule and layout, without assuming an arbitrary implementation outputs it.
+
+The native source and packing reference is [OpenAI, quantitative contraction](https://raw.githubusercontent.com/openai/math/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/build/quantitative-contraction.tex).
