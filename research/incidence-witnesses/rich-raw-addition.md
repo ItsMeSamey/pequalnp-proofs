@@ -1,0 +1,11 @@
+# Rich OR gates add to balanced-flag raw-trigger savings
+
+Use a two-line-normalized circuit, the binary simplifications in balanced-flag.md and its random all-zero balanced flag restriction. For line L, let k(L) be the maximum number of its point singletons accepted at any wire. In the proof of two-line-normalization.md also bypass any OR where one parent's point section on L contains the other's, choosing the containing parent. The same frontier and edge counts prove there are at least W = sum_L max(0,ceil(k(L)/2)-1) pairs (g,L) with g a genuine branching OR, both parent sections nonempty and incomparable, union size at least three. Every such OR has at most two witnessing lines.
+
+A parent counted as a raw trigger in balanced-flag.md is direct raw or a raw-bearing AND. If its section is nonempty, its unique raw input must be a point on L and its section consists of that point (no repeated operands). Both parents cannot trigger, since their union contains at least three points. Thus the OR has either no raw trigger or exactly one, a point on every witnessing line.
+
+When any witnessing line is deleted, the OR may be set to one on the two-line sample. Perform all these edits first after the line restrictions, using maximal-negative domination, then fix the deleted points. Raw-bearing ANDs supplying raw triggers were not edited and still become zero whenever their raw input is zero. The raw-triggered slots outside the edited set still simplify. Hence the union of distinct gate slots is a valid count, irrespective of overlap.
+
+Let p be the raw deletion probability, J the maximal pair probability, and Js the same-side pair probability. For an OR with t=1 or 2 witnessing lines, its extra probability beyond its raw-trigger event is at least t(p-J)-(t-1)Js, by the two-event union bound with overlap and the raw-trigger intersection bound on each line. This is at least t(p-J-Js/2). Therefore the expected gate savings lower bound from balanced-flag.md gains the additive term W(p-J-Js/2) whenever its coefficient is positive.
+
+At q=401 and h=33 the baseline for U>=4N, even with A1 and A2 ignored, is 50763.4129353. The coefficient per unit W is 0.0717654601. The required loss of 56281 is reached when W>=76884; 385 full-star lines suffice. The theorem uses the normalized circuit's parameters. Unrestricted q401 remains open.

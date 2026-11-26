@@ -57,3 +57,5 @@ The 12-crown requires **exactly 41 gates among all binary monotone circuits usin
 A separate proof gives exact size 41 for arbitrary raw OR-only preprocessing followed by terminal comparisons and OR aggregation, including shared OR gates and any number of comparisons. General circuits can also put diagonal-active ANDs in the prefix. [Raw-bank proof](arbitrary-raw-banks/arbitrary-raw-banks.md)
 
 The [standalone Lean theorem](../../lean/Research/CrownShardStandalone.lean) gives a physical lower bound of 31 OR gates and an upper bound of nine AND gates at total size at most 40. Its axiom audit lists only propext, Classical.choice and Quot.sound. The stronger 32-OR bound above is independently established by the mathematical induction.
+
+With five AND gates, size 40 is also excluded in the normalized case with exactly one diagonal-active AND and four clean terminal comparisons. The eight search strata cover 75,688,399 helper families. Other arrangements of five AND gates require separate arguments. [Proof and census](five-ands-one-dirty/five-one-dirty-proof.md)

@@ -1,0 +1,16 @@
+t 1 h 0 banks 1 maximum 4
+t 1 h 1 banks 38 maximum 5
+t 1 h 2 banks 907 maximum 6
+t 1 h 3 banks 17148 maximum 7
+t 2 h 0 banks 1 maximum 4
+t 2 h 1 banks 40 maximum 5
+t 2 h 2 banks 1022 maximum 6
+t 2 h 3 banks 20819 maximum 8
+t 3 h 0 banks 1 maximum 4
+t 3 h 1 banks 41 maximum 5
+t 3 h 2 banks 1063 maximum 6
+t 3 h 3 banks 21935 maximum 8
+t 4 h 0 banks 1 maximum 4
+t 4 h 1 banks 41 maximum 5
+t 4 h 2 banks 1060 maximum 6
+t 4 h 3 banks 21805 maximum 7
