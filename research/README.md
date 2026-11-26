@@ -30,3 +30,5 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 [Affine projection](rank-projection/README.md) gives a polynomial-time compiler when each residual clause depends on at most one independent hidden linear form over GF(2). Allowing two such forms permits a direct reduction from 3-SAT.
 
 [Compatible partitions](fiber-solver/findings.md) gives a witness-producing solver for binary tables whose endpoint partitions agree and shows what happens when adjacent tables impose different partitions.
+
+[Guarded affine projection](guarded-affine/README.md) compiles a family of existential formulas with b terminal clauses in polynomial time for fixed b. Computing n-bit inner product in this model takes exactly n+1 terminal clauses. The proof also identifies the size of the smallest cover of its accepting inputs by affine flats.
