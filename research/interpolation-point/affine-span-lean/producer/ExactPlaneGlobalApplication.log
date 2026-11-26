@@ -1,0 +1,9 @@
+ExactPlaneGlobalApplication.lean:21:8: warning: automatically included section variable(s) unused in theorem `_private.ExactPlaneGlobalApplication.0.ExactPlaneGlobalApplication.number`:
+  [AddCommGroup K]
+  [Module (ZMod 2) K]
+  [Module.Finite (ZMod 2) K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [AddCommGroup K] [Module (ZMod 2) K] [Module.Finite (ZMod 2) K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ExactPlaneGlobalApplication.physical_decision_iff' depends on axioms: [propext, choice, Quot.sound]
