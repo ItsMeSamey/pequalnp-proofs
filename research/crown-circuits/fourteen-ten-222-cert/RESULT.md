@@ -1,0 +1,5 @@
+# Two rectangular ten-flag hosts excluded
+
+A 34-gate fourteen-input threshold-two circuit with eight ANDs cannot have the disconnected receiver host given by mask 222 together with either 255 or 507. Mask 222 is the complete bipartite graph on parts of size two and three. Each larger component has five flags and eight edges. The result is a mathematical case exclusion conditional on the established smaller-input minima and the four-OR floor on each larger component.
+
+Read rectangular-portals.md first. Its final outstanding stratum is discharged by 222-empty-exit-singletons.md. The port expansion used in both arguments is set out in four-flag-three-lost-ors.md. The archived 237 subgraph lower-bound identification is in nine-vertex-decoder-budget.md. The ten-flag budget is eight ORs and eight ANDs in the decoder: the 28 raw flag occurrences use 18 other ORs in the separate incidence bank. This packet establishes neither an unconditional fourteen-input size lower bound nor the other ten-flag host cases.
