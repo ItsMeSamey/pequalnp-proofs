@@ -1,0 +1,17 @@
+# Exact private section ranks on the 30- and 24-record palettes
+
+Use K=F₂⁴, q(k)=k₀k₁+k₂k₃ and its symplectic polar form B. At each included k retain the two records (k,1+q(k),s), s∈F₂. The larger palette uses all 15 nonzero directions. The smaller omits the three nonzero directions in the Lagrangian L=span(3,8); it is the [minimum universal restriction of the 45-record template](../private-chart-universal/README.md).
+
+A degree-j physical section for a private direction u consists of Boolean polynomials F_e in the eight chart bits g=(a,b), each of degree at most j, vanishing whenever record e is inactive, with Σ_e F_e(g) k_e=u on every chart. Its physical two-bit gain under arbitrary attached gains h_e is Σ_e F_e(g) h_e and has degree at most j. The table gives the private directions admitting such sections.
+
+| Palette | Degree at most 2 | Degree at most 3 |
+|---|---|---|
+| 30 records | all of K | all of K |
+| 24 records | exactly L | all of K |
+
+For a fixed nonzero record its activity is a codimension-two affine slice with indicator I_e. Any degree-at-most-two function vanishing off this slice is a constant multiple of I_e. Indeed, in affine chart coordinates making the two activation conditions bits equal to one, the unique multilinear form must be divisible by both bits. In particular, evaluating a prospective degree-two section at b=0 yields scalar coefficients c(k) with
+`Σ_k c(k) (a(k)+q(k)) k=u` for every a. Conversely use the same c(k) on both records at k to obtain this section. The constant-coefficient conditions are Σ c(k) kkᵀ=0 and Σ c(k) q(k) k=u.
+
+On all 15 nonzero points the first condition says c is orthogonal to the four linear and six distinct quadratic monomials, which are independent on the nonzero points by uniqueness of multilinear form and their value zero at the origin. Its five-dimensional kernel comprises restrictions of affine functions c(k)=d+t(k), since products of total degree ≤3 sum to zero on F₂⁴ and vanish at the origin for each moment under consideration. In the second condition only quartic monomials in the four different bits can contribute, giving u=(t₁,t₀,t₃,t₂)=B⁻¹t. This yields every u on the larger palette. On the smaller one c must vanish on all three nonzero points of L, forcing d=0 and t in the annihilator of L. The image is then B⁻¹ann(L)=L. An explicit degree-two lift on all 15 points uses the nonzero vectors in span(u plus a complementary symplectic coordinate pair): for coordinate outputs 1,2,4,8 the respective supports are {1,4,5,8,9,12,13}, {2,4,6,8,10,12,14}, {1,2,3,4,5,6,7}, {1,2,3,8,9,10,11}.
+
+For degree three on the 24 records let the multiplier of I_e be an affine function P_k(a) of the first four chart bits, the same on both second-bit records. The desired identity is Σ_k k(a(k)+q(k))P_k(a)=u for all sixteen a. This is a linear system with a column for each of twelve k and five possible monomials of degree at most one in a. The executable constructs the coefficient matrix, solves for each u, and verifies the selected physical sums on all 256 charts. It also independently solves the unrestricted degree-two indicator system on all 256 charts. Run python check.py. Direct sums give arbitrarily large private rank, no fully tagged directions, and a degree-two private deficit growing by two per 24-record block, while degree three still covers every private direction. These ranks concern sections on physical records. Special choices of the separate gains can simplify the induced gain functions.
