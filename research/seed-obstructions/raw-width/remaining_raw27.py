@@ -2,7 +2,7 @@
 from pathlib import Path
 from collections import defaultdict
 root=Path(__file__).resolve().parent
-complete23={(11,7),(11,8),(12,7),(12,8),(12,9),(12,10),(12,11),(12,12),(13,7),(13,11),(13,8),(13,9)}
+complete23={(11,7),(11,8),(12,7),(12,8),(12,9),(12,10),(12,11),(12,12),(13,7),(13,11),(13,8),(13,9),(13,10)}
 lines=['mixed\tpoint_width\tline_width\tsurplus\tmax_point_cost\tmax_line_cost']
 for m in range(23,34):
     d=defaultdict(list);budget=33-m

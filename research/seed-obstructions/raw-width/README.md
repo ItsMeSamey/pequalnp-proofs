@@ -1,6 +1,6 @@
 # Live raw inputs after pinning and seed deletion
 
-At every mixed count, at most 27 distinct raw labels remain live after pinning and seed deletion in the normalized residual of total size at most 33. Independent source and coverage review verified the mixed private/exterior pool dispatch, the 63 and 245 cases covering exterior mergers, and the 24 missing-singleton nine-port forms. The numerical exclusions use the archived primary runs. The updated census gives 280 necessary envelopes, with four whole width pairs at 23 mixed gates: (13,10), (14,8), (14,9), and (14,10). [Primary certificate](raw-width27-primary.zip) · [Reproducible width census](remaining_raw27.py)
+At every mixed count, at most 27 distinct raw labels remain live after pinning and seed deletion in the normalized residual of total size at most 33. Independent source and coverage review verified the mixed private/exterior pool dispatch, the 63 and 245 cases covering exterior mergers, and the 24 missing-singleton nine-port forms. The numerical exclusions use the archived primary runs. The updated census gives 279 necessary envelopes after the complete thirteen-point exclusion, with three whole width pairs at 23 mixed gates: (14,8), (14,9), and (14,10). [Primary certificate](raw-width27-primary.zip) · [Reproducible width census](remaining_raw27.py)
 
 ## Earlier bound of 28
 
