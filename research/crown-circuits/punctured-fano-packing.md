@@ -9,3 +9,5 @@ The proof computes a family-dependent packing of at least 16 edge indices. Each 
 Applying this bound to an arbitrary size-22 circuit with nine OR gates also requires a structural theorem translating the circuit's execution into the specified marker families and charges. That translation is a separate mathematical argument. This file proves the finite packing component.
 
 [The raw-gate cover theorem](../../lean/Research/PuncturedFanoRawGateCover.lean) derives the same 16-charge bound when a charge is contained in the positive support of a raw conjunction times a marker subset-product that vanishes on all 19 critical negatives. It removes the additional assumption that a small charge covers at most one cell.
+
+The native circuit translation is now formalized. Every fourteen-input IsAO2 circuit of size at most 23 that meets the stated punctured Fano behavior needs at least ten OR gates. Under the nine-OR hypothesis the proof derives a lower bound of sixteen AND gates. The existence of a size-22 circuit remains open. [Circuit-count theorems](../../lean/Research/PuncturedFanoCircuitCounts.lean)

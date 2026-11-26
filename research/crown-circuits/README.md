@@ -26,3 +26,5 @@ Under the 40-gate and 23-OR budgets, two distinct chronological pairs of OR gate
 For the same budget the actual chronological OR-overlap graph has at most three edges and contains no four-vertex path. [Concrete collision theorem](../../lean/Research/CrownCollisionLimit.lean)
 
 If there are three distinct overlaps, those three edges form a triangle. [Triangle classification](../../lean/Research/CrownCollisionTriangle.lean)
+
+The earliest active OR gate on each positive diagonal admits an injective choice of an actual true input predecessor under these budgets. The masked-wire theorem transfers the chosen predecessors to the original circuit. [Earliest trigger](../../lean/Research/CrownFirstTrigger.lean) · [Masked-wire rigidity](../../lean/Research/CrownMaskedRigidity.lean)
