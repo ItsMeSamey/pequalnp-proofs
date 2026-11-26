@@ -15,3 +15,5 @@ The triply read extra endpoint with a nonempty compulsory set is excluded by the
 For two comparable twice-read extra endpoints, the upstream-only archive excludes the case in which only the upstream endpoint holds compulsory singleton points. The producer ran the complete replay, and an independent reviewer cleared the source.
 
 The parallel-one-final archive excludes incomparable twice-read extras with exactly one locally nonempty compulsory set, allowing the endpoint names to be exchanged. The complete 369-case inventory leaves seven maps with eight filter choices each. An independent reviewer replayed the terminal witness rows and all 56 map/filter combinations.
+
+The independent A3 numerical replay subsequently finished all 1,292 cases. Its separate driver and domain code exercised 37,468 filter choices and found zero survivors, with no duplicate or missing case. It used the archived geometry and numerical solver. [Replay receipt](a3-independent/receipt.log) · [Independence and scope](a3-independent/scope.md)
