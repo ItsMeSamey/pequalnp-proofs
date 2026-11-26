@@ -63,3 +63,5 @@ The Lean chart theorem recovers the supplied witness and satisfies the selected 
 The [sparse interpolation solver](../sparse-marker/README.md) is deterministic given a polynomial support bound. The [rank-two defect analysis](../rank-two-defect/README.md) gives a polynomial hyperbolic case and a reduction equivalence with alternating three-marker feasibility.
 
 The [occurrence-weight polynomial](../roabp/README.md) can have exponential ordered branching-program width in every variable order. A separate [three-color solver](../three-colors/README.md) decides simultaneous odd counts for its stated alternating guard class.
+
+A [parity matching reduction](../trail-matching/README.md) solves eligible guarded trail presentations, with exact assignment checks through three variables.

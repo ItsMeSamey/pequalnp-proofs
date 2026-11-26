@@ -39,3 +39,5 @@ Run `python check.py`. It compares signed expansions with exhaustive counts on 3
 The [XOR wiring result](xor-wiring.md) compiles quadratic phases from supplied cutrank layouts. Run `python3 xor_wiring_check.py` for 120 linear layouts and `python3 tree_phase_check.py` for 128 tree layouts.
 
 The [signed interval compiler](intervals.md) gives a parsimonious reduction when a literal ordering with at most p runs per clause is supplied. Run `python3 interval_compiler.py` to check the range construction and full CNF compilation.
+
+[Order recovery](recognition.md) removes the supplied-order requirement under the stated interval promise. Run `python3 check_recognition.py` for 1,200 comparisons of order search with graph recognition.

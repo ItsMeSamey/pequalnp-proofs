@@ -27,3 +27,5 @@ The [separable query lower bound](taylor-span.md) proves the regrouped query cou
 A [Tanner layout with unpinned inputs](tanner-taylor-unpinned.md) gives a separate scalar-query rank lower bound. The [occurrence selection](tanner-taylor.md) describes the fixed layout. Run `python3 tanner_unpinned_check.py` and `python3 tanner_lift_check.py` for local algebra checks.
 
 [Partial jet aggregation](taylor-bulk.md), [mixed supports](mixed-jets.md), [the Tanner signing family](tanner-bulk.md) and [connected correction sets](bulk-connected.md) give layout-specific contractions. Run `python3 linked_cluster_check.py` and `python3 taylor_bulk_moments.py` for small exact comparisons.
+
+A [planar counting family](bulk-planar-cnf.md) separates joint diagonal evaluation from common separable query reconstruction. A [paired-packet contraction](../paired-packets/README.md) handles specified Appendix D packings on bounded-degree expanders.

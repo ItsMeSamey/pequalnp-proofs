@@ -43,3 +43,5 @@ At equality the [21-gate point circuits](point-equality.md) consist of seven dis
 For ten point-boundary wires whose signatures extend one of the 202 noncanonical eight-mask bases, [the complete extension profile](../ten-supersets/README.md) forces 17 paid point gates and excludes 17 mixed gates at the 33-gate budget.
 
 In a relaxation that supplies every transverse point mask for free, [five projective neighborhoods](../five-neighborhoods/README.md) require exactly 15 union/intersection gates. The package includes its three SAT encodings, solver pin and replay hashes.
+
+With eight line leaves, the [nonconcurrent case](eighth_line_good.md) and [concurrent case](eighth_line_concurrent.md) exclude additional read-once architectures. Run `python3 verify_eighth_extensions.py` for the sampled negative extensions.
