@@ -24,3 +24,5 @@ For any size-40-or-smaller 12-crown circuit, [the subcrown theorem](../../lean/R
 Under the 40-gate and 23-OR budgets, two distinct chronological pairs of OR gates each cover every predecessor overlap. The companion finite lemmas bound collisions of signed read sets and classify a four-vertex path under their stated hypotheses. All three modules pass the pinned Lean checker. [Indexed gate pairs](../../lean/Research/CrownIndexedOrReads.lean) · [Collision count](../../lean/Research/CrownSaturatedCollisions.lean) · [Path lemma](../../lean/Research/CrownCollisionPath.lean)
 
 For the same budget the actual chronological OR-overlap graph has at most three edges and contains no four-vertex path. [Concrete collision theorem](../../lean/Research/CrownCollisionLimit.lean)
+
+If there are three distinct overlaps, those three edges form a triangle. [Triangle classification](../../lean/Research/CrownCollisionTriangle.lean)

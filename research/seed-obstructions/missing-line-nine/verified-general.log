@@ -1,0 +1,14 @@
+unknown 9 p4 18
+graphs 118
+unknown 9 p4 18
+graphs 118
+0 invalid 0 good 0 0 0 0 630 94005 32805
+1 invalid 0 good 0 0 0 0 5760 68640 0
+2 invalid 0 good 0 0 0 0 5760 68640 0
+3 invalid 0 good 0 0 0 0 5760 68640 0
+point quartet 15 4309 nodes, zero banks
+point quartet 23 1902 nodes, zero banks
+point quartet 27 1498 nodes, zero banks
+point quartet 46 4002 nodes, zero banks
+point quartet 83 5014 nodes, zero banks
+All 24 missing-singleton line banks excluded.

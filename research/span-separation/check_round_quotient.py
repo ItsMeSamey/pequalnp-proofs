@@ -24,6 +24,8 @@ if __name__ == "__main__":
     assert len(all_spaces) == 67
     assert catalog(NO) == {h for h in all_spaces if 1 not in h or max(h) >= 8}
     assert catalog(YES) == all_spaces
+    assert catalog(NO + (215, 226)) == catalog(NO)
+    assert catalog(YES + (215, 226)) == all_spaces
     for columns in (NO, YES):
         assert tuple(v >> 4 for v in columns) == tuple(range(1, 13))
         assert len(span(columns)) == 256
