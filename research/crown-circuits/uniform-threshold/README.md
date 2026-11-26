@@ -4,6 +4,8 @@ For minimum binary monotone AND/OR circuit size with unrestricted fanout, **C(n)
 
 The refined construction gives C(n) ≤ 2n + √(2n) + (5/4)2^(9/10)n^(3/10) + O(n^(7/30)). This coefficient is an upper bound on the unrestricted optimum. [Short-signature construction](short-signatures.md)
 
+The unrestricted liminf of (C(n)−2n−√(2n))/n^(3/10) is at least the algebraic constant c* ≈ 0.89074957018. The proof gives an exact defining polynomial and isolating interval, using the shared-receiver vertex cover and a two-class matrix inequality. The optimal coefficient remains undetermined. [Coefficient proof](unrestricted-block-moment.md) · [Shared-cover bound](unrestricted-shared-cover.md)
+
 ## Earlier bounds and constructions
 
 The matching construction gives **C(n) ≤ 2n + √(2n) + O(n^(3/10))**. Together with the lower bound below, this gives **C(n) = 2n + √(2n) + O(n^(3/10))**. The proof counts matching signatures and gives a deterministic finite search for a suitable graph. The final theorem above gives a matching order of growth for the remainder. [Construction](matching-signatures.md)
