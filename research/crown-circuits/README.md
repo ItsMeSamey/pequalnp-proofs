@@ -51,3 +51,7 @@ The [full grid-prefix certificate](grid-full-cert/PROOF.md) lets the suffix read
 For every n ≥ 3 the n-crown requires exactly 3n−4 binary OR gates, even when AND gates are free and arbitrary sharing is allowed. Thus the 12-crown requires 32 OR gates. The [written induction](crown-or-cost.md) is independently reviewed. The base case and deletion lemma have native checks; the full induction is a paper proof. This OR count alone leaves the unrestricted 40-gate total open.
 
 A size-at-most-40 circuit for the 12-crown cannot have exactly four AND gates that all evaluate false on every diagonal input. The proof reduces the necessary reverse-wire masks to 279 packing classes, all excluded with a 17-union budget. Circuits with an AND gate active on a diagonal require a separate argument. [Derivation and replay instructions](four-clean-ands/fourand-clean-transpose.md)
+
+The 12-crown requires **exactly 41 gates among all binary monotone circuits using at most four AND gates**. The rejection search allows arbitrary sharing and topology. The 130 rejection certificates passed DRAT verification, and the 41-gate upper witness was checked on all 144 inputs. [Four-AND model and replay](four-and-cert/four-and-model.md)
+
+A separate proof gives exact size 41 for arbitrary raw OR-only preprocessing followed by terminal comparisons and OR aggregation, including shared OR gates and any number of comparisons. General circuits can also put diagonal-active ANDs in the prefix. [Raw-bank proof](arbitrary-raw-banks/arbitrary-raw-banks.md)

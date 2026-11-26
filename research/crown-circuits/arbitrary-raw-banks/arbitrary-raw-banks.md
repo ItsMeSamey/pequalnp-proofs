@@ -1,0 +1,27 @@
+# Arbitrary raw OR banks require 41 gates
+
+Consider a monotone circuit consisting of an unrestricted shared OR network on the 24 raw row and column indicators, followed by a AND comparisons and an OR of their outputs. The minimum for the 12-crown is 41. The finite premise is the accompanying exclusion of twelve pairwise incompatible terminal masks from a cost-17 reverse union library with any number of signed axes. The 41-gate paired grid supplies the upper bound.
+
+A 40-gate candidate has at most g=41−2a OR gates before the comparisons. Transposing this OR network, counting repeated output taps, supplies 24 masks with at most g+2a−24≤17 unions. All 24 raw inputs matter on the promise. Write Rᵢ and Cᵢ for the masks of the two inputs at label i. Opposite signs on an axis represent an AND activated on that cell. Each mask is consistent because a raw singleton is dominated by its rejected diagonal. Matching Rᵢ and Cᵢ are compatible, whereas Rᵢ and Cⱼ conflict when i≠j. Taking the union of the two compatible masks at each label therefore gives twelve nonempty, pairwise disjoint label cubes.
+
+If a matching pair is comparable by inclusion, use its larger mask at both shores. This takes an existing output and preserves the promised behavior. Let s count the remaining labels with two incomparable masks. The resulting 12+s masks are distinct and incomparable: containment between different labels on the same shore would contradict conflict with the larger label's opposite mask; cross-shore masks at different labels already conflict. Hence none of these retained masks feeds another in the pruned reverse library. With u distinct maximal singleton masks, at most h=5−s+u other paid masks are available as helpers. Every nonsingleton target is a union of two strict operands, each a helper or literal. A target of weight w needs at least w−2 distinct helper ancestors, all proper submasks, by counting edges in its binary union subgraph.
+
+If s≤2, take the single paired mask at each collapsed label. At the remaining labels take either shore when s=1, or opposite shores when s=2. The twelve resulting existing masks conflict pairwise. This contradicts the finite paired packing theorem. Assume s≥3.
+
+## No singleton target
+
+When u=0, h≤5−s. Of the P=12−s paired masks, at most three are unions of two literals: four width-two disjoint cubes would use all the volume, leaving no room for any other label. A fixed helper supports at most two paired masks with a singleton partner since each occupies at least half that helper's cube. At most one further paired mask can use a given unordered pair of helpers. Consequently P≤3+2h+binom(h,2), impossible at s=3 (9>8), s=4 (8>5), and s=5 (7>3). Larger s would give negative h.
+
+## Opposite singleton signs
+
+Distinct retained singleton literals occupy distinct axes. Opposite literals at the same label contradict its diagonal. At different labels a third label must oppose both in its two masks, or in one mask, contradicting consistency of its diagonal. A paired singleton excludes any singleton at a different label, since they would have to be exact opposites.
+
+For u>0, all nonsingleton paired masks contain the u opposite singleton signs U. Their number is P=12−s if no singleton is paired, or P=11−s if the unique singleton is paired. There is at least one such mask. Without a paired singleton, u≤6 implies s≤11. With a paired singleton u=1 and s≤6. When u≥7, at least four distinct singleton axes occur on one shore. No singleton can occur on the other shore: it would have to conflict with at least three distinct singleton axes. Each opposite-shore mask therefore contains at least u−1 opposite signs and a maximal target containing that mask needs at least u−3 helpers. The bound h≤5−s+u gives s≤8.
+
+Choose a maximum-weight paired mask K among the P nonsingleton paired masks and write w for its weight. All P cubes are disjoint inside U, so w≥u+ceil(log₂ P). At least w−2 helpers are inside K, hence ceil(log₂ P)≤7−s.
+
+When no singleton is paired, only s=3 or s=4 satisfy the bound, both with equality. Thus all helpers lie inside K. Each other paired mask must use a literal opposing K on one of the w−u axes outside U; a helper inside K cannot supply that conflict. Its other operand must contain U and must be an inside helper or the one prescribed literal if u=1. Two paired masks using the same opposing literal are compatible, since all their other signs lie in K. Thus P≤1+w−u, impossible for P=9 and w−u=4 or for P=8 and w−u=3.
+
+When the singleton is paired, u=1 and P=11−s. The width bound excludes s≥5. At s=4 it is tight, with P=7 and w−u=3, and the previous argument gives P≤4. At s=3 there are eight anchored masks and h≤3. If w=5, all helpers are inside K and P≤5. If w=4, at most one helper G is outside K. The paired masks constructible without G number at most 1+w−u=4. Among the rest, at most two can use G and a singleton, since each occupies at least half of G's cube. At most one can use G and an inside helper, since mutually consistent inside helpers contained in K stay jointly consistent with G whenever each is compatible with G. Two singleton-partner masks would fill G, leaving no room for such a third. Thus G supplies at most two additional paired masks, giving P≤6. This exhausts the cases.
+
+The normal-form consequence is that any unrestricted 12-crown circuit of size at most 40 would require a diagonal-active AND in its prefix.

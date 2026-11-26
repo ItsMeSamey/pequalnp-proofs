@@ -1,0 +1,8 @@
+axes 10 weight 5 singleton 0 budget 17 inside 114 systems 6972 clique 2030 SAT 0
+axes 10 weight 7 singleton 1 budget 17 inside 1125 systems 5014 clique 178 SAT 0
+axes 11 weight 4 singleton 0 budget 17 inside 32 systems 84656 clique 22238 SAT 0
+axes 11 weight 6 singleton 1 budget 17 inside 3240 systems 76489 clique 4163 SAT 0
+axes 12 weight 5 singleton 1 budget 17 inside 1978 systems 739077 clique 30472 SAT 0
+axes 8 weight 7 singleton 0 budget 17 inside 11 systems 11 clique 2 SAT 0
+axes 9 weight 6 singleton 0 budget 17 inside 72 systems 512 clique 108 SAT 0
+axes 9 weight 8 singleton 1 budget 17 inside 106 systems 106 clique 0 SAT 0
