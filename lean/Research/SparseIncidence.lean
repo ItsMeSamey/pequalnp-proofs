@@ -1,3 +1,4 @@
+import Research.IncidenceBound
 import Mathlib.Data.Fintype.Pi
 import Mathlib.Data.Set.Prod
 
@@ -10,6 +11,27 @@ def Extends {n} (u v : Input n) : Prop :=
 
 def Upward {n} (S : Set (Input n)) : Prop :=
   ∀ ⦃u v⦄, Extends u v → u ∈ S → v ∈ S
+
+/-- Each circuit wire is monotone under extension of the input masks. -/
+theorem wire_upward {n g : Nat} (X : Nat → Set (Input n))
+    (inputs : ∀ i : Fin n, X i.val = {x | x.1 i = true} ∧
+      X (n + i.val) = {x | x.2 i = true})
+    (gate : ∀ j < g, ∃ a < n+n+j, ∃ b < n+n+j,
+      X (n+n+j) = X a ∪ X b ∨ X (n+n+j) = X a ∨ X (n+n+j) = ∅ ∨
+      X (n+n+j) = X a ∩ X b)
+    (o : Nat) (ho : o < n+n+g) : Upward (X o) := by
+  obtain ⟨S, sub, _, dep⟩ := IncidenceBound.support (n+n) g X gate o ho
+  intro u v huv h
+  apply dep u v _ h
+  intro i hi
+  have bound := Finset.mem_range.mp (sub hi)
+  by_cases low : i < n
+  · rw [(inputs ⟨i, low⟩).1]
+    exact huv.1 _
+  · let k : Fin n := ⟨i-n, by omega⟩
+    have eq : n+k.val = i := by dsimp [k]; omega
+    rw [← eq, (inputs k).2]
+    exact huv.2 _
 
 def single {n} (i : Fin n) : Fin n → Bool := fun j => decide (j = i)
 
