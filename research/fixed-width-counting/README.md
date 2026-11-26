@@ -49,3 +49,5 @@ The [signed interval compiler](intervals.md) gives a parsimonious reduction when
 [Signed frontier aggregation](../signed-frontiers/README.md) gives exact counting bounds and parsimonious embeddings that test the limits of frontier-size arguments.
 
 The [signed long-clause pivot](long-pivot.md) and [selector-rank reduction](long-selector-rank.md) give counting algorithms when their stated rank or support bounds hold.
+
+[Combined Walsh selectors](long-walsh.md) handle overlapping low-support groups and exceptional clauses. The [Walsh family](long-walsh-family.md) and [projective clause family](long-boolean-profiles.md) compare these sufficient conditions with incidence rank, signed intervals and the number of distinct unions.
