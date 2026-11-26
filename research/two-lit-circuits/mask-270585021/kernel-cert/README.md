@@ -1,0 +1,9 @@
+# Exact ten-gate certificate for mask 270585021
+
+Lean 4.36.0 proves that the six-input one-or-two-active promise table requires ten AND/OR/NOT gates of fan-in at most two. Both physical endpoints are in src: L_meta_25057.lean rules out nine and Control25057.lean constructs ten. The sparse convention and gate list are in EXACT25057.md; BRIDGE.md explains how the finite search covers arbitrary physical circuits.
+
+The 74 numbered source pages contain 1,181 checked table entries. N25057Result.lean combines their coverage proofs with all five initial budget checks. All cited certificate modules, including Research.MissingCellRigidity, are included in src. The only external Lean imports are the standard library and PEqualNP.Defs from the pinned proof project.
+
+Run the source audit with `python3 replay.py --audit-only`. To rebuild every certificate module from source, run `python3 replay.py --lean-project /path/to/pequalnp-proofs/lean --build-dir /path/to/empty-directory`. The reference proof checkout is open-goat/pequalnp-proofs commit b104ff3988c176aae2db960c2a71ddf975ef047c. Use its pinned dependencies and build PEqualNP.Defs before replaying. The builder obtains its Lean binary and external import path from that project's Lake environment, clears an inherited LEAN_PATH, then gives precedence to the fresh build directory. It compiles every bundled source exactly once and compares the final axiom report to the named endpoint receipt.
+
+The optional physical control runs with `python3 control/verify.py control/baseline10.json 10`. The ledger directory contains the generator's five binary key lists; all keys needed by Lean are already embedded in the Lean table. The receipts directory contains the published endpoint transcript and the original page-by-page source/object hashes. Both named endpoints depend only on propext, Classical.choice, and Quot.sound.

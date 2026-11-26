@@ -1,0 +1,4 @@
+L_meta_25057 0 
+Axioms25057 0 'PEqualNP.Outside.L_meta_25057' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Control25057' depends on axioms: [propext, Classical.choice, Quot.sound]
+

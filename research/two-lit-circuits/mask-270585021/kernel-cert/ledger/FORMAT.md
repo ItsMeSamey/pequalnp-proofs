@@ -1,0 +1,3 @@
+# Binary key table
+
+The exact key table is now emitted in table0.bin through table4.bin, partitioned by the initial NOT budget. Total size is 23,133 bytes. Each record is three one-byte fields (d, b, t) followed by d numerically increasing masks encoded in three bytes little-endian each. The record list has no count prefix; parse until the file ends. Empty root tables correspond to direct arithmetic cutoffs. decode.py checks record boundaries, canonical keys and per-root cardinalities. emit.cpp changes only the output adapter of the sizing engine. The frozen primary table and control manifests stay independent.
