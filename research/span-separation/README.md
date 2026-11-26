@@ -14,3 +14,5 @@ For necessity, take an independent basis for the span of any witness $X$. Togeth
 For sufficiency a common independent set of size $d-1$ spans a hyperplane of $V$ excluding both $w$ and $u+w$. Its nonzero binary annihilating functional has value one on both excluded vectors, hence value zero on their sum $u$. The set itself is a witness. The use of a binary field matters in this implication.
 
 The independent checker rank_one_check.py compares the criterion against direct enumeration for all 5,376 instances consisting of a subset of the seven nonzero columns in dimension three and an ordered pair of distinct nonzero terminals. It verifies the criterion, without implementing the general matroid-intersection algorithm.
+
+For the supplied signed-graph representation, the [odd-cycle method](even-cycle.md) handles terminal spaces containing the pure sign direction with the stated dependence on their dimension.
