@@ -1,0 +1,11 @@
+# Direct three-literal SAT encoding and a conditional rank lower bound
+
+For each literal occurrence in a three-literal CNF allocate a single pair (f,w) of Boolean variables constrained by fw=0. The bit f records that the literal is false, and w marks an occurrence chosen to satisfy the clause. Order occurrences of each variable arbitrarily. Between consecutive occurrences require their f bits to be equal if their polarities match and opposite otherwise, using one binary parity check. Finally require the three w bits per clause to have odd sum.
+
+Every represented assignment with a nonzero witness bit chooses a true literal, and every clause has at least one such bit. Conversely a satisfying assignment sets its f bits uniquely and can mark a single true occurrence in each clause. The construction tolerates repeated variables, tautologies, and both signs. Short nonempty clauses can first be padded by repeating literals.
+
+For m ternary clauses and n active variables there are exactly 3m disjoint pairs (6m bits), 3m−n consistency checks and m clause checks, totaling 4m−n independent parity rows. The f rows are independent path-incidence constraints and the w rows have disjoint nonempty supports on different coordinates. Every bit appears in at most two checks. The reverse encoding uses one binary exclusion per pair, two binary clauses per binary parity equation, and four ternary clauses per ternary parity equation, for a total of 13m−2n clauses and no extra variables on this family.
+
+By the standard sparsification lemma, an exact deterministic solver with running time 2^o(k) times polynomial input size for k marker rank would imply subexponential-time 3-SAT in the usual ETH sense. Indeed a sparse formula with m=O(n) gives k=O(n). Sparsify at arbitrarily small fixed exponential overhead. This is a conditional lower bound. It leaves open the possible base of an exponential dependence on k. [Impagliazzo, Paturi and Zane, Which Problems Have Strongly Exponential Complexity?](https://cseweb.ucsd.edu/~russell/ipz.pdf)
+
+sat3.py constructs the actual columns, calls the matching-kernel solver and decodes the original assignment. Its seeded test suite includes repeated literals and complementary unit clauses.
