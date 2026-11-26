@@ -1,0 +1,21 @@
+# Deterministic algorithms for symmetric guards and several markers
+
+For a symmetric binary A and vertex label columns Lᵢ in GF(2)^t, ask for x satisfying xᵢ(Ax)ᵢ=0 and prescribed Lx. Diagonal entries are arbitrary.
+
+## Recognizing a decomposition from labels
+
+Call U,V an admissible bipartition if A[U,V]=L_Uᵀ K L_V for a symmetric t-by-t binary K. Consider graphs recursively admitting such partitions down to singletons. To find a split try the 2^(t(t+1)/2) matrices K and compute components after toggling the off-diagonal form LᵀKL. If disconnected, take a component and its complement. Restrictions of an existing decomposition give decompositions for any induced subset after suppressing empty children. This justifies the greedy split for recognizing this class. Recurse on original induced subgraphs. The tree has linear size.
+
+For each node W store witnesses for pairs (s,p) of t-bit vectors where p is the label of a guard model after adding L_Wᵀs to the diagonal. At a split with K, child outputs p,q produce cross-contributions L_UᵀKq and L_VᵀKp. Thus the parent state (s,p+q) is attained if the first child attains (s+Kq,p) and the second attains (s+Kp,q). Any parent witness decomposes into such a pair. Try all s,p,q and read the root at shift zero. This takes 2^O(t²)poly(n) time including recognition. The executable matched brute force on 1,000 generated instances.
+
+## Rank-width with arbitrary marker columns
+
+For any supplied rooted binary rank decomposition, write X for the current node and O for its complement. Let w bound the ranks of all cut matrices. Store a witness for each (α,β,p), where α belongs to im A[X,O], β belongs to im A[O,X], p is a t-bit label, and x_X must satisfy its internal guards with the added diagonal shift α and produce β=A[O,X]x_X, p=L_X x_X. These images have at most 2^w elements. Enumerate them by Gaussian elimination. At a split X=U union V, enumerate parent α and child outgoing vectors β_U,β_V. The incoming contributions for the children are α restricted to U plus β_V restricted to U, and α restricted to V plus β_U restricted to V. These contributions come from their respective complements. Combine child labels p,q and output (β_U+β_V) restricted to O and label p+q. A singleton tries both possible bit values. Each combined witness is valid by the block matrix identity, and every witness appears via its child restrictions. The root uses zero input and output vectors. This yields O(2^(3w+2t)poly(n,t)) time and O(2^(2w+t)poly(n,t)) space. Diagonals do not affect cut rank. A decomposition can also be found by a parameterized rank-width algorithm. [Korhonen and Sokołowski](https://arxiv.org/abs/2402.12364)
+
+## Rooted pivot-minor formulation and cycle distinction
+
+Induced-cycle hardness for prescribed terminals on subcubic graphs requires connectivity. Even induced subgraphs in the guard model may include separate cycles and isolated vertices. Two nonadjacent prescribed vertices alone give an even induced graph. [Lévêque, Lin, Maffray and Trotignon](https://arxiv.org/abs/1309.0971)
+
+For zero diagonal, append named ports with adjacency block L to the variables of A. A pivot on an ordinary edge inside a selected feasible support exchanges each endpoint coordinate with its second coordinate (Ax)ᵢ=0, so the endpoints can be deleted after updating the ports by the same principal pivot. Repeat until there are no selected edges. Then retain at most t independent marker columns realizing the prescribed XOR and delete the other variable vertices. Conversely, a surviving independent set realizing that XOR lifts through inverse pivots by adjoining zeros before each inversion. The required small pattern fixes every port, forbids pivots or deletions on them, ignores port-to-port edges, and specifies the XOR of the port incidences on at most t surviving independent variables. A theorem for unrooted H-pivot-minors does not in itself enforce these requirements. [Computing pivot-minors](https://arxiv.org/abs/2311.04656)
+
+For symmetric A of diagonal d, summing all guard products forces d·x=0, on which A agrees with the alternating C=A+ddᵀ. This avoids an extra vertex and adds one parity constraint. If d is in the row span of the existing markers, the consistency check and alternating two-marker solver already suffice at t=2.

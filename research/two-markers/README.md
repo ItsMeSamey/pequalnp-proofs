@@ -13,3 +13,5 @@ Write d for the diagonal of any symmetric A. Summing the guards forces d·x=0. I
 For general symmetric A, adding an apex adjacent to every diagonal-one vertex and forcing it to be selected converts the system to a zero-diagonal system with one more marker. The old guards on a selected vertex have their required parity adjusted by the apex. The apex guard holds exactly when the number of selected marked vertices is even, which follows by summing the original guards. This gives a relation between the general and alternating cases, while the two-marker algorithm above leaves general nonremovable diagonals at two markers unresolved.
 
 [A nine-variable two-marker example](degree-bound.md) has ordinary GF(2) PC refutation degree exactly three.
+
+[A diagonal reduction](diagonal-cuts.md) also handles a diagonal in the span of the two markers. A five-vertex example rules out a single cut as a complete general certificate.

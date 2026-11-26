@@ -58,3 +58,5 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 [Exhaustive residual gate search](residual-gate-bound/README.md) excludes every normalized L-meta-18968 residual circuit with at most 23 gates. The raw decoder and native verifier are included.
 
 [Two simultaneous parity markers](two-markers/README.md) have a polynomial-time witness algorithm on symmetric alternating guard matrices and the specified removable diagonals.
+
+[Marker cuts](marker-cuts/README.md) recognize a label-defined decomposition and solve symmetric multi-marker guard systems by dynamic programming on bounded-rank cuts.

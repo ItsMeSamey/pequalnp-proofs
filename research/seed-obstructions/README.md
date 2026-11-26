@@ -27,3 +27,5 @@ A [complete suffix search](suffix-search/COPY.md) excludes freezing the first 15
 [Point-boundary accounting](charge-review.md) proves that every residual solution using at most 33 gates requires at least eight distinct point-side boundary signals and at least 14 mixed gates, with no bound on line-side signals.
 
 [An eighth point signal](../extra-point/README.md) still needs at least 20 point gates if the other seven point signatures are the canonical neighborhoods. Together with at least 14 mixed gates this excludes such an architecture at size 33.
+
+[Eight point signatures](eight-signatures/fourteen.md) exclude 14 mixed gates at total size 33 by classifying all 202 noncanonical signatures. Any size-33 solution therefore requires at least 15 mixed gates.
