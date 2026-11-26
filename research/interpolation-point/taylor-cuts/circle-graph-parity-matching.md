@@ -2,6 +2,8 @@
 
 On a circle graph G with a_i in GF(2), l_i in GF(2)^h and a specified t, one can find a vertex set S satisfying deg_{G[S]}(i)=a_i (mod 2) for every selected i and sum_{i in S} l_i=t, or report failure, with one-sided error bounded by any epsilon. The running time is 2^h poly(n,log(1/epsilon)), with a verified witness on every successful run and a tunable probability of a false negative on feasible inputs. The proof gives a deterministic linear-size reduction to syndrome-constrained perfect matching and then a randomized polynomial identity test. A double-occurrence chord word can be supplied or recovered by polynomial-time circle-graph recognition. [Gioan, Paul, Tedder and Corneil](https://arxiv.org/abs/1104.3284)
 
+For the empty graph, the empty set is a witness exactly when the target is zero. In the following construction n≥1.
+
 ## Binary assignments to the arcs of the chord word
 
 Choose a cyclic orientation and start point of a chord word. Its 2n endpoints are visits, two per chord. Between consecutive visits place a binary variable f_e on their intervening arc, including the wraparound arc. For each chord i consider both visits in their circular linearization order. Write d_j=f_out−f_in as an ordinary integer for its j-th visit. Impose the integer equality
