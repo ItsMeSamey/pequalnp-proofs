@@ -41,3 +41,5 @@ A [complete suffix search](suffix-search/COPY.md) excludes freezing the first 15
 At equality the [21-gate point circuits](point-equality.md) consist of seven disjoint OR trees. An [OR of point-by-line products](rectangle-dag.md) needs exactly 34 residual gates, even with shared computation on each side. Run `python3 verify_star.py` in this directory to check both star orientations on the raw samples.
 
 For ten point-boundary wires whose signatures extend one of the 202 noncanonical eight-mask bases, [the complete extension profile](../ten-supersets/README.md) forces 17 paid point gates and excludes 17 mixed gates at the 33-gate budget.
+
+In a relaxation that supplies every transverse point mask for free, [five projective neighborhoods](../five-neighborhoods/README.md) require exactly 15 union/intersection gates. The package includes its three SAT encodings, solver pin and replay hashes.

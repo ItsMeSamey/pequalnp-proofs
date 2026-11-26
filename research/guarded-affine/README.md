@@ -61,3 +61,5 @@ For k=1 an oracle finding a witness subject to affine restrictions on observed b
 The Lean chart theorem recovers the supplied witness and satisfies the selected active guard at every observation, including cyclic dependencies. The tableau argument bounds the codimension of an accepting flat by the sum of path ANDs, parity tests and leaf deficiency. Its finite checker verifies the projected inner-product coset counts through three pairs. [Cyclic guard chart](../../lean/Research/CyclicGuardChart.lean) · [Tableau and preprocessing proofs](tableau-deficiency.md)
 
 The [sparse interpolation solver](../sparse-marker/README.md) is deterministic given a polynomial support bound. The [rank-two defect analysis](../rank-two-defect/README.md) gives a polynomial hyperbolic case and a reduction equivalence with alternating three-marker feasibility.
+
+The [occurrence-weight polynomial](../roabp/README.md) can have exponential ordered branching-program width in every variable order. A separate [three-color solver](../three-colors/README.md) decides simultaneous odd counts for its stated alternating guard class.

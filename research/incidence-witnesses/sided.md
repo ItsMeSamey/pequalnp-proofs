@@ -11,3 +11,5 @@ The incidence count L from these vertices to opposite deletions satisfies L≥(q
 Writing f(a)=(q−2)+C/[(q−1)²−a] gives C=2(q−1)N−(q−2)(q−1)²>0. By convexity f(a)+f(d−a)≤f(0)+f(d). Thus the residual has excess e≥ceil((V−floor(f(0)+f(d))−1)/3). The original circuit has s≥2N+d−1−floor(qd/(q²−d))+e.
 
 Set d=q²−26q. The companion script check-sided.py verifies with rational arithmetic that Nq≤100s for every integer 289 through 322. At q=322 it gives s≥335447 and the target is 334903. The proof has received an independent mathematical review, but is not Lean-formalized. It uses only weight-two correctness and the previously established adaptive restriction lemma, so the method does not imply asymptotic superlinear lower bounds on prime-order planes.
+
+For weaker sparse-mask promises, [a hashing construction](small-masks.md) yields small circuits over prime-order planes.

@@ -1,0 +1,11 @@
+At the node and order of tanner-taylor-unpinned.md, the true diagonal can be computed directly for every signing of all selected clauses, including the full V algebra. Write F_i(ξ,V) and G_i(ξ,z,V) for its first-row and second-row parity lifts at x_b=1 and Y_i=x_i=ξ. In the ring Q[V,z]/(V^ℓ,z^{j+1}) the bulk answer is
+
+    2^{n'−1} + 2^{n'−k−1} ∏_{i=1}^k (F_i(0,V)G_i(0,z,V) + F_i(1,V)G_i(1,z,V)).
+
+The first term counts all x_b=0 assignments at their neutral integrand. On x_b=1 only the k selected logical bits affect the integrand. Sum each of these independent bits after making the diagonal substitution. All other free choices give the scalar power of two. Polynomially many polynomial-size ring operations compute all orders and all retained V coefficients, despite the simultaneous binomial fixed-mask rank bound. In this construction inputs and coefficient sizes have polynomial bit lengths, including the output by the manuscript's coefficient estimates. No claim is made for other nodes of this layout or for the canonical layout.
+
+For the separate cubic graph branch with negative binary clauses, the original Tanner common-zero queries admit a bulk Fourier calculation. Reduce all parity equations modulo two, including the constant column, and take a basis Q₁,…,Qρ in the vector space of degree-at-most-two Boolean polynomials. If 1 belongs to their span, return zero. Otherwise the common-zero count is
+
+    2^{−ρ} Σ_{λ∈F₂^ρ} Σ_{x∈F₂^{n'}} (−1)^{Σᵢ λᵢ Qᵢ(x)}.
+
+Each inner sum is polynomial-time exact. Pick a degree-two term x_u x_v, write the polynomial as x_u x_v + A x_u + B x_v + C where A,B are affine in other variables and C is quadratic. Summing over the two pivots yields 2(−1)^{AB+C}; reduce squares to degree one and repeat. At affine degree a nonconstant linear term gives zero and a constant gives ±2^{remaining variables}. Streaming λ needs polynomial space. Complexity 2^ρ poly(n',m). This computes the original common-zero query, not intermediate rational Taylor jets. For just the permanent checks, ρ ≤ 2q_G ceil(d_G/8B)=O(m/B+m/d_G+1); after s appended checks the bound increases by at most s. Thus with m=Θ(n), growing B and s=o(n) this gives 2^{o(n)} despite linear primal treewidth, albeit without a general polynomial guarantee. Sparse evaluator or Fourier enumeration may be chosen according to measured bounds.

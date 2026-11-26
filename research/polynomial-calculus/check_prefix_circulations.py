@@ -113,6 +113,26 @@ def check(n, heads, tails):
     return 1
 
 
+def check_even_cycle(n):
+    # Encode each reduced quadratic monomial x_i x_j as a bit.
+    basis = {}
+    for i in range(n):
+        if i in (0, n - 1):
+            v = 0 if i == 0 else n - 2
+            pairs = [(v, j) for j in range(n - 1) if j != v]
+        else:
+            pairs = [(i - 1, i)]
+        polynomial = sum(1 << (max(a, b) * n + min(a, b)) for a, b in pairs)
+        while polynomial:
+            lead = polynomial.bit_length() - 1
+            if lead not in basis:
+                basis[lead] = polynomial
+                break
+            polynomial ^= basis[lead]
+        assert polynomial
+    assert len(basis) == n
+
+
 def main():
     pairs = [(h, tuple(v for v in range(2) if mask >> v & 1))
              for h in range(2) for mask in range(4)]
@@ -130,8 +150,10 @@ def main():
                  for _ in heads]
         checked += check(n, heads, tails)
         total += 1
+    for n in range(6, 52, 2):
+        check_even_cycle(n)
     print(f'{total} presentations checked; {checked} met the potential criterion. '
-          'Every model, exported kernel and marker answer agreed.')
+          'Every model, exported kernel and marker answer agreed; 23 cycle ranks passed.')
 
 
 if __name__ == '__main__':
