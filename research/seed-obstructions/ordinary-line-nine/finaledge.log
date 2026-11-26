@@ -1,0 +1,11 @@
+Seven point-exclusive pairs and seven line-exclusive pairs verified.
+The minimum is 13 mixed gates with all monotone one-side signals free.
+Hard banks 72 orbits [(3, 13), (3, 26), (6, 13), (17, 13)]
+Testing 3 13 0 1
+Passed 17 UNSAT checks
+Testing 3 26 1 0
+Passed 17 UNSAT checks
+Testing 6 13 2 1
+Passed 17 UNSAT checks
+Testing 17 13 0 4
+Passed 17 UNSAT checks
