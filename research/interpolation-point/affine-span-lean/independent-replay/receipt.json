@@ -1,0 +1,84 @@
+{
+  "commit": "4e05c07168dcbbe8d9d57c457b2b8b0eb931beee",
+  "rel": "research/interpolation-point/affine-span-lean",
+  "tree": "ea89c5bd97ad1396ba54c63d8003a34cf865531b",
+  "manifest_sha256": "f43f1c619ce28e3dae9b72478f6c4fcb00ef1a2779f949c9970ce005acc1d745",
+  "modules": [
+    {
+      "module": "ExactPlaneSubsetPolynomial",
+      "source_sha256": "bd5cc5aa1d585628ea108315589eb7f09e66a1806b9b5ad354149867aa8c3c8c",
+      "olean_sha256": "996a2af5233b3b512b1aabf672423edd418da7ffe0e470f72f07ba3476f3de8a",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/Algebra/BigOperators/Group/Finset/Basic.olean",
+        "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/Data/Finset/Powerset.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneSubsetPolynomial.low_coeff_zero_iff_low_eval_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneSubsetPolynomial.exists_small_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneAffineSparse",
+      "source_sha256": "772fe34db6398fca022032c696d25b180af07277dd69368eeea64fc03490a871",
+      "olean_sha256": "07403740a5148017f1b171defb149cab2a1c7c8ae81a31cc729164ba2e84690b",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-exact-plane-blc725jv/fresh/ExactPlaneSubsetPolynomial.olean",
+        "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/Tactic/Abel.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneAffineSparse.quartic_hit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneAffineSparse.covered_hit' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneAffineSubstitution",
+      "source_sha256": "c20691b274a3d645230225b4e5b5e68bc43464a9fb0d6602e6a11875af60f0a8",
+      "olean_sha256": "1acb2c60510036e21b84c9f71db6b19046a90fa139d51a39c7a6029d47408266",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-exact-plane-blc725jv/fresh/ExactPlaneSubsetPolynomial.olean",
+        "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/Algebra/BigOperators/Ring/Finset.olean",
+        "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/Data/ZMod/Basic.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneAffineSubstitution.affine_pullback' depends on axioms: [propext, choice, Quot.sound]",
+        "'ExactPlaneAffineSubstitution.explicit_pullback' depends on axioms: [propext, choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneAffineSpanHit",
+      "source_sha256": "2c6f17f44a095553635bec4530f33ddd41004db9d952f155e0e44c655d62a51a",
+      "olean_sha256": "c2c0e3eb76677d7602ad6d383a22503b4c5ec639fe095ae04359870456830910",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-exact-plane-blc725jv/fresh/ExactPlaneAffineSparse.olean",
+        "/dev/shm/review-exact-plane-blc725jv/fresh/ExactPlaneAffineSubstitution.olean",
+        "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineSubspace/Defs.olean",
+        "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/LinearAlgebra/Finsupp/LinearCombination.olean",
+        "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/Algebra/CharP/Two.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneAffineSpanHit.quartic_span_hit' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  ],
+  "pinned_packages": {
+    "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "plausible": "054b228ce0ac61d767c6e71ba73a24728f191b72",
+    "LeanSearchClient": "4fb58e749ef3fc0395fe274f6cab70c2ea85f1c9",
+    "importGraph": "8370c640afcd1cc3fb1cb9bf1560cc66eafee5e0",
+    "proofwidgets": "2f0f3520daeac2d9310ff25b7a877a0e5cdaa203",
+    "aesop": "66ff77cf0c4c898799e4b94d14db55f7a02d0c5a",
+    "Qq": "ff055a2fcc835935e0ae607339b455a5f5896b4b",
+    "batteries": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+    "Cli": "50810f72af7618bee62fe9800dc26e806c188703"
+  },
+  "lean_sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "prerequisites_sha256": "b99b2eeff9b445978b2b3d9275a58e0ced195176b444ee6294ec4f0329b6c4ef"
+}

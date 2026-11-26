@@ -1,0 +1,14 @@
+/dev/shm/review-exact-plane-blc725jv/research/interpolation-point/affine-span-lean/ExactPlaneAffineSpanHit.lean:13:8: warning: automatically included section variable(s) unused in theorem `_private.ExactPlaneAffineSpanHit.0.ExactPlaneAffineSpanHit.dbl`:
+  [Fintype J]
+  [DecidableEq J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype J] [DecidableEq J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-exact-plane-blc725jv/research/interpolation-point/affine-span-lean/ExactPlaneAffineSpanHit.lean:33:28: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-exact-plane-blc725jv/research/interpolation-point/affine-span-lean/ExactPlaneAffineSpanHit.lean:33:28: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ExactPlaneAffineSpanHit.quartic_span_hit' depends on axioms: [propext, Classical.choice, Quot.sound]
