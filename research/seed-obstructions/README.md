@@ -21,3 +21,7 @@ The two subset certificates each select 15 named seed slots. Their inputs all co
 On the normalized residual the [mixed-gate complexity](mixed.md) is exactly 13 when arbitrary monotone functions of either side are free.
 
 A [complete suffix search](suffix-search/COPY.md) excludes freezing the first 15 gates of either seed in the normalized 33-gate residual problem. It allows arbitrary binary monotone suffixes with shared intermediate wires.
+
+[Raw-to-residual transfer](raw-transfer.md) proves that the optimal raw suffix uses exactly one more gate than the optimal normalized residual.
+
+[Point-boundary accounting](charge-review.md) proves that every residual solution using at most 33 gates requires at least eight distinct point-side boundary signals and at least 14 mixed gates, with no bound on line-side signals.

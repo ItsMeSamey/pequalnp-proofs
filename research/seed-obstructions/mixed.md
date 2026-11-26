@@ -15,3 +15,5 @@ A circuit with exactly 13 mixed gates must use exactly 14 boundary signals, seve
 Take any positive/negative pair whose positive is dominated by its negative on the opposite side. At least one of the seven signatures must contain the positive coordinate and avoid every coordinate of the negative. Initialize required and forbidden membership bits from the indexed packing pairs. Whenever a constraint has only one eligible signature, add its required and forbidden bits to that signature. Iterating these forced deductions fixes every one of the 91 point-side membership bits and 49 line-side bits. The point signatures are exactly the seven four-point neighborhoods. The line signatures are exactly the seven singleton line indicators. This conclusion fixes signatures on singletons and allows arbitrary monotone values on other side inputs consistent with those signatures.
 
 Run `python verify_unique.py` to reproduce the deductions using only the standard library.
+
+[The equality case](equality.md) needs exactly 34 total residual gates when it uses 13 mixed gates. Any 33-gate solution would therefore need at least 14 mixed gates.
