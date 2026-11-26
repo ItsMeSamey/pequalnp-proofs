@@ -8,3 +8,5 @@ Under the one-true-OR hypothesis, the [diagonal marker argument](one-active-or.m
 g++ -std=c++20 -O2 one-active-check.cpp -o /tmp/crown-one-active
 /tmp/crown-one-active
 ```
+
+[CrownGateCounts](../../lean/Research/CrownGateCounts.lean) formally proves that representing the 12-crown with at most 21 OR gates needs at least 132 AND gates. Every representation of total size at most 40 therefore has at least 22 OR gates.

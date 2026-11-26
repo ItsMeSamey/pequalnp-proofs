@@ -71,3 +71,7 @@ The [anchor-completion algorithm](../anchor-completion/README.md) counts models 
 For alternating guards with several markers, the [cycle-block algorithm](../cycle-blocks/README.md) reconstructs witnesses when the cycle rank of each biconnected block and the marker width are bounded.
 
 [Counting induced even sets modulo k](../modular-even/README.md) is hard on simple bipartite graphs for each fixed k ≥ 2. [Marked local complementation](../marked-local-complements/README.md) gives a paired-edge encoding, and [bipartite circle graph flows](../circle-flow/planar-proof.md) give a witness algorithm on the specified class.
+
+The [graphic fundamental-matrix algorithm](../graphic-multiple-markers/README.md) handles any fixed number of markers using a multiparity linkage theorem. The finite checker verifies the reductions; it does not implement the linkage oracle.
+
+The [tight-cut parity calculation](../tight-cut-parity/README.md) uses distinct cut-edge states and Walsh characters to recover prescribed parity signatures from the stated brace oracles.

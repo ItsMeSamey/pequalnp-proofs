@@ -1,0 +1,7 @@
+C6 via two squares (6, 2, 12)
+parallel-edge labeled (3, 3, 12)
+K33 splices 2 (15, 12, 12)
+K33 splices 3 (21, 24, 12)
+K33 splices 4 (27, 48, 12)
+K33 splices 5 (33, 96, 12)
+K33 splices 6 (39, 192, 12)
