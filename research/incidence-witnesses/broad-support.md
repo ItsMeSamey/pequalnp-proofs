@@ -1,0 +1,19 @@
+# Freezing shared gates with broad singleton support
+
+Fix q≥101, N=q²+q+1, C=q+1 and k=floor(q/8). Consider a list of t≥1 nominated internal gates. For each choose either at least m point singletons on which it is true, or at least m line singletons on which it is true. The gates can compute arbitrary mixed functions. There are no fanout or path restrictions on them. If
+
+    t [ exp(−m/(2C)+(exp(1)−1)km/N) + exp(−km/(2N)) ] < 1,
+
+there exists an edge-free padding mask of at most k points and k lines which sets every nominated gate to one. In particular m≥C0 q log(2t) for a sufficiently large absolute constant C0 suffices whenever such supports exist.
+
+Independently choose k uniform lines with replacement as T0, then take k uniform points with replacement from the points avoiding T0 as P0. This latter set is nonempty since kC<N. For a line support of size m the chance it is missed is at most exp(−km/N). For a point support A of size m, let X_i count its points on the ith chosen line. We have 0≤X_i≤C and E[X_i]=Cm/N. Convexity on [0,1] gives exp(X_i/C)≤1+(exp(1)−1)X_i/C, whence E exp(sum X_i/C)≤exp((exp(1)−1)km/N) by independence. Markov bounds the chance that even m/2 support points are covered by the first exponential in the display. Otherwise at least m/2 members of A remain available and their chance of being missed by P0 is at most exp(−km/(2N)). A union bound over nominated supports proves existence. The padding may contain fewer than k distinct vertices on either side. The exponent of the first term is at most −c m/q for an absolute c>0 because k≤q/8; also k≥q/9 for q≥101 except a few small values where k≥q/10 still suffices.
+
+On top of this padding allow only free points avoiding T0 and free lines avoiding P0, excluding the pad vertices themselves. This excludes at most kC+k vertices on either side. Remove k edges at each vertex by discarding k perfect matchings of the original plane graph before restricting to free vertices. Such a decomposition exists for regular bipartite graphs. Restrict the remaining graph to free vertices to obtain J with at least
+
+    E0=N(C−k)−2k(C+1)(C−k)
+
+edges, each vertex of degree at most C−k. Its proper-neighborhood test for e has at most C−k−1=q−k free lines. The padded input is thus legal. The points and lines selected among the free vertices have no incidence in the original graph, even if J is not induced, by the four-cycle exclusion. They also do not form incidences with the pads. Empty and singleton free masks reject; free incident pairs accept.
+
+All nominated gates are constantly one on this restriction by monotonicity. If every shared internal gate was nominated, the residual root is a formula with at most s+1 leaves and hence s+1≥E0 by the proper-neighborhood rank proof. More generally, with h remaining shared internal gates, a bound involving h alone needs control of duplicate uses and semantic signatures. The signature bound gives 2^h(s+h+1)≥E0, without a bound on the fanout of those h gates: cut them into h+1 read-once fragments, and group positive KW rows by their h-bit signature, as in sharing-signatures.md. This applies to the trimmed graph J; degree-one leaves use essentiality or the single-vertex rank refinement. Alternatively, if the remaining total internal excess is at most h, literal unfolding gives at most 2^h(s+1) leaves since the maximum path multiplicity is at most the product of fanouts, itself at most 2^h.
+
+For q≥101, (C−k)/q≥7/8+1/q and [N−2k(C+1)]/N≥3/4−1/(4q), so E0>(21/32)Nq. Thus at most six unbounded-fanout exceptions still yield s≥Nq/100. If h≤6 and s<Nq/100 then 2^h(s+h+1)≤64(Nq/100+7)<(21/32)Nq for this range. Equivalently any prospective below-target circuit must have at least seven shared internal signals excluding the nominated broad class. This is an unconditional structural dichotomy; it does not assert that general shared gates have broad singleton supports.
