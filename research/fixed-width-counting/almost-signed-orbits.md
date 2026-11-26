@@ -1,0 +1,9 @@
+# Recovering an invariant wide family from edits
+
+For the candidate swap group of signed-exchangeability.md group observed clauses by signature. A balanced component contributes binom(s,p) binom(s-p,q) to its orbit size M. A partial unbalanced component contributes binom(s,r)2^r, a full unbalanced component 2^{s-1}. Multiply across components. If a members are observed then a=M detects completeness. The exact edit distance to the nearest invariant family is sum min(a,M-a) over represented orbits: round to the nearer of full or empty. Absent orbits can be omitted. Every chosen dense orbit has M<=2a, allowing polynomial enumeration of missing clauses.
+
+For edits |F triangle F0|<=b and signed swap t, write Delta_F(t)=|F triangle tF|. The triangle inequality bounds |Delta_F(t)-Delta_F0(t)| by 2b. Thresholding at 2b recovers all ideal swaps and recovers only ideal swaps if all nonpreserving swaps have ideal discrepancy >4b. Majority decoding recovers all ideal orbits of size >2b, including occupied ones since they have a surviving representative. Smaller orbits can remain ambiguous. A witness C in F0 with tC absent gives a lower bound twice the size of its orbit under ideal symmetries fixing both coordinates pointwise and commuting with t: all translates remain on the same discrepancy side.
+
+At ideal discrepancy exactly 4b a swap can be ambiguous: F0 has 2b clauses x OR z_i; observe only the first b. The empty family and F0 both differ from the observed by b edits, but only the former preserves x/y exchange. Local near-invariance alone need not imply global proximity. For even n>=8 take n/2 width-(n-2) positive clauses missing the endpoints of matching edges. Every ordinary transposition has discrepancy zero or four. Yet the nearest S_n-invariant formula is n/2 edits away because the full orbit has binom(n,2) clauses.
+
+Partial orbit counting is in incomplete-orbits.md and independent swap tests in check_robust_swaps.py.
