@@ -45,3 +45,5 @@ The [signed interval compiler](intervals.md) gives a parsimonious reduction when
 [Quadratic traces](../quadratic-traces/README.md) admit an exact affine cover and partition count obtained from their maximum common isotropic dimension. The two-form binary case has a constructive polynomial algorithm.
 
 [Forest and matching compiler bounds](../forest-compilers/README.md) distinguish succinct decision encodings from exact projected-model representations.
+
+[Signed frontier aggregation](../signed-frontiers/README.md) gives exact counting bounds and parsimonious embeddings that test the limits of frontier-size arguments.
