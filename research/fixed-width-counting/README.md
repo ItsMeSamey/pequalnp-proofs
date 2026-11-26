@@ -47,3 +47,5 @@ The [signed interval compiler](intervals.md) gives a parsimonious reduction when
 [Forest and matching compiler bounds](../forest-compilers/README.md) distinguish succinct decision encodings from exact projected-model representations.
 
 [Signed frontier aggregation](../signed-frontiers/README.md) gives exact counting bounds and parsimonious embeddings that test the limits of frontier-size arguments.
+
+The [signed long-clause pivot](long-pivot.md) and [selector-rank reduction](long-selector-rank.md) give counting algorithms when their stated rank or support bounds hold.

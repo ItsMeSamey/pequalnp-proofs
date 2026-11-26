@@ -69,3 +69,5 @@ A [parity matching reduction](../trail-matching/README.md) solves eligible guard
 The [anchor-completion algorithm](../anchor-completion/README.md) counts models with bounded cross-tree coupling rank. Without that rank bound, even the specified depth-one class is #P-hard.
 
 For alternating guards with several markers, the [cycle-block algorithm](../cycle-blocks/README.md) reconstructs witnesses when the cycle rank of each biconnected block and the marker width are bounded.
+
+[Counting induced even sets modulo k](../modular-even/README.md) is hard on simple bipartite graphs for each fixed k ≥ 2. [Marked local complementation](../marked-local-complements/README.md) gives a paired-edge encoding, and [bipartite circle graph flows](../circle-flow/planar-proof.md) give a witness algorithm on the specified class.
