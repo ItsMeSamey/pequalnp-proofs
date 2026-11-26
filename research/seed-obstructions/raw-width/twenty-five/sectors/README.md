@@ -13,3 +13,5 @@ The serial both-empty archive excludes comparable twice-read extra endpoints wit
 The triply read extra endpoint with a nonempty compulsory set is excluded by the 167 producer solver results in the triple-X archive. Independent source review covered the domain and filter hypotheses. A separate full numerical replay of these 167 results was pending at publication. Together with the empty-set archive this completes the single triply read extra endpoint case. Other two-endpoint assignments remain open.
 
 For two comparable twice-read extra endpoints, the upstream-only archive excludes the case in which only the upstream endpoint holds compulsory singleton points. The producer ran the complete replay, and an independent reviewer cleared the source.
+
+The parallel-one-final archive excludes incomparable twice-read extras with exactly one locally nonempty compulsory set, allowing the endpoint names to be exchanged. The complete 369-case inventory leaves seven maps with eight filter choices each. An independent reviewer replayed the terminal witness rows and all 56 map/filter combinations.
