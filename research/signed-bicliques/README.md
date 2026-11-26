@@ -40,3 +40,5 @@ Sum-product tensor composition and structural model counting are established tec
 * [Model Counting for CNF Formulas of Bounded Modular Treewidth](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.STACS.2013.55)
 * [Model Counting for Formulas of Bounded Clique-Width](https://arxiv.org/abs/1409.8464)
 * [Efficient Contraction of Large Tensor Networks for Weighted Model Counting through Graph Decompositions](https://arxiv.org/abs/1908.04381)
+
+[Expanding incidence graphs](expander.md) give a parsimonious, linear-combinatorial-size encoding of arbitrary 3-CNF with three distinct variables per clause and at most 23 occurrences per variable. The graphic core also gives an exact cut-rank formula and a counting algorithm parameterized by the variables touched by nonlinear defects.
