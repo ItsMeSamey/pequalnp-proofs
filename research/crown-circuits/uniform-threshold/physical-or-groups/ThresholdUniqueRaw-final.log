@@ -1,0 +1,9 @@
+ThresholdUniqueRaw.lean:210:14: warning: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [k, o, tag] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdUniqueRaw.forest_saved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdUniqueRaw.group_raw_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
