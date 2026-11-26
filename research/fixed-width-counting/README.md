@@ -53,3 +53,5 @@ The [signed long-clause pivot](long-pivot.md) and [selector-rank reduction](long
 [Combined Walsh selectors](long-walsh.md) handle overlapping low-support groups and exceptional clauses. The [Walsh family](long-walsh-family.md) and [projective clause family](long-boolean-profiles.md) compare these sufficient conditions with incidence rank, signed intervals and the number of distinct unions.
 
 A [width-normalization reduction](long-width-barrier.md) recovers an ordinary model count using two counts whose clauses all have the same prescribed width.
+
+Three additional reductions handle a bounded-width core with arbitrary exceptional clauses. [Consistent unions](cofactor-unions.md) give a signed dictionary of core restrictions, sharing the inclusion–exclusion identity used in [signed frontier counting](../signed-frontiers/README.md). [Compatible intersections](long-cycle.md) allow a degeneracy bound or a switch to enumeration after enough variables are pinned. [Common disjunctions](long-pivots-split.md) give at most three choices for each shared core of wide clauses. Run `python3 cofactor_unions_check.py` for the dictionary tests.
