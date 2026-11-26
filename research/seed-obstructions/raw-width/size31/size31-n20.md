@@ -1,0 +1,3 @@
+# Exact size 31, twenty raw inputs
+
+The domain is the normalized L-meta-18968 separator at s=31,n=20,k=12. Its sole optional point primitive must be mask 2, so all thirteen point singletons and all seven raw line flags are present. The nested five-mandatory supplier proof rules out at least three ordinary labels and fifteen of the twenty-one ordinary pairs. The seven-owner equality, one-ordinary clamp and two-ordinary joint clamp proofs respectively exclude zero ordinary labels, every one-ordinary choice, and the remaining six ordinary pairs within {1,2,3,5}. These are the cases under the original physical owner partition. This excludes only n=20 at this size. The cases n=21 and n=22 are separate.
