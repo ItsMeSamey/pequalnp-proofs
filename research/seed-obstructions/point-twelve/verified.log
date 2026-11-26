@@ -1,0 +1,3 @@
+width 12 gates 3 verdict False {'restarts': 188, 'conflicts': 7197, 'decisions': 9932, 'propagations': 10021249}
+width 12 gates 4 verdict False {'restarts': 1019, 'conflicts': 31297, 'decisions': 46241, 'propagations': 26521837}
+5 raw OR gates suffice: all 12 signals plus the seven lines distinguish every original positive from every negative.
