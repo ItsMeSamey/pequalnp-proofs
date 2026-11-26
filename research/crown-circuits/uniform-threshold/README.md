@@ -1,5 +1,7 @@
 # Threshold two at every arity
 
+The matching construction gives **C(n) ≤ 2n + √(2n) + O(n^(3/10))**. Together with the lower bound below, this gives **C(n) = 2n + √(2n) + O(n^(3/10))**. The proof counts matching signatures and gives a deterministic finite search for a suitable graph. The optimal remainder is open. [Construction](matching-signatures.md)
+
 For n ≥ 4, the minimum number C(n) of fan-in-two monotone AND/OR gates with unrestricted fanout satisfies **C(n) ≥ 2n + (√(8n−7)−7)/2**. The frozen manuscript received independent mathematical proof reviews. Combined with Theorem 9 of Krapivin, Przybocki and Subercaseaux, this gives **C(n) = 2n + √(2n) + O(n^(1/3))**. The full proof is a mathematical manuscript. [Proof of the stronger bound](shared-or-cut.md) · [Upper bound](https://doi.org/10.4230/LIPIcs.SAT.2026.23)
 
 ## Earlier all-arity bound
