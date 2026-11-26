@@ -1,0 +1,23 @@
+# Target-specific degree-three and degree-four identities for 3-coloring
+
+For the native indicators x,y,1+x+y represent a vertex by v=(1+x,1+y). The three legal states are precisely the nonzero vectors of binary two-space. For adjacent u,v write d_uv=det(v_u,v_v). The sum of the three forbidden same-color products is 1+d_uv. Conversely d_uv=1 requires both vectors nonzero and unequal, which satisfies all native vertex and edge rows. Thus for nonisolated vertices the determinant equations d_uv=1 are an exact replacement. Each isolated vertex contributes a separate factor of three.
+
+The polynomial identity v_a d_bc+v_b d_ac+v_c d_ab=0 supplies a degree-three certificate for v_a+v_b+v_c=0 on every triangle: multiply each edge equation d+1 by the opposite vertex coordinate and sum. The native degree-two row span exposes no such affine equation: a cross term x_u y_v uniquely identifies the third edge row, followed by x_u x_v and y_u y_v for the other two rows, and each vertex row has its private x_v y_v. Two triangles with a common edge therefore force equality of their opposite vertices. Closing these identities by Gaussian elimination may identify distant vertices. Adjacent vertices identified this way certify rejection. Adding edges between known unequal vertices or identifying proven equal vertices preserves the labeled count.
+
+For four vertices the universal degree-four identity is
+
+    d_ab d_cd + d_ac d_bd + d_ad d_bc = 0.
+
+If A×B is a biclique, every pair a,a' in A and b,b' in B gives d_aa' d_bb'=0 by substitution of the four cross-edge equations. Substitution is a degree-four derivation since replacing a factor d by one costs a multiple of d+1 of degree at most four. Thus either all A vertices are equal or all B vertices are equal. This conclusion uses that the endpoint vectors are nonzero. External and internal edges may be arbitrary. Writing N for the number of proper colorings, inclusion–exclusion gives
+
+    N(G)=N(G/A)+N(G/B)−N(G/A/B),
+
+where contraction identifies the vertices of the named set and a loop gives zero. The subtraction is essential. In particular N(K_s,t)=3·2^s+3·2^t−6 for positive s,t. More generally graphs assembled by single-vertex sums of complete bipartite or complete tripartite blocks have a polynomial count: multiply the block counts and divide by three at each join, since global color permutations balance the color of the attachment. These blocks and articulations can be recognized directly. This permits unbounded treewidth and an unbounded number of colorings.
+
+## Two exact quotient counters
+
+Remove isolated vertices. Form the binary incidence matrix of all triangles, with a row containing their three vertices. Choose a kernel basis; for vertex v let p_v be the vector of its entries in the basis. If the kernel dimension is d, triangle-consistent vertex assignments are uniquely represented by ordered pairs a,b in binary d-space, via v=(a·p_v,b·p_v). Fixing a makes all edge equations linear in b, with coefficient (a·p_u)p_v+(a·p_v)p_u and right side one. For each a count the consistent b by Gaussian elimination.
+
+Alternatively set Z_ij=a_i b_j+a_j b_i, a symmetric zero-diagonal matrix. Each edge imposes a linear equation p_uᵀZp_v=1 on its upper triangle. Reject an inconsistent system immediately. Let h be the dimension of the solution space's direction. Enumerate it and retain matrices of rank two. Indeed a compatible coloring has rank two whenever an edge exists. Conversely for a rank-two Z choose an entry Z_ij=1. Rows i,j are independent, and express each other row as a combination of these two with coefficients determined at columns i,j. Thus their wedge equals Z. The six possible ordered bases of this binary row space give six different pairs with that wedge and hence six different colorings. The edge constraints enforce that each incident vertex is legal. This yields count six times the number of rank-two candidates. Equivalently all principal four-by-four Pfaffians must vanish (nonzero rank is already forced). Either algorithm recovers one verified coloring for a positive count.
+
+The combined time bound is polynomial in the explicit graph size times 2^min(d,h), with no general bound on either exponent. For complete tripartite graphs with all parts nonempty, subtracting triangles that differ only in one vertex identifies each part, and the three remaining representatives satisfy one relation, giving d=2. As the balanced parts grow these graphs contain arbitrarily large complete bipartite subgraphs. By contrast, adding a triangle on each edge using a distinct new vertex preserves the 3-coloring count of an arbitrary graph (the third color extends uniquely), so merely covering all edges by triangles cannot guarantee tractability.
