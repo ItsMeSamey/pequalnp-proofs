@@ -1,1 +1,3 @@
 At 27 live raw inputs the four-touched, three-cut archive excludes all 35 one-block and 105 two-pair labelled profiles. An independent reviewer checked both encodings and the ledger. The discretionary-promotion archive excludes discretionary promotions under seven-special saturation. Its independent review checked all 876 partitions and the cut and restoration argument. Entirely mandatory configurations require separate analysis.
+
+Under entirely mandatory promotion, the separate filter-socket bound permits at most three filters. Its archive includes the short verifier and the singleton-closure argument. Other filter counts require their own exclusions.
