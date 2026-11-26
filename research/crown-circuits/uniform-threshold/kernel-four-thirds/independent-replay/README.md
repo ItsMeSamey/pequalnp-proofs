@@ -1,0 +1,11 @@
+# Independent serial replay of the threshold-two four-thirds theorem
+
+The input is the 92-source package at Git commit `d6ced71c7dbd8b5ee898882f5318ef78acf1050c`, under `research/crown-circuits/uniform-threshold/kernel-four-thirds`. The Git subtree is `77c29f5e19e0622a04e6bcf124a446e7beed84f6`. The packaged manifest has SHA-256 `9ec059530d04883b88893309a0c805bd673effbc2e4bd001bff4b262c6da224c`.
+
+The verifier extracts the package directly from Git, checks the source hashes and topological order, and invokes the pinned Lean binary serially with `-j1` from the bundled source root. The public-project build cache is excluded. The only reusable objects come from the pinned toolchain and third-party packages, including the expanded Mathlib cache. Each of the six PEqualNP project modules is recompiled. Before every compilation, `lean --deps` records which objects the compiler will read. Every dependency on a manifest module must resolve to an output created earlier in this run.
+
+The initial dependency auditor paused before module 17 because Mathlib's pinned `Analysis` cache is a symlink into shared memory. The corrected path check verified the exact namespace and object reached through the permitted package path. The supervisor checked the object hashes for modules 1–16 and continued at 17. This was a tooling preflight interruption. No source changed and no Lean compilation was repeated.
+
+Environment and package revisions appear in `environment.json`. The terminal receipt is `receipt.json`, the per-module source and object hashes appear in `objects.tsv`, and the search-path evidence appears in `resolved.tsv`. The compiler diagnostics are in `kernel.log`. The three public theorem axiom reports are in `axioms.log`. `overlay-dependencies.tsv` hashes the two additional Mathlib objects physically resident in the expansion directory and their corresponding pinned sources.
+
+On the same pinned environment, copy the scripts into a separate empty receipt directory, run `bash prepare.sh`, then `python replay.py` while holding the Lean slot. Run `python verify_receipt.py` to check the objects and dependency edges. The producer's packaged replay script skips the six PEqualNP modules. This independent runner includes them.

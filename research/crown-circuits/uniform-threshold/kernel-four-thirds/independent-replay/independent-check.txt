@@ -1,0 +1,1 @@
+92 distinct sources, 92 fresh objects; six PEqualNP modules; all local edges resolve to the fresh prefix; all three axiom reports match.

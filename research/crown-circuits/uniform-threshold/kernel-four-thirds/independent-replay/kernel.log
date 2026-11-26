@@ -1,0 +1,1035 @@
+[1/92 ThresholdFourThirdsArithmetic]
+
+[2/92 PEqualNP.Defs.CircuitLowerBounds]
+
+[3/92 PEqualNP.Defs.MetaComplexity]
+
+[4/92 PEqualNP.Defs.MetaComplexityMinimal]
+
+[5/92 PEqualNP.Defs.Base]
+
+[6/92 PEqualNP.Defs.MetaComplexityLgp]
+
+[7/92 PEqualNP.Defs.MetaComplexityLgpMono]
+
+[8/92 GateSurplus]
+'ResidualSurplus.scan_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.circuit_eval_annotation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.physical_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.constant_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.surviving_unpinned' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.pinned_minor_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.reindexed_pinned_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[9/92 T2RawIsolation]
+'T2RawIsolation.isolated_reader' depends on axioms: [propext, Quot.sound]
+
+[10/92 T2SoleOrSplice]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSplice.lean:17:21: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSplice.lean:17:25: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSplice.lean:17:25: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+
+[11/92 T2LexMinimum]
+'T2SoleOrSplice.exists_lexMinimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2SoleOrSplice.lower_after_deletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[12/92 T2SoleOrSuffix]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSuffix.lean:15:104: warning: Unused tactic linter: `exact fun h => False.elim (Bool.noConfusion h)` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSuffix.lean:33:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSuffix.lean:35:21: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSuffix.lean:35:30: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSuffix.lean:36:21: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSuffix.lean:36:30: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSuffix.lean:53:21: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSuffix.lean:53:53: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSuffix.lean:90:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSuffix.lean:97:22: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrSuffix.lean:97:22: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+[13/92 T2SoleOrEval]
+
+[14/92 T2SoleOrTopology]
+
+[15/92 T2BenchmarkNormalize]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2BenchmarkNormalize.lean:13:55: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2BenchmarkNormalize.lean:13:55: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2BenchmarkNormalize.lean:33:26: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2BenchmarkNormalize.lean:133:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2BenchmarkNormalize.lean:137:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2BenchmarkNormalize.lean:197:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp at impossible
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'T2BenchmarkNormalize.output_internal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2BenchmarkNormalize.canNormalize' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[16/92 ThresholdPublicMinimum]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPublicMinimum.lean:60:30: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [arity]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+[17/92 ThresholdFourThirdsReal]
+
+[18/92 ThresholdMinimumEndpoint]
+
+[19/92 ThresholdOrGroups]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrGroups.lean:320:44: warning: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [idsFrom, e, ih, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrGroups.lean:325:61: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [idsFrom, e, ors, ih, ors] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdOrGroups.abstract_groups' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdOrGroups.pin_real_of_lookup' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[20/92 T2OrPartition]
+'T2OrPartition.covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2OrPartition.boundary_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[21/92 ThresholdOrExtraction]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrExtraction.lean:58:40: warning: This simp argument is unused:
+  List.count_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Tree.gates, atRoot, childHits, ha, hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrExtraction.lean:60:40: warning: This simp argument is unused:
+  List.count_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Tree.gates, atRoot, childHits, eq, ha, hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrExtraction.lean:59:6: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrExtraction.lean:61:6: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrExtraction.lean:59:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrExtraction.lean:61:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrExtraction.lean:128:7: warning: Variable name `bd` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _bd
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrExtraction.lean:147:51: warning: This simp argument is unused:
+  Tree.gates
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.length_append, ha left, hb right, List.map_cons, List.map_append, List.sum_cons,
+    List.sum_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrExtraction.lean:157:15: warning: This simp argument is unused:
+  List.getElem?_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lay, id]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdOrExtraction.forest_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdOrExtraction.private_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdOrExtraction.book_of_earlier' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[22/92 ThresholdOrFrontier]
+
+[23/92 ThresholdOrWeight]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrWeight.lean:87:26: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+
+[24/92 ThresholdOrMultiplicity]
+'ThresholdOrExtraction.forest_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[25/92 ThresholdOrRaw]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrRaw.lean:11:27: warning: This simp argument is unused:
+  raw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rawTop]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrRaw.lean:13:27: warning: This simp argument is unused:
+  nr
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rawTop]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[26/92 ThresholdOrBranch]
+'ThresholdOrExtraction.extracted_book' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[27/92 ThresholdOrIncidence]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrIncidence.lean:18:12: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lt, lt', le_of_lt lt, ne_of_lt lt, ih, Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrIncidence.lean:18:32: warning: This simp argument is unused:
+  lt'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.countP_cons, lt, le_of_lt lt, ne_of_lt lt, ih, Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrIncidence.lean:18:63: warning: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.countP_cons, lt, lt', le_of_lt lt, ne_of_lt lt, ih, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrIncidence.lean:20:12: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ih, Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrIncidence.lean:20:59: warning: This simp argument is unused:
+  Nat.add_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.countP_cons, ih, Nat.add_assoc, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrIncidence.lean:24:12: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [nl, nl', not_le_of_gt gt, ne, ih]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrIncidence.lean:24:32: warning: This simp argument is unused:
+  nl'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.countP_cons, nl, not_le_of_gt gt, ne, ih]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrIncidence.lean:63:10: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [not_lt.mpr h.1, not_lt.mpr h.2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdOrExtraction.raw_count_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[28/92 ThresholdOrPhysicalBook]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrPhysicalBook.lean:16:46: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrPhysicalBook.lean:17:46: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrPhysicalBook.lean:16:46: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdOrPhysicalBook.lean:17:46: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ThresholdOrExtraction.regular_pool' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdOrExtraction.physical_book' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[29/92 T2RawReader]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2RawReader.lean:79:8: warning: Variable name `s` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _s
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ResidualSurplus.reader_deletion_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[30/92 T2RawDirect]
+'ResidualSurplus.direct_reader_deletion_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[31/92 T2PhysicalOverride]
+'T2PhysicalOverride.eval_edited' depends on axioms: [propext, Quot.sound]
+
+[32/92 T2RegularShape]
+
+[33/92 T2CubeDeletion]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2CubeDeletion.lean:50:4: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2CubeDeletion.lean:54:70: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2CubeDeletion.lean:101:21: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2CubeDeletion.lean:118:75: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2CubeDeletion.lean:208:37: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2CubeDeletion.lean:208:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'T2CubeDeletion.closed_deletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2CubeDeletion.direct_deletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[34/92 ThresholdRegularSource]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdRegularSource.lean:57:46: warning: This simp argument is unused:
+  ih
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.flatMap_cons, f]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdRegularSource.classified_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[35/92 ThresholdNamedIncidence]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdNamedIncidence.lean:28:116: warning: This simp argument is unused:
+  ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Tree.raws, Tree.gates, List.count_append, List.map_cons, List.sum_cons, List.map_append,
+    List.sum_append, ite_false, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdNamedIncidence.lean:28:119: warning: This simp argument is unused:
+  ite_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Tree.raws, Tree.gates, List.count_append, List.map_cons, List.sum_cons, List.map_append,
+    List.sum_append, ne, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdNamedIncidence.lean:33:39: warning: This simp argument is unused:
+  ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Tree.raws, Tree.gates]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[36/92 ThresholdUniqueRaw]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdUniqueRaw.lean:210:14: warning: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [k, o, tag] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdUniqueRaw.forest_saved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdUniqueRaw.group_raw_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[37/92 T2CubeAgreement]
+
+[38/92 ThresholdSimpleIncidence]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdSimpleIncidence.lean:52:23: warning: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [labels, e, mem, count, ih, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdSimpleIncidence.lean:53:31: warning: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [labels, e, ih]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdSimpleIncidence.lean:85:4: warning: Unused tactic linter: `change _ = true ↔ _ = true` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'ThresholdSimpleIncidence.classified_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[39/92 T2PhysicalRowTags]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2PhysicalRowTags.lean:20:26: warning: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [extendTags, ih, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ResidualSurplus.named_and_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.named_item' depends on axioms: [propext]
+
+[40/92 T2ThreeReaders]
+
+[41/92 T2AndChain]
+'ResidualSurplus.and_chain_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[42/92 T2AuxChain]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2AuxChain.lean:28:51: warning: This simp argument is unused:
+  List.length_map
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.length_append, List.length_cons] at edge
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2AuxChain.lean:21:14: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2AuxChain.lean:21:18: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2AuxChain.lean:22:14: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2AuxChain.lean:22:18: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2AuxChain.lean:21:18: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2AuxChain.lean:22:18: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'T2AuxChain.debit' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[43/92 T2RawTopology]
+'T2RawTopology.rawEdited_valid' does not depend on any axioms
+
+[44/92 T2SoleReader]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleReader.lean:25:19: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[45/92 T2PhysicalMaximum]
+'T2PhysicalMaximum.maximum_override' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[46/92 T2NamedProducer]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2NamedProducer.lean:29:10: warning: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'T2NamedProducer.named_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[47/92 T2ReaderActivation]
+'T2ReaderActivation.other_not_absorbing' depends on axioms: [propext, Quot.sound]
+
+[48/92 T2SoleAndDirty]
+'T2SoleAndDirty.other_internal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2SoleAndDirty.and_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[49/92 T2SoleAndMinor]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleAndMinor.lean:13:10: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleAndMinor.lean:13:14: warning: Unused tactic linter: `apply List.map_congr_left` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleAndMinor.lean:13:40: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleAndMinor.lean:13:44: warning: Unused tactic linter: `intro r _` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleAndMinor.lean:13:54: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleAndMinor.lean:13:58: warning: Unused tactic linter: `obtain ⟨o, x, y⟩ := r` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleAndMinor.lean:13:78: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleAndMinor.lean:13:82: warning: Unused tactic linter: `rfl` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleAndMinor.lean:13:14: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleAndMinor.lean:13:44: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleAndMinor.lean:13:58: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleAndMinor.lean:13:82: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'T2SoleAndMinor.named_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[50/92 T2SoleAndNamed]
+'T2SoleAndMinor.named_syntactic' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[51/92 T2ReaderConsumer]
+'T2ReaderConsumer.exists_consumer' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[52/92 T2SoleAndCase]
+'T2SoleAndMinor.sole_and_case' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[53/92 T2RawUsed]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2RawUsed.lean:35:49: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2RawUsed.lean:35:53: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2RawUsed.lean:35:53: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'T2RawUsed.positive_readers' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[54/92 T2MinimalLive]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2MinimalLive.lean:62:44: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2MinimalLive.lean:62:48: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2MinimalLive.lean:62:48: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'T2MinimalLive.no_duplicate_at_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2MinimalLive.consumer_at_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[55/92 T2DoubleReader]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2DoubleReader.lean:19:22: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2DoubleReader.lean:19:22: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2DoubleReader.lean:26:10: warning: This simp argument is unused:
+  List.getElem?_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2DoubleReader.lean:103:60: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [tag, openOut] at gOff
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2DoubleReader.lean:136:64: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [tag, openOut] at bOff
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'T2DoubleReader.double_and_deletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[56/92 T2SoleOrClean]
+
+[57/92 T2SoleOrHotRows]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrHotRows.lean:45:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrHotRows.lean:45:52: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrHotRows.lean:126:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp at card
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrHotRows.lean:108:13: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrHotRows.lean:121:66: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrHotRows.lean:137:79: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrHotRows.lean:108:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrHotRows.lean:121:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrHotRows.lean:137:79: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'T2SoleOrSplice.moved_hotRows_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[58/92 T2SoleOrEdit]
+'T2SoleOrSplice.physical_edit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2SoleOrSplice.no_clean_or_at_secondary_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[59/92 T2SoleOrCaller]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrCaller.lean:29:18: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrCaller.lean:29:18: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrCaller.lean:53:21: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrCaller.lean:59:39: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrCaller.lean:59:48: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrCaller.lean:59:48: warning: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ren, lt_self_iff_false, if_false, getD_new]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrCaller.lean:110:49: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrCaller.lean:110:53: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2SoleOrCaller.lean:110:53: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'T2SoleOrSplice.no_sole_reader' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[60/92 T2RegularOrDelete]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/T2RegularOrDelete.lean:78:46: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+'T2RegularOrDelete.regular_or_delete' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[61/92 ThresholdUnrestrictedGraph]
+'ThresholdUnrestrictedGraph.regular_graph_or_delete' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[62/92 ThresholdPublicInduction]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPublicInduction.lean:40:31: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPublicInduction.lean:40:45: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPublicInduction.lean:40:31: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPublicInduction.lean:40:45: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+[63/92 ThresholdFanoutBudget]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdFanoutBudget.lean:53:57: warning: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [available, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdFanoutBudget.lean:82:7: warning: Variable name `unique` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _unique
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdFanoutBudget.lean:83:5: warning: Variable name `live` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _live
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdFanoutBudget.lean:84:5: warning: Variable name `one` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _one
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdFanoutBudget.lean:85:5: warning: Variable name `balance` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _balance
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdFanoutBudget.lean:86:5: warning: Variable name `classify` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _classify
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdFanoutBudget.lean:122:10: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [xl, xr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdFanoutBudget.regular_vertex_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[64/92 ThresholdGraphPostorder]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdGraphPostorder.lean:16:8: warning: automatically included section variable(s) unused in theorem `_private.ThresholdGraphPostorder.0.ThresholdGraphPostorder.no_boundary`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdGraphPostorder.lean:69:0: warning: automatically included section variable(s) unused in theorem `ThresholdGraphPostorder.anchor_edge`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdGraphPostorder.lean:121:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdGraphPostorder.lean:129:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdGraphPostorder.lean:134:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+
+[65/92 ThresholdEssentialOr]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdEssentialOr.lean:123:64: warning: This simp argument is unused:
+  List.getElem?_map
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.getD_eq_getElem?_getD, h, z]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdEssentialOr.lean:163:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [List.getD_eq_getElem?_getD, hi]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+[66/92 ThresholdPinCompiler]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:35:91: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:36:10: warning: Unused tactic linter: `split` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:36:16: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:36:20: warning: Unused tactic linter: `simp [ors]` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:36:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:36:20: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:55:90: warning: This simp argument is unused:
+  neutral
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lowerInputs, binaryStep, off, w, lower, act]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:56:73: warning: This simp argument is unused:
+  act
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lowerInputs, binaryStep, off, w, lower, neutral]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:58:90: warning: This simp argument is unused:
+  neutral
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lowerInputs, binaryStep, off, w, lower, act]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:59:73: warning: This simp argument is unused:
+  act
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lowerInputs, binaryStep, off, w, lower, neutral]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:111:28: warning: This simp argument is unused:
+  List.countP_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [step, o, skip, ors, charge, hit, ThresholdOrGroups.isOr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:156:55: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ors, e, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:189:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:193:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:216:57: warning: This simp argument is unused:
+  List.getElem?_set
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinFalse, List.getD_eq_getElem?_getD, small]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:217:48: warning: This simp argument is unused:
+  List.getElem?_set
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinFalse, List.getD_eq_getElem?_getD, List.getElem_set, small, eq, Ne.symm eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:217:66: warning: This simp argument is unused:
+  List.getElem_set
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinFalse, List.getD_eq_getElem?_getD, List.getElem?_set, small, eq, Ne.symm eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPinCompiler.lean:286:66: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+'ThresholdPinCompiler.restriction_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPinCompiler.essential_pin_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPinCompiler.weak_pin_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[67/92 ThresholdRemoteAnchor]
+
+[68/92 ThresholdPeelNative]
+'ThresholdPeelNative.witness_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[69/92 ThresholdPeelSchedule]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPeelSchedule.lean:18:21: warning: This simp argument is unused:
+  List.getElem_set
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinFalse, eq, Ne.symm eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdPeelSchedule.lean:18:38: warning: This simp argument is unused:
+  eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinFalse, List.getElem_set, Ne.symm eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[70/92 ThresholdEdgeRows]
+
+[71/92 ThresholdInteriorSchedule]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdInteriorSchedule.lean:12:8: warning: automatically included section variable(s) unused in theorem `_private.ThresholdInteriorSchedule.0.ThresholdPeelSchedule.base_subset`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[72/92 ThresholdGraphRows]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdGraphRows.lean:18:6: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [he, xw.ne, xz] at hit
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdGraphRows.lean:6:0: warning: automatically included section variable(s) unused in theorem `ThresholdPeelSchedule.path_rows`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[73/92 ThresholdCentralRows]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdCentralRows.lean:22:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hd, uw.ne.symm, wt] at hm
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdCentralRows.lean:35:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hr, au.symm, bu.symm] at hu
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+[74/92 ThresholdRemoteSchedule]
+
+[75/92 ThresholdAnchorEnumeration]
+
+[76/92 ThresholdStarRemote]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdStarRemote.lean:33:19: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdStarRemote.lean:41:59: warning: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.mem_flatMap, List.mem_map, List.mem_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[77/92 ThresholdStarReindex]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdStarReindex.lean:39:20: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [start, seed, h, e, wire, T2BenchmarkNormalize.FitsWire]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+[78/92 ThresholdCoveredPins]
+
+[79/92 Research.ThresholdFactors]
+
+[80/92 Research.WegenerThreshold]
+
+[81/92 ThresholdStarTruth]
+'ThresholdStarTruth.star_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[82/92 ThresholdGraphStar]
+'ThresholdGraphStar.physical_star_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[83/92 ThresholdEdgeRealization]
+
+[84/92 ThresholdPhysicalRows]
+
+[85/92 ThresholdDegreePeel]
+'ThresholdGlobalGlue.star_peel' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[86/92 ThresholdGraphCounts]
+'ThresholdGraphCounts.graph_edge_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdGraphCounts.degree_eq_raw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdGraphCounts.degree_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[87/92 ThresholdDegreeBudget]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdDegreeBudget.lean:24:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'ThresholdGlobalGlue.physical_degree_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[88/92 ThresholdComponentEdges]
+
+[89/92 ThresholdEndpointBound]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdEndpointBound.lean:13:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+
+[90/92 ThresholdEndpointComponents]
+/dev/shm/review-four-thirds-VTQGfm/research/crown-circuits/uniform-threshold/kernel-four-thirds/sources/ThresholdEndpointComponents.lean:11:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+
+[91/92 ThresholdRegularLedger]
+'ThresholdGlobalGlue.regular_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[92/92 ThresholdPublicFourThirds]
+'ThresholdPublicFourThirds.native_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPublicFourThirds.native_squared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPublicFourThirds.native_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+

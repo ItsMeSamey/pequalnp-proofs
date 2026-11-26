@@ -1,0 +1,3 @@
+'ThresholdPublicFourThirds.native_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPublicFourThirds.native_squared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPublicFourThirds.native_real' depends on axioms: [propext, Classical.choice, Quot.sound]
