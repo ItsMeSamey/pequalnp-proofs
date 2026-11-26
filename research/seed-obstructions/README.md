@@ -54,7 +54,7 @@ In the same relaxation, [all seven neighborhoods](../seven-neighborhoods/README.
 
 [Two arbitrary insertions](two-insertions/README.md) into a named 31-gate partial seed fail even with the specified rewiring and reordering freedoms. Its 273 rows match the pinned residual decoder in order.
 
-At a total budget of 33, every residual separator needs **at least eleven distinct point-boundary signals and at least twenty mixed gates**. The [higher-budget checks](ten-higher-mixed/README.md) exclude ten point-boundary signals through 21 mixed gates. Above 21 mixed gates the point-gate lower bound already exceeds the total budget.
+At a total budget of 33, every residual separator needs **at least eleven distinct point-boundary signals and at least twenty-one mixed gates**. The [higher-budget checks](ten-higher-mixed/README.md) exclude ten point-boundary signals through 21 mixed gates. Above 21 mixed gates the point-gate lower bound already exceeds the total budget.
 
 At 18 mixed gates with eleven point-boundary and seven line-boundary signals, the [eleven-point extension check](eleven-extensions/README.md) excludes every candidate whose point signatures contain a feasible proper subfamily. The checker exhausts all 278 representatives.
 
@@ -72,4 +72,4 @@ The exact point costs at boundary widths eleven, twelve, thirteen and fourteen a
 
 The [nineteen-mixed classification](nineteen-mixed/README.md) excludes all six possible boundary-width and operand-reuse cases at exactly nineteen mixed gates.
 
-At twenty mixed gates, eleven point wires and seven line wires already require total size at least 34. [Seven-line proof](twenty-mixed/README.md)
+All ten allocations with twenty mixed gates require total size at least 34. [Complete case index](twenty-mixed/README.md)

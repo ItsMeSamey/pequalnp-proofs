@@ -17,3 +17,24 @@ Every residual separator of size at most 33 must use **at least 21 mixed gates**
 - With nine line inputs, the [last-case proof](nine-lines.md) uses the [star-local frontier](star-eleven.zip), [zero-resident](zero-resident.zip) and [promoted-role](e1_five_cert.zip) reductions. The [two-star audit](two-star-cut.zip) independently enumerates all 660 tight raw-source profiles. Matching their remaining ten raw operand slots leaves no nonlocal bank satisfying all 1,323 obligations. The [independent equality-forest search](equality-forests-final.zip) reaches the same conclusion.
 
 These proofs use the earlier point-cost and gate-count results. The raw-operand argument requires rejection of the full negative samples by an actual separator. The certificates have separate replay procedures. The general 33-gate feasibility question remains open.
+
+## Allocation table
+
+The completed nineteen-mixed certificate gives P≥11, L≥7 and m≥20; P,L count distinct boundary wires on the point and line sides. At m=20 only 13 gates are available to the pure sides. Binary connectedness gives k=21−P−L extra operand uses beyond a tree. The exact minima of the necessary point-bank projection are 9 at width eleven, 5 at width twelve, and 0 at widths thirteen and fourteen.
+
+| P | L | k | Point cost before the mixed exclusion | Status |
+|---:|---:|---:|---:|---|
+| 11 | 7 | 3 | 9–13 | Excluded by the seven-line three-surplus proof |
+| 11 | 8 | 2 | 9–12 | Excluded by the eight-line support partition |
+| 11 | 9 | 1 | 9–11 | Excluded by the nine-line point and mixed checks |
+| 11 | 10 | 0 | 9–10 | Excluded by the ten-line matched normalization |
+| 12 | 7 | 2 | 5–13 | Excluded by seven-line two-surplus theorem |
+| 12 | 8 | 1 | 5–12 | Excluded by occurrence-linear eight-line one-surplus theorem |
+| 12 | 9 | 0 | 5–11 | Excluded by occurrence-linear nine-line transfers plus the new width-twelve quartet checker; see read-once-nine.md |
+| 13 | 7 | 1 | 0–13 | Excluded by seven-line one-surplus theorem |
+| 13 | 8 | 0 | 0–12 | Excluded by eight-line read-once theorem |
+| 14 | 7 | 0 | 0–13 | Excluded by seven-line read-once theorem |
+
+The intervals are necessary bounds from width and the minimum line cost of L−7. A given line-signature family may lower the upper endpoint. The seven-line k≤2 proofs reconstruct masks using bounds linear in the actual point-leaf count; changing P does not introduce a point-width assumption. The eight-line k≤1 proofs give the same linear recovery with local case splits. This cancellation is separate from the width-specific four-group checker indispensable at P12/L9.
+
+The eight-line checks use the [nine-paid endpoint search](endpoint-all.zip) and [ten-paid star-local search](endpoint-local10.zip).
