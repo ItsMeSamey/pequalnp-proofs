@@ -1,0 +1,11 @@
+# Routed AND orientations and receiver cost
+
+For each of the 21 pairwise incompatible maximal negatives n define T_n, b_n, c_n as the numbers of true internal gates, one-true ANDs, and two-false ANDs. Let τ_n be the minimum flag cover disjoint from n. Project every AND to one parent, taking the false operand at one-true ANDs. The resulting OR-only circuit still accepts all flags, rejects n, and its false cone needs τ_n−1 originally false ORs. Each originally true OR stays true after projections. Counting all ANDs separately gives s≥T_n+b_n+c_n+τ_n−1.
+
+Fixing only k_n≤b_n AND bits suffices if every completion disconnects the output from the raws in n. Choose a minimum such k_n. Such certifying subcubes are disjoint for different maximal negatives because their unions contain flags. Hence sum 2^(−k_n)≤1 and 2^s≥sum_n 2^(T_n+c_n+b_n−k_n+τ_n−1).
+
+Weight the 17 masks of τ=8 by two and the four of τ=7 by one, normalized by 38. Integer Kraft lengths k_n have mean at least the Huffman optimum. Pair the four units into two equal-weight nodes, leaving nineteen weight-two nodes of optimal lengths thirteen fours and six fives. Weighted path length is 2(13·4+6·5)+4=168. Mean τ_n−1 is 131/19. Thus s≤20 implies weighted mean [T_n+c_n+b_n−k_n] ≤165/19≈8.684210526.
+
+Alternatively take a subset B of physical ANDs still separating all 210 pairs by opposite one-true orientations. Subcubes fixing only the one-true bits of B at each n are disjoint, so b_n(B) may replace k_n above. A downstream blocker whose opposite orientation never occurs can be excluded, gaining one at n in addition to an upstream dirty gate's T_n credit. Each physical slot is priced once. A separate nonintegral refinement uses L_g,R_g for the weighted one-true frequencies, m_g=L_g+R_g. Give orientation bits independent biases L_g/m_g. Applying the entropy bound to these disjoint subcubes yields E[T_n+c_n]+sum_g m_g(1−H_2(L_g/m_g))≤20−log2(2432); omit m_g=0. Do not combine this last gain with the integral improvement by addition.
+
+These are necessary conditions. Routing and physical counts independently audited; integer and biased codes independently derived. No threshold-input identification or extra SAT attempt is used.
