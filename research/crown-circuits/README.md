@@ -1,5 +1,8 @@
 # False OR gates on a crown diagonal
 
+Every monotone binary circuit of size at most 40 representing the 12-crown on one-row, one-column inputs requires **at least 24 OR gates and at most 16 AND gates**. The kernel proof includes the threshold-two OR lower bound for physical circuits. The existence of a 40-gate circuit remains open. [Proof](twenty-four-ors.md) · [Lean theorems](../../lean/Research/CrownTwentyFourOrs.lean) · [Threshold-two lower bound](../../lean/Research/WegenerThreshold.lean)
+
+
 For a false cell in a one-hot input matrix, its row and column degrees sum to at most one plus the number of OR gates false on that cell. On the 12-crown, each diagonal cell therefore makes at least 21 OR gates false. If a circuit has 22 OR gates, each diagonal can make at most one of them true. The three formal modules are [ZeroCellDegree](../../lean/Research/ZeroCellDegree.lean), [FalseOrCount](../../lean/Research/FalseOrCount.lean) and [TrueOrCount](../../lean/Research/TrueOrCount.lean).
 
 Under the one-true-OR hypothesis, the [diagonal marker argument](one-active-or.md) gives a lower bound of 33 AND gates for the 12-crown. The [Lean marker proof](../../lean/Research/CrownMarkerBound.lean) now formalizes this argument and proves that any representation of total size at most 40 needs at least 23 OR gates. To reproduce the finite checks, run the following commands in this directory.
