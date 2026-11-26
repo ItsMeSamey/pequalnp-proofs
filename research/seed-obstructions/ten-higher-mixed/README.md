@@ -20,8 +20,17 @@ python verify.py --mixed 19 --lines 9 L-meta-18968.json refined-all.txt nine.txt
 
 A surviving mixed frontier or missing result fails the checker. With 22 or more mixed gates, the lower bound of 12 point gates already exceeds the total limit of 33. This argument concerns ten point boundary signals.
 
-After running the [17-mixed driver](../seventeen-mixed/README.md) with output directory `/tmp/seventeen-check`, reproduce a complete mixed-budget row from this directory with the following command. Replace 18 with 19 or 20 for the other completed budgets.
+After running the [17-mixed driver](../seventeen-mixed/README.md) with output directory `/tmp/seventeen-check`, reproduce a complete mixed-budget row from this directory with the following command. Replace 18 with 19, 20 or 21 for the other completed budgets.
 
 ```sh
 python3 verify.py --mixed 18 ../L-meta-18968.json /tmp/seventeen-check/ten/refined.txt ../nine-signatures/nine.txt /tmp/seventeen-check/distinct-survivors.txt /tmp/seventeen-check/duplicate-survivors.txt
 ```
+
+| Mixed gates | Seven line signals | Eight line signals | Nine line signals |
+| --- | ---: | ---: | ---: |
+| 18 | 7,908 / 446 | 53,550 / 2,508 | 175,567 / 7,997 |
+| 19 | 1,505 / 87 | 8,345 / 430 | 12,420 / 658 |
+| 20 | 260 / 19 | 667 / 49 | 0 |
+| 21 | 23 / 4 | 0 | 0 |
+
+Each cell gives the number of eligible families followed by the number of symmetry representatives. Every frontier becomes empty. At 21 mixed gates the four representative searches stop after 10, 10, 12, and 12 gates. Combined with the preceding lower bounds for smaller mixed budgets and smaller point boundaries, any separator of L-meta-18968 using at most 33 gates requires at least eleven distinct point-side boundary signals, counting signals by wire identity. The existence of such a separator with eleven or more point-side signals remains a separate question.

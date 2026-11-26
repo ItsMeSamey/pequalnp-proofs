@@ -54,6 +54,8 @@ In the same relaxation, [all seven neighborhoods](../seven-neighborhoods/README.
 
 [Two arbitrary insertions](two-insertions/README.md) into a named 31-gate partial seed fail even with the specified rewiring and reordering freedoms. Its 273 rows match the pinned residual decoder in order.
 
-With exactly ten point-boundary signals, [the higher-budget checks](ten-higher-mixed/README.md) exclude 18, 19 and 20 mixed gates. The 21-mixed case is still open in this release.
+At a total budget of 33, every residual separator needs **at least eleven distinct point-boundary signals and at least nineteen mixed gates**. The [higher-budget checks](ten-higher-mixed/README.md) exclude ten point-boundary signals through 21 mixed gates. Above 21 mixed gates the point-gate lower bound already exceeds the total budget.
 
 At 18 mixed gates with eleven point-boundary and seven line-boundary signals, the [eleven-point extension check](eleven-extensions/README.md) excludes every candidate whose point signatures contain a feasible proper subfamily. The checker exhausts all 278 representatives.
+
+For eighteen mixed gates, connectivity allows at most nineteen distinct boundary wires. With eleven or more point wires and seven or more line wires, the read-once cases have twelve point and seven line wires, or eleven point and eight line wires. The seven- and eight-line read-once bounds exclude both. The only other case has eleven point wires, seven line wires and one extra use. The extension check above and the [irreducible-signature search](eleven-irreducible/README.md) exclude it. The latter search eliminated all 1,047 candidates from five symmetry orbits.
