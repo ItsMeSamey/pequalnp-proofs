@@ -1,0 +1,13 @@
+# Deleting the isolated doubleton
+
+In the last five-group orbit the quartet Q belongs to the pure triangle and the doubleton D is isolated. Their supports are disjoint. Deleting the two labels of D spends exactly five gates, including exactly its sole AND reader, giving a minimum 23-gate, six-AND circuit for ten inputs. No gate of Q's private four-input OR tree is dark, reads a deleted raw, or is a one-sided boundary gate. Extra pruning is impossible at the ten-input floor.
+
+The kind-preserving regularization leaves this tree intact. A quartet raw x cannot have just its reader in the tree, since the other operand is true on some distinct singleton y and the output must distinguish y from x+y. For any sole-OR-read outside raw z, the removed gate z∨P is outside the tree and the promoted P is singleton-clean. Every nonempty private Q subtree accepts a singleton, so none acquires a new external use. Repeating this procedure yields two OR readers for each raw and preserves every tree gate and internal privacy. Consequently one flattened group contains all four raw labels, even if Q is itself absorbed.
+
+In a regular minimum 23-gate six-AND ten-input circuit, let p count the pure OR groups. The excess mixed-group operand budget r=p−3. A pure doubleton would save at least five gates by joint deletion against the eight-input floor of 19, so all pure degrees are at least three and 3≤p≤6. If K is the pure degree sum, there are at least K−10 pure edges.
+
+The basic star bound k+max(d,2)≤r+4 applies to mixed groups too, with k their raw degree and d the number of pure neighbors. Hardwiring the chosen group true preserves each nonempty assignment on its incident raws, and the empty case follows by monotonicity. The r+k−d residual OR budget additionally omits t−1 nonraw operand joins for a mixed central group. As in the pure star proof, the first max(0,2−d) mixed raw injections have zero other operand. Hence p≤4 forces k≤3 for all groups.
+
+If p=6 then K≥18 and there are at least eight pure edges. The component inequality gives k≤C+1 for any pure vertex, so C≥2. If C=2 all degrees are at most three and the partitions 5+1, 4+2, 3+3 allow at most seven edges. Three or more components allow at most six edges. Thus p=6 is impossible.
+
+If p=5, a pure quartet would force K≥16 and at least six pure edges, while C≥3 allows at most three. A mixed group of raw degree at least four must have k=4 and d≤2 by the star bound. But only five raw incidences at most are mixed, so there is at most one mixed endpoint outside it; at least three of its neighbors are pure. This contradiction proves that every group has at most three raw inputs. It excludes the surviving Q tree.
