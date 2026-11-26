@@ -1,0 +1,1 @@
+'ThresholdOrExtraction.extracted_book' depends on axioms: [propext, Classical.choice, Quot.sound]

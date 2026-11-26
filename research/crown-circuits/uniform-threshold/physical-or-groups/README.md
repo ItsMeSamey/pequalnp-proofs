@@ -11,3 +11,5 @@ The decomposition of an arbitrary regular normalized circuit into these certific
 The pinned Lean 4.36 kernel replay used the three standard axioms listed in replay.log. Compile GateSurplus first and include its compiled module on LEAN_PATH. [GateSurplus source](../../../seed-obstructions/pinned-surplus/GateSurplus.lean)
 
 The pinned extraction modules construct a forest from a backward binary physical layout and prove that each block checks against the circuit. Count transfer uses the local balance assumption. The book criterion uses the assumption that external roots occur earlier. The five endpoint axiom reports are recorded in extraction-axioms.log. A complete disjoint book with the raw-occurrence count remains a further formalization step.
+
+The later endpoint extracted_book builds a Book C n [] for a backward binary Layout satisfying MeetsInternal, which requires every AND to read only nonraw physical wires. Its CLI axiom report is in branch-axioms.log. The disjointness and 2n raw-occurrence arguments remain separate.
