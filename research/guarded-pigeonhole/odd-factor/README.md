@@ -1,0 +1,25 @@
+# A bounded-occurrence guarded separation
+
+There are deficiency-one guarded systems on N variables with a linear-line, degree-two polynomial-calculus refutation over GF(2). Their canonical truth-table CNFs require tree-like resolution over parities of size exp(Ω(√N)), and require Ω(N) levels of real Sherali–Adams and Ω(N) degree in real Boolean sum of squares with clause localizers. The communication bound concerns the search for a violated input constraint on a distributed assignment.
+
+## Construction
+
+Take n divisible by four. Replace every vertex of the complete bipartite graph K(n,n) with a path on its n incident ports, keeping the matching of corresponding ports for the original links. Choose one terminal per path. Take the disjoint union of this graph with a constant-degree edge expander H on Θ(n²) vertices. Let B be the binary incidence matrix. Put charge vector b on a root r of H and all 2n terminals. List the charged vertices as v₀=r,v₁,…,v₂ₙ. Define a=Dq by a₀=q₀ and aᵢ=qᵢ+qᵢ₋₁ along this list, using identity on uncharged coordinates. D is invertible and has at most two ones per row and column. Dᵀb is the unit vector at the last terminal.
+
+For each vertex i impose qᵢ[Dᵀ(Bz+b)]ᵢ=0. For each edge e impose zₑ[BᵀDq]ₑ=0. Impose the singleton marker q₂ₙ=1. The constraint count is N+1, and the N distinguished pivot coordinates comprise a full coordinate basis, giving deficiency one in the native paired-row presentation. All mask and variable occurrence bounds are absolute constants. Summing the guards cancels each bilinear term twice in GF(2) and leaves q₂ₙ=0. Adding the marker gives 1=0. Binary additions give O(N) proof lines, and balanced additions use O(N log N) expanded monomial occurrences.
+
+## Search lower bound
+
+Alice owns z and a perfect matching of K(n,n). She activates the matching links and, in each port path, the unique path from its matched port to its terminal. She sets all H edges to zero. Bob owns q and a coloring of K(n,n) with an odd number of ones. He copies each vertex color onto its entire port path in a, puts zeros on H, and solves Dq=a by prefix sums. The marker holds by the odd-color promise. The residual Bz+b equals the root unit vector, and Dᵀ fixes that vector. Its pivot q₀ is zero. Every failing edge guard therefore corresponds to a matched bichromatic link, and every such link fails. A violated canonical clause identifies its guard locally from its public index.
+
+The proof of Theorem 2.5 of Babai, Gál and Wigderson reduces randomized disjointness on Θ(n) bits to this matching-versus-odd-coloring search. Their analysis holds for any valid choice of output on each matching/coloring pair. For clarity, a bounded-error search subroutine can validate the candidate by communicating its index and checking the two local predicates, then repeat on failure. With common outputs this costs two verification bits per try. The resulting zero-error protocol has expected cost O(R+log n) if the original cost was R. Almost every fixed tape gives a valid choice on every input by finiteness. Applying the paper's independently randomized reduction and averaging preserves its error guarantee. Truncation at a sufficiently large constant times the expected cost incurs arbitrarily small additional constant error. Randomized disjointness consequently gives R=Ω(n). [Source, §2.1.3](https://people.cs.uchicago.edu/~laci/papers/span1.pdf)
+
+The randomized search simulation for tree-like Res(⊕) gives a protocol using O(log S) communication from a refutation of size S. Hence S≥exp(Ω(n))=exp(Ω(√N)). This includes parity decision trees, allowing global affine branch predicates. [Itsykson and Sokolov](https://doi.org/10.1016/j.apal.2019.102722)
+
+## Real hierarchy lower bounds
+
+Fix all q on H and on every charged terminal to one, and all other q to zero. Then a is one on H and zero on every port path. Fix outside-H edges to any routed perfect matching as above. All port residuals vanish. The root guard reduces to the odd root parity and all remaining H vertex guards reduce to even parities. Every edge guard and the marker are satisfied. Thus this restriction is exactly odd-charge Tseitin on H. Under a pin, a truth-table clause vanishes or gives a clause excluding the corresponding surviving bad local pattern. A feasible local marginal family or pseudoexpectation on the restricted instance extends by substituting the fixed literals. The expander lower bounds consequently apply at linear level and degree in N. The [projection proof](../expander.md), [clause-localizer details](../sos.md), and [expander existence argument](../expander.md) give the respective prerequisites.
+
+## Finite checks
+
+Run python3 check.py from this directory. It enumerates all matching and odd-coloring pairs through n=4, and all K4 expander-side assignments on each fixed-matching restriction. There are 3,282 matching/coloring cases and 2,112 restriction cases. A separate [checker](check_independent.py) verifies both restrictions and samples the cancellation identity on complete assignments. Finite checks exercise the interfaces. The asymptotic claims use the reductions above.
