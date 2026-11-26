@@ -65,6 +65,18 @@ def search(gram, row, n, p, removed, budget):
     return None
 
 
+def greedy(gram, row, n, p):
+    removed = set()
+    rounds = 0
+    while True:
+        bad, coeff = conflict(gram, row, n, p, removed)
+        if coeff is not None:
+            return removed, coeff, rounds
+        assert bad and removed.isdisjoint(bad)
+        removed.update(bad)
+        rounds += 1
+
+
 def main():
     rng = Random(61008)
     maximum = 0
@@ -103,8 +115,13 @@ def main():
         corrected = sum(h[z]*dot(features[z],c) for z in domain)
         corrected += sum(h[z]*(1-dot(features[z],c)) for z in omitted)
         assert len(omitted) == minimum and corrected == sum(h[z] for z in eligible)
+        greedy_removed, greedy_coeff, rounds = greedy(gram, features.__getitem__, n, p)
+        assert rounds <= minimum <= len(greedy_removed) <= (p+1)*rounds
+        corrected = sum(h[z]*dot(features[z],greedy_coeff) for z in domain)
+        corrected += sum(h[z]*(1-dot(features[z],greedy_coeff)) for z in greedy_removed)
+        assert corrected == sum(h[z] for z in eligible)
         maximum = max(maximum, minimum)
-    print(f"32 random systems: minimum deletions and union counts agree; maximum optimum {maximum}.")
+    print(f"32 random systems: minimum deletions, greedy bounds and both union counts agree; maximum optimum {maximum}.")
 
 
 if __name__ == "__main__":
