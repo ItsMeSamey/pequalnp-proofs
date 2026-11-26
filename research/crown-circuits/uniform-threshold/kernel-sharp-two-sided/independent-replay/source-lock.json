@@ -1,0 +1,7 @@
+{
+  "commit": "af599a34aeac222bde5ef168d8ccd9798db9c440",
+  "tree": "2102213174d7f1e0a8ab43a86bbe2d3e38f95a04",
+  "rel": "research/crown-circuits/uniform-threshold/kernel-sharp-two-sided",
+  "manifest_sha256": "f23be7a94e98fae4fc838e779516a8d0eecc3ed21e54de4acb0c0a73fc9a01a0",
+  "axiom_sha256": "7641375dd6c4aa7797df1ec3316f3bfb4db39afab27a018740dad778ec20c50f"
+}

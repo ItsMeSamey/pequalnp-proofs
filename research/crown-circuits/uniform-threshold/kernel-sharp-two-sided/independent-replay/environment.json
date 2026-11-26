@@ -1,0 +1,33 @@
+{
+  "commit": "af599a34aeac222bde5ef168d8ccd9798db9c440",
+  "tree": "2102213174d7f1e0a8ab43a86bbe2d3e38f95a04",
+  "version": "Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)",
+  "manifest_sha256": "f23be7a94e98fae4fc838e779516a8d0eecc3ed21e54de4acb0c0a73fc9a01a0",
+  "lake_manifest_sha256": "d0af863cde532caaef1b1bee0d63ec47100208e33e488309cb80abc88b8f1509",
+  "lean_sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "paths": [
+    "/dev/shm/review-two-sided-4U0Pcp/fresh",
+    "/dev/shm/review-two-sided-4U0Pcp/prerequisites",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/batteries/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/pequalnp-proofs/lean/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "source_count": 304,
+  "package_revisions": {
+    "importGraph": "8370c640afcd1cc3fb1cb9bf1560cc66eafee5e0",
+    "plausible": "054b228ce0ac61d767c6e71ba73a24728f191b72",
+    "Cli": "50810f72af7618bee62fe9800dc26e806c188703",
+    "aesop": "66ff77cf0c4c898799e4b94d14db55f7a02d0c5a",
+    "batteries": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+    "LeanSearchClient": "4fb58e749ef3fc0395fe274f6cab70c2ea85f1c9",
+    "proofwidgets": "2f0f3520daeac2d9310ff25b7a877a0e5cdaa203",
+    "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "Qq": "ff055a2fcc835935e0ae607339b455a5f5896b4b"
+  },
+  "start": "2026-11-26T22:14:40.946415+00:00"
+}

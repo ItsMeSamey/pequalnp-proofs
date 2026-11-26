@@ -1,0 +1,3127 @@
+[1/304 ThresholdUpperAverage]
+
+[2/304 ThresholdUpperCatalogue]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperCatalogue.lean:123:0: warning: automatically included section variable(s) unused in theorem `ThresholdUpperCatalogue.no_star_degree`:
+  [LinearOrder V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LinearOrder V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[3/304 ThresholdUpperCycleDecode]
+
+[4/304 ThresholdUpperFourMatch]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:13:5: warning: Variable name `ab` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ab
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:17:19: warning: This simp argument is unused:
+  ac
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [all, spokes, bc, dc, ab, ad, bd, Ne.symm ac, Ne.symm bc, Ne.symm dc, Ne.symm ab, Ne.symm ad, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.insert_comm, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:17:22: warning: This simp argument is unused:
+  bc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [all, spokes, ac, dc, ab, ad, bd, Ne.symm ac, Ne.symm bc, Ne.symm dc, Ne.symm ab, Ne.symm ad, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.insert_comm, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:17:25: warning: This simp argument is unused:
+  dc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [all, spokes, ac, bc, ab, ad, bd, Ne.symm ac, Ne.symm bc, Ne.symm dc, Ne.symm ab, Ne.symm ad, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.insert_comm, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:17:28: warning: This simp argument is unused:
+  ab
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [all, spokes, ac, bc, dc, ad, bd, Ne.symm ac, Ne.symm bc, Ne.symm dc, Ne.symm ab, Ne.symm ad, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.insert_comm, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:17:34: warning: This simp argument is unused:
+  bd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [all, spokes, ac, bc, dc, ab, ad, Ne.symm ac, Ne.symm bc, Ne.symm dc, Ne.symm ab, Ne.symm ad, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.insert_comm, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:18:4: warning: This simp argument is unused:
+  Ne.symm ab
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [all, spokes, ac, bc, dc, ab, ad, bd, Ne.symm ac, Ne.symm bc, Ne.symm dc, Ne.symm ad, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.insert_comm, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:18:15: warning: This simp argument is unused:
+  Ne.symm ad
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [all, spokes, ac, bc, dc, ab, ad, bd, Ne.symm ac, Ne.symm bc, Ne.symm dc, Ne.symm ab, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.insert_comm, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:47:15: warning: This simp argument is unused:
+  bc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [all, ac, dc, ab, ad, bd, Ne.symm ac, Ne.symm bc, Ne.symm dc, Ne.symm ab, Ne.symm ad, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.insert_comm, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:47:27: warning: This simp argument is unused:
+  bd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [all, ac, bc, dc, ab, ad, Ne.symm ac, Ne.symm bc, Ne.symm dc, Ne.symm ab, Ne.symm ad, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.insert_comm, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:47:30: warning: This simp argument is unused:
+  Ne.symm ac
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [all, ac, bc, dc, ab, ad, bd, Ne.symm bc, Ne.symm dc, Ne.symm ab, Ne.symm ad, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.insert_comm, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:47:52: warning: This simp argument is unused:
+  Ne.symm dc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [all, ac, bc, dc, ab, ad, bd, Ne.symm ac, Ne.symm bc, Ne.symm ab, Ne.symm ad, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.insert_comm, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:48:4: warning: This simp argument is unused:
+  Ne.symm ab
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [all, ac, bc, dc, ab, ad, bd, Ne.symm ac, Ne.symm bc, Ne.symm dc, Ne.symm ad, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.insert_comm, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:48:15: warning: This simp argument is unused:
+  Ne.symm ad
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [all, ac, bc, dc, ab, ad, bd, Ne.symm ac, Ne.symm bc, Ne.symm dc, Ne.symm ab, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.insert_comm, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:78:59: warning: This simp argument is unused:
+  ab
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [Finset.filter_insert, Finset.filter_singleton, ad, bd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:78:62: warning: This simp argument is unused:
+  ad
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [Finset.filter_insert, Finset.filter_singleton, ab, bd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:78:65: warning: This simp argument is unused:
+  bd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [Finset.filter_insert, Finset.filter_singleton, ab, ad]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:78:69: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:78:73: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFourMatch.lean:78:73: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+
+[5/304 ThresholdUpperPairCover]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:32:51: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:32:51: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:36:51: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:36:51: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:40:51: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:40:51: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:44:51: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:44:51: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:33:37: warning: This simp argument is unused:
+  cd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:34:6: warning: This simp argument is unused:
+  Ne.symm ab
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:34:17: warning: This simp argument is unused:
+  Ne.symm ac
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:34:28: warning: This simp argument is unused:
+  Ne.symm ad
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:34:39: warning: This simp argument is unused:
+  Ne.symm bc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:34:50: warning: This simp argument is unused:
+  Ne.symm bd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:34:61: warning: This simp argument is unused:
+  Ne.symm cd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:34:72: warning: This simp argument is unused:
+  Finset.erase_insert_of_ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:37:37: warning: This simp argument is unused:
+  cd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:38:6: warning: This simp argument is unused:
+  Ne.symm ab
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:38:17: warning: This simp argument is unused:
+  Ne.symm ac
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:38:28: warning: This simp argument is unused:
+  Ne.symm ad
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:38:39: warning: This simp argument is unused:
+  Ne.symm bc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:38:50: warning: This simp argument is unused:
+  Ne.symm bd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:38:61: warning: This simp argument is unused:
+  Ne.symm cd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:41:22: warning: This simp argument is unused:
+  ab
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:41:34: warning: This simp argument is unused:
+  bd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, cd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:41:37: warning: This simp argument is unused:
+  cd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:42:6: warning: This simp argument is unused:
+  Ne.symm ab
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:42:17: warning: This simp argument is unused:
+  Ne.symm ac
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:42:39: warning: This simp argument is unused:
+  Ne.symm bc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:45:22: warning: This simp argument is unused:
+  ab
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:45:31: warning: This simp argument is unused:
+  bc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:45:37: warning: This simp argument is unused:
+  cd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:46:6: warning: This simp argument is unused:
+  Ne.symm ab
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:46:28: warning: This simp argument is unused:
+  Ne.symm ad
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm bc, Ne.symm bd, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPairCover.lean:46:50: warning: This simp argument is unused:
+  Ne.symm bd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Q, ab, ac, ad, bc, bd, cd, Ne.symm ab, Ne.symm ac, Ne.symm ad, Ne.symm bc, Ne.symm cd,
+    Finset.erase_insert_of_ne, Finset.erase_insert_eq_erase, Finset.pair_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[6/304 ThresholdUpperBoxCount]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperBoxCount.lean:35:10: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+
+[7/304 ThresholdUpperFirstStage]
+
+[8/304 PEqualNP.Defs.CircuitLowerBounds]
+
+[9/304 PEqualNP.Defs.MetaComplexity]
+
+[10/304 PEqualNP.Defs.MetaComplexityMinimal]
+
+[11/304 PEqualNP.Defs.Base]
+
+[12/304 PEqualNP.Defs.MetaComplexityLgp]
+
+[13/304 PEqualNP.Defs.MetaComplexityLgpMono]
+
+[14/304 GateSurplus]
+'ResidualSurplus.scan_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.circuit_eval_annotation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.physical_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.constant_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.surviving_unpinned' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.pinned_minor_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.reindexed_pinned_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[15/304 T2RawReader]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2RawReader.lean:79:8: warning: Variable name `s` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _s
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ResidualSurplus.reader_deletion_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[16/304 T2RawDirect]
+'ResidualSurplus.direct_reader_deletion_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[17/304 T2RawIsolation]
+'T2RawIsolation.isolated_reader' depends on axioms: [propext, Quot.sound]
+
+[18/304 T2SoleOrSplice]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSplice.lean:17:21: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSplice.lean:17:25: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSplice.lean:17:25: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+
+[19/304 T2SoleOrSuffix]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSuffix.lean:15:104: warning: Unused tactic linter: `exact fun h => False.elim (Bool.noConfusion h)` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSuffix.lean:33:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSuffix.lean:35:21: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSuffix.lean:35:30: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSuffix.lean:36:21: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSuffix.lean:36:30: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSuffix.lean:53:21: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSuffix.lean:53:53: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSuffix.lean:90:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSuffix.lean:97:22: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrSuffix.lean:97:22: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+[20/304 T2CubeDeletion]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2CubeDeletion.lean:50:4: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2CubeDeletion.lean:54:70: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2CubeDeletion.lean:101:21: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2CubeDeletion.lean:118:75: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2CubeDeletion.lean:208:37: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2CubeDeletion.lean:208:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'T2CubeDeletion.closed_deletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2CubeDeletion.direct_deletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[21/304 ThresholdThreeLayerUpper]
+
+[22/304 ThresholdUpperNormalize]
+
+[23/304 ThresholdUpperInjection]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperInjection.lean:77:0: warning: automatically included section variable(s) unused in theorem `ThresholdUpperInjection.one_impossible`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[24/304 ThresholdUpperInjectionAverage]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperInjectionAverage.lean:9:0: warning: automatically included section variable(s) unused in theorem `ThresholdUpperInjectionAverage.pair_load`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperInjectionAverage.lean:31:8: warning: automatically included section variable(s) unused in theorem `_private.ThresholdUpperInjectionAverage.0.ThresholdUpperInjectionAverage.layer`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[25/304 ThresholdUpperExtension]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperExtension.lean:17:0: warning: automatically included section variable(s) unused in theorem `ThresholdUpperExtension.exposed`:
+  [Fintype A]
+  [Fintype P]
+  [Fintype Q]
+  [Fintype B]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] [Fintype P] [Fintype Q] [Fintype B] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperExtension.lean:40:0: warning: automatically included section variable(s) unused in theorem `ThresholdUpperExtension.full_count`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[26/304 ThresholdUpperSecond]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperSecond.lean:33:37: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+
+[27/304 ThresholdUpperEventGeometry]
+
+[28/304 ThresholdUpperPostImages]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperPostImages.lean:15:0: warning: automatically included section variable(s) unused in theorem `ThresholdUpperPostImages.encode_inj`:
+  [Fintype P]
+  [Fintype X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype P] [Fintype X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[29/304 ThresholdUpperCollisionMass]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperCollisionMass.lean:30:83: warning: This simp argument is unused:
+  and_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [first, terminal, Finset.mem_biUnion, Subtype.exists, and_assoc, and_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperCollisionMass.lean:66:46: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+
+[30/304 ThresholdUpperFailedMass]
+
+[31/304 ThresholdC4]
+'ThresholdC4.supersaturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[32/304 ThresholdUpperOverlapTwo]
+'ThresholdUpperOverlapTwo.overlap_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[33/304 ThresholdUpperActualSelection]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperActualSelection.lean:77:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+
+[34/304 ThresholdUpperRateInterface]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperRateInterface.lean:2:0: warning: 
+'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Real.Basic
+
+[35/304 ThresholdUpperBank]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperBank.lean:62:41: warning: This simp argument is unused:
+  List.getElem?_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.getD_eq_getElem?_getD, GateOp.eval, value]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperBank.lean:71:69: warning: This simp argument is unused:
+  advance
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [conj, value, fits]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperBank.lean:75:59: warning: This simp argument is unused:
+  advance
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [conj, value, fits]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperBank.lean:82:41: warning: This simp argument is unused:
+  List.getElem?_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.getD_eq_getElem?_getD, GateOp.eval, value]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperBank.lean:90:43: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperBank.lean:90:43: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperBank.lean:207:15: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+
+[36/304 ThresholdUpperEvaluation]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperEvaluation.lean:94:24: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperEvaluation.lean:98:15: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperEvaluation.lean:94:15: warning: This simp argument is unused:
+  ite_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [if_pos, pure_bind]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperEvaluation.lean:110:48: warning: This simp argument is unused:
+  Bool.and_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Bool.or_eq_true, Bool.toNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperEvaluation.lean:96:50: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperEvaluation.lean:96:54: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperEvaluation.lean:110:77: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperEvaluation.lean:96:54: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperEvaluation.lean:110:77: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperEvaluation.lean:140:37: warning: This simp argument is unused:
+  List.getElem?_range
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [counters, List.getElem?_map, hj] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperEvaluation.lean:249:41: warning: This simp argument is unused:
+  List.count_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ih, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperEvaluation.lean:268:6: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [valid, wires, advance, fits, List.getD_eq_getElem?_getD, i.isLt, len]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+[37/304 ThresholdUpperLedger]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperLedger.lean:28:10: warning: This simp argument is unused:
+  d
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [emp] at mem
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[38/304 ThresholdUpperMonotone]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperMonotone.lean:43:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperMonotone.lean:44:15: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+
+[39/304 ThresholdFourThirdsArithmetic]
+
+[40/304 T2LexMinimum]
+'T2SoleOrSplice.exists_lexMinimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2SoleOrSplice.lower_after_deletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[41/304 T2SoleOrEval]
+
+[42/304 T2SoleOrTopology]
+
+[43/304 T2BenchmarkNormalize]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2BenchmarkNormalize.lean:13:55: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2BenchmarkNormalize.lean:13:55: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2BenchmarkNormalize.lean:33:26: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2BenchmarkNormalize.lean:133:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2BenchmarkNormalize.lean:137:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2BenchmarkNormalize.lean:197:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp at impossible
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'T2BenchmarkNormalize.output_internal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2BenchmarkNormalize.canNormalize' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[44/304 ThresholdPublicMinimum]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPublicMinimum.lean:60:30: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [arity]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+[45/304 ThresholdNativeUpper]
+
+[46/304 ThresholdUpperFiniteAssembly]
+
+[47/304 ThresholdThirdPower]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdThirdPower.lean:1:0: warning: 
+'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Real.Basic
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdThirdPower.lean:11:27: warning: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdThirdPower.lean:30:37: warning: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ThresholdThirdPower.ledger_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdThirdPower.regular_tenth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdThirdPower.transfer_tenth' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[48/304 ThresholdSharpScaleBand]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharpScaleBand.lean:28:21: warning: Variable name `large` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _large
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ThresholdSharpScaleBand.band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpScaleBand.budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpScaleBand.budget_relative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpScaleBand.hub_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[49/304 ThresholdUpperScalarRate]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperScalarRate.lean:14:57: warning: Variable name `en` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _en
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperScalarRate.lean:28:48: warning: Variable name `b0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _b0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperScalarRate.lean:29:33: warning: Variable name `dp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _dp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ThresholdUpperScalarRate.condition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdUpperScalarRate.endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdUpperScalarRate.coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[50/304 ThresholdReceiverScale]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdReceiverScale.lean:20:16: warning: Variable name `gp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _gp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+[51/304 ThresholdQuarterCubes]
+
+[52/304 ThresholdOrGroups]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrGroups.lean:320:44: warning: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [idsFrom, e, ih, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrGroups.lean:325:61: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [idsFrom, e, ors, ih, ors] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdOrGroups.abstract_groups' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdOrGroups.pin_real_of_lookup' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[53/304 T2OrPartition]
+'T2OrPartition.covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2OrPartition.boundary_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[54/304 ThresholdOrExtraction]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrExtraction.lean:58:40: warning: This simp argument is unused:
+  List.count_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Tree.gates, atRoot, childHits, ha, hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrExtraction.lean:60:40: warning: This simp argument is unused:
+  List.count_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Tree.gates, atRoot, childHits, eq, ha, hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrExtraction.lean:59:6: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrExtraction.lean:61:6: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrExtraction.lean:59:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrExtraction.lean:61:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrExtraction.lean:128:7: warning: Variable name `bd` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _bd
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrExtraction.lean:147:51: warning: This simp argument is unused:
+  Tree.gates
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.length_append, ha left, hb right, List.map_cons, List.map_append, List.sum_cons,
+    List.sum_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrExtraction.lean:157:15: warning: This simp argument is unused:
+  List.getElem?_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lay, id]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdOrExtraction.forest_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdOrExtraction.private_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdOrExtraction.book_of_earlier' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[55/304 ThresholdOrFrontier]
+
+[56/304 ThresholdOrWeight]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrWeight.lean:87:26: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+
+[57/304 ThresholdOrMultiplicity]
+'ThresholdOrExtraction.forest_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[58/304 ThresholdOrRaw]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrRaw.lean:11:27: warning: This simp argument is unused:
+  raw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rawTop]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrRaw.lean:13:27: warning: This simp argument is unused:
+  nr
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rawTop]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[59/304 ThresholdOrBranch]
+'ThresholdOrExtraction.extracted_book' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[60/304 ThresholdOrIncidence]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrIncidence.lean:18:12: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lt, lt', le_of_lt lt, ne_of_lt lt, ih, Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrIncidence.lean:18:32: warning: This simp argument is unused:
+  lt'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.countP_cons, lt, le_of_lt lt, ne_of_lt lt, ih, Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrIncidence.lean:18:63: warning: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.countP_cons, lt, lt', le_of_lt lt, ne_of_lt lt, ih, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrIncidence.lean:20:12: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ih, Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrIncidence.lean:20:59: warning: This simp argument is unused:
+  Nat.add_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.countP_cons, ih, Nat.add_assoc, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrIncidence.lean:24:12: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [nl, nl', not_le_of_gt gt, ne, ih]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrIncidence.lean:24:32: warning: This simp argument is unused:
+  nl'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.countP_cons, nl, not_le_of_gt gt, ne, ih]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrIncidence.lean:63:10: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [not_lt.mpr h.1, not_lt.mpr h.2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdOrExtraction.raw_count_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[61/304 ThresholdOrPhysicalBook]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrPhysicalBook.lean:16:46: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrPhysicalBook.lean:17:46: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrPhysicalBook.lean:16:46: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOrPhysicalBook.lean:17:46: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ThresholdOrExtraction.regular_pool' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdOrExtraction.physical_book' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[62/304 T2PhysicalOverride]
+'T2PhysicalOverride.eval_edited' depends on axioms: [propext, Quot.sound]
+
+[63/304 T2RegularShape]
+
+[64/304 ThresholdRegularSource]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdRegularSource.lean:57:46: warning: This simp argument is unused:
+  ih
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.flatMap_cons, f]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdRegularSource.classified_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[65/304 T2CubeAgreement]
+
+[66/304 ThresholdFirstActive]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFirstActive.lean:28:24: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [vector]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+[67/304 ThresholdNamedIncidence]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdNamedIncidence.lean:28:116: warning: This simp argument is unused:
+  ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Tree.raws, Tree.gates, List.count_append, List.map_cons, List.sum_cons, List.map_append,
+    List.sum_append, ite_false, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdNamedIncidence.lean:28:119: warning: This simp argument is unused:
+  ite_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Tree.raws, Tree.gates, List.count_append, List.map_cons, List.sum_cons, List.map_append,
+    List.sum_append, ne, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdNamedIncidence.lean:33:39: warning: This simp argument is unused:
+  ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Tree.raws, Tree.gates]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[68/304 ThresholdUniqueRaw]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUniqueRaw.lean:210:14: warning: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [k, o, tag] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdUniqueRaw.forest_saved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdUniqueRaw.group_raw_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[69/304 ThresholdSimpleIncidence]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSimpleIncidence.lean:52:23: warning: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [labels, e, mem, count, ih, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSimpleIncidence.lean:53:31: warning: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [labels, e, ih]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSimpleIncidence.lean:85:4: warning: Unused tactic linter: `change _ = true ↔ _ = true` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'ThresholdSimpleIncidence.classified_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[70/304 T2ReaderConsumer]
+'T2ReaderConsumer.exists_consumer' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[71/304 T2MinimalLive]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2MinimalLive.lean:62:44: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2MinimalLive.lean:62:48: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2MinimalLive.lean:62:48: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'T2MinimalLive.no_duplicate_at_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2MinimalLive.consumer_at_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[72/304 ThresholdFanoutBudget]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFanoutBudget.lean:53:57: warning: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [available, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFanoutBudget.lean:82:7: warning: Variable name `unique` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _unique
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFanoutBudget.lean:83:5: warning: Variable name `live` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _live
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFanoutBudget.lean:84:5: warning: Variable name `one` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _one
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFanoutBudget.lean:85:5: warning: Variable name `balance` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _balance
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFanoutBudget.lean:86:5: warning: Variable name `classify` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _classify
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFanoutBudget.lean:122:10: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [xl, xr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdFanoutBudget.regular_vertex_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[73/304 ThresholdSharedOrBudget]
+'ThresholdSharedOrBudget.regular_shared_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[74/304 ThresholdPathEndpoints]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPathEndpoints.lean:57:37: warning: This simp argument is unused:
+  Tree.out
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Tree.raws] at e ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[75/304 ThresholdEndpointPorts]
+
+[76/304 ThresholdEdgeRealization]
+
+[77/304 ThresholdGraphCounts]
+'ThresholdGraphCounts.graph_edge_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdGraphCounts.degree_eq_raw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdGraphCounts.degree_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[78/304 ThresholdSharedPartition]
+'ThresholdSharedPartition.partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[79/304 ThresholdStarPrivateSite]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarPrivateSite.lean:110:28: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarPrivateSite.lean:110:28: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ThresholdStarBypass.private_site' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[80/304 ThresholdStarPartners]
+'ThresholdStarPartners.first_tap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdStarPartners.promoted_accepts' does not depend on any axioms
+'ThresholdStarPartners.dead_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdStarPartners.admits_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[81/304 ThresholdStarBypass]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarBypass.lean:68:33: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarBypass.lean:68:33: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ThresholdStarBypass.lost_caught' depends on axioms: [propext, Quot.sound]
+'ThresholdStarBypass.run_below' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[82/304 ThresholdStarBypassPhysical]
+'ThresholdStarBypass.regular_forced_hot' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[83/304 ThresholdStarQuiet]
+'ThresholdStarBypass.shielded_promoted' depends on axioms: [propext]
+'ThresholdStarBypass.shielded_quiet' depends on axioms: [propext]
+
+[84/304 ThresholdStarMask]
+'ThresholdStarBypass.clean_arm' depends on axioms: [propext]
+
+[85/304 ThresholdStarMonotone]
+'ThresholdStarBypass.promoted_same' depends on axioms: [propext, Quot.sound]
+
+[86/304 ThresholdStarEndpointRows]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarEndpointRows.lean:30:30: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [vector]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'ThresholdStarBypass.empty_self_arm_off' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdStarBypass.singleton_arm_off' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdStarBypass.forced_nonempty_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdStarBypass.raw_free_off_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[87/304 ThresholdFactorExpr]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorExpr.lean:40:18: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorExpr.lean:40:18: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+[88/304 ThresholdFactorRecipe]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorRecipe.lean:43:27: warning: This simp argument is unused:
+  Term.cost
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [disj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorRecipe.lean:46:58: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorRecipe.lean:46:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorRecipe.lean:96:41: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorRecipe.lean:96:41: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+[89/304 ThresholdFactorNetwork]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorNetwork.lean:29:18: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorNetwork.lean:29:18: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+[90/304 ThresholdFactorForest]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorForest.lean:115:26: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorForest.lean:115:38: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorForest.lean:117:17: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorForest.lean:119:26: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorForest.lean:119:38: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorForest.lean:120:17: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorForest.lean:157:69: warning: This simp argument is unused:
+  cut.leftNotMeet
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [target, A, B, Z, Block.out, charge, Term.cost, Ne.symm cut.distinct, cut.rightNotMeet,
+    Ne.symm cut.leftNotMeet, Ne.symm cut.rightNotMeet]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorForest.lean:158:4: warning: This simp argument is unused:
+  cut.rightNotMeet
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [target, A, B, Z, Block.out, charge, Term.cost, Ne.symm cut.distinct, cut.leftNotMeet,
+    Ne.symm cut.leftNotMeet, Ne.symm cut.rightNotMeet]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[91/304 ThresholdFactorReady]
+
+[92/304 ThresholdFactorCut]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFactorCut.lean:148:29: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [len]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'ThresholdFactorCut.private_groups_distinct_readers' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[93/304 ThresholdStarShieldPhysical]
+'ThresholdStarBypass.physical_shield' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[94/304 ThresholdSharedFlow]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedFlow.lean:6:5: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedFlow.lean:49:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedFlow.lean:54:45: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedFlow.lean:54:45: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedFlow.lean:78:39: warning: This simp argument is unused:
+  e
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedFlow.lean:98:51: warning: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [fan]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdSharedFlow.probe_flow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharedFlow.opposite_off' depends on axioms: [propext, Quot.sound]
+
+[95/304 ThresholdSharedPairErase]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedPairErase.lean:63:26: warning: Unused tactic linter: `exact eq` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedPairErase.lean:108:12: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedPairErase.lean:125:45: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedPairErase.lean:125:45: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedPairErase.lean:161:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+
+[96/304 ThresholdSharedPairMinimum]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedPairMinimum.lean:87:29: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedPairMinimum.lean:108:23: warning: This simp argument is unused:
+  List.count_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f, replace] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedPairMinimum.lean:110:14: warning: This simp argument is unused:
+  List.count_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [f, replace, eq, rev, ordinary_cost] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedPairMinimum.lean:108:55: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedPairMinimum.lean:110:67: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedPairMinimum.lean:108:55: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedPairMinimum.lean:110:67: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ThresholdSharedPairMinimum.regular_no_shared_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[97/304 ThresholdStarProbeReadback]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarProbeReadback.lean:25:6: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+'ThresholdStarBypass.probe_book' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[98/304 ThresholdStarSiteShield]
+'ThresholdStarBypass.PrivateSite.shield' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[99/304 ThresholdStarPromotion]
+'ThresholdStarBypass.promoted_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[100/304 ThresholdStarOpposite]
+'ThresholdStarBypass.physical_dead_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdStarBypass.partner_admits' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[101/304 ThresholdStarAlias]
+'ThresholdStarBypass.alias_singleton_cold' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[102/304 ThresholdStarColdPhysical]
+'ThresholdStarBypass.cold_structure' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[103/304 ThresholdLeakPins]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdLeakPins.lean:86:31: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+
+[104/304 ThresholdFlowPairs]
+
+[105/304 ThresholdFlowFanout]
+
+[106/304 ThresholdFlowSum]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFlowSum.lean:34:72: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFlowSum.lean:16:30: warning: Variable name `member` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _member
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFlowSum.lean:30:77: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFlowSum.lean:32:95: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFlowSum.lean:30:77: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFlowSum.lean:32:95: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+[107/304 T2PhysicalRowTags]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2PhysicalRowTags.lean:20:26: warning: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [extendTags, ih, Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ResidualSurplus.named_and_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResidualSurplus.named_item' depends on axioms: [propext]
+
+[108/304 T2ThreeReaders]
+
+[109/304 T2AndChain]
+'ResidualSurplus.and_chain_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[110/304 T2AuxChain]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2AuxChain.lean:28:51: warning: This simp argument is unused:
+  List.length_map
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.length_append, List.length_cons] at edge
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2AuxChain.lean:21:14: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2AuxChain.lean:21:18: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2AuxChain.lean:22:14: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2AuxChain.lean:22:18: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2AuxChain.lean:21:18: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2AuxChain.lean:22:18: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'T2AuxChain.debit' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[111/304 T2RawTopology]
+'T2RawTopology.rawEdited_valid' does not depend on any axioms
+
+[112/304 T2SoleReader]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleReader.lean:25:19: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[113/304 T2PhysicalMaximum]
+'T2PhysicalMaximum.maximum_override' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[114/304 T2NamedProducer]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2NamedProducer.lean:29:10: warning: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Nat.add_comm, Nat.add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'T2NamedProducer.named_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[115/304 T2ReaderActivation]
+'T2ReaderActivation.other_not_absorbing' depends on axioms: [propext, Quot.sound]
+
+[116/304 T2SoleAndDirty]
+'T2SoleAndDirty.other_internal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2SoleAndDirty.and_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[117/304 T2SoleAndMinor]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleAndMinor.lean:13:10: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleAndMinor.lean:13:14: warning: Unused tactic linter: `apply List.map_congr_left` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleAndMinor.lean:13:40: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleAndMinor.lean:13:44: warning: Unused tactic linter: `intro r _` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleAndMinor.lean:13:54: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleAndMinor.lean:13:58: warning: Unused tactic linter: `obtain ⟨o, x, y⟩ := r` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleAndMinor.lean:13:78: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleAndMinor.lean:13:82: warning: Unused tactic linter: `rfl` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleAndMinor.lean:13:14: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleAndMinor.lean:13:44: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleAndMinor.lean:13:58: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleAndMinor.lean:13:82: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'T2SoleAndMinor.named_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[118/304 T2SoleAndNamed]
+'T2SoleAndMinor.named_syntactic' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[119/304 T2SoleAndCase]
+'T2SoleAndMinor.sole_and_case' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[120/304 T2RawUsed]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2RawUsed.lean:35:49: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2RawUsed.lean:35:53: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2RawUsed.lean:35:53: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'T2RawUsed.positive_readers' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[121/304 T2DoubleReader]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2DoubleReader.lean:19:22: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2DoubleReader.lean:19:22: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2DoubleReader.lean:26:10: warning: This simp argument is unused:
+  List.getElem?_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2DoubleReader.lean:103:60: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [tag, openOut] at gOff
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2DoubleReader.lean:136:64: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [tag, openOut] at bOff
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'T2DoubleReader.double_and_deletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[122/304 T2SoleOrClean]
+
+[123/304 T2SoleOrHotRows]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrHotRows.lean:45:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrHotRows.lean:45:52: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrHotRows.lean:126:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp at card
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrHotRows.lean:108:13: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrHotRows.lean:121:66: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrHotRows.lean:137:79: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrHotRows.lean:108:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrHotRows.lean:121:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrHotRows.lean:137:79: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'T2SoleOrSplice.moved_hotRows_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[124/304 T2SoleOrEdit]
+'T2SoleOrSplice.physical_edit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2SoleOrSplice.no_clean_or_at_secondary_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[125/304 T2SoleOrCaller]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrCaller.lean:29:18: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrCaller.lean:29:18: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrCaller.lean:53:21: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrCaller.lean:59:39: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrCaller.lean:59:48: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrCaller.lean:59:48: warning: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ren, lt_self_iff_false, if_false, getD_new]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrCaller.lean:110:49: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrCaller.lean:110:53: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2SoleOrCaller.lean:110:53: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'T2SoleOrSplice.no_sole_reader' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[126/304 T2RegularOrDelete]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/T2RegularOrDelete.lean:78:46: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+'T2RegularOrDelete.regular_or_delete' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[127/304 ThresholdUnrestrictedGraph]
+'ThresholdUnrestrictedGraph.regular_graph_or_delete' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[128/304 ThresholdPublicShared]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPublicShared.lean:9:48: warning: Variable name `M` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _M
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ThresholdPublicShared.shared_or_delete' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[129/304 ThresholdFourThirdsReal]
+
+[130/304 ThresholdSharpArithmetic]
+
+[131/304 ThresholdSharpNatTally]
+
+[132/304 ThresholdFlowTally]
+
+[133/304 ThresholdSharedFunding]
+'ThresholdSharedFunding.funding' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[134/304 ThresholdSharedStructural]
+'ThresholdSharedStructural.structure_tally' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[135/304 ThresholdSharedPairEndpoints]
+'ThresholdSharedPairMinimum.regular_no_shared_raw' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[136/304 ThresholdMissedFour]
+'ThresholdMissedFour.missed_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[137/304 ThresholdSharpEndpoint]
+'ThresholdSharpEndpoint.native_real_of_star' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[138/304 ThresholdStarLeafBound]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarLeafBound.lean:47:15: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+'ThresholdStarBypass.regular_star_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[139/304 ThresholdSharpPublicBounds]
+'ThresholdSharpEndpoint.native_squared_of_star' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[140/304 ThresholdPublicSharp]
+'ThresholdPublicSharp.native_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPublicSharp.native_squared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPublicSharp.minimum_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[141/304 ThresholdProbeIdeals]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdProbeIdeals.lean:62:0: warning: automatically included section variable(s) unused in theorem `ThresholdProbeIdeals.high_anti`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdProbeIdeals.lean:75:0: warning: automatically included section variable(s) unused in theorem `ThresholdProbeIdeals.cut_balance`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ThresholdProbeIdeals.touch_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdProbeIdeals.cut_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdProbeIdeals.high_anti' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[142/304 ThresholdHubDegrees]
+'ThresholdHubDegrees.physical_degree_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdHubDegrees.sum_degrees' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[143/304 ThresholdHubDeficits]
+'ThresholdHubDeficits.direct_arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdHubDeficits.regular_deficit_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[144/304 ThresholdAlreadyHot]
+
+[145/304 ThresholdProbeOrder]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdProbeOrder.lean:19:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdProbeOrder.lean:22:17: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdProbeOrder.lean:23:17: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+
+[146/304 ThresholdPrefixDensity]
+'ThresholdPrefixDensity.split_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[147/304 ThresholdPhysicalIdeals]
+'ThresholdPhysicalIdeals.regular_ideal_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPhysicalIdeals.high_antichain' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[148/304 ThresholdHighComponents]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdHighComponents.lean:41:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'ThresholdHighComponents.component_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[149/304 ThresholdGraphPostorder]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdGraphPostorder.lean:16:8: warning: automatically included section variable(s) unused in theorem `_private.ThresholdGraphPostorder.0.ThresholdGraphPostorder.no_boundary`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdGraphPostorder.lean:69:0: warning: automatically included section variable(s) unused in theorem `ThresholdGraphPostorder.anchor_edge`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdGraphPostorder.lean:121:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdGraphPostorder.lean:129:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdGraphPostorder.lean:134:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+
+[150/304 ThresholdEssentialOr]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdEssentialOr.lean:123:64: warning: This simp argument is unused:
+  List.getElem?_map
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [List.getD_eq_getElem?_getD, h, z]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdEssentialOr.lean:163:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [List.getD_eq_getElem?_getD, hi]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+[151/304 ThresholdPinCompiler]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:35:91: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:36:10: warning: Unused tactic linter: `split` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:36:16: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:36:20: warning: Unused tactic linter: `simp [ors]` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:36:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:36:20: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:55:90: warning: This simp argument is unused:
+  neutral
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lowerInputs, binaryStep, off, w, lower, act]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:56:73: warning: This simp argument is unused:
+  act
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lowerInputs, binaryStep, off, w, lower, neutral]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:58:90: warning: This simp argument is unused:
+  neutral
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lowerInputs, binaryStep, off, w, lower, act]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:59:73: warning: This simp argument is unused:
+  act
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lowerInputs, binaryStep, off, w, lower, neutral]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:111:28: warning: This simp argument is unused:
+  List.countP_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [step, o, skip, ors, charge, hit, ThresholdOrGroups.isOr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:156:55: warning: This simp argument is unused:
+  List.countP_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ors, e, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:189:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:193:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:216:57: warning: This simp argument is unused:
+  List.getElem?_set
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinFalse, List.getD_eq_getElem?_getD, small]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:217:48: warning: This simp argument is unused:
+  List.getElem?_set
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinFalse, List.getD_eq_getElem?_getD, List.getElem_set, small, eq, Ne.symm eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:217:66: warning: This simp argument is unused:
+  List.getElem_set
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinFalse, List.getD_eq_getElem?_getD, List.getElem?_set, small, eq, Ne.symm eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPinCompiler.lean:286:66: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+'ThresholdPinCompiler.restriction_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPinCompiler.essential_pin_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPinCompiler.weak_pin_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[152/304 ThresholdRemoteAnchor]
+
+[153/304 ThresholdPeelNative]
+'ThresholdPeelNative.witness_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[154/304 ThresholdPeelSchedule]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPeelSchedule.lean:18:21: warning: This simp argument is unused:
+  List.getElem_set
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinFalse, eq, Ne.symm eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPeelSchedule.lean:18:38: warning: This simp argument is unused:
+  eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinFalse, List.getElem_set, Ne.symm eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[155/304 ThresholdEdgeRows]
+
+[156/304 ThresholdInteriorSchedule]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdInteriorSchedule.lean:12:8: warning: automatically included section variable(s) unused in theorem `_private.ThresholdInteriorSchedule.0.ThresholdPeelSchedule.base_subset`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[157/304 ThresholdGraphRows]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdGraphRows.lean:18:6: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [he, xw.ne, xz] at hit
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdGraphRows.lean:6:0: warning: automatically included section variable(s) unused in theorem `ThresholdPeelSchedule.path_rows`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[158/304 ThresholdCentralRows]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdCentralRows.lean:22:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hd, uw.ne.symm, wt] at hm
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdCentralRows.lean:35:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hr, au.symm, bu.symm] at hu
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+[159/304 ThresholdRemoteSchedule]
+
+[160/304 ThresholdAnchorEnumeration]
+
+[161/304 ThresholdStarRemote]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarRemote.lean:33:19: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarRemote.lean:41:59: warning: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.mem_flatMap, List.mem_map, List.mem_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[162/304 ThresholdStarReindex]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarReindex.lean:39:20: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [start, seed, h, e, wire, T2BenchmarkNormalize.FitsWire]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+[163/304 ThresholdCoveredPins]
+
+[164/304 Research.ThresholdFactors]
+
+[165/304 Research.WegenerThreshold]
+
+[166/304 ThresholdStarTruth]
+'ThresholdStarTruth.star_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[167/304 ThresholdGraphStar]
+'ThresholdGraphStar.physical_star_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[168/304 ThresholdPhysicalRows]
+
+[169/304 ThresholdDegreePeel]
+'ThresholdGlobalGlue.star_peel' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[170/304 ThresholdDegreeBudget]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdDegreeBudget.lean:24:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'ThresholdGlobalGlue.physical_degree_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[171/304 ThresholdComponentEdges]
+
+[172/304 ThresholdEndpointBound]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdEndpointBound.lean:13:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+
+[173/304 ThresholdEndpointComponents]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdEndpointComponents.lean:11:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+
+[174/304 ThresholdRegularLedger]
+'ThresholdGlobalGlue.regular_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[175/304 ThresholdReceiverAndBudget]
+
+[176/304 ThresholdSecondaryReceivers]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSecondaryReceivers.lean:19:6: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+
+[177/304 ThresholdReceiverPortUse]
+
+[178/304 ThresholdReceiverCounts]
+
+[179/304 ThresholdGoodCount]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdGoodCount.lean:40:8: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+
+[180/304 ThresholdHubBootstrap]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdHubBootstrap.lean:23:41: warning: Variable name `l0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _l0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ThresholdHubBootstrap.improve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdHubBootstrap.and_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[181/304 ThresholdHubMissing]
+'ThresholdHubMissing.low_deficiency' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdHubMissing.low_arc_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[182/304 ThresholdHubFine]
+'ThresholdHubFine.regular_q' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdHubFine.regular_fine' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[183/304 ThresholdCoarseDensity]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdCoarseDensity.lean:51:35: warning: Variable name `ht` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ht
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+[184/304 ThresholdSharpNativeWindow]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharpNativeWindow.lean:18:8: warning: Variable name `g` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _g
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+[185/304 ThresholdNativeCoarse]
+
+[186/304 ThresholdOccurrenceDebit]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOccurrenceDebit.lean:34:30: warning: This simp argument is unused:
+  raw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOccurrenceDebit.lean:34:34: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [raw, eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOccurrenceDebit.lean:52:28: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [fan, slots, source, Fintype.sum_prod_type, Fintype.sum_bool, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOccurrenceDebit.lean:52:69: warning: This simp argument is unused:
+  Fintype.sum_bool
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, fan, slots, source, Fintype.sum_prod_type, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOccurrenceDebit.lean:75:40: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOccurrenceDebit.lean:75:40: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ThresholdOccurrenceDebit.telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[187/304 ThresholdOccurrenceEval]
+
+[188/304 ThresholdOccurrenceRecipe]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOccurrenceRecipe.lean:43:15: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [atom, Term.value, pinEval, eq, spec, j.isLt, flag]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOccurrenceRecipe.lean:54:64: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOccurrenceRecipe.lean:54:25: warning: This simp argument is unused:
+  ite_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [recipe, fo, spec, Nat.add_sub_cancel_left, dif_pos i.isLt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[189/304 ThresholdOccurrenceCompiler]
+'ThresholdOccurrenceCompiler.compile_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[190/304 ThresholdSlotEvaluation]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSlotEvaluation.lean:32:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSlotEvaluation.lean:45:74: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSlotEvaluation.lean:45:74: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+[191/304 ThresholdSlotTree]
+
+[192/304 ThresholdStarRawSlots]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarRawSlots.lean:33:23: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [input, choice, cen, eq, q]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarRawSlots.lean:33:32: warning: This simp argument is unused:
+  q
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [input, choice, h, cen, eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarRawSlots.lean:100:38: warning: This simp argument is unused:
+  ResidualSurplus.binary
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [P, center, A, source, wt, weight, List.count_cons, lk, ci, hl, hr, gl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarRawSlots.lean:100:61: warning: This simp argument is unused:
+  List.count_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [P, center, A, source, wt, weight, ResidualSurplus.binary, lk, ci, hl, hr, gl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarRawSlots.lean:100:77: warning: This simp argument is unused:
+  lk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [P, center, A, source, wt, weight, ResidualSurplus.binary, List.count_cons, ci, hl, hr, gl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdStarRawSlots.lean:134:40: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [F, fixedPins, choice, name, yx, nx, st, ce, centerFiber, fiber, y] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdStarRawSlots.fixed_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[193/304 ThresholdSlotBook]
+
+[194/304 ThresholdSlotScan]
+
+[195/304 ThresholdSlotTruth]
+
+[196/304 ThresholdNativeStarSaving]
+'ThresholdNativeStarSaving.star_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[197/304 ThresholdNativeStarCap]
+'ThresholdNativeStarSaving.regular_star_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[198/304 ThresholdHubPrefixNative]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdHubPrefixNative.lean:26:20: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdHubPrefixNative.lean:26:31: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdHubPrefixNative.lean:41:20: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdHubPrefixNative.lean:41:30: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+'ThresholdHubPrefixNative.regular_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[199/304 ThresholdNativeRough]
+
+[200/304 ThresholdNativeRatio]
+'ThresholdNativeRatio.parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdNativeRatio.rough' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[201/304 ThresholdSharpScaleRelative]
+'ThresholdSharpScaleBand.relative' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[202/304 ThresholdThirdDeletion]
+'ThresholdThirdDeletion.terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdThirdDeletion.unrestricted' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[203/304 ThresholdMinimumEndpoint]
+
+[204/304 ThresholdPublicInduction]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPublicInduction.lean:40:31: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPublicInduction.lean:40:45: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPublicInduction.lean:40:31: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPublicInduction.lean:40:45: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+[205/304 ThresholdPublicFourThirds]
+'ThresholdPublicFourThirds.native_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPublicFourThirds.native_squared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPublicFourThirds.native_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[206/304 ThresholdSharpTerminalRatio]
+'ThresholdSharpTerminalRatio.bounded_to_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpTerminalRatio.ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[207/304 ThresholdSharpGrowth]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharpGrowth.lean:5:49: warning: Variable name `ep` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ep
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharpGrowth.lean:13:53: warning: Variable name `bp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _bp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ThresholdSharpGrowth.small_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpGrowth.dense' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpGrowth.coarse_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpGrowth.rows_close' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpGrowth.terminal_close' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[208/304 ThresholdScaleRoot]
+'ThresholdScaleRoot.exists_above' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[209/304 ThresholdSharpScaleChoice]
+'ThresholdSharpScaleBand.choose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpScaleBand.budget_from_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[210/304 ThresholdSharpScaleRatio]
+'ThresholdSharpScaleBand.coarse_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[211/304 ThresholdEffectiveColumns]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdEffectiveColumns.lean:34:16: warning: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdEffectiveColumns.lean:91:13: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdEffectiveColumns.lean:101:15: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdEffectiveColumns.lean:107:15: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+
+[212/304 ThresholdEffectiveSimplicity]
+
+[213/304 ThresholdBoundaryDecoder]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdBoundaryDecoder.lean:49:15: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+
+[214/304 ThresholdFirstMarkCut]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFirstMarkCut.lean:41:23: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+
+[215/304 ThresholdOverrideCut]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOverrideCut.lean:26:33: warning: Variable name `edge` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _edge
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOverrideCut.lean:27:32: warning: Variable name `edge` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _edge
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOverrideCut.lean:39:25: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOverrideCut.lean:40:24: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdOverrideCut.lean:79:15: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+
+[216/304 ThresholdPhysicalFirstCut]
+
+[217/304 ThresholdPivotStar]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotStar.lean:89:17: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotStar.lean:118:52: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [size, apart]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotStar.lean:203:55: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotStar.lean:224:55: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotStar.lean:239:109: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotStar.lean:259:19: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotStar.lean:269:67: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotStar.lean:269:67: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotStar.lean:319:25: warning: Variable name `minim` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _minim
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+[218/304 ThresholdPivotWitness]
+
+[219/304 ThresholdPhysicalChangeEscape]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPhysicalChangeEscape.lean:120:52: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [size, apart]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'ThresholdPhysicalChangeEscape.native_escape' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[220/304 ThresholdSilentBoundary]
+
+[221/304 ThresholdPivotLocality]
+
+[222/304 ThresholdPivotCold]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotCold.lean:28:55: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotCold.lean:42:83: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotCold.lean:42:83: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotCold.lean:55:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotCold.lean:75:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPivotCold.lean:76:4: warning: Unused tactic linter: `change (cold L D M).card ≤ _` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+
+[223/304 ReadOnceLCA]
+
+[224/304 ThresholdPivotInjection]
+
+[225/304 ThresholdBoundaryFormula]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdBoundaryFormula.lean:37:38: warning: Variable name `edge` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _edge
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdBoundaryFormula.lean:38:37: warning: Variable name `edge` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _edge
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+[226/304 ThresholdSocketRoute]
+
+[227/304 ThresholdBoundaryOccurrences]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdBoundaryOccurrences.lean:49:21: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdBoundaryOccurrences.lean:49:33: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+
+[228/304 ThresholdPairContexts]
+'ThresholdPivotStar.physical_pair_contexts' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[229/304 ThresholdPivotQuota]
+'ThresholdPivotQuota.native' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[230/304 ThresholdColumnPeel]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdColumnPeel.lean:62:0: warning: automatically included section variable(s) unused in theorem `ThresholdColumnPeel.bad_cost`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[231/304 ThresholdPrivateOwners]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPrivateOwners.lean:62:34: warning: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ThresholdPrivateOwners.private_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[232/304 ThresholdQuarterRetention]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdQuarterRetention.lean:15:0: warning: automatically included section variable(s) unused in theorem `ThresholdQuarterRetention.exists_retains`:
+  [DecidableEq R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdQuarterRetention.lean:86:0: warning: automatically included section variable(s) unused in theorem `ThresholdQuarterRetention.same_gate_bound`:
+  [DecidableEq R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[233/304 ThresholdPrivateElimination]
+
+[234/304 ThresholdExternalCount]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdExternalCount.lean:33:68: warning: This simp argument is unused:
+  List.count_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Tree.exts, Tree.gates, e, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdExternalCount.lean:33:84: warning: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Tree.exts, Tree.gates, e, List.count_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[235/304 ThresholdExternalIdempotence]
+
+[236/304 ThresholdReceiverTwo]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdReceiverTwo.lean:43:14: warning: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [mem, tail]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdReceiverTwo.lean:44:14: warning: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [mem, tail, List.count_eq_zero.mpr mem]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[237/304 ThresholdWarmSimple]
+
+[238/304 ThresholdColumnConflicts]
+
+[239/304 ThresholdSharedAndCredit]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedAndCredit.lean:41:72: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedAndCredit.lean:23:30: warning: Variable name `member` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _member
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedAndCredit.lean:37:97: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedAndCredit.lean:39:102: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedAndCredit.lean:39:115: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedAndCredit.lean:39:119: warning: Unused tactic linter: `omega` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedAndCredit.lean:39:119: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedAndCredit.lean:37:97: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharedAndCredit.lean:39:102: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ThresholdSharedAndCredit.regular_credit' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[240/304 ThresholdEffectiveColumnBudget]
+'ThresholdEffectiveColumnBudget.cross_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdEffectiveColumnBudget.column_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[241/304 ThresholdNativeColumnCharge]
+'ThresholdNativeColumnCharge.column_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[242/304 ThresholdWarmRetention]
+
+[243/304 ThresholdWarmAveraging]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdWarmAveraging.lean:35:71: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdWarmAveraging.lean:35:71: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdWarmAveraging.lean:41:0: warning: automatically included section variable(s) unused in theorem `ThresholdWarmAveraging.cold_total`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[244/304 ThresholdPurityPins]
+
+[245/304 ThresholdReceiverShield]
+
+[246/304 ThresholdReceiverSimple]
+
+[247/304 ThresholdReceiverGraph]
+
+[248/304 ThresholdC4Missing]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdC4Missing.lean:9:8: warning: automatically included section variable(s) unused in theorem `_private.ThresholdC4Missing.0.ThresholdC4Missing.card_presentations`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdC4Missing.lean:49:6: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [ej, xy, bx] at v
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdC4Missing.lean:53:6: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [el, xy, nx] at v
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdC4Missing.lean:57:6: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [ek, nx.symm, ab] at v
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdC4Missing.lean:61:6: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [el, xy, nx] at v
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdC4Missing.lean:74:8: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [ik, il] at cnt
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdC4Missing.lean:63:73: warning: This simp argument is unused:
+  or_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [support, ei, ej, S, or_left_comm, or_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdC4Missing.lean:63:95: warning: This simp argument is unused:
+  or_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [support, ei, ej, S, or_assoc, or_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdC4Missing.lean:64:74: warning: This simp argument is unused:
+  or_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [support, ek, el, S, or_left_comm, or_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+[249/304 ThresholdReceiverCollision]
+
+[250/304 ThresholdFamilySimpleGraph]
+
+[251/304 ThresholdPhysicalReceiverGraph]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdPhysicalReceiverGraph.lean:20:2: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hy, ne, Ne.symm zu] at ux
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+[252/304 ThresholdNativeRowSelection]
+
+[253/304 ThresholdNativeSharpCoreRows]
+
+[254/304 ThresholdFinalCoreCharge]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdFinalCoreCharge.lean:129:22: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+'ThresholdFinalCoreCharge.final_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[255/304 ThresholdAllPrivateBudget]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdAllPrivateBudget.lean:50:32: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdAllPrivateBudget.lean:88:22: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdAllPrivateBudget.lean:44:46: warning: Unused tactic linter: `change _ ∈ signature C n r` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdAllPrivateBudget.lean:45:41: warning: Unused tactic linter: `change _ ∈ signature C n r` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+
+[256/304 ThresholdNativeSharpColumnLedger]
+
+[257/304 ThresholdUniformMiddle]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUniformMiddle.lean:47:52: warning: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUniformMiddle.lean:80:27: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUniformMiddle.lean:80:31: warning: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUniformMiddle.lean:80:31: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'ThresholdUniformMiddle.nat_room' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdUniformMiddle.row_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdUniformMiddle.col_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[258/304 ThresholdReceiverWindow]
+
+[259/304 ThresholdRegularThirdCore]
+
+[260/304 ThresholdSharpNativeBands]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharpNativeBands.lean:50:4: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharpNativeBands.lean:50:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+[261/304 ThresholdColdMatchingLoss]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdColdMatchingLoss.lean:64:0: warning: automatically included section variable(s) unused in theorem `ThresholdColdMatchingLoss.cold_le_degree_squares`:
+  [DecidableEq P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[262/304 ThresholdCompetingColdCharges]
+
+[263/304 ThresholdHotMatching]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdHotMatching.lean:48:52: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [size, apart]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'ThresholdHotMatching.fiber_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdHotMatching.hot_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[264/304 ThresholdPhysicalColdLoss]
+'ThresholdPhysicalColdLoss.aggregate' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[265/304 ThresholdSharpCodegrees]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharpCodegrees.lean:17:0: warning: automatically included section variable(s) unused in theorem `ThresholdSharpCodegrees.nonedge_moment`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharpCodegrees.lean:42:0: warning: automatically included section variable(s) unused in theorem `ThresholdSharpCodegrees.moments`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[266/304 ThresholdFourSetOccupancy]
+
+[267/304 ThresholdCodegreeRecords]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdCodegreeRecords.lean:119:8: warning: automatically included section variable(s) unused in theorem `_private.ThresholdCodegreeRecords.0.ThresholdCodegreeRecords.adjacency_bits`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[268/304 ThresholdEffectiveMatchingRows]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdEffectiveMatchingRows.lean:12:0: warning: automatically included section variable(s) unused in theorem `ThresholdEffectiveMatchingRows.edge_label`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdEffectiveMatchingRows.lean:71:0: warning: automatically included section variable(s) unused in theorem `ThresholdEffectiveMatchingRows.induced_matching_card`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdEffectiveMatchingRows.lean:92:0: warning: automatically included section variable(s) unused in theorem `ThresholdEffectiveMatchingRows.chart_fiber`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdEffectiveMatchingRows.lean:127:0: warning: automatically included section variable(s) unused in theorem `ThresholdEffectiveMatchingRows.induced`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[269/304 ThresholdActualColdCandidates]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdActualColdCandidates.lean:38:27: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+
+[270/304 ThresholdCompetingAlternates]
+
+[271/304 ThresholdActualFineLoss]
+'ThresholdActualFineLoss.native' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[272/304 ThresholdAmbientEffectiveGraph]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdAmbientEffectiveGraph.lean:17:0: warning: automatically included section variable(s) unused in theorem `ThresholdAmbientEffectiveGraph.both`:
+  [DecidableEq I]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdAmbientEffectiveGraph.lean:63:0: warning: automatically included section variable(s) unused in theorem `ThresholdAmbientEffectiveGraph.width`:
+  [DecidableEq I]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdAmbientEffectiveGraph.lean:77:18: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdAmbientEffectiveGraph.lean:70:8: warning: automatically included section variable(s) unused in theorem `_private.ThresholdAmbientEffectiveGraph.0.ThresholdAmbientEffectiveGraph.pair`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[273/304 ThresholdSupportBoxes]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSupportBoxes.lean:7:0: warning: automatically included section variable(s) unused in theorem `ThresholdAmbientEffectiveGraph.box_four`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSupportBoxes.lean:10:0: warning: automatically included section variable(s) unused in theorem `ThresholdAmbientEffectiveGraph.box_injective`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSupportBoxes.lean:19:0: warning: automatically included section variable(s) unused in theorem `ThresholdAmbientEffectiveGraph.chart_box`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+[274/304 ThresholdActualCoarseLoss]
+'ThresholdActualCoarseLoss.native' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[275/304 ThresholdHighMissingIdentity]
+'ThresholdHighMissingIdentity.native' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[276/304 ThresholdSelectedLosses]
+
+[277/304 ThresholdGraphWedgeSum]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdGraphWedgeSum.lean:29:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+
+[278/304 ThresholdNativeGraphMoments]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdNativeGraphMoments.lean:10:8: warning: automatically included section variable(s) unused in theorem `_private.ThresholdNativeGraphMoments.0.ThresholdNativeGraphMoments.all_false`:
+  [DecidableEq V]
+  [DecidableRel G.Adj]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [DecidableRel G.Adj] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ThresholdNativeGraphMoments.selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[279/304 ThresholdRegularWedgeLedger]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdRegularWedgeLedger.lean:37:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+
+[280/304 ThresholdNativeSelectedMoments]
+
+[281/304 ThresholdUniformGraphErrors]
+'ThresholdUniformGraphErrors.bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[282/304 ThresholdSharpScalar]
+'ThresholdSharpScalar.maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpScalar.unit_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpScalar.perturbed' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[283/304 ThresholdSharpAggregate]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharpAggregate.lean:6:48: warning: Variable name `hw` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hw
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ThresholdSharpAggregate.wedge_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpAggregate.aggregate' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[284/304 ThresholdThirdPublicPower]
+'ThresholdThirdDeletion.circuit_tenth' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[285/304 ThresholdRegularThirdOrder]
+
+[286/304 ThresholdPhysicalReceiverPower]
+
+[287/304 ThresholdPublicThird]
+'ThresholdRegularThird.regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdRegularThird.bound_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[288/304 ThresholdSharpGlobalLower]
+'ThresholdSharpGlobalLower.rational_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[289/304 ThresholdSharpRegularMargin]
+'ThresholdSharpGlobalLower.regular_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[290/304 ThresholdSharpRelativeAdapter]
+
+[291/304 ThresholdSharpGraphAssembly]
+
+[292/304 ThresholdPhysicalMiddlePacking]
+'ThresholdPhysicalMiddlePacking.packing' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[293/304 ThresholdSharpEventualAssembly]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdSharpEventualAssembly.lean:20:23: warning: exponent 402 exceeds the threshold 256, exponentiation operation was not evaluated, use `set_option exponentiation.threshold <num>` to set a new threshold
+
+[294/304 ThresholdSharpLowerFinal]
+'ThresholdSharpGlobalLower.regular_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpGlobalLower.lower_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[295/304 ThresholdUpperSharpAssembly]
+
+[296/304 ThresholdUpperRound]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperRound.lean:1:0: warning: 
+'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Real.Basic
+
+[297/304 ThresholdUpperParameters]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperParameters.lean:12:36: warning: Variable name `pos` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _pos
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ThresholdUpperParameters.from_rates' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[298/304 ThresholdUpperFactorialRate]
+'ThresholdUpperFactorialRate.sample_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdUpperFactorialRate.sampled_powers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdUpperFactorialRate.factorial_power' depends on axioms: [propext, Quot.sound]
+
+[299/304 ThresholdUpperFirstMoments]
+
+[300/304 ThresholdUpperFirstRate]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFirstRate.lean:118:30: warning: This simp argument is unused:
+  mul_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, add_mul] at h2 h4 ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFirstRate.lean:126:28: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFirstRate.lean:126:32: warning: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperFirstRate.lean:126:32: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'ThresholdUpperFirstRate.first_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[301/304 ThresholdUpperSecondRate]
+/dev/shm/review-two-sided-4U0Pcp/research/crown-circuits/uniform-threshold/kernel-sharp-two-sided/sources/ThresholdUpperSecondRate.lean:82:42: warning: This simp argument is unused:
+  Edges
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Z, Finset.card_powersetCard]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThresholdUpperSecondRate.second_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[302/304 ThresholdUpperAllOrders]
+'ThresholdUpperAllOrders.parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[303/304 ThresholdUpperBeta]
+'ThresholdUpperBeta.exists_beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[304/304 ThresholdSharpTwoSided]
+'ThresholdSharpTwoSided.rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+

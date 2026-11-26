@@ -1,0 +1,30 @@
+[
+  {
+    "module": "Mathlib.Logic.Equiv.Embedding",
+    "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "git_blob": "5dbd7a62d9f04586d56cd3368b671b04e74b602f",
+    "source_sha256": "928b668c64d058cc97347e314131e94ecf29b386ca358f2746dde1da83ee54c9",
+    "olean_sha256": "194a78ffcf498c31b54157fc0b440ca1777c2e0dda5e7f372f6bffd7cd148196",
+    "path": "/dev/shm/review-two-sided-4U0Pcp/prerequisites/Mathlib/Logic/Equiv/Embedding.olean",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-two-sided-4U0Pcp/prerequisites/Mathlib/Logic/Embedding/Set.olean"
+    ]
+  },
+  {
+    "module": "Mathlib.Data.Fintype.CardEmbedding",
+    "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "git_blob": "47c7735ccf30bef7014b5ebc406aea902ce2a69e",
+    "source_sha256": "05ec7f32d4597c59c8f3e00d7c4e5b46cb6203d806b1eb8c2aee89eaecbaf280",
+    "olean_sha256": "a81cbee5e12f54ede0e7d9707b40bb4f7459c9e6e75d709488fde917ffba8b03",
+    "path": "/dev/shm/review-two-sided-4U0Pcp/prerequisites/Mathlib/Data/Fintype/CardEmbedding.olean",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-two-sided-4U0Pcp/prerequisites/Mathlib/Data/Fintype/BigOperators.olean",
+      "/dev/shm/review-two-sided-4U0Pcp/prerequisites/Mathlib/Logic/Equiv/Embedding.olean",
+      "/dev/shm/review-two-sided-4U0Pcp/prerequisites/Mathlib/Data/Set/Finite/Range.olean"
+    ]
+  }
+]

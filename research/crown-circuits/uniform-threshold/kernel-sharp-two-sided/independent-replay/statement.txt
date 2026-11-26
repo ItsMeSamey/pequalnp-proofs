@@ -1,0 +1,4 @@
+theorem rational (ε : ℝ) (ep : 0<ε) :
+    ∃ N : ℕ, ∀ n : ℕ, N≤n → 0≤surplus n ∧
+      (9765625-ε)*(n:ℝ)^3≤2048*(surplus n)^10 ∧
+      2048*(surplus n)^10≤(9765625+ε)*(n:ℝ)^3
