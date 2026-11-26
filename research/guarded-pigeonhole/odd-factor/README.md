@@ -23,3 +23,5 @@ Fix all q on H and on every charged terminal to one, and all other q to zero. Th
 ## Finite checks
 
 Run python3 check.py from this directory. It enumerates all matching and odd-coloring pairs through n=4, and all K4 expander-side assignments on each fixed-matching restriction. There are 3,282 matching/coloring cases and 2,112 restriction cases. A separate [checker](check_independent.py) verifies both restrictions and samples the cancellation identity on complete assignments. Finite checks exercise the interfaces. The asymptotic claims use the reductions above.
+
+For DAG proofs, [semantic binary inference](dag-depth.md) requires depth Ω(√N). With arbitrary inference fan-in and erasures, [clause space times logarithmic length](space.md) is Ω(√N).
