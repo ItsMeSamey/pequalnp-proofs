@@ -1,7 +1,7 @@
 """Independent checks of mixed Boolean equations and signed direct 3-CNF."""
 from itertools import combinations
 from random import Random
-from affine_border_mixed import FaceBudgetExceeded, solve_anf, solve_cnf3, _rules, _faces, _tables
+from affine_border_mixed import FaceBudgetExceeded, solve_anf, solve_cnf, solve_cnf3, _rules, _faces, _tables
 
 
 def compare(result,models):
@@ -37,6 +37,17 @@ if __name__=='__main__':
         models=[x for x in range(1<<n)
                 if all(any(bool(x>>(abs(lit)-1)&1)==(lit>0) for lit in clause) for clause in clauses)]
         compare(solve_cnf3(n,clauses,max_faces=128),models)
+    for _ in range(220):
+        n=rng.randrange(1,8)
+        clauses=[[v if rng.randrange(2) else -v for v in rng.sample(range(1,n+1),rng.randrange(1,n+1))]
+                 for _ in range(rng.randrange(1,12))]
+        models=[x for x in range(1<<n)
+                if all(any(bool(x>>(abs(lit)-1)&1)==(lit>0) for lit in clause) for clause in clauses)]
+        compare(solve_cnf(n,clauses,max_faces=128),models)
+    assert solve_cnf(4,[[1,2,3,4]])[0]==15
+    try:solve_cnf3(4,[[1,2,3,4]])
+    except ValueError:pass
+    else:raise AssertionError('3-CNF width guard missing')
     for n in (3,5,7):
         cubics=[[-(i+1),-(j+1),-(k+1)] for i,j,k in combinations(range(n),3)]
         count,wit=solve_cnf3(n,cubics,max_faces=1+n+n*(n-1)//2)
@@ -47,4 +58,4 @@ if __name__=='__main__':
     try:solve_anf(12,[],max_faces=100)
     except FaceBudgetExceeded:pass
     else:raise AssertionError('face budget missing')
-    print('400 arbitrary-degree ANFs, 350 direct signed 3-CNFs, dense cubic controls and edge cases passed')
+    print('400 arbitrary-degree ANFs, 350 direct signed 3-CNFs, 220 arbitrary-width signed CNFs, dense cubic controls and edge cases passed')

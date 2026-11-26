@@ -99,8 +99,7 @@ def solve_anf(n, rows, *, max_faces=None):
     return count,witness
 
 
-def solve_cnf3(n, clauses, *, max_faces=None):
-    """Count signed CNFs of width at most three; DIMACS literals are ±1,...,±n."""
+def _cnf_rows(n, clauses, width_limit):
     if not isinstance(n,int) or n<0:
         raise ValueError("invalid dimension")
     rows = []
@@ -110,7 +109,7 @@ def solve_cnf3(n, clauses, *, max_faces=None):
             raise ValueError("invalid literal")
         if any(-lit in literals for lit in literals):
             continue
-        if len(literals)>3:
+        if width_limit is not None and len(literals)>width_limit:
             raise ValueError("clause width exceeds three")
         # Falsity is product of x_i for negative and 1+x_i for positive literals.
         negative = sum(1<<(-lit-1) for lit in literals if lit<0)
@@ -120,4 +119,16 @@ def solve_cnf3(n, clauses, *, max_faces=None):
                 bit = 1<<(lit-1)
                 terms += [m | bit for m in terms]
         rows.append(terms)
-    return solve_anf(n,rows,max_faces=max_faces)
+    return rows
+
+
+def solve_cnf(n, clauses, *, max_faces=None):
+    """Arbitrary signed DIMACS CNF; each non-tautological clause adds 2^p terms,
+    where p counts distinct positive literals. Total expansion ≤ sum_C 2^width(C).
+    """
+    return solve_anf(n,_cnf_rows(n,clauses,None),max_faces=max_faces)
+
+
+def solve_cnf3(n, clauses, *, max_faces=None):
+    """Count signed CNFs of width at most three; DIMACS literals are ±1,...,±n."""
+    return solve_anf(n,_cnf_rows(n,clauses,3),max_faces=max_faces)
