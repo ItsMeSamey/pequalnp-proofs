@@ -34,3 +34,5 @@ Two independent runs regenerated the 1,218,270 irreducible ten-mask families. Th
 The first combined replay exposed a representation mismatch between the nine-mask extension stage and the one-copy checker. Each extension now exports its one-based base index, extra mask and lower bound. A full set comparison against the inputs used in the separate one-copy replay returned equality for all 26,754 distinct-extension rows and 1,122 repeated-or-zero extension rows.
 
 After the conversion, both downstream mixed searches passed on the regenerated outputs. The [final-stage log](final-stages.log) records the extinction depths and tree control. The earlier enumeration, histogram and byte-comparison stages had already passed in the combined run.
+
+A subsequent [complete driver replay](full-verified.log) regenerated the inputs and ran both downstream searches in sequence.

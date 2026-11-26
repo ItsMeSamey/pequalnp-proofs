@@ -55,3 +55,5 @@ In the same relaxation, [all seven neighborhoods](../seven-neighborhoods/README.
 [Two arbitrary insertions](two-insertions/README.md) into a named 31-gate partial seed fail even with the specified rewiring and reordering freedoms. Its 273 rows match the pinned residual decoder in order.
 
 With exactly ten point-boundary signals, [the higher-budget checks](ten-higher-mixed/README.md) exclude 18, 19 and 20 mixed gates. The 21-mixed case is still open in this release.
+
+At 18 mixed gates with eleven point-boundary and seven line-boundary signals, the [eleven-point extension check](eleven-extensions/README.md) excludes every candidate whose point signatures contain a feasible proper subfamily. The checker exhausts all 278 representatives.
