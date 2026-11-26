@@ -35,3 +35,7 @@ The test uses 3h macro gates, 3s+O(n) ordinary gates, and n+O(log n) inputs. For
 ## Finite checks
 
 Run `python check.py`. It compares signed expansions with exhaustive counts on 350 seeded quadratic examples in affine normal-form coordinates and 100 seeded circuits with nested CNF gates. These tests check the identities on finite samples. The asymptotic bounds follow from the arguments above.
+
+The [XOR wiring result](xor-wiring.md) compiles quadratic phases from supplied cutrank layouts. Run `python3 xor_wiring_check.py` for 120 linear layouts and `python3 tree_phase_check.py` for 128 tree layouts.
+
+The [signed interval compiler](intervals.md) gives a parsimonious reduction when a literal ordering with at most p runs per clause is supplied. Run `python3 interval_compiler.py` to check the range construction and full CNF compilation.
