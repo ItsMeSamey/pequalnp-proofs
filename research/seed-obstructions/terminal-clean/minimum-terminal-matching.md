@@ -1,0 +1,3 @@
+# Terminal matching and the thirteen-term cases
+
+In a minimum circuit in clean-prefix/terminal-AND/final-OR form, no terminal ANDs can share an operand H. Rebalance the OR tree and factor (H∧A)∨(H∧B) as H∧(A∨B), saving a gate regardless of other uses. Normalize each singleton-positive terminal to its raw atom p∧T. This can only improve polarities; any dead gate or shared operand in the new representation would contradict minimality. The singleton terminal incidences form a matching and hence there are at most seven. Every other terminal requires a dirty prefix wire: no clean product of two raw operands covers two positive cells. These wires are distinct by the factoring argument. Consequently k≤7+c, while c≤34−2k at size at most 33. This proves k≤13.

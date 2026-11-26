@@ -55,3 +55,5 @@ A size-at-most-40 circuit for the 12-crown cannot have exactly four AND gates th
 The 12-crown requires **exactly 41 gates among all binary monotone circuits using at most four AND gates**. The rejection search allows arbitrary sharing and topology. The 130 rejection certificates passed DRAT verification, and the 41-gate upper witness was checked on all 144 inputs. [Four-AND model and replay](four-and-cert/four-and-model.md)
 
 A separate proof gives exact size 41 for arbitrary raw OR-only preprocessing followed by terminal comparisons and OR aggregation, including shared OR gates and any number of comparisons. General circuits can also put diagonal-active ANDs in the prefix. [Raw-bank proof](arbitrary-raw-banks/arbitrary-raw-banks.md)
+
+The [standalone Lean theorem](../../lean/Research/CrownShardStandalone.lean) gives a physical lower bound of 31 OR gates and an upper bound of nine AND gates at total size at most 40. Its axiom audit lists only propext, Classical.choice and Quot.sound. The stronger 32-OR bound above is independently established by the mathematical induction.
