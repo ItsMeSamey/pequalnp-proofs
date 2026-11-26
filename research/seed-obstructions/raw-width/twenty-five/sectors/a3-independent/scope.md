@@ -7,3 +7,5 @@ The independent checker derives the hereditary B frontier and forced masking neg
 The numerical replay runs the archived solve function through a separate driver. For every completed key it checks 1 + 7 + 21 filter configurations. A separate arithmetic check compares all 43,200 relevant recipient-support threshold bits with scalar occurrence costs, across all 36 supports and eight recipients. These checks share the archived rectangle primitive and search implementation. They do not provide a separate implementation of its circuit-to-rectangle necessity proof.
 
 Every numerical receipt records the exact case ordinal, inputs, result count, completion time and result hash. The final receipt checker rejects omissions and duplicate keys before confirming full numerical coverage.
+
+To rerun the receipt checker, extract the adjacent raw25-high-owner-nonempty.zip into a directory named sealed beside receipt.py, then run python receipt.py. The per-case records are in first-replay.log and batches/*.keys.
