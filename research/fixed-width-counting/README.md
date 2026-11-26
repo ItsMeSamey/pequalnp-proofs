@@ -51,3 +51,5 @@ The [signed interval compiler](intervals.md) gives a parsimonious reduction when
 The [signed long-clause pivot](long-pivot.md) and [selector-rank reduction](long-selector-rank.md) give counting algorithms when their stated rank or support bounds hold.
 
 [Combined Walsh selectors](long-walsh.md) handle overlapping low-support groups and exceptional clauses. The [Walsh family](long-walsh-family.md) and [projective clause family](long-boolean-profiles.md) compare these sufficient conditions with incidence rank, signed intervals and the number of distinct unions.
+
+A [width-normalization reduction](long-width-barrier.md) recovers an ordinary model count using two counts whose clauses all have the same prescribed width.
