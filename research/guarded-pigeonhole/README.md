@@ -55,3 +55,5 @@ The [LP checker](mask_lp.py) sums inequalities to obtain −1≥0 on 512 test gr
 [Two sparse modifications](separations.md) preserve the polynomial-calculus lower bounds and admit exact fractional solutions to the mask LP. Local distributions that agree on full bag intersections refute both modifications.
 
 An [expander modification](expander.md) simultaneously requires linear GF(2) PC degree, exponential ordinary PC size, linear Sherali–Adams rank and linear real sum-of-squares degree on its forbidden-assignment CNF. Its two restrictions witness the algebraic and real hierarchy bounds separately.
+
+A [two-switch family](unit-exchange.md) retains the separate lower bounds after either value of every individual coordinate is fixed. This blocks exchanges of unit facts, even when the engines use opposite-value tests.

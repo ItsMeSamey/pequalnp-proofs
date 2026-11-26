@@ -43,3 +43,5 @@ python3 -B "$repo/research/marker-principal/check.py"
 python3 -B "$repo/research/scc-guards/check.py"
 python3 -B "$repo/research/chart-basis/check.py"
 (cd "$repo/research/signed-cuts" && python3 -B -m unittest)
+python3 -B "$repo/research/guarded-pigeonhole/check_unit_exchange.py"
+python3 -B "$repo/research/seed-obstructions/verify_mixed.py"
