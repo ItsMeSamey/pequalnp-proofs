@@ -6,6 +6,8 @@ Fix m with h≥2 distinct odd prime divisors p₁,…,p_h. From a 3-CNF F on n v
 
 This subexponential-size reduction gives no polynomial reduction or NP-hardness claim. A polynomial-time bin-membership algorithm at this m would solve 3SAT in the stated time. Polynomial-time decision for every fixed m would give a 2^{O_ε(n^ε)} deterministic 3SAT algorithm for every ε>0: deduplicate clauses so L=O(n³), and use h>3/ε. No ETH assumption enters.
 
+[Brakensiek, Gopi and Guruswami, Corollary 4.29](https://arxiv.org/abs/1902.04740) gives the related fine-grained mixed-odd SAT barrier. The construction here gives an explicit parsimonious code and a single target bin.
+
 The low-degree divisibility construction is the composite-modulus OR construction of Barrington, Beigel and Rudich applied to the clause-violation bits. The code reduction additionally expands parity characters, fixes the target to bin one and preserves assignment multiplicities. [Barrington, Beigel and Rudich](https://www.cis.temple.edu/~beigel/papers/bbr-mods-cc.html)
 
 ## Construction

@@ -1,0 +1,16 @@
+# A bipartite three-marker NO instance of ordinary GF(2) PC degree exactly four
+
+Start with the 19-vertex bipartite seed having the following adjacency masks in vertex order:
+
+    32810, 263685, 282, 5, 22084, 5697, 76080, 10496, 18116,
+    164146, 196914, 262336, 48, 192, 272, 513, 1088, 1536, 2050.
+
+The native guard for i is x_i times the sum of its neighbors over GF(2), with Boolean axioms. With the adjacent roots 0,1 pinned to one, the seed has 340 models and every model has weight parity W=x_1+x_2+x_3+x_4+x_8=1. This affine equation has an ordinary degree-four direct derivation on the seed.
+
+Make two disjoint copies, indexed by adding 0 and 19, respectively. Remove their two root edges (0,1) and (19,20); insert (1,19) and (0,20). The new edges join opposite shores for the original common coloring. Pin 0 and 20 to one, and impose the third marker W(first)+W(second)=1. There are 38 vertices and 70 edges. All three markers are independent. The third marker mask is 286 OR (286 shifted left by 19).
+
+The guard sum on the first copy's vertices is x_0 x_20 + x_1 x_19, since its internal edge monomials occur twice. Hence x_1 x_19=1 under the external pins. Multiply by 1+x_1 and Boolean-reduce to obtain x_1=1 in ordinary degree three. The analogous step gives x_19=1. After substituting these four terminal pins, all remaining rows agree with the two original rooted systems: each original root's former neighbor is replaced by a different neighbor pinned to one. Thus the native integer models of the first two pins are the Cartesian product of the two seed fibers. Every one has W(first)+W(second)=0, establishing unsatisfiability of the three-marker system. The degree-four upper bound follows by deriving each original seed's root guard at degree two from the global guard and the available pins (their difference is a root times a sum of two pinned bits), then appending the two seed derivations and the opposite marker.
+
+For the lower bound grant both inner pins as extra axioms and eliminate the four terminal coordinates and one more coordinate using the opposite marker. This leaves 33 free variables. A degree-three proof before this operation would give one afterward, including with affine substitutions for the eliminated variable: a substituted Boolean axiom is a sum of Boolean axioms in characteristic two, and multiplication by an affine combination is a linear combination of multiplications by individual free variables at the same raw-degree bound. The finite checker computes the reachable ordinary PC span using squarefree monomials up to degree three. It only multiplies basis rows of degree at most two; each Boolean truncation of such a product is licensed by the degree-three Boolean axiom multiples. Degree-ordered elimination makes the available lower-degree slice the span of the rows with lower-degree leading pivot. At saturation the degree-three dimension is 3276 and the constant one is absent. The degree-two dimension is 158. This gives a genuine opposite-marker refutation lower bound, in addition to the single seed's direct affine-consequence gap.
+
+Run series.py for the exact finite lower calculation. The [raw verifier](series-raw.py) independently keeps the original variables, marker equations and Boolean axioms. See the [construction and degree-four derivation](bipartite-amplification.md).

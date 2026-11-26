@@ -2,6 +2,8 @@
 
 Let g(x)=Σ_a c_a(−1)^{a·x} on F₂ⁿ have s nonzero distinct Walsh coefficients over a fixed odd-characteristic field with efficient arithmetic. Let P be a Boolean polynomial of degree d given in algebraic normal form, and fix b∈F₂. For fixed d there is a deterministic polynomial-time algorithm finding x with g(x)≠0 and P(x)=b, or certifying nonexistence. This covers every fixed finite abelian 2-group times any fixed abelian group of odd prime-power order as an unsigned marker group for an arbitrary binary affine code. In particular all fixed moduli 2^k p^a with p odd are covered.
 
+For modular linear systems, compare the quasipolynomial bound and remaining range with at least three factors of two in [Brakensiek, Gopi and Guruswami, Theorem 1.1](https://arxiv.org/abs/1902.04740). The fixed-modulus code-support result here gives a deterministic polynomial bound in that range.
+
 ## A connected support graph
 
 If s=0 reject. Pick one Walsh frequency a₀. Find at most ceil(log₂ s)+1 directions such that each nonzero difference a+a₀ is nonorthogonal to some chosen direction. Greedily choose a direction separating at least half the remaining differences: a uniform direction has that expectation; fixing bits by conditional expectations attains it deterministically since each parity has conditional expectation zero, one or one half. Stop when all differences have been removed. The direction span W has at most 4s members (W={0} for s=1). In every coset x+W the restriction of g combines equal characters, and the isolated coefficient indexed by a₀|W remains c_a₀ times a sign. Distinct Walsh characters on W are linearly independent in odd characteristic, so every coset contains a support point.
