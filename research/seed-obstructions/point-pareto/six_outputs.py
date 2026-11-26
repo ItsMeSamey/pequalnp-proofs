@@ -18,6 +18,7 @@ assert all((a & t).bit_count() <= 1 for a in raw for t in stars)
 shallow = {z for a,b in combinations(raw, 2) for z in (a|b,a&b)}
 all_masks = set()
 counts = Counter()
+exact_nine = []
 clauses, masks, *_ = encode(raw, rows, 11, 6, selected=6, abstract=True)
 with Solver(name='cadical195', bootstrap_with=clauses) as solver:
     while solver.solve():
@@ -30,8 +31,13 @@ with Solver(name='cadical195', bootstrap_with=clauses) as solver:
         assert all(x.bit_count() >= 3 for x in set(bank) - shallow)
         counts[len(set(bank) & shallow)] += 1
         all_masks.update(bank)
+        if sorted(m.bit_count() for m in bank) == [2,2,2,3,3,3]:
+            exact_nine.append(tuple(bank))
         solver.add_clause([(-q if x >> i & 1 else q) for x,m in zip(bank,masks) for i,q in enumerate(m)])
 assert counts == Counter({0:6064,1:7392,2:1968,3:192})
 assert all_masks == {x for x in range(8192) if x.bit_count() >= 2 and any(not x & ~t for t in stars)}
+assert len(exact_nine) == 24
+if len(sys.argv) > 2:
+    Path(sys.argv[2]).write_text(''.join(' '.join(map(str,b))+'\n' for b in sorted(exact_nine)))
 print('No width-eleven bank uses five or fewer nonraw masks.')
 print('Six-mask banks:',sum(counts.values()),'distinct masks:',len(all_masks),'shallow histogram:',sorted(counts.items()))

@@ -9,14 +9,18 @@ from pysat.solvers import Solver
 from input import point_obligations
 
 
-def encode(raw, obligations, width, gates, selected=None, abstract=False):
+def encode(raw, obligations, width, gates, selected=None, abstract=False, single_hidden=False):
     # Each computed signal is represented by its 13 values on point singletons.
     pool = IDPool()
     allocate = pool.id
     clauses = []
-    masks = [[allocate() for _ in range(13)] for _ in range(gates)]
+    if single_hidden:
+        assert selected == gates - 1
+    ordered = gates - int(single_hidden)
+    hidden = ordered if single_hidden else -1
+    masks = [[allocate() for _ in range(13)] for _ in range(ordered)]
     active_raw = [allocate() for _ in raw]
-    active_gates = [] if selected == gates else [allocate() for _ in masks]
+    active_gates = [] if selected == ordered else [allocate() for _ in masks]
     if selected is None:
         clauses.extend(CardEnc.atmost(active_raw + active_gates, width, vpool=pool).clauses)
     else:
@@ -37,7 +41,7 @@ def encode(raw, obligations, width, gates, selected=None, abstract=False):
         clauses.append(choices)
 
     # Strict unsigned ordering gives unique labels to distinct output masks.
-    for i in range(1, gates):
+    for i in range(1, ordered):
         equal_prefix = []
         for bit in range(12, -1, -1):
             a, b = masks[i-1][bit], masks[i][bit]
@@ -49,6 +53,9 @@ def encode(raw, obligations, width, gates, selected=None, abstract=False):
 
     if abstract:
         return clauses, masks, active_raw, active_gates
+
+    if single_hidden:
+        masks.append([allocate() for _ in range(13)])
 
     order = {(i, j): allocate() for i, j in combinations(range(gates), 2)}
 
@@ -71,26 +78,29 @@ def encode(raw, obligations, width, gates, selected=None, abstract=False):
         for j, parent in enumerate(masks):
             if i == j:
                 continue
-            union = j < i
-            for raw_mask in raw:
+            for union in ((False, True) if hidden in (i,j) else (j < i,)):
+                for raw_mask in raw:
+                    choice = allocate()
+                    options.append(choice)
+                    clauses.append([-choice, before(j, i)])
+                    for d, (z, y) in enumerate(zip(output, parent)):
+                        if (raw_mask >> d & 1) == union:
+                            clauses.append([-choice, z if union else -z])
+                        else:
+                            clauses.extend(([-choice, -z, y], [-choice, z, -y]))
+        for j, k in combinations(range(gates), 2):
+            if i in (j,k):
+                continue
+            for union in (False, True):
+                if any(parent != hidden and i != hidden and (parent < i) != union for parent in (j,k)):
+                    continue
                 choice = allocate()
                 options.append(choice)
-                clauses.append([-choice, before(j, i)])
-                for d, (z, y) in enumerate(zip(output, parent)):
-                    if (raw_mask >> d & 1) == union:
-                        clauses.append([-choice, z if union else -z])
-                    else:
-                        clauses.extend(([-choice, -z, y], [-choice, z, -y]))
-        for j, k in combinations(range(gates), 2):
-            if j < i < k or i in (j, k):
-                continue
-            choice = allocate()
-            options.append(choice)
-            clauses.extend(([-choice, before(j, i)], [-choice, before(k, i)]))
-            sign = 1 if k < i else -1
-            for a, b, c in zip(masks[j], masks[k], output):
-                a, b, c = sign*a, sign*b, sign*c
-                clauses.extend(([-choice, -a, c], [-choice, -b, c], [-choice, a, b, -c]))
+                clauses.extend(([-choice, before(j, i)], [-choice, before(k, i)]))
+                sign = 1 if union else -1
+                for a, b, c in zip(masks[j], masks[k], output):
+                    a, b, c = sign*a, sign*b, sign*c
+                    clauses.extend(([-choice, -a, c], [-choice, -b, c], [-choice, a, b, -c]))
         clauses.append(options)
     return clauses, masks, active_raw, active_gates
 
@@ -101,12 +111,14 @@ def main():
     parser.add_argument('--width', type=int, default=11)
     parser.add_argument('--gates', type=int, default=6)
     parser.add_argument('--selected', type=int)
+    parser.add_argument('--single-hidden', action='store_true')
     parser.add_argument('--cnf', type=Path)
     parser.add_argument('--proof', type=Path)
     parser.add_argument('--emit-only', action='store_true')
+    parser.add_argument('--require-unsat', action='store_true')
     args = parser.parse_args()
     raw, obligations = point_obligations(args.statement)
-    clauses, masks, active_raw, active_gates = encode(raw, obligations, args.width, args.gates, args.selected)
+    clauses, masks, active_raw, active_gates = encode(raw, obligations, args.width, args.gates, args.selected, single_hidden=args.single_hidden)
     with Solver(name='cadical195', with_proof=bool(args.proof)) as solver:
         for clause in clauses:
             solver.add_clause(clause)
@@ -119,11 +131,13 @@ def main():
             return
         result = solver.solve()
         print('SAT' if result else 'UNSAT', 'width', args.width, 'gates', args.gates, flush=True)
+        if result and args.require_unsat:
+            raise SystemExit("A point bank survived")
         if result:
             model = set(solver.get_model())
             values = [sum((q in model) << bit for bit, q in enumerate(mask)) for mask in masks]
             bank = [x for x, q in zip(raw, active_raw) if q in model]
-            bank.extend(x for j, x in enumerate(values) if not active_gates or active_gates[j] in model)
+            bank.extend(x for j, x in enumerate(values) if not (args.single_hidden and j == len(values)-1) and (not active_gates or active_gates[j] in model))
             assert len(bank) <= args.width and all(any((x & p) and not (x & n) for x in bank) for p,n in obligations)
             available = set(raw)
             remaining = set(values) - available

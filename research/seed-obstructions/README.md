@@ -64,6 +64,8 @@ A [seven-line proof by gate counting](one-surplus/README.md) independently exclu
 
 With at most twelve point outputs and arbitrary monotone postprocessing, [the point preprocessing minimum is five gates](point-twelve/README.md). If a formula repeats one raw line exactly r times and uses the other six lines once, [its total gate count is at least 33+r](one-surplus/repeated-one-label.md), including the point circuit.
 
-At eleven point boundary signals, [the point-side lower bound is eight paid gates](point-pareto/README.md). At twelve it is exactly five. In the seven-line case, the [five-feature reconstruction](five-feature/README.md) excludes a raw line with one direct use and one use feeding a twice-used mixed signal with a single resident line. Its final 28 configurations admit a two-gate reconstruction of one star.
+At eleven point boundary signals, [the point-side minimum is nine paid gates](point-pareto/README.md). At twelve it is exactly five. In the seven-line case, the [five-feature reconstruction](five-feature/README.md) excludes a raw line with one direct use and one use feeding a twice-used mixed signal with a single resident line. Its final 28 configurations admit a two-gate reconstruction of one star.
 
 With exactly seven line signals, [the two-surplus theorem](two-surplus/README.md) requires at least three extra operand reads at size 33. Such a residual would have at least P+9 mixed gates and hence **at least 20 mixed gates**, since P≥11. At 19 mixed gates the open configurations have eleven point signals with eight or nine line signals.
+
+The exact point costs at boundary widths eleven, twelve, thirteen and fourteen are 9, 5, 0 and 0. At width eleven the last two eight-gate SAT exclusions have independently verified DRAT certificates. At width twelve exactly five point banks attain cost five. These costs allow unrestricted monotone computation after the boundary.
