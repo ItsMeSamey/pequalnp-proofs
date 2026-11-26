@@ -36,3 +36,7 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 [A polynomial-calculus counterexample](polynomial-calculus/README.md) gives 22 Boolean variables, one quadratic constraint per pivot and one affine parity marker. Its refutation degree over GF(2) is exactly four. The lower-bound certificate excludes every degree-three derivation, and the supplied upper-bound trace can be replayed directly.
 
 [Compressed functional pigeonhole systems](guarded-pigeonhole/README.md) have hidden rank deficiency one and require linear polynomial-calculus refutation degree over GF(2). A polynomial-size linear program refutes this same family directly from the input coefficient masks.
+
+[Signed biclique composition](signed-bicliques/README.md) applies the October manuscript’s exact counting bounds to supplied decompositions of fixed-width CNF. It gives separate flat, balanced-recursive, and near-full-port algorithms.
+
+[Fixed gate obstructions](seed-obstructions/README.md) exclude four specified subprograms from any 34-gate completion of L-meta-18968. The certificates use disjoint positive–negative difference sets on the raw statement.

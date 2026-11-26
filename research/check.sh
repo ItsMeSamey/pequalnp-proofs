@@ -31,3 +31,8 @@ python3 -B "$repo/research/guarded-pigeonhole/mask_lp.py"
 python3 -B "$repo/research/guarded-pigeonhole/combined.py"
 python3 -B "$repo/research/guarded-pigeonhole/check_separations.py"
 python3 -B "$repo/research/guarded-pigeonhole/check_expander.py"
+python3 -B "$repo/research/signed-bicliques/check.py"
+(
+  cd "$repo/research/seed-obstructions"
+  python3 -B verify_packing.py L-meta-18968.json packing-18968.json packing-21968.json subset-18968-15.json subset-21968-15.json
+)
