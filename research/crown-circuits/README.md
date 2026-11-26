@@ -66,3 +66,5 @@ With five AND gates, size 40 is also excluded in the normalized case with exactl
 The full [standard-axiom Lean certificate](kernel-or-count/README.md) now verifies the general 3n−4 OR lower bound, the 32-OR bound at n=12 and the consequent cap of eight AND gates at total size 40. It includes the kernel-checked finite base case.
 
 A 31-gate prefix can summarize nine labels by two wires. A suffix reading those two wires and the six raw ports of the remaining labels needs at least eight OR gates and two AND gates. The Lean audit lists the three standard axioms for both endpoints. [Folded-prefix proof](folded-kernel/folded-residual.md)
+
+Unrestricted size at most 40 for the 12-crown is equivalent to size at most 28 for twelve-input threshold two. Both remain open. [Equivalence, finite prerequisite and replay](universal-pairing/README.md)
