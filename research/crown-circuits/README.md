@@ -16,3 +16,5 @@ g++ -std=c++20 -O2 one-active-check.cpp -o /tmp/crown-one-active
 [Crown saturation](../../lean/Research/CrownFalseOrSaturation.lean) and [predecessor conflicts](../../lean/Research/CrownFalseOrConflicts.lean) describe any 12-crown circuit with at most 23 OR gates on a diagonal where two OR gates are true. Every false OR participates in the false cone, and the relevant predecessor sets are pairwise disjoint.
 
 For any size-40-or-smaller 12-crown circuit, [the subcrown theorem](../../lean/Research/CrownSubcrownMarkers.lean) forces at least four diagonals where two or more OR gates are true. If the circuit uses at most 23 OR gates, [the wiring theorem](../../lean/Research/CrownOrWiring.lean) gives 21 OR gates with pairwise disjoint two-element predecessor sets.
+
+[Uniform diagonal signatures](../../lean/Research/CrownUniformTrace.lean) give a k(k−1) AND bound for a k-element subalphabet when k≥3. A signature class in a size-40-or-smaller 12-crown circuit therefore contains at most four labels.
