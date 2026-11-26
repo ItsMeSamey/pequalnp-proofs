@@ -2,6 +2,8 @@
 
 For minimum binary monotone AND/OR circuit size with unrestricted fanout, **C(n) = 2n + √(2n) + Θ(n^(3/10))**. The two bounds hold with positive absolute constants for all sufficiently large n. The proof determines the order of the third term. Its optimal coefficient remains open. Independent mathematical reviews checked the unrestricted lower bound and its prerequisite arguments. [Lower bound](unrestricted-matching-exponent.md) · [Upper construction](three-level-matching.md)
 
+The refined construction gives C(n) ≤ 2n + √(2n) + (5/4)2^(9/10)n^(3/10) + O(n^(7/30)). This coefficient is an upper bound on the unrestricted optimum. [Short-signature construction](short-signatures.md)
+
 ## Earlier bounds and constructions
 
 The matching construction gives **C(n) ≤ 2n + √(2n) + O(n^(3/10))**. Together with the lower bound below, this gives **C(n) = 2n + √(2n) + O(n^(3/10))**. The proof counts matching signatures and gives a deterministic finite search for a suitable graph. The final theorem above gives a matching order of growth for the remainder. [Construction](matching-signatures.md)
