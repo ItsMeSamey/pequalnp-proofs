@@ -1,0 +1,3 @@
+# Replay compares these generated tables byte for byte.
+families.txt whitespace=-blank-at-eol
+nine.txt whitespace=-blank-at-eol

@@ -9,12 +9,13 @@ def matmul(A,B):
 def transpose(A):
     return list(zip(*A))
 
-def check(L,m):
+def check(L,m,decorate):
     T=2*L+1
     grid=range(-L,L)
     N=Fraction(prod(T-q for q in grid),prod(-q for q in grid if q))
     w=N/T
-    K=[[1,1-w],[0,w]]
+    P=prod(1-N/(T+x) for x in range(2,L,2)) if decorate else 1
+    K=[[1,(1-w)*P],[0,w*P]]
     boundary=[[1,0],[0,1]]
     for i in range(m):
         boundary=matmul(boundary,transpose(K) if i%2==0 else K)
@@ -26,9 +27,10 @@ def check(L,m):
             weight*=K[y][x]
         exact[bits[0]][bits[-1]]+=weight
     assert exact==boundary
-    assert boundary[0][0]*boundary[1][1]-boundary[0][1]*boundary[1][0]==w**m
+    assert boundary[0][0]*boundary[1][1]-boundary[0][1]*boundary[1][0]==(w*P)**m
 
 for L in (2,4,8,16):
     for m in (2,4,6,8,10):
-        check(L,m)
-print("Verified 20 linked packet chains, all four boundary counts and determinants.")
+        for decorate in (False,True):
+            check(L,m,decorate)
+print("Verified 40 linked packet chains, all four boundary counts and determinants.")

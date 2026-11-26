@@ -35,3 +35,5 @@ A [complete suffix search](suffix-search/COPY.md) excludes freezing the first 15
 [Any read-once mixed tree](read_once_guards.md) with exactly seven line-side boundary inputs needs at least 34 residual gates, for any number of point-side inputs. With the nine-point boundary bound this excludes 15 mixed gates at total size 33.
 
 [Six canonical signatures among nine](../six-of-nine/README.md) require at least 18 paid point gates when exactly six of the canonical neighborhoods occur. With the 16-mixed-gate minimum this excludes these nine-point architectures at total size 33.
+
+[The nine-signal enumeration](nine-signatures/README.md) and [mixed-cone exclusions](sixteen-mixed/README.md) show that a residual solution of size at most 33 requires at least 17 mixed gates and ten point-boundary signals.

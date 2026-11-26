@@ -23,3 +23,5 @@ Reproducibility: python fork.py runs 150 random whole-tree examples and 300 rand
 [Taylor regrouping](taylor-regroup.md) reduces the number of calls in the interpolation branch from Σ 2ʲ binom(n,j) to Σ binom(n,j) for j ≤ q, with polynomial arithmetic overhead. [Root modes](root-modes.md) give lower bounds on actual nonzero scalar summands for specified Boolean contractions. Neither changes the leading runtime of the full counting theorem.
 
 The [separable query lower bound](taylor-span.md) proves the regrouped query count is sharp for fixed scalar weights and common linear reconstruction. Run `python3 taylor_span_check.py` to replay the finite rank checks.
+
+A [Tanner layout with unpinned inputs](tanner-taylor-unpinned.md) gives a separate scalar-query rank lower bound. The [occurrence selection](tanner-taylor.md) describes the fixed layout. Run `python3 tanner_unpinned_check.py` and `python3 tanner_lift_check.py` for local algebra checks.

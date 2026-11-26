@@ -1,0 +1,5 @@
+Point bounds [(15, 15), (16, 108), (17, 918), (18, 2877), (19, 13006)]
+group 24
+1041 65 Counter({12: 29, 24: 27, 6: 6, 3: 3})
+One-copy extinction gates [(6, 5), (8, 12), (10, 40), (11, 8)]
+All 4092 read-once extensions rejected; 221586 states.
