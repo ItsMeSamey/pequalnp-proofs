@@ -1,0 +1,17 @@
+# Singleton overlaps at a decoder reader
+
+Consider the canonical receiver graph of a 31-gate circuit for threshold two on 13 inputs. Labels are edges and a vertex flag x is the OR of its incident labels. Let a decoder gate take x and an arbitrary earlier wire Y as its two operands. Write d for the degree of x and S for the incident labels e for which Y is true on the singleton {e}. Then |S| ≤ max(0,d−3).
+
+Suppose S is nonempty and r=d−|S|≤2. Set the r remaining incident labels false. On every surviving input making x true, some active e belongs to S, so monotonicity makes Y true as well. The gate can be removed: keep Y for an OR and x for an AND. The flag x survives since S is nonempty.
+
+If l flags disappear, the independently rebuilt bank saves 2r−l OR gates (its size is 2n−q). Each vanished flag is a neighbor of x, and its only incident label was deleted: the graph is simple and only edges at x were deleted. Hence the l vanished degree-one flags are mixed and each has a distinct dedicated decoder OR, which can be bypassed. The gate whose operands were x,Y is distinct from each of these dedicated gates. In the only possible overlap Y would be the vanished flag, making Y false on all labels of S. Perform the substitutions in chronological order so the constructions also apply when a removed gate was upstream of another removed gate.
+
+The resulting circuit saves at least 2r+1 gates. This contradicts the lower bounds 31,29,27 for the residual 13,12,11 variables, respectively. In particular a degree-three flag has disjoint singleton support from the opposite input at every gate it directly enters. At a degree-four flag, the overlap has size at most one.
+
+## Branching quartets
+
+If a branching pure quartet x has a direct AND reader G=x∧Y, the two operands are disjoint on singleton inputs. Suppose they share a hot singleton e. Erasing the other three labels of x keeps the flag x=e. The other endpoint of e is unaffected since the graph is simple. The bank and disappearing mixed flags save six ORs as above. Since e implies Y, fold G to e. This leaves 24 gates with six ANDs, attaining the size floor on ten inputs; there can be no additional simplification.
+
+In this restricted circuit the raw e has three types of consumer: its other endpoint's raw occurrence, a remaining reader of x, and a use of G now bypassed to e. A remaining direct x reader cannot itself be a dedicated OR erased with a mixed pendant z: such a gate would have computed x∨z=x already in the original circuit. An old G reader may instead be an erased dedicated OR. Follow the nonraw path through these bypasses to a surviving consumer; reaching the output as e would falsely accept the singleton e. Since these bypasses delete one zero raw operand, two surviving occurrences cannot merge in them. Distinct occurrences at the same eventual consumer would yield a redundant binary gate with equal operands, violating the size floor. These three distinct readers contradict the raw fanout bound for every 24-gate, six-AND ten-input optimum.
+
+If x has fanout at least three, a direct OR reader G=x∨Y sharing a hot e is also impossible. The same restriction folds G to Y, leaving 24 gates with seven ANDs. The other endpoint of e and at least two other readers of x give at least three readers, forbidden by the corresponding seven-AND ten-input fanout bound. Both conclusions use degree/t13-seven/ten-minor.md.

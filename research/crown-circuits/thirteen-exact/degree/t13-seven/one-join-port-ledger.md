@@ -1,0 +1,10 @@
+# A port inequality with at most one interior nonraw join
+
+Suppose all pure groups have size three, b are branching with two exits each, and the remaining s are unshared and feed clean dedicated products with a bare shared partner. Consider a normalized circuit whose nonpure shared gates are k mixed OR roots and whose ANDs are single-use. Write c,d for the number of clean and dirty ANDs, respectively. Assume every signed exclusive AND shore has at least three singleton labels, every branch exit must enter a proper OR, and 0≤j≤1 nonraw joins are available before the collector. Let e of those j be outside shared-root trees. Write M for the sum of singleton supports of the k roots, H for the singleton support sum of dirty ANDs, t for the number of OR-only internal parent terms across shared-root trees, J for the total support of these terms, and z for the number of dirty source terms in the same trees.
+
+The number of mixed raw occurrences obeys
+R ≥ M−H+2b+3d−4(k+j)+4t+z−J+e + [e=0] max(0,d−z−2(c−s)).
+
+Indeed let y be the number of branch source terms, and S the total selected dirty support. Then y+z+t=k+j−e. The shared-root raw slots number at least M−J−3y−S. The other branch exits need 2b−y raw slots. The other dirty products need at least 3(d−z)−H+S by the three-shore inequality. An outside join discounts at most three raw slots: only two singleton-hot dirty outputs could have required four, and together need at least one more before an AND. Without such a join, at most 2(c−s) unspent dirty exits can meet a clean terminal, all others entering dirty ANDs and requiring one more raw each. Adding these inequalities and eliminating y gives the claim. When a source of an outside join is itself shared, its lower-bound contribution to that waived total is zero, which is conservative.
+
+For the five-three-three and four-three-two exclusions, b=3, c−s=1 and j=1. The second case has one additional dirty gate and three additional physical raw slots; the outside-join bound increases by exactly three, while the inside-join bound can increase by more because of the extra dirty exit requiring a destination.

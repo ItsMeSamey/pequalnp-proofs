@@ -1,0 +1,31 @@
+External verified artifacts and runtime
+Project: https://github.com/ItsMeSamey/pequalnp-proofs
+research/crown-circuits/threshold-eight and threshold-nine at 2111f5f62b25a858972abddd75ee7d8f134eebd2 (exact C8 and C9).
+research/crown-circuits/ten-exact-cert at 8954e3c63e98f288bcaa14d9d6aae477165a834e (C10=24).
+research/crown-circuits/threshold-twelve-final-cert at 769947641e531fd0c3915263a7c58a734e9a224d (C12=29).
+research/crown-circuits/threshold-thirteen/high-ands at 8ca831a07d6a0875398ae163f67ac08925c032a4 (C13 size31 high-AND exclusions and ports).
+C11 and all other dependency trees are accessible on research fork snapshot 575147e4e1e864e72de914233ee2a6b2caa343ca; these are research fork records.
+Python 3.11 or newer; python-sat==1.9.dev25 with pysat.solvers.Cadical195 proof support; networkx==3.7 for the five-host atlas; C++20 compiler.
+Independent DRAT verifier source: /workspace/scratch/syn_pruning/bank11/drat-trim.c
+SHA256 d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee, permissive license/copyright included in file. Standalone build: cc -O2 drat-trim.c -o drat-trim. Include source with license header or pin its exact digest. Actual compiled binary /workspace/scratch/syn_pruning/bank11/drat-trim is only a convenience. Runtime code writes DIMACS and DRAT independently; it tests s VERIFIED and then deletes the temporary CNF and DRAT. The persistent tsv stores CNF hashes, not DRAT proofs.
+
+Reproduction from degree/t13-seven. Supply an existing work directory TMP and absolute checker executable DRAT. Scripts below are independent stages. Save outputs and compare CNF digests with adjacent ledgers; individual scripts verify DRAT before printing.
+python b4_coverage.py "$TMP"
+python clean_certs.py clean-restrictions.jsonl.gz "$TMP" "$DRAT"
+python clean_certs.py one-clean-restrictions.jsonl.gz "$TMP" "$DRAT" dirty
+python common_replay.py "$DRAT" "$TMP"
+python two_dirty_replay.py "$DRAT" "$TMP"
+These 286+58+5+6 distinct CNFs cover the 1199/402/7/24/0 support layouts.
+python three_private.py
+python three_edge_replay.py "$DRAT" "$TMP"
+python hard_star_replay.py "$DRAT" "$TMP" 1
+python positions_replay.py "$DRAT" "$TMP" 6 7 8 9
+These seven CNFs account for the path/triangle, one-edge and edgeless cases respectively.
+c++ -std=c++20 -O3 quartet_models.cpp -o "$TMP/quartet_models"
+"$TMP/quartet_models" 7 3 >"$TMP/p3.stdout" 2>"$TMP/p3.roles"
+python three_group_census.py "$TMP/p3.roles"
+python p7_replay.py
+python graph-cut/replay.py "$DRAT"
+python nine-five/verify.py
+python nine-six/verify.py
+The latter scripts use verification/threshold-nine/canon6.cpp and profile6.cpp at the relative paths in the file manifest. Replay in a fresh working directory respecting these relative paths.
