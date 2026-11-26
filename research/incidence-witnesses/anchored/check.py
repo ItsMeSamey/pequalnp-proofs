@@ -64,6 +64,11 @@ def extract(c,out,neighbors,query):
             base.append(zero if op=='&' else (base[a] if base[b]==zero else base[b]))
         else: base.append(dst.gate(op,base[a],base[b]))
     outputs,kinds={},{}
+    has_local=set(range(c.n))
+    for v,(op,a,b) in enumerate(c.gates,c.n):
+        own=[j for j in (a,b) if comp[j]==comp[v] and j in has_local]
+        assert op=='|' or len(own)<=1
+        if own: has_local.add(v)
     for root,nodes in parts.items():
         qs=[v for v in nodes if v in query]
         ld=data.intersection(nodes)
@@ -75,16 +80,14 @@ def extract(c,out,neighbors,query):
         else:continue
         if kind=='zeroed':
             x=qs[0]
-            def at_zero(v):
-                if comp[v]!=root:return base[v]
-                if v<c.n:return zero
-                op,a,b=c.gates[v-c.n]
-                return dst.gate(op,at_zero(a),at_zero(b))
             fs=[]
             while x!=root:
                 g=uses[x][0]
                 op,a,b=c.gates[g-c.n]
-                if op=='&':fs.append(at_zero(b if a==x else a))
+                if op=='&':
+                    sibling=b if a==x else a
+                    assert comp[sibling]!=root or sibling not in has_local
+                    fs.append(base[sibling])
                 x=g
             outputs[qs[0]]=dst.reduce('&',fs) if fs else one
             kinds[qs[0]]=kind
@@ -131,12 +134,13 @@ def run():
                         for m in range(1<<n):
                             if m.bit_count()<=radius:
                                 assert (vals[node]>>m)&1==int(bool(m&star)),(q,name,kinds[x],x,m)
-                assert combined<=4*len(src.gates)+good-n
+                ors=sum(op=='|' for op,_,_ in src.gates)
+                assert combined<=4*len(src.gates)-2*ors-n
     assert {'output','zeroed','anchor'}<=modes.keys()
-    for q in range(3,397):
+    for q in range(3,398):
         n=q*q+q+1
-        numer=(4*n-1)*(q-2)+n-4
-        assert 100*((numer+q+1)//(q+2))>=n*q
+        numer=(4*n-1)*(q-1)+2*(2*n-2*q-1)+n-4
+        assert 100*((numer+q+2)//(q+3))>=n*q
     print('Verified compiled rows by case:',dict(modes))
-    print('Verified integer bounds for every order 3 through 396.')
+    print('Verified integer bounds for every order 3 through 397.')
 if __name__=='__main__':run()

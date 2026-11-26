@@ -1,0 +1,11 @@
+# One zero-label vertex in a mixed three-marker bipartite instance
+
+Let the two left label classes be P0,P1 with vectors (1,0,r), and the right classes Q0,Q1 have vectors (0,1,r). Require label sum (1,1,0) and even degrees at every selected vertex in the induced graph. Allow one additional left vertex z of label zero. The same result holds with sides exchanged. Every feasible instance has a witness of size two or five.
+
+A missing edge in either matched block Pr × Qr gives a two-vertex witness. Assume both matched blocks complete. For any solution there is a common index r such that its selected counts in Pr and Qr are odd and both complementary counts are even. If z is absent, the cut Pr ∪ Q(1−r) against its complement crosses just the matched blocks, in an odd total of selected edges. Even degrees rule this out.
+
+Write e(j) for the indicator of zj. In the selected cross-block Pr × Q(1−r), each selected left degree is odd, and each selected right degree is e(j) modulo two. Consequently the selected vertices of Q(1−r) with e=1 are odd in number, as are those with e=0. Complement each column of this cross-block with e=1. Within the resulting selected cross-block all degrees are even. There must be a left vertex i having a nonneighbor in each right subtype. To see this, for each selected i write d0,d1 for its two degrees. Their parities agree; the number of selected i with odd d0 is even, by summing the even degrees on the first right subtype. Oddly many selected i therefore have both degrees even. Each such i misses a vertex in each of the two odd-sized right subtypes.
+
+Take those missed vertices j,k with e(j)=0, e(k)=1. In the original graph ij is absent and ik present. The even degree of z forces a selected neighbor l in Qr because z has odd degree into the other right class. The set {i,z,j,k,l} induces a four-cycle on i,z,k,l and the isolated vertex j. Its label sum is the target. Enumeration of pairs and these certificates is polynomial. Identical-neighborhood zero-label twins on the same side may first be replaced by a single vertex, since an even number of selected copies can be removed and an odd number reduced to one without changing degree parities of their neighbors.
+
+The independent script check_neutral.py compares brute-force support enumeration with the two- or five-vertex characterization.
