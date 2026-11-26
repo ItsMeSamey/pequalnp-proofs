@@ -353,4 +353,25 @@ theorem preimage_gate {Z W : Type*} (f : W → Z) (g : Gate) (X : ℕ → Set Z)
   cases g with
   | mk op a b => cases op <;> rfl
 
+theorem select_gates {Z : Type*} (m s : ℕ) (X : ℕ → Set Z)
+    (steps : ∀ k < s, ∃ a < m+k, ∃ b < m+k,
+      X (m+k) = X a ∪ X b ∨ X (m+k) = X a ∨ X (m+k) = ∅ ∨ X (m+k) = X a ∩ X b) :
+    ∃ raw : ℕ → Gate, (∀ k < s, (raw k).left < m+k ∧ (raw k).right < m+k) ∧
+      ∀ k < s, X (m+k) = (raw k).eval X := by
+  classical
+  have get (k : ℕ) (hk : k < s) : ∃ g : Gate,
+      g.left < m+k ∧ g.right < m+k ∧ X (m+k) = g.eval X := by
+    obtain ⟨a,ha,b,hb,law⟩ := steps k hk
+    rcases law with u|c|z|i
+    · exact ⟨⟨.join,a,b⟩,ha,hb,u⟩
+    · exact ⟨⟨.copy,a,b⟩,ha,hb,c⟩
+    · exact ⟨⟨.zero,a,b⟩,ha,hb,z⟩
+    · exact ⟨⟨.meet,a,b⟩,ha,hb,i⟩
+  let raw (k : ℕ) : Gate := if h : k<s then (get k h).choose else ⟨.zero,0,0⟩
+  refine ⟨raw,?_,?_⟩
+  · intro k hk
+    simpa [raw,hk] using And.intro (get k hk).choose_spec.1 (get k hk).choose_spec.2.1
+  · intro k hk
+    simpa [raw,hk] using (get k hk).choose_spec.2.2
+
 end CircuitRewire
