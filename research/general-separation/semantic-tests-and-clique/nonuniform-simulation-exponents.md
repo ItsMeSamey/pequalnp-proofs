@@ -1,0 +1,27 @@
+# A common slope for nonuniform simulations
+
+Fix a>0 and K(n)=ceil((loglog(n+16))^a), made positive on small lengths. Fix either binary Boolean formulas counted by leaves, or acyclic existential single-bit query programs with arbitrary successor sets counted by query nodes. For fixed integer C≥1, let S_C(f) be the least number of terms in an exact real SUM for an n-bit target f with at most CnK(n) occurrences per term. Count at least one term even for zero. Singleton indicators always give a finite representation. Define E(k,C) as limsup over lengths n of the logarithm to base n of max_f S_C(f), where f ranges over functions computed by bounded-fan-in nondeterministic Boolean circuits of size at most n^k, k≥1 integral. These accept a primary input iff some existential assignment gives output one.
+
+The following conditions are equivalent.
+
+1. For each C the supremum over k of E(k,C)/(k+2) is infinite.
+2. For some single k, E(k,C) is infinite for every C.
+3. A single NP language escapes polynomial SUM sparsity at every constant bottom coefficient. For all C,d it needs more than n^d terms at infinitely many lengths.
+
+Fix one universal NP evaluator U. It reads a circuit, n equal-length parity blocks, and accepts if the circuit accepts their parities with some existential assignment. Use a self-delimiting layout, reject malformed headers and simulate in fixed polynomial time. Every admissible circuit on n primary bits and s≤n^k gates uses at most 2s+1 relevant existential input pins, with their indices canonicalized. The description needs O_k((n+s)log(n+s+2)) bits. Hardwire any such circuit and use block length n^(k+1), giving N=n^(k+2)+O_k((n+s)log(n+s+2)). Thus log_n N→k+2 uniformly over the slice at fixed k.
+
+Suppose U has at most N^d terms for all large lengths with cap C N K(N). The [parity-depadding theorem](parity-depadding.md) at fixed η=1/4 gives at most S(SN)^{O(1)} terms with at most (1+η)n C K(N)+O(log(SN)) occurrences each, where S≤N^d. The hidden constants depend only on η. Since K(N)/K(n)→1 at fixed k, the new cap is at most 2CnK(n) eventually, with a threshold allowed to depend on k,C,d. Hence E(k,2C)≤A(d+1)(k+2) for all k with one absolute A. Condition (1) forces this single U to satisfy (3). Conversely, a nondeterministic computation tableau for the verifier of any language in (3) yields circuits of size n^k eventually for one fixed k, so its hard slices witness (2). Condition (2) implies (1). The same equivalence holds for deterministic source circuits with P in (3).
+
+The equivalence removes effective selection of the hard functions from the lower-bound task. It supplies no evidence for unbounded slope. Even one NP language escaping these SUM models would remain a restricted-model assertion.
+
+## Sharp truth-table controls
+
+Fix k≥1 and t=floor(k log₂ n)−b₀, taking b₀ an absolute constant large enough that every Boolean function on the first t coordinates has a bounded-fan-in ordinary circuit with at most n^k gates. A complete multiplexer tree uses O(2^t) gates. The largest SUM count on this entire subclass has exponent max(0,k−1) for formula atoms and max(0,k−2) for arbitrary-successor query programs. More precisely its base-n logarithm tends to the indicated value for each fixed C. The latter statement holds even for unambiguous programs (at most one accepting path per input).
+
+Write B=floor(CnK(n)). There are at most 2^{O(B log(n+B))} possible formula atoms, by listing the ordered binary trees, gate types and input labels. There are at most 2^{O(B²+B log(n+B))} query programs, by listing query variables and two adjacency matrices. With A distinct atoms, a fixed list of S of them spans at most 2^S Boolean functions over the reals. Indeed ≤S independent evaluation coordinates determine a vector in its span, and those coordinates are bits for Boolean targets. Thus at most A^S 2^S functions have at most S terms, padding lists with zero weights. Covering all 2^(2^t) targets forces the two claimed lower exponents, using K(n)=n^{o(1)}. The zero exponent when k is small follows also from S≥1.
+
+For the upper bound, split each table on all but b of its t bits. Each prefix yields one atom conjoining its literals with the remaining table; the guards are disjoint. For formulas a b-bit table uses O(2^b) leaves by binary multiplexer expansion, each variable test using two occurrences. Including the prefix costs O(t+2^b) leaves. Choose b=min(t,floor(log₂ B)−O(1)) to obtain at most n^{max(0,k−1)+o(1)} terms.
+
+For a query program split the b residual bits into a left and a right half. A binary tree dispatches on the left half. From each row use its arbitrary successor list to choose an allowed right-half string. All rows share the same suffix-verification DAG. For every nonempty expected suffix it tests its first bit, rejects on mismatch and continues at the state for the remaining expected suffix. The empty suffix accepts. Only the actual right string can match, giving unambiguity. Row dispatch, verification states and prefix guard use O(t+2^ceil(b/2)) query nodes. With b=min(t,2floor(log₂ B)−O(1)) this gives n^{max(0,k−2)+o(1)} terms. The program may have Θ(2^b) arcs. This last bound charges query nodes as in the theorem and makes no such claim for a model charging every arc.
+
+These controls quantify how far counting arbitrary functions of logarithmically many bits can reach in the nonuniform slope formulation. They grow only linearly in the original circuit exponent.
