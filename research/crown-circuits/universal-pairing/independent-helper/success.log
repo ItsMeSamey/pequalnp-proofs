@@ -1,0 +1,10 @@
+25601 profiles, 5000307 helper libraries, zero feasible
+0 18089 18089
+1 6400 380949
+2 1027 1744533
+3 85 2856736
+Different helper-state counts from original 5714
+02391c91f1975cee9251928fdc6acc4a07a89b20b1948d0bc6afc3fd5f4072fa helper.cpp
+990a8f1a9fbbd4de05ecc9463eb8abbca6a79bce280b01ac420ec7723407d167 controls.cpp
+daa5bee58cbfa5c2472dfa43a737bc4b7782fa0cb7b6fa8925ecfdd28d671796 ledger.txt
+514b3a057d51ee51cf854c92753680f6a11fa468a60f8708c03f1d1f70724d0c remaining-ledger.txt

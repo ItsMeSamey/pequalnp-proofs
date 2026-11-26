@@ -7,3 +7,5 @@ The forward direction combines the independently reviewed pairing and coordinate
 For the reverse direction, supply the threshold circuit with twelve inputs, each the OR of one label’s row and column wires. There are exactly two active labels when the selected row and column differ, and one when they agree. These twelve gates take the size bound from 28 to 40.
 
 Run `bash replay-ten.sh` in this directory with a C++20 compiler. It regenerates the census and compares it with `ten-six-census.txt`.
+
+An independent helper-search implementation tested the same 25,601 profile budgets with an uncompressed search and exact graph-coloring packer. It examined 5,000,307 helper libraries and found zero feasible packings. The original portable search examines 4,824,777 libraries. Both cover all profiles. [Independent source and receipt](independent-helper/success.log)
