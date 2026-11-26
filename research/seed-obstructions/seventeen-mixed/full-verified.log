@@ -1,0 +1,73 @@
+All eight-line bases include seven singleton line signatures; 101 states.
+python 3.12.14 python-sat 1.9.dev25 solver cadical195
+lines (0, 1) gates 7 variables 402 clauses 2352 sha256 d4d249b98c9754aed2397a8e0962af2611b6c4ddcbdad16244f883d825da0943 SAT False conflicts 4416
+lines (0, 1, 3) gates 11 variables 1016 clauses 7526 sha256 2536fce9befe0204f19b719699b5128a1a3f0daa571f237b2f60ba077b04145a SAT False conflicts 137517
+lines (0, 1, 5) gates 11 variables 1059 clauses 7875 sha256 5e3492439543a0f704039b381930aab4fe69b96711393cb1e6fe2525ca0f272a SAT False conflicts 192036
+Both marked minima and the seven-line incidence geometry checked.
+Seven point-exclusive pairs and seven line-exclusive pairs verified.
+The minimum is 13 mixed gates with all monotone one-side signals free.
+1000000 21280
+2000000 46239
+3000000 75094
+4000000 93534
+5000000 126026
+6000000 176674
+7000000 283535
+8000000 375948
+9000000 443419
+10000000 518285
+11000000 563557
+12000000 630976
+13000000 711512
+14000000 795119
+15000000 880422
+16000000 958532
+17000000 1019195
+18000000 1078278
+19000000 1147327
+20000000 1213818
+DONE 20057115 1218270
+1218270 distinct families, 0 duplicate rows
+Point-gate lower bound and number of irreducible families
+12 23
+13 237
+14 2097
+15 11889
+16 70584
+17 219954
+18 640534
+19 169416
+20 103536
+Refined low-budget histogram {12: 23, 13: 237, 14: 1245, 15: 5038, 16: 16731, 17: 52319, 18: 8744, 19: 469, 20: 24}
+1 5599834434 270947967 1959189 810 0 0 0 0
+2 687436950 17204220 87918 0 0 0 0 0
+3 196316760 5008248 26160 0 0 0 0 0
+16924 bases 138472168 augmentations
+12 330
+13 4644
+14 45474
+15 356850
+16 1882161
+17 8134632
+18 23571980
+19 104476097
+equality survivors 6954 before laminarity 81984
+cases 26754 reps 1713
+16924 bases 169240 augmentations
+12 30
+13 348
+14 3378
+15 14829
+16 71775
+17 11034
+18 26826
+19 41020
+equality survivors 216 before laminarity 71667
+cases 1122 reps 65
+irreducible 23274 distinct families, 1123 representatives, extinction depths [(2, 6), (3, 164), (5, 532), (7, 339), (8, 4), (9, 56), (10, 6), (11, 16)]
+distinct extension 26664 distinct families, 1713 representatives, extinction depths [(5, 1181), (6, 125), (7, 323), (8, 84)]
+repeat or zero 1122 distinct families, 65 representatives, extinction depths [(5, 24), (6, 9), (7, 22), (8, 10)]
+positive control families 1 tests 1 after guard 1 separating trees 1
+refined-all.txt families 6543 tests 252005 after guard 0 separating trees 0
+geom_reps.txt families 1713 tests 219264 after guard 0 separating trees 0
+dupgeom_reps.txt families 65 tests 8320 after guard 21 separating trees 0
