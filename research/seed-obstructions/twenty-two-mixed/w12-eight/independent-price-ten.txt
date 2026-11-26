@@ -1,0 +1,12 @@
+archive-sha256 30513215656073ca52e7d650d38ce914922a01863410a25b3f8696cdbb11aa8a
+10 gates, 7 selected, 521025 profiles, 3122022 raw-occurrence multisets
+10 gates, 8 selected, 27944 profiles, 72233 raw-occurrence multisets
+10 gates, 9 selected, 266 profiles, 266 raw-occurrence multisets
+10 gates, 10 selected, 0 profiles, 0 raw-occurrence multisets
+priced 303757 canonical 65752
+65752 13617
+distinct DONE 270608 10757 311
+distinct DONE 10757 0
+padded DONE 3948 1128 21
+padded DONE 1128 0
+Padded author run: 3948 -> 1107; no cap fallbacks. Standalone replay: 3948 -> 1128, including 21 cap fallbacks; all checked by the exact frontier.
