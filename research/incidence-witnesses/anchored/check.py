@@ -144,3 +144,84 @@ def run():
     print('Verified compiled rows by case:',dict(modes))
     print('Verified integer bounds for every order 3 through 397.')
 if __name__=='__main__':run()
+
+def flow_cases():
+    for q in range(2,400):
+        n=q*q+q+1
+        lower=4*n-1-4*n//(q+2)
+        assert 100*lower>=q*n
+    print('Weighted-flow arithmetic verified through order 399.')
+if __name__=='__main__':flow_cases()
+
+def check_flow_instance(c,out,adj,q):
+    total=c.n+len(c.gates)
+    uses=[[] for _ in range(total)]
+    for i,(_,a,b) in enumerate(c.gates,c.n):
+        uses[a].append(i)
+        uses[b].append(i)
+    roots=[None]*total
+    for i in reversed(range(total)):
+        roots[i]=i if len(uses[i])!=1 else roots[uses[i][0]]
+    vars_at={r:[] for r in roots}
+    owners=[set() for _ in range(total)]
+    for v in range(c.n):
+        vars_at[roots[v]].append(v)
+        owners[v]={v}
+    for i,(_,a,b) in enumerate(c.gates,c.n):
+        for j in (a,b):
+            if roots[j]==roots[i]:owners[i].update(owners[j])
+    supp=c.evaluate([1<<i for i in range(c.n)])
+    k=q+1
+    def weight(v):return min(k,supp[v].bit_count())
+    ports_used=set()
+    def capture(v,root):
+        if roots[v]!=root: return
+        op,a,b=c.gates[v-c.n]
+        for ix,j in enumerate((a,b)):
+            if roots[j]!=root:
+                assert (v,ix) not in ports_used
+                ports_used.add((v,ix))
+            else:capture(j,root)
+    terminals=0
+    for v in range(c.n):
+        root=roots[v]
+        if len(vars_at[root])==1 and root!=out and (supp[root] >> v)&1:continue
+        node=v
+        while node!=root:
+            parent=uses[node][0]
+            op,a,b=c.gates[parent-c.n]
+            if len(owners[parent])>1:break
+            if op=='&':
+                ix=1 if a==node else 0
+                other=(a,b)[ix]
+                assert weight(other)==k
+                if roots[other]!=root:
+                    assert (parent,ix) not in ports_used
+                    ports_used.add((parent,ix))
+                else:
+                    assert not owners[other]
+                    capture(other,root)
+                terminals+=1
+                break
+            node=parent
+        else: raise AssertionError(('missing private AND',v))
+        assert op=='&'
+    for root,vs in vars_at.items():
+        if root!=out and vs:
+            assert supp[root].bit_count()<=1
+        if root!=out and not vs:
+            capture(root,root)
+    rhs=sum((len(uses[r])-(not bool(vs)))*weight(r)
+            for r,vs in vars_at.items() if r!=out)
+    assert k*terminals<=rhs
+if __name__=='__main__':
+    for q in (2,3):
+        stars=plane(q)
+        n=len(stars)
+        adj={i:{n+j for j in stars[i]} for i in range(n)}
+        adj.update({n+j:{i for i in range(n) if j in stars[i]} for j in range(n)})
+        for seed in range(4):
+            for mode in ('root','mixed','chunks'):
+                c,out=fixture(stars,mode,seed)
+                check_flow_instance(c,out,adj,q)
+    print('Verified private siblings, disjoint port uses and conservation on 24 circuits.')
