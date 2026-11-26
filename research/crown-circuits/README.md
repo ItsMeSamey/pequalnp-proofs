@@ -30,3 +30,5 @@ If there are three distinct overlaps, those three edges form a triangle. [Triang
 The earliest active OR gate on each positive diagonal admits an injective choice of an actual true input predecessor under these budgets. The masked-wire theorem transfers the chosen predecessors to the original circuit. [Earliest trigger](../../lean/Research/CrownFirstTrigger.lean) · [Masked-wire rigidity](../../lean/Research/CrownMaskedRigidity.lean)
 
 Among distinct chronological OR gates, at most one unordered pair can share a valid predecessor in a 12-crown circuit with at most 40 gates and 23 ORs. [Unique collision theorem](../../lean/Research/CrownCollisionUnique.lean)
+
+When there is a collision, four or five diagonals attain saturation. A wire feeding an OR is true on at most two diagonals, which share their OR signature. [Single-collision saturation](../../lean/Research/CrownCollisionSaturationFive.lean) · [Parent signatures](../../lean/Research/CrownParentSignature.lean)
