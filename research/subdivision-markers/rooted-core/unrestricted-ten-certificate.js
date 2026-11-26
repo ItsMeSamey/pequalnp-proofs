@@ -1,0 +1,3 @@
+const cases=[[[0,3,5,6],[32,115,230,496,527],"BBABAABBAABABBAAAAAAAAAAAAAAAAA"],[[3,0,5,6],[8,115,230,496,527],"ABABBAABAAAAABBAAABBBAAABAAAABB"],[[3,3,5,5],[8,83,229,496,527],"AAABBBBBABAAAAAAAAABBBBABABAAAA"]];
+function parity(x){let v=0;while(x){v^=1;x&=x-1;}return v}
+for(const [clean,generators,letters] of cases){const R=clean.map((v,i)=>v|(i?16:8)).concat(7),S=new Set;for(let mask=1;mask<32;mask++){const v=generators.reduce((a,b,i)=>a^((mask>>i&1)*b),0);if(!v||S.has(v))throw Error('dependent generators');S.add(v);const z=v^(letters[mask-1]==='A'?(16<<5)|24:(15<<5)|7),x=z>>5,y=z&31;const cr=R.reduce((m,r,i)=>m|(parity(r&y)<<i),0),dc=R.reduce((m,r,i)=>m^((x>>i&1)*r),0);if((cr&x)||(dc&y))throw Error('overlap');}console.log(clean, S.size);}
