@@ -42,3 +42,5 @@ With zero or one spare use, [private positive and negative pairs](../seed-obstru
 The [point-deletion proof](../point-deletion-core/README.md) raises the residual lower bound to 28 gates and the unrestricted raw suffix lower bound to 29.
 
 The [front-free branch](../front-free/README.md) needs at least 34 gates when wire 54 is omitted.
+
+The [six-point core](../six-point-core/README.md) raises the unrestricted residual lower bound to 29 and the raw lower bound to 30.

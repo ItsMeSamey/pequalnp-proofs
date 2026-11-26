@@ -1,0 +1,7 @@
+case                  inputs  positives  maximal negatives  gate budget  result
+erase point 5          12     15          26                 18           UNSAT 1
+erase line 6           12     16          23                 18           UNSAT 1
+erase line 7           12     15          29                 18           UNSAT 1
+erase 0,6,7            10     12          16                 15           UNSAT 1
+erase 0,6,10           10     12          16                 15           UNSAT 1
+full six-point core    13     18          33                 21           UNSAT 1
