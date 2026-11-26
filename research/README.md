@@ -60,3 +60,7 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 [Two simultaneous parity markers](two-markers/README.md) have a polynomial-time witness algorithm on symmetric alternating guard matrices and the specified removable diagonals.
 
 [Marker cuts](marker-cuts/README.md) recognize a label-defined decomposition and solve symmetric multi-marker guard systems by dynamic programming on bounded-rank cuts.
+
+[Ternary flow hypermatchings](ternary-flow/hypermatches.md) realize fixed-charge stars by bounded-degree 3-uniform exact cover. [Local pivot enumeration](ternary-flow/ternary-guard-audit.md) gives six as the minimum for the specified one-hot cubic star, and [odd scalar conservation](ternary-flow/odd-localization.md) localizes around a fixed marker in the original guarded syntax. The hypermatching construction leaves its conversion to deficiency-one guards open.
+
+[A determinant budget for replacement layouts](replacement-layouts/layout-determinant.md) gives a lower bound on the total measurement rank in the manuscript’s direct polynomial replacement model over every field with the required nodes. The note derives a quantitative expander obstruction and distinguishes the separate precision-weighted construction.
