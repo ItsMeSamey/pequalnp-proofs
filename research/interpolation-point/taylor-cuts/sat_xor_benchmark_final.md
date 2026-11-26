@@ -1,0 +1,5 @@
+# Pinned native SAT+XOR benchmark
+
+Driver SHA-256: `005a62def938549024ebdaac06c34aceb51fae9638005f6eeaa44a3c08808ec4`. The hash was verified before each of four batches and after the last batch. Harness SHA-256: `8e0ab1e8a9bdb311b38e47a612a066c7bc9c2ed69f5b06a70e7b64d313d3e8c5`. Final JSONL SHA-256: `61ad9e529814174acf80a0dd5cb088d7420293825248588f4a8ff32468283ae8`. The original results file retained SHA-256 `c81402437922c17053d58ee4d44518fa731a3a199bb9deccc693967f29477898`.
+
+Seed 817739 gave 33 matches to the independent oracles: 24 SAT and 9 UNSAT. The harness re-evaluated every SAT witness against the original signed clauses and all XORs. Every input digest, ground-truth model count and final decision also matched the prior run. No stage reported ERROR or TIMEOUT. Each batch acquired the shared light-verification lock separately, with timeout 15 seconds, niceness +15, and a 153600 KiB address-space ceiling. Batch (start, limit) pairs were (0,8), (8,7), (15,9), and (24,9); the documented stage-specific budgets were unchanged. This pin identifies the driver source file; its imported modules were read from the shared workspace.
