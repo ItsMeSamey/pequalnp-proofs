@@ -60,3 +60,16 @@ Two distinct surviving R vertices share exactly one original L neighbor. (Distin
     s ≥ 2N+d−1−floor g(h)+max(d−13355,ceil((N+h−19766)/2)).
 
 The final loop of routing-check.py verifies these inequalities by integers and checks every h, yielding s≥542462 against the target 541535.
+
+# Reserving source vertices for order 379
+
+In the routing lemma let a count the R-live producer components having no R-live ports. Since the other p−a R-live producer components each consume a live port, the same routing proof gives M_L≤e+a. Each counted component has a local R variable whose singleton activates its exit. With all external inputs zero, the downstream circuit therefore rejects even when this exit is one, since that singleton is rejected. Hence its internal pair graph is empty. Reserve one such local R variable per component. Thus t=r−a bounds the total number of opposite leaves available to unmarked L centers: no center contributes leaves from a reserved component. The degree weights from the preceding section now satisfy sum_U c(k)≤t, while e≥N−h−u−a=d−h−u+t.
+
+Set q=379, d=136977 and r=N−d. To see that every step remains available, use the sharper degree-zero estimate that at most qd/[(q+1)²−d] original vertices have no surviving opposite neighbor. Its proof is the ordinary degree moment with at least q+1 deleted neighbors rather than q. This estimate is below r. At every prefix the same upper bound applies since opposite deletions are at most d and at least r vertices of each part survive.
+
+Put P=qr+r²−39(q+1)r+380N. For w=1,2 the quadratic (w+1)(k−19)(k−20)/380 and coefficient 1/15 satisfy the two pointwise inequalities in the degree-count argument for each allowed k. Consequently w b_L+u≤(w+1)P/380+t/15. In the two previously used excess bounds, this gives
+
+    s ≥ 2N+2d−1−floor g(h)−2P/380+14t/15,
+    2s ≥ 2[2N+d−1−floor g(h)]+N+h−3P/380−t/15.
+
+For each integer h=0..d the first inequality under s≤T−1 yields an integer upper bound on t; substituting this in the second certifies s≥T. The exact integer verification in reserved.py proves s≥545926, exceeding the target 545840.

@@ -100,3 +100,16 @@ for idx,i in enumerate(forced):
 require(all(not allowed[i] for i in range(13,19)), 'front raw line allows a primitive partner')
 require(not (allowed[2] - set(forced)), 'raw point 2 allows an unforced primitive partner')
 print('All 13 unique uses enter distinct OR gates. Each front-line partner must be mixed.')
+
+def high_projection(raw_row):
+    return ((raw_row >> 7) & 63) | (((raw_row >> 19) & 127) << 6)
+
+high_neg = {high_projection(n) for n in neg_reduced}
+high_max = {n for n in high_neg if not any(n != m and not n & ~m for m in high_neg)}
+require(len(high_max) == 33, 'unexpected high-point negative family')
+expected = [122,1063,1063,4125,122,4125]
+for i,exception in enumerate(expected,13):
+    private = {high_projection(n) for p in pos_reduced for n in neg_reduced if p & ~n == 1 << i}
+    missing = {n for n in high_max if not any(not n & ~m for m in private)}
+    require(missing == {exception}, 'unexpected uncovered high negative')
+print('Uncovered high-core negative masks for front lines 13..18:', expected)
