@@ -1,0 +1,38 @@
+# Three-marker PC bounds from neutral neighborhood signatures
+
+Work over GF(2) with ordinary polynomial calculus, Boolean axioms, and an undirected bipartite graph. Left rows have colors P0,P1 or zero (neutral); right columns have colors Q0,Q1. Colored i on either side contributes its side bit and its index bit as in the mixed three-marker encoding. For target (1,1,0), writing p_c,q_c for the respective selected color count parities, the three input marker equations imply p0+p1=q0+q1=1 and p_c=q_c. Each selected vertex is required to have even selected degree, via its pivot times its neighbor sum. A missing same-index edge is an immediate two-vertex model; hence for a refutation assume both P_c × Q_c are complete. All claims below are about unsatisfiable inputs.
+
+Call a neutral row mixed when it has at least one neighbor of each right color. If a mixed neutral z and i∈P_c have, on Q_(1−c), both a common neighbor k and a common nonneighbor j, choose a neighbor l of z in Q_c. The five vertices i,z,j,k,l give a solution: the four-cycle uses i,z,k,l and j is isolated. Hence every i satisfies, for each mixed z, at least one of the following: i is adjacent to all opposing columns on which z=0, or i is adjacent to none on which z=1.
+
+## Neutral rank at most one: degree three
+
+When the rank is one let w be the common neighborhood of all nonzero neutral rows and n the parity of their selected pivots. Put W_c=Σ_(j∈Q_c) w_j y_j. For either c, sum all guards on the vertex cut P_c ∪ Q_(1−c). Edges internal to this set cancel; the result is
+
+    p0 q0 + p1 q1 + n W_(1−c) = 0.
+
+The marker multiples and the Boolean axioms give p0 q0+p1 q1=p0+p1=1 at degree two. Thus nW_c=1 for both c. Multiplying by n or W_c and reducing the Boolean squares yields n=W0=W1=1 at degree three. Explicitly, multiplying the reduced multilinear equation 1+nW by n gives n+n²W, and n²W+nW follows by degree-three multiples of Boolean axioms since n is a homogeneous sum. If w misses a whole right class these equations already refute; otherwise w is mixed. In rank zero the same cut gives 1=0 directly in degree two.
+
+For i∈P_c let D_i be the sum of its opposing neighbors' variables among the w=1 positions. If no such neighbors exist then D_i=0. Otherwise the five-vertex obstruction implies it is adjacent to every opposing w=0 column. The rest of its neighbor sum is q_c+q_(1−c)+W_(1−c)=0, so its guard gives x_i D_i=0 after multiplying that affine consequence by x_i. Sum these identities over P_c and add the column guards on Q_(1−c) with w=1. Their remaining terms give (p_(1−c)+n) W_(1−c)=0, hence p_(1−c)=1 by the already derived affine equations and their linear multiples. This holds for both c and contradicts p0+p1=1. No line exceeds degree three; the number of identical neutral rows and the size of the colored blocks do not affect degree.
+
+## Arbitrary rank when mixed neutral rows span all neutral rows
+
+Write r for the binary rank of the neutral incidence matrix. Assume its mixed neutral rows span its entire row space. Unsupported targets then have ordinary PC refutations of degree at most
+
+    2 + 6 · 2^r.
+
+In forming groups, partition each right color class by its vector of entries on all mixed neutral rows. There are at most 2^r groups per class; let m≤2·2^r be their total number. Every neutral row is constant on each group by the span hypothesis. Empty groups can be omitted.
+
+A colored row on its opposite right class is either constant on every group or varies on exactly one group. In fact suppose it takes both values on a group of signature u. For a distinct signature v, choose a mixed neutral row distinguishing them. If its bits are u_z=0,v_z=1, the variation supplies a common nonneighbor on the first group; by the five-vertex observation the entire group v has colored-row entry zero. If u_z=1,v_z=0 the common neighbor likewise forces constant one on v. Conflicting direction choices would exclude variation on u altogether. All rows varying on the same group therefore have identical constants on every other group and the same colored label. Let R_g be precisely this family of opposite colored rows for group g. Every remaining colored row is groupwise constant, including on its complete matched class.
+
+For each g branch on the following three linear forms. Y_g is its selected right parity, X_g is the selected parity of R_g, and H_g is the contribution to a column in g from every left vertex outside R_g. The last is well-defined because all those left rows are constant on g. In each branch:
+
+* Every neutral or groupwise-constant colored row has a fixed neighbor sum evaluated from the Y bits, so its guard is either identically satisfied or gives the unit zero on its pivot. Conditions on the remaining such pivots are purely linear. Each equation defining H_g and each original left marker depends on variable blocks R_h only through X_h because their entries and labels outside h are identical. The right markers depend only on the Y bits. Thus consistency of these external equations is a Gaussian-elimination test.
+* The residual block on R_g × g has arbitrary adjacency M but constant offsets a,b on its two sides. For each i∈R_g the contribution from every other group is the same constant a after fixing Y. For each j∈g the outside contribution is b=H_g. Its prescribed side parities are α=X_g, β=Y_g. This reduction is derivable in degree two by multiplying fixed affine equations by each pivot. Distinct blocks are independent once the external equations are fixed.
+
+For a uniform-offset block the sum of guards gives aα+bβ=0. If this fails the branch refutes in degree two. Subject to this equality, α=β=0 allows the empty set. For (α,β)=(1,0) it forces a=0, so any left singleton works; for (0,1) use the right singleton. An empty required side is ruled out by its affine sum. For α=β=1 it forces a=b. A left-right pair is feasible precisely when its edge entry equals a. If no such pair exists the entire matrix has the constant entry 1+a; then every left pivot is zero by its guard and the right parity one, contradicting α=1 in degree two. Thus each branch is either refuted in degree two or has a model obtained by combining the external linear solution and the block witnesses. The latter is impossible on an unsatisfiable input.
+
+For completeness, discharging one linear bit condition costs at most one in ordinary PC degree. If the branch A=b proves 1 at degree d≥2, multiply its proof by the linear indicator I=1+A+b. For a base axiom its multiple is obtained with one variable multiplication at a time and additions. The extra branch axiom contributes I(A+b)=A²+A, a sum of Boolean axioms (zero affine constant). Variable multiplication on an original line of degree at most d−1 stays within d+1 on its multiplied image. This produces I as a consequence. Both branch indicators sum to 1. Discharge at most 3m bits from the inside out, giving the bound above. This argument works without requiring the branched forms to be independent.
+
+If pure neutral rows introduce additional directions outside the mixed span, columns in one mixed group can have different neutral contributions. The uniform-offset block argument then ceases to apply. This theorem gives no bound depending only on r for that remaining class.
+
+If no neutral touches both right colors, arbitrary neutral rank is harmless even when the span hypothesis fails. In the cut P0∪Q1 also include all neutral vertices supported on Q1. The remaining neutrals have no neighbors inside. Only the two complete matched blocks cross, and summing the selected-vertex guards on this cut gives p0q0+p1q1=0. The marker makes that sum one, giving a degree-two refutation.
