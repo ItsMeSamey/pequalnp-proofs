@@ -16,4 +16,4 @@ Two unmerged row atoms of distinct labels cannot be OR-merged: holding the first
 
 Once every label is paired, the original circuit consists of n pairing gates before a tail on z₁,…,zₙ. It computes threshold two on all Boolean inputs by monotonicity and its prescribed values on singleton and two-element supports. Wegener’s threshold-two OR lower bound is 2n−4 even with unrestricted free ANDs. This contradicts the assumed budget. Equivalently, the first-gate argument already gives a contradiction at the all-paired stage, since the nonconstant tail still requires a first genuine gate and no merge is possible.
 
-The base and elementary deletion lemma are kernel-checked. The inductive control of paired prefixes and their quotient semantics still require a Lean proof.
+The [complete Lean certificate](kernel-or-count/README.md) verifies the physical induction and its finite base case.
