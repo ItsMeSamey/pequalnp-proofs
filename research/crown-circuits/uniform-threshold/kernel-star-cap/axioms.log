@@ -1,0 +1,2 @@
+'ThresholdNativeStarSaving.star_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdNativeStarSaving.regular_star_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
