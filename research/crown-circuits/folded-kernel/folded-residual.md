@@ -1,0 +1,13 @@
+# Ten gates for the residual after folding nine labels
+
+Suppose a 12-crown circuit first processes nine labels into two signals. U is true if either selected endpoint lies in the nine-label group. P is true if the group contains both selected endpoints at distinct labels. The tail sees U, P and the six individual row and column literals of the three other labels. Its gates are monotone ANDs and ORs with fan-in at most two.
+
+The tail needs at least **eight OR gates and two AND gates**. In particular the 31-gate construction of the nine-label grid together with U requires a total of at least 41 gates when the tail uses only those eight inputs.
+
+To bound ORs, compile the tail into OR gates whose pins are products of input atoms and predecessor outputs; ANDs become free products. The compilation preserves truth values and does not increase the number of ORs. On assignments with P=false there are four effective labels. The three outside labels have separate row and column atoms, while the entire group is represented by its one shared atom U. Thus the mixed-crown lower bound gives at least 3·4−1−4=7 ORs on those inputs.
+
+Setting P=false saves an additional OR in the compiled network. Switching only P changes the output on the assignment where U alone is true, from an equal-label negative to a distinct-within-group positive. Some positive input has P=false, for example an off-diagonal pair among the three outside labels. Consequently P does not occur in the final product, and its influence must pass through an OR pin. Setting P=false kills that pin and allows its OR to be removed. The original tail therefore contains at least eight ORs.
+
+The four effective labels also require two ANDs. Associate to each diagonal the vector of left-operand values of every AND on that diagonal. For any two distinct diagonals, their directed cross has true output and both diagonals have false output. Trace to the first intermediate wire true on the cross and false on both diagonals. No input has this property, and an OR cannot be the first such gate. At the first such AND its two operands distinguish the diagonals in opposite directions. Thus the four diagonal vectors are distinct; with at most one AND there are at most two possible vectors.
+
+The argument applies to m outside labels for m≥2: a one-paired mixed crown on m+1 labels costs at least 3(m+1)−5 ORs on P=false, an essential P forces one more OR, and the m+1 diagonals require at least ceil(log₂(m+1)) ANDs. Additional outputs from the folded prefix can enlarge the tail's available input set; the stated bound assumes the U,P interface.
