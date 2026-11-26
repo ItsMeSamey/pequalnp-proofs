@@ -34,3 +34,5 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 [Guarded affine projection](guarded-affine/README.md) compiles a family of existential formulas with b terminal clauses in polynomial time for fixed b. Computing n-bit inner product in this model takes exactly n+1 terminal clauses. The proof also identifies the size of the smallest cover of its accepting inputs by affine flats.
 
 [A polynomial-calculus counterexample](polynomial-calculus/README.md) gives 22 Boolean variables, one quadratic constraint per pivot and one affine parity marker. Its refutation degree over GF(2) is exactly four. The lower-bound certificate excludes every degree-three derivation, and the supplied upper-bound trace can be replayed directly.
+
+[Compressed functional pigeonhole systems](guarded-pigeonhole/README.md) have hidden rank deficiency one and require linear polynomial-calculus refutation degree over GF(2). A polynomial-size linear program refutes this same family directly from the input coefficient masks.
