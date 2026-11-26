@@ -1,0 +1,14 @@
+Normalized source palettes {7: 1, 8: 30, 9: 432, 10: 3929, 11: 25079, 12: 118267}
+1 palettes, 1 incidence classes
+Excluded 1 cases with 7 sources
+30 palettes, 7 incidence classes
+Excluded 7 cases with 8 sources
+432 palettes, 71 incidence classes
+Excluded 71 cases with 9 sources
+3929 palettes, 557 incidence classes
+Excluded 557 cases with 10 sources
+25079 palettes, 3540 incidence classes
+3540 eleven-source classes, 0 survivors
+Excluded 3540 eleven-source classes
+Excluded 118267 cases with 12 sources
+No binary monotone suffix of at most eleven gates completes this fixed grid prefix.
