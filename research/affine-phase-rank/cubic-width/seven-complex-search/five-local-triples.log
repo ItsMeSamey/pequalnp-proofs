@@ -1,0 +1,5 @@
+planes {5: 49, 6: 82, 8: 21, 7: 8} robust five-sets {}
+real 0m7.311s (includes waiting for pnp-light-verify.lock)
+user 0m0.170s
+sys 0m0.062s
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1; timeout 15s.
