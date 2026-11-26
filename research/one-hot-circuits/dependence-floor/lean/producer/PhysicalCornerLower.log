@@ -1,0 +1,28 @@
+PhysicalCornerLower.lean:64:55: warning: This simp argument is unused:
+  pairFlags
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [paint]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+PhysicalCornerLower.lean:66:55: warning: This simp argument is unused:
+  pairFlags
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [paint]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+PhysicalCornerLower.lean:68:55: warning: This simp argument is unused:
+  pairFlags
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [paint]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+PhysicalCornerLower.lean:70:55: warning: This simp argument is unused:
+  pairFlags
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [paint]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
