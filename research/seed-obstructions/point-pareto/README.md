@@ -67,3 +67,7 @@ python nine_leaf_banks.py L-meta-18968.json six-tuples.txt
 ## The complete minimum-width-twelve domain
 
 At twelve wires and five paid gates there are exactly five admissible boundary banks. Each selects seven raw singleton wires plus five nonraw outputs, and each computed output can be obtained directly from two raw inputs. The families are listed in `cost-five-width-twelve.txt`. Two contain a three-point signature extending outside every single residual star. Run `python width12_equality.py L-meta-18968.json` to exclude every other five-output tuple and enumerate all raw complements in the five remaining cases.
+
+### Direct structural proof traces
+
+The nine-gate lower bound also has a complete proof-trace route that avoids exhaustive six-tuple enumeration. Run `python structure.py L-meta-18968.json five` to reject any five arbitrary computed masks, or `python structure.py L-meta-18968.json six` to ask for a structural violation among six selected nonraw masks. The latter asks whether some output lies outside every host, two outputs lie inside the same host, or four outputs have size at most two. Each genuine nonraw mask can be constrained to size at least two. Both formulas are unsatisfiable. The hidden-wire counting argument then applies directly. Both commands accept `--cnf` and `--proof`, like the gate synthesis checker.
