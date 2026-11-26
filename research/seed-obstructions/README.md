@@ -25,3 +25,5 @@ A [complete suffix search](suffix-search/COPY.md) excludes freezing the first 15
 [Raw-to-residual transfer](raw-transfer.md) proves that the optimal raw suffix uses exactly one more gate than the optimal normalized residual.
 
 [Point-boundary accounting](charge-review.md) proves that every residual solution using at most 33 gates requires at least eight distinct point-side boundary signals and at least 14 mixed gates, with no bound on line-side signals.
+
+[An eighth point signal](../extra-point/README.md) still needs at least 20 point gates if the other seven point signatures are the canonical neighborhoods. Together with at least 14 mixed gates this excludes such an architecture at size 33.

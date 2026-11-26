@@ -57,3 +57,5 @@ The [LP checker](mask_lp.py) sums inequalities to obtain −1≥0 on 512 test gr
 An [expander modification](expander.md) simultaneously requires linear GF(2) PC degree, exponential ordinary PC size, linear Sherali–Adams rank and linear real sum-of-squares degree on its forbidden-assignment CNF. Its two restrictions witness the algebraic and real hierarchy bounds separately.
 
 A [two-switch family](unit-exchange.md) retains the separate lower bounds after either value of every individual coordinate is fixed. This blocks exchanges of unit facts, even when the engines use opposite-value tests.
+
+[Full quadratic export](full-export.md) has coNP-complete membership for supplied singleton marginals even on satisfiable sparse systems. [Short model witnesses](small-witness-hull.md) and [reciprocal components](component-arcs.md) identify settings in which an affine hull yields constructive marker decisions.
