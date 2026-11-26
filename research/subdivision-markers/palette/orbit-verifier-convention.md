@@ -1,0 +1,1 @@
+For the global certificate in diagonal-orbits.md require at least one valid physical independent seed when the exchange graph is nonempty. In the present rank-r setting with p=r−2≥0 this follows by taking a subset of a physical basis. Empty seed lists are rejected.
