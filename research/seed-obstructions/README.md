@@ -75,3 +75,5 @@ The [nineteen-mixed classification](nineteen-mixed/README.md) excludes all six p
 All ten allocations with twenty mixed gates require total size at least 34. [Complete case index](twenty-mixed/README.md)
 
 At width twelve with exactly five selected nonraw point signatures, there are 12,300 feasible point banks, including twelve nonlocal banks. The [classification and exact point prices](width-twelve-five-selected.zip) give the cost distribution through fifteen gates and check witnesses against the whole negative samples. This classifies the point side only.
+
+The [terminal-clean restrictions](terminal-clean/README.md) require at least three dirty mixed prefix gates and at most fourteen clean terminal AND gates in a size-33 solution.
