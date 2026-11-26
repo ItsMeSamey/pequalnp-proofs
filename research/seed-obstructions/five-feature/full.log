@@ -1,0 +1,24 @@
+15052 triples
+0 states 1 left 6
+0 states 1 left 18
+1 states 2 left 21
+0 states 1 left 45
+1 states 6 left 118
+2 states 27 left 174
+0 states 1 left 93
+1 states 12 left 411
+2 states 114 left 1347
+3 states 988 left 3259
+0 states 1 left 168
+1 states 20 left 1058
+2 states 310 left 5598
+3 states 4440 left 24712
+4 states 62565 left 96554
+1 0
+2 0
+3 0
+4 0
+5 8
+left 8
+universally usable exclusive points: {2: 504, 3: 1008}
+cheap 28 shared 0 remaining 0

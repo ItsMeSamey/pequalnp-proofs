@@ -63,3 +63,5 @@ For eighteen mixed gates, connectivity allows at most nineteen distinct boundary
 A [seven-line proof by gate counting](one-surplus/README.md) independently excludes the one-extra-use case at total size 33 for every number of point wires. Its zero-line lemma uses 91 directly checked sampled negatives.
 
 With at most twelve point outputs and arbitrary monotone postprocessing, [the point preprocessing minimum is five gates](point-twelve/README.md). If a formula repeats one raw line exactly r times and uses the other six lines once, [its total gate count is at least 33+r](one-surplus/repeated-one-label.md), including the point circuit.
+
+At eleven point boundary signals, [the point-side lower bound is eight paid gates](point-pareto/README.md). At twelve it is exactly five. In the seven-line case, the [five-feature reconstruction](five-feature/README.md) excludes a raw line with one direct use and one use feeding a twice-used mixed signal with a single resident line. Its final 28 configurations admit a two-gate reconstruction of one star.
