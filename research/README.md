@@ -24,3 +24,9 @@ The [21-gate candidate](../lean/Research/EdgeCandidate.lean) for the separate L-
 [PlaneSixLines](../lean/Research/PlaneSixLines.lean) constructs the 29-gate first part of a proposed L-meta-5882 reduction. It processes six lines and exposes twelve point-pair ORs, six larger ORs, and the aggregate output for reuse. The remaining part must use at most 34 gates to classify all required samples.
 
 [Violation moments](violation-moments/README.md) constructs bounded-width SAT and UNSAT formulas whose aggregate clause-violation moments agree to arbitrarily high order.
+
+The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates for one output per point and gives a conditional scalar bound in terms of gate rectangle covers.
+
+[Affine projection](rank-projection/README.md) gives a polynomial-time compiler when each residual clause depends on at most one independent hidden linear form over GF(2). Allowing two such forms permits a direct reduction from 3-SAT.
+
+[Compatible partitions](fiber-solver/findings.md) gives a witness-producing solver for binary tables whose endpoint partitions agree and shows what happens when adjacent tables impose different partitions.

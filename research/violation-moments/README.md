@@ -17,3 +17,5 @@ The four words 000, 001, 010 and 111 in the h=0 fiber affinely span the whole th
 ## Verification
 
 The Python checker constructs actual clauses, evaluates their signed literals on every assignment for n = 3, 4, 5, verifies every proper edge marginal and every stated binomial moment, and checks affine ranks for both signs. Lean proves the path-fiber bijection and the parity criterion for satisfying the whole cycle. Its path numbering starts immediately after the omitted edge. The CNF encoding, fiber counts and affine-rank argument are given above. [Executable check](check.py) · [Lean development](../../lean/Research/CycleParity.lean)
+
+For probabilities indexed by individual clauses, joint order floor(log₂ k)+2 at width k determines the complete violation law, and one fewer order can change the model count. [Proof and reconstruction algorithm](indexed.md)
