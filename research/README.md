@@ -56,3 +56,5 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 [Hidden cut recovery](violation-certificates/hidden.md) recognizes an equivalent interaction under the stated bounded-width and bounded-degree promise. Polynomial recursive counting requires the same promise on connected restrictions.
 
 [Exhaustive residual gate search](residual-gate-bound/README.md) excludes every normalized L-meta-18968 residual circuit with at most 23 gates. The raw decoder and native verifier are included.
+
+[Two simultaneous parity markers](two-markers/README.md) have a polynomial-time witness algorithm on symmetric alternating guard matrices and the specified removable diagonals.

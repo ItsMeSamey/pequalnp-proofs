@@ -32,3 +32,5 @@ Each engine remains feasible under either value of every coordinate. Neither can
 [Finite two-switch checker](check_unit_exchange.py).
 
 [The symbolic restriction checker](check_unit_restrictions.py) also verifies the charged sums and the residual source proof simulations for all 68 single-literal restrictions of the finite example.
+
+[Affine messages](affine-exchange.md) distinguish the two directions. Native ordinary degree-two PC has only its marker as a nonzero affine consequence. In the other direction the real local engine certifies bounded-width terminal parities, whose import gives a short degree-two refutation.
