@@ -1,0 +1,8 @@
+Seven paid point deletions: six private literals and the disjoint cut {1,20}.
+Erased (5,) size 12 rows 15 26 budget 18 UNSAT 1
+Erased (6,) size 12 rows 16 23 budget 18 UNSAT 1
+Erased (7,) size 12 rows 15 29 budget 18 UNSAT 1
+Erased (0, 6, 7) size 10 rows 12 16 budget 15 UNSAT 1
+Erased (0, 6, 10) size 10 rows 12 16 budget 15 UNSAT 1
+Erased () size 13 rows 18 33 budget 21 UNSAT 1
+Six-point core >=22; residual >=29; raw >=30; raw without w54 >=35.

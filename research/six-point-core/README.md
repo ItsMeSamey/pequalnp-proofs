@@ -45,3 +45,5 @@ An independent native replay returned UNSAT on all six searches in the [result t
 Separate proof and code review checked the cofactor and retention charges, the additional charge for live constants, both triple orbits and the surviving-neighbor condition. It independently reconstructed the 24 forbidden mask triples and confirmed the 5,760 qualifying entries of the 8,192-entry quota table. These are finite search and paper results.
 
 The six-point core optimum is 22 or 23. For the upper bound, OR the three line neighbors of each point, AND that result with the point, and OR the six resulting terms. The driver checks this 23-gate circuit on all 51 rows.
+
+The [sequential replay](verified.log) regenerated all six native inputs from the pinned theorem and completed all six searches with the release driver.
