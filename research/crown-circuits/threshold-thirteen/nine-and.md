@@ -1,0 +1,23 @@
+# Thirteen-input threshold two at 31 gates and nine ANDs
+
+Assume there is a globally minimum, clean-terminal monotone binary circuit on thirteen inputs with 31 gates and nine ANDs. Its 22 ORs meet the OR floor of 2n−4. The twelve-input lower bound of 29 allows only two savings upon setting a raw input false. Thus every raw has exactly two readers, both ORs. The established regularity proof excludes a sole OR reader in clean-terminal form, a sole AND reader by direct three-gate specialization, and a twice-read raw entering an AND by the additional downstream gate saved. The same argument applies if the initial size is at most 31; the floor already forces exactly 31 with nine ANDs.
+
+Flatten each singly used OR into its OR consumer. The raw labels form a simple graph on the flattened groups. Every label joins its two distinct groups, and any two distinct groups share at most one label. A pure group has only raw leaves. Let p count the pure groups, H count the components on the pure vertices (isolates included), and d denote the degree of a pure group in this induced graph. The established star and component inequalities in the OR-tight case give, for a pure group with k labels,
+
+    k + max(d,2) ≤ p,       k ≤ H.
+
+In fact the argument below only requires the first inequality and the weaker second inequality without its mixed-neighbor correction. The identity r=p−4 follows by counting 26 raw incidences in 22 ORs. See threshold-twelve-final-cert/component-star.md and eight-star-audit.md.
+
+**Pure groups have at least three labels.** A pure group has at least two distinct raw leaves. If U has two, deleting both labels saves at least five gates. The regular deletion count charges four raw incidences. A branching U has at least one extra wire use; a single-use U feeds an AND, whose first one-sided simplification gives the extra saving. The latter AND cannot have two dark operands at the first occurrence: the only earlier dark OR outside the private tree would either combine the same two raw variables in a second group or duplicate U. There are no raw AND inputs. This is the same small-pure-group deletion count as in degree/t11-26/eight-and.md and threshold-twelve-final-cert/eight-star-audit.md. The eleven-input lower bound of 27 permits at most 31−27=4 savings, so a pure doubleton is impossible.
+
+**A pure group of size at least four exists.** Assume all pure groups are triples. Each is unshared by the small-group argument. Indeed, deleting its three labels permits at most 31−24=7 savings by the ten-input lower bound. A branching group would cost at least seven already, leaving no one-sided dark AND. The earliest fully dark AND cannot receive two distinct dark operands: before it the only accessible dark signal is U itself, since a different group cannot contain two labels of U and recomputing U with any subset of U is redundant. Hence at least seven OR gates alone would disappear, contradicting the six-OR deletion allowance from the threshold OR floor. This is also a special case of the pure-exit lemma for OR-tight circuits.
+
+Before the first AND no shared OR can occur, since the earliest such OR would have a pure group. That AND therefore reads two distinct single-use pure triples U,V. If they overlap in x, factor x out of their conjunction and save one gate. If disjoint, deleting the three labels of U removes its two private ORs and the three distinct external raw-reader ORs. It eliminates the first AND, stranding V and its two ORs. These two ORs are distinct from all five charges since V contains no U labels and was unshared. This removes at least seven ORs while the remaining ten-input circuit needs at least 16 of the original 22, a contradiction.
+
+**Component count.** Take a pure group U of degree k≥4. Distinct pure components have disjoint incident raw-label sets, since a label with endpoints in two such components would join them. The component of U has at least k labels and each of the other H−1 components has at least three. As H≥k, the thirteen-label bound is
+
+    13 ≥ k+3(H−1) ≥ 4k−3 ≥ 13.
+
+Equality forces k=H=4. U's component contains just four labels and each other component just three. A second adjacent pure vertex in any component would contain at least three labels and share only one with the first, introducing at least two additional labels. Thus each component consists of an isolated vertex, p=4. The star bound gives p≥k+2=6, a contradiction.
+
+Consequently a 31-gate minimum circuit on thirteen inputs cannot have nine ANDs. With at least ten ANDs the 22-OR floor already exceeds the gate budget. This argument does not exclude the other AND counts. The accompanying case check verifies the final integer counting step.
