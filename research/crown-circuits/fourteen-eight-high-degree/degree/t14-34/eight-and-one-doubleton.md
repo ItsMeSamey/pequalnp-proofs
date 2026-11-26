@@ -1,0 +1,7 @@
+# At most one branching doubleton at size 34 with eight ANDs
+
+The incident case is excluded in eight-and-overlapping-branches.md. Suppose U,V are disjoint branching doubletons. Set their four raw labels S to zero. The debit is already ten: eight raw occurrences and one fanout surplus at each of U,V. The ten-input minimum is 24, so no other dark fanout and no one-sided dark AND can occur.
+
+If there were a first dark AND, both operands would be disjunctions of raw labels in S. A non-dark signal could not feed either operand through ORs, and no previous dark AND exists. Each operand must have at least two exclusive singleton labels outside the other. Hence the operands are complementary two-label disjunctions. Neither may be U or V since both have only OR readers and a duplicate gate would be redundant. Each such disjunction must be a pure doubleton: at its earliest realization, both nonzero OR operands have support strictly contained in the two labels, so are the singleton raw wires (an AND-free alias of a single raw would be redundant). No intervening OR can compute the same function again in a size minimum. These further doubletons have fanout one by the exhausted debit, and two private doubletons cannot feed the same product by the private-partner deletion argument. Thus no dark AND occurs.
+
+All ten lost gates are ORs. The residual has sixteen ORs and eight ANDs on ten inputs, contradicting the secondary OR-floor minimum of nine ANDs.
