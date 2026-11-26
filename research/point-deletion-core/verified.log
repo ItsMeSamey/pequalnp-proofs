@@ -1,0 +1,4 @@
+Seven paid point deletions: six private literals and the disjoint cut {1,20}.
+Six-point core: 18 positives, 33 maximal negatives, 24 label-preserving permutations, point orbit 6.
+Five-point core: 15 positives, 26 maximal negatives, 12 mandatory inputs, budget 17: UNSAT 1
+Residual requires at least 7 + 2 + 18 = 27 gates. Raw suffix requires at least 28.

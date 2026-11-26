@@ -36,3 +36,7 @@ Two further reductions preserve a minimum circuit. Number gate outputs consecuti
 [Two extra point signatures](../two-extra/README.md) require at least 19 point gates when the other seven signatures are canonical, independently of mixed topology.
 
 With zero or one spare use, [private positive and negative pairs](../seed-obstructions/suffix-search/COPY.md) further constrain an admissible tree or single-copy circuit. The native verifier uses the necessary recursive connectivity condition for zero spare uses and the necessary bipartiteness condition for one spare use. The [exact raw transfer](../seed-obstructions/raw-transfer.md) therefore gives at least 26 raw suffix gates.
+
+[Four-line restrictions](../four-line-restrictions/README.md) independently give the same lower bound. Each of the 35 restrictions costs exactly 19 gates with every original free point OR retained.
+
+The [point-deletion proof](../point-deletion-core/README.md) raises the residual lower bound to 27 gates and the unrestricted raw suffix lower bound to 28.

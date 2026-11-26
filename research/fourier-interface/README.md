@@ -21,3 +21,5 @@ Reproducibility: python fork.py runs 150 random whole-tree examples and 300 rand
 [Integer-fiber moments](moments.md) compute a fiber contraction with a polynomial number of evaluations in the stated range. [Swap-orbit ranks](orbits.md) quantify the number of distinct port vectors for a specified saturated layout.
 
 [Taylor regrouping](taylor-regroup.md) reduces the number of calls in the interpolation branch from Σ 2ʲ binom(n,j) to Σ binom(n,j) for j ≤ q, with polynomial arithmetic overhead. [Root modes](root-modes.md) give lower bounds on actual nonzero scalar summands for specified Boolean contractions. Neither changes the leading runtime of the full counting theorem.
+
+The [separable query lower bound](taylor-span.md) proves the regrouped query count is sharp for fixed scalar weights and common linear reconstruction. Run `python3 taylor_span_check.py` to replay the finite rank checks.
