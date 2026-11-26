@@ -1,0 +1,72 @@
+index 0 terminals 2 atoms 10
+pass 0 banks 1848
+index 1 terminals 2 atoms 11
+pass 1 banks 2542
+index 2 terminals 2 atoms 10
+pass 2 banks 2546
+index 3 terminals 2 atoms 11
+pass 3 banks 2542
+index 4 terminals 2 atoms 10
+pass 4 banks 2546
+index 5 terminals 2 atoms 10
+pass 5 banks 1848
+index 6 terminals 2 atoms 11
+pass 6 banks 2542
+index 7 terminals 2 atoms 11
+pass 7 banks 2542
+index 8 terminals 2 atoms 13
+pass 8 banks 3649
+index 9 terminals 2 atoms 12
+pass 9 banks 3696
+index 10 terminals 2 atoms 10
+pass 10 banks 2546
+index 11 terminals 2 atoms 10
+pass 11 banks 2546
+index 12 terminals 2 atoms 12
+pass 12 banks 3696
+index 13 terminals 2 atoms 12
+pass 13 banks 3692
+index 14 terminals 2 atoms 10
+pass 14 banks 2546
+index 15 terminals 2 atoms 10
+pass 15 banks 2354
+index 16 terminals 2 atoms 11
+pass 16 banks 2744
+index 17 terminals 2 atoms 10
+pass 17 banks 2354
+index 18 terminals 2 atoms 10
+pass 18 banks 2354
+index 19 terminals 2 atoms 12
+pass 19 banks 3441
+index 20 terminals 2 atoms 12
+pass 20 banks 3693
+index 21 terminals 2 atoms 12
+pass 21 banks 3441
+index 22 terminals 2 atoms 13
+pass 22 banks 3912
+index 23 terminals 2 atoms 10
+pass 23 banks 2546
+index 24 terminals 2 atoms 11
+pass 24 banks 2744
+index 25 terminals 2 atoms 12
+pass 25 banks 3693
+index 26 terminals 2 atoms 13
+pass 26 banks 3912
+index 27 terminals 2 atoms 13
+pass 27 banks 3911
+index 28 terminals 3 atoms 12
+pass 28 banks 2812
+index 29 terminals 3 atoms 12
+pass 29 banks 2812
+index 30 terminals 3 atoms 14
+pass 30 banks 3986
+index 31 terminals 3 atoms 12
+pass 31 banks 2812
+index 32 terminals 3 atoms 14
+pass 32 banks 3986
+index 33 terminals 3 atoms 14
+pass 33 banks 3986
+index 34 terminals 3 atoms 15
+pass 34 banks 4205
+index 35 terminals 4 atoms 16
+pass 35 banks 4280
