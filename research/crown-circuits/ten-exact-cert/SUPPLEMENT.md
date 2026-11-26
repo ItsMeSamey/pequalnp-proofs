@@ -1,0 +1,1 @@
+The independent C++ physical helper-library search covered all 283 hard six-AND cases in stratum q3. It examined 14,303,744 libraries and 8,465,265 packing frontiers and found zero witnesses. The sealed original proof manifest remains in SHA256SUMS. [Independent ledger](independent-q3-exact.tsv)
