@@ -1,0 +1,9 @@
+# Matching the lower bound on the restricted CLIQUE predicate
+
+Use the graph from twisted-block-profile.md: t separate blocks, each with 3q completely joined vertex pairs, where q≥2 is a power of two, and require a clique of size 4q+1. The only free coordinates are the 3qt distinct edges within pairs. On this restricted function, both ordinary Boolean multiplicative complexity and K_q are exactly (3q−1)t−1.
+
+Write q=2^h. In one block, acceptance is the bit of weight 2q in |x|+q−1. The integer ranges from q−1 through 4q−1, so this bit detects precisely |x|≥q+1. Form the sum by placing 3q input tokens at weight one and one constant token at each weight 2^i, 0≤i<h, for the offset. Compress three tokens a,b,c of equal weight into a token a+b+c of that weight and one carry (a+b)(a+c)+a of double weight, where the formulas use GF(2). Each full adder needs one multiplication.
+
+At each level 0≤i<h there are 3q/2^i+1 tokens, including the offset token. The count is odd, so repeated compression leaves exactly one token and creates 3q/2^(i+1) carries. At level h there are three tokens and no offset. One last full adder produces the desired output. The total number of multiplications in a block is 3q−3+1=3q−2. Combining t blocks with binary OR uses (3q−2)t+t−1 multiplications. The signed-moment lower bound in the companion note proves exactness even after arbitrary cross-block perturbations of degree below q. This uses the classical one-multiplication full adder and Hamming-weight circuit technique. [Boyar and Peralta, §5](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=50828)
+
+On t disconnected copies of the twelve-vertex block, this gives 5t−1 multiplications on 6t free edges. On t copies of the 24-vertex block it gives 11t−1 on 12t free edges even after arbitrary cubic perturbations. The exact formula is for a family of constant-coordinate restrictions of the standard graph problem. The whole graph predicate has binom(6qt,2) adjacency bits.
