@@ -7,3 +7,5 @@ Over each characteristic-zero field, at sufficiently large graph size M, exact b
 The lower bound uses the November 24 permanent theorem as a dependency. Its degree-component border lower bound implies the exact-circuit bound used here. [Pinned primary statement](https://github.com/openai/math/blob/92b516ef8e2abf66c3db7aa31438d3010bc7956f/preprints/Circuit-lower-bounds-for-Hamiltonian-cycle-and-the-permanent-November-24-2026/build/intro.tex)
 
 [Reduction](permanent-to-grove.md) · [Four-port signature](weighted-permutation.md) · [Independent audit](permanent-grove-audit.md)
+
+The independent arithmetic audit gives a second implementation of the reduction using a (6N+1)³ interpolation grid and an identity-matrix evaluation to obtain the normalizing scalar. It also verifies the Boolean decision scope. [Arithmetic and oracle audit](permanent-grove-arithmetic-audit.md)
