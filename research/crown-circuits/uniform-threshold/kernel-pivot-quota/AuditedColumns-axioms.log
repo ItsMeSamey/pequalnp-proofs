@@ -1,0 +1,5 @@
+'ThresholdWarmSimple.retained_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdColumnConflicts.outgoing_conflict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdPurityPins.regular_impurity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdCompetingColdCharges.physical_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdNativeColumnCharge.column_family' depends on axioms: [propext, Classical.choice, Quot.sound]
