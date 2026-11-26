@@ -1,0 +1,17 @@
+(4, 7) 411 {(3, 11): 118, (4, 10): 158, (5, 9): 79, (6, 8): 56}
+(5, 6) 281 {(4, 10): 24, (5, 9): 70, (6, 8): 90, (7, 7): 68, (8, 6): 24, (9, 5): 5}
+(2, 2, 7) 31 {(1, 1, 12): 31}
+(2, 3, 6) 11 {(1, 2, 11): 3, (1, 3, 10): 8}
+(2, 4, 5) 10 {(1, 3, 10): 2, (1, 4, 9): 2, (1, 5, 8): 2, (1, 6, 7): 4}
+(3, 3, 5) 4 {(2, 2, 10): 1, (2, 3, 9): 1, (3, 3, 8): 2}
+(3, 4, 4) 2 {(2, 6, 6): 1, (3, 5, 6): 1}
+Counter({('4,7', True): 269, ('5,6', True): 205, ('4,7', False): 142, ('5,6', False): 76})
+all flags excluded 5 ['G38,G174', 'G44,G147', 'G44,G151', 'G44,G152', 'G44,G153']
+49 ['G29,G190', 'G30,G178', 'G30,G181', 'G30,G184', 'G30,G185', 'G30,G186', 'G30,G188', 'G30,G189', 'G30,G190', 'G31,G178', 'G31,G181', 'G31,G184', 'G31,G185', 'G31,G186', 'G31,G188', 'G31,G189', 'G31,G190', 'G37,G157', 'G37,G159', 'G37,G160', 'G37,G163', 'G37,G166', 'G37,G167', 'G37,G168', 'G37,G169', 'G37,G170', 'G37,G171', 'G37,G172', 'G37,G173', 'G37,G174', 'G37,G175', 'G38,G157', 'G38,G159', 'G38,G160', 'G38,G163', 'G38,G166', 'G38,G167', 'G38,G168', 'G38,G169', 'G38,G170', 'G38,G171', 'G38,G172', 'G38,G173', 'G38,G175', 'G42,G146', 'G42,G154', 'G49,G105', 'G50,G105', 'G51,G83'] remaining 22
+/home/agent/.local/lib/python3.12/site-packages/networkx/algorithms/graph_hashing.py:211: UserWarning: The hashes produced for graphs without node or edge attributes changed in v3.5 due to a bugfix (see documentation).
+  node_labels = _init_node_labels(G, edge_attr, node_attr)
+8 11 23 []
+8 12 5 []
+9 13 19 []
+411 hosts = 276 physical + 131 four-flag + 4 marked. 28 marks = 18 cubic + 2 path + 3 cycle + 3 isolated-edge + 2 triangle.
+q11 portable replay completed
