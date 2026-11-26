@@ -1,0 +1,2 @@
+'ThresholdRegularThird.regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdRegularThird.bound_power' depends on axioms: [propext, Classical.choice, Quot.sound]
