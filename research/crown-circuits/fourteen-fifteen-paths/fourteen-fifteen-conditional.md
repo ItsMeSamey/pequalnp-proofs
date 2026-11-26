@@ -1,0 +1,9 @@
+# Fifteen-flag residuals after two local path bounds
+
+Assume C3+P5 requires six decoder ORs and C4+P4 requires six. In the regular fourteen-edge, size-34, eight-AND model let q=15. Every degree-four flag would be the center of a bare four-star component; its ten remote edges lie on ten remote vertices, hence include a cycle, which is impossible by fourteen-disconnected-thirteen.md. The entire graph is subcubic.
+
+A branching pure flag of degree d=2 or 3, with t adjacent leaves, leaves N=14−t flags and 14−d edges against OR cap N−3. The usual full-order remote charge implies no strong component or union of order h having an h−2 floor and no common flag. Thus the residual consists of d−t trees, each of order at most five, and at most one C3 or C4. Five-vertex trees can only be P5 because a cubic nonstar has an h−2 floor. Four-vertex trees are P4 or the three-star. K1,3 plus any connected nonstar path or cycle has the prohibited joint floor by fourteen-cycle-component-transfer.md. The assumed C3+P5 and C4+P4 joint floors also exclude C4+P5, by peeling one end of P5.
+
+At d=2,t=0 the only split fitting fourteen flags is C4+P5+P5, already forbidden. When d=3,t=1, thirteen flags require a cycle and two trees, necessarily including a P5. This conflicts with either cycle. Larger t, or d=2,t>0, cannot reach N even with a four-cycle and trees of order five.
+
+Thus d=3,t=0. Without a cycle there are three trees totaling fourteen flags, of orders 4,5,5. The order-four tree must be P4 by the three-star plus nonstar bound. With a C4 the three trees would total ten vertices, so one has order four or greater. A P4 or P5 conflicts with C4, as does a three-star. With a triangle all three trees have at most four flags; to total eleven they have orders 3,4,4 and both larger ones are P4. Consequently the only residuals are C3+P3+P4+P4 and P4+P5+P5. The original host may be connected or disconnected. These are necessary shapes, not decoder constructions.
