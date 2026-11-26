@@ -1,0 +1,14 @@
+# Seven line boundaries require three surplus reads at size 33
+
+For the L-meta-18968 residual, a connected binary monotone mixed cone with seven line boundary signals and surplus k≤2 has total cost at least 34, counting point and line precomputation. Thus any at-most-33 circuit using only seven line boundary signals has at least P+9 mixed gates on P point boundary signals. Since P≥11, it needs at least 20 mixed gates.
+
+Packing makes all seven line boundary singleton signatures distinct; replacing each by its corresponding raw bit preserves positives and lowers negative outputs. Each wire with fanout d contributes d−1 surplus reads. A mixed cone on P+7 distinct boundary inputs has P+6+k gates. An original input leaf is resident at its first repeated downstream endpoint or at the root. A repeated boundary input is itself an endpoint.
+
+* With zero surplus the seven-line private guard theorem applies. If a single wire is repeated, ../one-surplus/repeated-one-label.md and ../one-surplus/aggregate.md cover arbitrary fanout, including one wire of fanout three.
+* The remaining k=2 shape has two distinct endpoints of fanout two. If neither nonroot endpoint has exactly one resident line, ../one-surplus/aggregate.md gives ≥34.
+* If just one has one resident line and the other has at least two, ../one-surplus/one-and-many.md covers all orientations. Its two-level restoration uses a source negative extending an exterior pair with the exceptional line active and meeting two ordinary neighborhoods.
+* If one has one resident line and the other none, consider the latter's inputs. If it has no repeated predecessor it is a repeated pure point boundary wire: an upstream mixed tree needs a line. Duplicate that point input at the two uses without recomputing its point value. The one-repeated-wire proof counts the two point leaves as separate occurrences and gives ≥34. Otherwise the singleton endpoint supplies the no-resident-line endpoint. Both numbers of incoming uses, including the case of a raw singleton endpoint, are covered in ../sequential/downstream-no-line.md.
+* If both have one resident line and neither supplies the other, see ../one-surplus/parallel.md. Its last case, in which both endpoints are raw line inputs, is covered in ../parallel-algebra/README.md.
+* If both have one resident line and the first supplies the second, either both its uses enter that region or one goes directly into the exterior. ../sequential/README.md covers both alternatives for a genuinely mixed upstream endpoint and the first for a raw upstream input. Its independent verifier is ../sequential/audit_seq.py. The last alternative for a raw upstream input is ../five-feature/README.md with replay.sh.
+
+This exhausts the possible fanouts, resident line counts, dependencies and numbers of incoming uses. Eight or more line boundary inputs require separate analysis.
