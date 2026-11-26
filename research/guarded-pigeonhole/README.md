@@ -53,3 +53,5 @@ For a limitation take a four-cycle, with row masks the two neighbors of each ver
 The [LP checker](mask_lp.py) sums inequalities to obtain −1≥0 on 512 test graphs and verifies the rational cycle solution. The [Lean proof](../../lean/Research/AffinePigeonhole.lean) verifies the equivalence of the prefix condition and at-most-one, and the pigeonhole cardinality contradiction. The asymptotic result uses the cited external theorem and the simulation above.
 
 [Two sparse modifications](separations.md) preserve the polynomial-calculus lower bounds and admit exact fractional solutions to the mask LP. Local distributions that agree on full bag intersections refute both modifications.
+
+An [expander modification](expander.md) simultaneously requires linear GF(2) PC degree, exponential ordinary PC size, linear Sherali–Adams rank and linear real sum-of-squares degree on its forbidden-assignment CNF. Its two restrictions witness the algebraic and real hierarchy bounds separately.
