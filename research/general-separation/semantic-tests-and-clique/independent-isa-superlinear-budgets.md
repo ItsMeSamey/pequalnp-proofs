@@ -1,0 +1,13 @@
+# Superlinear budgets and the one-atom threshold
+
+At each large input length N put k=floor(log₂N), t=k−ceil(log₂k), m=2^t, P=2^floor(log₂(m/t)), and r=floor(N/(log₂P+Pt+m)). Ignore trailing bits. Then m=Θ(N/log N), r,t=Θ(log N), P=Θ(N/(log N)²). The AND and balanced XOR of independent ISA banks have linear shared circuits.
+
+With D=1+W/(rP), the [signed single-atom bound](independent-isa-all-lengths.md) gives per-bank brackets O((D/m)^(1/3)) for formulas and O(sqrt(D)(r/m)^(1/4)) for existential programs, when these are small. Use L=ceil((D²m)^(1/3)) or L=ceil(sqrt(D)(m/r)^(1/4)), respectively. Deterministic programs have sufficient bracket O((D log(rm+2)/m)^(1/3)) by taking L=ceil((D²m/log(rm+2))^(1/3)) in the useful range L≤m. The entire correlation is bounded by the r-th power. For sound covers, balancing D/L against L/m, L log(rL+2)/m or rL²/m yields brackets tending to zero on the same respective little-o ranges. Since r=Θ(log N), the exact AND sound-cover and signed absolute-weight lower bounds, and balanced-XOR inverse-margin and inverse-advantage bounds, are superpolynomial throughout the following sufficient ranges:
+
+* Formulas: W=o(rPm)=o(N²/(log N)²).
+* Deterministic programs: W=o(rPm/log(rm+2))=o(N²/(log N)³).
+* Existential programs: W=o(sqrt(r)P sqrt(m))=o(N^(3/2)/(log N)²).
+
+At W≤N^(2−ε) for formulas, or W≤N^(3/2−ε) for existential programs, for any fixed ε>0, the brackets are polynomially small, giving exp(Ω_ε((log N)²)) lower bounds. Exact signed equality with individually polynomial coefficients consequently requires superpolynomial term count. The AND target still has a small threshold of the disjoint bank/row predicates.
+
+Either target is one binary formula at W=O(rPm) and one unambiguous program at W=O(r(m+P sqrt(m)))=O(rP sqrt(m)). For AND conjoin formulas or concatenate the single-bank programs. For XOR carry two parity states across banks and choose complementary unambiguous checks on the addressed bit; exactly the true check can pass. Deterministic programs have an O(rPm) upper by full pointer dispatch trees. Conversely each of the rP disjoint pointer words yields 2^m subfunctions by varying its bank payload with other outputs fixed. For formulas the fixed skeleton gives log count O(l+1) for l word occurrences, hence l=Ω(m). For programs the O(l²+1) bound yields l=Ω(sqrt(m)). Summing gives matching one-atom lower bounds for formulas and existential programs. For deterministic programs the O(l log(l+2)+1) log count yields Ω(rPm/log(m+2)). The existential sufficient range has a factor sqrt(r) gap to its sharp one-atom threshold. The deterministic one-atom lower and elementary upper have a log gap. None of these statements proves superpolynomial signed term count for unrestricted magnitudes.
