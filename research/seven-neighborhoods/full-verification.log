@@ -1,0 +1,47 @@
+Checked four- and six-line orbit coverage, six pairwise-intersecting pencils.
+5 vertices 4 nonisomorphic graph types, labeled incidence mass 604800
+6 vertices 20 nonisomorphic graph types, labeled incidence mass 28803600
+7 vertices 41 nonisomorphic graph types, labeled incidence mass 371725200
+8 vertices 50 nonisomorphic graph types, labeled incidence mass 2153390400
+9 vertices 33 nonisomorphic graph types, labeled incidence mass 6813979200
+10 vertices 17 nonisomorphic graph types, labeled incidence mass 12862735200
+(0, 1, 2, 3, 4, 5) 66 matching topology classes and point-choice multiplicities
+(0, 1, 2, 3, 4, 6) 164 matching topology classes and point-choice multiplicities
+python 3.12.14 python-sat 1.9.dev25 solver cadical195
+lines (0, 1) gates 7 variables 402 clauses 2352 sha256 d4d249b98c9754aed2397a8e0962af2611b6c4ddcbdad16244f883d825da0943 SAT False conflicts 4416
+lines (0, 1, 3) gates 11 variables 1016 clauses 7526 sha256 2536fce9befe0204f19b719699b5128a1a3f0daa571f237b2f60ba077b04145a SAT False conflicts 137517
+lines (0, 1, 5) gates 11 variables 1059 clauses 7875 sha256 5e3492439543a0f704039b381930aab4fe69b96711393cb1e6fe2525ca0f272a SAT False conflicts 192036
+Both marked minima and the seven-line incidence geometry checked.
+[0, 1, 2, 3] 13
+False 278.1061165400006 {'restarts': 19077, 'conflicts': 416472, 'decisions': 777475, 'propagations': 32850825}
+[0, 1, 2, 4] 13
+False 143.99997584899938 {'restarts': 9647, 'conflicts': 275503, 'decisions': 504499, 'propagations': 23215156}
+(0, 1, 2, 3, 4, 5) (0, 1, 5)
+False 0.05154191399924457 {'restarts': 22, 'conflicts': 446, 'decisions': 872, 'propagations': 29855}
+(0, 1, 2, 3, 4, 5) (0, 2, 3)
+False 0.021383923000030336 {'restarts': 13, 'conflicts': 438, 'decisions': 677, 'propagations': 25719}
+(0, 1, 2, 3, 4, 5) (1, 3, 4)
+False 0.02412173300035647 {'restarts': 1, 'conflicts': 436, 'decisions': 659, 'propagations': 24907}
+(0, 1, 2, 3, 4, 5) (2, 4, 5)
+False 0.08131455399961851 {'restarts': 35, 'conflicts': 433, 'decisions': 1302, 'propagations': 27547}
+six-line 17-gate exclusions 012345 66
+(0, 1, 2, 3, 4, 6) (0, 2, 3)
+False 0.003069829999731155 {'restarts': 6, 'conflicts': 305, 'decisions': 555, 'propagations': 17220}
+(0, 1, 2, 3, 4, 6) (1, 2, 5)
+False 0.03000949699890043 {'restarts': 12, 'conflicts': 462, 'decisions': 645, 'propagations': 28655}
+(0, 1, 2, 3, 4, 6) (1, 3, 4)
+False 0.05645188599919493 {'restarts': 4, 'conflicts': 314, 'decisions': 571, 'propagations': 19168}
+six-line 17-gate exclusions 012346 164
+seven-line 19-gate exclusions 16
+
+verified final SAT cases 100
+verified final SAT cases 200
+verified final SAT cases 300
+verified final SAT cases 400
+verified final SAT cases 500
+verified final SAT cases 600
+verified final SAT cases 700
+verified final SAT cases 800
+verified final SAT cases 900
+verified final SAT cases 1000
+Seven-line exact minimum 21. Final coverage: 3070 3971 1087

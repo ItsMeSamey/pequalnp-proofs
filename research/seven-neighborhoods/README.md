@@ -16,3 +16,5 @@ python verify_all.py
 The verifier uses a temporary working directory, regenerates all graph cases, compiles the interval checker, verifies coverage, and runs the SAT solver without a conflict limit. No repository, prior outputs or downloaded geometry tables are needed beyond the installed libraries. The graph-atlas stage checks nonisomorphism and compares exact labeled-graph mass against an inclusion–exclusion count. The six-line graph enumeration is independently reconciled against the graph atlas, including all concurrent three-edge paths. A more constrained final SAT model is also available via `--strong`; its extra inequalities are proved in SEVEN.md.
 
 The archived logs record the authoring runs. The verification script performs fresh checks. To replay an individual stage, for example, run `python verify_all.py --stages seven20`.
+
+The [full integrated replay](full-verification.log) regenerated all six stages and finished with 3,070 geometry exclusions, 3,971 interval exclusions and 1,087 SAT exclusions. The finite SAT checks rely on the pinned solver.
