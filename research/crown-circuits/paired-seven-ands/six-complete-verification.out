@@ -1,0 +1,5 @@
+0 {'capacity': 69, 'full0': 3, 'matching': 4, 'signed_port': 111, 'too_many_pins': 2}
+1 {'capacity': 504, 'full1': 101, 'matching': 170, 'signed_port': 2388, 'too_many_pins': 71}
+2 {'capacity': 1345, 'full2': 973, 'matching': 3095, 'signed_port': 26808, 'too_many_pins': 2660}
+3 {'capacity': 1028, 'signed_port': 196842, 'too_many_pins': 53399, 'two_cycle': 21477, 'two_tag_shape': 2268}
+Verified 313318 physical templates at dirty count 6
