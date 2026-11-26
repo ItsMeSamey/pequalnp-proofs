@@ -33,3 +33,5 @@ There are O_t(N^{6t}) possible placements including extras. In the stretched hos
 Run `python check.py`. On 300 seeded multigraphs including parallel edges, loops and disconnected cases it compares all fundamental-matrix guard labels, all cycle/cut labels, and all labels having a compressed support and few extra positives. The Z/4 path encoding is independently checked on all 508 binary-labelled paths of two through eight vertices. The large fixed-parameter linkage subroutine is supplied by the cited theorem and was not implemented in this checker.
 
 A [binary triangle representative](../triangle-baselines/README.md) preserves the attainable boundary states with at most three outside columns.
+
+[Local gluing](gluing.md), [strong regularity backdoors](backdoor.md), [cographic ports](../cographic-markers/README.md) and [rank-one span separation](../span-separation/README.md) supply related reductions. Their assumptions and the unresolved global dependencies are stated in the individual proofs.
