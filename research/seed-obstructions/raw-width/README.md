@@ -1,6 +1,10 @@
 # Live raw inputs after pinning and seed deletion
 
-The strongest bound is 28 live raw input labels at every mixed count in the seed-deleted normalized residual of total size at most 33. Independent source review checked the case split and the mandatory point coordinates in the primary runs. The archive records the primary numerical results. A separate replay without forcing those coordinates is additional corroboration. [28-input bound and primary replay](raw-width28-primary.zip)
+At every mixed count, at most 27 distinct raw labels remain live after pinning and seed deletion in the normalized residual of total size at most 33. Independent source and coverage review verified the mixed private/exterior pool dispatch, the 63 and 245 cases covering exterior mergers, and the 24 missing-singleton nine-port forms. The numerical exclusions use the archived primary runs. The updated census gives 280 necessary envelopes, with four whole width pairs at 23 mixed gates: (13,10), (14,8), (14,9), and (14,10). [Primary certificate](raw-width27-primary.zip) · [Reproducible width census](remaining_raw27.py)
+
+## Earlier bound of 28
+
+The previous bound was 28 live raw input labels at every mixed count in the seed-deleted normalized residual of total size at most 33. Independent source review checked the case split and the mandatory point coordinates in the primary runs. The archive records the primary numerical results. A separate replay without forcing those coordinates is additional corroboration. [28-input bound and primary replay](raw-width28-primary.zip)
 
 ## Earlier bound of 29
 
