@@ -4,3 +4,4 @@ Six required literal uses and one additional use, or two when raw point 1 is abs
 Front-free singleton line witnesses: [(0, 52), (1, 52), (2, 52), (3, 53), (4, 54), (5, 55)]
 Original raw wires vanishing on the high-point positives: [0, 1, 2, 3, 4, 5, 6, 13, 14, 15, 16, 17, 18, 26, 27, 28, 29, 30, 31]
 34 gates force exactly one use of each w0..6 and w13..18, and zero uses of w26..31.
+All 13 unique uses enter distinct OR gates. Each front-line partner must be mixed.

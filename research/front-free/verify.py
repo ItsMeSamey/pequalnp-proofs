@@ -78,3 +78,25 @@ require(vanish == [*range(7),*range(13,19),*range(26,32)], 'unexpected raw vanis
 print('Front-free singleton line witnesses:',pairs)
 print('Original raw wires vanishing on the high-point positives:', vanish)
 print('34 gates force exactly one use of each w0..6 and w13..18, and zero uses of w26..31.')
+available = [*range(26), *range(32,44)]
+reduced = [row & sum(1 << i for i in available) for row in raw]
+pos_reduced = {r for k,r in enumerate(reduced) if (target >> k) & 1}
+neg_reduced = {r for k,r in enumerate(reduced) if not (target >> k) & 1}
+forced = [*range(7), *range(13,19)]
+erased = sum(1 << i for i in forced)
+allowed = {}
+for i in forced:
+    priv = [(p,n) for p in pos_reduced for n in neg_reduced if p & ~n == 1 << i]
+    require(any(p & erased == 1 << i for p,n in priv),
+            'erasing the other twelve could destroy this private witness')
+    occurs = 0
+    for p,n in priv:
+        occurs |= n
+    allowed[i] = {j for j in available if j != i and not occurs & (1 << j)}
+for idx,i in enumerate(forced):
+    for j in forced[idx+1:]:
+        require(j not in allowed[i] or i not in allowed[j],
+                'two forced wires might pass through the same OR')
+require(all(not allowed[i] for i in range(13,19)), 'front raw line allows a primitive partner')
+require(not (allowed[2] - set(forced)), 'raw point 2 allows an unforced primitive partner')
+print('All 13 unique uses enter distinct OR gates. Each front-line partner must be mixed.')

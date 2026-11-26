@@ -33,3 +33,11 @@ Using e≥d−h−floor f(d) and b≤2g(d) in the original cost estimate gives
       = 4N−O(q^(3/2)).
 
 This uses only the bipartite graph on accepted pairs, including singleton and same-side rejections.
+
+# One additional finite order
+
+For q=377 keep both inequalities e≥d−h−U and 2e≥N−h−U, the latter from first-side.md. With d=134173, N=142507 and U=7892 the integer bound
+
+    s ≥ 2N+d+h−1−floor g(d)−floor g(h)+max(0,d−h−U,ceil((N−h−U)/2))
+
+is at least 537272 for every integer 0≤h≤d. The target is 537252. The final loop in routing-check.py verifies every h as well as availability of each step.

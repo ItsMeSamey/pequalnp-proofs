@@ -41,3 +41,5 @@ The [XOR wiring result](xor-wiring.md) compiles quadratic phases from supplied c
 The [signed interval compiler](intervals.md) gives a parsimonious reduction when a literal ordering with at most p runs per clause is supplied. Run `python3 interval_compiler.py` to check the range construction and full CNF compilation.
 
 [Order recovery](recognition.md) removes the supplied-order requirement under the stated interval promise. Run `python3 check_recognition.py` for 1,200 comparisons of order search with graph recognition.
+
+[Quadratic traces](../quadratic-traces/README.md) admit an exact affine cover and partition count obtained from their maximum common isotropic dimension. The two-form binary case has a constructive polynomial algorithm.
