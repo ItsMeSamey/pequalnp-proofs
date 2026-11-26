@@ -1,6 +1,6 @@
 # Optimizing the two independent receiver class caps
 
-The class bounds proven in unrestricted-private-pins.md give the general unrestricted lower coefficient c≈1.15238806926. Along a regular sequence attaining the unrestricted liminf, its final receiver graph has g∼h edges, at most (1−z+o(1))E shared columns and at most (1+z+o(1))E private columns. Pad the two classes separately with isolates up to these bounds. The argument of unrestricted-block-moment.md then gives
+The class bounds proven in unrestricted-private-pins-v2.md give the general unrestricted lower coefficient c≈1.15238806926. Along a regular sequence attaining the unrestricted liminf, its final receiver graph has g∼h edges, at most (1−z+o(1))E shared columns and at most (1+z+o(1))E private columns. Pad the two classes separately with isolates up to these bounds. The argument of unrestricted-block-moment.md then gives
 
     liminf E⁵/t³ ≥ min (D⁴+4D²B²+2B⁴)/(8z),
 

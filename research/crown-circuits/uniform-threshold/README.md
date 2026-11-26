@@ -4,7 +4,7 @@ For minimum binary monotone AND/OR circuit size with unrestricted fanout, **C(n)
 
 The refined construction gives C(n) ≤ 2n + √(2n) + (5/4)2^(9/10)n^(3/10) + O(n^(7/30)). This coefficient is an upper bound on the unrestricted optimum. [Short-signature construction](short-signatures.md)
 
-The unrestricted liminf of (C(n)−2n−√(2n))/n^(3/10) is at least the algebraic constant approximately 1.15238806926. Independent mathematical reviews checked the corrected private-receiver bound, including the additive five-gate allowance, and the optimization over both receiver classes. The first sentence of the frozen optimization manuscript refers to the private-pins lemma. Its dependency is the corrected version linked here. [Corrected private-pins lemma](unrestricted-private-pins-v2.md) · [Coefficient optimization](unrestricted-private-moment.md) · [Earlier two-class bound](unrestricted-block-moment.md)
+The unrestricted liminf of (C(n)−2n−√(2n))/n^(3/10) is at least the algebraic constant approximately 1.15238806926. Independent mathematical reviews checked the corrected private-receiver bound, including the additive five-gate allowance, and the optimization over both receiver classes. [Corrected private-pins lemma](unrestricted-private-pins-v2.md) · [Coefficient optimization](unrestricted-private-moment.md) · [Earlier two-class bound](unrestricted-block-moment.md)
 
 ## Earlier bounds and constructions
 
