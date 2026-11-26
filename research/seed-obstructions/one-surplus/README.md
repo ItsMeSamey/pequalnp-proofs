@@ -13,3 +13,5 @@ If D has only the resident line T, let H be its point cofactor at T=1. With t po
 The numerical dependencies are the preceding packing theorem, seven-target point-gate theorem and repeated-line tree bound. Together with the independent mixed-frontier exhaustive checks, this gives two proofs excluding eleven point wires and seven line wires at eighteen mixed gates.
 
 An independent proof audit checked the shared-endpoint substitution, the point-gate count, the 91 zero-line witnesses and all 1,512 exterior-pair extensions used by the seven-line guard argument. Run `python3 verify.py` in this directory for the zero-line witnesses. The [multiple-surplus corollary](aggregate.md) requires a separate structural hypothesis on repeated endpoints.
+
+The [Lean row witnesses](../../../lean/Research/Residual18968PairFacts.lean) formally prove existence of an original negative row for every zero-line point set and every required exterior-pair extension. The circuit lower bound uses the gate-count argument above.
