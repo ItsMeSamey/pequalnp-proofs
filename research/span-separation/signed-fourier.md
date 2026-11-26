@@ -15,3 +15,5 @@ Expand determinants by permutations. A permutation contributing a difference has
 Evaluate P_b at n'+1 distinct nonnegative integers with exact determinants. Its degree is at most n' and the integers used have polynomial bit length by Hadamard's inequality, including the additional d bits needed in summation. This proves the claimed decision time. For witness extraction at a successful c, delete original edges while feasibility persists, retaining all original vertices as selectable even if they become isolated. The minimal remaining edge set is a single negative cycle. Solve the terminal equations on vertices outside the cycle by Gaussian elimination and return the cycle's original edge columns as X.
 
 The proof applies to the nonregular Fano-minor examples in even-cycle.md. It makes no assumption of sparse terminal vectors. Two independent reviews checked the sign and cancellation argument, the subdivision step and witness extraction.
+
+An independent [permutation-expansion check](check_permutation.py) compares 400 exact signed determinant values.
