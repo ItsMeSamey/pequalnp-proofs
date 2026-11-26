@@ -15,6 +15,57 @@ bool any(Negatives set) {
     return (set[0] | set[1] | set[2] | set[3]) != 0;
 }
 
+Mask component(Mask vertices, const std::array<Mask,64> &edges) {
+    Mask seen = 0, frontier = vertices & -vertices;
+    while (frontier) {
+        seen |= frontier;
+        Mask neighbors = 0;
+        for (; frontier; frontier &= frontier-1) neighbors |= edges[std::countr_zero(frontier)];
+        frontier = neighbors & vertices & ~seen;
+    }
+    return seen;
+}
+bool compatible(Mask vertices, const std::array<Mask,64> &both, const std::array<Mask,64> &either) {
+    if (!(vertices & (vertices-1))) return true;
+    Mask part = component(vertices, both);
+    if (part == vertices) part = component(vertices, either);
+    return part != vertices && compatible(part, both, either) && compatible(vertices ^ part, both, either);
+}
+bool incompatible(Mask live, int slack, const std::array<unsigned,64> &pos, const std::array<Negatives,64> &neg) {
+    std::array<Mask,64> conjunction{}, disjunction{}, conflict{};
+    for (Mask a=live; a; a &= a-1) {
+        int i=std::countr_zero(a);
+        for (Mask b=a&(a-1); b; b &= b-1) {
+            int j=std::countr_zero(b);
+            bool p=pos[i]&pos[j];
+            if (slack && !p) continue;
+            bool n=any(neg[i]&neg[j]);
+            if (p && n) {
+                if (!slack) return true;
+                conflict[i] |= bit(j);
+                conflict[j] |= bit(i);
+            }
+            if (slack) continue;
+            if (p) {conjunction[i] |= bit(j); conjunction[j] |= bit(i);}
+            if (n) {disjunction[i] |= bit(j); disjunction[j] |= bit(i);}
+        }
+    }
+    if (!slack) return !compatible(live,conjunction,disjunction);
+    Mask seen=0, colors[2]={0,0};
+    while (live & ~seen) {
+        Mask frontier=(live & ~seen) & -(live & ~seen);
+        for (int color=0; frontier; color^=1) {
+            if (frontier & colors[color^1]) return true;
+            colors[color] |= frontier;
+            seen |= frontier;
+            Mask neighbors=0;
+            for (; frontier; frontier &= frontier-1) neighbors |= conflict[std::countr_zero(frontier)];
+            if (neighbors & colors[color]) return true;
+            frontier = neighbors & ~seen;
+        }
+    }
+    return false;
+}
 struct Search {
     std::array<Mask, num_pos> positive_rows{};
     std::array<unsigned, 64> positive_columns{};
@@ -26,7 +77,9 @@ struct Search {
         std::array<Mask, 64> and_partners;
         and_partners.fill(live);
         std::array<Negatives, 64> witnesses{};
-        for (Mask positive : positive_rows) {
+        std::array<unsigned,64> positive_witnesses{};
+        for (int p=0; p<num_pos; ++p) {
+            Mask positive = positive_rows[p];
             std::array<int, 64> bits;
             std::array<Negatives, 65> prefix;
             prefix[0] = all_negatives;
@@ -44,6 +97,7 @@ struct Search {
                 Negatives group = prefix[k] & suffix;
                 if (any(group)) {
                     // Exactly i distinguishes this positive from these negatives.
+                    positive_witnesses[i] |= 1u << p;
                     and_partners[i] &= positive;
                     witnesses[i] |= group;
                 }
@@ -51,6 +105,7 @@ struct Search {
             }
         }
 
+        if (slack <= 1 && incompatible(live, slack, positive_witnesses,witnesses)) return false;
         Mask output = bit(next);
         for (Mask right = live; right; right &= right - 1) {
             int j = std::countr_zero(right);

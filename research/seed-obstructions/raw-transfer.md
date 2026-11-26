@@ -8,4 +8,4 @@ For the lower bound, bit 0 is a front positive and bit 52 is negative. Their pro
 
 For verification, run `python3 verify_transfer.py`. It decodes the adjacent pinned formal statement and checks the two bit projections and the vanishing conditions. A componentwise comparison on the live rows also permits the set of all negatives to be replaced by its 245 maximal projected rows. There are 28 distinct residual positive rows. Thus a 34-gate raw suffix exists exactly when a 33-gate residual separator exists, allowing padding by repeated-operand idempotent gates.
 
-The [24-gate residual lower bound](../residual-gate-bound/README.md) consequently gives a 25-gate lower bound for the unrestricted raw suffix.
+The [25-gate residual lower bound](../residual-gate-bound/README.md) consequently gives a 26-gate lower bound for the unrestricted raw suffix.

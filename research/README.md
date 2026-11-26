@@ -55,7 +55,7 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 
 [Hidden cut recovery](violation-certificates/hidden.md) recognizes an equivalent interaction under the stated bounded-width and bounded-degree promise. Polynomial recursive counting requires the same promise on connected restrictions.
 
-[Exhaustive residual gate search](residual-gate-bound/README.md) excludes every normalized L-meta-18968 residual circuit with at most 23 gates. The raw decoder and native verifier are included.
+[Exhaustive residual gate search](residual-gate-bound/README.md) excludes every normalized L-meta-18968 residual circuit with at most 24 gates. The raw decoder and native verifier are included.
 
 [Two simultaneous parity markers](two-markers/README.md) have a polynomial-time witness algorithm on symmetric alternating guard matrices and the specified removable diagonals.
 
@@ -64,3 +64,7 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 [Ternary flow hypermatchings](ternary-flow/hypermatches.md) realize fixed-charge stars by bounded-degree 3-uniform exact cover. [Local pivot enumeration](ternary-flow/ternary-guard-audit.md) gives six as the minimum for the specified one-hot cubic star, and [odd scalar conservation](ternary-flow/odd-localization.md) localizes around a fixed marker in the original guarded syntax. The hypermatching construction leaves its conversion to deficiency-one guards open.
 
 [A determinant budget for replacement layouts](replacement-layouts/layout-determinant.md) gives a lower bound on the total measurement rank in the manuscript’s direct polynomial replacement model over every field with the required nodes. The note derives a quantitative expander obstruction and distinguishes the separate precision-weighted construction.
+
+[Missing-cell rigidity](../lean/Research/MissingCellRigidity.lean) proves an OR-count lower bound on rectangular one-hot pairs for a binary monotone circuit whose only rejected cell is (i,j). Equality forces every gate to be OR and the output cone to have the stated fresh binary-tree form.
+
+[The determinant-nullity budget](../lean/Research/DeterminantBudget.lean) verifies the matrix-polynomial step of the replacement-layout bound in Lean. [Modular measurements](fourier-interface/binary.md) and [prime-power reconstruction](fourier-interface/padic.md) give interpolation variants with the stated runtime envelope.

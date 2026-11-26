@@ -13,3 +13,7 @@ The original OpenAI paper explains in its algebraic-methods discussion that it e
 Reproducibility: python fork.py runs 150 random whole-tree examples and 300 random three-subspace forks against direct sums. The small reference implementations materialize subspaces for clarity. The complexity proof uses Gaussian elimination and quotient-basis enumeration. Reference: https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/build/main_full_version.tex .
 
 [Small-field decision tests](decision.md) include a deterministic white-box identity test for the supplied tree and a parameter audit for the manuscript’s direct clause construction.
+
+[Quantitative contraction](contraction-envelope.md) counts the exponent tuples explicitly enumerated by the appendix and bounds an intermediate Hermite coefficient. These bounds concern the specified implementation.
+
+[A single-prime exact implementation](single_prime.md) uses an unramified 2-adic interpolation ring and short modular measurement summaries. It preserves the leading runtime envelope of the direct interpolation algorithm. [Decision-preserving replacements](../replacement-layouts/approximation.md) give distinct limitations under nonnegative kernels and supplied pins.
