@@ -1,0 +1,19 @@
+# Two parallel shared endpoints with one resident line each
+
+Assume the seven-line cone has precisely two shared endpoints, both of fanout two. Their upstream regions are disjoint and have exactly one original line each, T and U. Write pT,pU,pC for their respective counts of point boundary leaves and the remaining exterior count. Write P=pT+pU+pC. Then the original circuit has at least 34 gates.
+
+First normalize the two line regions independently, following README.md, so their outputs are T AND G_T and U AND G_U. The guards have point construction costs at most pT−1 and pU−1; both point counts are nonzero if these endpoints are genuinely mixed. The raw repeated-line case is treated below. At every positive of its own line a guard is true.
+
+Apply the ordinary skeleton argument of repeated-one-label.md to the exterior formula, with the five other raw lines ordinary and both T,U clamped zero. Reconstruct the five ordinary pair-safe point outputs from private AND sides as before. Let b be the total number of exterior point leaf occurrences at ALL ordinary-skeleton OR sides. These sides are disjoint from the private AND sides. Thus the five ordinary outputs cost at most pC−b−5.
+
+If b+pT+pU≥6, compute the two remaining four-point neighborhoods directly by three binary ORs each. Total new point gates ≤pC−b−5+6≤P−5.
+
+Otherwise let C be the OR of all ordinary-skeleton OR sides, substituting unguarded raw bits T,U for the endpoints. Its T-only cofactor multiplied by G_T gives a pair-safe point output. It accepts every incident singleton: on that positive G_T=1, every ordinary leaf is false, and an accepting trace reaches one of the OR sides. Any exterior pair X with G_T(X)=1 passing the cofactor would make an OR side true on a sampled T-active negative extending X and meeting any ordinary V resident at that attachment. All real guarded T occurrences are then active; any other true line can only help. All ancestor AND guards pass via V. This contradicts rejection. The same reasoning applies to U.
+
+For b≤3 the two cofactors of C are jointly computable in at most b point gates, with constants freely simplified. Indeed they are each read-once formulas on at most b labelled point occurrences. For b≤2 their separate nonconstant costs are at most b in total. For b=3 the only possible exception would be two cofactors each retaining all three leaves. In this case both have the same point tree: every node whose children both contain a point must remain with its original connective, and nodes having one point-containing child simply pass that child. The two cofactors therefore coincide, so a single construction suffices. Constants need no gate. Here pT,pU≥1 and b+pT+pU≤5, giving b≤3.
+
+Construct the guards and two final ANDs. The total new point cost is at most (pC−b−5)+(pT+pU−2)+b+2=P−5. In either case the 21-gate lower bound for the seven pair-safe point outputs yields at least 21−(P−5) original point gates. The original mixed cone has P+8 gates, giving at least 34 total.
+
+This statement assumes two genuinely mixed endpoints. If one of the shared endpoints is a raw line with zero point leaves, the small case may have b=4; if both are raw then b may be five. The argument above only establishes the genuinely mixed case. The single shared wire result and the other two-endpoint patterns have separate proofs.
+
+If one endpoint is a raw line and the other genuinely mixed, the conclusion holds too. The raw endpoint has no guard production or final AND; these cancelled in the total anyway. The small case gives b≤4. prune4.py verifies that any two constant prunings of a common monotone point tree on up to four labelled leaves can be computed together in at most b binary point gates. This is checked by exhaustive tree/pruning generation and enumeration of all sets of available signals reachable in b gates. The same accounting applies. For two raw repeated lines the remaining small case is b=5.
