@@ -1,0 +1,1 @@
+'ExactPlaneLookupDeterminant.onto_sampled_read_span' depends on axioms: [propext, Classical.choice, Quot.sound]
