@@ -14,3 +14,5 @@ From a checkout with the pinned Lean and Mathlib dependencies installed, run `re
 The bounded-occurrence SAT case formalizes a classical result. See [Tovey, *A simplified NP-complete satisfiability problem* (1984)](https://doi.org/10.1016/0166-218X(84)90081-7). The [gate elimination notes](incidence-deletion.md) record a possible improvement to the incidence lower bound. The packing lemma is machine checked. The repeated circuit rewiring argument in those notes still requires formal verification.
 
 The [21-gate candidate](../lean/Research/EdgeCandidate.lean) passes 39 of the 40 tests and has three dirty AND gates. It misses the positive edge (1, 4).
+
+[HallLeastCore](../lean/Research/HallLeastCore.lean) proves that alternating reachability finds the unique least matching core, given a matching with no reachable unmatched variable. [IncidenceRestrictedRows](../lean/Research/IncidenceRestrictedRows.lean) proves that every surviving input remains essential after at most q deletions and that test rows distinguish every pair after fewer than 2q deletions. The [deletion notes](incidence-deletion.md) describe which gate-counting conclusions are still conditional.

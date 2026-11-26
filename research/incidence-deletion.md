@@ -33,3 +33,11 @@ The steps delete at least 2d−t gates. The residual circuit depends on at least
     2N + d − 1 − 2(q−1) = (5N−1)/2 − 2q.
 
 This is still linear in N. In particular the argument does not yield the Nq/100 lower bound at all orders.
+
+## Using the second moment of the neighborhood sizes
+
+For one part, let t count the depleted vertices and let d₁ be the number of deleted vertices in the opposite part. Each depleted vertex has at least q and at most q+1 neighbors among those deletions. Two vertices share at most one neighbor. If cᵢ is the number of these neighborhoods containing deleted vertex i, then Σcᵢ ≥ qt and Σcᵢ² ≤ t(q+1)+t(t−1). Cauchy–Schwarz gives q²t² ≤ d₁t(q+t). Lean checks this in [IncidenceMoments](../lean/Research/IncidenceMoments.lean).
+
+Apply this to both parts. For total deletions d < q² and total depleted count b, the result gives b ≤ ⌊dq/(q²−d)⌋. If a deletion sequence achieves the stated savings and support bound, the original gate count s then satisfies 2N+d ≤ s+1+⌊dq/(q²−d)⌋. Taking d=q²−17q proves the target inequality throughout 201 ≤ q ≤ 288 **conditional on the deletion sequence**. [DeletionThreshold](../lean/Research/DeletionThreshold.lean) checks both the combination and the finite arithmetic. The unconditional gate bound checked on this branch remains 2N.
+
+The [restriction compiler](../lean/Research/CircuitRewire.lean) now checks a single rewiring step, its circuit semantics, and the cost of the gates directly consuming a removed input. Composing this compiler with the graph-based choice of inputs at each step is still required for the stronger lower bound.

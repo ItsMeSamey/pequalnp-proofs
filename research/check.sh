@@ -9,7 +9,7 @@ lake build PEqualNP.Defs.TopForm
 lake env bash -eu -o pipefail -c '
   cd "$1/lean"
   export LEAN_PATH="$2:$LEAN_PATH"
-  for module in BoundedOccurrence HallBackdoor CircuitCounting IncidenceBound FirstGate IncidenceStrict DeletionPacking SparseIncidence EdgeSamples EdgeCandidate; do
+  for module in BoundedOccurrence HallBackdoor HallLeastCore CircuitCounting IncidenceBound FirstGate IncidenceStrict DeletionPacking GateEliminationCost CircuitRewire SparseIncidence IncidenceRobust IncidenceRestrictedRows IncidenceMoments DeletionThreshold EdgeSamples EdgeCandidate; do
     echo "Checking Research.$module"
     lean -DwarningAsError=true -o "$2/Research/$module.olean" "Research/$module.lean"
   done
