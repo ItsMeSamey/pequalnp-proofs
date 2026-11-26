@@ -1,0 +1,10 @@
+ExactPlaneSubsetPolynomial
+ExactPlaneAffineSparse
+ExactPlaneAffineSubstitution
+ExactPlaneAffineSpanHit
+ExactPlaneTwoBitLookup
+ExactPlaneActivationSlice
+ExactPlaneDeterminant
+ExactPlaneActiveDeterminant
+ExactPlaneLookupDeterminant
+ExactPlaneActiveReadSpan

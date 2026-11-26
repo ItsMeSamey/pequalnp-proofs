@@ -1,0 +1,1 @@
+10/10 fresh local modules, 2/2 independently verified retained Mathlib prerequisites, all printed axiom reports, all source/object digests reverified.

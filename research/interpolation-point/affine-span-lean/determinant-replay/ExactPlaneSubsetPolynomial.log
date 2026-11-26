@@ -1,0 +1,2 @@
+'ExactPlaneSubsetPolynomial.low_coeff_zero_iff_low_eval_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneSubsetPolynomial.exists_small_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]

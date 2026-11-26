@@ -1,0 +1,9 @@
+/dev/shm/review-plane-determinant-uyxo_yra/research/interpolation-point/affine-span-lean/ExactPlaneDeterminant.lean:12:0: warning: automatically included section variable(s) unused in theorem `ExactPlaneDeterminant.score_ne_iff`:
+  [Fintype J]
+  [DecidableEq J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype J] [DecidableEq J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ExactPlaneDeterminant.quartic_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneDeterminant.independent_span_hit' depends on axioms: [propext, Classical.choice, Quot.sound]

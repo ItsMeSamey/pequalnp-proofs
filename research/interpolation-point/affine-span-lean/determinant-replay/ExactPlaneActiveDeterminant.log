@@ -1,0 +1,2 @@
+'ExactPlaneActiveDeterminant.active_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneActiveDeterminant.covered_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
