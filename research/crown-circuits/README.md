@@ -34,3 +34,5 @@ Among distinct chronological OR gates, at most one unordered pair can share a va
 When there is a collision, four or five diagonals attain saturation. A wire feeding an OR is true on at most two diagonals, which share their OR signature. [Single-collision saturation](../../lean/Research/CrownCollisionSaturationFive.lean) · [Parent signatures](../../lean/Research/CrownParentSignature.lean)
 
 If a single OR is the first active OR on two diagonals, exactly those two diagonals activate it. [Double-first theorem](../../lean/Research/CrownDoubleFirst.lean)
+
+Under the same joint size and OR budgets, at least 45 distinct wires feed OR gates and at least four of them are OR outputs. In the collision-free case these bounds rise to 46 and five. The number of AND gates plus the number of distinct OR outputs feeding OR gates is at least 21, or 22 when there is no collision. [Source-count theorems](../../lean/Research/CrownMandatoryOrSources.lean) · [Collision-free bounds](../../lean/Research/CrownFourOrSources.lean)
