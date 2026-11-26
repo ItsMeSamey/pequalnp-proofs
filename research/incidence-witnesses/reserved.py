@@ -24,4 +24,7 @@ def works(T):
    return False,h,tmax
  return True
 for T in [545840,545924,545925,545926]:
- print(T,works(T))
+ result = works(T)
+ if result is not True:
+  raise AssertionError((T, result))
+ print(T, result)

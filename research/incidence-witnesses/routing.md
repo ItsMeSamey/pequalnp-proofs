@@ -73,3 +73,7 @@ Put P=qr+r²−39(q+1)r+380N. For w=1,2 the quadratic (w+1)(k−19)(k−20)/380 
     2s ≥ 2[2N+d−1−floor g(h)]+N+h−3P/380−t/15.
 
 For each integer h=0..d the first inequality under s≤T−1 yields an integer upper bound on t; substituting this in the second certifies s≥T. The exact integer verification in reserved.py proves s≥545926, exceeding the target 545840.
+
+## Verification scope
+
+The routing and reserved-source arguments are paper proofs using the component and port estimates from the preceding incidence notes. Independent review checked those dependencies and the refinements for orders 377, 378 and 379, including the weighted inequalities and integer floors. The finite checkers give 537272, 542462 and 545926 respectively. The Lean modules establish the earlier deletion premises. Run `python3 routing-check.py` and `python3 reserved.py` in this directory.

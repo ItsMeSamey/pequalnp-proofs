@@ -26,3 +26,9 @@ bash verify.sh /tmp/seventeen-check
 ```
 
 The driver rebuilds and byte-compares the mixed-search inputs, then reruns both searches, including the complete indexed augmentation files required for the one-copy proof. The pinned raw statement and checked nine-family list are in irreducible-ten/source. Stage-specific README files explain the counting arguments and search domains. The prior structural dependencies are raw-to-residual optimum transfer, the point-gate lower bound and equality for seven pair-safe targets, the seven-line guard bound, and the at-least-ten point-boundary result.
+
+## Verification scope
+
+Two independent runs regenerated the 1,218,270 irreducible ten-mask families. The mixed-tree checker rejected all 479,589 cases and accepted its positive control. The one-copy checker exhausted 1,123 representatives from irreducible families, 1,713 from distinct-mask extensions and 65 from repeated or zero masks. These are finite computations on the pinned rows. The reduction to these cases also uses the structural arguments listed above.
+
+The first combined replay exposed a representation mismatch between the nine-mask extension stage and the one-copy checker. Each extension now exports its one-based base index, extra mask and lower bound. A full set comparison against the inputs used in the separate one-copy replay returned equality for all 26,754 distinct-extension rows and 1,122 repeated-or-zero extension rows.
