@@ -1,0 +1,4 @@
+positive control families 1 tests 1 after guard 1 separating trees 1
+refined-all.txt families 6543 tests 252005 after guard 0 separating trees 0
+geom_reps.txt families 1713 tests 219264 after guard 0 separating trees 0
+dupgeom_reps.txt families 65 tests 8320 after guard 21 separating trees 0

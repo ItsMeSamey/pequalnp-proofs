@@ -47,3 +47,5 @@ In a relaxation that supplies every transverse point mask for free, [five projec
 With eight line leaves, the [nonconcurrent case](eighth_line_good.md) and [concurrent case](eighth_line_concurrent.md) exclude additional read-once architectures. Run `python3 verify_eighth_extensions.py` for the sampled negative extensions.
 
 Every read-once residual architecture with eight line leaves now needs at least 34 gates. The [repeated singleton case](repeated_line.md) needs at least 35.
+
+[The 17-mixed-gate exclusion](seventeen-mixed/README.md) raises the necessary mixed-gate count at total budget 33 to 18. Its replay driver regenerates the signature families and checks both remaining mixed cone shapes.

@@ -67,3 +67,5 @@ The [occurrence-weight polynomial](../roabp/README.md) can have exponential orde
 A [parity matching reduction](../trail-matching/README.md) solves eligible guarded trail presentations, with exact assignment checks through three variables.
 
 The [anchor-completion algorithm](../anchor-completion/README.md) counts models with bounded cross-tree coupling rank. Without that rank bound, even the specified depth-one class is #P-hard.
+
+For alternating guards with several markers, the [cycle-block algorithm](../cycle-blocks/README.md) reconstructs witnesses when the cycle rank of each biconnected block and the marker width are bounded.

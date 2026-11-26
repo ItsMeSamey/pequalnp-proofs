@@ -1,0 +1,3 @@
+# These generated representative lists are compared byte for byte on replay.
+geom_reps.txt whitespace=-blank-at-eol
+dupgeom_reps.txt whitespace=-blank-at-eol
