@@ -1,0 +1,13 @@
+theorem raw_decision_iff (priv : Fin N→K) (tag : Fin N→Plane) :
+    let R := 2*(ExactPlaneFullDirections.deficit (ZMod 2) (key priv) tag+2)+1
+    ∃ S : Finset (observed priv→ₗ[ZMod 2] Plane),
+      S.card≤max 1 ((2*(finrank (ZMod 2) (observed priv)*2)*2^R)^2) ∧
+      ∀ height : Fin N→Plane,
+        (∃ A : Finset (Fin N),ExactTrace priv tag height A) ↔
+          ∃ m : List (observed priv→ₗ[ZMod 2] Plane),(∀ g∈m,g∈S) ∧
+            (m.length=1 ∨ m.length=3 ∨ m.length=5) ∧
+            let A := accepted (key priv) tag m.sum
+            ExactTrace priv tag height A ∧
+              ∃ (U : Fin 2→Finset (Fin N)) (v : Fin 2→Plane),LinearIndependent (ZMod 2) v ∧
+                (∀ j,U j⊆A) ∧ (∀ j,∑ i∈U j,ExactPlanePhysicalResidual.col priv tag height i=(0,0,v j)) ∧
+                U 0≠U 1

@@ -1,0 +1,2 @@
+'ExactPlaneFieldCard.dual_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneFieldCard.seed_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

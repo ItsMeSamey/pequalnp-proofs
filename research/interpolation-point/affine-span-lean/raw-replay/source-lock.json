@@ -1,0 +1,8 @@
+{
+  "commit": "33c8dd2d8a4c7003feb3cd4018ee17e615c23d29",
+  "tree": "b820673e1451ef2079abd68e5695de2a625b141f",
+  "rel": "research/interpolation-point/affine-span-lean",
+  "manifest_sha256": "18ad389c94c018c5c25fe7120fb921bfbf3035d64ccff5d611e7058073231db7",
+  "producer_manifest_sha256": "81735e45aa91bb6167fdce759f067463b2255cad594a8a21b32003b621a3542a",
+  "sampler_receipt_sha256": "347e92b3b21e7b4df166e76ce818137cb2373caffa54228029cfc98f57a10d36"
+}

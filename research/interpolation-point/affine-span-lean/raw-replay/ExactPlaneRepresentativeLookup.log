@@ -1,0 +1,17 @@
+/dev/shm/review-plane-raw-1pgqyp8b/research/interpolation-point/affine-span-lean/ExactPlaneRepresentativeLookup.lean:24:8: warning: automatically included section variable(s) unused in theorem `_private.ExactPlaneRepresentativeLookup.0.ExactPlaneRepresentativeLookup.occupied`:
+  [Fintype I]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-plane-raw-1pgqyp8b/research/interpolation-point/affine-span-lean/ExactPlaneRepresentativeLookup.lean:91:0: warning: automatically included section variable(s) unused in theorem `ExactPlaneRepresentativeLookup.test_apply`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ExactPlaneRepresentativeLookup.test_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneRepresentativeLookup.rep_maps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneRepresentativeLookup.Selection.actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneRepresentativeLookup.code_read' depends on axioms: [propext, Classical.choice, Quot.sound]

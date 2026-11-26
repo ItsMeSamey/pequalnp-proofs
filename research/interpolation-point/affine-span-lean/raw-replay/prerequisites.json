@@ -1,0 +1,102 @@
+[
+  {
+    "module": "Mathlib.Algebra.Torsor.Basic",
+    "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "git_blob": "3ca713ea2ce4ecf368b8ccbe18e975366bcc3d74",
+    "source_sha256": "530eedbdadacccb884de6c00baffd775a3b75e59dab9df0e641d8da3904e41ba",
+    "olean_sha256": "015dbd8413bd84a279db0d961b5d736bee612ed3681f3b3681c690820e3c1daf",
+    "path": "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Torsor/Basic.olean",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/Action/Pi.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/End.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/Pointwise/Set/Scalar.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Torsor/Defs.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/Action/Basic.olean"
+    ]
+  },
+  {
+    "module": "Mathlib.LinearAlgebra.AffineSpace.AffineMap",
+    "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "git_blob": "89584e27796d2806d8e813668c6fc77fab958613",
+    "source_sha256": "f728a89e4b7ca7584e8b37acb226378ab34f5ec2f5fe5c45ce4e45b042c5141f",
+    "olean_sha256": "9aab9e56785138e145882751410e3a1bcc41e2b192e63bdba23b8018eacf8529",
+    "path": "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineMap.olean",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/Action/FunLike.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/FunLike.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/GroupWithZero/Action/FunLike.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Module/FunLike.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Order/Group/Pointwise/Interval.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Order/Module/Defs.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Torsor/Basic.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/Defs.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/BilinearMap.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/Pi.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Tactic/Abel.olean"
+    ]
+  },
+  {
+    "module": "Mathlib.LinearAlgebra.AffineSpace.AffineEquiv",
+    "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "git_blob": "a61ebf02878f5ff2188892fac554e547dcb03fba",
+    "source_sha256": "f97a9ecbaa53f1b610f0911f2ca7730297ea78f6b7f031108fb6b67083321bfc",
+    "olean_sha256": "f8b2134431a3d343b04e693a0434559b12dfa9d48be7ec99a609b2807cad14fd",
+    "path": "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineEquiv.olean",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineMap.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/GeneralLinearGroup/Basic.olean"
+    ]
+  },
+  {
+    "module": "Mathlib.LinearAlgebra.AffineSpace.AffineSubspace.Basic",
+    "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "git_blob": "8c944b319771aed55dcef0ee1eba3746df40d18e",
+    "source_sha256": "4a0cf020f5d8a29481f4b83a5271f145dcf5ddb8c86a156390d6cbea3a73a0dc",
+    "olean_sha256": "8a947a06dc68730ab4f88fce868940fb4513d6aa798642e2391da4ce06a735f3",
+    "path": "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineSubspace/Basic.olean",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/NoZeroSMulDivisors/Basic.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineEquiv.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineSubspace/Defs.olean"
+    ]
+  },
+  {
+    "module": "Mathlib.Data.List.ToFinsupp",
+    "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "git_blob": "93eec00c0e9340549bbf9122a5d2337014cf7d6e",
+    "source_sha256": "aec3d275f7819e5c15c0cbd855192ef58960b88ae759425c882ae31bf788b2f5",
+    "olean_sha256": "c8716847207ed5e96ca636154ba7c824a9318938f3376563278b1e7324683dc4",
+    "path": "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Data/List/ToFinsupp.olean",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/Embedding.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/Finsupp.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Data/List/GetD.olean"
+    ]
+  },
+  {
+    "module": "Mathlib.Algebra.Polynomial.OfFn",
+    "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "git_blob": "0adaf62fde93df0f8ba3f0a04840d2c94ea66c2c",
+    "source_sha256": "df715ca82f2a6e32e42b3260be8f3e177078130ea2cffcc08b869421d88b510f",
+    "olean_sha256": "b7b7b5aff8f9a83f59bd8aafb9ee36bbb76fc2e3bb631f1b79f640589da3989b",
+    "path": "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Polynomial/OfFn.olean",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Polynomial/Degree/Lemmas.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Data/List/ToFinsupp.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/Pi.olean",
+      "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/BigOperators/Fin.olean"
+    ]
+  }
+]

@@ -1,0 +1,527 @@
+{
+  "commit": "33c8dd2d8a4c7003feb3cd4018ee17e615c23d29",
+  "tree": "b820673e1451ef2079abd68e5695de2a625b141f",
+  "rel": "research/interpolation-point/affine-span-lean",
+  "manifest_sha256": "18ad389c94c018c5c25fe7120fb921bfbf3035d64ccff5d611e7058073231db7",
+  "producer_manifest_sha256": "81735e45aa91bb6167fdce759f067463b2255cad594a8a21b32003b621a3542a",
+  "sampler_receipt_sha256": "347e92b3b21e7b4df166e76ce818137cb2373caffa54228029cfc98f57a10d36",
+  "modules": [
+    {
+      "module": "ExactPlaneSubsetPolynomial",
+      "source_sha256": "bd5cc5aa1d585628ea108315589eb7f09e66a1806b9b5ad354149867aa8c3c8c",
+      "olean_sha256": "996a2af5233b3b512b1aabf672423edd418da7ffe0e470f72f07ba3476f3de8a",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/BigOperators/Group/Finset/Basic.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Data/Finset/Powerset.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneSubsetPolynomial.low_coeff_zero_iff_low_eval_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneSubsetPolynomial.exists_small_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneAffineSparse",
+      "source_sha256": "772fe34db6398fca022032c696d25b180af07277dd69368eeea64fc03490a871",
+      "olean_sha256": "8c70a4f6f41f769a906614095fb68f1dd9737a8d08a69aa7a4eef118c73c5654",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSubsetPolynomial.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Tactic/Abel.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneAffineSparse.quartic_hit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneAffineSparse.covered_hit' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneAffineSubstitution",
+      "source_sha256": "c20691b274a3d645230225b4e5b5e68bc43464a9fb0d6602e6a11875af60f0a8",
+      "olean_sha256": "a5ec39d0a55b41207c6558e05fa138220a58cf981d131bd173d5632700250410",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSubsetPolynomial.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/BigOperators/Ring/Finset.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Data/ZMod/Basic.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneAffineSubstitution.affine_pullback' depends on axioms: [propext, choice, Quot.sound]",
+        "'ExactPlaneAffineSubstitution.explicit_pullback' depends on axioms: [propext, choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneAffineSpanHit",
+      "source_sha256": "2c6f17f44a095553635bec4530f33ddd41004db9d952f155e0e44c655d62a51a",
+      "olean_sha256": "ed7800817b24c3d8f45afb4c759a9359c546134d3d16b2bdce751f03aa42ad38",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneAffineSparse.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneAffineSubstitution.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineSubspace/Defs.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Finsupp/LinearCombination.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/CharP/Two.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneAffineSpanHit.quartic_span_hit' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneDeterminant",
+      "source_sha256": "6d7dc7449f366ef396c6b30b17a1ba6132f63540c000a42c205a21de1e45b3dc",
+      "olean_sha256": "778f0fdc471ad0b9fccd97fa196efd04ed1b4484e8319cabfd557dbb9eb15641",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneAffineSpanHit.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/LinearIndependent/Lemmas.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneDeterminant.quartic_score' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneDeterminant.independent_span_hit' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneTwoBitLookup",
+      "source_sha256": "68befb5e083f49e367efffd5d3486091ef1769aa0638cdf03c5d65987f285cba",
+      "olean_sha256": "7ed396c63cab4fc56341bfe571a82d8649eff643f2bde89a3dd1d39ee7b8fd21",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneAffineSubstitution.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneTwoBitLookup.lookup_affine' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneTwoBitLookup.lookup_sum' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneLookupDeterminant",
+      "source_sha256": "14ddba89238f2ee7c155fa3295d4485ea4b97976a31bc844de300365b218628a",
+      "olean_sha256": "481eeaac72868b05eb524f6646936a907a591e7dedecd425d8722060cb71c813",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneDeterminant.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneTwoBitLookup.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneLookupDeterminant.determinant_quartic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneLookupDeterminant.same_span' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneRepresentativeLookup",
+      "source_sha256": "bf423aedca226199d9102058b7d97c71627453e75d4d45452541a4d0342bc4b5",
+      "olean_sha256": "620103010c19412517730bc14242e56db978c954865a9d7722f94fda948ed444",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneLookupDeterminant.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Basis/Defs.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/Field/ZMod.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneRepresentativeLookup.test_apply' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneRepresentativeLookup.rep_maps' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneRepresentativeLookup.Selection.actual' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneRepresentativeLookup.code_read' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneChartCoordinates",
+      "source_sha256": "e0c29e1fdbd9f9fb93cbbb50615cee67aabfacc13e1ea0b92714681a41ec5e1c",
+      "olean_sha256": "9df6a4a20db4bcdde863c90a5897b5c205957d3d6aa5cc48f79d2071a101aa49",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneRepresentativeLookup.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneRepresentativeLookup.chart_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneRepresentativeLookup.eligible_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneFieldCard",
+      "source_sha256": "f985a4ed152d124d53c4c0a2779377559a74b10a19819f795f107ce1b6c3cf91",
+      "olean_sha256": "d8bac675467343c2aa2b3049b2a2dd5bc06fb386998236f962c21b8ceee2535b",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/FieldTheory/Finite/GaloisField.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Dual/Basis.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/FiniteDimensional/Basic.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Data/Nat/Find.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneFieldCard.dual_card' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneFieldCard.seed_bound' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneFieldSampler",
+      "source_sha256": "2248194621b0400a7df7df9407bee6c7f16f1016f6c39635c127fd4a1602d146",
+      "olean_sha256": "f4ea9ad1aefa9e0cdf85b6ca944d071dc9d57c2ade7d10dc589c50c54050f4c3",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/Polynomial/OfFn.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/Polynomial/Roots.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Dual/Lemmas.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/Field/ZMod.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean"
+      ],
+      "axioms": []
+    },
+    {
+      "module": "ExactPlaneActivationSlice",
+      "source_sha256": "d62457deb63ca716aabb66c16b10571528ea83a187410df24fef173f783f61e3",
+      "olean_sha256": "5cfedea8f6fb383f5d6a775779cbda99b35b1947ac4c7b0d4b92babfc501bf53",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneAffineSpanHit.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneActivationSlice.span_active' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneActivationSlice.odd_sum_active' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneActivationSlice.quartic_active' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneSamplerSpan",
+      "source_sha256": "d318999f9e0eaa4dd1ae95fbcc0dc59f713a869e15d2e1e8ff709ee16eae7e00",
+      "olean_sha256": "5e1f471adc907aee1a670050642499be18802ce72b08230eb12cdfdbc7f0e81b",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneActivationSlice.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/Field/ZMod.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineSubspace/Basic.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Dual/Lemmas.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/FiniteDimensional/Basic.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Isomorphisms.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Dimension/Constructions.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneSamplerSpan.transfer' depends on axioms: [propext, choice, Quot.sound]",
+        "'ExactPlaneSamplerSpan.span_slice' depends on axioms: [propext, choice, Quot.sound]",
+        "'ExactPlaneSamplerSpan.span_coset' depends on axioms: [propext, choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneSamplerRank",
+      "source_sha256": "6bf1ad59c6df477e4eb105b3c3ffe478b6a8899e8e3f9a8824fe496f44df6ada",
+      "olean_sha256": "1f8e9bbfaee7fc0c5b7aa17d1555252e517313d1d6c2ec529255ddfb0a6f7c5b",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSamplerSpan.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/Field/ZMod.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Dimension/Constructions.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneSamplerRank.hits_of_onto' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneConcreteSampler",
+      "source_sha256": "4b7bcd88d184e3b9a13e0154305e2ed7ff114a646ab2278de4cc257dfdb8c83b",
+      "olean_sha256": "4789d236953598cfb3a2735db23d331cde4da14edb1419f6cc9cfd3ae27158c3",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneFieldCard.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneFieldSampler.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSamplerRank.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneConcreteSampler.all_dimensions' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneActiveDeterminant",
+      "source_sha256": "cb14786f985aeda0b9c9f86d61032f43128751a97ad425f0c03775e9f88a410b",
+      "olean_sha256": "4f25e9d365fe33f022da35582f8e3a3edb54e0ccf81a857dbea397f3b5a06173",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneActivationSlice.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneDeterminant.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneActiveDeterminant.active_span' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneActiveDeterminant.covered_domain' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneActiveReadSpan",
+      "source_sha256": "92f3898316e002843fbf73ce6efd872de7ddfd9f1ad79d0d9c4974ae70ac1be5",
+      "olean_sha256": "5ef30098bd6d96b59a387e6f81da6272c1251617049bb7ee6d2e86fa2ef16880",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneLookupDeterminant.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneActiveDeterminant.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneLookupDeterminant.active_read_span' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneOntoReadSpan",
+      "source_sha256": "3f43290ecdd6da10f010545962d97b1cd024ade6ecf015a2591dccd201245371",
+      "olean_sha256": "59f7ab677858fd1b08e5488c586b7b55b8f9e542c872b16f839b6e75ffa91628",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneActiveReadSpan.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSamplerRank.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneLookupDeterminant.onto_sampled_read_span' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneCoordinateSampler",
+      "source_sha256": "123d428780442b243bb810fc7bdfd85ea73c61654dee47f58816e29ceeb7927a",
+      "olean_sha256": "85a79371321562fc4caa7dd3096fa18e613ae1e816606803f0d4130d98a1101a",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneConcreteSampler.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneOntoReadSpan.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneCoordinateSampler.all_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneGlobalSeed",
+      "source_sha256": "b2eb39c342ad46b740f2641b69069e9b25d43013a49591e4cefbb73712dcae20",
+      "olean_sha256": "7f680bbf421f0a062e52687b61c1af16e0b44ee523878965ce85bff63cff1d75",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneChartCoordinates.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneCoordinateSampler.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Dimension/Free.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneGlobalSeed.physical_seed' depends on axioms: [propext, choice, Quot.sound]",
+        "'ExactPlaneGlobalSeed.decode_list' depends on axioms: [propext, choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneMatchedBasis",
+      "source_sha256": "ce2b5a2313c72b6e22584b3af1a540882658b44a4ee8ad2535c3f55096039405",
+      "olean_sha256": "a1112cb7736306a5544addb878f1cf4d1fdc3c0dc01f5f9f0a64321f09176d65",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/FiniteDimensional/Basic.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Basis/VectorSpace.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Dimension/Finite.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Data/Finset/Max.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneMatchedBasis.full_chart' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneMatchedBasis.anchors' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlanePrescribedBasis",
+      "source_sha256": "a64dc354af9f734f92cb9b34b19a186fd730bd9079ff18ba66ec83f9baf6a808",
+      "olean_sha256": "07ec1ca60c6bef206422c9b15f8933541d190cf7cc1ffcd8b7bd4e442e6dbc6f",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneMatchedBasis.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Dimension/Constructions.olean"
+      ],
+      "axioms": []
+    },
+    {
+      "module": "ExactPlaneFullDirections",
+      "source_sha256": "2f8d5dc7b6512150de4c9f8c0ba7ebc5a5fb5f6f570a2e325f250109247ca341",
+      "olean_sha256": "27fc7cb42e250063f48a8f166ab4731720215949d54d2eb12a5818df1a18722d",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePrescribedBasis.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneFullDirections.maximal_branch' depends on axioms: [propext, choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlanePinnedSampling",
+      "source_sha256": "6a498b128bd91e6b9736e9d313ba37fa4e7db9020dc409490b45c0686225491f",
+      "olean_sha256": "3d1b58fbd63aaa5aa5ce7347ea9f8ea9bb76535a22ba8a3c876df5329b9f95bb",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneCoordinateSampler.olean"
+      ],
+      "axioms": [
+        "'ExactPlanePinnedSampling.sample' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlanePhysicalResidual",
+      "source_sha256": "0bd10e525dd8a3cdee961bfd600b496c4f72d856f6ef8dcdc7154abc9dbbdd2c",
+      "olean_sha256": "c0c55f5704950213a018c6789e6a7d16ac7886a4078266b6f7d8991d42bd3d41",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/Field/ZMod.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Basis/Defs.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/LinearIndependent/Basic.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Finsupp/LinearCombination.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Prod.olean"
+      ],
+      "axioms": [
+        "'ExactPlanePhysicalResidual.span_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlanePhysicalResidual.physical_support' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlanePhysicalResidual.neutral_support' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlanePhysicalResidual.independent_supports' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneResidualPivots",
+      "source_sha256": "0515fa723a6fb8b1bb51819f7b4ac811376fece30bd2df0a031aa909bd604c18",
+      "olean_sha256": "4bd1ca43a3b80aee14a12381850cfffb4df0ff1b1b39d652da42a6b5e1592b57",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneDeterminant.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneResidualPivots.pivots' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneIndexedBranch",
+      "source_sha256": "1dde5f7e5e4aea9746d4018f52d4d8f1112ac19dc15f606529dda4038ab2fb42",
+      "olean_sha256": "01e925f19bef98df400fd2a4b6b64b18cc6e3673dbee35dcf572d7e85c36e64a",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePinnedSampling.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneRepresentativeLookup.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePhysicalResidual.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneResidualPivots.olean"
+      ],
+      "axioms": []
+    },
+    {
+      "module": "ExactPlanePhysicalConverse",
+      "source_sha256": "b5ccd43875c6c65d3d00892d8d0ca8d855779d74fa9fd4c3294a568e75d37602",
+      "olean_sha256": "05f132980fadad81455cedc08584dc62c3f1e2a4e52c8d09a5010ac41c1c0638",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/Field/ZMod.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Finsupp/LinearCombination.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Isomorphisms.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Basis/VectorSpace.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Prod.olean"
+      ],
+      "axioms": [
+        "'ExactPlanePhysicalConverse.active_relations' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneFrozenBranch",
+      "source_sha256": "6f6646d06afe02e9bc4c543bf34daf6c70dd442db15ae5ba36058fb3ebacc7ba",
+      "olean_sha256": "b9bc5a191db04ac7915609ce814c6e5160d634a42f0ec29ddc7426f6a28904e0",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneIndexedBranch.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneChartCoordinates.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePhysicalConverse.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneIndexedBranch.on_branch' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneSuccessTrace",
+      "source_sha256": "906a0bff9748f04ab2f333d7c1b1433ece83bbf0b1283965beb548e2e4e42eca",
+      "olean_sha256": "a16a0418264caba4884e41e5dab02c219d1b97597aeb8e68c1419460ef1142b1",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneFrozenBranch.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/FiniteDimensional/Lemmas.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Dimension/Constructions.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneIndexedBranch.success_trace' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneGlobalApplication",
+      "source_sha256": "21ebd94defb8a64454c13cb186bfc66165e31f3a3df7bf0c68a27ab3769954d3",
+      "olean_sha256": "10933ca18e9487569e20f184d769c5528864d65bb317025fef311f337be9fbc4",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneGlobalSeed.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneFullDirections.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSuccessTrace.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneGlobalApplication.physical_decision_iff' depends on axioms: [propext, choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneObservedSpan",
+      "source_sha256": "0021a60364e6ee7d6d43c7a9cf371e386eb38d15640e023764bb96b2f1f11ecf",
+      "olean_sha256": "425041793b022abeb413be23c13e3db44e43370110d8954b70f6c2579927cd10",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePhysicalConverse.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Dimension/Constructions.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/FiniteDimensional/Defs.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Span/Basic.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneObservedSpan.trace_iff' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneRawApplication",
+      "source_sha256": "d633089150a6acaf9fd7aa5f4bcf42fb76586b3dce743007b22c57a98904023a",
+      "olean_sha256": "e93eca74732d1c29d57c17fcc23bdec1ae46ad5ccf95edaa182a7f02f5f5a352",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneGlobalApplication.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneObservedSpan.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneGlobalApplication.raw_decision_iff' depends on axioms: [propext, choice, Quot.sound]"
+      ]
+    }
+  ],
+  "pinned_packages": {
+    "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "plausible": "054b228ce0ac61d767c6e71ba73a24728f191b72",
+    "LeanSearchClient": "4fb58e749ef3fc0395fe274f6cab70c2ea85f1c9",
+    "importGraph": "8370c640afcd1cc3fb1cb9bf1560cc66eafee5e0",
+    "proofwidgets": "2f0f3520daeac2d9310ff25b7a877a0e5cdaa203",
+    "aesop": "66ff77cf0c4c898799e4b94d14db55f7a02d0c5a",
+    "Qq": "ff055a2fcc835935e0ae607339b455a5f5896b4b",
+    "batteries": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+    "Cli": "50810f72af7618bee62fe9800dc26e806c188703"
+  },
+  "lean_sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "prerequisites_sha256": "9755dfb10c0267b7e51bb7d37ac67b7fa51c7536b22daa02952fe38a5a5d1741"
+}

@@ -1,0 +1,8 @@
+/dev/shm/review-plane-raw-1pgqyp8b/research/interpolation-point/affine-span-lean/ExactPlaneSuccessTrace.lean:15:0: warning: automatically included section variable(s) unused in theorem `ExactPlaneIndexedBranch.success_trace`:
+  [Fintype I]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ExactPlaneIndexedBranch.success_trace' depends on axioms: [propext, Classical.choice, Quot.sound]

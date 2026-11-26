@@ -1,0 +1,37 @@
+ExactPlaneSubsetPolynomial
+ExactPlaneAffineSparse
+ExactPlaneAffineSubstitution
+ExactPlaneAffineSpanHit
+ExactPlaneDeterminant
+ExactPlaneTwoBitLookup
+ExactPlaneLookupDeterminant
+ExactPlaneRepresentativeLookup
+ExactPlaneChartCoordinates
+ExactPlaneFieldCard
+ExactPlaneFieldSampler
+ExactPlaneActivationSlice
+ExactPlaneSamplerSpan
+ExactPlaneSamplerRank
+ExactPlaneConcreteSampler
+ExactPlaneActiveDeterminant
+ExactPlaneActiveReadSpan
+ExactPlaneOntoReadSpan
+ExactPlaneCoordinateSampler
+ExactPlaneGlobalSeed
+ExactPlaneMatchedBasis
+ExactPlanePrescribedBasis
+ExactPlaneFullDirections
+ExactPlanePinnedSampling
+ExactPlanePhysicalResidual
+ExactPlaneResidualPivots
+ExactPlaneIndexedBranch
+ExactPlanePhysicalConverse
+ExactPlaneFrozenBranch
+ExactPlaneSuccessTrace
+ExactPlaneGlobalApplication
+ExactPlaneObservedSpan
+Traceback (most recent call last):
+  File "/workspace/scratch/review-plane-raw/replay.py", line 29, in <module>
+    if m=='ExactPlaneRawApplication': assert reports==["'ExactPlaneGlobalApplication.raw_decision_iff' depends on axioms: [propext, Classical.choice, Quot.sound]"]
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

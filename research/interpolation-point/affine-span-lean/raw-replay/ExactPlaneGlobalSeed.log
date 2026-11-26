@@ -1,0 +1,5 @@
+/dev/shm/review-plane-raw-1pgqyp8b/research/interpolation-point/affine-span-lean/ExactPlaneGlobalSeed.lean:50:4: warning: Unused tactic linter: `change e.symm x ∈ S` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'ExactPlaneGlobalSeed.physical_seed' depends on axioms: [propext, choice, Quot.sound]
+'ExactPlaneGlobalSeed.decode_list' depends on axioms: [propext, choice, Quot.sound]
