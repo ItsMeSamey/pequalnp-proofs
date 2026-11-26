@@ -1,0 +1,9 @@
+# Projected rectangle circuit bound
+
+For each of the seven projections, consider circuits built from pure point ORs and pure line ORs, their pairwise AND products, and an OR circuit combining the products. Such a circuit requires at least 19 gates, even when intermediate signals are shared.
+
+Place edge (p,l) in a bipartite graph if no projected negative activates both p and l. A nonempty product of point and line ORs can be used only if its two supports span a complete bipartite subgraph. For each instance the graph has 15 edges and any two line neighborhoods intersect in at most one point, directly checkable on projected-0.in through projected-6.in. Consequently every product has a singleton side. Assign a center to each product on its singleton side, breaking ties arbitrarily.
+
+Merge products with the same center. Let a center have d distinct neighboring inputs in these terms and t products. At least d−t pure OR gates in their distinct fanin cones are needed, since t outputs fed from d distinct sources require at least d−t binary gates. No nontrivial precursor OR from that side can feed a group at another center, since this would create a four-cycle. Pure ORs on the opposite side belong to the other input domain. Thus the subgroup of t products requires at least d gates when its t AND gates are included. The original OR aggregation requires at least (number of products)−1 gates, in particular at least (number of centers)−1. The cost is therefore at least sum over merged stars of (d+1), minus one.
+
+The dynamic program rectangles.py minimizes precisely this sum over covers of all projected positives: enumerate every sub-biclique accepted by no negative and charge the sum of its support sizes; then cover positive row bits. The seven minima are 20. Each logged minimizer is a witness with 19 gates. Arbitrary AND/OR interleaving remains open.

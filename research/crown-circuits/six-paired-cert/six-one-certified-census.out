@@ -1,0 +1,8 @@
+t 1 mode 0 anchors 9 cases 112107 families 6734492 found 0
+t 2 mode 0 anchors 18 cases 27243 families 828671 found 0
+t 3 mode 0 anchors 50 cases 7826 families 170272 found 0
+t 2 mode 0 anchors 2 cases 15985 families 372034 found 0
+t 3 mode 0 anchors 1 cases 1871 families 10842 found 0
+{"arity":2,"dependencies":312,"visits":1827589,"hits":0}
+{"arity":3,"dependencies":12708,"visits":673699,"hits":0}
+{"arity":4,"dependencies":51342,"visits":208326,"hits":0}

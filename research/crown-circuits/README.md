@@ -68,3 +68,5 @@ The full [standard-axiom Lean certificate](kernel-or-count/README.md) now verifi
 A 31-gate prefix can summarize nine labels by two wires. A suffix reading those two wires and the six raw ports of the remaining labels needs at least eight OR gates and two AND gates. The Lean audit lists the three standard axioms for both endpoints. [Folded-prefix proof](folded-kernel/folded-residual.md)
 
 Unrestricted size at most 40 for the 12-crown is equivalent to size at most 28 for twelve-input threshold two. Both remain open. [Equivalence, finite prerequisite and replay](universal-pairing/README.md)
+
+For the paired twelve-label model, a threshold-two tail with exactly six AND gates cannot fit within 28 binary gates. All six possible clean-terminal counts are covered. The finite proof uses the previous five-AND exclusion, clean-bank theorem, and direct-receiver normalization. The census lies outside the Lean kernel. The unrestricted 12-crown size question remains open. [Scope and replay](six-paired-cert/six-paired-scope.md) · [Five-AND dependency](five-and-general-cert/README.md) · [Unrestricted size transfer](universal-pairing/README.md)
