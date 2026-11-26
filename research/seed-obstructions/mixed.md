@@ -7,3 +7,11 @@ The certificate supplies seven ordered positive/negative pairs for each side, in
 Any monotone separator must use at least one distinguishing boundary signal per pair. The 14 pairs require 14 distinct signals. The connected output cone with those signals as leaves therefore contains at least 13 binary gates. Treating the outputs of all point-only and line-only gates as freely available sources proves the claim for arbitrary interleaved circuits with sharing. For equality use each of the seven line bits AND its four-point incidence OR, followed by six OR gates. The verifier checks that construction on all 676 columns, including the erased ones.
 
 Run `python verify_mixed.py` from this directory. The raw decoder uses the original formal statement and the Python standard library. The full 34-gate existence question remains open.
+
+## Equality forces all fourteen singleton signatures
+
+A circuit with exactly 13 mixed gates must use exactly 14 boundary signals, seven for each side. They are uniquely identifiable by which of the seven disjoint pair requirements on that side they meet. For a side signal, define its signature to be the subset of coordinates on whose singleton input it is true. On a residual positive each side receives a singleton, so acceptance on that side means the corresponding coordinate belongs to its signature. If a signal rejects a negative side vector, then its signature is disjoint from that vector by monotonicity.
+
+Take any positive/negative pair whose positive is dominated by its negative on the opposite side. At least one of the seven signatures must contain the positive coordinate and avoid every coordinate of the negative. Initialize required and forbidden membership bits from the indexed packing pairs. Whenever a constraint has only one eligible signature, add its required and forbidden bits to that signature. Iterating these forced deductions fixes every one of the 91 point-side membership bits and 49 line-side bits. The point signatures are exactly the seven four-point neighborhoods. The line signatures are exactly the seven singleton line indicators. This conclusion fixes signatures on singletons and allows arbitrary monotone values on other side inputs consistent with those signatures.
+
+Run `python verify_unique.py` to reproduce the deductions using only the standard library.

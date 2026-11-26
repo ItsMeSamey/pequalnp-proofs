@@ -1,0 +1,7 @@
+# Detecting exact clause-violation polynomials
+
+For a CNF on n variables let v_i be the bit indicating violation of clause i, and V the sum of these bits. Index features h_T by nonempty clause subsets T of size at most d, taking products of the corresponding bits. Let h denote the vector of features. Seek rational w for which w·h=1 on every assignment violating a clause.
+
+Form G=sum_x V h h^t, b=sum_x V h, and c=sum_x V. Every entry is a sum of intersection counts on at most 2d+1 clauses. Such a count is zero for inconsistent forced values, otherwise two to the number of free variables. The least-squares normal equations Gw=b are consistent because G and the matrix of rows sqrt(V) h^t have the same kernel. Solve over the rationals. The minimum residual c-b^tw vanishes precisely when the identity holds pointwise. In that case the exact model count is 2^n minus w dotted with sum_x h. Gaussian elimination, with polynomial bit complexity in the matrix dimensions and entry bit lengths, gives m^{O(d)}poly(n) time for m>=2. A vacuous feature set can be handled directly.
+
+Distinct unit clauses on distinct variables realize every Boolean violation pattern. Their nonsatisfaction indicator is 1 minus the product of (1-v_i), of multilinear degree m. Thus bounded d cannot cover all formulas. The failure concerns this specific pointwise certificate and does not imply hardness of count-only methods.

@@ -46,3 +46,7 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 [Low-rank affine conditioning](affine-backdoor/README.md) searches for an optimal subspace that brings each clause to hidden rank at most one. [Signed cut counting](signed-cuts/README.md) counts assignments by joint suffix feasibility.
 
 [Principal minors](marker-principal/README.md) characterize feasibility of a singleton guarded system with an odd marker. A [component solver](scc-guards/README.md) constructs model bases when all within-component arcs have their reverse. [Witness charts](chart-basis/README.md) compile acyclic guards with few terminal clauses and exhibit a limit on testing arbitrary proposed chart covers.
+
+[Fourier interfaces](fourier-interface/README.md) count affine-factor models on a supplied binary tree in polynomial time times 2^(3w/2), where w is the maximum shared row-space dimension. [Paired principal minors](paired-minors/README.md) show a coNP-completeness barrier for a broader comparison problem associated with the directed marker criterion.
+
+[A clause-violation Gram test](violation-certificates/affine.md) recognizes exact bounded-degree certificates and recovers a model count. [Conditioning and component products](violation-certificates/hybrid.md) enlarge this tractable class. [A width-three grid](violation-certificates/width3.md) separates the tests, while [balanced-cut barriers](violation-certificates/barrier.md) bound the reach of the specified coordinates.

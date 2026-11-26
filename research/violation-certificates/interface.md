@@ -1,0 +1,7 @@
+# Learning interaction coefficients across a cut
+
+Given a variable cut X|Y, collect crossing clauses into C and sides into A(X), B(Y). Use the Gram detector on C only, with any supplied list of K nonempty clause subsets T. It recognizes exactly whether C=1−Σ w_T v_T, including for high-cardinality T, because each product of two features and any clause violation is still a consistency test on variable pins. The arithmetic bound is polynomial in K and the formula length.
+
+For every consistent T, v_T factors into a pair of pinning cubes. Let a_T and b_T count the side assignments satisfying A and B, respectively, that extend the pins from T. Then #F=#A·#B−Σ w_T a_T b_T. Inconsistent T contributes zero. This learns a separable expansion from the crossing clauses at a supplied cut and candidate feature list. A supplied balanced cut hierarchy with at most s nonzero coefficients at each node, valid under inherited pins, yields at most [2(s+1)]^h calls at height h. With fixed s and logarithmic h the hierarchy is polynomial, provided leaves and local recognition have polynomial cost. Enumerating all low-degree subsets generally gives polynomial K per node but need not give constant s. Efficient discovery of the cuts themselves requires a separate argument.
+
+A single formula admitting global features also admits factorization or conditioning. A low-degree assignment polynomial need not exist on the entire formula for any interface expansion or branch to work.

@@ -30,3 +30,5 @@ For an old residual core edge pinned to one, select a permutation matching conta
 Each engine remains feasible under either value of every coordinate. Neither can obtain the first unit, even by testing the opposite restriction. Unlimited rounds of unit exchange therefore stall. The result concerns unit-only message passing. Importing derived quadratic guards restores the two old rows in degree two and exposes the old LP refutation.
 
 [Finite two-switch checker](check_unit_exchange.py).
+
+[The symbolic restriction checker](check_unit_restrictions.py) also verifies the charged sums and the residual source proof simulations for all 68 single-literal restrictions of the finite example.
