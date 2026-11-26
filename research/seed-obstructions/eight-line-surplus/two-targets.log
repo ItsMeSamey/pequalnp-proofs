@@ -1,0 +1,6 @@
+0 4 0 []
+1 9 0 []
+2 34 0 []
+3 275 0 []
+4 5336 48 [(43144, 43168), (43144, 43648), (43168, 43144), (43168, 43648), (43648, 43144)]
+All 120 necessary positive configurations admit lower replacements in five gates.
