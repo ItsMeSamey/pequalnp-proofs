@@ -1,0 +1,2 @@
+'ExactPlaneSmallWitness.thin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneSmallWitness.plane' depends on axioms: [propext, Classical.choice, Quot.sound]
