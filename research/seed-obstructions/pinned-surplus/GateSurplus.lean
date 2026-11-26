@@ -696,3 +696,78 @@ The original circuit in pinned_minor_bound is independent of the pin assignment.
     obtain ⟨o,x,y⟩ := z
     simp [annotate,Row.full,ih]
 end ResidualSurplus
+
+namespace ResidualSurplus
+open PEqualNP.CircuitLowerBounds
+private theorem physical_minor_map {α : Type} (n out : Nat) (ins : α → List Bool)
+    (arity : ∀ a, (ins a).length = n) (X : Nat → α → Bool) (gs : List Item)
+    (laws : ∀ z ∈ gs, Local X z)
+    (ren : Nat → Nat) (sources : ∀ i ∈ (counts gs (first out)).kept, ren i < n ∧ ∀ a, (ins a).getD (ren i) false = X i a) :
+    ∃ D : Circuit, PEqualNP.MetaComplexity.Monotone2 D ∧
+      (∀ a, D.eval (ins a) = X out a) ∧
+      D.size + (counts gs (first out)).full.card ≤
+        (counts gs (first out)).fullGates + (counts gs (first out)).kept.card := by
+  let s := first out
+  have init : Bank n ins X (counts gs s).kept 0 :=
+    ⟨[],ren,rfl,by simp,by simpa [run] using sources⟩
+  obtain ⟨k,⟨prog,w,len,mono,real⟩,hk⟩ := bank_reverse arity gs s (by exact Finset.Subset.rfl) laws init
+  have well (l : List Item) (v : Counts) (h : Good v) : Good (counts l v) := by
+    induction l generalizing v with
+    | nil => exact h
+    | cons a as ih => exact ih _ (step_good _ _ _ _ _ h)
+  have h := (well gs s ⟨Finset.Subset.rfl,by simp [s,first]⟩).2
+  have valOut := real out (by simp [s,first])
+  refine ⟨⟨prog,w out⟩,fun g hg => ⟨(mono g hg).1, (mono g hg).2.le⟩,valOut.2,?_⟩
+  change prog.length + _ ≤ _
+  have hh : k = (counts gs s).keptGates := by simpa [s,first] using hk
+  rw [len,hh]
+  exact h
+
+/-- The compact input list may have a different arity and numbering. Each
+surviving old formal input must be explicitly simulated; it is the *number of
+old open names*, not the number of distinct values after projection, that is charged. -/
+theorem reindexed_pinned_minor {α : Type} (gs : List Raw) (ts : List Tag) (out m : Nat)
+    (large small : α → List Bool) (fit : ∀ a, Fits ts (large a))
+    (arity : ∀ a, (small a).length = m) (valid : Valid ts.length (annotate gs ts))
+    (outOK : out < ts.length + (annotate gs ts).length)
+    (nonconstant : ∃ a b, Circuit.eval ⟨(annotate gs ts).map Row.full,out⟩ (large a) ≠
+                         Circuit.eval ⟨(annotate gs ts).map Row.full,out⟩ (large b))
+    (ren : Nat → Nat)
+    (supply : ∀ i, tagRead ts i = none →
+      ren i < m ∧ ∀ a, (small a).getD (ren i) false = (large a).getD i false)
+    (free : Frontier) (covers : ∀ i, tagRead ts i = none → i ∈ free) :
+    let rs := annotate gs ts
+    let s := counts (items ts.length rs).reverse (first out)
+    ∃ D : Circuit, PEqualNP.MetaComplexity.Monotone2 D ∧
+      (∀ a, D.eval (small a) = Circuit.eval ⟨gs.map (fun (o,x,y) => binary o x y),out⟩ (large a)) ∧
+      D.size + s.full.card ≤ s.fullGates + free.card := by
+  obtain ⟨a,b,hab⟩ := nonconstant
+  have ho := open_of_nonconstant gs ts out (large a) (large b) (fit a) (fit b) hab
+  have opn := surviving_unpinned gs ts out valid ho outOK
+  let rs := annotate gs ts
+  let xs := (items ts.length rs).reverse
+  let X := fun i a => (run (rs.map Row.pruned) (large a)).getD i false
+  have wf a : Valid (large a).length rs := by simpa [(fit a).1.symm,rs] using valid
+  have laws : ∀ z ∈ xs, Local X z := by
+    intro z hz a
+    apply read_laws rs (large a) (wf a) z
+    simpa [xs,(fit a).1.symm] using hz
+  have src : ∀ i ∈ (counts xs (first out)).kept,
+      ren i < m ∧ ∀ a, (small a).getD (ren i) false = X i a := by
+    intro i hi
+    have open_ := opn i hi
+    obtain ⟨bound,agree⟩ := supply i open_
+    refine ⟨bound,fun a => (agree a).trans ?_⟩
+    have lt : i < ts.length := by
+      by_contra! ge
+      simp [tagRead,List.getD_eq_getElem?_getD,List.getElem?_eq_none (by omega : ts.length ≤ i)] at open_
+    exact (read_earlier _ _ _ (by simpa [(fit a).1.symm] using lt)).symm
+  obtain ⟨D,mono,eq,sz⟩ := physical_minor_map m out small arity X xs laws ren src
+  have sub : (counts xs (first out)).kept ⊆ free := fun i hi => covers i (opn i hi)
+  refine ⟨D,mono,fun a => (eq a).trans ?_,sz.trans (Nat.add_le_add_left (Finset.card_le_card sub) _)⟩
+  change Circuit.eval ⟨(annotate gs ts).map Row.pruned,out⟩ (large a) =
+    Circuit.eval ⟨gs.map (fun (o,x,y) => binary o x y),out⟩ (large a)
+  simpa only [annotation_full] using circuit_eval_annotation gs out ts (large a) (fit a)
+
+#print axioms reindexed_pinned_minor
+end ResidualSurplus

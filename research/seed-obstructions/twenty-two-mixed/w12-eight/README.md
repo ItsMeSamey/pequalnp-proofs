@@ -1,0 +1,5 @@
+# Twelve point wires and eight line wires at 22 mixed gates
+
+The producer's complete enumeration excludes this cell at total residual size at most 33 on the L-meta-18968 sample. For point price nine, a fresh independent integrated rerun reduced 42,918 pairs to nine, then rejected all nine with unrestricted terminal search. The physical search uses the point catalogue and handles repeated boundary wires through the W13/L8 and W12/L9 repeat-inflation results. For the price-ten genuine-pair case the producer exhausted 270,608 distinct-mask configurations and 3,948 padded configurations. Independent review checked the two domains and reconciled their logs. A full independent numerical rerun of that price-ten search was still pending at this release. The seven-line and through-21-mixed results handle zero and duplicate line cases.
+
+[Through price seven](three-cuts-cheap.zip) · [Price eight](three-cuts-eight.zip) · [Price nine](three-cuts-nine.zip) · [Independent price-nine log](physical-nine.log) · [Price-ten pair](m22_ten_pair_cert.zip) · [W13/L8 virtual pair](../w13-eight-pair/README.md)
