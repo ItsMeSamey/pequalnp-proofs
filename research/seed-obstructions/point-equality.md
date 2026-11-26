@@ -1,0 +1,7 @@
+# Equality in the 21-gate point bound
+
+Use the definitions in equality.md. With h exterior gates and q targets having only two charges, the proof gives 3q ≤ h(h−1)/2 and total size ≥21−q+h. Seven independent OR trees achieve equality.
+
+At size 21, h=q. Because q≤7, either h=q=0 or h=q=7. In the latter case every target has exactly two charges, its first charged gate being the AND of two earlier exterior gates whose singleton signatures both contain the entire target. All 21 gates are charged or exterior. The first gate must therefore be exterior. Its two primitive inputs each meet any target line in at most one point, so it contains no entire target in its signature. But equality 3q=h(h−1)/2 uses every pair of exterior gates among the 21 target-specific pairs. The first exterior gate must belong to such a pair and would contain the pair's entire target. This excludes h=q=7.
+
+With h=q=0 each target has precisely three charged gates and no other gates are available. An AND producing at least two target points has a clean parent and cannot enlarge its size: two distinct dirty parents each covering the same two points would both be exterior. OR is therefore the only way to enlarge a clean signature. Three charged gates can combine four distinct singleton points only in an OR tree on the four singletons, either by merging two disjoint pairs or by successively building a pair, a triple and the full line. A clean primitive must be a raw singleton. A nontrivial mask cannot be clean for two different lines, so all seven trees are disjoint.
