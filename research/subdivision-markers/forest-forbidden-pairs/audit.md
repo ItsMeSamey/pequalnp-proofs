@@ -1,0 +1,5 @@
+# Independent review and reproducible checks
+
+The independent mathematical review verified occurrence-edge polarity, unique projection and extension at bridges, the two path choices in each three-path clause block, the matching of forbidden edge IDs, planarity, simplicity, bipartiteness, maximum degree three, width-two decompositions, the all-odd demand convention, both bandwidth bounds, and the normalized forest count. The alternative three-leaf parity gadget received a separate projection and acyclicity review. The reviewer compared local theta-block states with all 512 edge subsets and tested all 64 sign choices on two three-variable clauses.
+
+The graph-level checker was written separately from the review. On the 110-graph suite, all 24,040 boundary solutions were enumerated from a spanning tree and its cycle basis. Three inputs were unsatisfiable. Counts were compared per assignment with both formula expressions. Run python check.py with NetworkX 3.7. There is no Lean certificate for this result.
