@@ -1,0 +1,2 @@
+'T2PairSemantics.pair_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2PairSemantics.pair_cost' depends on axioms: [propext, Classical.choice, Quot.sound]

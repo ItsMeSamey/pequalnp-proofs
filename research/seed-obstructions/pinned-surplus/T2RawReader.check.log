@@ -1,0 +1,7 @@
+T2RawReader.lean:79:8: warning: Variable name `s` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _s
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ResidualSurplus.reader_deletion_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
