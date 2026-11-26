@@ -1,0 +1,56 @@
+{
+  "commit": "2ef6e3220e7738948c646829c1bd3ab268670eb1",
+  "rel": "research/interpolation-point/affine-span-lean",
+  "increment_sha256": "39a3f2c66652710319b849d4a2030900f1184c0f73372bc8bbf7b4a4d5489a27",
+  "baseline_receipt_sha256": "91b70c85dc73613e9f3feaf04fa82ca46ca2cebb977020b5fde14b7df9a93794",
+  "rehashed_baseline_objects": 33,
+  "modules": [
+    {
+      "module": "ExactPlaneSmallWitness",
+      "source_sha256": "16f18919c68ad0e759e5b45d1c056eaee2ff7147578743059329c49a1c338492",
+      "olean_sha256": "eb5cda1c64b6859ccb59b176dd9919c14cb07f16d2060f6d460944f3d0339a82",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneMatchedBasis.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePhysicalConverse.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Dimension/Constructions.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneSmallWitness.thin' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneSmallWitness.plane' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneAcceptedSmallWitness",
+      "source_sha256": "457fb48a7a13bc3043b1d25cacb6b380c4d583bff7fbead0225ac353d66fad8d",
+      "olean_sha256": "0331aadb086694e6256efb5d69616b6ecc4e87d932baba19be6333df7b71f9ec",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-raw-small-dcwx8mvh/fresh/ExactPlaneSmallWitness.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneObservedSpan.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneGlobalApplication.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneAcceptedSmallWitness.physical' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneAcceptedSmallWitness.recovered' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneRawSmallDecision",
+      "source_sha256": "0a47418e67b084f3a59c74b6db43786c44269ccf133c4ca109a1f2cc94080ac0",
+      "olean_sha256": "c3f31ab13b8a8e8fc7fa4fdfc7335d8930e0d089ee0d2b754a163b4568882f80",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneRawApplication.olean",
+        "/dev/shm/review-raw-small-dcwx8mvh/fresh/ExactPlaneAcceptedSmallWitness.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneAcceptedSmallWitness.observed_chart' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneAcceptedSmallWitness.raw_small_decision' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  ]
+}

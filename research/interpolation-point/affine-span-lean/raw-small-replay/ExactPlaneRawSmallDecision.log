@@ -1,0 +1,2 @@
+'ExactPlaneAcceptedSmallWitness.observed_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneAcceptedSmallWitness.raw_small_decision' depends on axioms: [propext, Classical.choice, Quot.sound]
