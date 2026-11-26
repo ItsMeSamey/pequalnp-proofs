@@ -13,3 +13,9 @@ By the beta integral w_j=(2L−1)!∫ s^j W(s)ds/s on (0,∞), with W=s^L/(1+s)^
 Clearing κ=C′(0)^L sends all relaxed words to integral coefficient vectors. Each selected basis row has coefficient 1-norm ≤[2(1+L)^(2L)]^L, by multiplying the bounds for each cleared row (including neutral rows). The coefficient determinant Δ of the cleared basis is a nonzero integer; its adjugate sends Δ times the integral ambient lattice into the cleared physical span. Over the 2-local integers this gives b(L)≤(d+1)L[1+2Llog₂(L+1)] by Hadamard. The bound does not control the sharp doubling increment or establish a Boolean SAT algorithm.
 
 The independent checker verify-parity-moments.py tests every activity at lengths 2,4,8,16,32.
+
+## Improved precision via activity layers
+
+Put B=C′(0). At layer t write a relaxed target as P/B^t with integral P of degree ≤tD. For each chosen t-active basis word g, Laurent coefficients of (B^t g)/C^t at orders −t−k for 0≤k<D are integral and bounded by H=2^t binom(t+D−2,D−1)L^(D−1), by the reciprocal series and weak compositions of k. Division by the monic C^t is a unitriangular integer change on these top coefficients. The resulting D-dimensional basis determinant δ_t is nonzero by the proof above and |δ_t|≤(√D H)^D.
+
+After multiplication by δ_t the adjugate eliminates the top D coefficients using integral multiples of physical words. The remainder has shape P′/B^t with deg P′≤(t−1)D. A further multiplication by B restores denominator B^(t−1). Induction gives b(L)≤L v₂(B)+∑_t v₂(δ_t)=O(L³ log(L+1)). This constructs representations in polynomial bit time for succinct words with neutral row factors: use exact integer elimination in D dimensions L times. Each step increases coefficient bit sizes by at most a polynomial in L, since the adjugate, basis coefficient norms, and common denominator all have polynomial bit length. Expansion of neutral factors into literal-only pins can have exponentially many terms.
