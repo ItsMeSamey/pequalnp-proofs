@@ -1,0 +1,21 @@
+# The active top-weight shell
+
+Put alpha=2^(a+1), i=v₂(t)<u, T=t+alpha zeta, and k=v₂(t−y₀+x)≤i for a crossing row and source tile. For zeta nonzero, the coefficient c_{x,b} of its bth moment has exact valuation
+
+    v_b + v₂(zeta) + (b+1)(i−k),    v_b=a−i+b+1.
+
+Separate T−t in C(T)/C′(0); the other grid factors keep the valuations of t−s, and C′(t)/C′(0) is a unit. The remaining expression is 2^((i+1)b)/(T−y₀+x)^(b+1). For zeta=0 every crossing coefficient vanishes. Since a=2 sum_{j≤depth}u_j, every mode has positive surplus over the published nominal weight b+1. Its positive nominal top shell p−1 vanishes termwise modulo 2^p. Use v_b, the tightened weight, below.
+
+On the tightened top shell, source moments reduce to two bits in every tile: A is parity of all real columns, B parity of real columns having odd local j. For b=0 this includes j=0. For b>0 j^b reduces to j. Only unit zeta and k=i can retain a target coefficient after normalizing and reducing mod 2. Here k=i holds precisely when y₀=x modulo 2^(i+1). Further, C(T)/(alpha zeta C′(0)) reduces to one: every shifted factor divided by its original is one mod 2, and the rational unit C′(t)/C′(0) also reduces to one. Similarly (T−y₀+x)/2^i reduces to one when k=i. Thus c_{x,b}/2^v_b reduces to zeta, independent of b and x. Formulae involving zeta are in the extension residue ring. For even zeta, the same formula gives zero.
+
+For the real rows in a given crossing residue, the common target correction polynomial is
+
+    U(y) = zeta ( A y^(a−i+1) + B sum_{b≥1} y^(a−i+1+b) ) modulo y^p.
+
+The local argument mod two is exactly the column bit in the shifted slot x+t when that slot is real, and zero otherwise. At t the unique potentially nonzero entry is the odd ratio C′(t)/C′(0); shifting to T does not change residues, by the normalized-factor expansion of the local kernel. If there are N real rows of this residue and h disagree with their shifted bit, then the product of their l_Y factors is U^h(1+U)^(N−h). The minus sign in l_0 disappears in characteristic two. A missing local slot supplies bit zero. Missing crossing columns do not enter A or B; an empty source tile has both zero. Dummy target rows contribute no factor. A same-group packet with no crossing modes contributes simply its local row-match indicator.
+
+Enumerate source parity pairs per crossing tile, and require each guessed pair to equal the actual column parities at its source, even if no target uses it. Each complete column assignment then has exactly one signature. Enumerate nonnegative degree allocations to target packet-group pairs summing to p−1. The new packet tensor entry is the indicated coefficient of the product of the real-row factors for its target residues, times the source-parity indicators in that group. Contract the original interface with the creation-time lifts of retained tensors reduced modulo two, multiply child contractions, sum over signatures and degrees, and restore 2^(p−1). Distributing target row choices proves equality with the corrected top shell modulo 2^p: each monomial has a unique induced degree tuple and its contracted source assignments have a unique mask. Lift choice when restoring the power of two is immaterial. The arithmetic is in the appendix's A/2, which may contain a finite extension and a truncated variable V.
+
+The outer bound is 4^T binom(p+K−2,K−1) for T≤6M/D tiles and K≤6M/L target packet-group pairs (at most two per crossing packet). If K=0 a positive shell is absent. Truncated convolutions evaluate new packet entries in polynomial time and space. Streaming the masks and degree vectors takes polynomial auxiliary space. Child edge counts remain ≤6M/r, new packet degree ≤2L, and retained vertex degrees and their evaluation interfaces remain unchanged. Lower shells require additional residual precision. This single shell does not prove any full reconstruction speedup.
+
+The adjacent check_top_shell_masks.py uses L=16, t=2, alpha=32, zeta=1, p=9 and rational native Cauchy coefficients. It checks 128 packet-level comparisons on two real rows and four real columns, including 32 nonzero tightened cases. The test uses a small illustrative precision; it does not reproduce the entire recursion schedule.
