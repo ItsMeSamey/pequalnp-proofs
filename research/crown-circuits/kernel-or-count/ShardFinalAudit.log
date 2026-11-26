@@ -1,0 +1,1 @@
+'CrownMixed.crown_twelve_size_forty_has_at_most_eight_ands' depends on axioms: [propext, Classical.choice, Quot.sound]

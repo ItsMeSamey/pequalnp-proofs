@@ -59,3 +59,5 @@ A separate proof gives exact size 41 for arbitrary raw OR-only preprocessing fol
 The [standalone Lean theorem](../../lean/Research/CrownShardStandalone.lean) gives a physical lower bound of 31 OR gates and an upper bound of nine AND gates at total size at most 40. Its axiom audit lists only propext, Classical.choice and Quot.sound. The stronger 32-OR bound above is independently established by the mathematical induction.
 
 With five AND gates, size 40 is also excluded in the normalized case with exactly one diagonal-active AND and four clean terminal comparisons. The eight search strata cover 75,688,399 helper families. Other arrangements of five AND gates require separate arguments. [Proof and census](five-ands-one-dirty/five-one-dirty-proof.md)
+
+The full [standard-axiom Lean certificate](kernel-or-count/README.md) now verifies the general 3n−4 OR lower bound, the 32-OR bound at n=12 and the consequent cap of eight AND gates at total size 40. It includes the kernel-checked finite base case.
