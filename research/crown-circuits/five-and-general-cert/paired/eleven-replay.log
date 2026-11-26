@@ -1,0 +1,9 @@
+physical truth table 2048 passed
+27-gate control cadical195 True 974
+27-gate control glucose4 True 1915
+0 1928 glucose 620 cadical 461 DRAT verified
+1 286 glucose 163 cadical 279 DRAT verified
+2 310 glucose 178 cadical 358 DRAT verified
+3 1330 glucose 173 cadical 358 DRAT verified
+4 342 glucose 225 cadical 351 DRAT verified
+5 852 glucose 225 cadical 351 DRAT verified

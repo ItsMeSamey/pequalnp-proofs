@@ -1,5 +1,8 @@
 # False OR gates on a crown diagonal
 
+The 12-crown has minimum size **41 among binary monotone circuits with at most five AND gates**, allowing unrestricted sharing. The five-AND proof combines mathematical reductions with executable checks covering 617 canonical profiles. Together with the kernel-checked lower bound of 32 OR gates, it leaves exactly six, seven or eight AND gates possible for a circuit of size at most 40. Whether such a circuit exists remains open. [Five-AND proof and replay](five-and-general-cert/README.md) · [32-OR kernel audit](kernel-or-count/README.md)
+
+
 Every monotone binary circuit of size at most 40 representing the 12-crown on one-row, one-column inputs requires **at least 24 OR gates and at most 16 AND gates**. The kernel proof includes the threshold-two OR lower bound for physical circuits. The existence of a 40-gate circuit remains open. [Proof](twenty-four-ors.md) · [Lean theorems](../../lean/Research/CrownTwentyFourOrs.lean) · [Threshold-two lower bound](../../lean/Research/WegenerThreshold.lean)
 
 
@@ -58,6 +61,6 @@ A separate proof gives exact size 41 for arbitrary raw OR-only preprocessing fol
 
 The [standalone Lean theorem](../../lean/Research/CrownShardStandalone.lean) gives a physical lower bound of 31 OR gates and an upper bound of nine AND gates at total size at most 40. Its axiom audit lists only propext, Classical.choice and Quot.sound. The stronger 32-OR bound above is independently established by the mathematical induction.
 
-With five AND gates, size 40 is also excluded in the normalized case with exactly one diagonal-active AND and four clean terminal comparisons. The eight search strata cover 75,688,399 helper families. Other arrangements of five AND gates require separate arguments. [Proof and census](five-ands-one-dirty/five-one-dirty-proof.md)
+With five AND gates, size 40 is also excluded in the normalized case with exactly one diagonal-active AND and four clean terminal comparisons. The eight search strata cover 75,688,399 helper families. [Proof and census](five-ands-one-dirty/five-one-dirty-proof.md)
 
 The full [standard-axiom Lean certificate](kernel-or-count/README.md) now verifies the general 3n−4 OR lower bound, the 32-OR bound at n=12 and the consequent cap of eight AND gates at total size 40. It includes the kernel-checked finite base case.
