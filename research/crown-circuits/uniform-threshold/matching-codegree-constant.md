@@ -1,0 +1,11 @@
+# Nonedge codegrees and the matching-layer coefficient
+
+Consider the three incidence layers from three-level-matching.md with a full threshold-nine detector. Count only active symbols. Let v be the number of first-layer groups, w the number of vertices of the intermediate simple graph R (whose edges are the first-layer groups), and t=√(2n). Each raw input uses a disjoint pair of R edges. Any two chosen pairs must have different four-vertex unions, since otherwise subsequent layers receive identical singletons and cannot distinguish their union.
+
+The incidence cost plus the full detector is ≥2n+v+w−O(1), since threshold nine depends on every final variable and hence needs at least the number of those variables minus one gates. Assume along a sequence that total cost minus 2n+t is O(t^(3/5)); a diverging normalized excess cannot lower the limiting coefficient. Then v≥t, v=t+O(t^(3/5)), w=O(v^(3/5)), and L=binom(v,2)−n=O(v^(8/5)).
+
+Let c(i,j) be the common-neighbor count of two distinct vertices. Write S=Σc(i,j), summed over unordered pairs. Convexity of the degree sequence gives S=Σ binom(deg(i),2)≥2v²/w−v. The number J of four-cycles satisfies J≤(3/2)L: a four-set with b distinct perfect matchings yields binom(b,2) cycles and loses at least b−1 raw candidates when b≥1, with b≤3. Consequently Σ c(i,j)²=S+4J≤S+6L. Cauchy–Schwarz on the v adjacent pairs shows that their contribution to S is at most √(v(S+6L))=o(S), using S=Ω(v^(7/5)). Thus nonadjacent pairs receive (1−o(1))S wedges.
+
+Apply Cauchy–Schwarz a second time over at most w²/2 nonadjacent pairs. The sum N of binom(c(i,j),2) over these pairs is at least (1−o(1))S²/w², since S≫w². Hence N≥(4−o(1))v⁴/w⁴. Within a four-set with either no matching or one matching, N receives zero. A four-set with two matchings has one cycle and contributes at most two. With three matchings all diagonals are edges, so it contributes zero despite the three cycles. Therefore L≥N/2≥(2−o(1))v⁴/w⁴.
+
+Combining this with L=(v²−t²−v)/2 gives v−t≥(2−o(1))t³/w⁴. Minimizing w+(2−o(1))t³/w⁴ over w>0 yields the lower coefficient (5/4)2^(9/10) at scale n^(3/10). The graph construction attains it. The lower bound concerns this specific gate ledger; it does not rule out other circuit architectures with a smaller remainder.

@@ -1,6 +1,10 @@
 # Threshold two at every arity
 
-The matching construction gives **C(n) ≤ 2n + √(2n) + O(n^(3/10))**. Together with the lower bound below, this gives **C(n) = 2n + √(2n) + O(n^(3/10))**. The proof counts matching signatures and gives a deterministic finite search for a suitable graph. The optimal remainder is open. [Construction](matching-signatures.md)
+For minimum binary monotone AND/OR circuit size with unrestricted fanout, **C(n) = 2n + √(2n) + Θ(n^(3/10))**. The two bounds hold with positive absolute constants for all sufficiently large n. The proof determines the order of the third term. Its optimal coefficient remains open. Independent mathematical reviews checked the unrestricted lower bound and its prerequisite arguments. [Lower bound](unrestricted-matching-exponent.md) · [Upper construction](three-level-matching.md)
+
+## Earlier bounds and constructions
+
+The matching construction gives **C(n) ≤ 2n + √(2n) + O(n^(3/10))**. Together with the lower bound below, this gives **C(n) = 2n + √(2n) + O(n^(3/10))**. The proof counts matching signatures and gives a deterministic finite search for a suitable graph. The final theorem above gives a matching order of growth for the remainder. [Construction](matching-signatures.md)
 
 For n ≥ 4, the minimum number C(n) of fan-in-two monotone AND/OR gates with unrestricted fanout satisfies **C(n) ≥ 2n + (√(8n−7)−7)/2**. The frozen manuscript received independent mathematical proof reviews. Combined with Theorem 9 of Krapivin, Przybocki and Subercaseaux, this gives **C(n) = 2n + √(2n) + O(n^(1/3))**. The full proof is a mathematical manuscript. [Proof of the stronger bound](shared-or-cut.md) · [Upper bound](https://doi.org/10.4230/LIPIcs.SAT.2026.23)
 
@@ -12,4 +16,4 @@ Sergeev's lower bound is 2n + √((2n−4)/3) − 19/6. The coefficient of √n 
 
 ## Remainder in the matching construction
 
-If the two incidence layers are counted separately and the tail computes threshold five on all w vertex signals, the resulting gate ledger has an Ω(n^(3/10)) remainder. This proves sharpness for the specified construction. The unrestricted lower bound on the third-order term is a separate question. [Gate-count proof](matching-ledger-lower.md)
+If the two incidence layers are counted separately and the tail computes threshold five on all w vertex signals, the resulting gate ledger has an Ω(n^(3/10)) remainder. This proves sharpness for the specified construction. The unrestricted lower bound above uses an additional structural argument. [Gate-count proof](matching-ledger-lower.md)
