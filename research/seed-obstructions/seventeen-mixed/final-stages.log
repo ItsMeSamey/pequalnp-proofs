@@ -1,0 +1,7 @@
+irreducible 23274 distinct families, 1123 representatives, extinction depths [(2, 6), (3, 164), (5, 532), (7, 339), (8, 4), (9, 56), (10, 6), (11, 16)]
+distinct extension 26664 distinct families, 1713 representatives, extinction depths [(5, 1181), (6, 125), (7, 323), (8, 84)]
+repeat or zero 1122 distinct families, 65 representatives, extinction depths [(5, 24), (6, 9), (7, 22), (8, 10)]
+positive control families 1 tests 1 after guard 1 separating trees 1
+refined-all.txt families 6543 tests 252005 after guard 0 separating trees 0
+geom_reps.txt families 1713 tests 219264 after guard 0 separating trees 0
+dupgeom_reps.txt families 65 tests 8320 after guard 21 separating trees 0
