@@ -1,0 +1,9 @@
+# A one-hole joint tableau
+
+Let H=span(1,2), W=span(4,8), U=H+W and independent private A=16,B=32. The negative baseline consists of A+w and B+w for nonzero w in W, and A+B+w for all w in W. The positive baseline adds A. The designated extras are A+1 and B+2. Both supply full named rank and connected private quotient. Only the extras have nonzero H-coordinates. A solution must use both, with baseline columns canceling their private parts independently. Those baseline columns have zero trace as all their named coordinates are in W and their trace must lie in H. Hence a baseline private basis realizes s(A)=s(B)=0. Conversely such a basis with the two extras realizes H.
+
+For (a,b) in W squared, a basis with s(A)=a and s(B)=b exists if two of the prescriptions a,b,a+b are available at A,B,A+B. On the negative baseline the first two require nonzero a,b, the third is always available. Thus every pair except (0,0) occurs, while the positive input has all pairs.
+
+A single row λ observes the entire private functional through λa,λb. Each nonempty fiber has at least four elements. For a linear L from W to binary two-space of rank two, det(K+L[a,b]) is a translated two-by-two determinant with six ones and ten zeros. For rank at most one the function is affine, with each nonempty fiber of size at least eight. Deleting the single zero tableau changes none of the possible outputs, even for two arbitrary private endpoints in a common-scalar query. This concerns the fixed designated extras on unchanged baselines.
+
+Both ordinary matroids are nonregular: contracting A+B+4 sends B to A+4. The other columns over A+B give all nonzero pure W points. Those over A or B together supply all four A+W points, since their two excluded translations differ. Thus a restriction after simplification is Fano.
