@@ -1,0 +1,4 @@
+[0, 1, 2, 3] 13
+False 201.4913623249995 {'restarts': 19077, 'conflicts': 416472, 'decisions': 777475, 'propagations': 32850825}
+[0, 1, 2, 4] 13
+False 144.04161000599925 {'restarts': 9647, 'conflicts': 275503, 'decisions': 504499, 'propagations': 23215156}

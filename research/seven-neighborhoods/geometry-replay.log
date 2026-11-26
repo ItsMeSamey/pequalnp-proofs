@@ -1,0 +1,9 @@
+Checked four- and six-line orbit coverage, six pairwise-intersecting pencils.
+5 vertices 4 nonisomorphic graph types, labeled incidence mass 604800
+6 vertices 20 nonisomorphic graph types, labeled incidence mass 28803600
+7 vertices 41 nonisomorphic graph types, labeled incidence mass 371725200
+8 vertices 50 nonisomorphic graph types, labeled incidence mass 2153390400
+9 vertices 33 nonisomorphic graph types, labeled incidence mass 6813979200
+10 vertices 17 nonisomorphic graph types, labeled incidence mass 12862735200
+(0, 1, 2, 3, 4, 5) 66 matching topology classes and point-choice multiplicities
+(0, 1, 2, 3, 4, 6) 164 matching topology classes and point-choice multiplicities

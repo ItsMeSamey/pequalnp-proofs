@@ -49,3 +49,5 @@ With eight line leaves, the [nonconcurrent case](eighth_line_good.md) and [concu
 Every read-once residual architecture with eight line leaves now needs at least 34 gates. The [repeated singleton case](repeated_line.md) needs at least 35.
 
 [The 17-mixed-gate exclusion](seventeen-mixed/README.md) raises the necessary mixed-gate count at total budget 33 to 18. Its replay driver regenerates the signature families and checks both remaining mixed cone shapes.
+
+In the same relaxation, [all seven neighborhoods](../seven-neighborhoods/README.md) require exactly 21 point gates even without pair-rejection constraints. The final search covers 8,128 graph families, of which 1,087 require SAT exclusion.
