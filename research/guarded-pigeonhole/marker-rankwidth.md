@@ -1,0 +1,23 @@
+# Ordinary polynomial calculus from binary affine factors
+
+Consider Boolean variables over GF(2) with affine equations and products of two affine forms required to vanish. Take a rooted binary tree with one factor at each leaf. For a subtree S let U(S) span the linear parts of its forms and B(S)=U(S)∩U(outside S). If w is the largest dimension of B(S), every inconsistent instance has an ordinary polynomial-calculus refutation over GF(2) of degree at most max(4,2w). Given the tree, feasibility and witness recovery take 2^{O(w)} times polynomial input length.
+
+## Boundary tables
+
+An assignment defines an evaluation functional on the dual variable space. Every functional on a subspace extends to evaluation at a full assignment. Store the functionals λ on B(S) extending to a functional on U(S) satisfying all its factors. Write U₁,U₂ for the child spaces and U₃ for the outside space. Then B₁=U₁∩(U₂+U₃), B₂=U₂∩(U₁+U₃), and B=(U₁+U₂)∩U₃. In particular B⊆V=B₁+B₂. Indeed for b=u₁+u₂∈B, each uᵢ belongs to Bᵢ. Test all functionals γ on V extending the requested λ. Feasible child extensions agree on U₁∩U₂, contained in both B₁ and B₂. They glue to a functional on U₁+U₂ extending λ. Conversely every feasible parental extension gives a consistent γ. Each leaf requires at most four evaluations. Store the successful choices to glue a witness bottom-up. An absent root state certifies inconsistency.
+
+## Original-variable PC proof
+
+For W with basis h₁,…,h_d, its Boolean atom for μ is the product of the d agreement indicators 1+hᵢ(x)+μ(hᵢ). Different bases give identical Boolean functions. Their difference reduces to zero by Boolean axioms at degree at most d. Multilinear representatives are unique and each monomial reduces at its own degree by multiples of xᵢ²+xᵢ. Multiplication by an affine form uses ordinary variable multiplications and linear combination.
+
+Inductively derive the atom for every absent boundary state as a polynomial equal to zero. At a leaf, for each full extension of an absent boundary state, multiply the violated axiom by the full extension's atom. The product equals its atom on the Boolean cube and has degree at most four. Sum these atoms using a common basis beginning with the boundary basis.
+
+At an internal node with absent λ, every γ on V extending it has an absent child restriction. Multiply that child's previously derived atom by agreement indicators completing the child's basis to a basis of V. This derives the γ atom in degree at most dim V≤2w. Change to a common basis beginning with a basis of B by multilinear reduction. Summing over extensions to V gives the atom of λ because the two agreement indicators for each free bit sum to one. The root conclusion is the constant one. Each multiplication starts from the child's concluded low-degree line, so the degree bound is independent of depth.
+
+## Alternating graphs
+
+For symmetric A use guard factors xᵢ((Ax)ᵢ+bᵢ) and t arbitrary affine marker equations. Suppose a supplied vertex tree has adjacency cut-rank at most r over GF(2). The guard span on S contains all vectors supported in S. Its projection to outside S is the row space of A[S,outside]. The two sides' spans therefore intersect in dimension exactly 2 rank A[S,outside], using symmetry. Attach the t marker leaves above the guard tree. On any original cut, adding outside marker rows increases the boundary dimension by at most t. On each new upper cut one side has at most t normals. Thus the ordinary PC degree is at most max(4,4r+2t), and the tree gives a 2^{O(r+t)} polynomial-time search algorithm. Minimizing r over vertex trees gives binary rank-width. The existential proof-degree conclusion requires no supplied layout.
+
+Forests have a width-one layout. Root each tree, recursively group completed child subtrees and then add their common parent. A partial grouping sends edges outside only toward that parent. Combine components arbitrarily. For feedback vertex set size f attach those vertices above the forest layout. Their rows and columns add at most f to any cut rank, hence r≤f+1. The ordinary PC degree is at most max(4,4(f+1)+2t), even for affinely shifted guards.
+
+For a base graph of rank-width r₀ on the same vertices, adding a symmetric matrix of rank h increases cut-rank by at most h. For example, if removing neutral-incident edges leaves rank-width r₀, restoring one-sided neutral rows of rank h raises cut-rank by at most 2h. Their symmetric adjacency perturbation has off-diagonal blocks of rank h. This parameter bound allows arbitrary marker labels and target. The case with unbounded rank-width after removing the neutral rows needs a different argument.
