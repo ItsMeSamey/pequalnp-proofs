@@ -57,7 +57,7 @@ def local_valid(side,x,h,inc,local):
 @lru_cache(None)
 def W(L,T,x,y):
     skip=y-x
-    nodes=range(1-L,L)
+    nodes=range(-L,L)
     return Fraction(prod(T-q for q in nodes if q!=skip),prod(-q for q in nodes if q!=0))
 
 
@@ -127,6 +127,7 @@ def mode_fixture():
     L,T,y=8,17,2
     # N=C(T)/C'(0); here v_2(N)=4 since log_2(L)=3.
     N=W(L,T,y,y)*T
+    assert valuation(N)==L.bit_length()
     local=[]
     for slot in range(8):
         frozen=((0,4),(4,6),(0,6))[slot%3]
@@ -147,3 +148,20 @@ def mode_fixture():
 
 
 mode_fixture()
+
+# Full all-neighbor phase admits an independent closed form on balanced bipartite graphs.
+for n,m,actual in [(4,4,24),(6,9,5120)]:
+    assert actual==2**(m-n+1)*(2**m+2**(m-n//2+1))//2
+
+# Perturb local predicates on the same K3,3 topology without changing any packet transfer.
+edges=[(i,j) for i in range(3) for j in (3,4,5)]
+inc=incidence(edges)
+loc=local_quadratics(inc)
+expected=[]
+for v,term in ((None,None),(0,1<<0),(1,(1<<3)|(1<<4)),(3,0)):
+    if v is not None: toggle(loc[v],term)
+    q=global_quadratic(loc)
+    primary=sum(qvalue(q,z)==0 for z in range(1<<9))
+    assert primary==(2**9+gauss(9,q))//2
+    expected.append(primary*2**4)
+print("same-graph heterogeneous predicates",expected)

@@ -5,8 +5,8 @@ from math import prod
 from random import Random
 
 def kernel(L,T,x,y):
-    return Fraction(prod(T-q for q in range(1-L,L) if q!=y-x),
-                    prod(-q for q in range(1-L,L) if q!=0))
+    return Fraction(prod(T-q for q in range(-L,L) if q!=y-x),
+                    prod(-q for q in range(-L,L) if q!=0))
 
 def residue(x,p):
     modulus=1<<p
@@ -26,6 +26,7 @@ def cnf_test(n,clauses,L):
     wk=[kernel(L,T,row,y) for y in slots]
     scales=[T-y+row for y in slots]
     N=wk[0]*scales[0]
+    assert (abs(N.numerator)&-abs(N.numerator)).bit_length()-1==L.bit_length() and N.denominator%2
     cleared=0; actual=0; sat=0
     dens=[prod(scales[j] for j,sign in cl) for cl in clauses]
     for bits in product(range(2),repeat=n):
