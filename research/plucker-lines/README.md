@@ -11,3 +11,5 @@ Disjointness of W from a fixed two-plane is a linear Plücker form, via the 4-by
 A single colored left vertex suffices under the neutral rank-three promise. Two independent enumerations cover all 656,000 normalized profiles. [Proof and replay](three-neutral/README.md)
 
 When both shores contain only colored or shared-only vertices, the complete and noncomplete colored-block algorithms together decide all instances and recover a support in polynomial time. True neutral vertices are outside this classification. [Complete colored blocks](complete-colored.md) · [Noncomplete colored blocks](noncomplete-colored.md) · [Rooted cycle lemma](rooted-cycle/README.md)
+
+The [signed-graphic contraction algorithm](signed-graphic/README.md) decides the mixed anchored-weight problem and recovers a witness when the specified contraction is supplied as graphic, including its dual formulation. The [rank-five enumeration](rooted-selectors/ghost-rank-five/ground-enumeration.md) checks the projected-switch obstruction under the stated chart and marginal assumptions by independent ground-set and SAT searches.
