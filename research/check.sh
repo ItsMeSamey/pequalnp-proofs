@@ -36,3 +36,10 @@ python3 -B "$repo/research/signed-bicliques/check.py"
   cd "$repo/research/seed-obstructions"
   python3 -B verify_packing.py L-meta-18968.json packing-18968.json packing-21968.json subset-18968-15.json subset-21968-15.json
 )
+python3 -B "$repo/research/guarded-pigeonhole/check_sos.py"
+python3 -B "$repo/research/incidence-witnesses/check-two-leaf.py"
+python3 -B "$repo/research/affine-backdoor/check_backdoor.py"
+python3 -B "$repo/research/marker-principal/check.py"
+python3 -B "$repo/research/scc-guards/check.py"
+python3 -B "$repo/research/chart-basis/check.py"
+(cd "$repo/research/signed-cuts" && python3 -B -m unittest)

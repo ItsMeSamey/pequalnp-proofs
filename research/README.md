@@ -40,3 +40,9 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 [Signed biclique composition](signed-bicliques/README.md) applies the October manuscript’s exact counting bounds to supplied decompositions of fixed-width CNF. It gives separate flat, balanced-recursive, and near-full-port algorithms.
 
 [Fixed gate obstructions](seed-obstructions/README.md) exclude four specified subprograms from any 34-gate completion of L-meta-18968. The certificates use disjoint positive–negative difference sets on the raw statement.
+
+[Two-leaf incidence witnesses](incidence-witnesses/two-leaf.md) bound scalar gates by the number of edges admitting a two-leaf accepting parse. The accompanying notes quantify gate reuse by support minrank and rectangle covers.
+
+[Low-rank affine conditioning](affine-backdoor/README.md) searches for an optimal subspace that brings each clause to hidden rank at most one. [Signed cut counting](signed-cuts/README.md) counts assignments by joint suffix feasibility.
+
+[Principal minors](marker-principal/README.md) characterize feasibility of a singleton guarded system with an odd marker. A [component solver](scc-guards/README.md) constructs model bases when all within-component arcs have their reverse. [Witness charts](chart-basis/README.md) compile acyclic guards with few terminal clauses and exhibit a limit on testing arbitrary proposed chart covers.
