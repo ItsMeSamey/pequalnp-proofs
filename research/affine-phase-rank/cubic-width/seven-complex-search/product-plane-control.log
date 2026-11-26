@@ -1,0 +1,2 @@
+{'rays': 1080, 'maxline': 2, 'plane_reps_with_redundancy': {5: 49, 6: 82, 8: 21, 7: 8}, 'viable_multisets': {}}
+elapsed 0.6314790550022735 rss_kib 23520
