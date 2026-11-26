@@ -32,3 +32,5 @@ The earliest active OR gate on each positive diagonal admits an injective choice
 Among distinct chronological OR gates, at most one unordered pair can share a valid predecessor in a 12-crown circuit with at most 40 gates and 23 ORs. [Unique collision theorem](../../lean/Research/CrownCollisionUnique.lean)
 
 When there is a collision, four or five diagonals attain saturation. A wire feeding an OR is true on at most two diagonals, which share their OR signature. [Single-collision saturation](../../lean/Research/CrownCollisionSaturationFive.lean) · [Parent signatures](../../lean/Research/CrownParentSignature.lean)
+
+If a single OR is the first active OR on two diagonals, exactly those two diagonals activate it. [Double-first theorem](../../lean/Research/CrownDoubleFirst.lean)

@@ -6,6 +6,8 @@ Fix m with h≥2 distinct odd prime divisors p₁,…,p_h. From a 3-CNF F on n v
 
 This subexponential-size reduction gives no polynomial reduction or NP-hardness claim. A polynomial-time bin-membership algorithm at this m would solve 3SAT in the stated time. Polynomial-time decision for every fixed m would give a 2^{O_ε(n^ε)} deterministic 3SAT algorithm for every ε>0: deduplicate clauses so L=O(n³), and use h>3/ε. No ETH assumption enters.
 
+The low-degree divisibility construction is the composite-modulus OR construction of Barrington, Beigel and Rudich applied to the clause-violation bits. The code reduction additionally expands parity characters, fixes the target to bin one and preserves assignment multiplicities. [Barrington, Beigel and Rudich](https://www.cis.temple.edu/~beigel/papers/bbr-mods-cc.html)
+
 ## Construction
 
 Let a_i be the least p_i-power strictly above (L+1)^{1/h}. Their product exceeds L and a_i≤p_i(L+1)^{1/h}. For message x let K count unsatisfied clauses. The indicator f_i of a_i dividing K has degree at most a_i−1 over F_{p_i} in the clause-violation bits. It is the coefficient of z^{a_i−1} in (1+z)^{a_i−1}Π_C(1+z[clause C violated]), by the base-p digit identity in README.md. Each clause violation uses at most three input bits and has at most eight Walsh terms. Truncated multiplication and collection of equal frequencies computes the indicator list in (O(L+1))^{O(a_i)} field operations, up to polynomial factors. All divisibilities hold exactly when K=0.
