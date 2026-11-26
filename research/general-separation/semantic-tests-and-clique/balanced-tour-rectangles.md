@@ -1,0 +1,31 @@
+# The sharp balanced Boolean rectangle rate for directed Hamiltonicity
+
+Use the N² matrix entries as individual inputs, including the harmless diagonal for directed Hamiltonicity at N>1. A balanced rectangle partitions the entries into A,B, each of size at most 2N²/3, and is a product of arbitrary Boolean predicates on A and B. Distinct rectangles may use different cuts. The minimum number of sound rectangles covering directed Hamiltonicity is (3/2+o(1))^N. The same rate holds for bipartite perfect-matching existence and for recognizing exact permutation or single-cycle permutation matrices. The lower bound uses correctness only on inputs of weight at most N. A factor inside a rectangle may be computationally expensive.
+
+Briquel, Koiran and Meer established permutation-matrix width lower bounds via communication complexity. De Colnet used varying balanced partitions to prove an exponential DNNF lower bound. Here we derive the exponential rate, extend to sparse-promise directed Hamiltonicity, and correct the numerical estimate in the cited version of de Colnet's Lemma 4. [Briquel, Koiran and Meer](https://doi.org/10.1016/j.dam.2010.09.007) · [de Colnet, §5](https://alexisdec.github.io/assets/pdf/SAT2020.pdf) · [Bova et al.](https://ijcai.org/proceedings/2016/147)
+
+## Capacity of one rectangle
+
+A witness is a spanning cycle matrix, or any permutation matrix for matching. A rectangle containing two witnesses accepts both hybrids obtained by exchanging their B-parts. If the A-parts have different counts, the smaller hybrid has fewer than N entries and is negative on the sparse promise. The counts agree, so each hybrid has N entries and must itself be a witness. Unique row and column occupancy then forces every covered witness to have the same set S of A-side tails and T of A-side heads, with |S|=|T|=k. They lie among the permutations of a block diagonal support K, using A∩(S×T) in the first block and B∩(Sᶜ×Tᶜ) in the complementary block.
+
+Write β=2/3, x=k/N, taking x≥1/2 by swapping sides. A k-by-k block has at most min(k²,βN²) entries. For positive row sums d_i, Brégman's bound gives per(K)≤∏(d_i!)^(1/d_i); a zero row gives zero. Increase each d_i by ceil(√N), using monotonicity of the factorial geometric mean. Stirling bounds the resulting row log by log(d_i+ceil(√N))−1+O(log N/√N). Apply Jensen to the logs within each block. Relative to N!, the log fraction divided by N is bounded by
+[
+ xlogmin(x,eta/x)+(1-x)logmin(1-x,eta/(1-x))+o(1)
+]
+uniformly in k, omitting a missing block. Removing the smoothing costs O(1/√N) after normalization since min(k,βN²/k)≥βk. [Brégman's inequality](https://doi.org/10.1006/JCTA.1996.2727)
+
+For x≤√β the expression is −H(x), for binary entropy H in natural units. Its maximum here is −H(√β)<log β (the values are below −0.47 and above −0.41 respectively). For x≥√β it is x log(β/x)+(1−x)log(1−x), convex because its second derivative is 1/(1−x)−1/x≥0. Its maximum on the interval is log β at x=1. Thus one rectangle covers at most N!(β+o(1))^N witnesses. For single cycles the population is (N−1)!; the factor N does not affect the exponential rate. Summing proves the cover lower bound even for varying cuts.
+
+## A matching cover
+
+Independently choose floor(βN) columns in each row uniformly to form A. Its complement B is balanced with A for all sufficiently large N. Every fixed witness lies in A with probability p=(floor(βN)/N)^N. With L=ceil((log(N!)+1)/p) independent masks the expected number of uncovered witnesses is less than one, so some list covers all. For total existence take the rectangle requiring the arcs in A to contain a whole witness, with no restriction on B. Every positive input contains a witness captured by one mask. For exact predicates require instead that the A-part itself is a witness and the B-part is zero. The upper bound is (3/2+o(1))^N, and the single-rectangle exponent is sharp as well.
+
+## A finite counterexample to the numerical constant
+
+The cited Lemma 4 asserts an upper bound N!/binom(N,N√(2/3)) on permutations in a balanced rectangle, up to rounding. A balanced edge set need not contain all k² positions of its potential row-column block. At N=33 partition both rows and columns into three common groups of m=11. Put all off-block entries into A and the rest into B. Require a permutation on A and zeros on B. Its 3×3 transition counts alternate t,m−t around the two directed three-cycles. For fixed t there are (m!)³ binom(m,t)³ permutations: choose target groups of rows and then biject incoming rows to each group's columns. The total P=(11!)³ Σ_{t=0}^{11}binom(11,t)³ is 17707661809258784033341440000000. Even the weaker rounding gives P binom(33,27)>2·33!; binom(33,26) is larger. This contradicts the numerical bound. The qualitative exponential DNNF conclusion survives with the corrected bound above.
+
+## Consequence for arbitrary gates
+
+Represent any fan-in-two Boolean circuit by an undirected constraint graph with one vertex per primary bit and gate output, making each gate output and its operands a clique. Repeated uses of an input share its vertex. A circuit with constraint-graph treewidth w has a centroid bag of at most w+1 vertices balancing the primary bits: assign each primary to one bag containing it and take a weighted centroid of the decomposition tree. Removing its bag leaves components with at most N²/2 primary bits each. Treat separator inputs as singleton items. Split the items and groups into two sides each with between N²/3 and 2N²/3 bits, by taking an item already in range or accumulating smaller ones until reaching the lower bound.
+
+Fixing one bag assignment gives one accepting rectangle. Every gate constraint lives in one side plus the bag; require output one, existentially quantify internal gates on each side, and pin separator primaries. Union over bag assignments gives the circuit's whole relation in at most 2^(w+1) rectangles. Thus even on the sparse promise every circuit for HC has w≥(log₂(3/2)−o(1))N−1 irrespective of size. This uses the physical arc inputs, arbitrary Boolean gate functions and no arithmetic extraction. A row-by-row verifier with N column-seen bits and row flags recognizes exact permutation matrices in O(N) pathwidth and polynomial size. Linear width can coexist with efficient algorithms.
