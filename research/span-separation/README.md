@@ -16,3 +16,5 @@ For sufficiency a common independent set of size $d-1$ spans a hyperplane of $V$
 The independent checker rank_one_check.py compares the criterion against direct enumeration for all 5,376 instances consisting of a subset of the seven nonzero columns in dimension three and an ordered pair of distinct nonzero terminals. It verifies the criterion, without implementing the general matroid-intersection algorithm.
 
 For the supplied signed-graph representation, the [odd-cycle method](even-cycle.md) handles terminal spaces containing the pure sign direction with the stated dependence on their dimension.
+
+With unbounded terminal space, [span and avoidance](unbounded-terminals.md) is NP-complete even with four ordinary columns per block. In the signed-graph pure-lift subclass, [the Walsh determinant algorithm](signed-fourier.md) runs in 2^k times a polynomial and allows dense terminals. Run `python3 signed_fourier.py` for 150 exact comparisons.
