@@ -1,0 +1,101 @@
+Seven point-exclusive pairs and seven line-exclusive pairs verified.
+The minimum is 13 mixed gates with all monotone one-side signals free.
+bank 3 5 1 0
+(0, 0) False False
+(0, 1) False False
+(0, 2) False False
+(1, 0) False False
+(1, 1) False False
+(1, 2) False False
+(2, 0) False False
+(2, 1) False False
+bank 3 6 0 1
+(0, 0) False False
+(0, 1) False False
+(0, 2) False False
+(1, 0) False False
+(1, 1) False False
+(1, 2) False False
+(2, 0) False False
+(2, 1) False False
+bank 3 17 1 0
+(0, 0) False False
+(0, 1) False False
+(0, 2) False False
+(1, 0) False False
+(1, 1) False False
+(1, 2) False False
+(2, 0) False False
+(2, 1) False False
+bank 3 18 0 1
+(0, 0) False False
+(0, 1) False False
+(0, 2) False False
+(1, 0) False False
+(1, 1) False False
+(1, 2) False False
+(2, 0) False False
+(2, 1) False False
+bank 3 33 1 0
+(0, 0) False False
+(0, 1) False False
+(0, 2) False False
+(1, 0) False False
+(1, 1) False False
+(1, 2) False False
+(2, 0) False False
+(2, 1) False False
+bank 3 34 0 1
+(0, 0) False False
+(0, 1) False False
+(0, 2) False False
+(1, 0) False False
+(1, 1) False False
+(1, 2) False False
+(2, 0) False False
+(2, 1) False False
+bank 6 3 2 1
+(0, 0) False False
+(0, 1) False False
+(0, 2) False False
+(1, 0) False False
+(1, 1) False False
+(1, 2) False False
+(2, 0) False False
+(2, 1) False False
+bank 6 10 2 1
+(0, 0) False False
+(0, 1) False False
+(0, 2) False False
+(1, 0) False False
+(1, 1) False False
+(1, 2) False False
+(2, 0) False False
+(2, 1) False False
+bank 6 66 2 1
+(0, 0) False False
+(0, 1) False False
+(0, 2) False False
+(1, 0) False False
+(1, 1) False False
+(1, 2) False False
+(2, 0) False False
+(2, 1) False False
+bank 17 3 4 0
+(0, 0) False False
+(0, 1) False False
+(0, 2) False False
+(1, 0) False False
+(1, 1) False False
+(1, 2) False False
+(2, 0) False False
+(2, 1) False False
+bank 17 65 4 0
+(0, 0) False False
+(0, 1) False False
+(0, 2) False False
+(1, 0) False False
+(1, 1) False False
+(1, 2) False False
+(2, 0) False False
+(2, 1) False False

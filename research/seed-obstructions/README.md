@@ -54,7 +54,7 @@ In the same relaxation, [all seven neighborhoods](../seven-neighborhoods/README.
 
 [Two arbitrary insertions](two-insertions/README.md) into a named 31-gate partial seed fail even with the specified rewiring and reordering freedoms. Its 273 rows match the pinned residual decoder in order.
 
-At a total budget of 33, every residual separator needs **at least eleven distinct point-boundary signals and at least nineteen mixed gates**. The [higher-budget checks](ten-higher-mixed/README.md) exclude ten point-boundary signals through 21 mixed gates. Above 21 mixed gates the point-gate lower bound already exceeds the total budget.
+At a total budget of 33, every residual separator needs **at least eleven distinct point-boundary signals and at least twenty mixed gates**. The [higher-budget checks](ten-higher-mixed/README.md) exclude ten point-boundary signals through 21 mixed gates. Above 21 mixed gates the point-gate lower bound already exceeds the total budget.
 
 At 18 mixed gates with eleven point-boundary and seven line-boundary signals, the [eleven-point extension check](eleven-extensions/README.md) excludes every candidate whose point signatures contain a feasible proper subfamily. The checker exhausts all 278 representatives.
 
@@ -69,3 +69,5 @@ At eleven point boundary signals, [the point-side minimum is nine paid gates](po
 With exactly seven line signals, [the two-surplus theorem](two-surplus/README.md) requires at least three extra operand reads at size 33. Such a residual would have at least P+9 mixed gates and hence **at least 20 mixed gates**, since P≥11. At 19 mixed gates the open configurations have eleven point signals with eight or nine line signals.
 
 The exact point costs at boundary widths eleven, twelve, thirteen and fourteen are 9, 5, 0 and 0. At width eleven the last two eight-gate SAT exclusions have independently verified DRAT certificates. At width twelve exactly five point banks attain cost five. These costs allow unrestricted monotone computation after the boundary.
+
+The [nineteen-mixed classification](nineteen-mixed/README.md) excludes all six possible boundary-width and operand-reuse cases at exactly nineteen mixed gates.
