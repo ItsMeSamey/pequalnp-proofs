@@ -1,0 +1,7 @@
+The separation holds for exact weighted sums of Boolean read-once binary formulas. Constant folding and unary absorption bound each atom by O(m²) gates. Each binary gate has a bilinear interpolant a+bu+cv+duv. If d is nonzero, the expression (du+c)(v+b/d)+a−bc/d uses each child once. If d is zero, the gate is affine. Disjoint child variable sets ensure syntactic multilinearity. Equality on the cube therefore identifies the represented polynomial uniquely.
+
+At degrees below m the edge-cover indicator has zero coefficients. Degree-m coefficients are precisely permutation matrices by Möbius inversion. Scalar interpolation in a global dilation variable extracts the permanent with m²+1 scaled copies of the sum. Raz's multilinear formula bound yields m^{Ω(log m)} summands, even with unrestricted real coefficients. Extension fields supply enough interpolation points over a finite base field. The argument concerns exact sums. A threshold at the top already expresses edge cover using 2m read-once ORs. The read-two upper uses an AND of those ORs.
+
+For a universal parity-padded evaluator, fix the program to the edge-cover circuit, fix the output gate index, and leave one slot per edge input live with the rest zero. This gives a restriction, so any read-once sum for the evaluator induces one for edge cover. Polynomially bounded encoding and padding preserve the superpolynomial size consequence relative to total input length.
+
+[Primary theorem by Ran Raz](https://eccc.weizmann.ac.il/report/2003/067/)
