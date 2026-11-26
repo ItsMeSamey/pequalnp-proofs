@@ -50,3 +50,7 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 [Fourier interfaces](fourier-interface/README.md) count affine-factor models on a supplied binary tree in polynomial time times 2^(3w/2), where w is the maximum shared row-space dimension. [Paired principal minors](paired-minors/README.md) show a coNP-completeness barrier for a broader comparison problem associated with the directed marker criterion.
 
 [A clause-violation Gram test](violation-certificates/affine.md) recognizes exact bounded-degree certificates and recovers a model count. [Conditioning and component products](violation-certificates/hybrid.md) enlarge this tractable class. [A width-three grid](violation-certificates/width3.md) separates the tests, while [balanced-cut barriers](violation-certificates/barrier.md) bound the reach of the specified coordinates.
+
+[Fixed-width counting consequences](fixed-width-counting/README.md) derive exact counts under affine and quadratic constraints and a size tradeoff for circuits with fixed-width CNF gates from the October manuscript.
+
+[Hidden cut recovery](violation-certificates/hidden.md) recognizes an equivalent interaction under the stated bounded-width and bounded-degree promise. Polynomial recursive counting requires the same promise on connected restrictions.
