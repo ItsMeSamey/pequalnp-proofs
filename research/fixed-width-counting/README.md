@@ -43,3 +43,5 @@ The [signed interval compiler](intervals.md) gives a parsimonious reduction when
 [Order recovery](recognition.md) removes the supplied-order requirement under the stated interval promise. Run `python3 check_recognition.py` for 1,200 comparisons of order search with graph recognition.
 
 [Quadratic traces](../quadratic-traces/README.md) admit an exact affine cover and partition count obtained from their maximum common isotropic dimension. The two-form binary case has a constructive polynomial algorithm.
+
+[Forest and matching compiler bounds](../forest-compilers/README.md) distinguish succinct decision encodings from exact projected-model representations.
