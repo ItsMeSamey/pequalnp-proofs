@@ -1,0 +1,3 @@
+The independent geometry reviewer checked the released copy of degree/t14-34/eleven-small-components.md at SHA-256 a2aad4c5c2efa3545dcdff8eb5758db1fd118c18fbb7e9b2364daeb629a1b19c. This review covers the 2+4+5 component split, including its pendant triangle, and supersedes the pending-review sentence in the frozen source.
+
+The reviewer checked the OR-reach obstruction to using J as a paid local injection, the deletion bound for a single-use partner, and the branching case after erasing x. The sixth OR is distinct because the required successor can be neither an absorbing injector nor a collector nor H. The argument uses the cited smaller-arity, regularity and collector results.
