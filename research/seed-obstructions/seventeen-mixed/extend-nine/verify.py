@@ -1,5 +1,5 @@
 """Replay the P10 superset filter. Argument 1 is the archived sixteen directory."""
-import shutil
+from export import export_indexed
 import hashlib
 import itertools
 from pathlib import Path
@@ -62,4 +62,4 @@ with tempfile.TemporaryDirectory() as folder:
         if len(sys.argv)>2:
             dest=Path(sys.argv[2])/('duplicate-reps.txt' if mode else 'distinct-reps.txt')
             dest.write_bytes(reps.stdout)
-            shutil.copyfile(families,Path(sys.argv[2])/("duplicate-survivors.txt" if mode else "distinct-survivors.txt"))
+            export_indexed(families,bases,Path(sys.argv[2])/("duplicate-survivors.txt" if mode else "distinct-survivors.txt"))
