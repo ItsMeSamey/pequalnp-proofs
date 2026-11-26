@@ -1,0 +1,7 @@
+Independent chronological breadth-first versus signed protected candidate/fixed-point enumeration, V8 run.
+q=2: 4015 profiles matched as complete sets of inclusion-minimal auxiliary-mask families.
+q=3: 3883 profiles matched as complete sets of inclusion-minimal auxiliary-mask families.
+q=4: 1237 profiles matched as complete sets of inclusion-minimal auxiliary-mask families.
+q=5: 187 profiles matched as complete sets of inclusion-minimal auxiliary-mask families.
+q=6: 25 profiles matched as complete sets of inclusion-minimal auxiliary-mask families.
+All 9347 profiles matched.

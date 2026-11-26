@@ -1,0 +1,5 @@
+2 4015 4015 1659734 Counter({'signed': 4015}) missing []
+3 3883 3883 46820755 Counter({'signed': 2532, 'group': 633, 'port': 362, 'condition-port': 356}) missing []
+4 1237 1237 116614170 Counter({'condition-port': 384, 'condition-group': 323, 'group': 305, 'port': 185, 'signed': 40}) missing []
+5 187 187 91653665 Counter({'group': 121, 'condition-group': 63, 'signed': 3}) missing []
+6 25 25 98589178 Counter({'group': 24, 'ordinary': 1}) missing []
