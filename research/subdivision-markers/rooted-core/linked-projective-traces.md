@@ -1,0 +1,9 @@
+# Linking named terminals to an ordinary projective restriction
+
+Partition the represented binary ground into named T, ordinary reservoir S and remaining ordinary R. Write U=span(T), W=span(S), r=rank(E), k=dim U ≤ m=dim W. Suppose S contains every nonzero point in W. Let κ be the minimum of r(T∪A)+r(S∪(R−A))−r over A⊆R.
+
+If κ=k, every J≤U is attainable as an exact trace. Find a maximum common independent set C on R in the two linear matroids represented modulo U and modulo W. The matroid-intersection min-max formula gives |C|=κ+r−k−m=r−m. Thus span(C) intersects U and W trivially, and W maps bijectively to the quotient by span(C). Choose ordinary columns of S matching the quotient images of a basis of J. Together with C those columns span a space meeting U in exactly J. For possibly dependent named columns use the preimage of J in their coefficient space.
+
+This is a deterministic constructive condition using two-matroid intersection and elimination. Rank-k reservoirs can be sought in n^O(k) time by enumerating ordinary k-tuples and testing all nonzero sums for occurrence, then testing the linkage. Larger supplied reservoirs also work. A mere unrooted minor supplies no such named linkage. Theorem 3.1 of Huynh and van Zwam records Tutte's named-set connectivity theorem: https://arxiv.org/pdf/1304.6488 .
+
+For a single target of dimension d≥1 the same linkage certificate works if fewer than 2^(d−1) points of W are missing. Pull the quotient image of J back to a subspace P of W. Every hyperplane of P omits exactly 2^(d−1) points of P, so remaining columns in P span P. The numerical bound is sharp even when S spans W: take W=U of dimension m>d and remove P minus a hyperplane of P from the ordinary points; take no further ordinary columns. No ordinary subset then spans exactly P. In particular, a fully linked reservoir missing one point still realizes every named plane.
