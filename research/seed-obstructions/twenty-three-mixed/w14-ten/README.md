@@ -1,0 +1,3 @@
+The complete W14/L10 cell at 23 mixed gates is excluded at normalized total cost at most 33. Independent review verified the five component archives and coverage of all 85 S7 cap records. The bounded terminal rerun joined 18 endpoint banks against 8,275 regenerated line masks, retained 18 exact interfaces and rejected all 18. The bulk search uses its primary executions.
+
+Removing this cell from the reviewed 264-triple snapshot leaves 263 distinct width triples and two remaining whole cells at 23 mixed gates, W14/L8 and W14/L9. This subtraction preserves the previously stated normalized raw-width assumptions.
