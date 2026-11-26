@@ -1,0 +1,7 @@
+# Conjunction of arbitrarily many inputs
+
+For m≥1 put one pinned vertex A and the m input vertices x_i on the left shore of an alternating chordless cycle of length 2(m+1). Choose an output z on the right incident to A. Add one private right leaf w_i adjacent solely to x_i, and require z plus the parity of the leaves to equal one.
+
+The two affine rows are the pin A=1 and this checksum. If x_i=1 the leaf guard forces w_i=0, so selected leaves never alter selected cycle vertices. When z=1 the edge Az is selected. Even degree along the chordless cycle therefore forces every cycle vertex, in particular all the inputs. When z=0 the checksum supplies at least one selected leaf, whose input is zero. Conversely for all inputs one select the entire cycle and no leaves. For any other input assignment turn off all right-side cycle vertices and select one leaf at an absent input. This proves the exact conjunction truth table for arbitrary width.
+
+Arbitrary external incidence at x_i can change the propagation argument. See paired-current.md for the general failure when wiring guarded lower gates. For direct two-gate composition take lower six-cycles sharing a pinned right anchor B with outputs equal to the first and last upper inputs. Even at all-zero lower inputs, the six selected vertices A,z,x_first,B,x_last,and the other upper right neighbor of A induce an even cycle. The asserted upper output then passes.
