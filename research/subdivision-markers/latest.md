@@ -9,3 +9,5 @@
 6. **Exact one-marker interfaces on one-hot domains.** onehot-interface.md proves that the rejected bipartite graph must be a disjoint union of complete bipartite components, and the converse holds. Isolating k independent choice pins requires exactly k terminals on their product domain.
 
 7. **Sharp two-sided local equality theorem.** local-equality.md proves exact terminal cost ceil(log₂ m) for one-hot equality with arbitrarily large independent index-local native blocks reading both bits, even cyclic guards and unrestricted global affine disjunctions. Independent determinant/rank audit and GF(8) tests are linked therein. A hidden shared cutset of size f weakens the bound to m≤2^b 3^f.
+
+[Native reductions and matrix fibers](general-next/index.md) collects the ternary rank-surplus equivalence, alternating and bipartite lifts, conditional cyclic algorithms and exact matrix-fiber classifications through rank four.
