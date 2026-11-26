@@ -65,3 +65,5 @@ The [sparse interpolation solver](../sparse-marker/README.md) is deterministic g
 The [occurrence-weight polynomial](../roabp/README.md) can have exponential ordered branching-program width in every variable order. A separate [three-color solver](../three-colors/README.md) decides simultaneous odd counts for its stated alternating guard class.
 
 A [parity matching reduction](../trail-matching/README.md) solves eligible guarded trail presentations, with exact assignment checks through three variables.
+
+The [anchor-completion algorithm](../anchor-completion/README.md) counts models with bounded cross-tree coupling rank. Without that rank bound, even the specified depth-one class is #P-hard.

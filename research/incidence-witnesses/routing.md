@@ -41,3 +41,22 @@ For q=377 keep both inequalities e≥d−h−U and 2e≥N−h−U, the latter fr
     s ≥ 2N+d+h−1−floor g(d)−floor g(h)+max(0,d−h−U,ceil((N−h−U)/2))
 
 is at least 537272 for every integer 0≤h≤d. The target is 537252. The final loop in routing-check.py verifies every h as well as availability of each step.
+
+# A joint degree count for order 378
+
+Set q=378 and d=q²−19q. Let b_L count cheap deletions plus surviving isolates on L, and retain the unmarked surviving L set U (size u). For x an original L vertex let k be its number of neighbors among the r=N−d surviving R vertices, including when x was deleted earlier. Let c(k)=k−1 for k≥3, and zero otherwise. The total of c(k) on U is at most r: every unmarked degree-≥3 vertex has internal degree ≥k−1, and the opposite leaves of these stars are disjoint. Vertices counted in b_L have k≤1. A vertex in both U and b_L must be a surviving isolate, hence has k=0.
+
+For weights w=1,2 write Q_w(k)=(w+1)(k−20)(k−21)/420 and take a_1=4/65, a_2=2/35. Direct integer comparisons for each k from 0 to 379 establish
+
+    Q_w(k) ≥ w·1[k≤1],
+    Q_w(k)+a_w c(k) ≥ 1+w·1[k=0].
+
+Use the second bound when x belongs to U, and the first otherwise. It follows that
+
+    w b_L+u ≤ a_w r + sum_{all original L vertices x} Q_w(k_x).
+
+Two distinct surviving R vertices share exactly one original L neighbor. (Distinct points have a unique common line by the plane axioms. Distinct lines meet in one point by the usual degree count from any point on the first line, or one can use ≤1 here since Q_w has positive quadratic coefficient.) Thus sum k=(q+1)r and sum k²≤qr+r². Evaluating gives b_L+u≤13355 and 2b_L+u≤19766. The original gate inequality, with e≥d−h−u and 2e≥N−h−u, therefore implies
+
+    s ≥ 2N+d−1−floor g(h)+max(d−13355,ceil((N+h−19766)/2)).
+
+The final loop of routing-check.py verifies these inequalities by integers and checks every h, yielding s≥542462 against the target 541535.
