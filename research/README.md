@@ -68,3 +68,5 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 [Missing-cell rigidity](../lean/Research/MissingCellRigidity.lean) proves an OR-count lower bound on rectangular one-hot pairs for a binary monotone circuit whose only rejected cell is (i,j). Equality forces every gate to be OR and the output cone to have the stated fresh binary-tree form.
 
 [The determinant-nullity budget](../lean/Research/DeterminantBudget.lean) verifies the matrix-polynomial step of the replacement-layout bound in Lean. [Modular measurements](fourier-interface/binary.md) and [prime-power reconstruction](fourier-interface/padic.md) give interpolation variants with the stated runtime envelope.
+
+[A singleton-transform bound](incidence-witnesses/antichain.md) extends the scalar incidence inequality Nq ≤ 100s through order 320 using adaptive deletions. [Sparse parity witnesses](replacement-layouts/layout-witness-product.md) extend the direct interpolation obstruction to the specified dynamic-programming cost measure.

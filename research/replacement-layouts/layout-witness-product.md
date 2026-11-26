@@ -1,0 +1,11 @@
+# A sparse vanishing product inside the parity pipeline
+
+Dias and Lima's Lemma 6.2 multiplies all selected occurrence diagonal coefficients. Remark 6.3 notes the full parity-factor occurrence count can exceed the recovery degree. On the family in layout-pipeline.md use a simple cubic expander. Assign each surviving edge uv to a permanent parity row f(e) retaining its unique monomial. Multiply the diagonal coefficients of P_{f(e),u} and P_{f(e),v} for every surviving edge, including duplicate occurrences with multiplicity. The product has ≤3n factors, equals one at zero, and has degree ≤3nR. The actual parity routine with k=2 and ℓ=n+1 recovers all polynomials through d_H=2R(m_test+2n)≥4nR. Thus any Hermite recovery rule exact through that budget has some node t where at most q_t chosen occurrences vanish. Otherwise the test product vanishes in every jet and therefore could not be recovered at zero. The statement also holds for Hasse jets over fields admitting the stated recovery.
+
+Let I_t be the Dias–Lima syntactic interaction graph: each factor forms a clique on its target group and all outside groups on which any interpolated input row depends at t. At this node delete from G−S the variable of each vanished occurrence copy, at most q_t variables. Each remaining edge has both endpoint groups in its chosen factor's clique. Blowing up each group into its at most s_t variables covers the remaining graph. Converting bags of a width-w_t decomposition of I_t into unions of their variable groups, then adding deleted vertices to every bag, gives
+
+    tw(G−S) ≤ (w_t+1)s_t − 1 + q_t.
+
+Cubic expanders have treewidth Ω(n). Removing o(n) vertices S decreases treewidth by at most o(n). Thus the Dias–Lima DP-type charging model incurs at least 2^{Ω(√n)}. Either q_t=Ω(n), causing their capped correction-subset charge to be exponential, or (w_t+1)s_t=Ω(n), causing one of the two table charges to reach 2^{Ω(√n)}. This charges the syntactic interaction graph. No general lower bound for evaluators exploiting algebraic cancellation, different representations, or sparse tables follows.
+
+Source: [Dias and Lima, Sections 5–8](https://arxiv.org/html/2611.00517v1#S5). The product and bag lifting adapt their proofs. The extension uses a bounded-degree witness graph surviving parity sketch expansion with only 3n selected occurrences.

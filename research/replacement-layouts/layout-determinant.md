@@ -21,3 +21,5 @@ Constants depend only on η,Δ. Equivalently τ≥c Q^(−1/2)exp(−C R²/Q). T
 These inequalities apply to the direct replacement layout specified above. The precision-weighted construction in Appendix D has a different accounting argument. [Manuscript source](https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/build/main_full_version.tex)
 
 [Lean determinant-nullity budget](../../lean/Research/DeterminantBudget.lean). [A complementary group-support budget](layout-group-budget.md) also follows from the diagonal replacement polynomials.
+
+[Finite rank checker](layout_verify.py) tests 48 F₅ layouts, 3,072 principal submatrices and 24,576 group colorings.
