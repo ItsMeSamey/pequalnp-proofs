@@ -1,0 +1,2 @@
+'ThresholdNativeRowSelection.both_losses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdNativeGraphMoments.selected' depends on axioms: [propext, Classical.choice, Quot.sound]

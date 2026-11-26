@@ -1,0 +1,3 @@
+'ThresholdActualCoarseLoss.native' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdActualFineLoss.native' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdSharpGlobalLower.rational_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
