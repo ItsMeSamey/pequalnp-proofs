@@ -1,0 +1,1 @@
+'ThresholdUnrestrictedGraph.regular_graph_or_delete' depends on axioms: [propext, Classical.choice, Quot.sound]
