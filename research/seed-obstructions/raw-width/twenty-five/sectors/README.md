@@ -11,3 +11,5 @@ The nonempty high-owner archive completes the case with one triply read mandator
 The serial both-empty archive excludes comparable twice-read extra endpoints with no compulsory point at either endpoint, including indirect ancestry. The assembly reviewer replayed all 167 pricing cases, the holder counts 75 to 4 to 1, and the four terminal pairs. Together with the parallel-empty archives this treats every pair of empty twice-read extras.
 
 The triply read extra endpoint with a nonempty compulsory set is excluded by the 167 producer solver results in the triple-X archive. Independent source review covered the domain and filter hypotheses. A separate full numerical replay of these 167 results was pending at publication. Together with the empty-set archive this completes the single triply read extra endpoint case. Other two-endpoint assignments remain open.
+
+For two comparable twice-read extra endpoints, the upstream-only archive excludes the case in which only the upstream endpoint holds compulsory singleton points. The producer ran the complete replay, and an independent reviewer cleared the source.
