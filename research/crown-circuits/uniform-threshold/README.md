@@ -6,7 +6,7 @@ For the minimum size of a binary monotone AND/OR circuit with unrestricted fanou
 
 The lower bound matches the coefficient of the three-level construction. Two independent mathematical reviews checked the frozen lower-bound manuscript and its use of the earlier unrestricted argument. The full asymptotic theorem has mathematical proof review. [Sharp lower bound](unrestricted-sharp-receiver.md) · [Matching construction](three-level-matching.md) · [Codegree estimate](matching-codegree-constant.md)
 
-The construction also gives a one-sided upper error of O(n^(7/30)). [Refined construction](short-signatures.md)
+Writing M(n) for the three displayed terms, the quantitative bounds are M(n) − O(n^(1/5)) ≤ C(n) ≤ M(n) + O(n^(7/30)). The lower estimate uses weighted four-cycle counting in the effective receiver graph. [Quantitative reduction](sharp-receiver-error.md) · [Weighted count](weighted-matching-error.md) · [Upper construction](short-signatures.md)
 
 The earlier unrestricted lower bounds of order n^(3/10) and the private-receiver coefficient approximately 1.15238806926 are retained below. [Order of the third term](unrestricted-matching-exponent.md) · [Private-receiver bound](unrestricted-private-pins-v2.md) · [Earlier coefficient](unrestricted-private-moment.md)
 
