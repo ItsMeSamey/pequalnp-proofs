@@ -1,0 +1,19 @@
+# Weighted port flow for scalar projective incidence
+
+Let s be the gate count of a normalized live binary monotone circuit on 2N essential point and line variables, e=s−2N+1, k=q+1. Partition into read-once components as in the producer decomposition in antichain.md: a producer has fanout f≥2, uses f ports, and consumes f−1 excess, summing to e. All local ordinary variables leave a component through its root; none affects an incoming port.
+
+For any two local variables one can specialize the scalar output to their OR. For two of the same polarity set a common neighbor to one and all remaining inputs zero. For a point x and line z choose p on z distinct from x and a line l through x different from z and avoiding p; activate p,l. Then the two singletons for x,z separately give positives against a zero baseline. Monotonicity supplies the both-present corner, so these tests need at most three total selected inputs to force OR. The inlets and exterior variables remain fixed. In a read-once component such a specialization forces the lowest common ancestor of x,z to be OR: the two child functions and the downstream unary map must be nonconstant unary identities. Incident local vertices are therefore impossible because setting all other variables to zero specializes their pair to AND. Every neighbor of a local variable is exterior.
+
+A producer owning v has accepted singleton support contained in {v}. Otherwise let r≠v be an activating singleton. Choose a neighbor y of v such that r+y is not an edge (two same-side vertices have at most one common neighbor, and same-side inputs do not form edges). From r+y the exit is one and the outside variables dominate those from v+y, falsely forcing acceptance.
+
+Call a local variable bad if it is the sole ordinary variable of a nonoutput component. Write B for their count and G=2N−B. Every one of the G other variables x has a private AND on the path from x up to its first common ancestor with another ordinary variable, excluding the common ancestor. Indeed that ancestor is OR; if the path were all OR then x would force it to one. For another local z in its other child choose exterior y adjacent to z but not x. The assignment x+y would then dominate z+y at the common ancestor, with identical inputs elsewhere, falsely forcing acceptance. For a single local variable owned by the output component, the same private AND exists on its path to the output, since x alone is rejected. For each x choose one such AND. Its off-path sibling subtree contains only port leaves, and on each of the k incident singleton inputs y that subtree must be one: otherwise the only path by which x could sensitize the output at y is blocked. The selected sibling subtrees are disjoint.
+
+Give any signal weight equal to the smaller of k and its number of accepted singleton inputs from either part. This weight is subadditive for binary AND and OR. The disjoint off-path sibling trees demand at least kG total weight of their port occurrences in nonempty components. For each empty producer component the total incoming port weight is at least its exit weight. Subtracting these latter demands from total outgoing port occurrences gives
+
+    kG ≤ sum_{nonempty producers} f·weight + sum_{empty producers} (f−1)·weight.
+
+Let e0 be the excess fanout of empty producers. Nonempty producers have weight at most one and number at most 2N. Therefore the right side is at most 2N+e+(k−1)e0. Since the B bad components are distinct nonempty producers, e0≤t=e−B. Set δ=4N−1−s. Then G=δ+t. Substitution yields (q+2)δ≤4N−t, giving
+
+    s ≥ 4N−1−floor(4N/(q+2)).
+
+The derivation presumes q≥2. The original sparse promise supplies every requested assignment. The integer inequality 100s≥Nq holds through order 399. At q=399, s≥636811 against 636808 required. The bound gives 640007 against 641604 required at q=400. This is an audited mathematical proof, not a Lean formalization.
