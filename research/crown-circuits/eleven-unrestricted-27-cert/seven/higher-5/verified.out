@@ -1,0 +1,5 @@
+0 {'disjoint_signed_ports': 37, 'full0': 55, 'matching': 10}
+1 {'disjoint_signed_ports': 232, 'full1': 869, 'matching': 347, 'too_many_pins': 38}
+2 {'disjoint_signed_ports': 455, 'full2': 5251, 'matching': 5973, 'too_many_pins': 1856}
+3 {'disjoint_signed_ports': 731, 'too_many_pins': 40379, 'two_cycle': 40401, 'two_tag_shape': 9157}
+Verified 105791 physical templates at dirty count 5

@@ -1,0 +1,22 @@
+27 gates, including four ANDs; all 2048 Boolean assignments verified
+Verified four all-clean widths, six one-dirty classes, 68 two-dirty templates.
+0 {'full0': 11}
+1 {'full1': 63}
+2 {'full2': 215, 'matching': 43}
+3 {'too_many_pins': 93, 'two_cycle': 429, 'two_tag_shape': 300}
+Verified 1154 physical templates at dirty count 3
+0 {'disjoint_signed_ports': 6, 'full0': 31}
+1 {'full1': 310, 'matching': 36}
+2 {'full2': 1411, 'matching': 811, 'too_many_pins': 119}
+3 {'too_many_pins': 3257, 'two_cycle': 6163, 'two_tag_shape': 2203}
+Verified 14347 physical templates at dirty count 4
+0 {'disjoint_signed_ports': 37, 'full0': 55, 'matching': 10}
+1 {'disjoint_signed_ports': 232, 'full1': 869, 'matching': 347, 'too_many_pins': 38}
+2 {'disjoint_signed_ports': 455, 'full2': 5251, 'matching': 5973, 'too_many_pins': 1856}
+3 {'disjoint_signed_ports': 731, 'too_many_pins': 40379, 'two_cycle': 40401, 'two_tag_shape': 9157}
+Verified 105791 physical templates at dirty count 5
+0 {'capacity': 58, 'disjoint_signed_ports': 3, 'full0': 1, 'matching': 3, 'signed_port': 122, 'too_many_pins': 2}
+1 {'capacity': 316, 'disjoint_signed_ports': 79, 'full1': 62, 'matching': 134, 'signed_port': 2576, 'too_many_pins': 67}
+2 {'capacity': 429, 'disjoint_signed_ports': 885, 'full2': 748, 'matching': 2637, 'signed_port': 27724, 'too_many_pins': 2458}
+3 {'capacity': 140, 'disjoint_signed_ports': 4530, 'signed_port': 197730, 'too_many_pins': 50645, 'two_cycle': 19881, 'two_tag_shape': 2088}
+Verified 313318 physical templates at dirty count 6

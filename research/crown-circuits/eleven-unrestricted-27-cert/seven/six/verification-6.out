@@ -1,0 +1,5 @@
+0 {'capacity': 58, 'disjoint_signed_ports': 3, 'full0': 1, 'matching': 3, 'signed_port': 122, 'too_many_pins': 2}
+1 {'capacity': 316, 'disjoint_signed_ports': 79, 'full1': 62, 'matching': 134, 'signed_port': 2576, 'too_many_pins': 67}
+2 {'capacity': 429, 'disjoint_signed_ports': 885, 'full2': 748, 'matching': 2637, 'signed_port': 27724, 'too_many_pins': 2458}
+3 {'capacity': 140, 'disjoint_signed_ports': 4530, 'signed_port': 197730, 'too_many_pins': 50645, 'two_cycle': 19881, 'two_tag_shape': 2088}
+Verified 313318 physical templates at dirty count 6

@@ -1,0 +1,5 @@
+0 {'full0': 11}
+1 {'full1': 63}
+2 {'full2': 215, 'matching': 43}
+3 {'too_many_pins': 93, 'two_cycle': 429, 'two_tag_shape': 300}
+Verified 1154 physical templates at dirty count 3
