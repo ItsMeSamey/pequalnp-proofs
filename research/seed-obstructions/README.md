@@ -29,3 +29,5 @@ A [complete suffix search](suffix-search/COPY.md) excludes freezing the first 15
 [An eighth point signal](../extra-point/README.md) still needs at least 20 point gates if the other seven point signatures are the canonical neighborhoods. Together with at least 14 mixed gates this excludes such an architecture at size 33.
 
 [Eight point signatures](eight-signatures/fourteen.md) exclude 14 mixed gates at total size 33 by classifying all 202 noncanonical signatures. Any size-33 solution therefore requires at least 15 mixed gates.
+
+[A single extra read](nine-boundary.md) excludes the remaining six eight-point families at 15 mixed gates. Any 33-gate separator therefore requires at least nine point-side boundary signals.
