@@ -1,0 +1,9 @@
+# Saturation of a direction cube
+
+Consider a fixed monotone binary circuit with k unresolved AND gates. Other AND gates may have been replaced by selected operands. Resolve the k gates by directions. Each resolved output is an OR of input flags and constants. If the circuit must reject each singleton edge of a simple host and accept every union of two distinct edges, each of the e singleton edges needs its own direction: an OR rejecting two edges also rejects their union.
+
+Suppose e=2^k. Every direction then has a different rejected edge. Fix one direction and trace the output backwards through both arms of OR gates and the selected arm of each unresolved AND gate. Every unresolved AND occurs in the trace. Otherwise flipping its bit leaves the trace unchanged, duplicating the rejected edge. Thus all k switches are reached at every setting.
+
+The omission directions of any flag form a subcube, possibly empty. The flag is reached either unconditionally by a path with no switch, or after the last unresolved switch on some path. In the latter case it is reached whenever that switch selects the corresponding arm: the switch is always reached and the subsequent path contains no further switch. Thus its inclusion set is a union of signed one-bit conditions and constants. This permits arbitrary fanout.
+
+Consequently K(3,3) minus one edge admits no decoder with three ANDs at any OR cost. For each pair of distinct rows choose a common column. Each row omission cube meets the omission cube of that column to reject their edge. If the row cubes meet each other, all three cubes meet since compatible coordinate restrictions have the pairwise intersection property. That direction would reject two edges. Thus the three row cubes are disjoint. Their degrees 3,3,2 force cardinalities at least 4,4,2, exceeding eight. The argument applies also on a restricted direction face whenever all eight settings are needed for these edges.
