@@ -18,3 +18,5 @@ g++ -std=c++20 -O2 one-active-check.cpp -o /tmp/crown-one-active
 For any size-40-or-smaller 12-crown circuit, [the subcrown theorem](../../lean/Research/CrownSubcrownMarkers.lean) forces at least four diagonals where two or more OR gates are true. If the circuit uses at most 23 OR gates, [the wiring theorem](../../lean/Research/CrownOrWiring.lean) gives 21 OR gates with pairwise disjoint two-element predecessor sets.
 
 [Uniform diagonal signatures](../../lean/Research/CrownUniformTrace.lean) give a k(k−1) AND bound for a k-element subalphabet when k≥3. A signature class in a size-40-or-smaller 12-crown circuit therefore contains at most four labels.
+
+[Baseline normalization](../../lean/Research/CrownZeroOrNormalize.lean) and [distinct saturation](../../lean/Research/CrownDistinctSaturation.lean) require at least two different two-active-OR signatures under the size-40 and 23-OR hypotheses.
