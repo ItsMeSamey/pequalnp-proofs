@@ -1,0 +1,35 @@
+{
+  "commit": "79b1939e0586292c4a3e17332caaa666b213b364",
+  "tree": "5f92e0ca386e837e708b826adec45c7991e373bd",
+  "project_commit": "b104ff3988c176aae2db960c2a71ddf975ef047c",
+  "defs_source_sha256": "76a3954170372cea159b1b31fcdd01f7aeffe00286e88964ebae2bc34b1971c5",
+  "defs_object_sha256": "d3e6f162686d750a100f97338abcecab6f40b1b52cf6a120003134afb650bdcf",
+  "lean_sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "lake_sha256": "d0af863cde532caaef1b1bee0d63ec47100208e33e488309cb80abc88b8f1509",
+  "modules": [
+    {
+      "module": "Mask818815Upper",
+      "source_sha256": "27d00c8bfe77bf3b3d07829bc6e9bbf79c730b46d29fc868f024eb8c6f664ae8",
+      "object_sha256": "3e0f23afeab745801342df4ee688d140080f2f9d53b3d0398c79de15921a4ea7",
+      "producer_object_sha256": "3e0f23afeab745801342df4ee688d140080f2f9d53b3d0398c79de15921a4ea7",
+      "dependencies": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/build/lib/lean/PEqualNP/Defs.olean"
+      ]
+    },
+    {
+      "module": "L_meta_23368",
+      "source_sha256": "37619bff3d8667a5448e0d2e1b37bd48d3aeca75d444854fd10080d92bb5734b",
+      "object_sha256": "1a454281675ca82452fd52cf9ed2a618e7db46ff5f63a9fb994d5293d94782d3",
+      "producer_object_sha256": "1a454281675ca82452fd52cf9ed2a618e7db46ff5f63a9fb994d5293d94782d3",
+      "dependencies": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/build/lib/lean/PEqualNP/Defs.olean"
+      ]
+    }
+  ],
+  "lower_axioms": "'PEqualNP.Outside.L_meta_23368' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "upper_axioms": "'Mask818815.upper' depends on axioms: [propext, Quot.sound]"
+}
