@@ -20,3 +20,5 @@ The bounded-occurrence SAT case formalizes a classical result. [Tovey's paper](h
 For L-meta-5882, [PlaneSampleRectangleCost](../lean/Research/PlaneSampleRectangleCost.lean) proves that every unshared OR of bicliques satisfying the sample promise needs at least 64 gates. Just thirteen translations of one negative mask rule out all non-incidence cross pairs. The 63-gate search permits other circuit structures and shared computations.
 
 The [21-gate candidate](../lean/Research/EdgeCandidate.lean) for the separate L-meta-8032 graph passes 39 of 40 tests and has three dirty AND gates. It misses edge (1, 4).
+
+[PlaneSixLines](../lean/Research/PlaneSixLines.lean) constructs the 29-gate first part of a proposed L-meta-5882 reduction. It processes six lines and exposes twelve point-pair ORs, six larger ORs, and the aggregate output for reuse. The remaining part must use at most 34 gates to classify all required samples.
