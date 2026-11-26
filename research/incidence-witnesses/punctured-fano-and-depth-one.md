@@ -1,0 +1,9 @@
+# Exact punctured-Fano minimum at AND-depth one
+
+On the same 16 flags and independent two-by-two negatives, every trimmed constant-free circuit with at most one AND on each input-output path needs 21 binary gates. The 21-gate star construction attains it.
+
+Each physical AND has pure-OR operands and reaches the output through ORs. A raw-to-output OR-only path would accept a forbidden singleton, so no bottom OR feeds the output aggregation without crossing an AND. Each AND's two nonempty singleton supports must be disjoint and on opposite shores: same-shore pairs and singletons reject. All cross-pairs between those supports must be incidence flags, hence they form a biclique. No four-cycle is present, so it is a star. Assign each of the 16 flags to one accepting AND, using m ANDs. Give each multi-edge product its actual star center and orient a single-edge product arbitrarily.
+
+At any given center v, let d be the number of assigned edges and k the number of assigned ANDs there. The union of the k neighbor-side OR cones connects at least d distinct raw labels in at most k components, forcing at least d−k distinct ORs. Replace singleton-support ORs by their identical input signals first. A nonsingleton OR cannot belong to two different centers: each support lies within one center's neighborhood and distinct neighborhoods intersect in at most one raw. The output aggregation requires at least m−1 further ORs by the same component count on a connected graph with at least m AND sources. Thus total size is ≥m+(16−m)+(m−1)=15+m. Points (2,3,4,5,6,7) matched with lines (1,4,3,5,7,6) in order give six disjoint flags. Each star covers at most one, so m≥6.
+
+No target solver is used here. Independent audit confirmed disjoint physical charges, the two-by-two scope and the matching. A 20-gate witness of unrestricted AND-depth remains possible.
