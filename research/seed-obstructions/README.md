@@ -51,3 +51,5 @@ Every read-once residual architecture with eight line leaves now needs at least 
 [The 17-mixed-gate exclusion](seventeen-mixed/README.md) raises the necessary mixed-gate count at total budget 33 to 18. Its replay driver regenerates the signature families and checks both remaining mixed cone shapes.
 
 In the same relaxation, [all seven neighborhoods](../seven-neighborhoods/README.md) require exactly 21 point gates even without pair-rejection constraints. The final search covers 8,128 graph families, of which 1,087 require SAT exclusion.
+
+[Two arbitrary insertions](two-insertions/README.md) into a named 31-gate partial seed fail even with the specified rewiring and reordering freedoms. Its 273 rows match the pinned residual decoder in order.
