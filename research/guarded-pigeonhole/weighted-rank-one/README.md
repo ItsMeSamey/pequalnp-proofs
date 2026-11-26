@@ -1,0 +1,23 @@
+# Cubic ordinary PC for a dense weight marker on rank-width-one graphs
+
+Let G be a simple graph of binary rank-width at most one. Take Boolean homogeneous guards xᵢΣⱼAᵢⱼxⱼ=0 over GF(2), any individual pins xᵢ=bᵢ and one arbitrary affine weight marker Σwᵢxᵢ=t. Every infeasible instance has an ordinary polynomial-calculus refutation of degree at most three. A supplied width-one decomposition gives a polynomial-time witness algorithm. Triangles are allowed. Conflicting pins refute linearly.
+
+## Local representation
+
+For a node S of the vertex decomposition, choose an active vector spanning the column space of A[S,outside], or zero for the zero space. Its dot product with the selected variables is the outgoing bit. An incoming bit z adds z times the active vector to the neighborhood-parity vector in S. The node table is the set of triples (outgoing,incoming,weight parity) realizable using its modified guards and pins.
+
+For children with active vectors U,V, their cross adjacency is aUVᵀ for a bit a. The parent's active vector restricts to bU,cV on the two children for bits b,c. These facts follow by projecting the rank-one child cut matrices onto the sibling and outside. If a relevant column space is zero use zero for the coefficient. Write x,y for child outgoing bits. Their incoming bits are ay+bz and ax+cz, and the parent outgoing bit is bx+cy. Thus each join has one of eight shapes a,b,c. On a leaf with selected bit k, active bit d and incoming z the guard is kdz=0. There are two leaf weights and three pin choices, including absence of a pin. Child assignments witnessing compatible triples glue independently, so the tables recover all root weight values and witnesses.
+
+## Degree-preserving composition
+
+Write p,q for the two child weight parities. In five symbolic Boolean variables x,y,z,p,q, a state indicator at the left child is the atom of (x, ay+bz, p); at the right child it is the atom of (y, ax+cz, q). A parent atom tests (bx+cy, z, p+q). Each atom is the product of its three affine agreement literals. The premises are the atoms equal to zero for missing child states. The finite calculation checks that every missing parent atom follows through degree three from the missing child atoms, using ordinary PC and Boolean axioms.
+
+At a leaf a missing atom reduces to a function on k,z. Express it as the sum of its Boolean point indicators. Each point violates the pin or the leaf guard; its indicator is a multiple of the pin of degree at most two, or equals kz when the guard is violated. Reducing the original three-literal expression costs at most degree three.
+
+The inductive claim derives each missing atom from the node guards modified by z times its active vector, and its pins. When invoking a child proof substitute the appropriate incoming linear form for the child's external input. Its modified axioms become exactly the parent guards on that child's vertices. In the symbolic join proof replace x,y by the actual outgoing linear forms and p,q by the two actual weight sums. Affine substitution preserves the degree: multiplication by a linear form uses ordinary variable multiplications and linear combinations, and a Boolean axiom on any affine form is a linear combination of the Boolean axioms in characteristic two. Squarefree reductions through degree three use only original axioms through that degree. At the root substitute z=0. If the target weight is missing, summing its two forbidden atoms over the possible outgoing bit gives zero for the weight-target indicator, contradicting the input marker. This resulting proof uses no extension variables.
+
+## Finite verification
+
+Compile check.cpp as C++17 and run it. The checker generates the closure of the twelve leaf choices under the eight join shapes. It finds 64 reachable tables and tests all 32,768 combinations of shape and child tables. It computes semantic parent tables by enumerating all 32 assignments on the five symbolic bits. A binary Möbius transform gives the squarefree polynomial for every atom, which must have degree at most three. Over the 26 squarefree monomials of degree at most three the checker closes the missing child atoms under Gaussian elimination and multiplication by each variable of derived lines of degree at most two. Every missing parent atom belongs to that span. This finite verification concerns the possible proof steps, independently of graph size and tree depth. [Checker](check.cpp)
+
+An [independent truth-table verifier](rw1_cubic_check.cpp) also finds 64 types and 32,768 joins. It checks all 146,340 absent parent atoms using pointwise products and third Boolean differences to find the degree-at-most-two part of each row space.
