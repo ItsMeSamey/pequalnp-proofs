@@ -1,0 +1,7 @@
+# A finite gap between the two common-zero minima
+
+Fix L≥4. Subdivide every edge of K₄ into a path of length L. Attach a triangle at one original vertex as a one-vertex sum. This gives a connected simple bridgeless graph. Let a,b,c,d be the original vertices. Each path carries a constant two-bit flow. Tag one edge of the triangle and one arbitrary segment on each of the ab and cd paths by the two-bit identity. Set the target to zero. All other tags vanish. If z is the common triangle color, the checksum equation is z=f_ab+f_cd.
+
+Every proper flow of the original K₄ has f_ab=f_cd, so a flow using every K₄ edge forces z=0. Such a flow exists and has exactly the three triangle zeros. If any original K₄ edge is zero, an entire length-L path is zero. Thus the unrestricted minimum number of zeros is 3. Independence of the zero set forces z≠0, since the triangle is a cycle. Hence the independent-zero minimum is at least L. For equality set f_ab=0, f_ac=f_ad=01, f_bc=f_bd=10 and f_cd=z=11. Its zeros are exactly the ab path, which is independent. Consequently δ=L and the physical minimum equals m+2L, with m=6L+3. The two zero minima can therefore differ without bound even when both are finite and there are just two checksum bits. Zero-padding the target and the maps works for any larger fixed number of bits.
+
+The triangle remains monochromatic: its two private vertices have degree two. Its two incidences at the shared vertex cancel, so conservation on the K₄ portion is unaffected. This argument also verifies directly every possible flow on the one-vertex sum.
