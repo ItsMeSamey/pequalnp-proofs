@@ -1,0 +1,3 @@
+# Thirteen point wires and a two-label eighth line
+
+At total residual size at most 33 with 22 mixed gates, this certificate excludes an eighth line signal supported on exactly two labels at point prices through ten. It permits repeated physical point slots in the relaxed boundary used by the twelve-point transfer. The three outside-slot counts of eight, nine and ten give 51,022, 4,290 and 64 configurations respectively. The repaired enumeration permits an outside nonbase mask to be reused. The source received independent review. Higher line-support sizes need separate exclusions, and the full thirteen-point eight-line cell remains open. [Checker and reproduction instructions](w13-line-pair-virtual.zip)
