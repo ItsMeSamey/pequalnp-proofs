@@ -39,4 +39,6 @@ With zero or one spare use, [private positive and negative pairs](../seed-obstru
 
 [Four-line restrictions](../four-line-restrictions/README.md) independently give the same lower bound. Each of the 35 restrictions costs exactly 19 gates with every original free point OR retained.
 
-The [point-deletion proof](../point-deletion-core/README.md) raises the residual lower bound to 27 gates and the unrestricted raw suffix lower bound to 28.
+The [point-deletion proof](../point-deletion-core/README.md) raises the residual lower bound to 28 gates and the unrestricted raw suffix lower bound to 29.
+
+The [front-free branch](../front-free/README.md) needs at least 34 gates when wire 54 is omitted.

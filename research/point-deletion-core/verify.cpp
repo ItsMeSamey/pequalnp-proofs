@@ -7,14 +7,10 @@
 #include <iostream>
 
 using Mask = std::uint64_t;
-using Negatives = Mask __attribute__((vector_size(32)));
+using Negatives=Mask;
 int num_inputs, num_pos, num_neg;
 constexpr Mask bit(int i) { return Mask{1} << i; }
-
-bool any(Negatives set) {
-    return (set[0] | set[1] | set[2] | set[3]) != 0;
-}
-
+bool any(Negatives x) { return x!=0; }
 Mask component(Mask vertices, const std::array<Mask,64> &edges) {
     Mask seen = 0, frontier = vertices & -vertices;
     while (frontier) {
@@ -67,12 +63,15 @@ bool incompatible(Mask live, int slack, const std::array<unsigned,64> &pos, cons
     return false;
 }
 struct Search {
+    std::array<std::array<int,64>,64> perms;
+    Mask symmetry=0;
     std::array<Mask, 28> positive_rows{};
     std::array<unsigned, 64> positive_columns{};
     std::array<Negatives, 64> negative_columns{};
     Negatives all_negatives{};
 
-    bool possible(Mask live, int slack, int next = num_inputs, int previous = -1) {
+    bool possible(Mask live, int slack, int next = num_inputs, int previous = -1, Mask group=0) {
+        if(previous<0)group=symmetry;
         if (std::popcount(live) == 1) return true;  // Conservative terminal acceptance.
         std::array<Mask, 64> and_partners;
         and_partners.fill(live);
@@ -112,6 +111,15 @@ struct Search {
             for (Mask left = live & (bit(j)-1); left; left &= left - 1) {
                 int i = std::countr_zero(left);
                 Mask operands = bit(i) | bit(j);
+                Mask stable=0,swapping=0;
+                bool canonical=true;
+                for(Mask g=group;g;g&=g-1) {
+                    int k=std::countr_zero(g), a=perms[k][i], b=perms[k][j];
+                    int lo=std::min(a,b),hi=std::max(a,b);
+                    if(hi<j || (hi==j && lo<i)) {canonical=false;break;}
+                    if(hi==j && lo==i) {stable|=bit(k); if(a!=i)swapping|=bit(k);}
+                }
+                if(!canonical)continue;
                 for (bool conjunction : {false, true}) {
                     int recipe = (j*64 + i)*2 + conjunction;
                     if (recipe <= previous) continue;
@@ -120,21 +128,28 @@ struct Search {
                     auto pos = conjunction ? positive_columns[i] & positive_columns[j]
                                            : positive_columns[i] | positive_columns[j];
                     if (!pos || !any(all_negatives & ~neg)) continue;
-                    bool redundant = false;
-                    for (Mask rest = live; rest; rest &= rest - 1) {
-                        int r = std::countr_zero(rest);
-                        if (!(pos & ~positive_columns[r]) && !any(negative_columns[r] & ~neg)) {
-                            redundant = true;
-                            break;
-                        }
-                    }
-                    if (redundant) continue;
-
                     Mask allowed = 0;
                     if (conjunction ? bool(and_partners[i] & bit(j))
                                     : !any(witnesses[i] & negative_columns[j])) allowed |= bit(i);
                     if (conjunction ? bool(and_partners[j] & bit(i))
                                     : !any(witnesses[j] & negative_columns[i])) allowed |= bit(j);
+                    if (2-std::popcount(allowed)>slack)continue;
+                    bool redundant=false;
+                    for(int r=0;r<next;++r) {
+                        if(!(pos&~positive_columns[r]) && !(negative_columns[r]&~neg)) {redundant=true;break;}
+                    }
+                    if(redundant)continue;
+                    for(int rb=1;rb<=j && !redundant;++rb) {
+                        for(int ra=0;ra<rb;++ra) {
+                            int old=(rb*64+ra)*2;
+                            if(old>=recipe)break;
+                            auto pa=positive_columns[ra],pb=positive_columns[rb];
+                            auto na=negative_columns[ra],nb=negative_columns[rb];
+                            if(!(pos&~(pa|pb)) && !((na|nb)&~neg)) {redundant=true;break;}
+                            if(old+1<recipe && !(pos&~(pa&pb)) && !((na&nb)&~neg)) {redundant=true;break;}
+                        }
+                    }
+                    if(redundant)continue;
                     for (Mask retire : {operands, bit(i), bit(j), Mask{0}}) {
                         int cost = 2 - std::popcount(retire);
                         if (cost > slack || (retire & ~allowed)) continue;
@@ -145,7 +160,11 @@ struct Search {
                             bool value = conjunction ? (row & operands) == operands : bool(row & operands);
                             row = (row & ~output) | (value ? output : 0);
                         }
-                        if (possible((live & ~retire) | output, slack-cost, next+1, recipe)) return true;
+                        Mask nextgroup=stable;
+                        if(retire==bit(i) || retire==bit(j)) {
+                            nextgroup &= ~swapping;
+                        }
+                        if (possible((live & ~retire) | output, slack-cost, next+1, recipe,nextgroup)) return true;
                     }
                 }
             }
@@ -158,7 +177,7 @@ int main(int argc, char **argv) {
     int budget, positives, negatives, num_cuts;
     if (!(std::cin >> budget >> num_inputs >> positives >> negatives >> num_cuts)) return 2;
     num_pos=positives;num_neg=negatives;
-    if (positives>28 || negatives>245 || num_inputs+budget>63) return 2;
+    if (positives>28 || negatives>63 || num_inputs+budget>63) return 2;
     Search search;
     for (int k = 0; k < positives; ++k) {
         Mask &x = search.positive_rows[k];
@@ -168,13 +187,21 @@ int main(int argc, char **argv) {
     for (int k = 0; k < negatives; ++k) {
         Mask row;
         if (!(std::cin >> row) || row >= bit(num_inputs)) return 2;
-        search.all_negatives[k/64] |= bit(k%64);
-        for (; row; row &= row-1) search.negative_columns[std::countr_zero(row)][k/64] |= bit(k%64);
+        search.all_negatives |= bit(k);
+        for (; row; row &= row-1) search.negative_columns[std::countr_zero(row)] |= bit(k);
     }
     Mask required=0; std::array<Mask,8192> cuts;
     for(int i=0; i<num_cuts; ++i) {
         std::cin>>cuts[i];
         if (std::has_single_bit(cuts[i])) required|=cuts[i];
+    }
+    int count_g;
+    std::cin>>count_g;
+    if(count_g<1 || count_g>63)return 2;
+    for(int k=0; k<count_g; ++k) {
+        for(int i=0;i<64;++i)search.perms[k][i]=i;
+        for(int i=0;i<num_inputs;++i)std::cin>>search.perms[k][i];
+        search.symmetry|=bit(k);
     }
     Mask opt=(bit(num_inputs)-1)^required;
     size_t tested=0;
@@ -184,10 +211,17 @@ int main(int argc, char **argv) {
         for(int k=0;hit && k<num_cuts;++k) if(!(live&cuts[k]))hit=false;
         if(hit) {
             ++tested;
+            Mask bank=search.symmetry;
+            for(Mask g=bank;g;g&=g-1) {
+                int k=std::countr_zero(g);Mask image=0;
+                for(Mask s=live;s;s&=s-1)image|=bit(search.perms[k][std::countr_zero(s)]);
+                if(image!=live)search.symmetry &= ~bit(k);
+            }
             if(search.possible(live,budget-std::popcount(live)+1)) {
                 std::cout << "POSSIBLE "<<live<<" "<<tested<<std::endl;
                 return 1;
             }
+            search.symmetry=bank;
         }
         if(!e)break;
     }

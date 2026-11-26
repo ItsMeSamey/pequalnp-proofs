@@ -96,9 +96,47 @@ for x in sorted({p & ~n for p in ps for n in ns}, key=int.bit_count):
         cuts.append(x)
 require((len(ps), len(ns)) == (15, 26), 'unexpected five-point core dimensions')
 require(set(cuts) == {1 << i for i in range(12)}, 'unexpected five-point support')
-data = [17,12,len(ps),len(ns),len(cuts),*ps,*ns,*cuts]
+neighborhoods = [sum(p & 31 for p in ps if p & (1 << (5+j))) for j in range(7)]
+require(len(set(neighborhoods)) == 7, 'five-point line neighborhoods must be distinct')
+# Build the matching upper-bound circuit on the same 12 inputs.
+gates = []
+
+def gate(operation, left, right):
+    gates.append((operation, left, right))
+    return 12 + len(gates) - 1
+
+stars = []
+for point in range(5):
+    lines = [5+j for j, mask in enumerate(neighborhoods) if mask & (1 << point)]
+    require(len(lines) == 3, 'expected three line neighbors per point')
+    adjacent = gate('or', gate('or', lines[0], lines[1]), lines[2])
+    stars.append(gate('and', point, adjacent))
+output = stars[0]
+for star in stars[1:]:
+    output = gate('or', output, star)
+require(len(gates) == 19, 'incorrect upper-bound circuit size')
+for row in [*ps, *ns]:
+    values = [bool(row & (1 << j)) for j in range(12)]
+    for operation, left, right in gates:
+        a, b = values[left], values[right]
+        values.append((a and b) if operation == 'and' else (a or b))
+    require(values[output] == (row in ps), 'incorrect upper-bound core output')
+
+group = []
+for point_perm in itertools.permutations(range(5)):
+    images = [permute(h, point_perm) for h in neighborhoods]
+    if set(images) != set(neighborhoods):
+        continue
+    permutation = point_perm + tuple(5 + neighborhoods.index(im) for im in images)
+    if {permute(n, permutation) for n in ns} != set(ns):
+        continue
+    require({permute(p, permutation) for p in ps} == set(ps), 'five-point positive mismatch')
+    group.append(permutation)
+require(len(group) == 4, 'unexpected five-point symmetry group')
+data = [18,12,len(ps),len(ns),len(cuts),*ps,*ns,*cuts,len(group),
+        *(i for perm in group for i in perm)]
 result = subprocess.run([args.verifier.resolve()], input=' '.join(map(str,data))+'\n',
                         text=True, capture_output=True, check=True)
 require(result.stdout == 'UNSAT 1\n', 'expected exhaustive rejection of the unique support')
-print('Five-point core: 15 positives, 26 maximal negatives, 12 mandatory inputs, budget 17:', result.stdout.strip())
-print('Residual requires at least 7 + 2 + 18 = 27 gates. Raw suffix requires at least 28.')
+print('Five-point core: 15 positives, 26 maximal negatives, 12 mandatory inputs, budget 18:', result.stdout.strip())
+print('Residual requires at least 7 + 2 + 19 = 28 gates. Raw suffix requires at least 29.')
