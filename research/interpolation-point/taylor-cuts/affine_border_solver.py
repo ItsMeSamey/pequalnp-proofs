@@ -14,10 +14,13 @@ def _bits(value):
         value ^= bit
 
 
-def _quadratic_rules(n, flats):
+def _monomials(n):
     pairs = sorted((1 << i) | (1 << j) for i,j in combinations(range(n),2))
-    monomials = [0] + [1 << i for i in range(n)] + pairs
-    bases = {}
+    return [0] + [1 << i for i in range(n)] + pairs
+
+
+def _flat_rows(n, flats, monomials):
+    pairs = monomials[n+1:]
     for flat in flats:
         if len(flat) != 2:
             continue
@@ -31,6 +34,12 @@ def _quadratic_rules(n, flats):
             hi = pair ^ lo
             if (bool(a & lo) and bool(b & hi)) ^ (bool(b & lo) and bool(a & hi)):
                 row |= 1 << j
+        yield row
+
+
+def _rules(n, monomials, rows):
+    bases = {}
+    for row in rows:
         while row.bit_length() > n+1:
             j = row.bit_length()-1
             if j not in bases:
@@ -69,7 +78,12 @@ def _cliques(n, rules, budget):
 
 
 def _multiplication(n, flats, budget):
-    rules = _quadratic_rules(n,flats)
+    monomials = _monomials(n)
+    rules = _rules(n,monomials,_flat_rows(n,flats,monomials))
+    return _tables(n,rules,budget)
+
+
+def _tables(n, rules, budget):
     cliques = _cliques(n,rules,budget)
     normal = {c:1<<j for j,c in enumerate(cliques)}
     parents = {}
@@ -103,6 +117,12 @@ def solve_border(n, flats, *, max_cliques=None):
     if () in flats:
         return 0,None
     cliques,matrices = _multiplication(n,flats,max_cliques)
+    candidates = _candidates(cliques,matrices)
+    answers = [x for x in candidates if all(any((x&m).bit_count()%2 != t for m,t in flat) for flat in flats)]
+    return len(answers),next(iter(answers),None)
+
+
+def _candidates(cliques, matrices):
     layers = [(0,[1<<i for i in range(len(cliques))])]
     for i,matrix in enumerate(matrices):
         children = []
@@ -112,5 +132,4 @@ def solve_border(n, flats, *, max_cliques=None):
                 if kernel:
                     children.append((x | (bit<<i),kernel))
         layers = children
-    answers = [x for x,_ in layers if all(any((x&m).bit_count()%2 != t for m,t in flat) for flat in flats)]
-    return len(answers),next(iter(answers),None)
+    return (x for x,_ in layers)
