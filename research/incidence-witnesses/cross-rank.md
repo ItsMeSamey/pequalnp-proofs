@@ -23,3 +23,15 @@ The span of point-only and line-only flag functions has dimension 2N−1 because
 This follows by summing over the lines at p or the points at l and using AAᵀa=qa. As Aᵀ maps zero-mean point vectors bijectively to zero-mean line vectors, these pairs span all the nonconstant point and line functions. Substituting the two matrices gives q²(q+1)I in the numerator, also its value on constants. Thus the inverse block has eigenvalue 1/(q+1) on 2N−1 dimensions and −1/q² on the remaining N(q+1)−2N+1=q³ dimensions. The complementary minor has absolute determinant (q+1)q^{N(N−1)−2q³}. Multiplication by the flag determinant proves the claim.
 
 In particular either mixed cut has rank N² over the reals or any field whose characteristic divides neither q nor q+1. The point-pair versus line-pair cut has rank binom(N,2) as in the companion note; its ordered version duplicates the pair rows and columns and adds zero diagonal slots. Any set-multilinear algebraic branching program that reads the four variable groups once in any one fixed order thus needs width at least binom(N,2) at the middle cut. For orders with mixed first two groups this increases to N². This statement is about the four-group polarized component, a tensor-valued consequence of the original promise.
+
+## A smaller set-multilinear circuit
+
+The same tensor has a set-multilinear arithmetic circuit of size O(N(q+1)). For indices p,r,l,j put a=A[p,l], b=A[r,j], c=A[p,j], e=A[r,l]. Its entry is
+
+    ab(1−c)(1−e) + ce(1−a)(1−b).
+
+This also vanishes on repeated point or line slots. Expand into two two-edge matchings, four negative three-edge paths and twice the four-edge product. Each matching polynomial is a product of two bilinear incidence polynomials on disjoint slots. Each bilinear polynomial uses O(N(q+1)) gates by summing over flags. For a three-edge path, fix the central flag. The two outer variables then contribute independent sums over the neighbors of its two endpoints. Precompute those linear sums for the relevant slots, and use O(1) gates per flag to multiply them with the two central variables and add the result.
+
+The four-edge product can occur only at p=r or l=j. For p=r, multiply the two copies of the point variable and the two independently precomputed sums over its incident lines. Sum over points. The analogous sum over lines covers l=j. Subtract once the intersection p=r,l=j, a sum over flags. Each multiplication combines polynomials on disjoint variable slots. Thus the whole circuit is set-multilinear. Over the reals the one-pass fixed group-order ABP requires Ω(N²) width for every ordering of the slots, whereas the circuit uses O(N^{3/2}) gates.
+
+The ordinary four-factor tensor rank is between N² and 2N²+5N(q+1)+2N. The lower bound follows from the mixed flattening. Each matching term is a tensor product of two matrices of rank at most N, giving at most N² four-factor terms. Fixing the central flag in a path gives one four-factor term. The four-edge correction takes at most 2N+N(q+1) terms using the decomposition above.
