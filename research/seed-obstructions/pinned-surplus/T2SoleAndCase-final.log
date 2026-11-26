@@ -1,0 +1,1 @@
+'T2SoleAndMinor.sole_and_case' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,26 @@
+T2BenchmarkNormalize.lean:13:55: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+T2BenchmarkNormalize.lean:13:55: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+T2BenchmarkNormalize.lean:33:26: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+T2BenchmarkNormalize.lean:133:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+T2BenchmarkNormalize.lean:137:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+T2BenchmarkNormalize.lean:197:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp at impossible
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'T2BenchmarkNormalize.output_internal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'T2BenchmarkNormalize.canNormalize' depends on axioms: [propext, Classical.choice, Quot.sound]
