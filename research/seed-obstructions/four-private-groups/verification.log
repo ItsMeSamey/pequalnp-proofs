@@ -1,6 +1,6 @@
-point quartet 15 1234279 nodes, zero banks
-point quartet 23 1198534 nodes, zero banks
-point quartet 27 939520 nodes, zero banks
-point quartet 46 2018046 nodes, zero banks
-point quartet 83 1628360 nodes, zero banks
-All eleven-slot banks with four disjoint pair-safe guard groups require at least 13 point gates.
+point quartet 15 3274865 nodes, zero banks
+point quartet 23 3423022 nodes, zero banks
+point quartet 27 4091846 nodes, zero banks
+point quartet 46 4022786 nodes, zero banks
+point quartet 83 3709700 nodes, zero banks
+All eleven-slot banks with four disjoint pair-safe guard groups require at least 14 point gates.

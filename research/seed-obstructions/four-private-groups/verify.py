@@ -29,7 +29,7 @@ def run():
         assert literal and [int(x) for x in literal[1].split(',')]==raw55
         quartet_reps=sorted({min(sum(1<<f[i] for i in g) for f in permutations) for g in combinations(range(7),4)})
         assert quartet_reps==[15,23,27,46,83]
-        for rep,expected in zip(quartet_reps,[1234279,1198534,939520,2018046,1628360]):
+        for rep,expected in zip(quartet_reps,[3274865,3423022,4091846,4022786,3709700]):
             cert=HERE/f'pairanchors-{rep}.txt'
             anchors=[tuple(map(int,l.split())) for l in cert.read_text().splitlines()]
             active={s for i,s in enumerate(stars) if rep>>i&1}
@@ -39,7 +39,7 @@ def run():
             result=subprocess.run([work/'points',str(rep),cert],input=point_input,text=True,capture_output=True,check=True)
             assert not result.stdout.strip() and f'DONE {expected} 0 0' in result.stderr
             print('point quartet',rep,expected,'nodes, zero banks')
-    print('All eleven-slot banks with four disjoint pair-safe guard groups require at least 13 point gates.')
+    print('All eleven-slot banks with four disjoint pair-safe guard groups require at least 14 point gates.')
 if __name__=='__main__':
     if not __debug__: raise SystemExit('Enable Python assertions.')
     run()

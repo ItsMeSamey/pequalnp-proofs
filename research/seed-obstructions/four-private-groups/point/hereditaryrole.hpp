@@ -143,7 +143,7 @@ template <bool exact = false> int bound(const Mask &lo, const Mask &hi) {
         votes.add(two);
         votes.add(three);
     }
-    return exact ? votes.max() : (votes.max() >= 13);
+    return exact ? votes.max() : (votes.max() >= 14);
 }
 } // namespace hereditary
 #endif
