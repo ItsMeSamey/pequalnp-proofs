@@ -1,0 +1,9 @@
+# Joint rank bounds on complementary forced supports
+
+Take a minor minimal for preserving two scores q and r, starting from an instance with four score bits and at least one missing score. Retain the original scoring semantics during deletion and contraction. Suppose the reduced q-witness has primal support A and dual support B, with the r-witness reversed. These supports partition the ordinary elements by minimality. Let H be the subspace of scores available by varying the eliminated coordinates at fixed zero residual assignment, with the required zeros on deleted primal and contracted dual positions. Independent linear sections of projection on the cycle and cocycle codes give a residual linear score map modulo H. Every residual model realizes its entire score coset because the two hidden lifts cannot conflict at an eliminated coordinate.
+
+Let Z(A) be the cycles supported on A and let Z*(B) be the cocycles supported on B. Every pair in their direct product is disjoint, so the image of this product under scoring, enlarged by H, is a linear subspace of attained four-bit scores. Its dimension is at most three because a score missing in the ancestor stays missing. The map from this product into scores modulo H is injective. A nonzero kernel element would toggle the q-witness at an ordinary position while allowing a hidden adjustment to restore q, contradicting the forced supports. Consequently
+
+$$\dim Z(A)+\dim Z^*(B)+\dim H\le 3,$$
+
+with the symmetric inequality exchanging A and B. This bounds supported subcodes. Cycles crossing the partition do not enter either dimension. If both sides are nonempty, every supported dimension in the two inequalities is positive: the whole of each side is a cycle and a cocycle. Thus each is at most two minus the dimension of H. If H has dimension one, both sides are circuits and cocircuits. If one side is empty, the ordinary matroid has at most six minus twice the dimension of H elements by rank plus nullity.
