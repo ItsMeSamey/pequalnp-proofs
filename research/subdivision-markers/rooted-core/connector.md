@@ -1,0 +1,11 @@
+# External attachments to a pinned equality bank
+
+Use common left and right pins, fixed to one, opposite data pairs, and a private slack pair. Each pair has its matching edge; the left pin meets every right endpoint and the right pin every left endpoint. For any pair x,y its left and right defects from the bank are x(1+y) and y(1+x). They cannot both be one. The private slack bits coincide, and the pins enforce even total mismatch count. All arithmetic is binary.
+
+Consider arbitrary bipartite external contexts glued only at the data ports. Partition the ports into prescribed groups. Every external connected component must attach within one group; internal context vertices obey their usual even-degree guards. No outside attachment is allowed at the two shared pins or private slack.
+
+**Exact criterion.** The bank enforces equality with zero contribution to all externally shared guards for every such context if and only if each group contains endpoints from at most one pair.
+
+If a group lies inside one pair, sum all selected-degree parities in its external connected components. Internal selected vertices have even degree; every external edge contributes twice. The external defect therefore has even total on that pair. Since the bank contributes at most one defect there, all defects vanish. Conversely, choose permitted endpoints belonging to two different pairs in a common group and select only those two data bits. Join them by a selected external path, of length two if both endpoints are on the same shore and length three if on opposite shores. Both endpoints have one external defect, and every internal path vertex has degree two. The pin sums on the two shores have the same parity because exactly two data bits are selected. Choose the common private slack bit equal to that parity. Both mixed pairs now extend to a full model. This characterizes the arbitrary-context guarantee under the stated partition promise, without asserting that every individual context violating the promise admits a mixed pair.
+
+On a model with x=y on every pair, the bank contributes zero at every data guard. Any external model with all paired bits equal extends by selecting the slack pair according to their common parity sum. Connecting many equal ports for use in a shared gate remains outside this partition promise.
