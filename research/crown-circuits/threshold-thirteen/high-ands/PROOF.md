@@ -1,0 +1,27 @@
+# The eight- and nine-AND endpoints at thirteen inputs
+
+For monotone threshold two in the fan-in-two binary AND/OR circuit model with unlimited fanout, the known bounds are 31≤C₁₃≤32. Any minimum circuit of size 31 must have **at most seven ANDs** in a minimum-dirty, clean-terminal representative. The packet also proves that an optimal 24-gate ten-input threshold circuit cannot have eight ANDs. These are mathematical exclusions; the short Python scripts check the upper witness and the final integer cases.
+
+The gate floor 31 follows from C₁₂=29: some input has at least two readers, since otherwise the first gate on two single-use raws would lose the distinction between a singleton and an appropriate pair. Setting this twice-used input to zero saves its two readers. The upper witness in size32.json splits one input of the 3-by-4 grid. Run `python3 verify.py` for its 8,192-case truth table.
+
+Assume a 31-gate minimum circuit at thirteen inputs. Because 29 gates are necessary on twelve inputs, raw normalization preserves the AND and OR counts and can give every raw exactly two distinct OR readers. The proof in `pair-minor.md` shows that any pair of raw deletions removes exactly four ORs and leaves all ANDs. The resulting eleven-input circuit is optimum at 27 gates. Any AND may therefore be resolved to either input only at the cost of admitting at least three previously rejected singletons. With a pure triple group on one side, all three labels of that side are exclusive singleton witnesses, so its AND is clean.
+
+| Number of ANDs | Exclusion |
+|---|---|
+| At least ten | The physical OR floor 2·13−4=22 would require at least 32 gates. |
+| Nine | The OR floor is tight. `nine-and.md` excludes pure doubletons and shows that a pure group has at least four labels. The component and star inequalities then force incompatible bounds on the number of pure groups. |
+| Eight | Some pure triple must branch. Its three-input deletion gives a 24-gate ten-input circuit with eight ANDs, excluded in `ten-tight.md`. |
+
+## Why a triple must branch in the eight-AND case
+
+Let p count pure flattened OR groups and H count the components induced by these groups in the simple incidence graph. Write k for the number of raw labels in one group, d for the number of its pure neighbors. The 23 ORs give mixed excess r=p−3. The component and star inequalities give k≤H+1 and k+max(d,2)≤p+1. All pure groups have at least three labels by pair deletion. If k≥5, the component of that group uses at least k labels and the remaining H−1 components use at least 3(H−1) more, totaling at least 5+9=14. Thus every group is a triple or a quartet.
+
+There is at most one quartet. A quartet forces H≥3 and p≥5. Two quartets would require at least 3p+2 incidences, giving p≤8. The internal pure edges number at least 3p+2−13. For p=5,6 this exceeds the maximum edge count of a graph on p vertices with at least three components. For p=7,8 only a single nontrivial component and at least two isolates could reach the required number of edges; those edges and the three separate raw labels of each isolate already exceed thirteen. `verify.py` checks every integer component partition in this argument.
+
+If no triple branches, at least p−1 pure groups are unshared triples. Each feeds a clean AND (the exclusive singleton argument in `triple-ports.md`). Two such triples cannot feed the same AND. If disjoint, deleting one saves its two private ORs, three exterior raw-reader ORs, the AND, and the two now-dead private ORs of the other, exceeding the allowance 31−24=7. If overlapping, the common raw can be factored, saving a gate. But in clean-terminal form the final collector can take at most r+1=p−2 distinct clean AND outputs. This contradiction provides a branching triple without requiring any numerical enumeration of circuit topologies.
+
+## Deleting the branching triple
+
+Delete its three labels. The six raw incidences and the branching surplus already force at least seven gate removals by the dark-edge count. The ten-input minimum is 24, hence no one-sided dark AND can occur. Before any hypothetical first two-sided dark AND, an accessible dark OR apart from the triple's root would have to combine two of its raws in a second group or combine the root with a subset of its own labels. The former violates simple incidence, the latter irredundancy. Private proper nodes have no readers outside their flattened group. Since no raw feeds an AND, a first dark AND cannot exist. All seven removals are therefore ORs, leaving exactly eight ANDs and sixteen ORs in an optimum ten-input circuit.
+
+The proof excluding this ten-input endpoint is in `ten-tight.md`. The nine-input lower bound of 21 permits at most three gate losses. Three raw readers including an AND would cause a fourth loss. Two AND readers must feed the same OR directly and exclusively: neither can directly read the other, and a further dark AND or a second exit OR would exceed the allowance. Factoring that common OR contradicts minimality. A sole AND reader has a maximum OR signal on its other arm. Removing it saves an AND and at least two ORs. The mixed one-AND/one-OR case yields the same forbidden 21-gate, seven-AND minor. After excluding nonregular readers, the sole-OR relocation can be reapplied without changing gate counts until all raw readers are regular. The general OR-tight theorem in `lemmas/or-tight.md` then applies at ten inputs. Its nine-input corollary uses the eight-input minimum of 19.
