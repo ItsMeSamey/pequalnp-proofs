@@ -22,3 +22,5 @@ For any size-40-or-smaller 12-crown circuit, [the subcrown theorem](../../lean/R
 [Baseline normalization](../../lean/Research/CrownZeroOrNormalize.lean) and [distinct saturation](../../lean/Research/CrownDistinctSaturation.lean) require at least two different two-active-OR signatures under the size-40 and 23-OR hypotheses.
 
 Under the 40-gate and 23-OR budgets, two distinct chronological pairs of OR gates each cover every predecessor overlap. The companion finite lemmas bound collisions of signed read sets and classify a four-vertex path under their stated hypotheses. All three modules pass the pinned Lean checker. [Indexed gate pairs](../../lean/Research/CrownIndexedOrReads.lean) · [Collision count](../../lean/Research/CrownSaturatedCollisions.lean) · [Path lemma](../../lean/Research/CrownCollisionPath.lean)
+
+For the same budget the actual chronological OR-overlap graph has at most three edges and contains no four-vertex path. [Concrete collision theorem](../../lean/Research/CrownCollisionLimit.lean)
