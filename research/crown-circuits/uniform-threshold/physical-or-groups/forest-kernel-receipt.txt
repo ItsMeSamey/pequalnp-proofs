@@ -1,0 +1,3 @@
+'ThresholdOrExtraction.extracted_book' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdOrExtraction.forest_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdOrExtraction.raw_count_two' depends on axioms: [propext, Classical.choice, Quot.sound]
