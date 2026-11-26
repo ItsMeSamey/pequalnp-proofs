@@ -75,3 +75,5 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 [Crown diagonal false gates](crown-circuits/README.md) gives a Lean-checked per-cell OR inequality and a conditional AND lower bound.
 
 [Programmed interpolation points](interpolation-point/program.md) give a single supplied layout and evaluation point with NP-hard nonzero decision and a scaled-permanent counting reduction. The target value at zero vanishes throughout the constructed family. [Affine separator messages](guarded-pigeonhole/separator-messages.md) give communication and round lower bounds for specified partitioned guard interfaces. [Target-fiber switches](fano-switches/README.md) characterize guard-preserving matrix changes on a supplied marker fiber.
+
+[Regular matroids with a fixed number of markers](regular-markers/README.md) admit deterministic polynomial-time decision and witness recovery for disjoint cycle and cocycle supports with the specified binary score. The exponent may depend on the marker dimension. Whole-tree and component checkers accompany the proof.
