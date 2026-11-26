@@ -13,3 +13,5 @@ At each successful tree sum across pins, multiplying component counts, with isol
 On a bounded-degree monotone edge expander, the all-ones path of any fixed-depth search leaves a satisfiable formula and a connected component larger than 2n/3 for sufficiently large n. Otherwise the removal of a constant number of vertices gives a balanced separation up to a constant number of vertices, contradicting edge expansion and bounded degree. Thus the adaptive criterion also has an explicit obstruction. See barrier.md for a quantitative crossing-degree obstruction.
 
 The scripts verify.py, structural_verify.py and hidden_verify.py test 7,652 formula-degree pairs, 16 structural parameter pairs and 1,450 eligible formula-cut pairs respectively. The last script checks factor recovery at the true g, equivalence, component balancing and exact counting on four variables.
+
+[The reference counter](adaptive.py) returns an exact count when it finds a certified tree and returns None when its search budget proves insufficient. Its finite suite compares all accepted counts with direct enumeration.

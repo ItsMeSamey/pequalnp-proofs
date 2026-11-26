@@ -19,3 +19,5 @@ python verify_packing.py L-meta-18968.json packing-18968.json packing-21968.json
 The two subset certificates each select 15 named seed slots. Their inputs all come from original wires or earlier selected slots. Supply both subset files as additional verifier arguments. Each yields 21 disjoint sets after adding raw pair (0,52). At least 20 further gates are required, with 19 available. This applies to any 34-gate architecture containing those 15 distinct gates with that wiring, even if other gates are interleaved or the selected subprogram is renumbered.
 
 On the normalized residual the [mixed-gate complexity](mixed.md) is exactly 13 when arbitrary monotone functions of either side are free.
+
+A [complete suffix search](suffix-search/COPY.md) excludes freezing the first 15 gates of either seed in the normalized 33-gate residual problem. It allows arbitrary binary monotone suffixes with shared intermediate wires.

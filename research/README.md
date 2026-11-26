@@ -54,3 +54,5 @@ The [simultaneous incidence bound](incidence-simultaneous.md) proves Nq gates fo
 [Fixed-width counting consequences](fixed-width-counting/README.md) derive exact counts under affine and quadratic constraints and a size tradeoff for circuits with fixed-width CNF gates from the October manuscript.
 
 [Hidden cut recovery](violation-certificates/hidden.md) recognizes an equivalent interaction under the stated bounded-width and bounded-degree promise. Polynomial recursive counting requires the same promise on connected restrictions.
+
+[Exhaustive residual gate search](residual-gate-bound/README.md) excludes every normalized L-meta-18968 residual circuit with at most 23 gates. The raw decoder and native verifier are included.
