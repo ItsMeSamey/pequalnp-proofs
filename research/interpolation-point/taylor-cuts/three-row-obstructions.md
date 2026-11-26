@@ -1,0 +1,13 @@
+# Lower-dimensional projection and cubic linearization on three even-subgraph syndrome rows
+
+For a simple graph with labels in GF(2)^3, write E for the syndromes of vertex sets inducing even degree at every selected vertex. The two-row even-subgraph algorithm in two-row-even-shadow.md computes the projection of E to GF(2)^3 modulo each nonzero vector d, and can return a realizing set for every attained quotient value.
+
+If at least two syndromes are missing, these seven tests determine E and give witnesses. A missing quotient value certifies both points of its fiber missing. Conversely for any two distinct missing points x,y take d=x+y: their two-point fiber is missing. Thus the union of missing fibers is exactly the complement as soon as it has size at least two. Once a missing point y is known, reconstruct any present target x by projecting along x+y; every witness for that quotient has syndrome x. If all projected images are surjective, E is full or misses exactly one point. A connected four-vertex path with edges 01,03,12 and labels 1,1,2,4 (in binary) has E={0,1,2,3,4,5,6}. All its even induced subgraphs are independent sets. The missing point 7 is invisible in every two-dimensional quotient.
+
+A separate six-vertex example shows that a degree-three linear span of the local equations can miss a genuine three-row obstruction. Use the wheel with hub 0 and cyclic rim order 1,2,4,5,3. All degree marks are zero. Request three binary outputs equal to one: odd total rim population, x_3, and x_2+x_5. The hub cannot be selected because its degree would be odd. The even induced subgraphs of the rim are independent sets and the full five-cycle. An odd independent set has one vertex, which cannot meet both remaining tests. The full rim selects both 2 and 5. Hence the requested syndrome is absent.
+
+Work in the Boolean polynomial ring x_i²=x_i over GF(2). For each vertex use q_i=x_i sum_{j adjacent i}x_j. Every q_i vanishes on the even induced subgraphs. The target indicator f=(sum_{j=1}^5 x_j)x_3(x_2+x_5) reduces to the sum of square-free monomials 123,135,234,345. It is not in the linear span of q_i and x_j q_i, over all i,j. A separating functional is one on the ten square-free cubics
+```
+014 015 023 025 034 125 134 145 234 235
+```
+and zero on all other square-free monomials of degree at most three. It evaluates to one on f. It vanishes on all q_i because they are quadratic. On x_j q_i its value is the parity of wheel neighbors k of i such that i,j,k are distinct and the triple ijk occurs in the displayed list; this count is always zero or two. The certificate tests only this explicit degree-three linearization. It does not exclude derived higher-degree consequences, different polynomial algorithms, or imply hardness.
