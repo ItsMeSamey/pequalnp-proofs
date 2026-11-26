@@ -59,3 +59,5 @@ At a total budget of 33, every residual separator needs **at least eleven distin
 At 18 mixed gates with eleven point-boundary and seven line-boundary signals, the [eleven-point extension check](eleven-extensions/README.md) excludes every candidate whose point signatures contain a feasible proper subfamily. The checker exhausts all 278 representatives.
 
 For eighteen mixed gates, connectivity allows at most nineteen distinct boundary wires. With eleven or more point wires and seven or more line wires, the read-once cases have twelve point and seven line wires, or eleven point and eight line wires. The seven- and eight-line read-once bounds exclude both. The only other case has eleven point wires, seven line wires and one extra use. The extension check above and the [irreducible-signature search](eleven-irreducible/README.md) exclude it. The latter search eliminated all 1,047 candidates from five symmetry orbits.
+
+A [seven-line proof by gate counting](one-surplus/README.md) independently excludes the one-extra-use case at total size 33 for every number of point wires. Its zero-line lemma uses 91 directly checked sampled negatives.
