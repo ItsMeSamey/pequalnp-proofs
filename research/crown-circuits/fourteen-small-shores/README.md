@@ -1,0 +1,9 @@
+# Structural conditions for fourteen-input monotone threshold two
+
+The candidate has 34 binary AND/OR gates and computes threshold two on all fourteen-input Boolean assignments. The five-AND note assumes a raw-regular, terminal-clean representative minimizing the number of singleton-active AND gates, with the physical reverse representation and receiver replacement described in its opening paragraph. Its width-two companion further minimizes hot singleton labels. Both files concern necessary conditions. The five-AND existence question remains open in these notes.
+
+The independent verification desk reviewed the exact dirty-conflicts.md source, including the observable-trace bound, the two-receiver construction, the four-label width-two bound and the two opposite-tag helpers. The companion is the verification desk's own derivation. Neither document has a Lean proof.
+
+The seven-AND note assumes two distinct raw OR readers for every label, the flattened pure/mixed group representation, and the size floors 32, 29 and 27 on thirteen, twelve and eleven inputs. For the downstream OR debit after zeroing a complete group, at least two labels must survive. Each application here retains eleven or more. Its same-shore and overlapping-shore restrictions concern actual physical singleton evaluations. The file private-doubleton-dependency.md supplies the independent adjacent-private exclusion in its penultimate substantive paragraph beginning “For completeness”. That paragraph applies at seven ANDs; the quartet-star result surrounding it has its own nine-AND assumptions.
+
+The algebra desk independently audited the exact exclusive-shores.md source, including the simultaneous zero-pruning/bypass inequalities and the complete-group exception. This package establishes restrictions on the five- and seven-AND branches. It does not resolve C(14).
