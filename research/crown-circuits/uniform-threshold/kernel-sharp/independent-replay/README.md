@@ -1,0 +1,7 @@
+# Independent clean replay of the sharp threshold-two lower bound
+
+The published target is `ThresholdPublicSharp` in commit `1a56a0a95098541b3b5425e733a43366533c43b6`. The theorem applies at every arity n≥4 to unrestricted-fanout monotone circuits with gates of fan-in at most two that compute threshold two on the full Boolean cube. The package also states the result for the minimum gate count.
+
+The verifier extracts the committed sources into shared memory, checks every digest and topological dependency, and rebuilds all 109 manifest modules serially under the pinned Lean 4.36 toolchain. This includes the six PEqualNP project modules. Both the old four-thirds output and existing project build directories are excluded from the search path. The remaining caches are Lean and explicitly installed third-party dependencies. Before each compilation, the verifier asks Lean for its actual import resolutions; every local import must point to an object from an earlier step of this clean run.
+
+The source lock, pinned environment, per-module source and object hashes, resolved dependencies, diagnostic log, and three final axiom reports are retained here. `receipt.json` seals the run; `independent-check.txt` records a separate post-build pass through all objects and local edges. To recreate the build in this pinned environment, copy the scripts and `source-lock.json` into a separate empty receipt directory, obtain the Lean slot, then run `bash prepare.sh`, `python replay.py`, and `python verify_receipt.py`.
