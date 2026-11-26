@@ -1,0 +1,13 @@
+# Multiple repeated raw labels in separate OR attachments
+
+Let S be the multiply occurring raw line labels of a formula, and O its once-occurring labels, with |O|≥2. Take the ordinary skeleton consisting of all paths from O leaves to the root. Suppose each side formula B at an OR attachment contains at most one distinct member of S. AND attachments may contain arbitrary special labels. Write P for point leaf occurrences and m for total raw line occurrences. Original point-circuit plus formula cost is at least 27+m.
+
+Clamp all S to zero. The proof in repeated-one-label.md gives OR at every ordinary split, and the clamped side formula G₀ at every AND attachment accepts every singleton on every resident ordinary line. Ordinary targets are reconstructed from their private AND attachments, as before.
+
+For any OR-side formula B and point singleton p, choose U resident at the attachment and q on U. If B₀(p)=1 then the zero-line point pair {p,q} makes B true and every ancestor AND guard true via q. The root would accept, although the pair lies below an official negative. Thus B₀ is zero on all point singletons.
+
+For special T, let H_T be the disjunction of the T-only cofactors of OR attachments whose side formula contains T. Trace a true T-positive down the skeleton until a true OR-side formula is found, since ordinary leaves are false. That formula must contain T, else it would evaluate to B₀(p). Hence H_T accepts every incident singleton. If one cofactor accepted a pair X outside T, a sampled T-active negative extending X and meeting a resident ordinary U would activate the side formula and every ancestor AND guard. Thus H_T rejects exterior pairs.
+
+By hypothesis no side formula is used by two special targets. Ordinary targets use only private AND sides. These seven nonconstant reconstructed targets therefore require at most P−7 new point gates. Producing seven pair-safe neighborhoods costs 21 point gates. The original point circuit has at least 28−P gates, and the binary formula has P+m−1 gates. Their sum gives the stated bound.
+
+A weaker sufficient hypothesis is a partition of the OR attachments among the special labels such that each of the four incident singletons of T is accepted by at least one side formula assigned to T, evaluated with T as the only active line. The same disjoint accounting applies. This condition can be tested directly with four positive clauses per special label and an at-most-one label assignment per side formula. In particular an attachment containing both T and U only matters when the required positives cannot all be covered by disjoint assignments.

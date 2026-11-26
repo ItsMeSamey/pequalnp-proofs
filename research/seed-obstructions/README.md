@@ -71,3 +71,5 @@ With exactly seven line signals, [the two-surplus theorem](two-surplus/README.md
 The exact point costs at boundary widths eleven, twelve, thirteen and fourteen are 9, 5, 0 and 0. At width eleven the last two eight-gate SAT exclusions have independently verified DRAT certificates. At width twelve exactly five point banks attain cost five. These costs allow unrestricted monotone computation after the boundary.
 
 The [nineteen-mixed classification](nineteen-mixed/README.md) excludes all six possible boundary-width and operand-reuse cases at exactly nineteen mixed gates.
+
+At twenty mixed gates, eleven point wires and seven line wires already require total size at least 34. [Seven-line proof](twenty-mixed/README.md)
