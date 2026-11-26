@@ -6,7 +6,7 @@ Every width-eleven star-local point family affordable with eleven point gates fa
 
 All eleven paid singleton signatures are distinct, nonempty and nonprimitive. Any violation would give a ten-gate singleton-only program with the same signatures, at most seven distinct nonprimitive selections, and the same nonlocal selection. The singleton-only seven-output hereditary certificate in synthesis_new/nonlocal-seven and the six-output certificate in synthesis_new/point-pareto exclude this.
 
-The argument in syn_cover/twostar/two-forests.md forces six paid signatures, three per exterior star. Replace them with independent raw OR trees of the same signatures. On every multi-point input each raw OR is bounded pointwise by the monotone wire it replaces. Downstream monotonicity preserves every original negative rejection and singleton positives are unchanged.
+The argument in [the two-star forest lemma](two-forests.md) forces six paid signatures, three per exterior star. Replace them with independent raw OR trees of the same signatures. On every multi-point input each raw OR is bounded pointwise by the monotone wire it replaces. Downstream monotonicity preserves every original negative rejection and singleton positives are unchanged.
 
 For each raw singleton p, let d(p,F) be its minimum direct-operand charge conditional on the consumed nonsingleton raw set F, using the original whole-negative argument in synthesis_new/raw-operand. Let c(p) count the two exterior stars containing p. Writing S for the four selected singleton inputs, the normalized program needs at least
 

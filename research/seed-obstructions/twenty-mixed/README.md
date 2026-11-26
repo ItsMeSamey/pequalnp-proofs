@@ -38,3 +38,5 @@ The completed nineteen-mixed certificate gives P≥11, L≥7 and m≥20; P,L cou
 The intervals are necessary bounds from width and the minimum line cost of L−7. A given line-signature family may lower the upper endpoint. The seven-line k≤2 proofs reconstruct masks using bounds linear in the actual point-leaf count; changing P does not introduce a point-width assumption. The eight-line k≤1 proofs give the same linear recovery with local case splits. This cancellation is separate from the width-specific four-group checker indispensable at P12/L9.
 
 The eight-line checks use the [nine-paid endpoint search](endpoint-all.zip) and [ten-paid star-local search](endpoint-local10.zip).
+
+For the nine-line point-cost replay, extract ten-line-point-cost.zip beside the tracked point-pareto directory to supply star_local.py. The two-star saturation step uses the [forest normalization lemma](two-forests.md), including overlaps between the chosen raw singleton set and the two stars.
