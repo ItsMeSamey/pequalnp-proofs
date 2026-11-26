@@ -1,10 +1,14 @@
 # Threshold two at every arity
 
-For minimum binary monotone AND/OR circuit size with unrestricted fanout, **C(n) = 2n + √(2n) + Θ(n^(3/10))**. The two bounds hold with positive absolute constants for all sufficiently large n. The proof determines the order of the third term. Its optimal coefficient remains open. Independent mathematical reviews checked the unrestricted lower bound and its prerequisite arguments. [Lower bound](unrestricted-matching-exponent.md) · [Upper construction](three-level-matching.md)
+For the minimum size of a binary monotone AND/OR circuit with unrestricted fanout computing threshold two on all n-bit inputs,
 
-The refined construction gives C(n) ≤ 2n + √(2n) + (5/4)2^(9/10)n^(3/10) + O(n^(7/30)). This coefficient is an upper bound on the unrestricted optimum. [Short-signature construction](short-signatures.md)
+    C(n) = 2n + √(2n) + (5/4)2^(9/10) n^(3/10) + o(n^(3/10)).
 
-The unrestricted liminf of (C(n)−2n−√(2n))/n^(3/10) is at least the algebraic constant approximately 1.15238806926. Independent mathematical reviews checked the corrected private-receiver bound, including the additive five-gate allowance, and the optimization over both receiver classes. [Corrected private-pins lemma](unrestricted-private-pins-v2.md) · [Coefficient optimization](unrestricted-private-moment.md) · [Earlier two-class bound](unrestricted-block-moment.md)
+The lower bound matches the coefficient of the three-level construction. Two independent mathematical reviews checked the frozen lower-bound manuscript and its use of the earlier unrestricted argument. The full asymptotic theorem has mathematical proof review. [Sharp lower bound](unrestricted-sharp-receiver.md) · [Matching construction](three-level-matching.md) · [Codegree estimate](matching-codegree-constant.md)
+
+The construction also gives a one-sided upper error of O(n^(7/30)). [Refined construction](short-signatures.md)
+
+The earlier unrestricted lower bounds of order n^(3/10) and the private-receiver coefficient approximately 1.15238806926 are retained below. [Order of the third term](unrestricted-matching-exponent.md) · [Private-receiver bound](unrestricted-private-pins-v2.md) · [Earlier coefficient](unrestricted-private-moment.md)
 
 ## Earlier bounds and constructions
 
