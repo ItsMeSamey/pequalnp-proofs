@@ -1,0 +1,11 @@
+# Five clean ANDs require at least two helpers of width three or more
+
+Use the clean signed-bank model of a size-34 fourteen-input candidate: fourteen mutually disjoint nonempty rejection faces of the five-cube, generated from signed singleton conditions by fourteen receiver joins and at most seven proper helper joins. Size-minimality lets us prune repetitions and inconsistent intermediates. A target cannot be used to generate a different target since this would make their rejection faces intersect. Call the number of specified axes the width. The graph on the pair helpers, with an edge whenever their coordinate pairs are disjoint, is triangle-free since six axes would be needed for a triangle. With at most six pair helpers it has at most nine edges by Mantel's theorem.
+
+Suppose the sole helper of width greater than two is a triple T. Let a count width-five targets, x targets of width at most three, and b width-four targets constructed with T as a term. The fourteen faces together occupy at least a+4x+2(14−a−x)=28−a+2x atoms of the available 32. Every full target must use T plus a pair on the two complementary axes. These a targets and the b width-four targets using T all lie in its four-atom face. Thus a+2b≤4. Adding the two inequalities gives x+b≤4. Therefore at least 10−a width-four targets need two disjoint-axis pair helpers.
+
+At least one pair helper K was used in constructing T. Each full target uses a different complementary pair helper H. The a distinct edges (K,H) give width-four faces which intersect their respective full targets, so none can produce one of the required disjoint targets. Only 9−a usable edges remain, contradiction.
+
+If the only higher-width helper is a quartet S, it must join two disjoint-axis pair helpers. S can only help the a≤2 full targets in its face; it cannot itself also be a useful receiver. The generating pair edge produces S, not a distinct width-four target. Again 28−a+2x≤32, hence x≤3. There are at least 14−2−3=9 width-four targets but only eight unused edges. A single width-five helper cannot be generated from two terms of width at most two.
+
+Consequently any candidate having a higher-width helper requires at least two. If a full target is separately known necessary, this applies to every candidate.
