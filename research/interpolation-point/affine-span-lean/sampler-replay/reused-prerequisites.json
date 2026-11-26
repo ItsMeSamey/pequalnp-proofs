@@ -1,0 +1,30 @@
+[
+  {
+    "module": "Mathlib.LinearAlgebra.AffineSpace.Defs",
+    "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "git_blob": "814489ed4f8c0cc1cbf0c42de75ea0de0b7bebc6",
+    "source_sha256": "ae10245023daef1ba4197a71857bcb119dba4f347bbcbfbc3585d0b69fac8a1b",
+    "olean_sha256": "8e8b4a6f11720ae9dd5e43e2cebc7f1768dc9d0b3f18d799c48261572cae7573",
+    "path": "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/LinearAlgebra/AffineSpace/Defs.olean",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/Algebra/Torsor/Defs.olean"
+    ]
+  },
+  {
+    "module": "Mathlib.LinearAlgebra.AffineSpace.AffineSubspace.Defs",
+    "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "git_blob": "a0b2b7af682871259884382e43588e2b1525ab3f",
+    "source_sha256": "ca05a821ae0c4a5b6c32215e0b4720edfaa6112db4e281e2277cf013ae2aa8ca",
+    "olean_sha256": "4dfb7167c1b3f3a6ac0197f35883816bcd14ab7c246346319546401d165f280e",
+    "path": "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineSubspace/Defs.olean",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/LinearAlgebra/AffineSpace/Defs.olean",
+      "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/LinearAlgebra/Span/Defs.olean",
+      "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/Order/Atoms.olean"
+    ]
+  }
+]

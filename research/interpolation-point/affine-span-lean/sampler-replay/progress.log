@@ -1,0 +1,17 @@
+ExactPlaneFieldCard
+ExactPlaneFieldSampler
+ExactPlaneSubsetPolynomial
+ExactPlaneAffineSparse
+ExactPlaneAffineSubstitution
+ExactPlaneAffineSpanHit
+ExactPlaneTwoBitLookup
+ExactPlaneActivationSlice
+ExactPlaneDeterminant
+ExactPlaneActiveDeterminant
+ExactPlaneLookupDeterminant
+ExactPlaneSamplerSpan
+ExactPlaneActiveReadSpan
+ExactPlaneSamplerRank
+ExactPlaneConcreteSampler
+ExactPlaneOntoReadSpan
+ExactPlaneCanonicalReadSpan

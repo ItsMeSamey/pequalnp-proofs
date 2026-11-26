@@ -1,0 +1,118 @@
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:25:56: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:25:64: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:25:73: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:25:80: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:30:56: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:30:64: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:30:73: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:30:80: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:25:56: warning: This simp argument is unused:
+  if_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [oddList, List.length_cons, even, next, if_false, if_pos, if_neg, List.sum_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:25:80: warning: This simp argument is unused:
+  if_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [oddList, List.length_cons, even, next, if_true, if_false, if_pos, List.sum_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:30:56: warning: This simp argument is unused:
+  if_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [oddList, List.length_cons, even, next, if_false, if_pos, if_neg, List.sum_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:30:80: warning: This simp argument is unused:
+  if_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [oddList, List.length_cons, even, next, if_true, if_false, if_pos, List.sum_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:46:18: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:51:56: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:51:64: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:51:73: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:51:80: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:51:56: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:51:64: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:51:73: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:51:80: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:33:0: warning: automatically included section variable(s) unused in theorem `ExactPlaneAffineSparse.chart_decode`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:51:56: warning: This simp argument is unused:
+  if_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [oddList, e, if_false, if_pos, if_neg, List.length_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/dev/shm/review-plane-sampler-hya1l8tu/research/interpolation-point/affine-span-lean/ExactPlaneAffineSparse.lean:51:80: warning: This simp argument is unused:
+  if_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [oddList, e, if_true, if_false, if_pos, List.length_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ExactPlaneAffineSparse.quartic_hit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneAffineSparse.covered_hit' depends on axioms: [propext, Classical.choice, Quot.sound]

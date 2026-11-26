@@ -1,0 +1,9 @@
+theorem universal_read_seed (m r : ℕ) :
+    ∃ seed : Finset (Vec (Fin m)),seed.card≤max 1 ((2*m*2^(r+1))^2) ∧
+      ∀ k≤r,∀ (read : Fin k→Vec (Fin m) →ₗ[F] F) (offset target : Fin k→F),
+      ∀ (K : Type u) [Fintype K], ∀ a b c d : Residual (Fin m) K,
+      (∃ x,Active read offset target x ∧ independent a.read b.read c.read d.read x) →
+      ∃ l : List (Vec (Fin m)), (∀ x∈l,x∈seed ∧ Active read offset target x) ∧
+        (l.length=1 ∨ l.length=3 ∨ l.length=5) ∧
+        l.sum∈affineSpan F (slice seed read offset target:Set (Vec (Fin m))) ∧
+        Active read offset target l.sum ∧ independent a.read b.read c.read d.read l.sum
