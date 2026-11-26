@@ -1,0 +1,21 @@
+# Every residual circuit of at most 33 gates requires at least twenty mixed gates
+
+This concerns the L-meta-18968 residual; existence at size 33 is open. The earlier checks give m≥19, P≥11 and L≥7. Binary connectedness gives m=P+L−1+k, where k is total operand reuse. At m=19 the six possible (P,L,k) cells are (11,7,2),(12,7,1),(13,7,0),(12,8,0),(11,8,1),(11,9,0). The three seven-line cases are excluded by ../two-surplus/README.md. For P12/L8 read-once use eighth_line_good.md and eighth_line_concurrent.md in /workspace/scratch/syn_dual/near. An eight-wire bank must have seven singleton signatures plus one additional mask by the line-cover classification.
+
+## P11,L8, one surplus
+
+Lower line wires to ORs of their singleton signatures. An empty extra disappears and a duplicate singleton merges into the seven-line theorem at surplus at most two. A repeated pure point wire gives the read-once mixed tree with that point counted twice. For |S|≥3, /workspace/scratch/syn_dual/eightplus/README.md and verify_clamp.py cover every repeated endpoint. For S={T,U}:
+
+* If the repeated boundary wire is T, U or E=T OR U, use /workspace/scratch/syn_dual/eightplus/pair-special.md or /workspace/scratch/syn_cover/line19/repeated.md. If it is any other raw K the six-ordinary skeleton either has no exceptional split or an AND between T,U. /workspace/scratch/syn_cover/line19/repeated-outside.md covers ordinary splitting and all exceptional cases where one child lacks K. ../eight-one/repeated-k-split.md covers one K in each child.
+* For a mixed shared D, call the five raw labels other than T,U ordinary. With at least two ordinary residents use /workspace/scratch/syn_dual/eightplus/pair-special.md and verify_two_targets.py. For zero use shared-no-ordinary.md there.
+* For one ordinary resident K, partition the three special source leaves T,U,E according to which feed D. With none inside, normalize D to K AND G and apply the raw-K proofs, factoring G once. Non-K positives and lower cofactor comparisons use K=0; for K-active negatives needing K=1 the tested point already satisfies G. The small guarded-K fallback uses ../one-surplus/parallel.md and its four-point pruning lemma. For nonempty inside subsets, ../eight-one/single-inside.md covers {E},{T},{U},{E,T},{E,U},{E,T,U}; ../eight-one/two-raw-inner.md covers {T,U}. ../eight-one/verify.py checks 11,340 and 3,780 marked extensions.
+
+## P11,L9, read-once
+
+P11 costs at least nine, leaving at most five paid line gates. The raw cover computation gives seven singletons plus two extras or one of 24 missing-singleton banks. Empty signatures may be removed, duplicate signatures identified, producing an already covered smaller-width topology. See /workspace/scratch/syn_bounds/nineteen/README.md for the cover table and line costs (its status section predates the final proofs).
+
+* The 24 missing-singleton banks have six singleton inputs and three pair masks sharing the missing center. /workspace/scratch/syn_quotients/l9_certificate.zip gives a standalone solver-free line-cograph, four-guard and point-cost replay. SHA-256 c44f63bcb983c115068a6a3937a3646ea1f145a1f2f3e7bf1ee5d1f456dbd5a3.
+* With seven raw line leaves and distinct genuine extras, 6,118 of 7,140 banks are affordable. The 3,361 affordable full-good banks use /workspace/scratch/syn_cover/line19/README.md. ../double-clamp/no-and.md covers all 2,757 affordable punctured banks when no raw-splitting AND occurs. ../double-clamp/README.md also excludes all shapes for the 531 punctured banks with complete split witnesses.
+* For exceptional splits use /workspace/scratch/syn_cover/line19/exceptional.md and finish-single-edge.md. Its replay.sh reproduces the geometry and compartment checks (replay.log). These cover single edges and disjoint two-edge ANDs. /workspace/scratch/syn_sat/double/{PAIR.md,TRIPLE.md,FOUR-GROUPS.md} covers the remaining adjacent pair and triple ANDs. The adjacent.zip archive SHA-256 is e626622e54f60eed256020af85df27de952ed0b484ef34e83fb51d4938cbbf82. All 176 compartment UNSAT checks and the 7,560 joint arm/idle extensions passed. The four-group point lower bound also has an independent duplicate-tolerant raw-bank enumeration.
+
+All six cells exceed total cost 33. This argument makes no unrestricted exclusion for m≥20.
