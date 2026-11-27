@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+**399 original cases remain.** The all-present argument excludes 71 additional zero-terminal originals. Independent review reproduced all 186 pivot comparisons. The cumulative totals are 3,637 of 4,032 zero-terminal and 6,209 of 6,213 one-terminal originals. [395 remaining zero-terminal IDs](t0-remaining-395.ids) · [4 remaining one-terminal IDs](t1-remaining-4.ids) · [71 additions](allpresent-new71.ids) · [Audit manifest](allpresent-3637.sha256)
+
 **470 original cases remain.** Completing the four two-compound charts adds 29 zero-terminal and 33 one-terminal originals to the preceding union. The independently reviewed exclusions cover 3,566 of 4,032 and 6,209 of 6,213 respectively. The reviews used archived numerical outcomes with targeted receipt checks. [466 remaining zero-terminal IDs](t0-remaining-466.ids) · [4 remaining one-terminal IDs](t1-remaining-4.ids) · [Audit manifest](four-chart-3566-6209.sha256)
 
 **532 original cases remain.** The independently reviewed two-compound chart for the pair (9,130) excludes 23 new originals at each terminal count. The cumulative totals are 3,537 of 4,032 zero-terminal and 6,176 of 6,213 one-terminal cases. [495 remaining zero-terminal IDs](t0-remaining-495.ids) · [37 remaining one-terminal IDs](t1-remaining-37.ids) · [Audit manifest](pair9-130-3537-6176.sha256)
