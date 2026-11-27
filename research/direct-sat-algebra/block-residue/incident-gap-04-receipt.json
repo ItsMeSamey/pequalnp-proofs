@@ -1,0 +1,1 @@
+{"cpu": 0.340915, "maxrss_kib": 9308, "code": 0, "output": "k=1,2: exact hull vs quadratic gap; signed quotient words and NAND witnesses replayed\n", "rss": 9756672, "wall": 0.34754084100131877, "kernel_before": ["18: FLOCK  ADVISORY  WRITE 1479704 00:1b:193638 0 EOF"], "kernel_after": ["18: FLOCK  ADVISORY  WRITE 1479704 00:1b:193638 0 EOF"]}
