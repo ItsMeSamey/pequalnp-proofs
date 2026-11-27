@@ -1,0 +1,13 @@
+# Compiling two arbitrarily overlapping clauses with independent physical taps
+
+Normalize each clause by removing duplicates; tautological or empty clauses reduce to a single clause or a constant. For two remaining clauses introduce baseline tracks P,H,Q, one leaf v per variable, and a separate private dead track d for each variable requiring it. One physical input controls a mandatory choice of transpositions (v,a) and (v,b). These share v, so their quotient is a three-cycle. Fixed wiring composes the baseline transposition with one independently optional native rotation, with polarity adjusted to match the input. Use the following choices and an independent optional transposition at each leaf, implemented with a private closed third channel.
+
+* For a variable present with opposite signs in the two clauses, choose P or Q according to which clause gets its true literal. The leaf tap goes to H.
+* For a variable present in only one clause, choose the corresponding P or Q when its literal is true and d otherwise. The leaf tap goes to H.
+* For a variable present with the same sign in both clauses, choose P if the common literal is true and d otherwise. The leaf tap goes to Q.
+
+All variable choices precede the optional taps; close the resulting track permutation and mark the baseline P and Q tracks at its seam. For every fixed assignment the mandatory edges form a forest because each v appears once and no edge joins two hubs. An undeleted same-sign true leaf permits a tap directly between P and Q components. Otherwise, contracting the mandatory edges, the only routes between P and Q pass through H, and each side is reachable from H precisely when that clause has a true literal. Each dead track is private, so its component can only supply a dangling tap. Thus P,Q are graph-connected with available taps exactly when the two clauses are satisfied.
+
+On a satisfying assignment enable taps only along one simple path of contracted components; the resulting edge graph is a forest. Multiplying transpositions in any order over a forest yields one permutation orbit per connected component by induction. Conversely no sequence of available taps crosses a disconnected component cut. This verifies all physical settings and constructs a joining mask. Each named input occurs once, with at most one independent auxiliary tap per variable and a linear number of tracks. It computes the two-clause predicate after existentially quantifying the taps; a satisfying assignment need not join the marks with every possible tap setting.
+
+This family has arbitrary overlap. A separate three-rail construction for at most two opposite-signed shared literals computes a deterministic two-port predicate without any auxiliary taps.

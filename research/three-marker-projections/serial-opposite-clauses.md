@@ -1,0 +1,9 @@
+# Serial clauses with shared opposite-sign variables
+
+After removing duplicate literals and tautological clauses, each variable may occur privately or at opposite signs in two consecutive clauses. An admissible order exists precisely when the simple graph of required clause adjacencies is a disjoint union of paths. Concatenate their orders including isolated vertices.
+
+Give m clauses checkpoints t0 through tm. A variable shared between j and j+1 chooses a mandatory transposition from its private leaf v to t(j−1) when its literal in j is true, and to t(j+1) otherwise. Its optional tap joins v to tj. A private variable in clause j chooses the endpoint t(j−1) when its literal is true, or a private dead vertex otherwise, and has a tap to tj. Because the two possible mandatory transpositions have a common leaf, their quotient is a 3-cycle, implemented by one native input and fixed wiring. Each optional transposition is a native gate with its third channel closed privately.
+
+The mandatory choice edges form a forest of stars. Contracting them, every available tap between checkpoints represents exactly one true clause literal and joins that clause's two consecutive checkpoints. Other taps lead to private dead ends. If all clauses are true, choose one tap per consecutive pair. The enabled edge graph is a forest, and multiplying its transpositions gives one permutation cycle per connected component. If some clause is false, no available tap crosses its cut, so every physical setting separates the t0 and tm marks at the seam.
+
+This is a linear-size construction with one physical switch per original input and at most one independent existential tap per input. Empty clauses give missing links, and a zero-clause formula uses a constant positive result. Incidence span and polarity restrictions concern the listed source formula. Neither the number of clauses nor the number of shared variables at a boundary is bounded.
