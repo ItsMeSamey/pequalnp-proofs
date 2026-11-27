@@ -1,0 +1,145 @@
+{
+  "first_zero_fourth_states": 1857815,
+  "receipts": [
+    {
+      "first": 1,
+      "file": "fast-1-0-10000.log.gz",
+      "second_prefixes": 95,
+      "third_leaves": 11602,
+      "fourth_states": 1885127,
+      "sha256_gzip": "133e54b67a98bee31519a17e5091e503fa4a5eef87795ccd0e1c51a0abd09ae1",
+      "sha256_text": "0fd3d902b1c24d7ba84d81f3cd3ba6b18906b2930fa543d88e8dcfd93f658443"
+    },
+    {
+      "first": 2,
+      "file": "fast-2-0-10000.log.gz",
+      "second_prefixes": 107,
+      "third_leaves": 13935,
+      "fourth_states": 2364569,
+      "sha256_gzip": "9893d8c37bf6b8a0a8fe5415beedae4cb1433f8e6f6459b01a596ba828894f35",
+      "sha256_text": "9bb51200928265ebdc5b02ffb26ef2e2a3d004df761d86fe092ba0c9d69b9a23"
+    },
+    {
+      "first": 3,
+      "file": "fast-3-0-10000.log.gz",
+      "second_prefixes": 93,
+      "third_leaves": 11268,
+      "fourth_states": 1825393,
+      "sha256_gzip": "293a6dfc55c849981f9ef51f35422af1c3c7e6141afd36b72c40525c0a5436b7",
+      "sha256_text": "f0af800e7edfafd547df0fc31f7c25b2fbbbe8011491c208a7fb75484a8953bf"
+    },
+    {
+      "first": 4,
+      "file": "fast-4-0-10000.log.gz",
+      "second_prefixes": 92,
+      "third_leaves": 11058,
+      "fourth_states": 1779906,
+      "sha256_gzip": "055969a9c9386350a9e9d4a13036452c93c10726fa5662b82595300ee2d00857",
+      "sha256_text": "4cc10a61e975188f064e277d8ad9a701761fc26e7c0989af99bd169e9537d740"
+    },
+    {
+      "first": 5,
+      "file": "fast-5-0-10000.log.gz",
+      "second_prefixes": 79,
+      "third_leaves": 8597,
+      "fourth_states": 1268319,
+      "sha256_gzip": "c71bed4393b158bf6991cc63bbbe1ed7c41b5d26abe47fed3289fed09c1f49c9",
+      "sha256_text": "1b67bad3719ca4379451f4ed502009d14fb6e105ee065b87a461133e140fcc80"
+    },
+    {
+      "first": 6,
+      "file": "fast-6-0-10000.log.gz",
+      "second_prefixes": 90,
+      "third_leaves": 10589,
+      "fourth_states": 1660989,
+      "sha256_gzip": "140a24e3111b67a2664343be590eea676cd13beb043b500c9c806813c6b32b8c",
+      "sha256_text": "e9f59208090b0e58a72e6a6e035d0c34c440bf0438948e0dc02ad82f0e5165fe"
+    },
+    {
+      "first": 7,
+      "file": "fast-7-0-10000.log.gz",
+      "second_prefixes": 102,
+      "third_leaves": 13112,
+      "fourth_states": 2220876,
+      "sha256_gzip": "1c48e52013d66ae3712204e59d79b4dd888d7fae1db27a69f6c0d0ff73074481",
+      "sha256_text": "eac30164c1d97e0aafee816cf5eaebc5d6b11eb7e985927a176aa9fe8a522ce4"
+    },
+    {
+      "first": 8,
+      "file": "fast-8-0-10000.log.gz",
+      "second_prefixes": 130,
+      "third_leaves": 18909,
+      "fourth_states": 3442612,
+      "sha256_gzip": "d1029091c5b58dcb1baa2941c74d51208edec432769e78072443460c098f7c7a",
+      "sha256_text": "38473bee00a8abed74fabe8377f53c0eff4ac9ee33a7d1dc8b66cf6ded883f2c"
+    },
+    {
+      "first": 9,
+      "file": "fast-9-0-10000.log.gz",
+      "second_prefixes": 87,
+      "third_leaves": 9958,
+      "fourth_states": 1516453,
+      "sha256_gzip": "19232ade188891d6486a6cf51523f4adbd7206d22333f6c68ff092a2836b6bac",
+      "sha256_text": "751cfb8485d8676350f43f0d3fea820e869237bd0b508f23333d6e2c6929d69b"
+    },
+    {
+      "first": 10,
+      "file": "fast-10-0-10000.log.gz",
+      "second_prefixes": 86,
+      "third_leaves": 10219,
+      "fourth_states": 1645468,
+      "sha256_gzip": "b11935c65525bf60ab61a03650fd159848ba19be01b9c13c9c4f6a93eaf7908d",
+      "sha256_text": "f9cd539c386b427681d2f42042a970308504749906c9d9a7140bed364e9a51f2"
+    },
+    {
+      "first": 11,
+      "file": "fast-11-0-10000.log.gz",
+      "second_prefixes": 127,
+      "third_leaves": 18398,
+      "fourth_states": 3369413,
+      "sha256_gzip": "83744d2750f9f9e60660a787bbf8d68563c652b63053dafa847ea9e73626f1e9",
+      "sha256_text": "2201d70ac356dea41f0940a2f39c67e80642b456d15011442185962a6db22ace"
+    },
+    {
+      "first": 12,
+      "file": "fast-12-0-10000.log.gz",
+      "second_prefixes": 72,
+      "third_leaves": 7680,
+      "fourth_states": 1140954,
+      "sha256_gzip": "166f3abf8f7a5673013390af518e88b90f3cf2e487d55ba90305d22004fefd9c",
+      "sha256_text": "808c678c095d17599bfe4ad10aedbfc612359b55790be2b881fec6e07d560b44"
+    },
+    {
+      "first": 13,
+      "file": "fast-13-0-10000.log.gz",
+      "second_prefixes": 110,
+      "third_leaves": 14760,
+      "fourth_states": 2574303,
+      "sha256_gzip": "67950f311826a51c8ac420180a7551b822069e95ec2a5ee09cf04008da8e410f",
+      "sha256_text": "2e8c65dedc7f37fce320e27eafd025d493ee1051064ef0b1978c23f0c17a8bb7"
+    },
+    {
+      "first": 14,
+      "file": "fast-14-0-10000.log.gz",
+      "second_prefixes": 95,
+      "third_leaves": 11736,
+      "fourth_states": 1930987,
+      "sha256_gzip": "e625aa3662e63b6e8e3d560592bd2a174ea136fe91b78120afe59a1505cc4521",
+      "sha256_text": "653b5ac6adb27f1dac7b7425dc1aebf719848d2f0d6e23da25cd1a1e3bdff436"
+    },
+    {
+      "first": 15,
+      "file": "fast-15-0-10000.log.gz",
+      "second_prefixes": 94,
+      "third_leaves": 11516,
+      "fourth_states": 1892983,
+      "sha256_gzip": "5efeb78089c2626127c9329adb5a0778a898e62a5b80dece9b37788e27c966b3",
+      "sha256_text": "5553ef067b92fb6fa03a13948deb5a18011ed02abeb5200e8b088cb034ed662d"
+    }
+  ],
+  "added_states": 30518352,
+  "second_prefixes": 1459,
+  "third_leaves": 183337,
+  "cumulative_states": 32376167,
+  "next_first": 16
+}

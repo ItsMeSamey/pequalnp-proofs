@@ -1,0 +1,168 @@
+{
+  "previous": 32376167,
+  "added": 27054536,
+  "cumulative": 59430703,
+  "completed": [
+    {
+      "first": 16,
+      "file": "fast-16-0-10000.log.gz",
+      "second_prefixes": 80,
+      "third_leaves": 8996,
+      "fourth_states": 1391792,
+      "sha256_gzip": "97807972e97676048a2319f2d2949656e4175abcd74f3097795d8e6c70b190d0",
+      "sha256_text": "24658959acedbd386b5a4ac60e6171b78373eb6f573a0344c856988ff997bef1"
+    },
+    {
+      "first": 17,
+      "file": "fast-17-0-10000.log.gz",
+      "second_prefixes": 137,
+      "third_leaves": 20393,
+      "fourth_states": 3772404,
+      "sha256_gzip": "8844606acf11e3ef218d84834284551021836a8b1ee09587dd375230786845b8",
+      "sha256_text": "9f1ae3d27db738e451e31441cabfb68d374c135b68f80528f7e9aa22bf7ef715"
+    },
+    {
+      "first": 18,
+      "file": "fast-18-0-10000.log.gz",
+      "second_prefixes": 91,
+      "third_leaves": 10914,
+      "fourth_states": 1764702,
+      "sha256_gzip": "903cded1e3a1512283b84dbc43cbb47b9edd825fc0640cd7c8ea7ebe478d11d2",
+      "sha256_text": "3a1751c733b804c0ca824a9cd234fd5363f86677815083dbecd7855e1840f087"
+    },
+    {
+      "first": 19,
+      "file": "fast-19-0-10000.log.gz",
+      "second_prefixes": 104,
+      "third_leaves": 13311,
+      "fourth_states": 2233489,
+      "sha256_gzip": "02614eda3ef8a088f2bcb7628e0e5576d1dc3257b274efbf784d3b3277e9789b",
+      "sha256_text": "65c6fb8e463ef68c40597365fd4a1a24ea208e3cfeb181d652575d423abe3c6c"
+    },
+    {
+      "first": 20,
+      "file": "fast-20-0-10000.log.gz",
+      "second_prefixes": 76,
+      "third_leaves": 8461,
+      "fourth_states": 1307924,
+      "sha256_gzip": "77c6837a57ce8e23d0c92eb6b32f80f1c99a706720af5cfa3ee9b2f7d262c170",
+      "sha256_text": "29bf33d445dabbea4d235cdb314dd345fa9b176e3824c30d159d3d9f034d808a"
+    },
+    {
+      "first": 21,
+      "file": "fast-21-0-10000.log.gz",
+      "second_prefixes": 102,
+      "third_leaves": 12882,
+      "fourth_states": 2150605,
+      "sha256_gzip": "093b77a0f4bc1fec4aaed759de69f1fd7792be3687c7a9074cb6056e765d3bf6",
+      "sha256_text": "55ad4bd6c62765dbb718100a5dccc911cb255e2521948708d57027485da9c944"
+    },
+    {
+      "first": 22,
+      "file": "fast-22-0-10000.log.gz",
+      "second_prefixes": 101,
+      "third_leaves": 12550,
+      "fourth_states": 2059740,
+      "sha256_gzip": "f4286ceb5347c8d37a572bb40f9039a740b05e64a5627ebfafca71498656a3ae",
+      "sha256_text": "2d9019a8f6863aff36125c65e9c10ec075d147f6fe1e4eefa2b901ac3ad04792"
+    },
+    {
+      "first": 23,
+      "file": "fast-23-0-10000.log.gz",
+      "second_prefixes": 86,
+      "third_leaves": 9759,
+      "fourth_states": 1500619,
+      "sha256_gzip": "d258650a93dea4c48110a3b90d6b67ae4d47a7caf24bf6e078f3f477830a2ba7",
+      "sha256_text": "08a4c0fee6d2b85ef44c2ec3b077e649b6a4ab5ebcec9133e5670e870fe26ef2"
+    },
+    {
+      "first": 24,
+      "file": "fast-24-0-10000.log.gz",
+      "second_prefixes": 85,
+      "third_leaves": 9539,
+      "fourth_states": 1443676,
+      "sha256_gzip": "36ce0c0c3ab47eecf0d0125b0eb4ab4a5f44b89cd44f83bd1c30d25f305bb4ef",
+      "sha256_text": "e67ffca23d8996029a38cbadb4c1a235e772101b1f4e69a40579485d2a665b3c"
+    },
+    {
+      "first": 25,
+      "file": "fast-25-0-10000.log.gz",
+      "second_prefixes": 71,
+      "third_leaves": 7563,
+      "fourth_states": 1131813,
+      "sha256_gzip": "ab063b0b59603c11c86890fcba151e2a6f060012ea252b4f9fd2d522165fc78c",
+      "sha256_text": "e65f0291966da08737838b4b9ca5c1caffe840e3cfbf6cf5cbdcab086cc5de27"
+    },
+    {
+      "first": 26,
+      "file": "fast-26-0-10000.log.gz",
+      "second_prefixes": 83,
+      "third_leaves": 9385,
+      "fourth_states": 1443307,
+      "sha256_gzip": "2079e358358f67a6f29a931e8142e8a754cd0b8fd1b38696ab32afb4a7dda6b8",
+      "sha256_text": "9f46b6841f502b83d8173f58272858fb46f05d79e4b8254698f50f5771c25258"
+    },
+    {
+      "first": 27,
+      "file": "fast-27-0-10000.log.gz",
+      "second_prefixes": 96,
+      "third_leaves": 11808,
+      "fourth_states": 1932027,
+      "sha256_gzip": "d1655b4d96f183b5b43da91c000681fc6e52d34a53f4add3b7b09f4ecd45ca53",
+      "sha256_text": "ad5ff91f2d2f0b9ba157b9d971ff76245a0bbd25a2589085dcda56401eb5a207"
+    },
+    {
+      "first": 28,
+      "file": "fast-28-0-10000.log.gz",
+      "second_prefixes": 81,
+      "third_leaves": 9122,
+      "fourth_states": 1418212,
+      "sha256_gzip": "b9fd71fadffca5bc5ba5fa639b5e9b40db9cd62428a115fd33b96ce3fe82b2ec",
+      "sha256_text": "dcd2374717a7c8b735d5446ac64bd07ea86368ae987da42de10d7ef537a80bcb"
+    },
+    {
+      "first": 29,
+      "file": "fast-29-0-10000.log.gz",
+      "second_prefixes": 67,
+      "third_leaves": 6949,
+      "fourth_states": 1024806,
+      "sha256_gzip": "28f3a8394633ea30bb91d0328010cab726b6916293d3a952c3395fc0b6250f19",
+      "sha256_text": "dbc21d4b5bca46d98563341ecec25cc5bb5612b3522935b97e8dd70fbc0fbfbc"
+    },
+    {
+      "first": 30,
+      "file": "fast-30-0-10000.log.gz",
+      "second_prefixes": 43,
+      "third_leaves": 3716,
+      "fourth_states": 477473,
+      "sha256_gzip": "618cffc3e47f97ea35c399feb7f4fe92d1c20b6c358312192c11421d77b2aa88",
+      "sha256_text": "b8ff805ac30dda0ad54a2bfa595d35ada869a6d8f8dff68806fa7e7c7b8a5546"
+    },
+    {
+      "first": 31,
+      "file": "fast-31-0-10000.log.gz",
+      "second_prefixes": 78,
+      "third_leaves": 8709,
+      "fourth_states": 1344045,
+      "sha256_gzip": "f94ef313b9dd95462b37d62f80e1a89903214da065a28c7d995ad2db5a106480",
+      "sha256_text": "65a2314ed816cec4d081dda46dcf3cb70b63881ee9fcd9cd3296ca7ec9957b38"
+    }
+  ],
+  "partial": {
+    "first": 32,
+    "file": "fast-32-0-10000.log.gz",
+    "complete": false,
+    "closed_seconds": 35,
+    "closed_thirds": 4079,
+    "partial_thirds": 103,
+    "partial_fourths": 16993,
+    "fourth_states": 657902,
+    "next_third": [
+      32,
+      35,
+      103
+    ],
+    "sha256_gzip": "8f2ecdb230bdb6dc302ea14825ff73bb00a17529911196982f52ea8c0c1d9ef2",
+    "sha256_text": "106570e40e3a0ff3cb34baa3855e8a0fa863d716a3dd2f5e85884e18270ee375"
+  }
+}

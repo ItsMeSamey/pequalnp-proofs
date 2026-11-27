@@ -1,0 +1,23 @@
+thirdblock 0 14 0 16 shard 0 states 1 1 16 2918 coarse 0 found 0 0
+thirdblock 0 14 16 32 shard 0 states 1 1 16 2597 coarse 0 found 0 0
+thirdblock 0 14 32 48 shard 0 states 1 1 16 3109 coarse 0 found 0 0
+thirdblock 0 14 48 64 shard 0 states 1 1 16 3102 coarse 0 found 0 0
+thirdblock 0 14 64 80 shard 0 states 1 1 16 3086 coarse 0 found 0 0
+thirdblock 0 14 80 96 shard 0 states 1 1 16 2678 coarse 0 found 0 0
+thirdblock 0 14 96 112 shard 0 states 1 1 16 2214 coarse 0 found 0 0
+thirdblock 0 14 112 128 shard 0 states 1 1 16 2479 coarse 0 found 0 0
+thirdblock 0 14 128 144 shard 0 states 1 1 12 1496 coarse 0 found 0 0
+thirdblock 0 14 144 160 shard 0 states 1 1 0 0 coarse 0 found 0 0
+block 0 15 shard 0 states 1 1 122 18934 coarse 0 found 0 0
+block 0 16 shard 0 states 1 1 112 16658 coarse 0 found 0 0
+block 0 17 shard 0 states 1 1 136 22803 coarse 0 found 0 0
+block 0 18 shard 0 states 1 1 142 24002 coarse 0 found 0 0
+block 0 19 shard 0 states 1 1 136 23364 coarse 0 found 0 0
+block 0 20 shard 0 states 1 1 121 18710 coarse 0 found 0 0
+block 0 21 shard 0 states 1 1 118 18384 coarse 0 found 0 0
+block 0 22 shard 0 states 1 1 133 22251 coarse 0 found 0 0
+block 0 23 shard 0 states 1 1 137 23109 coarse 0 found 0 0
+block 0 24 shard 0 states 1 1 127 20153 coarse 0 found 0 0
+block 0 25 shard 0 states 1 1 130 21555 coarse 0 found 0 0
+partial 0 26
+usage 6.390747192 6.494164970004931

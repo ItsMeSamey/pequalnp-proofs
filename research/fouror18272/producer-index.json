@@ -1,0 +1,497 @@
+[
+  {
+    "first": 0,
+    "second_prefixes": 96,
+    "third_leaves": 11605,
+    "fourth_states": 1857815,
+    "sha256_text": "ddd37f84710b57258014725275f2c612a32ebd05522c42d7a7f6bd9bf0c38ff0",
+    "first_mask": 23622255367,
+    "hits": 0
+  },
+  {
+    "first": 1,
+    "second_prefixes": 95,
+    "third_leaves": 11602,
+    "fourth_states": 1885127,
+    "sha256_text": "0fd3d902b1c24d7ba84d81f3cd3ba6b18906b2930fa543d88e8dcfd93f658443",
+    "first_mask": 27917234243,
+    "hits": 0
+  },
+  {
+    "first": 2,
+    "second_prefixes": 107,
+    "third_leaves": 13935,
+    "fourth_states": 2364569,
+    "sha256_text": "9bb51200928265ebdc5b02ffb26ef2e2a3d004df761d86fe092ba0c9d69b9a23",
+    "first_mask": 30785811268,
+    "hits": 0
+  },
+  {
+    "first": 3,
+    "second_prefixes": 93,
+    "third_leaves": 11268,
+    "fourth_states": 1825393,
+    "sha256_text": "f0af800e7edfafd547df0fc31f7c25b2fbbbe8011491c208a7fb75484a8953bf",
+    "first_mask": 34157572208,
+    "hits": 0
+  },
+  {
+    "first": 4,
+    "second_prefixes": 92,
+    "third_leaves": 11058,
+    "fourth_states": 1779906,
+    "sha256_text": "4cc10a61e975188f064e277d8ad9a701761fc26e7c0989af99bd169e9537d740",
+    "first_mask": 34288108340,
+    "hits": 0
+  },
+  {
+    "first": 5,
+    "second_prefixes": 79,
+    "third_leaves": 8597,
+    "fourth_states": 1268319,
+    "sha256_text": "1b67bad3719ca4379451f4ed502009d14fb6e105ee065b87a461133e140fcc80",
+    "first_mask": 34359672883,
+    "hits": 0
+  },
+  {
+    "first": 6,
+    "second_prefixes": 90,
+    "third_leaves": 10589,
+    "fourth_states": 1660989,
+    "sha256_text": "e9f59208090b0e58a72e6a6e035d0c34c440bf0438948e0dc02ad82f0e5165fe",
+    "first_mask": 105226636307,
+    "hits": 0
+  },
+  {
+    "first": 7,
+    "second_prefixes": 102,
+    "third_leaves": 13112,
+    "fourth_states": 2220876,
+    "sha256_text": "eac30164c1d97e0aafee816cf5eaebc5d6b11eb7e985927a176aa9fe8a522ce4",
+    "first_mask": 124804534036,
+    "hits": 0
+  },
+  {
+    "first": 8,
+    "second_prefixes": 130,
+    "third_leaves": 18909,
+    "fourth_states": 3442612,
+    "sha256_text": "38473bee00a8abed74fabe8377f53c0eff4ac9ee33a7d1dc8b66cf6ded883f2c",
+    "first_mask": 129603746896,
+    "hits": 0
+  },
+  {
+    "first": 9,
+    "second_prefixes": 87,
+    "third_leaves": 9958,
+    "fourth_states": 1516453,
+    "sha256_text": "751cfb8485d8676350f43f0d3fea820e869237bd0b508f23333d6e2c6929d69b",
+    "first_mask": 137438891056,
+    "hits": 0
+  },
+  {
+    "first": 10,
+    "second_prefixes": 86,
+    "third_leaves": 10219,
+    "fourth_states": 1645468,
+    "sha256_text": "f9cd539c386b427681d2f42042a970308504749906c9d9a7140bed364e9a51f2",
+    "first_mask": 345744822403,
+    "hits": 0
+  },
+  {
+    "first": 11,
+    "second_prefixes": 127,
+    "third_leaves": 18398,
+    "fourth_states": 3369413,
+    "sha256_text": "2201d70ac356dea41f0940a2f39c67e80642b456d15011442185962a6db22ace",
+    "first_mask": 366408782724,
+    "hits": 0
+  },
+  {
+    "first": 12,
+    "second_prefixes": 72,
+    "third_leaves": 7680,
+    "fourth_states": 1140954,
+    "sha256_text": "808c678c095d17599bfe4ad10aedbfc612359b55790be2b881fec6e07d560b44",
+    "first_mask": 371245215936,
+    "hits": 0
+  },
+  {
+    "first": 13,
+    "second_prefixes": 110,
+    "third_leaves": 14760,
+    "fourth_states": 2574303,
+    "sha256_text": "2e8c65dedc7f37fce320e27eafd025d493ee1051064ef0b1978c23f0c17a8bb7",
+    "first_mask": 377943707824,
+    "hits": 0
+  },
+  {
+    "first": 14,
+    "second_prefixes": 95,
+    "third_leaves": 11736,
+    "fourth_states": 1930987,
+    "sha256_text": "653b5ac6adb27f1dac7b7425dc1aebf719848d2f0d6e23da25cd1a1e3bdff436",
+    "first_mask": 379295915152,
+    "hits": 0
+  },
+  {
+    "first": 15,
+    "second_prefixes": 94,
+    "third_leaves": 11516,
+    "fourth_states": 1892983,
+    "sha256_text": "5553ef067b92fb6fa03a13948deb5a18011ed02abeb5200e8b088cb034ed662d",
+    "first_mask": 414464312587,
+    "hits": 0
+  },
+  {
+    "first": 16,
+    "second_prefixes": 80,
+    "third_leaves": 8996,
+    "fourth_states": 1391792,
+    "sha256_text": "24658959acedbd386b5a4ac60e6171b78373eb6f573a0344c856988ff997bef1",
+    "first_mask": 435849692940,
+    "hits": 0
+  },
+  {
+    "first": 17,
+    "second_prefixes": 137,
+    "third_leaves": 20393,
+    "fourth_states": 3772404,
+    "sha256_text": "9f1ae3d27db738e451e31441cabfb68d374c135b68f80528f7e9aa22bf7ef715",
+    "first_mask": 439981487432,
+    "hits": 0
+  },
+  {
+    "first": 18,
+    "second_prefixes": 91,
+    "third_leaves": 10914,
+    "fourth_states": 1764702,
+    "sha256_text": "3a1751c733b804c0ca824a9cd234fd5363f86677815083dbecd7855e1840f087",
+    "first_mask": 446461871416,
+    "hits": 0
+  },
+  {
+    "first": 19,
+    "second_prefixes": 104,
+    "third_leaves": 13311,
+    "fourth_states": 2233489,
+    "sha256_text": "65c6fb8e463ef68c40597365fd4a1a24ea208e3cfeb181d652575d423abe3c6c",
+    "first_mask": 483167098248,
+    "hits": 0
+  },
+  {
+    "first": 20,
+    "second_prefixes": 76,
+    "third_leaves": 8461,
+    "fourth_states": 1307924,
+    "sha256_text": "29bf33d445dabbea4d235cdb314dd345fa9b176e3824c30d159d3d9f034d808a",
+    "first_mask": 517489855768,
+    "hits": 0
+  },
+  {
+    "first": 21,
+    "second_prefixes": 102,
+    "third_leaves": 12882,
+    "fourth_states": 2150605,
+    "sha256_text": "55ad4bd6c62765dbb718100a5dccc911cb255e2521948708d57027485da9c944",
+    "first_mask": 582147033861,
+    "hits": 0
+  },
+  {
+    "first": 22,
+    "second_prefixes": 101,
+    "third_leaves": 12550,
+    "fourth_states": 2059740,
+    "sha256_text": "2d9019a8f6863aff36125c65e9c10ec075d147f6fe1e4eefa2b901ac3ad04792",
+    "first_mask": 582520731713,
+    "hits": 0
+  },
+  {
+    "first": 23,
+    "second_prefixes": 86,
+    "third_leaves": 9759,
+    "fourth_states": 1500619,
+    "sha256_text": "08a4c0fee6d2b85ef44c2ec3b077e649b6a4ab5ebcec9133e5670e870fe26ef2",
+    "first_mask": 583900842033,
+    "hits": 0
+  },
+  {
+    "first": 24,
+    "second_prefixes": 85,
+    "third_leaves": 9539,
+    "fourth_states": 1443676,
+    "sha256_text": "e67ffca23d8996029a38cbadb4c1a235e772101b1f4e69a40579485d2a665b3c",
+    "first_mask": 584115537923,
+    "hits": 0
+  },
+  {
+    "first": 25,
+    "second_prefixes": 71,
+    "third_leaves": 7563,
+    "fourth_states": 1131813,
+    "sha256_text": "e65f0291966da08737838b4b9ca5c1caffe840e3cfbf6cf5cbdcab086cc5de27",
+    "first_mask": 663805037596,
+    "hits": 0
+  },
+  {
+    "first": 26,
+    "second_prefixes": 83,
+    "third_leaves": 9385,
+    "fourth_states": 1443307,
+    "sha256_text": "9f46b6841f502b83d8173f58272858fb46f05d79e4b8254698f50f5771c25258",
+    "first_mask": 665719865359,
+    "hits": 0
+  },
+  {
+    "first": 27,
+    "second_prefixes": 96,
+    "third_leaves": 11808,
+    "fourth_states": 1932027,
+    "sha256_text": "ad5ff91f2d2f0b9ba157b9d971ff76245a0bbd25a2589085dcda56401eb5a207",
+    "first_mask": 681389142092,
+    "hits": 0
+  },
+  {
+    "first": 28,
+    "second_prefixes": 81,
+    "third_leaves": 9122,
+    "fourth_states": 1418212,
+    "sha256_text": "dcd2374717a7c8b735d5446ac64bd07ea86368ae987da42de10d7ef537a80bcb",
+    "first_mask": 685136791565,
+    "hits": 0
+  },
+  {
+    "first": 29,
+    "second_prefixes": 67,
+    "third_leaves": 6949,
+    "fourth_states": 1024806,
+    "sha256_text": "dbc21d4b5bca46d98563341ecec25cc5bb5612b3522935b97e8dd70fbc0fbfbc",
+    "first_mask": 685262031889,
+    "hits": 0
+  },
+  {
+    "first": 30,
+    "second_prefixes": 43,
+    "third_leaves": 3716,
+    "fourth_states": 477473,
+    "sha256_text": "b8ff805ac30dda0ad54a2bfa595d35ada869a6d8f8dff68806fa7e7c7b8a5546",
+    "first_mask": 685315654412,
+    "hits": 0
+  },
+  {
+    "first": 31,
+    "second_prefixes": 78,
+    "third_leaves": 8709,
+    "fourth_states": 1344045,
+    "sha256_text": "65a2314ed816cec4d081dda46dcf3cb70b63881ee9fcd9cd3296ca7ec9957b38",
+    "first_mask": 687051571260,
+    "hits": 0
+  },
+  {
+    "first": 32,
+    "second_prefixes": 77,
+    "third_leaves": 8601,
+    "fourth_states": 1332045,
+    "sha256_text": "b06c967f64ba7e9b67139947047d6c01b799485a1f4c0a5524ad7fb4e7aaf828",
+    "first_mask": 730144374979,
+    "hits": 0
+  },
+  {
+    "first": 33,
+    "second_prefixes": 90,
+    "third_leaves": 10825,
+    "fourth_states": 1763106,
+    "sha256_text": "a93f3c1f887429a198f931cbb6947d9a4b62c1493f4779be53524e888a641c1f",
+    "first_mask": 745624503236,
+    "hits": 0
+  },
+  {
+    "first": 34,
+    "second_prefixes": 75,
+    "third_leaves": 8134,
+    "fourth_states": 1237726,
+    "sha256_text": "8cf141565c3ec99a3f91c461916fe52c06a4997ca663326939efee92ac778a16",
+    "first_mask": 754036230337,
+    "hits": 0
+  },
+  {
+    "first": 35,
+    "second_prefixes": 38,
+    "third_leaves": 3274,
+    "fourth_states": 424456,
+    "sha256_text": "f2b06f6dd414261d2c58a43e27001eeaf72255f97c3043ec9f35775edc17c4a6",
+    "first_mask": 754588790976,
+    "hits": 0
+  },
+  {
+    "first": 36,
+    "second_prefixes": 73,
+    "third_leaves": 8025,
+    "fourth_states": 1234850,
+    "sha256_text": "d0ecc6cbc543c05a8f19fe0abc2971a239e18863140cf2fcbc3a4c329a7c685c",
+    "first_mask": 755700269296,
+    "hits": 0
+  },
+  {
+    "first": 37,
+    "second_prefixes": 86,
+    "third_leaves": 9986,
+    "fourth_states": 1581557,
+    "sha256_text": "1d12f33068b32b96905896e0548ed1eb0ebc9ff5aeea9d17a050706b71543926",
+    "first_mask": 797199764688,
+    "hits": 0
+  },
+  {
+    "first": 38,
+    "second_prefixes": 71,
+    "third_leaves": 7581,
+    "fourth_states": 1147089,
+    "sha256_text": "1528c4ae612c784dee8ca1f174b79e658c0dd0176963b417a3a2cd33cd2aa1c1",
+    "first_mask": 805664915660,
+    "hits": 0
+  },
+  {
+    "first": 39,
+    "second_prefixes": 84,
+    "third_leaves": 9677,
+    "fourth_states": 1536450,
+    "sha256_text": "6c20f47313bf7fb9e607062a586ba486d9c26beb5c93472c80e5e39968a6674f",
+    "first_mask": 926890907777,
+    "hits": 0
+  },
+  {
+    "first": 40,
+    "second_prefixes": 83,
+    "third_leaves": 9390,
+    "fourth_states": 1463772,
+    "sha256_text": "b3974b4123bb5502f2d12a64077d1ebd0830cac7ed563388a70bf941c25da00c",
+    "first_mask": 939781345420,
+    "hits": 0
+  },
+  {
+    "first": 41,
+    "second_prefixes": 68,
+    "third_leaves": 7053,
+    "fourth_states": 1050731,
+    "sha256_text": "555e98a20b8a0d0b84e85b45563e9f77bd8c51e7f427cf7dbab625544bcd6f90",
+    "first_mask": 996164029705,
+    "hits": 0
+  },
+  {
+    "first": 42,
+    "second_prefixes": 96,
+    "third_leaves": 11533,
+    "fourth_states": 1857976,
+    "sha256_text": "581ebc56b59392b2916bd74f4a5b0f332bc3c6b114a7f5368fa5bbe5c92108d4",
+    "first_mask": 1004754929096,
+    "hits": 0
+  },
+  {
+    "first": 43,
+    "second_prefixes": 80,
+    "third_leaves": 8645,
+    "fourth_states": 1311794,
+    "sha256_text": "d3ae6b60c5c94a6605c31172eadcb4efc8ef972c08ee02551fb22ea5b4d9eaab",
+    "first_mask": 1065366597170,
+    "hits": 0
+  },
+  {
+    "first": 44,
+    "second_prefixes": 79,
+    "third_leaves": 8682,
+    "fourth_states": 1355617,
+    "sha256_text": "73bae23a83a42aaedcebbc4d8c5f19895973d812e3d1c608d7714e5d128316fa",
+    "first_mask": 1066477318818,
+    "hits": 0
+  },
+  {
+    "first": 45,
+    "second_prefixes": 92,
+    "third_leaves": 10522,
+    "fourth_states": 1634084,
+    "sha256_text": "cf63e9b909354e8aae7b3418d55eaf8e1a8ec8c4ba330088cd185e41e238cfe5",
+    "first_mask": 1067030980394,
+    "hits": 0
+  },
+  {
+    "first": 46,
+    "second_prefixes": 63,
+    "third_leaves": 6071,
+    "fourth_states": 851684,
+    "sha256_text": "2b5c1df822e9b7142e3de6f2c9d8cddfa553f601f324e0922a433bba1803cd4d",
+    "first_mask": 1067299316259,
+    "hits": 0
+  },
+  {
+    "first": 47,
+    "second_prefixes": 62,
+    "third_leaves": 6246,
+    "fourth_states": 936923,
+    "sha256_text": "73496547b66703068da5482aec28b50b8b3487fbc319e67316b103c057644168",
+    "first_mask": 1071863767778,
+    "hits": 0
+  },
+  {
+    "first": 48,
+    "second_prefixes": 25,
+    "third_leaves": 1756,
+    "fourth_states": 201319,
+    "sha256_text": "1de0eb2ac02ef771eda0d47865a0ce7c4e7317df8c1a2da5775e8c1c339d411a",
+    "first_mask": 1073189179584,
+    "hits": 0
+  },
+  {
+    "first": 49,
+    "second_prefixes": 60,
+    "third_leaves": 5825,
+    "fourth_states": 844725,
+    "sha256_text": "c03e38a6f6c4563c877b7179b76458bfe07b1bc312774d02c1a01bfd491367a4",
+    "first_mask": 1075978773038,
+    "hits": 0
+  },
+  {
+    "first": 50,
+    "second_prefixes": 34,
+    "third_leaves": 2614,
+    "fourth_states": 317592,
+    "sha256_text": "12e02927912058c4137aff7c54c36a33d6d000252a97d8a01f638241255fb282",
+    "first_mask": 1077857846540,
+    "hits": 0
+  },
+  {
+    "first": 51,
+    "second_prefixes": 72,
+    "third_leaves": 7609,
+    "fourth_states": 1154509,
+    "sha256_text": "3b5e19d9aa3d4c0bd2ed557685cf3a9a78f317a133828cfbd07c7fa44e38ddcf",
+    "first_mask": 1086805648166,
+    "hits": 0
+  },
+  {
+    "first": 52,
+    "second_prefixes": 71,
+    "third_leaves": 7568,
+    "fourth_states": 1160593,
+    "sha256_text": "7b3ca22183fe532dd922698d9ce439ec77fe2002811dec93f9cf81c0c61f1fa1",
+    "first_mask": 1091474305634,
+    "hits": 0
+  },
+  {
+    "first": 53,
+    "second_prefixes": 85,
+    "third_leaves": 9097,
+    "fourth_states": 1335739,
+    "sha256_text": "3852d601fbe1191869367ccf8cb0f110b59350c429d095c266f3807e071aba55",
+    "first_mask": 1097364204067,
+    "hits": 0
+  },
+  {
+    "first": 54,
+    "second_prefixes": 55,
+    "third_leaves": 4940,
+    "fourth_states": 657007,
+    "sha256_text": "67120a082ecf26e8d4f089a22450051a64b3730aeed7411c48d90946b33bd9b2",
+    "first_mask": 1099296875058,
+    "hits": 0
+  }
+]

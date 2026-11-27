@@ -1,0 +1,6 @@
+launch g++ 6
+return 0
+launch ./orcut18272_four 2
+shard 0 states 1 1 105 13812 coarse 0 found 0
+return 0
+CPU 3.71793 RSSKiB 80984 wall 4.163937723002164
