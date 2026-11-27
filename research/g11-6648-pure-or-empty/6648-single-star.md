@@ -1,0 +1,9 @@
+# The single starred edge case of the G11 surplus inequality
+
+For the posted graph, take an original least AO TopForm circuit of size at most 21. Suppose its starred-edge set consists of exactly one edge. Then P=j+2c+q≥15, hence U=15≤P. For the selected sets in L-meta-6648, the cardinality balance gives the desired inequality.
+
+The G11 lower bound makes the circuit size exactly 21. Partition its gates into j dirty ANDs, t+c clean AND tops, q+λ nonclean ORs, and t+c−1 clean aggregation ORs. The last equality follows since the connected binary output OR network on the t+c live clean tops needs at least t+c−1 gates and a tree attains that value. Leastness implies equality. Hence 2t+λ=22−P.
+
+For an endpoint a of the sole starred edge let m_a be the number of singleton-a ORs with a raw-empty operand. The two endpoint-cycle lemmas prove that the true-a cofactor floor f(a) satisfies f(a)≤22−2t−λ−m_a=P−m_a. This calculation precedes their specialization to P=14. Only vertex 9 has a floor of at most 11; every other floor is at least 12. If P≤13, at most vertex 9 has m_a≥2, and m_9≤2. Lambda gates labeled by a need distinct subsets of at least two donors, so in total λ≤1. The bound of 3t−2 saved gates at both endpoints forbids t≥4, as that would require two endpoints of floor at most 11. Thus 2t+λ≤7, whereas 22−P≥9. This excludes P≤13.
+
+For P=14 the Lambda and endpoint bounds reduce the possibilities to t=2 and star 59 or 89, or t=3 and star 89. The frozen free-neighbor proof excludes all three by restriction to an optimal endpoint cofactor and recovery of a forbidden original sole OR reader. Its required secondary floors follow from the stated clauses of L-meta-927. The attached cycle, Lambda and free-neighbor sources give the complete argument. The calculation applies only under the stated leastness and TopForm assumptions. No combined Lean verification was performed.
