@@ -1,0 +1,3 @@
+# Repeated presentations of a shared pair equality
+
+The lower bound in pair-bank.md also permits multiple shared derived vertices with the same pair-equality falsity flat. Cut at all shared derived vertices as before, but for each distinct edge in G charge only its earliest chronological shared occurrence. Its exits can refer only to other pair types; each of its four exclusive samples must still reach its own raw axiom. These k components are disjoint, and uncharged components have nonnegative size. The weighted root bound and necessity of a root weakening use only the distinct available output labels, so remain unchanged.
