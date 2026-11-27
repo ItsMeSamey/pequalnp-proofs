@@ -35,12 +35,17 @@ def arbitrary():
             check(n, (tuple(gates), n+len(gates)-1))
         for wire in range(-2, n):
             check(n, ((), wire))
-    try:
-        solve(4, ((), -1), max_points=8)
-    except ValueError as exc:
-        assert 'budget' in str(exc)
-    else:
-        raise AssertionError('insufficient budget did not refuse')
+    assert solve(4, ((), -1), max_points=8) == dict(
+        status='unknown', reason='point_budget', required=9, available=8)
+    assert solve(0, ((), -1), max_points=0) == dict(
+        status='unknown', reason='point_budget', required=1, available=0)
+    for F, cap in ((((), 4), 0), (((), -1), -1)):
+        try:
+            solve(4, F, max_points=cap)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError('malformed input accepted')
 
 
 def mask_fixture(phi):
@@ -74,12 +79,8 @@ def tiny_masks(full_mask):
             result = check(12, physical, limit=2049)
             assert raw(12, physical, result['assignment'])
         else:
-            try:
-                solve(12, physical, max_points=9)
-            except ValueError as exc:
-                assert 'budget' in str(exc)
-            else:
-                raise AssertionError('width-12 mask bypassed small-test guard')
+            assert solve(12, physical, max_points=9) == dict(
+                status='unknown', reason='point_budget', required=2049, available=9)
 
 
 def cli():
@@ -89,6 +90,15 @@ def cli():
     got = json.loads(subprocess.run(command, input=data, text=True, check=True,
                                     capture_output=True).stdout)
     assert got['status'] == 'witness' and got['assignment'] == got['sample_budget'] == 1
+    refused = subprocess.run(command[:-1]+['0'], input=data, text=True, check=True,
+                             capture_output=True)
+    assert json.loads(refused.stdout) == dict(
+        status='unknown', reason='point_budget', required=1, available=0)
+    uncapped = subprocess.run(command[:2], input=data, text=True, check=True, capture_output=True)
+    assert json.loads(uncapped.stdout) == got
+    malformed = subprocess.run(command[:-1]+['0'], input='{"n":1,"F":[[],1]}',
+                               text=True, capture_output=True)
+    assert malformed.returncode and not malformed.stdout
 
 
 if __name__ == '__main__':

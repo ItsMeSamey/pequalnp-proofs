@@ -2,8 +2,9 @@
 
 Input JSON on stdin: {"n": 3, "F": [[[0,1]],3]}. Input 0 is the MSB,
 gate i has address n+i, and -1/-2 denote zero/one. Time is
-2**n * poly(n+s+1) including history replays. --max-points optionally
-bounds the sample budget per trial; refusal is a resource error, never UNSAT.
+2**n * poly(n+s+1) bit operations including history replays. By default
+there is no cap. An insufficient --max-points returns status "unknown" with
+reason "point_budget" and the integer fields required and available.
 """
 import argparse
 import json
@@ -26,10 +27,9 @@ def solve(n, F, *, max_points=None):
     F = _source(n, F)
     if max_points is not None:
         _natural(max_points, 'max_points')
-        # Avoid constructing an oversized budget integer just to refuse it.
-        if not max_points or (n >= 2 and n > (max_points-1).bit_length()):
-            raise ValueError('minimum sample budget exceeds max_points')
     m = minimum_points(n)
+    if max_points is not None and m > max_points:
+        return dict(status='unknown', reason='point_budget', required=m, available=max_points)
     result = forecast_solve(n, F, learner_factory(m), mode='positive')
     if result['status'] == 'witness' and evaluate(n, *F, result['assignment']) != 1:
         raise AssertionError('sampled forecast witness rejected by original NAND circuit')
@@ -45,6 +45,10 @@ def main():
         result = solve(data['n'], data['F'], max_points=args.max_points)
     except ValueError as exc:
         parser.error(str(exc))
+    # An exact required budget can have Theta(n) decimal digits. The inputs
+    # are already parsed; allow emission of that bounded-by-output-size field.
+    if hasattr(sys, 'set_int_max_str_digits'):
+        sys.set_int_max_str_digits(0)
     print(json.dumps(result, sort_keys=True))
 
 
