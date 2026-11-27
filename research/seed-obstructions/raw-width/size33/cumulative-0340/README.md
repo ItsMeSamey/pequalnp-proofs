@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+The independently reviewed C129 component adds **382 zero-terminal** and **53 one-terminal** original cases after removing overlaps. The reviewed totals are **3,320 of 4,032 zero-terminal cases** and **6,136 of 6,213 one-terminal cases**. The outstanding 712 and 77 total **789 cases**. This transfer includes all admissible pivots at their physical costs. C320 has a separate review. [Zero-terminal union](t0-signed-3320.ids) · [One-terminal union](t1-signed-6136.ids) · [Audit manifest](c129-cap25-deltas.sha256)
+
 **Current aggregate release** covers **2,938 of 4,032 zero-terminal cases** and **6,083 of 6,213 one-terminal cases**. The remaining counts of 1,094 and 130 total **1,224**. The 102-case literal component has its own all-owner proof and exact original-ID transfer. The prospective combined compound dispatch requires additional review. [102 added IDs](t0-cap25-stage0.ids) · [Zero-terminal union](t0-signed-2938.ids) · [Literal component evidence](literal26-novel102.sha256)
 
 **All 424 zero-terminal cost-29 three-compound cases are excluded.** The complete review adds 120 original IDs to the previous union. It uses archived SAT receipts, including four definitive outcomes for a truncated intermediate trace. The reviewed totals are **2,836 of 4,032 zero-terminal cases** and **6,083 of 6,213 one-terminal cases**. The 1,196 and 130 outstanding total **1,326 cases**. [Complete 424-case package](t0-424-three-compound-primary.zip) · [Zero-terminal union](t0-signed-2836.ids) · [Audit manifest](t0-triple120.sha256)
