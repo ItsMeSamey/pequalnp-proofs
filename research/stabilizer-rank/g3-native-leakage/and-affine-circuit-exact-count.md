@@ -1,0 +1,13 @@
+# Exact scalar simulation of affine gates and m binary ANDs
+
+For an explicit acyclic n-input circuit, introduce z_i for each of the m ANDs. Express their two input signals a_i,b_i and the final output o as affine forms on x,z by topological substitution, treating z_i as formal inputs. The exact number of original accepted inputs is
+  2^(−m) Σ_{x,z,t} [o(x,z)=1] (−1)^{Σ_i t_i z_i} ∏_i (−1)^{t_i a_i(x,z)b_i(x,z)} .
+Summing t imposes each AND relation and pays exactly 2^m. Acyclicity uniquely determines z for every x. Repeated or dependent signals are allowed.
+
+For fixed r use an exact χ-term expansion of the raw G_r cubic sign into affine-support fourth-root quadratic phases on each r-tuple of triples (t_i,a_i,b_i). Remaining gates use (−1)^{uvw}=1−2[u=v=w=1]. After affine pullback each term remains a fourth-root quadratic phase with affine support, including the output pin and the quadratic t·z. Affine substitutions modulo four create only doubled quadratic cross terms. Gaussian elimination of the pins followed by quadratic Gauss summation yields the exact scalar on at most n+2m bits. Explicitly, summing a bit with odd linear phase gives a factor 1±i and a fourth-root phase on a neighbor parity; an even phase gives factor 2 and an affine constraint. Both preserve the form.
+
+Runtime poly(explicit circuit size) χ^{floor(m/r)}2^{m mod r}, polynomial space by serial summation. There is no squaring of χ. Independent unit-entry columns permit a fixed exact pivot solve over Q(i). With fixed r, their coefficient denominators divide one integer D. The combined denominator divides 2^m D^{floor(m/r)} and the magnitudes of coefficients, raw sums and the count of summands together imply O(n+m) bits for each intermediate numerator using this denominator. Dense affine forms and all listed gates/wires count in the polynomial factor. Growing blocks require separate construction, certification and bit bounds.
+
+The single-copy expansion proves time poly(size)2^{min(n,m)} by taking the better of it and input enumeration. A seven-term witness for THREE copies, if found, would give α=log₂7/3≈0.935785, beating 2^n exponentially when m/n stays below 3/log₂7≈1.06862 by a fixed margin. Any fixed α>0 fails to improve brute force for unrestricted m=Θ(n log n). Total size Θ(n log n) alone does not force that many ANDs. This method is polynomial when m=O(log size).
+
+Primary model checks: Bravyi et al., Quantum 3,181, https://doi.org/10.22331/q-2019-09-02-181 , give CCZ approximate rank via extent with error dependence. Qassim–Pashayan–Gosset https://doi.org/10.22331/q-2021-12-20-606 address powers of T. Neither supplies an exact subunit CCZ exponent by this transfer.
