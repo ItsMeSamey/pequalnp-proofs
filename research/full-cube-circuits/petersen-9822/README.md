@@ -1,6 +1,6 @@
 # Full-cube edge function L-meta-9822
 
-The minimum unrestricted AND/OR/NOT circuit size is either 17 or 18. Independent source and finite-ledger reviews establish the lower bound of 17 for the full ten-input Boolean cube. The offered problem asks whether every circuit needs at least 18 gates.
+The minimum unrestricted AND/OR/NOT circuit size is either 17 or 18. Independent source and finite-ledger reviews establish the lower bound of 17 for the full ten-input Boolean cube. The offered problem asks whether every circuit needs at least 18 gates. [Complete 39-file lower-bound and construction replay](signed16-cert/README.md)
 
 The lower bound combines two results. A signed realization with free inversion still needs at least 16 binary gates. Thus any physical circuit of total size at most 16 would be monotone. The independently checked monotone size lower bound is 17. The signed proof uses the first binary gate, a fanout count, the three-shared-gate lower bound, and the exhaustive exclusion of the three- and four-shared-gate cases. Independent full-cube checks covered 249 and 84 cases respectively. This composition has mathematical and computational review. The partial Lean replay below covers the earlier 15-binary deduction. [Three shared gates](physical/third-fork.md) · [Three-gate exclusion](reductions/three-shared.md) · [Four-gate exclusion](reductions/four-shared.md) · [Monotone size bound](monotone-seventeen.md)
 

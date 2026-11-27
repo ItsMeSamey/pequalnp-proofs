@@ -1,0 +1,7 @@
+truth_replay.py matched
+four_bins.py matched
+audit_guard.py matched
+[832, 3632, 5796, 4292] 102 249
+cases 84 survivors 0 kept [249, 503, 811, 0]
+last [('single', 8010), ('guard', 953), ('output', 1148)]
+18 AND/OR gates; all 1024 full-cube assignments agree
