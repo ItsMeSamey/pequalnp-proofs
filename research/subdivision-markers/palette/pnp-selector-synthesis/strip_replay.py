@@ -138,6 +138,17 @@ def replay():
     print('disjoint-pair and robust single-pair geometry certificates',geometries,m*(m-1)//2)
     print('original support cardinalities for three jointly interpolated pairs',counts,neutral_counts,neutral_pair)
     print('rank on projected terminal quotient',rank)
+    from dual_charge_moments import ChargeMoments
+    moments=ChargeMoments(V,((a,b,int(i in tags)) for i,(a,b) in enumerate(edges)))
+    def indexed_cut(vertices):
+        chosen=set(vertices)
+        return sum(1<<i for i,(a,b) in enumerate(edges) if (a in chosen)!=(b in chosen))
+    yes=tuple(indexed_cut(vs) for vs in (first,second))
+    no=tuple(indexed_cut(vs) for vs in (arch(ts[0],ts[1],2),arch(ts[1],ts[2],-2)))
+    assert moments.pair(*yes)==(0,0) and moments.pair(*no)==(1,0)
+    X,(matrix,unused)=moments.projected()
+    assert len(X)==len(basis(matrix))==6 and not any(unused)
+    print('computed charge moments on two indexed pairs',(0,0),(1,0))
 
 
 if __name__=='__main__':
