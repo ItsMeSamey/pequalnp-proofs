@@ -41,9 +41,9 @@ def choose_split(n, pairs):
         basis = [apply_basis(basis,v) for v in kernel]
 
 
-def count(n, constant, linear, pairs, target, cap=None):
+def count(n, constant, linear, pairs, target, cap=None, *, split_provider=choose_split):
     """Return (exact count, one packed witness, selected exponent)."""
-    complement, flat, span = choose_split(n,pairs)
+    complement, flat, span = split_provider(n,pairs)
     cost = len(complement)+len(span)
     if cap is not None and cost > cap:
         return None,None,cost
