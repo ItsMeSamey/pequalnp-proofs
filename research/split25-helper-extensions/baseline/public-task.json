@@ -1,0 +1,36 @@
+{
+  "gap": {
+    "id": "L-meta-20579",
+    "title": "A 32 by 32 graph of the candidate family (k = 5): some AND/OR/NOT circuit of fan-in at most two with at most 170 gates represents it",
+    "statement": "\u2203 C : PEqualNP.CircuitLowerBounds.Circuit, PEqualNP.MetaComplexity.FanInTwo C \u2227 C.size \u2264 170 \u2227 PEqualNP.Represents.Represents (fun u v : Fin 32 => (([0xf2bc7573, 0x59092a9d, 0xc443c8c2, 0x1d58483a, 0x1b7982bb, 0xa8882290, 0x74d0fd25, 0x00041402, 0x6879a8a5, 0xd65a6f1a, 0x7455fba3, 0x24508c1a, 0x3050a010, 0x68658ad5, 0x10a00735, 0x5e55690e, 0x6ab804a4, 0x00b01458, 0xf447af40, 0x00b07351, 0xa88c2290, 0x40d9d7bc, 0x40241486, 0x54058082, 0x6891afb9, 0x50ddf79e, 0x553080be, 0x28c180f8, 0x6ac8ae9e, 0xa6860e80, 0x20508c18, 0x10f01050] : List \u2115).getD u.val 0).testBit v.val) C",
+    "file": "lean/PEqualNP/Outside/L_meta_20579.lean",
+    "module": "PEqualNP.Outside.L_meta_20579",
+    "imports": [
+      "PEqualNP.Defs",
+      "PEqualNP.Library.Helpers.PromiseColTree"
+    ],
+    "unlocks": "A checked circuit supplies its NOT structure and a tighter gate budget to the graph comparison. A checked empty-range certificate covers its own range only.",
+    "context": "The 180-gate construction provides a starting point. The earlier five random restarts found no witness in three hours. These disjoint signatures refer to the same labeled 32 by 32 graph and cover every gate list.",
+    "dead": [],
+    "weight": 110,
+    "parallel": 10,
+    "lane": "main",
+    "depth": 0,
+    "shards": 65,
+    "shard_spec": "0: NOT output mask 00\n1: NOT output mask 01\n2: NOT output mask 02\n3: NOT output mask 03\n4: NOT output mask 04\n5: NOT output mask 05\n6: NOT output mask 06\n7: NOT output mask 07\n8: NOT output mask 08\n9: NOT output mask 09\n10: NOT output mask 0a\n11: NOT output mask 0b\n12: NOT output mask 0c\n13: NOT output mask 0d\n14: NOT output mask 0e\n15: NOT output mask 0f\n16: NOT output mask 10\n17: NOT output mask 11\n18: NOT output mask 12\n19: NOT output mask 13\n20: NOT output mask 14\n21: NOT output mask 15\n22: NOT output mask 16\n23: NOT output mask 17\n24: NOT output mask 18\n25: NOT output mask 19\n26: NOT output mask 1a\n27: NOT output mask 1b\n28: NOT output mask 1c\n29: NOT output mask 1d\n30: NOT output mask 1e\n31: NOT output mask 1f\n32: NOT output mask 20\n33: NOT output mask 21\n34: NOT output mask 22\n35: NOT output mask 23\n36: NOT output mask 24\n37: NOT output mask 25\n38: NOT output mask 26\n39: NOT output mask 27\n40: NOT output mask 28\n41: NOT output mask 29\n42: NOT output mask 2a\n43: NOT output mask 2b\n44: NOT output mask 2c\n45: NOT output mask 2d\n46: NOT output mask 2e\n47: NOT output mask 2f\n48: NOT output mask 30\n49: NOT output mask 31\n50: NOT output mask 32\n51: NOT output mask 33\n52: NOT output mask 34\n53: NOT output mask 35\n54: NOT output mask 36\n55: NOT output mask 37\n56: NOT output mask 38\n57: NOT output mask 39\n58: NOT output mask 3a\n59: NOT output mask 3b\n60: NOT output mask 3c\n61: NOT output mask 3d\n62: NOT output mask 3e\n63: NOT output mask 3f\n64: no internal NOT",
+    "find": true,
+    "takes_cuts": false,
+    "faithful_by_template": {
+      "template": "bars-k5",
+      "hash": "994681e1df2d62b5b43921727e973d59769ee7666a6451f6a9165b5c9dbb2691"
+    },
+    "sketch": "Encode all 1,024 one-row, one-column inputs. In gate-list order locate the first NOT whose first operand names an earlier gate (wire 64+j at a gate i with j<i). Read its output on the six pairs (k,k), k=0,...,5, as bits k of the hexadecimal shard mask. Missing, forward and raw-input operands do not qualify. Route 64 has no qualifying NOT. Match the full graph with at most 170 gates. Submit a replayable gate list. A timeout leaves the range open. An empty-range claim needs a checked range-specific proof.",
+    "pr_open": 0,
+    "pr_numbers": []
+  },
+  "rule": "Never change a file that is already on main. Every proof is a NEW file; a recorded proof is final.",
+  "capacity": 7,
+  "capacity_note": "You hold 1 of 7 steps. 7 grows as your proofs are checked.",
+  "shard": 53,
+  "shards": 65
+}
