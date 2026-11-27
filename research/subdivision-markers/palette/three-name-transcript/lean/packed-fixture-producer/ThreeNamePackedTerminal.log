@@ -1,0 +1,26 @@
+/workspace/scratch/three-name-refinement/lean/ThreeNamePackedTerminal.lean:81:58: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/three-name-refinement/lean/ThreeNamePackedTerminal.lean:81:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/scratch/three-name-refinement/lean/ThreeNamePackedTerminal.lean:134:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hi] at ha
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/workspace/scratch/three-name-refinement/lean/ThreeNamePackedTerminal.lean:135:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hi] at hb
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/workspace/scratch/three-name-refinement/lean/ThreeNamePackedTerminal.lean:136:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hi] at hc
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'ThreeNamePackedExample.noPhysical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNamePackedExample.noRooted' depends on axioms: [propext, Classical.choice, Quot.sound]

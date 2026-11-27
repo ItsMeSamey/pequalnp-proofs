@@ -1,0 +1,21 @@
+/-- Check incidence in the packed basis, counting a loop's two equal ends modulo two. -/
+def endpointCheck {E : Type} {w : Nat} (g : Finset E)
+    (words : E → BitVec w) (l r : E → Fin w) : Bool :=
+  decide (∀ e ∈ g, ∀ j : Fin w,
+    (words e).getLsbD j.val = (decide (j = l e) ^^ decide (j = r e)))
+
+theorem endpoint_bit_sound {E : Type} {w : Nat} (g : Finset E)
+    (words : E → BitVec w) (l r : E → Fin w) (ok : endpointCheck g words l r = true) :
+    ∀ e ∈ g, decode (words e) = ThreeNameIncidenceRank.incidence l r e := by
+  unfold endpointCheck at ok
+  intro e he
+  funext j
+  have bit := (of_decide_eq_true ok) e he j
+  change (if (words e).getLsbD j.val then (1 : ZMod 2) else 0) =
+    (if j = l e then 1 else 0) + (if j = r e then 1 else 0)
+  rw [bit]
+  have formula (p q : Prop) [Decidable p] [Decidable q] :
+      (if (decide p ^^ decide q) then (1 : ZMod 2) else 0) =
+      (if p then 1 else 0) + (if q then 1 else 0) := by
+    by_cases hp : p <;> by_cases hq : q <;> simp [hp, hq] <;> decide
+  exact formula _ _

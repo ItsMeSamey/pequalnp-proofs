@@ -1,0 +1,39 @@
+/-- The three selectors index the eight entries of the packed root table. -/
+def rootMaskWord (a b c : Bool) :=
+  (if a then words 0 else 0) ^^^
+    ((if b then words 1 else 0) ^^^ (if c then words 2 else 0))
+
+private theorem decode_pick {w : Nat} (h : Prop) [Decidable h] (x : BitVec w) :
+    decode (if decide h then x else 0) = if h then decode x else 0 := by
+  by_cases ok : h <;> simp [ok]
+  exact ThreeNamePacked.decode_zero w
+
+theorem root_mask_sum (P : Finset I) (hp : P ⊆ roots) :
+    (∑ i ∈ P, p0.col i) =
+      decode (rootMaskWord (decide (0 ∈ P)) (decide (1 ∈ P)) (decide (2 ∈ P))) := by
+  have filtered : roots.filter (fun i => i ∈ P) = P := by
+    ext i
+    exact Finset.mem_filter.trans ⟨fun h => h.2, fun h => ⟨hp h,h⟩⟩
+  have h0 : (0 : I) ∉ ({1,2} : Finset I) := by decide
+  have h1 : (1 : I) ∉ ({2} : Finset I) := by decide
+  calc
+    _ = ∑ i ∈ roots.filter (fun i => i ∈ P), p0.col i := by rw [filtered]
+    _ = _ := by
+      rw [Finset.sum_filter]
+      simp only [roots,Finset.sum_insert h0,Finset.sum_insert h1,Finset.sum_singleton,
+        rootMaskWord,decode_xor,decode_pick,p0]
+
+theorem root_independent : Independent p0.col roots := by
+  have table : ∀ a b c : Bool, rootMaskWord a b c = 0 →
+      a = false ∧ b = false ∧ c = false := by decide
+  intro P hp hn hz
+  rw [root_mask_sum P hp] at hz
+  have word := decode_injective (hz.trans (decode_zero _).symm)
+  obtain ⟨ha,hb,hc⟩ := table _ _ _ word
+  obtain ⟨i,hi⟩ := hn
+  have mem := hp hi
+  simp only [roots,Finset.mem_insert,Finset.mem_singleton] at mem
+  rcases mem with rfl | rfl | rfl
+  · simpa [hi] using ha
+  · simpa [hi] using hb
+  · simpa [hi] using hc

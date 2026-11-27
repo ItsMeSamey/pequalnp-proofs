@@ -1,0 +1,44 @@
+/-- Each pair gives one input bit and its packed output image. -/
+def sparseRun {w h : ℕ} : List (Fin w × BitVec h) → BitVec w → BitVec h
+  | [], _ => 0
+  | (j,image)::rest, x =>
+    (if x.getLsbD j.val then image else 0) ^^^ sparseRun rest x
+
+def sparseLinear {w h : ℕ} : List (Fin w × BitVec h) → Vec w →ₗ[ZMod 2] Vec h
+  | [] => 0
+  | (j,image)::rest => (LinearMap.proj j).smulRight (decode image) + sparseLinear rest
+
+theorem sparse_decode {w h : ℕ} (ops : List (Fin w × BitVec h)) (x : BitVec w) :
+    decode (sparseRun ops x) = sparseLinear ops (decode x) := by
+  induction ops with
+  | nil => exact decode_zero _
+  | cons a rest ih =>
+    obtain ⟨j,image⟩ := a
+    rw [sparseRun,decode_xor,ih]
+    change _ = (decode x j) • decode image + sparseLinear rest (decode x)
+    have val : decode x j = (if x.getLsbD j.val then 1 else 0) := rfl
+    rw [val]
+    cases hb : x.getLsbD j.val <;> simp
+    exact ThreeNamePacked.decode_zero h
+
+theorem sparseSum {E : Type*} {w h : ℕ} (g : Finset E) (a : E → BitVec w)
+    (b : E → BitVec h) (ops : List (Fin w × BitVec h))
+    (ok : ∀ e ∈ g, sparseRun ops (a e) = b e) (s : Finset E) (sub : s ⊆ g) :
+    sparseLinear ops (∑ i ∈ s, decode (a i)) = ∑ i ∈ s, decode (b i) := by
+  rw [map_sum]
+  apply Finset.sum_congr rfl
+  intro i hi
+  rw [← sparse_decode,ok i (sub hi)]
+
+theorem sparseKernel {E : Type*} {w h : ℕ} (g : Finset E) (a : E → BitVec w)
+    (b : E → BitVec h) (forward : List (Fin w × BitVec h))
+    (backward : List (Fin h × BitVec w))
+    (hf : ∀ e ∈ g, sparseRun forward (a e) = b e)
+    (hr : ∀ e ∈ g, sparseRun backward (b e) = a e)
+    (s : Finset E) (sub : s ⊆ g) :
+    (∑ i ∈ s, decode (a i)) = 0 ↔ (∑ i ∈ s, decode (b i)) = 0 := by
+  constructor
+  · intro hz
+    rw [← sparseSum g a b forward hf s sub,hz,map_zero]
+  · intro hz
+    rw [← sparseSum g b a backward hr s sub,hz,map_zero]
