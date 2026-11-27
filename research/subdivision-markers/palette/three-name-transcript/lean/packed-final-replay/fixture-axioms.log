@@ -1,0 +1,4 @@
+'ThreeNamePackedExample.noPhysical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNamePackedExample.noRooted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNamePackedExample.all_original_selections' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNamePackedExample.raw_pinned_no' depends on axioms: [propext, Classical.choice, Quot.sound]

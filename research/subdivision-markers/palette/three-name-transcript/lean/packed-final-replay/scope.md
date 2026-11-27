@@ -1,0 +1,7 @@
+# Verified scope
+
+The packed reducer reads each supplied (bit index, word) entry in list order and tests the indicated bit, numbering the least significant bit zero. The concrete pin 3 table tests bit 1 as in the producer's most-significant-pivot algorithm. On word 1 the residual is 1, while a first-coordinate pivot would give 2. The generic kernel theorem certifies an ordered table by checking its rows are XORs of allowed pins and all pins reduce to zero. The theorem does not require a unique canonical representative.
+
+The six core modules prove typed implications about checked split maps, terminal kernel maps and pin reduction, and independently decide concrete regressions. A projection fixing the retained columns and sending discarded columns into a closed table is sufficient to copy every nonzero opposite-shore sum. Physical pin lifting preserves original index labels.
+
+The larger generated fixture uses raw names [1,7,11], pin 0 (word 3), and eight optional sites in original positions 1 through 8. Their fresh carrier labels are 6 through 13. The optional word residues are [4,5,16,20,24,32,36,64], and successive split interface bases are [], [4], [4,8]. The negative theorem quantifies over all supports containing pin 0 on this specific nine-site input. The positive companion has original support {0,1,2} on three different columns. controls.py directly enumerates the physical and quotient semantics and checks every optional selection. An executable generator for this concrete data and a proof for all JSON byte streams have different scopes.

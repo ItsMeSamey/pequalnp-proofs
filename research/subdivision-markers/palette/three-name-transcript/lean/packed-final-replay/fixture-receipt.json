@@ -1,0 +1,59 @@
+{
+  "commit": "1e5069a42584dc63c806a9e1829ace79d809db25",
+  "manifest": "c7b135c01638e29d4509efb014aae1c4f7f45f13087ea5bf6de9072ac5a01bae",
+  "objects_lock": "5ebb757e61a773f1620fcf82d31f6b35371fcab29395bb822570087df0f1e315",
+  "old_nine": "5c84515b600b7273f265f0e5714b2e6b2b042809a0c4440841adeba1b2b47402",
+  "gaussian": "e5044cd45b4e0a39472c77bff59f451eacb7f3b3f58e3e25a0c2003ca61b3f93",
+  "modules": {
+    "ThreeNamePackedSteps01": {
+      "source": "325bff7a6ea05fef2be5904a83d228d7c16994505419eba72721a4d348f6fcce",
+      "object": "3460ebc3153606484127c21ef16830cf4cae6c3733f4f9fa5ec4ac3e00792185",
+      "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-three-refine-IzObxE/fresh/ThreeNamePacked.olean",
+        "/dev/shm/review-three-refine-IzObxE/fresh/ThreeNameProjectionStep.olean"
+      ]
+    },
+    "ThreeNamePackedSteps2": {
+      "source": "251a3eef8a5637fee470cc314232879823d8df4b382016f704539c79fab6617a",
+      "object": "b757e8d5959f403c90f29ffff41127e0c6603709423b26181e61045cd499c65e",
+      "log": "7dc99034c4ecec6a8f21c11c6e7f23851419ea1100bd7a9cd8391f785b93041e",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-three-refine-IzObxE/fresh/ThreeNamePackedSteps01.olean"
+      ]
+    },
+    "ThreeNamePackedTerminal": {
+      "source": "104ef41bed12b694d6b5daade9366787a814a8ef9ed2581151c16024a10e3996",
+      "object": "764192192b9b45c78c0dd19f0a45e2e645fb795f63c9dc632e927d20e4ec5dc1",
+      "log": "98c22b85b2b060d3f9ced9a226196914682cd62e53a7fc8b23be2f7e29b43a17",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-three-refine-IzObxE/fresh/ThreeNamePackedSteps2.olean",
+        "/dev/shm/review-three-refine-IzObxE/prior/ThreeNameRejection.olean"
+      ]
+    },
+    "ThreeNamePackedExample": {
+      "source": "cdb9bf22ce95fefcb5450c7f44025e5e598560c94e64df846e6f5947b043703c",
+      "object": "8e9ad889dbf5e072b866268415db74606a2b17ee0209d3dafac01b1e0bf3984e",
+      "log": "63104f5df0c81f776d2748faf1c335efa24d8617a7b43a39c8e0a90177557112",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-three-refine-IzObxE/fresh/ThreeNamePackedTerminal.olean",
+        "/dev/shm/review-three-refine-IzObxE/fresh/ThreeNamePackedPins.olean"
+      ]
+    }
+  },
+  "axioms": [
+    "ThreeNamePackedExample.noPhysical",
+    "ThreeNamePackedExample.noRooted",
+    "ThreeNamePackedExample.all_original_selections",
+    "ThreeNamePackedExample.raw_pinned_no"
+  ],
+  "axioms_sha256": "ec6f0fffa31e8dfe7414d44fa16db1eda0d02d62e02333ead5d79d77570db53b"
+}

@@ -1,0 +1,3 @@
+'ThreeNamePinFixtures.transcript_yes_support' depends on axioms: [propext, Quot.sound]
+'ThreeNamePinFixtures.first_pivot_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNamePinFixtures.original_id_trace' depends on axioms: [propext, Classical.choice, Quot.sound]

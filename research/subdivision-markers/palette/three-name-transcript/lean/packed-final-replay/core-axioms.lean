@@ -1,0 +1,24 @@
+import ThreeNamePacked
+import ThreeNamePinReduction
+import ThreeNamePackedPins
+import ThreeNamePinCases
+import ThreeNamePinFixtures
+import ThreeNameProjectionStep
+#print axioms ThreeNamePacked.kernel_sound
+#print axioms ThreeNamePinReduction.coeffs_of_killed
+#print axioms ThreeNamePinReduction.pinned_exists
+#print axioms ThreeNamePinReduction.incompatible_no
+#print axioms ThreeNamePinReduction.axis_yes
+#print axioms ThreeNamePinReduction.named_injective
+#print axioms ThreeNamePackedPins.checked_lift_iff
+#print axioms ThreeNamePackedPins.checked_kernel
+#print axioms ThreeNamePackedPins.certified_kernel
+#print axioms ThreeNamePackedPins.residual_eq_iff
+#print axioms ThreeNamePinReduction.deficient_iff
+#print axioms ThreeNamePinReduction.lift_coefficients
+#print axioms ThreeNamePinFixtures.transcript_yes_support
+#print axioms ThreeNamePinFixtures.first_pivot_word
+#print axioms ThreeNamePinFixtures.original_id_trace
+#print axioms ThreeNameProjectionStep.checkedStep
+#print axioms ThreeNameProjectionStep.tableStep
+#print axioms ThreeNameProjectionStep.build

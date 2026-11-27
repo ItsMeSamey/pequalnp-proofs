@@ -1,0 +1,8 @@
+import ThreeNamePackedSteps01
+import ThreeNamePackedSteps2
+import ThreeNamePackedTerminal
+import ThreeNamePackedExample
+#print axioms ThreeNamePackedExample.noPhysical
+#print axioms ThreeNamePackedExample.noRooted
+#print axioms ThreeNamePackedExample.all_original_selections
+#print axioms ThreeNamePackedExample.raw_pinned_no

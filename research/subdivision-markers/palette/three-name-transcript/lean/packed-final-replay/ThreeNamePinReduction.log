@@ -1,0 +1,11 @@
+/workspace/scratch/three-name-refinement/lean/ThreeNamePinReduction.lean:14:0: warning: automatically included section variable(s) unused in theorem `ThreeNamePinReduction.residual`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ThreeNamePinReduction.coeffs_of_killed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNamePinReduction.pinned_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNamePinReduction.incompatible_no' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNamePinReduction.axis_yes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNamePinReduction.named_injective' depends on axioms: [propext, Classical.choice, Quot.sound]

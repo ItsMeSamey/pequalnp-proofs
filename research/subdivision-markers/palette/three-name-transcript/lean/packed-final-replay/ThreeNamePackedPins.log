@@ -1,0 +1,11 @@
+/workspace/scratch/three-name-refinement/lean/ThreeNamePackedPins.lean:134:78: warning: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [indexedSpan, represented, Submodule.map_span, Set.image_image, q, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThreeNamePackedPins.checked_lift_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNamePackedPins.checked_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNamePackedPins.certified_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNamePackedPins.residual_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
