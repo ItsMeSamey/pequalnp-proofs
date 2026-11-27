@@ -1,0 +1,13 @@
+# Rigidity for circuits whose unfolding is near a minimum formula
+
+Let F be the physical fanout-unfolding of a trimmed constant-free scalar DAG for the original plane promise. Let its number of raw leaves be E+N+Δ, where E=N(q+1). The formula bound in formula-leaves.md shows Δ≥0. No bound on Δ follows merely from minimum physical size.
+
+Choose any fixed KW rule and let R be the set of endpoints receiving some flag on its own proper-neighborhood diagonal. It is a vertex cover, and the sum of individual return ranks equals E+|R|. Consequently |R|≤N+Δ, and the excess of actual leaf counts over their individual rank lower bounds sums to Δ−(|R|−N).
+
+If Δ<q then R contains a whole shore. Indeed, if A is the nonempty omitted set on the point shore with size a and a line is also omitted, then a≤N−(q+1)=q². Its incident line set Γ(A) has size at least (q+1)²a/(q+a) by Cauchy: the point degrees give total a(q+1) and the sum of squared line multiplicities equals a(q+a). Hence |Γ(A)|−a≥a(N−a)/(q+a)≥q. The last step is equivalent to a(N−q−a)≥q², valid on 1≤a≤q² by concavity and equality at both endpoints. All Γ(A) belong to R, implying |R|≥N+q, contradiction.
+
+Write R as the full receiving shore plus m≤Δ other vertices. At most (q+1)m receiving-shore vertices are incident to these m vertices. Every remaining such vertex receives all its diagonals and has rank one; having two or more actual raw leaves uses at least one unit of the global slack Δ−m. Thus at most q m+Δ≤(q+1)Δ vertices on this entire shore can have multiple raw occurrences. When Δ=0, every variable on this shore occurs exactly once and each opposite variable occurs exactly q+1 times by tightness of all local rank bounds. This applies to every size-minimum formula.
+
+For Δ<q, all flags except at most B=(q+1)²Δ have an accepting parse with just one occurrence of the globally selected shore variable, since the unfolded tree itself has just one such occurrence on each good star. Use the existing physical reverse single-read extraction and one-per-missed-flag repair (reverse-cofactor-seeds.md): for the original DAG, Nq≤2s+2A−2N+1+B≤4s−2N+1+B, in either shore orientation on the original sparse promise. Thus s≥[Nq+2N−1−(q+1)²Δ]/4. In particular Δ≤floor(0.95q) suffices for the official Nq/100 for q>100: (q+1)²=N+q and 0.95q²<(2N−1), giving the stronger bound s≥0.05Nq/4. Hence any contrary circuit, including a minimum contrary circuit, must unfold to more than E+N+floor(0.95q) leaves.
+
+Single-shore read-once does not imply four-leaf boundedness, and no equivalence of gate-minimum and leaf-minimum is assumed. This is an obstruction to a candidate counterexample and not a universal bound.
