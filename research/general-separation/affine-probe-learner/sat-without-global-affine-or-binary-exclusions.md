@@ -1,0 +1,23 @@
+# Circuit SAT with no global affine or binary exclusion on positive instances
+
+For any NAND circuit F on n declared inputs with s gates, construct a circuit G on 4n inputs with exactly s+10n NAND gates. Every satisfying assignment of F has exactly 8^n lifts to G. If F has a satisfying assignment, all two-coordinate projections of the models of G are full and their affine hull is the whole binary space. Every globally valid clause of width at most two and every globally valid affine equation therefore accepts every raw input. Even perfect discovery of these two kinds of constraints makes no repair on such instances. [Compiler and witness maps](odd_masked_circuit.py)
+
+For each source site i use four raw sites a_i,c_i,e_i,t_i. Decode the source bit as
+
+    y_i = a_i + t_i + c_i e_i  over GF(2).
+
+The triples (a_i,c_i,e_i) precede the bank of t_i in the raw input order. For fixed y and any values of these 3n prefix bits, the equations uniquely determine every tail. This proves the multiplicity, including n=0. Two NAND gates form the product and four implement each XOR. Share each decoded wire throughout the source circuit. The gate list costs a linear number of indexed word operations and O((s+n+1)log(s+n+2)) bits to encode. The packed-integer witness routines use O(n+1) shifts and other simple operations on O(n+1)-bit words, hence O((n+1)^2) bit work.
+
+In a single fixed-output fiber, prescribing (a,t) fixes ce, which can take either value. Every other pair leaves at least one of a and t free to solve the equation. In an affine expression constant on the fiber substitute t=y+a+ce. The coefficient of ce equals the former coefficient of t. It must vanish by uniqueness of the multilinear polynomial on the Boolean cube. The remaining coefficients of a,c,e then vanish. With the other blocks held fixed, this kills each block of any affine equation on the Cartesian product. Pairs from different blocks can be set independently. One satisfying y already supplies this entire product inside the models of G.
+
+Four sites are minimal for a one-bit decoder with both properties in each output fiber. With three sites, surjectivity onto every pair requires each fiber to contain at least four words. Each therefore contains exactly four. Fixing two sites and changing the third must exchange output values. A Boolean function changing on every cube edge equals parity plus a constant, so its fibers are affine hyperplanes. With at most two sites both fibers cannot affinely span their ambient cube and realize all pair projections.
+
+The claims concern which values occur. For fixed y, the two pairs (a,t) satisfying a+t=y have three completions each, and the other two have one each. Bit-fixing resilience requires an unbiased output after specified input bits are fixed. The decoder also has an explicit quadratic expression. Setting all t_i,c_i,e_i to zero recovers F on the free a_i, so an encoding-aware solver can recover the source problem directly. [Chor, Goldreich, Håstad, Friedmann, Rudich and Smolensky, Definitions 1–2](https://www.csc.kth.se/~johanh/tresilient.pdf)
+
+## Exact cost for the published interval solver
+
+Take F to be the conjunction of its n inputs, n at least two. The zero anchor fails and no globally valid binary or affine repair exists. The bundled prefix predictor and left-first DFS thus visit medians in preorder over the nonanchor raw words. This order, including omission of the anchor before any crossing evaluation, follows from the two virtual intervals and their tie rule. [Median traversal](affine-code-median-audit.md) [Joint solver](joint_fault_solver.py)
+
+The first 3n ancestors of the prefix-zero subtree are the single-bit indices from 2^(4n−1) down through 2^n. Each has one prefix bit set and a zero tail. An isolated a_i sets only one source bit, and an isolated c_i or e_i sets none. All these indices fail. The remaining subtree consists of indices 1 through 2^n−1, whose prefix bits are all zero. Its only witness is its largest word, with all tails one. Left-first median preorder visits that word last. The solver makes **exactly 3n+2^n−1 crossing evaluations** before returning this word, in addition to its separate anchor check. This exponential count is for the named implementation and coordinate order. [End-to-end bounded checker](check_odd_masked_circuit.py)
+
+For a decision formulation, promise that the input is unsatisfiable or that its models have both projection properties. Circuit SAT reduces to this promise problem, and a Circuit SAT oracle decides it. This establishes the complexity of the promised model geometry and a limitation of this repair method. Whether unrestricted SAT has a deterministic polynomial-time algorithm remains open.
