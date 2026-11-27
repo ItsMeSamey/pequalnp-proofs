@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+**Six labels in four equivalence classes suffice for the global minimum search.** A hypothetical size-33 witness minimizing raw width and then total support can be represented by 0, 7, 17, 110, 142 or 115. The direct fixed-bank ledger still has 18 zero-terminal originals open. The normalized minimum remains 33–34. [Canonical reduction and orbit representatives](canonical-six.md) · [Six canonical labels](canonical-six.ids) · [18 directly unresolved labels](direct-18.ids) · [Audit manifest](canonical-six.sha256)
+
 **18 zero-terminal originals remain.** Exact native checks close IDs 120 and 143. The totals are 4,014 of 4,032 zero-terminal and all 6,213 one-terminal originals. The normalized minimum remains 33–34. [18 remaining IDs](t0-remaining-18.ids) · [Two-case check](../residual620/two-actual.log) · [Audit manifest](direct-two-4014.sha256)
 
 **20 zero-terminal originals remain.** A physical argument closes two width-23 originals directly and leaves one possible ordinary pair for each of four others. A fresh native run rejects those four pairs. The totals are 4,012 of 4,032 zero-terminal and all 6,213 one-terminal originals. The normalized minimum remains 33–34. [20 remaining IDs](t0-remaining-20.ids) · [Six-case source and checks](../residual620/general-six.sha256) · [Audit manifest](direct-six-4012.sha256)
