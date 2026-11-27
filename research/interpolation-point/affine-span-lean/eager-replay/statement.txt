@@ -1,0 +1,10 @@
+theorem decide_with_basis (priv : Fin N→Key d) (tag : Table N) :
+    let R := 2*(ExactPlaneFullDirections.deficit F (key priv) tag+2)+1
+    ∃ seed : List (Table N),seed.length≤max 1 ((2*(Module.finrank F (observed priv)*2)*2^R)^2) ∧
+      ∀ height : Table N,
+        (∃ A : Finset (Fin N), ExactTrace priv tag height A) ↔
+          ∃ (q : Table N) (B : Finset (Fin N)),
+            runBasis seed priv tag height=some (q,B) ∧
+            B⊆accept (fun (p : Table N) i=>p i) tag q ∧
+            physicalSpan priv tag height B=physicalSpan priv tag height (accept (fun (p : Table N) i=>p i) tag q) ∧
+            ExactTrace priv tag height B ∧ B.card≤Module.finrank F (observed priv)+2

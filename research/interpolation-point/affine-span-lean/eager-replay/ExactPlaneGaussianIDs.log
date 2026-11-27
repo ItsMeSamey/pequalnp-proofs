@@ -1,0 +1,8 @@
+ExactPlaneGaussianIDs.lean:44:36: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [walk]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'ExactPlaneGaussianIDs.rank_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneGaussianIDs.basis_spec' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,36 @@
+ExactPlaneGaussianMaterialized.lean:33:38: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ExactPlaneGaussianMaterialized.lean:33:38: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ExactPlaneGaussianMaterialized.lean:76:24: warning: This simp argument is unused:
+  Ne.symm e
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [readRow, e]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ExactPlaneGaussianMaterialized.lean:94:70: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+ExactPlaneGaussianMaterialized.lean:94:78: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+ExactPlaneGaussianMaterialized.lean:94:70: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+ExactPlaneGaussianMaterialized.lean:94:78: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+ExactPlaneGaussianMaterialized.lean:94:120: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ExactPlaneGaussianMaterialized.lean:94:120: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ExactPlaneGaussianMaterialized.read_solve' depends on axioms: [propext, Classical.choice, Quot.sound]

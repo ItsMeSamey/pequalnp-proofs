@@ -1,0 +1,1 @@
+'ExactPlaneEagerSelector.decide_with_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
