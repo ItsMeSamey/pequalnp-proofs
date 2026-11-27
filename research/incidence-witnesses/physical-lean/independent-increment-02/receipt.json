@@ -1,0 +1,46 @@
+{
+  "commit": "f1bf42fb649e12788ecd9c35a4529cd76df9a9a2",
+  "baseline_receipts": [
+    "19885c592cd38f2b0178b3fe277c76b756b0884b25d33b3ca56beb718a59700a",
+    "1e4842385824637539c18566211590dd784e3e03331c01cf530f77c69e038108"
+  ],
+  "manifest": "3e0684830d265bd43298a96d982f99dfbddfb42c34a8d80dc2b3ffd4843a4dbc",
+  "lean": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "modules": {
+    "IncidenceDenseSignature.lean": {
+      "source": "3fa88d4567af7198424683077b017aebb124bf7800dacf8e4554d0f7bdce040f",
+      "object": "fbffa00dd0cb0dd9ba2cc45e08eeaf4eb5ed289bcf7ef69b6aae10c86481c168",
+      "log": "e436a046345be954a0bcb79cf2fe75b10d01d2fe3def8ef9795be483233fa040",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Finset/Card.olean"
+      ],
+      "prior_native_obj": null
+    },
+    "IncidenceSoleReservation.lean": {
+      "source": "54d17b74d853dc819e7fbd45c2b435a106fd93960287e8f01c339dfee54b0042",
+      "object": "9ae97bc0d9dfa81927e6265084548629eeb8cc32f127aa463f26ee60587de1ca",
+      "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/Research/CircuitRewire.olean"
+      ],
+      "prior_native_obj": null
+    }
+  },
+  "depslib": {
+    "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+    "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Finset/Card.olean": "24f5e4f54f643fc3b72ede36bcdbb9d05a7d6905d2007b9b932cc95394f3d611"
+  },
+  "public": [
+    "IncidenceDenseSignature.valid_merge",
+    "IncidenceDenseSignature.merge_high",
+    "IncidenceDenseSignature.eq_of_dense",
+    "IncidenceDenseSignature.dag_signatures",
+    "IncidenceSoleReservation.equal_except",
+    "IncidenceSoleReservation.sibling_high"
+  ],
+  "axioms": "5b2fe4892f0f265b5d6e553391f7a3afb97d3ef5e36ab2a9fa1b8ab917de2506"
+}
