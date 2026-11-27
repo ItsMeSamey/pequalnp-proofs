@@ -1,0 +1,2 @@
+Signed raw MUX and dense-gate controls passed.
+Section CNF multiplicity and physical lift passed.
