@@ -1,0 +1,11 @@
+{
+  "id": "L-meta-9822",
+  "title": "No AND/OR/NOT circuit of fan-in at most two with at most 17 gates computes the edge function of the listed graph on 10 vertices with 13 edges",
+  "file": "lean/PEqualNP/Outside/L_meta_9822.lean",
+  "module": "PEqualNP.Outside.L_meta_9822",
+  "imports": [
+    "PEqualNP.Defs"
+  ],
+  "statement": "\u00ac (PEqualNP.MetaComplexity.HasCircuitSize 10 (fun x : Fin 10 \u2192 Bool => (x 1 && x 2) || (x 3 && x 4) || (x 0 && x 4) || (x 0 && x 5) || (x 1 && x 6) || (x 2 && x 7) || (x 3 && x 8) || (x 4 && x 9) || (x 5 && x 7) || (x 7 && x 9) || (x 6 && x 9) || (x 6 && x 8) || (x 5 && x 8)) 17)",
+  "context": "SKETCH: truth not known to us; the opposite row is offered beside it. This side says the best circuit we know cannot be beaten by one gate: a finite search with a certificate the kernel replays, or an argument by restricting one vertex at a time down to smaller graphs whose sizes are checked. Size: unknown. No sorry, no new axiom. Own namespace for every declaration."
+}
