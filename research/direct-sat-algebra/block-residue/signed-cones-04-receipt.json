@@ -1,0 +1,1 @@
+{"cpu": 0.097329, "maxrss_kib": 9344, "code": 0, "output": "127 original signed-normalization cases, raw-word and partition oracles\n", "rss": 9605120, "wall": 0.1120241130120121, "kernel_before": ["9: FLOCK  ADVISORY  WRITE 1525831 00:1b:193638 0 EOF"], "kernel_after": ["9: FLOCK  ADVISORY  WRITE 1525831 00:1b:193638 0 EOF"]}

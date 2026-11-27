@@ -1,0 +1,1 @@
+{"cpu": 0.088306, "maxrss_kib": 9088, "code": 0, "output": "106 tied-free instances, every gate partition and raw assignment; two tied abstentions\n", "rss": 9400320, "wall": 0.09304546299972571, "kernel_before": ["9: FLOCK  ADVISORY  WRITE 1525772 00:1b:193638 0 EOF"], "kernel_after": ["9: FLOCK  ADVISORY  WRITE 1525772 00:1b:193638 0 EOF"]}

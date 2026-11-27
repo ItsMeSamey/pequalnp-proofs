@@ -1,0 +1,1 @@
+{"cpu": 0.097221, "maxrss_kib": 9088, "code": 0, "output": "104 physical circuits, all seed subsets, noncontiguous cyclic seed and internal boundary\n", "rss": 9555968, "wall": 0.10333544999593869, "kernel_before": ["1: FLOCK  ADVISORY  WRITE 1525730 00:1b:193638 0 EOF"], "kernel_after": ["1: FLOCK  ADVISORY  WRITE 1525730 00:1b:193638 0 EOF"]}
