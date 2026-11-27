@@ -1,0 +1,21 @@
+# Compatible donor cuts and collector gate savings in an OR DAG
+
+Use the original incidence promise of many-tap-donor-shell.md. Suppose the physical output is H AND B, where B is the sink of a designated OR DAG aggregating distinct physical row gates d_p=p AND C_p. Every row has a designated path to B; multiple designated upward edges are permitted. Arbitrary additional uses may leave and re-enter the collector. Let E comprise m≥αN distinct eligible owners, each with a fixed certificate K_p of at most r off-pencil lines satisfying C_p(∅,K_p)=1, where N=q²+q+1 and α>0 is fixed.
+
+Mark B, and mark H if it belongs to the collector. Also mark each collector vertex (including row gates) having an outgoing edge outside the designated collector edges that starts a path to H. The suffix after that first edge is unrestricted. For each marked vertex v let A_v⊆E be the eligible rows with a designated path to v, allowing length zero. Let b be the number of distinct nonempty predecessor sets A_v. Counting all marked vertices instead gives a sufficient upper bound. If b=o(q/(r+1)), then s≥(4+2α−o(1))N.
+
+Choose t with b=o(t) and t=o(q/(r+1)). Draw t independent uniform owners from E; write π for their law and π̂ for the empirical law. There are at most 2^b unions of the A_v. By Hoeffding and a union bound, simultaneously for all such unions U,
+     
+    π(U) ≤ π̂(U)+δ,    δ=√[(b log 2+log t)/(2t)]=o(1),
+
+except with probability at most 1/t. Remove both endpoints of every pair of draws in which one owner belongs to the other’s certificate line union. The expected removed fraction is at most 2(t−1)r(q+1)/m=o(1), by conditioning on each other draw. Markov gives a common realization with removed fraction o(1) and the simultaneous empirical bound. Repeated copies of the same owner do not conflict.
+
+Call a marked vertex hit if A_v contains a retained draw. Let U be the union of A_v over all unhit marked vertices. Every original draw in U was removed. Thus π(U)≤π̂(U)+δ=o(1), even with overlapping sets. Call the k=m−|U| eligible owners outside U good. Every marked vertex reachable from a good row by designated edges is hit. At least one draw remains, and B is hit.
+
+Pin the retained owner set P and certificate union Z high. They are mutually nonincident. Set all neighboring opposite-shore sites low and leave the rest free. The free graph has n≥2N−(|P|+|Z|)(q+2)=2N−o(N) sites, minimum degree d≥q+1−max(|P|,|Z|)=q−o(q), and query budget q−|Z|≥2. Selected rows are identically high, so all hit taps are identically high. With B high, H computes the residual predicate. H cannot itself be a hit tap, since the residual has both the empty negative and positive flags.
+
+Consider any designated collector descendant v of a good row, including that row. Every path from v to H meets a hit tap at or after v. Indeed the first nondesignated edge starts at a marked vertex reachable from the good row by an entirely designated path. If there is no such edge, H is itself a reachable marked vertex, which would make H hit. A vertex without any path to H needs no cut. Reachability here is in the original physical graph and does not stop at intermediate taps. This distinction allows vertices downstream of a first hit tap to be counted without assuming that being downstream alone makes them disposable.
+
+Replace all hit taps by one, propagate the pins, and retain only the cone computing H. All the k distinct good row ANDs are absent. Select one complete designated path from each good row to B. All physical ORs in their union are likewise absent by the preceding argument. The union is connected at B. With j distinct ORs and k row sources it has at least j+k−1 edges and at most 2j operand slots, since every selected edge ends at an OR. Consequently at least k−1 distinct collector ORs are absent, including when paths reconverge and when B is itself a chosen row in the one-row case.
+
+The remaining physical circuit requires at least 2n−1−floor(2n/(d+1))=4N−o(N) gates by the induced two-by-two lower bound. Combining disjoint counts gives s≥4N−o(N)+2k−1≥(4+2α−o(1))N. Shared cofilter producer cones are not charged. A semantic row decomposition without the physical row and collector gates does not supply this savings.
