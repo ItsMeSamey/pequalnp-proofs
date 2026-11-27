@@ -1,0 +1,16 @@
+import ThreeNameCheckEncoding
+import ThreeNameCheckTrail
+import ThreeNamePackedRootCheck
+import ThreeNameValidator
+import ThreeNameDense
+import ThreeNameDenseControls
+import ThreeNameValidatorControls
+#print axioms ThreeNameCheckEncoding.readColumns_sound
+#print axioms ThreeNameCheckEncoding.readAttachment_sound
+#print axioms ThreeNamePackedRootCheck.reflects
+#print axioms ThreeNameValidator.star_sound
+#print axioms ThreeNameValidator.sound
+#print axioms ThreeNameDense.readInput_sound
+#print axioms ThreeNameDense.check_sound
+#print axioms ThreeNameValidatorControls.good
+#print axioms ThreeNameValidatorControls.original_no

@@ -1,0 +1,99 @@
+{
+  "commit": "8c292dc3d7033a38aaa148997140741639b00d9b",
+  "manifest": "039bb9a1fd5479e843d736b95126994aaf9be1e517383ded737efffbdbfea57c",
+  "objects_lock": "039bb9a1fd5479e843d736b95126994aaf9be1e517383ded737efffbdbfea57c",
+  "old_nine": "5c84515b600b7273f265f0e5714b2e6b2b042809a0c4440841adeba1b2b47402",
+  "gaussian": "e5044cd45b4e0a39472c77bff59f451eacb7f3b3f58e3e25a0c2003ca61b3f93",
+  "modules": {
+    "ThreeNameCheckEncoding": {
+      "source": "5affdc6b48e555d745980e63d8f84f8d33d8ff659dd1c87b5147c8b8fd2ed7b3",
+      "object": "8dcd02518c4ff2a5ba2da7f49d6243b1defd9febcf5f391f955101d9c5a59ba8",
+      "log": "07bc7c27c3b14d75a1ad53638fa48793d5a51147cb7113f7ce4b577037187f7c",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/Basic.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/List/OfFn.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Embedding/Basic.olean"
+      ]
+    },
+    "ThreeNameCheckTrail": {
+      "source": "f8055b75d5c2d2868dacc3d3ee61fe7a68fe2555d34bc94ed020c2285c4ca9ea",
+      "object": "c1c4c036f6ee99740fb3d91274e8a1669dca2329711b219e9004dad35bad8459",
+      "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-validator-seven-HffupY/prior/ThreeNameGenericTrail.olean"
+      ]
+    },
+    "ThreeNamePackedRootCheck": {
+      "source": "584becdae7c85cf05102abc0d658967ea65f3e9b3336dc1b68e8151ea8bc58de",
+      "object": "5537ee91361f467e03a6d93a53824b30a0df27f83bdc1a69fd462578ca8c9cd5",
+      "log": "f969bfc88a793ef0fd7cb5f40ce28e5eba84b5ee35d891566dd16ee24de775e6",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-validator-seven-HffupY/prior/ThreeNameGenericRoots.olean",
+        "/dev/shm/review-validator-seven-HffupY/prior/ThreeNameGenericDirect.olean"
+      ]
+    },
+    "ThreeNameValidator": {
+      "source": "2f6cf46e4582a4131e8d8e6e083c1411c54078eabcd903ca9d64e5280e2a11bd",
+      "object": "b7da848ca0e0ed01c560b63a97d947c0c20f061ed1b1d4c605920553ac274e67",
+      "log": "af500d4e515a2029d6459c9c9eb93349609d919bd4d3a39f9143ccd383322f8e",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-validator-seven-HffupY/fresh/ThreeNamePackedRootCheck.olean",
+        "/dev/shm/review-validator-seven-HffupY/prior/ThreeNameGenericHost.olean",
+        "/dev/shm/review-validator-seven-HffupY/prior/ThreeNameGenericDirect.olean",
+        "/dev/shm/review-validator-seven-HffupY/fresh/ThreeNameCheckTrail.olean"
+      ]
+    },
+    "ThreeNameDense": {
+      "source": "27846b0f3a17ca5fea4a8d57e7cebf78df5ee3734753a5722d0a2d331cf21efe",
+      "object": "d69fba9f665d05fbefc77523cebefef4a96d0c29064716d91e70c528fe8a8aa7",
+      "log": "c787e8896f01af3f0dfe188bf18b734846df63cd781bf91e6ecd3b2728c1435b",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-validator-seven-HffupY/fresh/ThreeNameCheckEncoding.olean",
+        "/dev/shm/review-validator-seven-HffupY/fresh/ThreeNameValidator.olean"
+      ]
+    },
+    "ThreeNameDenseControls": {
+      "source": "9f130d8422c3897c34ad75e7ccf49b75e3433deae822cb8e55ac2cf6f0b00b4b",
+      "object": "fbaf9755ce2d0a4037ea122bdd55ef63c78db48722340fad845732bc5f2cce12",
+      "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-validator-seven-HffupY/fresh/ThreeNameDense.olean"
+      ]
+    },
+    "ThreeNameValidatorControls": {
+      "source": "5253c2b57dc61cf8604507220158d1160a17087145d6e8123a200a733ccdc216",
+      "object": "33b0ef01bc5b9f2e405451ee05bc6fab3f9fc1b70e62d4197b8de7698763a246",
+      "log": "3859623ffb4050bacdfe844f1d47f8822086f932cf0ec6bd88ac19eeaf18e54f",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-validator-seven-HffupY/fresh/ThreeNameValidator.olean",
+        "/dev/shm/review-validator-seven-HffupY/prior/ThreeNameEmittedSplit.olean"
+      ]
+    }
+  },
+  "axioms": [
+    "ThreeNameCheckEncoding.readColumns_sound",
+    "ThreeNameCheckEncoding.readAttachment_sound",
+    "ThreeNamePackedRootCheck.reflects",
+    "ThreeNameValidator.star_sound",
+    "ThreeNameValidator.sound",
+    "ThreeNameDense.readInput_sound",
+    "ThreeNameDense.check_sound",
+    "ThreeNameValidatorControls.good",
+    "ThreeNameValidatorControls.original_no"
+  ],
+  "axioms_sha256": "e70aeee92ac424dc7a82f4f23553e9fcc07555da758368f3dd4c3b6ba539356e"
+}

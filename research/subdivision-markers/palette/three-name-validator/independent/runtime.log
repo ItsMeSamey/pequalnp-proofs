@@ -1,0 +1,15 @@
+valid split: (some false)
+valid positive: (some true)
+valid outside: (some false)
+valid pin conflict: (some false)
+negative word: none
+oversized word: none
+dependent names: none
+negative ID: none
+missing ID: none
+invalid parity: none
+repeated roots: none
+bad attachment: none
+short table: none
+bad transition: none
+wrong incidence: none
