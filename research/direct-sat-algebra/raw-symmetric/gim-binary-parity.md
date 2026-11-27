@@ -1,0 +1,15 @@
+# Deterministic prescribed-syndrome principal minors
+
+For a binary symmetric matrix W, label its indices by binary column vectors of rank w. Given a syndrome u, seek a support S with label XOR u and nonsingular principal submatrix. The symmetric proximity theorem gives a witness of size at most 2w whenever a witness exists. Its odd label classes form a profile of size at most 2w among at most 2^w labels. Enumerate these profiles with XOR u, allowing odd parity in the zero class. This uses 2^O(w²) profiles. The polynomial oracle checks the exact parities of every class; its answer may exceed 2w elements.
+
+For each profile, form the binary alternating matrix of disjoint loopless cliques on the label classes. Nonsingular principal submatrices select even cardinality from each class: an even clique I+J is invertible, while an odd clique has zero row sum. Twisting by one representative of each prescribed odd class gives the desired parities.
+
+For arbitrary loops in W, let d=diag W. Border the alternating matrix A=W+ddᵀ by a dummy row and column d and zero corner. A real set S uses the dummy exactly when |S| is odd. For even S, det W[S]=det A[S]: the rank-one correction dᵀadj(A[S])d vanishes by symmetry and zero odd alternating diagonal cofactors. For odd S, det A[S]=0 and its rank-one correction equals the bordered determinant. In the clique system the dummy is a singleton, twisted exactly when the number of odd classes is odd.
+
+Take the direct sum of these two alternating matrices on two copies of the augmented ground set, with twist on the clique copy. Corresponding vertices are mates. A feasible union of pairs is exactly a common support, with the correct dummy choice. Drop the dummy and replay the real minor and all parities.
+
+The implementation runs the Geelen–Iwata–Murota augmenting-path algorithm on this direct sum. It starts at the twist, computes fundamental matrices by principal pivot, and searches using explicit blossoms, paths and transformed columns. Each augmentation removes two split pairs. The paper proves that a failed search certifies optimality. Its O(N⁴) field-operation bound uses efficient data structures. The Python version explicitly stores paths, memberships and transformed matrices; the runtime guarantee used here is polynomial per profile. Thus the end-to-end deterministic bound is 2^O(w²) poly(n). The solver never enumerates principal supports.
+
+The diagonal completion wrapper chooses a starting t₀ with A=D+diag(t₀) invertible by successive leading-minor extensions. The principal-toggle matrix is I+A⁻¹. A solution S at the shifted syndrome gives t=t₀+1_S. Both determinant and syndrome are checked. The method applies to any symmetric D frozen at the prescribed syndrome.
+
+The primary source states the covering/intersection/parity reductions in §3, the binary loop lift in §4, and the constructive algorithm in §5. [Geelen, Iwata and Murota, Journal of Combinatorial Theory B 88 (2003), 377–398](https://www.math.uwaterloo.ca/~jfgeelen/Publications/deltamatroidparity.pdf)
