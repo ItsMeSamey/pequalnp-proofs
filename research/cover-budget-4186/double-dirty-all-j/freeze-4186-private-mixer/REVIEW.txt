@@ -1,0 +1,3 @@
+Verbatim mathematical review supplied by /root/site_team_07/r04 for the three underlying private proof notes:
+
+"I reviewed the three private double-dirty notes at SHA-256 prefixes 606f9ca8, 5eff03b2, and 3f5a80d3. All private leaf-count profiles are covered, including the eight arithmetic exceptions. The proof requires disjoint gate charges for the two arms, their common guard, and the unaffected roots, plus exclusive assignment of residual edges and freedom to choose either endpoint for each externally charged residual. Under these hypotheses the common guard is charged once and the claimed bound follows. The audit does not establish such a charge partition for arbitrary shared dirty cones. This is a mathematical review, not a Lean verification."

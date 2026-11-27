@@ -1,0 +1,9 @@
+# A leaking arm used at multiple external tops
+
+Take the single-arm star of m>=2 leakage products established in 4186-two-dirty-external-shares.md. Write k_i>=2 for the number of primitive leaf slots below the shared dirty subtree Z_i, z_i>=1 for the additional primitive slots of its external centreless top Y_i, and x>=0 for the remaining A-side primitive slots. A marker for an external top with z_i=0 would make it the shared dirty signal itself and cannot give a clean top. The shared ancestor subtrees are pairwise disjoint. The private allowance minus one charge for each shared internal AND thus reads
+    x + b + w + sum_i (k_i+z_i+1).
+Here b,w are the opposite arm and common guard counts. Assign residuals exclusively, with r central AW edges, s opposite BW edges, and h_i edges at Y_i.
+
+The opposite term costs at most b+w since 2s<=2^s<=b+w for positive s. Each external term uses k_i+z_i slots and costs 2h_i. Its remaining contribution Delta_i=k_i+z_i+1-2h_i is at least one, by the same transversal bound. Equality forces h_i=2 and k_i+z_i=4: every external top has at least three slots, and 2^h>2h for h>=3.
+
+If any Delta_i=1, all four slots of that external top are exact, distinct two-vertex transversals of its two residuals. Take two distinct shared slots from Z_i. If disjoint, hitting both with a graph pair confines it to the four external endpoints. The two assigned external residuals are the only graph edges there. If they meet at v, a pair hitting both must contain v or both other vertices; those other vertices form one external residual. Thus every fresh AW edge through Z_i contains v. Its residuals form a matching, giving r<=1. Then sum Delta_i>=m>=2 covers 2r. Otherwise sum Delta_i>=2m, sufficient whenever r<=m; in particular it covers r<=2. The statement allows arbitrary opposite and external batch sizes. The result uses only the elementary endpoint covers, so any extra cover saving can be kept for other regions.

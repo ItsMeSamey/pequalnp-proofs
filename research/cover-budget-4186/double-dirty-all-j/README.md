@@ -1,0 +1,7 @@
+# Research-fork package for the two-dirty-input case
+
+The theorem and its case reduction are in 4186-double-dirty-all-j-glue.md. For any graph order and any dirty-AND and centreless-top counts, under the positive assumptions inside L-meta-4186, if the sole non-Lambda dirty OR directly reads two dirty AND gates then the cover inequality holds. This is a mathematical exclusion of a slice. The issued theorem asks for the negation of the unrestricted positive conjecture. This package contains no proof of that issued negation and no Lean verification of the exclusion.
+
+Run `python3 replay.py` from any directory. It verifies the package and nested private manifests and reproduces four finite arithmetic receipts with the Python standard library. The two surviving single-leak arithmetic profiles require the structural exclusion in bounds_4186_shared_defects.md. The other graph-theoretic steps appear in the branch sources cited by the glue. bounds_4186_rich_star.md gives an alternative rich-star argument. The private freeze contains the literal issued theorem, its own proof sources, the independent private review and its original manifest.
+
+Team 07/r04's independent mathematical portfolio review is quoted in the glue, with the original-circuit singleton-fanout requirement stated there. The manifests identify the exact copied sources. Package routing and research-fork approval are tracked outside this immutable snapshot.

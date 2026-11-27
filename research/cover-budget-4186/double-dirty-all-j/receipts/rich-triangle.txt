@@ -1,0 +1,3 @@
+Counter({'positive deficit': 1818, 'incompatible pair': 1760, 'one pair covers deficit': 58})
+0 Counter() Counter()
+
