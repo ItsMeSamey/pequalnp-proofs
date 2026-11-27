@@ -1,5 +1,7 @@
 # Reviewed cost-28 snapshot
 
+The cumulative one-terminal count is **5,754 of 6,213** after nine further original cost-28 exclusions. There are 459 one-terminal and 2,380 zero-terminal cases left, or 2,839 overall. The nine cases carry no zero-terminal donor transfer. [Nine IDs](native4096-9.ids) · [Complete one-terminal IDs](t1-signed-5754.ids) · [Physical case evidence](t1-both4096-nine.zip)
+
 
 Independent full-owner review now excludes **5,745 of 6,213 one-terminal keys** and **1,652 of 4,032 zero-terminal keys**. This leaves 468 and 2,380 respectively, or 2,848 overall. The latest additions cover 11 one-terminal cost-29 keys and 32 zero-terminal cost-29 triples. Reviewers checked the physical deductions and recorded finite results. [One-terminal union](t1-signed-5745.ids) · [Zero-terminal union](t0-signed-1652.ids) · [11 added IDs](t1-cost29-increment-11.ids) · [32 added IDs](t0-increment-32.ids)
 
