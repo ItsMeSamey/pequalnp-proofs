@@ -10,4 +10,4 @@ For two-bit heights solve homogeneous equations from L for each correction and a
 
 An elementary practical fallback splits the private column matroid into components, including private loops. Private component spans are direct summands. A local chart extends globally, so L is the direct sum of local first relation spaces. In a component of rank q and nullity v either enumerate 4^q local charts and active relation bases, or enumerate 2^v relations and test tag consistency on each support by Gaussian elimination. Both routes give L. This costs poly(N) times the sum of min(4^q,2^v), separate from the unconditional polynomial route through the previous theorem.
 
-Primary dependencies: [exact three-dimensional traces](../span-separation/three-dimensional-traces.md) and [Seymour, Triples in Matroid Circuits](https://doi.org/10.1016/S0195-6698(86)80044-0).
+Primary dependencies: [exact three-dimensional traces](../../../span-separation/three-dimensional-traces.md) and [Seymour, Triples in Matroid Circuits](https://doi.org/10.1016/S0195-6698(86)80044-0).
