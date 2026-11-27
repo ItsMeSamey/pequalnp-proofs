@@ -1,0 +1,1 @@
+{"cpu": 0.063937, "maxrss_kib": 11264, "code": 0, "output": "uncollapsed max_splits 0 result None\nuncollapsed max_splits 2 result None\nordered NANDs 64 equations ((104, 1), (84, 1), (50, 1), (113, 1)) count 8 original witness 24\n", "rss": 10731520, "wall": 0.08216235702275299}
