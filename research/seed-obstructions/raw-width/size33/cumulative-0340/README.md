@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+**All 213 one-terminal cost-29 cases are excluded.** Independent review of the final 60 pairs gives **5,956 of 6,213 one-terminal cases** overall. The remaining 257 all have cost 28. With **2,259 of 4,032 zero-terminal cases** excluded, the two outstanding counts sum to **2,030**. [60 original IDs](t1-native-endpoint-pairs60.ids) · [One-terminal union](t1-signed-5956.ids) · [Audit manifest](t1-native-pair60.sha256)
+
 The 58 single endpoints add 52 original IDs after accounting for six overlaps. The reviewed totals are **5,896 of 6,213 one-terminal cases** and **2,259 of 4,032 zero-terminal cases**. Of the 317 one-terminal cases left, 257 have cost 28 and 60 have cost 29. Together with 1,773 zero-terminal cases, **2,090 remain**. [One-terminal union](t1-signed-5896.ids) · [Audit manifest](t1-single-endpoint52.sha256)
 
 The 212 reviewed single-quartet cases add 127 original zero-terminal IDs after 85 overlaps. The cumulative exclusions are **2,259 of 4,032 zero-terminal cases** and **5,844 of 6,213 one-terminal cases**. There are **2,142 cases left**, comprising 1,773 zero-terminal and 369 one-terminal cases. [Zero-terminal union](t0-signed-2259.ids) · [127 added IDs](t0-single-quartet-new127.ids) · [Audit manifest](t0-single-quartet127.sha256)
