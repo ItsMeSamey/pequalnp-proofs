@@ -1,0 +1,9 @@
+# Physical leakage from a shared star bank
+
+Take the minimum-circuit setting and retained raw anchors of residual-anchor-star-matching.md. Choose k distinct point-owned terms x AND b_x with OR-only exits outside the banks. Each b_x is an OR-only DAG on d_x≥1 distinct incident raw lines, all of them essential to its OR. Arbitrary external uses of every bank node are allowed. Let B denote the union of the original physical OR bank gates. Set the k owner ANDs to zero, prune and assume a nonzero scalar output. Let T be the number of gates of B retained by the final residual; retain original gate identities throughout. Assume that every nonraw gate of each original bank represents an OR of at least two distinct line raws. This holds for size minima, since any singleton-support pure OR gate can be forwarded globally to its equivalent raw without affecting any output.
+
+For different point owners the banks cannot share an original nonraw OR gate, since its two distinct support lines would pass through both points. Each bank contains at least d_x−1 distinct physical OR gates by connectedness of the original cone (fanin two, d_x raw sources). Thus |B|≥D−k, D=sum_x d_x. The k suppressed term ANDs, |B|−T nonretained bank gates, and k removed exit ORs of the forest argument in residual-anchor-star-matching.md are disjoint. Consequently a minimum obeys
+
+    T ≥ (|B| − (D − k)) + (D − |L|) + (k − ν(L[V minus R])).
+
+Every term on the right is nonnegative. In particular, whenever k chosen banks have matching deficiency j into retained unanchored line owners, at least j of their original bank ORs must survive the suppression and still feed the final scalar residual. The statement counts actual gates once across the batch, even when an exterior consumer uses several banks. It does not bound the number of surviving gates by the number of exits: one large extant tap can retain an entire bank.
