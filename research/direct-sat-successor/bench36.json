@@ -1,0 +1,102 @@
+[
+  {
+    "status": "sat",
+    "witness": 1048592,
+    "verified": true,
+    "route": "raw_automata",
+    "cost": {
+      "raw_n": 36,
+      "original_ands": 31,
+      "schedule": [
+        "raw",
+        "normalized"
+      ],
+      "attempts": [
+        {
+          "stage": "raw",
+          "ands": 31,
+          "status": "sat",
+          "cost": {
+            "budget": 250000,
+            "charged_cells": 129195,
+            "operations": 151,
+            "max_pre_width": 17,
+            "max_min_width": 16,
+            "last_product": {
+              "candidates": 844,
+              "compact_cells": 11764,
+              "max_reached_rank": 16,
+              "formal_width": 256,
+              "formal_cells": 865576,
+              "prior_cells": 104650
+            },
+            "candidates": 4612
+          },
+          "elapsed_ns": 175762490
+        }
+      ],
+      "automata_budget_per_attempt": 250000,
+      "rank_cap": 24,
+      "raw_bit_order": null,
+      "prefix": {
+        "proxy": 143344,
+        "budget": 2000000,
+        "applied": false
+      },
+      "input_hex_json_bytes": 751,
+      "original_replay_evaluations": 1,
+      "elapsed_ns": 175836052
+    }
+  },
+  {
+    "status": "sat",
+    "witness": 1048592,
+    "verified": true,
+    "route": "normalized_automata",
+    "cost": {
+      "raw_n": 36,
+      "original_ands": 31,
+      "schedule": [
+        "normalized",
+        "raw"
+      ],
+      "attempts": [
+        {
+          "stage": "normalized",
+          "ands": 31,
+          "status": "sat",
+          "cost": {
+            "budget": 250000,
+            "charged_cells": 129195,
+            "operations": 151,
+            "max_pre_width": 17,
+            "max_min_width": 16,
+            "last_product": {
+              "candidates": 844,
+              "compact_cells": 11764,
+              "max_reached_rank": 16,
+              "formal_width": 256,
+              "formal_cells": 865576,
+              "prior_cells": 104650
+            },
+            "candidates": 4612
+          },
+          "elapsed_ns": 130729075
+        }
+      ],
+      "automata_budget_per_attempt": 250000,
+      "rank_cap": 24,
+      "raw_bit_order": null,
+      "prefix": {
+        "proxy": 143344,
+        "budget": 2000000,
+        "applied": true,
+        "ands": 31,
+        "elapsed_ns": 171459
+      },
+      "input_hex_json_bytes": 751,
+      "original_replay_evaluations": 1,
+      "elapsed_ns": 130984111
+    }
+  }
+]
