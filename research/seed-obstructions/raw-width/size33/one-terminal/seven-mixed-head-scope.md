@@ -1,3 +1,5 @@
 For seven owners, one terminal, cost 28 and four original compounds, the reviewed ledger covers 4,082 rows. Of these, 2,109 force a mixed head. For another 1,027 with surviving local support choices, any all-pure witness admits a canonical representative that spends both units on raw high points. The remaining 946 are open in the nonlocal analysis. These statements constrain witness structure and leave the count of excluded banks unchanged. [Reviewed archive and ledger](seven-mixed-head-reviewed.zip)
 
 The extended independent enumeration covered all 946 previously open nonlocal rows and forced a mixed OR head in another 710. The cumulative count is 2,819 of 4,082. A forced mixed head constrains the architecture and leaves the original bank undecided. [Extended proof and ledger](seven-mixed-head-extended.zip)
+
+In the separate two-endpoint subset with four original compounds and seven owners, the joined proof forces a mixed head in 131 of 156 keys (78 plus 53). These keys remain eligible for architectures using a mixed head. [Two-endpoint source join](two-endpoint-head-join.zip)
