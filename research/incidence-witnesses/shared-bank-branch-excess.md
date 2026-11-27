@@ -1,0 +1,13 @@
+# Removing the matching penalty from owned product trees
+
+Use shared-bank-sparse-product.md with 2≤t≤q and b=min(t,4(log₂t)²). Keep one terminal sink for every distinct designated product output; repeated OR collector uses of this term need only one sink. Each AND gate has reader edges to its AND readers (slots counted) and to its own terminal sink if designated. Trim all AND gates with no path to a terminal. Let F be the total over AND gates of their number of these reader edges minus one. OR-bank fanout is unrestricted and never enters F.
+
+Choose one reader edge at each AND gate, and assign the gate to the terminal reached by following chosen edges. The owned AND gates form disjoint trees rooted at the terminal sinks (with raw-bank pins as leaves). Count an omitted old edge as landing in the owned tree of its reader, or at its terminal if itself a terminal edge. There are exactly F omitted edges. At most F terminals have ANY omitted edge landing in their tree. At every other terminal, all incoming AND edges of every owned gate and its own terminal edge are present; its original conjunction is computed by that entire owned tree, even when its value is also transmitted elsewhere by an omitted edge. The total number of distinct banks of these complete terminals, counted separately by terminal, is at most twice their total AND gates (each distinct bank has a physical entering operand slot).
+
+As before assign each non-bank-paid flag to one accepting term. The assignments form a matching per term with ≤b flags, each requiring a different bank of singleton query support. At complete terminals their total is ≤2A, with each counted AND gate owned only once. At all other terminals the total is ≤bF. Together
+
+N(q+1) ≤ 4O + 2A + bF.
+
+One may minimize the number of incomplete terminals over the choice of owned readers and replace F in this inequality by that minimum. A sink with an omitted terminal edge counts even if its owned tree is empty. The proof does not flatten by copying any physical gate. In particular the original Nq/100 target holds whenever bF≤96s. Bounded OR-bank sharing is unnecessary, and many shared ANDs are allowed, e.g. F=O(s/log²q) with a sufficiently small constant. The estimate does not bound F for all gate-minimum circuits.
+
+Even when t>q, separately, any sound product with t distinct banks and log₂t<q has matching number ≤4(log₂t)² in its whole accepted native-flag graph. Apply the same conflict-graph extraction to ANY matching and probe min(m,q) independent matched pairs; if m≥q this would give 2^q≤t. This last statement concerns matching only; the sparse witness and the original OR-payment estimates above still require t≤q.
