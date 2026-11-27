@@ -1,0 +1,5 @@
+# The 9822 graph needs ten OR-or-NOT gates even with free ANDs
+
+Let G be the input graph on the ten labeled vertices. Pin raw 1 to zero. It is essential in G, and the remaining edge predicate is nonzero, so at least one distinct OR or NOT folds along an initial AND-only path. Then pin raw 2 to zero in G−1. It is still essential because edge 2–7 survives, and the remaining predicate is nonzero; a second paid site folds in the residual circuit. The induced graph K=G−{1,2} requires at least eight OR-or-NOT sites by eight-vertex-core.md. Thus λ(G)≥1+1+8=10, allowing arbitrarily many AND gates and any number of NOT gates.
+
+In particular a seventeen-gate candidate has at most seven AND gates. At seven ANDs the nine-input zero cofactors at each of vertices 0,1,2,3 require nine paid sites under the physical NOT-count assumptions where needed; the associated unique-frontier conditions are established in nine-vertex-frontier.md and eight-vertex-core.md. No total-size lower bound beyond sixteen follows directly from this ten-site lower bound.
