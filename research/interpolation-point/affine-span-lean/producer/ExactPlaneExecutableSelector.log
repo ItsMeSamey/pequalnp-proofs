@@ -1,0 +1,2 @@
+'ExactPlaneExecutableSelector.select_some' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneExecutableSelector.select_none' depends on axioms: [propext, Classical.choice, Quot.sound]

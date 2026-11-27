@@ -1,0 +1,2 @@
+'ExactPlaneExecutableSelector.runCompact_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneExecutableSelector.compress_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
