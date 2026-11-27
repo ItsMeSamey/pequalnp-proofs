@@ -1,0 +1,1 @@
+{'raw_formulas': 254, 'grid_checks': 2286, 'hand_checks': 14} K4, two refusals and five validation checks passed.
