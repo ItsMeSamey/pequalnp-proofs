@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+**532 original cases remain.** The independently reviewed two-compound chart for the pair (9,130) excludes 23 new originals at each terminal count. The cumulative totals are 3,537 of 4,032 zero-terminal and 6,176 of 6,213 one-terminal cases. [495 remaining zero-terminal IDs](t0-remaining-495.ids) · [37 remaining one-terminal IDs](t1-remaining-37.ids) · [Audit manifest](pair9-130-3537-6176.sha256)
+
 **578 original cases remain.** A physical argument about the path carrying the selected tag excludes 16 additional zero-terminal cases. The reviewed totals are 3,514 of 4,032 zero-terminal and 6,153 of 6,213 one-terminal cases. [16 added IDs](spine16.ids) · [518 remaining zero-terminal IDs](t0-remaining-518.ids) · [60 remaining one-terminal IDs](t1-remaining-60.ids) · [Source archive](t0-empty-missing2-spine16.zip) · [Audit manifest](spine-3514.sha256)
 
 **594 original cases remain.** The complete cost-29 single-quartet review covers 372 zero-terminal originals, including 26 outside the previous union. The exclusions now cover 3,498 of 4,032 zero-terminal and 6,153 of 6,213 one-terminal cases. The physical review used the recorded SAT outcomes. [26 added IDs](quartet-new26.ids) · [534 remaining zero-terminal IDs](t0-remaining-534.ids) · [60 remaining one-terminal IDs](t1-remaining-60.ids) · [Source archive](t0-single-quartets-372.zip) · [Audit manifest](quartet-3498.sha256)
