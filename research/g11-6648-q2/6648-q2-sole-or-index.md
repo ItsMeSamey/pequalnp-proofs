@@ -1,0 +1,9 @@
+# Two exceptional ORs when original input 3 has a sole OR reader
+
+For the graph and least TopForm hypotheses of L-meta-6648, suppose input 3 has exactly one reader M, an OR, and q=2. Then U≤2c+j+2. This applies for all c and the original j≥3. The selected cardinality balance yields the issued conclusion in this branch.
+
+First use the 21-gate lower bound and original sole-reader and private-donor arguments. If the other operand of M is a raw-empty OR, use the two-arm sibling proof in singleton_6648_q2_sole_or_all_c_cases.md. Otherwise it is a dirty AND D. Denote the other exceptional OR by Q.
+
+If Q has no direct dirty AND operand, it either is pure or receives its mixed behavior solely through OR paths from M. In the latter case D is upstream of Q. On D-negative assignments replace M by raw 3. All OR-only paths preserve their original raw supports. The two physical children of Q in the projection are raw singletons or disjunctions with their original Lambda anchors whenever nonsingleton. This leaves Q as the only exceptional pure primitive. The one-exception lemma in singleton_6648_q2_sole_or_all_c_cases.md gives at most two original residuals per projected centreless top; ordinary tops add only original stars. At most three residuals are D-positive by the two protected restrictions. When Q is originally pure, apply the same source’s pure-exception case, including Q upstream of D.
+
+For a Q with a direct dirty AND pin, distinguish positions in the original DAG. When Q belongs to D’s cone use singleton_6648_q2_upstream_complete.md. Outside that cone the raw-empty mixer and the dominated dirty-pin cases are in singleton_6648_q2_sole_or_all_c_cases.md. The other raw-positive mixer case is in singleton_6648_q2_independent_outside_all_j.md. All projected assignments count original starred edges. This is a mathematical proof under the stated reader assumption. No combined Lean kernel receipt is available.
