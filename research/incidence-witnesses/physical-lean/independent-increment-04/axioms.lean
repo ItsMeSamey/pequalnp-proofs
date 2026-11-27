@@ -1,0 +1,21 @@
+import IncidenceSurvivingReads
+import IncidenceNativePin
+import IncidenceRouteAlias
+import IncidenceStartNormalization
+#print axioms IncidenceZeroRestriction.execute_unique
+#print axioms IncidenceZeroRestriction.execute_old
+#print axioms IncidenceZeroRestriction.run_inputs
+#print axioms IncidenceZeroRestriction.run_gate
+#print axioms IncidenceZeroRestriction.native
+#print axioms IncidenceRouteAlias.back
+#print axioms IncidenceRouteAlias.along
+#print axioms IncidenceRouteAlias.raw_ref
+#print axioms IncidenceRouteAlias.missing_emit
+#print axioms IncidenceSurvivingReads.sum_losses
+#print axioms IncidenceSurvivingReads.mem_pins
+#print axioms IncidenceSurvivingReads.physical
+#print axioms IncidenceStartNormalization.unchanged_line_count
+#print axioms IncidenceStartNormalization.round_start
+#print axioms IncidenceStartNormalization.posted_negative
+#print axioms IncidenceStartNormalization.line_census
+#print axioms IncidenceStartNormalization.point_census

@@ -1,0 +1,3 @@
+# Four-module incremental verification
+
+Use a fresh directory identified in workdir. Extract the physical-lean subtree of c2517721396a228301895bf1db15d85b42270e48. Keep the independent q401 baseline available in the neighboring review-q401 directory and its private object tree. Run python replay.py on the serial compiler slot, creating go-3 before starting for an uninterrupted replay. The script rechecks all 15 baseline source/object identities, compares the 12 shared local sources to this commit and builds only the four new interfaces. It checks resolved imports, exact producer object/log hashes and axiom reports for all new public theorems.

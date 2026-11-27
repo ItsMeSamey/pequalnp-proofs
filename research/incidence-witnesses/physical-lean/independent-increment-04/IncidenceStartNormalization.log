@@ -1,0 +1,4 @@
+'IncidenceStartNormalization.line_census' depends on axioms: [propext, Quot.sound]
+'IncidenceStartNormalization.point_census' depends on axioms: [propext, Quot.sound]
+'IncidenceStartNormalization.round_start' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceStartNormalization.posted_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
