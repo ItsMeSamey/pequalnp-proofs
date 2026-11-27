@@ -1,0 +1,3 @@
+# Semantic period certificate
+
+In final-query-period-obstruction.md fix any row group and a period v of its common-zero indicator (a single Boolean function). All inputs of weight ≤2 satisfy the homogeneous cubic equations. Therefore v, v+e_a, v+e_b and v+e_a+e_b satisfy every row. For any hyperedge abc present in a row, XOR that row's four zero evaluations. D_a D_b P(v)=v_c because no other hyperedge contains ab. So v_c=0. All scoped coordinates vanish by the same argument. Conversely an unscoped direction is a period. This upgrades the codimension and direct-sum affine input lower bounds to the true joint zero predicate, with no claim for an arbitrary nonlinear postprocessing of the original full conjunction.
