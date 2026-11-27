@@ -1,0 +1,15 @@
+# A single extension-field zero test for the named plane
+
+Use the notation of ../resolution-bridge/four-quotient-bases.md. Take a binary basis of U with H spanned by its first two vectors. Over F16=F2[a]/(a^4+a+1), map the four named vectors to the columns (1,0),(a,0),(0,1),(a²,a³) in F16². The first two columns have their common projective direction at infinity. For a named vector outside H, fix its last two bits. The three resulting sets of first-coordinate/second-coordinate ratios are, in polynomial-basis bit packing,
+
+    (1,0): {0,1,2,3}
+    (0,1): {4,6,9,11}
+    (1,1): {8,10,12,14}.
+
+They are disjoint and each has size four. Thus all 15 nonzero binary vectors map to nonzero vectors, the three from H span the same extension-field line, and the other twelve span twelve different lines. For every rational plane J, the 2-by-2 determinant of its image vanishes exactly when J=H. The six exterior coefficients in lexicographic coordinate-pair order are (0,1,a³,a,a⁴,a²).
+
+This extension degree is optimal for this single decomposable zero test. A nonzero binary vector in the kernel would make every binary plane through it fail. Any two projectively coincident binary images span a failing binary plane and hence both original vectors must be in H. Consequently the projective line of the extension must have at least 13 points, ruling out all binary extensions of degree at most three.
+
+Append these two output rows below the unchanged r private rows to obtain M2. Let M1 use the binary projection of U onto the first two coordinates, again below the private rows. For a size r+2 set B that is a basis of M1, the private projection has full row rank and the trace plane is a graph over H. Physical independence holds, so private-kernel dimension two allows exactly the 2-by-2 determinant test above, in any chosen private basis. Hence B has trace H exactly when it is dependent in M2. Conversely a trace witness extends to such a basis as in the original reduction. Check rank of M1 first; below r+2 there is no witness. The resulting question is whether the bases of M1 fail to be contained in those of M2. Equivalently, one asks whether some M2 circuit is independent in M1. Under containment and equal rank the freer matroid is the GF16 one.
+
+For independent formal edge variables X, Cauchy–Binet computes P=det(M1 X M1ᵀ) and R=det(M1 X M2ᵀ). Their coefficients on a subset B are respectively d1(B) and d1(B)d2(B). The original answer is yes iff supp(P) contains a monomial absent from supp(R). A nonzero evaluation of P-R does not decide it: at r=0 choose just two physical columns with named vectors e0+e2 and e1+e3. They project to a basis of M1, have trace different from H, and give a nonunit determinant in M2. Their images are (1,1) and (a+a²,a³), with determinant a³+a+a²=14. Thus P-R is nonzero although there is no target witness. Taking the extension norm after evaluating R also couples different bases, whereas taking the norm of each coefficient individually would test its support. This gives a different algebraic formulation; it supplies no polynomial-time test for the resulting support inclusion.
