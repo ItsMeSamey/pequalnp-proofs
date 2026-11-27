@@ -1,0 +1,5 @@
+# Exact size seven for the two-lit five-input mask 4297
+
+The gate model permits arbitrary fan-out and AND, OR, NOT. The specification covers the 25 ordered inputs indexed by two flags, including repetitions, or 15 distinct assignments. The positive six-gate statement is refuted by the independent four-input argument in one-fork-proof.md. The seven-gate upper was compiled on the pinned Lean project using PEqualNP.Defs. This archive also contains two independent finite lower-bound computations. It does not include a Lean lower-bound certificate.
+
+The minor checker runs as python minor/twin_minor.py. To replay the original fifteen-assignment frontier in an isolated environment, compile frontier/register15.cpp using a C++17-or-later compiler to /dev/shm/register15, then run python run.py in a writable copy of frontier. The recorded control and trace use the official bit indexing. The direct proof, analytical extension to multiple twin inputs and independent search can be checked separately. Only the five-input instance is the official desk statement.
