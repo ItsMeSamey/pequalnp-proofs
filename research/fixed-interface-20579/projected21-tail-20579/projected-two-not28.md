@@ -1,0 +1,15 @@
+# Excluding five first branches and two NOT gates on projected21
+
+The model, source and group terminology are those of projected27.md. This supplement excludes a projected21 scalar circuit with 25 binary gates and two NOT gates. The separate one-NOT operand lower bound is needed to exclude all 27-gate circuits.
+
+The orientation certificate requires five distinct first branches among the binate inputs. With B=25 the excess outdegree is five, so there are exactly five branching vertices. Each is a first branch.
+
+For any binate input, its unique path prefix to its first branch z has fixed NOT parity. There must be a strictly downstream NOT on some continuation from z. Otherwise all output paths have the same parity. Count a NOT at z as part of its prefix. If the prefix parity is negative, it contains exactly one of the two NOT gates, A, and the other lies strictly downstream of z. Thus A precedes the other NOT, ordering the two gates uniquely whenever a negative prefix exists. Every negative prefix must contain this same A. From A, following the unique outgoing edge up to the first branch gives the same first branch for all such inputs (possibly A itself). At most one group contains a negative prefix. Each other group has positive path signs for its assigned variables and a branch signal monotone in these variables for any fixed values of all other inputs.
+
+Choose a topological order on the five branches. No input assigned to a later first branch can feed the current branch z. A path from that input to z would already cross its first branch, contradicting their order. Thus the signal at z depends only on its assigned group G, the inputs from earlier groups E, and the four slots U outside the binate groups. Fixing E and U leaves a Boolean signal of G alone. Complement precisely the coordinates in G whose prefix parity is negative. The resulting function is monotone in these signed coordinates. The signs remain fixed across contexts.
+
+For each group and fixed E,U context, introduce a Boolean unknown for each observed signed G pattern. Comparable patterns give an implication from the smaller to the larger. Two rows agreeing outside G with opposite care labels force their unknowns to differ: cutting z disconnects every member of G from the output, leaving the output unary in z once other inputs are fixed. Allowing unrelated truth tables across E,U contexts relaxes the actual DAG constraints.
+
+The verifier checks the hyperedges from projected27.md, then enumerates all 66 compatible partitions into four interchangeable positive groups and one possibly signed group. For each partition it tries every subset of the exceptional group as the negative coordinate set and every topological ordering. An order prefix is eliminated only when some group and context require inconsistent bit values. Inconsistency is recognized by mutual reachability of a literal and its complement in the implication graph. No order survives.
+
+Run python -BO verify_projected_two_not28.py alongside verify_projected27.py, the source, and the two hyperedge files used by that verifier. Only the Python standard library is required.
