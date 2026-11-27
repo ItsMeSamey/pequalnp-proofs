@@ -1,0 +1,13 @@
+IncidenceWarmDichotomy.lean:67:63: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [e] at yd
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+IncidenceWarmDichotomy.lean:77:6: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [empty] at xd
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'IncidenceWarmDichotomy.dichotomy' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,15 @@
+IncidencePointForeign.lean:33:51: warning: This simp argument is unused:
+  u
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fintype.card_subtype]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+IncidencePointForeign.lean:33:53: warning: This simp argument is unused:
+  Fintype.card_subtype
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [u]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'IncidencePointShield.foreign_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

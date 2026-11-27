@@ -1,0 +1,9 @@
+/workspace/scratch/incidence-warm-traces/IncidenceWarmTraceFamily.lean:23:50: warning: This simp argument is unused:
+  IncidenceHoistWalk.witness
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'IncidenceWarmTraceFamily.family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceWarmTraceFamily.wiring' depends on axioms: [propext, Classical.choice, Quot.sound]

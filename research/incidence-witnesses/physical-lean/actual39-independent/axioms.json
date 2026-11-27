@@ -1,0 +1,177 @@
+{
+  "IncidencePointShield.foreign_zero": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmTraceDistinct.separate": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmTraceLineDistinct.separate": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidencePointShield.merge_not_meet": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidencePointCorridor.product": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmTracePath.from_raw": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmTracePath.fork_on": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmTracePath.ordered": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidencePointShield.single_readers": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmTraceShadow.blocked": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmTraceShadow.fork_bound": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmForkSeparation.points_distinct": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmForkSeparation.lines_distinct": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmTraceDisjoint.flat_nodup": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmTraceBooking.book": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmTraceBooking.raw_start": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmTraceFamily.family": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmTraceFamily.wiring": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmDomain.domain": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmDomain.bool_negatives": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidencePointEditedDomination.dominated": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidencePointWarmComparison.reciprocal": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidencePointWarmComparison.flag": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidencePointWarmMasks.bad_pair": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidencePointWarmMasks.flag_mask": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmPointOutput.physical": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidencePointWarmMasks.good": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceReciprocalChoice.select_latest": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceChosenEnds.bad_precedes": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmDichotomy.dichotomy": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmSelectedOutput.selected": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmTraceEditCap.bound": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmPointSchedule.construct": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWeightedSelected.cap": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceWarmActualPointCap.paid": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

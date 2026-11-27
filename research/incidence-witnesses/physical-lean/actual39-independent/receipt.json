@@ -1,0 +1,10 @@
+{
+  "archive": "7bc86a63ebdde2eee459e65cdbdff4afbea88cf31c1294f9f35d42f93417bc43",
+  "commit": "17a487d43fbd462588079485bd5dd1ddf021fa78",
+  "ledger": "1622d062c027a6020fafbb153c92bd89ff8926f4499c2ac71a581d5bd0b5916c",
+  "reports": 35,
+  "axioms": "b6a1c30b92857dd923c99ee2ad95bd53d4b659624cc6b4f888478b70cb4162e3",
+  "new_objects": 39,
+  "standard_lean": "4.36.0",
+  "bound": "Chosen warm edits among all physically once-read point inputs on C, <=3213."
+}

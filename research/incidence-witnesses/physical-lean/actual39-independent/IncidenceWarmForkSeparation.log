@@ -1,0 +1,2 @@
+'IncidenceWarmForkSeparation.points_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceWarmForkSeparation.lines_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]

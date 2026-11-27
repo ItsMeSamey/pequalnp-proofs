@@ -1,0 +1,14 @@
+IncidenceWarmBooked.lean:31:15: warning: This simp argument is unused:
+  List.map_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.sum_cons, lost]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+IncidenceWarmBooked.lean:31:29: warning: This simp argument is unused:
+  List.sum_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_cons, lost]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
