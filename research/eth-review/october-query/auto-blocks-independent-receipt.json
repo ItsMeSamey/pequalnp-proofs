@@ -1,0 +1,1 @@
+{"checker": "34149c0deac6237494a5c346ed3a58495c2056aaad9e0a6b5a9b336b35680314", "targets": ["49c92b232cfc534bd875c4294db5e8f9eec22565ca446902c2339977dea384aa", "0e29fd32ef703777ff2e7ab95bd6e604c0b01b107176f38b998c1614f6997a78"], "small_sat": 245, "small_unsat": 12, "large_cover_lower_bound": 20, "large_status": ["sat", "unsat"], "rss_kib": 13816}
