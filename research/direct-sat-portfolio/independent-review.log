@@ -1,0 +1,39 @@
+affine_quotient [((1, 'sat'), 3), ((1, 'skip'), 36), ((1, 'unsat'), 6), ((2000, 'sat'), 26), ((2000, 'unsat'), 19)]
+backward_bank [((1, 'sat'), 3), ((1, 'skip'), 36), ((1, 'unsat'), 6), ((2000, 'sat'), 26), ((2000, 'unsat'), 19)]
+reachable_span [((1, 'skip'), 45), ((2000, 'sat'), 17), ((2000, 'skip'), 17), ((2000, 'unsat'), 11)]
+grouped_mask [((1, 'sat'), 1), ((1, 'skip'), 43), ((1, 'unsat'), 1), ((2000, 'sat'), 25), ((2000, 'skip'), 4), ((2000, 'unsat'), 16)]
+integrated 121 cases 847 calls
+affine_quotient affine_output sat 21
+affine_quotient affine_output unsat 7
+affine_quotient affine_quotient sat 73
+affine_quotient affine_quotient unsat 20
+backward_bank affine_output sat 21
+backward_bank affine_output unsat 7
+backward_bank backward_bank sat 73
+backward_bank backward_bank unsat 20
+default affine_output sat 38
+default affine_output unsat 23
+default affine_quotient sat 51
+default affine_quotient unsat 4
+default grouped_mask sat 5
+empty affine_output sat 21
+empty affine_output unsat 7
+empty exhaustive sat 73
+empty exhaustive unsat 20
+grouped_mask affine_output sat 21
+grouped_mask affine_output unsat 7
+grouped_mask exhaustive sat 1
+grouped_mask exhaustive unsat 3
+grouped_mask grouped_mask sat 72
+grouped_mask grouped_mask unsat 17
+reachable_span affine_output sat 21
+reachable_span affine_output unsat 7
+reachable_span exhaustive sat 55
+reachable_span exhaustive unsat 13
+reachable_span reachable_span sat 18
+reachable_span reachable_span unsat 7
+zero affine_output sat 21
+zero affine_output unsat 7
+zero exhaustive sat 73
+zero exhaustive unsat 20
+fault controls: skip/unknown/timeouts fall back; 15000-bit affine witness passes; four malformed/corrupt results reject; backend UNSAT trusted; repeat selection matches
