@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+**344 original cases remain.** The degree-two deletion bound and a signed-row check exclude zero-terminal original 312. The cumulative exclusions cover 3,692 of 4,032 zero-terminal and 6,209 of 6,213 one-terminal originals. [340 remaining zero-terminal IDs](t0-remaining-340.ids) · [4 remaining one-terminal IDs](t1-remaining-4.ids) · [Audit manifest](puncture-3692.sha256)
+
 **345 original cases remain.** Using the size-33 budget of 33−2t before charging pinned inputs, independent computations agree on 54 additional zero-terminal exclusions. The totals are 3,691 of 4,032 zero-terminal and 6,209 of 6,213 one-terminal originals. [341 remaining zero-terminal IDs](t0-remaining-341.ids) · [4 remaining one-terminal IDs](t1-remaining-4.ids) · [54 additions](absent-corrected54.ids) · [Audit manifest](absent-3691.sha256)
 
 **399 original cases remain.** The all-present argument excludes 71 additional zero-terminal originals. Independent review reproduced all 186 pivot comparisons. The cumulative totals are 3,637 of 4,032 zero-terminal and 6,209 of 6,213 one-terminal originals. [395 remaining zero-terminal IDs](t0-remaining-395.ids) · [4 remaining one-terminal IDs](t1-remaining-4.ids) · [71 additions](allpresent-new71.ids) · [Audit manifest](allpresent-3637.sha256)
