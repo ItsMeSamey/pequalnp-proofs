@@ -1,0 +1,74 @@
+{
+  "schema": "scalar-tail-application/v1",
+  "id": "xor2",
+  "geometry": "truth-table",
+  "sources": {
+    "positive": {
+      "file": "care.json",
+      "sha256": "a6174c34cb861031899bd9a6fbf925834c42a3ed875454cf4fc00cb0d16690dc"
+    }
+  },
+  "interfaces": [
+    {
+      "id": "positive",
+      "source": "positive",
+      "wire_count": 2,
+      "patterns": 4,
+      "positives": 2,
+      "care_sha256": "e65e01eb9cce3ab7abec70d719a4e964159c151d64fc67c78d94948944f4bdc5"
+    }
+  ],
+  "budget": {
+    "fixed_physical": 0,
+    "physical_target": 3,
+    "tail_cap": 3,
+    "tail_lower_bound": 4
+  },
+  "scope": {
+    "problem": "Two-input exclusive OR",
+    "output": "scalar",
+    "physical_lower_bound": 4,
+    "statement": "Exact unrestricted positive-input gate complexity for the binary XOR truth table.",
+    "payout": "Educational example."
+  },
+  "upper_bound": {
+    "gates": [
+      [
+        "or",
+        0,
+        1
+      ],
+      [
+        "and",
+        0,
+        1
+      ],
+      [
+        "not",
+        3
+      ],
+      [
+        "and",
+        2,
+        4
+      ]
+    ],
+    "output": 5,
+    "positive_input_count": 2
+  },
+  "certificates": [
+    {
+      "interface": "positive",
+      "file": "positive.certificate.json",
+      "sha256": "feee228c58907e7d015cc86f2939e801111d1c9351ca99ed607e89af3bf4ecb9",
+      "feature_count": 2,
+      "model": {
+        "literals": [
+          "positive",
+          "positive"
+        ],
+        "fixed_cost": 0
+      }
+    }
+  ]
+}

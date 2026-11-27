@@ -1,0 +1,156 @@
+{
+  "schema": "scalar-tail-application/v1",
+  "id": "four19",
+  "geometry": "four-prefix",
+  "sources": {
+    "control": {
+      "file": "../shared/control.lean",
+      "sha256": "08b07ebb1edfb826bb061afcc09558ae5d75a6d4d626e43c373c4d8e6855d731"
+    },
+    "positive": {
+      "file": "prefix-19-79-81-four-prefix.json",
+      "sha256": "414659379f6b3befb276f86ad101cb4e0b9bcea55b57a4eab9f20317243a9277"
+    },
+    "marker": {
+      "file": "prefix-19-79-81-four-prefix-marker.json",
+      "sha256": "c3501de3e5b8a3ed811771975b25becb73d3079bc52a36af84cf3611c5063f2f"
+    }
+  },
+  "interfaces": [
+    {
+      "id": "positive",
+      "source": "positive",
+      "wire_count": 22,
+      "patterns": 498,
+      "positives": 88,
+      "care_sha256": "11a83935ad70d87e3a0da53de0d2291676286243540c10c99627bd6785a2b2fb"
+    },
+    {
+      "id": "optional-marker",
+      "source": "marker",
+      "wire_count": 23,
+      "patterns": 498,
+      "positives": 88,
+      "care_sha256": "7bd3263022f65ad974c1b5245caf64792339828a63cd2e4b65c1ddfaccf0eb6f",
+      "complementary_slots": [
+        16,
+        22
+      ]
+    }
+  ],
+  "budget": {
+    "fixed_physical": 141,
+    "physical_target": 170,
+    "tail_cap": 29,
+    "tail_lower_bound": 30
+  },
+  "scope": {
+    "problem": "L-meta-20579",
+    "shard": 53,
+    "output": "scalar",
+    "physical_lower_bound": 171,
+    "statement": "Lower bound for this fixed bank and interface only.",
+    "payout": "No full-instance solution or payout claim."
+  },
+  "certificates": [
+    {
+      "interface": "positive",
+      "file": "positive.certificate.json",
+      "sha256": "d7d2133223438fe0d6f2bd0c058e013189c35a82214d73c7e66b1646f19dd540",
+      "feature_count": 22,
+      "model": {
+        "literals": [
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive"
+        ],
+        "fixed_cost": 141
+      }
+    },
+    {
+      "interface": "negative",
+      "file": "negative.certificate.json",
+      "sha256": "8605e3574e9586281d067564a12fcd86791ac5f1d01178cf0b84b235bf519c3d",
+      "feature_count": 22,
+      "model": {
+        "literals": [
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "negative",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive"
+        ],
+        "fixed_cost": 141
+      }
+    },
+    {
+      "interface": "both_live",
+      "file": "both_live.certificate.json",
+      "sha256": "4f3be930a5f0791083facac3c773f241fb1335e4592125c05ab66e5b36a9a553",
+      "feature_count": 22,
+      "model": {
+        "literals": [
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "both_live",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive"
+        ],
+        "fixed_cost": 141
+      }
+    }
+  ]
+}

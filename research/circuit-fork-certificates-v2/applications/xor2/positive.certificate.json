@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "input_sha256": "7cc355e92a62fc6a2eaea7a84d5a1929f2467ba330bdae32948656e75b1e5b1f",
+  "budget": 3,
+  "cases": [
+    {
+      "positive": 1,
+      "signed": 0,
+      "ordered": true,
+      "partitions": 0
+    }
+  ],
+  "witnesses": {
+    "general": {
+      "3": [
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    "monotone": {
+      "3": [
+        0,
+        2,
+        2,
+        3
+      ]
+    }
+  }
+}

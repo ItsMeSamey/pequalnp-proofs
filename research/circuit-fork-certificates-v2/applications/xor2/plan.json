@@ -1,0 +1,11 @@
+{
+  "budget": 3,
+  "cases": [
+    {
+      "positive": 1,
+      "signed": 0,
+      "ordered": true,
+      "partitions": 0
+    }
+  ]
+}

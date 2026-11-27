@@ -1,0 +1,42 @@
+For the 21-feature projected care table, the monotone operand of a sole
+inversion requires at least 25 binary gates.
+
+Let H and L be the forced-one and forced-zero operand rows. For each
+comparable descending target pair (a,b), monotonicity before and after
+the sole inversion forces a in L and b in H. Keeping only minimal H and
+maximal L retains all constraints. The 21 singleton differences establish
+that all 21 features occur in the useful operand DAG.
+
+For a useful DAG with g binary gates, n inputs and one output, the sum
+of (fanout-1) over all vertices except the output is g-n+1. Split at every
+vertex of fanout at least two, keeping it as the output of a region and
+replacing each outward use with a separate formal leaf. This yields at
+most g-n+2 regions, each a read-once formula on its local input leaves
+and donor references. Order regions topologically. Each original input
+belongs to exactly one region, including singleton regions when an input
+itself has multiple uses.
+
+For h in H choose a consistent 1-certificate trace, taking both inputs
+at AND, one true input at OR. For l in L choose a consistent 0-trace
+dually. Let P_h and N_l be traced original variables. P_h hits h minus
+l for every l; N_l hits h minus l for every h. Within each region traced
+in both assignments, the positive and negative proof trees share at
+most one leaf: at every common internal node exactly one child can be
+shared. Hence at most one member of P_h intersect N_l is local to any
+given region.
+
+If P_h reaches a local input of region t and N_l reaches a local input
+of the same region, its output is true at h and false at l. Since this
+output depends monotonically only on inputs in t or earlier regions,
+some feature in h minus l must lie in a region numbered at most t.
+
+The application checker uses encode_ordered with five regions to encode exactly these necessary
+conditions with five regions. Color each feature by its region. The
+'pos' and 'neg' variables select traced inputs. 'same' is forced true
+for each pair in one region and disallows joint trace intersections of
+size two. 'true' and 'false' indicate a trace visits a local variable in
+a region. The last region's ordering constraint is automatic. Empty
+regions are allowed, so infeasibility also rules out fewer regions.
+The CNF is regenerated in memory. The included proof is precone-region-5.drup. drat-trim independently reports VERIFIED (1006
+initial core clauses, 594 proof lemmas). Thus at least six regions
+are required and g >= 21-2+6 = 25. Six regions satisfy this relaxation.

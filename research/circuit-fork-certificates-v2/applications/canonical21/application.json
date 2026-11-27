@@ -1,0 +1,73 @@
+{
+  "schema": "scalar-tail-application/v1",
+  "id": "canonical21",
+  "geometry": "six-prefix",
+  "sources": {
+    "control": {
+      "file": "../shared/control.lean",
+      "sha256": "08b07ebb1edfb826bb061afcc09558ae5d75a6d4d626e43c373c4d8e6855d731"
+    },
+    "positive": {
+      "file": "paid26-alias-ac6.json",
+      "sha256": "16199778bdce2ba5ae48b6c55ec730f73f7059c0e58857ec7fa837f9b58f8879"
+    }
+  },
+  "interfaces": [
+    {
+      "id": "positive",
+      "source": "positive",
+      "wire_count": 21,
+      "patterns": 469,
+      "positives": 84,
+      "care_sha256": "24556be1119c950e9fe1d3c9f121eb67aaa9b9f05b3ff4f330babf631b94484e"
+    }
+  ],
+  "budget": {
+    "fixed_physical": 143,
+    "physical_target": 170,
+    "tail_cap": 27,
+    "tail_lower_bound": 28
+  },
+  "scope": {
+    "problem": "L-meta-20579",
+    "shard": 53,
+    "output": "scalar",
+    "physical_lower_bound": 171,
+    "statement": "Lower bound for this fixed bank and interface only.",
+    "payout": "No full-instance solution or payout claim."
+  },
+  "certificates": [
+    {
+      "interface": "positive",
+      "file": "positive.certificate.json",
+      "sha256": "229cd28677244e83757153a1fb5bec62ae864110aad884d50decd72b9165c0fb",
+      "feature_count": 21,
+      "model": {
+        "literals": [
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive",
+          "positive"
+        ],
+        "fixed_cost": 143
+      }
+    }
+  ]
+}
