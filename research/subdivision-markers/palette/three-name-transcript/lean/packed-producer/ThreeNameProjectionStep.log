@@ -1,0 +1,3 @@
+'ThreeNameProjectionStep.checkedStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNameProjectionStep.tableStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNameProjectionStep.build' depends on axioms: [propext, Classical.choice, Quot.sound]
