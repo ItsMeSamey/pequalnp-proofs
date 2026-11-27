@@ -1,0 +1,19 @@
+{
+  "commit": "49bc564ebf84539cd39704f1453ba84d9d5eb77a",
+  "closure_sources": 41,
+  "closure_manifest_sha256": "07739fc01f9db17a9326cf23a9f30e088feb85b395b8a320faf3be2112fb673d",
+  "preceding_receipt_sha256": "c3ea13a5cb43e45e505d3b00fbf95eb881b4a858bb55e0d4539ad27e002d7bcf",
+  "final_source_sha256": "ae2301d9d2f85f58dda8509e1d7d166e0f0f96eae01fa9bb378a52d7ba30f055",
+  "final_object_sha256": "52d0610dc296b40fb30232b4f3595289af851dd0f49a9cbed4780d0eb6b316bf",
+  "final_deps": [
+    "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+    "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+    "/dev/shm/review-executable-yk755law/fresh/ExactPlaneExecutableCompression.olean"
+  ],
+  "axioms": "'ExactPlaneExecutableSelector.compact_decision' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "demo": [
+    "some 3",
+    "some 2",
+    "false"
+  ]
+}
