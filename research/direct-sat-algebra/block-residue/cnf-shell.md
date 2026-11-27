@@ -1,0 +1,15 @@
+# Two physical matching shells per signed 3CNF clause
+
+Use one rail, one potential for each occurring variable, and one fresh potential z for each clause. All Boolean values are relative to the rail. Pad nonempty short clauses by repeating the last literal. An empty clause rejects immediately, and an empty conjunction accepts. The direct chart uses the two disjunctions
+
+    (a OR (z XOR b)) AND (b OR (z XOR c XOR 1)).
+
+When a is false the first shell requires z=1 XOR b. When b is false the second shell requires z=c. These requirements conflict exactly when all three literals are false. On a satisfying source assignment choose z=1 XOR b if a is false, and z=c otherwise. Exactly two private values work when both a and b are true; every other satisfying clause admits one.
+
+The centered chart uses NAE(a,b,z) and NAE(1 XOR z,c,0). The first shell tests z≠a or z≠b, and the second tests z=c or z=0. Both comparisons of both shells have z as an endpoint. If a=b=0, the first shell forces z=1 and the second requires c=1. Otherwise z=0 works. A satisfying clause has two choices exactly when a and b differ and c=1. This is the standard NAE splitting identity with an explicit common endpoint in each signed comparison pair.
+
+For each shell (x XOR y=d) OR (u XOR v=f), allocate two fresh colors in physical order (x,u) and (y XOR 1 XOR d,v XOR 1 XOR f). A distinct raw coordinate is allocated on every occurrence, including coincident names. List the physical slots of each potential in input order and connect consecutive slots with an XOR pin equal to their difference of offsets. Each slot has at most two incident pins. Properness of the physical edge is equivalent to the original disjunction. Decode by undoing offsets and measuring variable potentials relative to the recovered rail. An unused source variable can be assigned either value. The frontend returns zero for each unused variable and replays the original clauses.
+
+There are 2C shells, 4C indexed comparisons and 8C physical slots for C nonempty clauses. With k occurring variables, the linear rank d of the map from potentials to edge differences equals k+C, hence d≤n+C. For the centered chart each z is adjacent to the rail and every named variable is adjacent to its clause z. For the direct chart a and b have rail spokes, z is adjacent to b, and c is adjacent to z. Each graph on its used names is therefore connected. Its incidence map has exactly the one global complement in its kernel. For the empty chart the rank is zero. Signed offsets translate the flag image without changing this rank. The rank of the fundamental-cycle check matrix is a different parameter.
+
+Private choices multiply across clauses for any fixed source assignment. With at least one clause a simultaneous flip of every active potential gives two distinct physical words for each choice of the relative bits. Unused source variables have no physical slots. Physical word counts therefore depend on which clauses admit both private values. The frontend computes a source SAT verdict and a replayed source assignment.
