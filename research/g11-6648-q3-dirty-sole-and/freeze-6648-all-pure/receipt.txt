@@ -1,0 +1,1 @@
+checked 16383 edge families; deficient records [(8520, 4, 3)]
