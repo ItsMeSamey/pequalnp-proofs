@@ -1,0 +1,23 @@
+# Lower bounds for two heads selected by a donor literal
+
+Run `python3 check.py` from any directory by supplying the path to the checker. Python 3.10 or later suffices. The checker loads its inputs from the same directory.
+
+The 115-gate prefix has 25 designated ports and the shard-53 first internal NOT. The tail may use those ports, explicit NOT gates on ports, and fan-in-two AND and OR gates. One signed port selects between two signed CNFs or between two signed DNFs. Each head combines clause or term roots with its own aggregation operation. The two heads may share roots and aggregation subtrees. The bounds charge no gates for assembling the selector. They apply to this fixed interface and layered syntax.
+
+For a CNF branch, assign each packed negative to a clause it falsifies in its selected branch. Two packed negatives in that branch cannot use the same clause. Their positive blocker agrees on all their shared coordinates, including the selector, and would falsify the same clause. Across opposite branches, a common physical clause must be true at every positive because both branches use it. The pair blocker again forbids the assignment. Thus 34 distinct clause roots are needed. A four-way sweep over the selector, its value, the unit coordinate and its sign checks whether a unit valid on all branch positives can reject a packed negative in that slice. The checker requires that no such unit exists. All 34 charged clause roots consequently require distinct OR gates.
+
+For DNFs, interchange positive and negative and interchange cubes and clauses in the pair-blocker argument. The 50 packed positives require 50 distinct cube roots. The checker tests each signed unit on each slice. At most two packed positives, summed across both branches, can be hit by units. At least 48 distinct cubes therefore need AND roots.
+
+In the aggregation graph, truncate each head at its term or clause leaves and discard unused gates. With at least T distinct leaves and at most two connected components, at least T−2 binary aggregation gates are needed. Indeed, if there are k internal nodes, the graph has at least T+k−2 edges and at most 2k. This argument allows arbitrary fanout. It charges 32 AND gates for CNFs or 48 OR gates for DNFs.
+
+For each of 18 distinct coordinates, a verified positive-to-negative edge changes only that port from zero to one. Except on the selector coordinate, the branch stays fixed across the edge. A signed CNF or DNF without the negative literal for that coordinate is monotone increasing in that coordinate. At least 17 distinct literal inversions must therefore occur outside the paid prefix. Only the 25 listed positive ports are supplied, and every other literal must be formed explicitly. The inversion gates are separate from the binary gate counts.
+
+The resulting tail bounds are 34 + 32 + 17 = 83 for CNF/CNF and 48 + 48 + 17 = 113 for DNF/DNF. The budget after the prefix is 55. The files include the public task, the physical prefix and both pair-blocker certificates. The checker reconstructs the 1,024 labels and port words and checks every blocker and decreasing edge.
+
+## Mixed heads and shared nodes
+
+A branch-local packing with k points and u points covered by any admissible signed unit requires at least r = k−u distinct nonunit term or clause roots. Its k−1 joins and all decreasing coordinates witnessed within the slice also count in the single-branch bound.
+
+For the joint charge, retain only paths from the r nonunit roots to their branch output through join gates. These paths need at least max(0,r−1) joins. Each retained join has a nonunit root of the opposite gate type as a transitive ancestor. It therefore cannot be a construction gate of the opposite head, whose term or clause construction has only one binary operation type all the way back to literals. The two heads also have different join gate types, and their nonunit root types differ. This proves the two root charges and the two retained join charges are disjoint even with fanout and shared physical nodes. Add the size of the union of the two sets of decreasing coordinates, charging each NOT at most once. The checker takes the maximum of this joint bound and the two single-head bounds. It requires at least 76 for each of the 50 orientations.
+
+Selector polarity is covered by swapping the two branches. Columns zero and one always refer to the original unsigned port. Pass `--report result.json` to obtain the bounds for every case, the packed cells hit by units, and the coordinate and cell IDs witnessing decreasing edges in the mixed heads. The terminal output identifies all minimum cases by port index and source wire.
