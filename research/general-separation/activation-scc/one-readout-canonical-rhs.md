@@ -1,0 +1,7 @@
+# At most one rejected right side on the reachable directed vertices
+
+Fix binary A and a selected root r. Choose x with x_r=1 and x_i((Ax)_i+t_i)=0 on all vertices. Draw i→j for A_ij=1 and i≠j. Only vertices reachable from r matter: any assignment on the reachable closed set extends by zero outside, and any full witness restricts to that set.
+
+Take a breadth-first tree rooted at r. For each v let S_v be the vertices on its tree path, and define q_v=1+(A 1_{S_v})_v. If t first differs from q at v along that path, S_v is a feasible support. Indeed on a path prefix ending at u, selecting its successor toggles the u row once. No later path vertex enters that row, because a forward skip edge would shorten the chosen shortest path. With t_u=q_u the successor therefore makes that row hold; with t_v distinct from q_v the final row already holds. All unselected rows are vacuous. This includes the single-vertex path.
+
+Hence the NO set over all t is empty or just the affine flat t_reachable=q. The search algorithm for any noncanonical RHS is deterministic polynomial time and produces the support. An affine readout can be implemented by a new pinned root whose single guard is the readout equality; there are no edges from old rows to the new vertex. This identifies at most one candidate RHS on the relevant original vertices, per fixed coefficient matrix and readout. The BFS argument does not decide whether this candidate is rejected. Other paths or cycles may still supply witnesses.
