@@ -1,0 +1,11 @@
+# Exponentially many dense supergraph filters for the one-sided promise
+
+Fix q≥4 and N=q²+q+1. A supergraph filter computes edge existence for a graph H containing all plane incidences. Let at least βN lines each have at least t added points off that line. For a uniform q-line query Y use its full complementary point set. The fraction of these maximal legal negatives correctly rejected by H is at most
+
+    exp(−βq) + q exp(−t²/(32(q−1)(q+1)²)).
+
+Indeed Y avoids every dense line with probability at most (1−β)^q. Fix a dense line y and condition on its selection. Its t added points must ALL be covered by the other q−1 lines for the filter to reject. For any one of these points exactly q+1 of the N−1 remaining lines cover it. The probability it stays uncovered is the product, over i=0,...,q−2, of 1−(q+1)/(N−1−i). Every ratio is at most (q+1)/(q²+2) ≤1/(q−1). Hence the product is at least (1−1/(q−1))^(q−1)≥1/4. The expected uncovered count is at least t/4.
+
+Replacing one selected line with another changes the uncovered count by at most q+1 in absolute value: the increase and decrease individually are bounded by that number. Expose the remaining q−1 lines as an ordered sample without replacement. Conditional expected final counts after two alternative draws differ by at most q+1, by bijecting completions via the transposition of the two alternatives. Thus each Doob increment is bounded by q+1 in absolute value. Azuma gives probability of zero uncovered at most exp(−t²/(32(q−1)(q+1)²)). Sum over possible included dense y, each having selection probability q/N, to obtain the stated result.
+
+If H adds at least αNq² distinct nonflags, at least αN/2 lines have at least αq²/2 extras. (Each line admits q² extra points.) For any fixed α>0, each such filter correctly rejects only exp(−Ω_α(q)) of the tests. An intersection of filters which all meet this density assumption needs exp(Ω_α(q)) filters, whether or not their internal circuits share gates. For k distinct feeding outputs in a single circuit at least k−2N of them must be internal wires. An overriding term accepting queries of size greater than q has no effect on these tests. Thus polynomial-size threshold-augmented dense-filter constructions cannot compute the original promise. This result does not preclude sparse supergraphs or circuits with arbitrary mixed-gate semantics.
