@@ -1,0 +1,35 @@
+ExactPlaneSparseANF
+ExactPlaneDeterminantProfile
+ExactPlaneSparseProfile
+ExactPlaneSparseSections
+ExactPlaneSparseValidation
+ExactPlaneProfileCharts
+ExactPlaneRawSectionCheck
+ExactPlaneDegreeSpan
+ExactPlaneDegreeSampler
+ExactPlaneProfileSlice
+ExactPlaneSectionGraph
+ExactPlaneProfileResidual
+ExactPlaneSectionComplement
+ExactPlaneProfileBranch
+ExactPlaneProfileSolver
+ExactPlaneRawSectionAdapter
+ExactPlaneCheckedProfile
+ExactPlaneSectionCheckComplete
+ExactPlaneSemanticProfile
+ExactPlaneCheckedProfileExamples
+ExactPlaneSparseProfileExamples
+ExactPlaneLookupProfile
+Traceback (most recent call last):
+  File "/workspace/scratch/review-plane-profile/replay.py", line 52, in <module>
+    if 'Examples' in n:assert log==expected
+      ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/review-plane-profile/replay.py", line 33, in run
+    env={k:v for k,v in os.environ.items() if not k.startswith(('LAKE','LEAN'))}
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/bin/lean', '-j1', PosixPath('/dev/shm/review-profile-u82q6p3m/Audit.lean')]' returned non-zero exit status 1.
