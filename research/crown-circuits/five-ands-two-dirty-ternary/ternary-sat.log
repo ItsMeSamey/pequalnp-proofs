@@ -1,0 +1,6 @@
+ternary-0-12 target-option-counts [5, 5, 5, 5, 1, 1, 1, 1] clauses 15092 SAT True
+bank [192, 224, 240, 241, 242, 288, 292, 293, 294, 320, 328, 332]
+ternary-1-12 target-option-counts [5, 5, 1, 1, 1, 1, 1, 1] clauses 10587 SAT True
+bank [68, 70, 76, 102, 204, 257, 261, 264, 266, 270, 296]
+ternary-0-6 target-option-counts [5, 5, 5, 5, 1, 1, 1, 1] clauses 13376 SAT False
+ternary-1-6 target-option-counts [5, 5, 1, 1, 1, 1, 1, 1] clauses 9159 SAT False

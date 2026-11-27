@@ -1,0 +1,11 @@
+# No wire of the regular 34-gate circuit accepts eleven singletons
+
+In any regular monotone 34-gate threshold-two circuit on fourteen inputs, every wire accepts at most ten raw singletons. Use the deletion-credit theorem in terminal-four.md and the lower bound C(11)≥27.
+
+Suppose W accepts eleven singleton inputs. It is a live nonraw wire, distinct from the output. Keep those eleven labels, deleting the other three. In the original graph terminal-four.md marks six distinct gates for bypass or erasure: the direct OR readers of marked raws, the binary mergers at which two marked nonraw zero streams meet, and the OR attachments where a zero stream hits a live OR. In particular the charged set does not include any AND with exactly one identically zero input. Carry out zero propagation retaining otherwise unused gates for the moment. Tracking bypass aliases, W remains a nonraw nonconstant signal since it accepts all eleven singletons yet rejects the all-zero input.
+
+Follow any original path from W to the observer. If one gate on this path switches from a nonzero predecessor to an identically zero output under the restriction, take the first such gate. Being a monotone binary gate with a nonzero path input, it is necessarily an AND whose other input is identically zero. It is therefore an additional lost gate, distinct from the six charges. Force the surviving W alias true everywhere and remove its producer, also distinct from those seven lost gates.
+
+Otherwise the path stays nonzero, so constant-zero simplification either bypasses some OR gates or keeps them as readers. The output cannot alias W, which accepts every retained singleton whereas threshold two rejects them. Consequently the W alias still has a reader. Setting it true simplifies that reader as well as removing W's producing gate. Both are additional losses following the initial six.
+
+In either case the altered circuit preserves threshold two: setting W true leaves every retained singleton unchanged, monotonicity preserves every pair and forces the zero output false. At most 26 gates remain, contradicting C(11)≥27. Constant substitutions used in this argument are implemented by bypass/removal; the final nonconstant circuit needs no constant gate.
