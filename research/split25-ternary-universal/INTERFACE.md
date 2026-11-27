@@ -1,0 +1,1 @@
+The 115-gate fixed prefix exposes exactly the specified 25 signals to the tail. The bound allows the complete free dictionary on any one triple of these signals. Supplying wire 69 as an extra input changes the interface and falls outside this full census.
