@@ -1,0 +1,192 @@
+{
+  "lock": [
+    "first-nine",
+    "1639f02ea2457853cf56faaf30305dc31caa5f2713ce415acd36bb3f12ff9a42",
+    "e4ead8b0a3b9c84e2d8d0208cf3f6272c95a7469"
+  ],
+  "prior": {
+    "review-q401": "19885c592cd38f2b0178b3fe277c76b756b0884b25d33b3ca56beb718a59700a",
+    "review-q401-increment": "1e4842385824637539c18566211590dd784e3e03331c01cf530f77c69e038108",
+    "review-q401-plus2": "069212e67dd7fa75784e9eba5d88ab2b72b62e4365bd332c586df31d684edaa2"
+  },
+  "modules": {
+    "IncidenceHoistFlow.lean": {
+      "stage": "hoist",
+      "source": "a8df2edce9ca02c8d7ec206bed7655576f192decfc3988f6f859d2e058f7dfb5",
+      "object": "281e90c0c76d35642a02482731cf0fed7d4cc2e5f2e5b75818b2893b9e753fe5",
+      "log": "3e016941da3e4042418010a272bc80e6484da3b704fe33a3ff19b78a71405f79",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistFlow.law",
+        "IncidenceHoistFlow.sandwich"
+      ]
+    },
+    "IncidenceHoistPorts.lean": {
+      "stage": "hoist",
+      "source": "9ba977239380328453253843a39564671dae3a552a18b29bda2f7069abd61a1c",
+      "object": "7754848e8eead720eb49541f79dc13b23e88a1d19cd57318e1ab8f78ad2a3429",
+      "log": "2e1e208e167c469fe1e42d740415191d561d9093a6f629b4ec0e27ba25642baf",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistPorts.opposite_soleAnd",
+        "IncidenceHoistPorts.circuit_transfer",
+        "IncidenceHoistPorts.private_transfer"
+      ]
+    },
+    "IncidenceHoistSparse.lean": {
+      "stage": "hoist",
+      "source": "a44bc9fc489c6b3e285f9e8513c6800ef811614797bc6d3bdfe4bff9061c6d82",
+      "object": "d553200516f64ac9e525d465b4e19c61e7eec1da924cf73d7e6239e1f9eafbec",
+      "log": "a9648b97e1d7f19e5e2415237318491db9d52ebaba3e707a3ba92c7a6539311b",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/IncidenceRobust.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistSparse.line_safe",
+        "IncidenceHoistSparse.point_safe"
+      ]
+    },
+    "IncidenceHoistShield.lean": {
+      "stage": "hoist",
+      "source": "967428466a8f44c5c4499c9c86f514cfea26460e3d21d1376b76939d7459e746",
+      "object": "f59b05f3caaaf43864582ae29524178fdfb4485b1ba778e61500fecfdf54d016",
+      "log": "165e8f6f22f8e86a3352e36331e0b0e8c9556d678d34ddca442a44d264c052e8",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistSparse.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistShield.shield"
+      ]
+    },
+    "IncidenceHoistCompile.lean": {
+      "stage": "hoist",
+      "source": "657481a1d89dac4e31c44946b7523970ee6a405be644590d21a2466e85a8005e",
+      "object": "1b7a763b0aed7de1bd6b04d9112e08ed125247140824ec9eb2e9ff787835b1c6",
+      "log": "23926ddd7d9d4e7a40d0a23c66da69d09b398f980c5747a57806cf339303291f",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistFlow.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistCompile.physical_size",
+        "IncidenceHoistCompile.well_prefix",
+        "IncidenceHoistCompile.circuit"
+      ]
+    },
+    "IncidenceHoistRealize.lean": {
+      "stage": "hoist",
+      "source": "73518ded9fe6ef5404189884a8fc190507cf86fbda21106d50459a1df0128b46",
+      "object": "f749211e2ff4958301a1591d2ce402790b12a81695c994f34e30e541467e702b",
+      "log": "8b04f6483acfdc6e4579af646c6a7ded6ec16aa84acc9a1b9da32981a6b46386",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistCompile.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistRealize.realize"
+      ]
+    },
+    "IncidenceHoistPrefix.lean": {
+      "stage": "hoist",
+      "source": "7818d60715830d8cc4ddf36d61d770650e00fe2496f96262f773c2343c95c2f4",
+      "object": "328ca3ecaa87a853bd0cdf363e6be5dbcda9b9e6e45d71d1d643d4e4c5edbcd6",
+      "log": "ac2703ae98b58d593e7b832d47ee41ec092829057fb59968ce19c05558372f1b",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistShield.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistFlow.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistPrefix.grow",
+        "IncidenceHoistPrefix.shielding"
+      ]
+    },
+    "IncidenceHoistReaders.lean": {
+      "stage": "hoist",
+      "source": "43b6cb7eecde50d2be2925aa15799001edcaf83caa8b09c98026d0ff734e942c",
+      "object": "a5fef5fd4e992cd87380439dfaa8d49c42aa20beb6d834c68247785fa9405885",
+      "log": "34699b5f8a58e2a9f5f6468b6b3f50a0343c8d6c39de4a565749c8d48473b0c6",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistReaders.unique_reader"
+      ]
+    },
+    "IncidenceHoistWalk.lean": {
+      "stage": "hoist",
+      "source": "579191e3f86851ccba3be59e8b01677d8bfe1ffc35787bb3a303c888c1698057",
+      "object": "31a2e240fa04260c4d0ed946769ea4b99c6627b321904ca619354717b107f30c",
+      "log": "378aeba2458ce2a1f34489dff42d8ddf5c577fb5d63208644dbd4dbdf7c52ce5",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistPrefix.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistReaders.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistWalk.walk_shields",
+        "IncidenceHoistWalk.selected_safe"
+      ]
+    }
+  },
+  "public": [
+    "IncidenceHoistFlow.stable",
+    "IncidenceHoistFlow.law",
+    "IncidenceHoistFlow.sandwich",
+    "IncidenceHoistPorts.emit_length",
+    "IncidenceHoistPorts.port_transfer",
+    "IncidenceHoistPorts.exit_uses_le",
+    "IncidenceHoistPorts.actual_uses",
+    "IncidenceHoistPorts.circuit_transfer",
+    "IncidenceHoistPorts.private_transfer",
+    "IncidenceHoistPorts.opposite_soleAnd",
+    "IncidenceHoistSparse.wire_up",
+    "IncidenceHoistSparse.line_safe",
+    "IncidenceHoistSparse.point_safe",
+    "IncidenceHoistShield.shield",
+    "IncidenceHoistCompile.prefix_length",
+    "IncidenceHoistCompile.append_length",
+    "IncidenceHoistCompile.physical_size",
+    "IncidenceHoistCompile.ordered_snoc",
+    "IncidenceHoistCompile.well_prefix",
+    "IncidenceHoistCompile.ordered_append",
+    "IncidenceHoistCompile.ordered_joins",
+    "IncidenceHoistRealize.prefix_sem",
+    "IncidenceHoistRealize.realize",
+    "IncidenceHoistPrefix.initial",
+    "IncidenceHoistPrefix.later",
+    "IncidenceHoistPrefix.grow",
+    "IncidenceHoistPrefix.shielding",
+    "IncidenceHoistReaders.occurrence_count",
+    "IncidenceHoistReaders.occurrence_mem",
+    "IncidenceHoistReaders.unique_reader",
+    "IncidenceHoistWalk.step_sound",
+    "IncidenceHoistWalk.walk_shields",
+    "IncidenceHoistWalk.walk_hot",
+    "IncidenceHoistWalk.selected_mem",
+    "IncidenceHoistWalk.owner_hot",
+    "IncidenceHoistWalk.witness_neg",
+    "IncidenceHoistWalk.selected_safe"
+  ],
+  "axioms": "1b3a82b1877696d6316c5f6a780889d763c282b2a23616e81a013eb91a41ab5c"
+}
