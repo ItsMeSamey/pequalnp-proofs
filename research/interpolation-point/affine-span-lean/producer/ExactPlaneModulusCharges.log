@@ -1,0 +1,16 @@
+ExactPlaneModulusCharges.lean:38:27: warning: This simp argument is unused:
+  ih
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ExactPlaneModulusCharges.lean:86:20: warning: This simp argument is unused:
+  List.find?_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scan, hw, good, cap]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ExactPlaneModulusCharges.search_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneModulusCharges.divisions_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'ExactPlaneDeficitScan.run_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneDeficitScan.computed_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneDeficitScan.counts_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+'ExactPlaneChargedSolver.answer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneChargedSolver.traversal' depends on axioms: [propext, Classical.choice, Quot.sound]
