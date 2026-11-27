@@ -1,0 +1,4 @@
+(1, 1, 2) {'allodd': 4, 'minimal': 4, 'three': 4}
+(1, 3, 2) {'allodd': 112, 'minimal': 48, 'three': 48}
+(3, 3, 2) {'allodd': 140}
+(1, 1, 4) {'allodd': 404, 'minimal': 168, 'three': 168}

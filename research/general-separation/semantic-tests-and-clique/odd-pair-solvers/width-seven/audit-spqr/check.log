@@ -1,0 +1,8 @@
+exterior sites 1 by pins on interface {}
+exterior sites 2 by pins on interface {0: 1, 1: 4, 2: 1}
+exterior sites 3 by pins on interface {0: 42, 1: 84, 2: 14}
+exterior sites 4 by pins on interface {0: 1890, 1: 2520, 2: 315}
+6 physical ab 0 all sixteen states
+6 physical ab 1 all sixteen states
+11 physical ab 0 all sixteen states
+11 physical ab 1 all sixteen states
