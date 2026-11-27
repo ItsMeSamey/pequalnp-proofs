@@ -1,0 +1,1 @@
+{"easy": ["SAT", ["chart", "prepass"]], "hard": ["UNSAT", ["chart", "prepass", "projected", "cover", "mixed-nand"]]}
