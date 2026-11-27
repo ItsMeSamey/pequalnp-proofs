@@ -1,0 +1,1 @@
+K4 physical even/odd phase verdicts and original satisfying word passed.
