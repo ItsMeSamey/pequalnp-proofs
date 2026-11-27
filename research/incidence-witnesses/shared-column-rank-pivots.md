@@ -1,0 +1,24 @@
+# Simultaneous forced rank at affine pivot pins
+
+In an affine chart of PG(2,q), q≥2, write v_x for the vertical at x, u_i for the infinity point of finite slope i, Y_i for the OR of all q queries of slope i, Q for the OR of the Y_i, and P_x for the OR of the q affine points in column x. Given an exact scalar donor F, build
+
+    G_x = P_x AND Q
+    T_xi = (G_x OR u_i) AND Y_i
+    B_x = OR_i T_xi
+    out = boundary OR OR_x [B_x AND (F OR v_x)].
+
+The boundary is an ordinary point-star formula for all flags except affine-point/nonvertical-line flags. It has 2q²+2q+1 flags and N=q²+q+1 nonempty stars, costing 3q²+3q+1 gates. Beyond the donor and boundary, slope ORs cost q(q−1), Q q−1, point-column ORs q(q−1), G q, T twice q², B q(q−1), guards and products 2q, scalar joins q. Thus any minimum promise donor gives size at most OPT+8q²+5q. A full-cube donor gives full-cube correctness. On an independent mask the guard forces v_x, killing P_x, and u_i together with Y_i would already be incident. Every designated affine flag activates its own product and F; the boundary covers the remainder.
+
+Fix any affine p in column x. Index its q nonvertical native flags e_i by slope. The proper-neighborhood negative S_j has payload all points of the j line through p except p, and queries all lines through p except that j line. Its q queries include v_x. On e_i the only positive term is the x product and only T_xi fires in B_x. On S_j, P_x=G_x=0, Q=1, u_i equals [i=j], Y_i equals [i≠j], B_x=0, and the guard is high. Consequently every gate-local monotone KW traversal enters T_xi. On the diagonal it must enter Y_i; off the diagonal it must enter G_x OR u_i, then G_x, then P_x, then the unique p pin. The arrival matrix at that pin is J−I of real rank q. These q² sites are distinct. Each particular outgoing arc of G_x into its slope-i arm is visited on all q working flags of that slope in the column via off-diagonal witnesses. Thus one dirty AND per column carries high rank to q distinct pivot sites. The donor's internal sharing is unrestricted.
+
+## An incomplete dirty donor interface
+
+Use q−1 working columns X and replace F in each guard by D=(F OR AND_{x∈X} v_x) AND Q. Add the q² working-type flags of the omitted column to the boundary, an O(N) increment. D accepts the legal empty-payload negative with the q−1 listed verticals and any one nonvertical query, and misses every vertical-only flag. F now has one new reader. On a negative where the added conjunction fires all working columns have P_x=0, whence B_x=0. On working flags F and Q fire. The rank proof persists at q(q−1) sites. No assertion about donor internals is needed.
+
+## A flag-live full-cube implementation with all shared gates dirty and incomplete
+
+Use all columns. Add a vertical slope bank with Y_∞ the OR of all verticals and u_∞ their point at infinity. Q now comprises all affine line queries. In column x build a private F_x as an ordinary point-star formula for the q² native affine-point/nonvertical flags in that column and the q flags (u_i, line of finite slope i and intercept x). Use H_x=F_x OR v_x as guard. The only external boundary term is the horizon query times the OR of its q+1 points. The independent-mask argument works for both vertical and finite slopes. Affine/vertical and u_∞/vertical flags use v_x in their column. Finite infinity-point/affine-line flags use the F_x assigned by intercept. Thus the circuit is full-cube exact. On each working square the vertical branch cannot fire on e_i and Q remains high on S_j. All q² pin ranks persist.
+
+Every internal operand slot lies on a successful proof on a native flag. In T_xi a pivot flag uses G_x and an infinity-point flag uses u_i. For finite i use the infinity-point flag with intercept x; for the vertical direction use v_x. Vertical pivot flags use the v_x guard arm, while finite pivot flags and the assigned finite infinity flags use F_x. Every input of each private F_x tree has its assigned flag. These same flags exercise every point- and slope-aggregation slot, including Q's vertical slot. The horizon branch has private horizon flags. With physically separate formula trees the only shared internal gates are G_x, Y_i, and Q. All accept legal independent masks and miss native flags. For example G_x accepts an affine point in x and a nonincident affine query, and Q misses horizon flags.
+
+Each F_x has q²+q flags and 2q nonempty point stars, costing q²+3q−1 gates. All other physical gates total 5q²+7q: (q+1)(q−1) slope ORs, q for Q, q(q−1) for columns, q for G, 2q(q+1) for T, q² for B, 2q for guards and their products, q for the scalar joins and q+1 for the horizon branch. Total size is q³+8q²+6q, compared to q³+3q²+3q+1 for the ordinary full-plane formula. This example establishes routing complexity for a displayed implementation; global minimum circuits can be smaller.
