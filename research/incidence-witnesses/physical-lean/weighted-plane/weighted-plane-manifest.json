@@ -1,0 +1,34 @@
+{
+  "lean_version": "4.36.0",
+  "module_count": 2,
+  "module_order": "topological",
+  "modules": [
+    {
+      "name": "IncidenceWeightedPlane",
+      "imports": [
+        "IncidencePinRunModel",
+        "IncidencePinFreeSites",
+        "IncidenceRunPinPhysical"
+      ],
+      "sha256": {
+        "IncidenceWeightedPlane.lean": "59e74989f5fa3ef1d38e7d76b9c11d7336ef8f30ca396c9c4b3bc27cb3962baa",
+        "objects/IncidenceWeightedPlane.olean": "76f18d51d147a640a356215d6c6ceec0d2a9a621e9319c32745db0d1d721bc23",
+        "receipts/IncidenceWeightedPlane.log": "93049551d70563faa9ab70bd352c0f92db5841c3ece10ff0c3c65c9971d1e9f7",
+        "receipts/IncidenceWeightedPlane.memory.jsonl": "fa8f81955141791751042283a6bea92c97b656d85801404c2d0a03cea6b99e19"
+      }
+    },
+    {
+      "name": "IncidenceWeightedEdits",
+      "imports": [
+        "IncidenceWeightedPlane",
+        "IncidenceWarmPhysical"
+      ],
+      "sha256": {
+        "IncidenceWeightedEdits.lean": "3d9032b317d449d06341d538e46ebf82658ea7c33c5a9debd0ecd4969a214e8d",
+        "objects/IncidenceWeightedEdits.olean": "ea8ed1b7875e465048620aa6b1467a297cc6d65f5fef3659c69c7717adda83de",
+        "receipts/IncidenceWeightedEdits.log": "9966fcd23dd48a231a07a13e337cbc13fc088e0b40b1455600172a3bbe380238",
+        "receipts/IncidenceWeightedEdits.memory.jsonl": "2475f0a70cba5e18dc05ce10afdf043b15de10379d3aa5f7aa8fd82e93df2411"
+      }
+    }
+  ]
+}

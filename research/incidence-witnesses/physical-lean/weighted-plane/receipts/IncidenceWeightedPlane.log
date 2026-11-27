@@ -1,0 +1,7 @@
+/workspace/scratch/incidence-weighted-plane/IncidenceWeightedPlane.lean:75:57: warning: Unused tactic linter: `exact (by rw [el, ep]; exact inc)` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-weighted-plane/IncidenceWeightedPlane.lean:75:79: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'IncidenceWeightedPlane.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
