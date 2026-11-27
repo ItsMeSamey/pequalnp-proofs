@@ -1,0 +1,2 @@
+Two section compositions and all original witnesses passed.
+All three suffixes retain six raw pairs and reject first suffix cuts.
