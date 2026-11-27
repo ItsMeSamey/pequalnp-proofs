@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+The reviewed one-terminal total is **5,826 of 6,213** after resolving original IDs 10072 and 12092. The 387 remaining one-terminal IDs comprise 257 at cost 28 and 130 at cost 29. Together with 2,380 zero-terminal cases, **2,767 cases remain**. [Reviewed IDs](t1-signed-5826.ids) · [387 remaining IDs](t1-remaining-387.ids) · [Audit manifest](empty29-increment.sha256)
+
 Independent review covers **5,824 of 6,213 one-terminal cases** and **1,652 of 4,032 zero-terminal cases**. The latest 70 one-terminal cost-29 cases use their original raw quartets, 52 with one quartet and 18 with two. The remaining 389 one-terminal and 2,380 zero-terminal cases total 2,769. [5,824 original IDs](t1-signed-5824.ids) · [70 added IDs](quartet29-70.ids) · [Numerical dependencies](quartet29-increment.sha256)
 
 ## Earlier snapshots
