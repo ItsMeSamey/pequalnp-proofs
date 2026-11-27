@@ -1,0 +1,127 @@
+{
+  "theorem": "PEqualNP.Outside.L_meta_4186_aux.Q0.complete",
+  "proof_root": "src/Q0Complete.lean",
+  "axioms_probe": "src/Q0CompleteAxioms.lean",
+  "repository": "https://github.com/ItsMeSamey/pequalnp-proofs.git",
+  "revision": "b104ff3988c176aae2db960c2a71ddf975ef047c",
+  "toolchain": "leanprover/lean4:v4.36.0",
+  "upstream_source_manifest": "upstream.sha256",
+  "package_source_manifest": "sources.sha256",
+  "pinned_packages": [
+    {
+      "name": "mathlib",
+      "revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+      "url": "https://github.com/leanprover-community/mathlib4"
+    },
+    {
+      "name": "plausible",
+      "revision": "054b228ce0ac61d767c6e71ba73a24728f191b72",
+      "url": "https://github.com/leanprover-community/plausible"
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "4fb58e749ef3fc0395fe274f6cab70c2ea85f1c9",
+      "url": "https://github.com/leanprover-community/LeanSearchClient"
+    },
+    {
+      "name": "importGraph",
+      "revision": "8370c640afcd1cc3fb1cb9bf1560cc66eafee5e0",
+      "url": "https://github.com/leanprover-community/import-graph"
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "2f0f3520daeac2d9310ff25b7a877a0e5cdaa203",
+      "url": "https://github.com/leanprover-community/ProofWidgets4"
+    },
+    {
+      "name": "aesop",
+      "revision": "66ff77cf0c4c898799e4b94d14db55f7a02d0c5a",
+      "url": "https://github.com/leanprover-community/aesop"
+    },
+    {
+      "name": "Qq",
+      "revision": "ff055a2fcc835935e0ae607339b455a5f5896b4b",
+      "url": "https://github.com/leanprover-community/quote4"
+    },
+    {
+      "name": "batteries",
+      "revision": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+      "url": "https://github.com/leanprover-community/batteries"
+    },
+    {
+      "name": "Cli",
+      "revision": "50810f72af7618bee62fe9800dc26e806c188703",
+      "url": "https://github.com/leanprover/lean4-cli"
+    }
+  ],
+  "direct_mathlib_boundary_paths": [
+    "Mathlib/Algebra/BigOperators/Fin.lean",
+    "Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean",
+    "Mathlib/Algebra/Field/Defs.lean",
+    "Mathlib/Algebra/MvPolynomial/Basic.lean",
+    "Mathlib/Algebra/MvPolynomial/Degrees.lean",
+    "Mathlib/Algebra/MvPolynomial/Eval.lean",
+    "Mathlib/Algebra/MvPolynomial/Monad.lean",
+    "Mathlib/Algebra/MvPolynomial/PDeriv.lean",
+    "Mathlib/Algebra/MvPolynomial/Rename.lean",
+    "Mathlib/Algebra/Order/Ring/Star.lean",
+    "Mathlib/Algebra/Polynomial/Eval/Defs.lean",
+    "Mathlib/Algebra/Ring/Parity.lean",
+    "Mathlib/Analysis/Complex/Basic.lean",
+    "Mathlib/Combinatorics/Enumerative/DoubleCounting.lean",
+    "Mathlib/Combinatorics/SimpleGraph/Basic.lean",
+    "Mathlib/Combinatorics/SimpleGraph/VertexCover.lean",
+    "Mathlib/Computability/Language.lean",
+    "Mathlib/Computability/TuringMachine/Computable.lean",
+    "Mathlib/Data/ENat/Lattice.lean",
+    "Mathlib/Data/Fin/Tuple/Basic.lean",
+    "Mathlib/Data/Finset/Basic.lean",
+    "Mathlib/Data/Finset/Card.lean",
+    "Mathlib/Data/Finset/Disjoint.lean",
+    "Mathlib/Data/Finset/Image.lean",
+    "Mathlib/Data/Finset/Lattice/Basic.lean",
+    "Mathlib/Data/Finset/Lattice/Fold.lean",
+    "Mathlib/Data/Finset/Powerset.lean",
+    "Mathlib/Data/Finset/Sort.lean",
+    "Mathlib/Data/Finset/Sum.lean",
+    "Mathlib/Data/Fintype/Basic.lean",
+    "Mathlib/Data/Fintype/Card.lean",
+    "Mathlib/Data/Fintype/EquivFin.lean",
+    "Mathlib/Data/Fintype/Fin.lean",
+    "Mathlib/Data/Fintype/Pi.lean",
+    "Mathlib/Data/Fintype/Powerset.lean",
+    "Mathlib/Data/Fintype/Prod.lean",
+    "Mathlib/Data/Fintype/Sum.lean",
+    "Mathlib/Data/Int/Basic.lean",
+    "Mathlib/Data/List/Chain.lean",
+    "Mathlib/Data/List/Dedup.lean",
+    "Mathlib/Data/List/OfFn.lean",
+    "Mathlib/Data/List/Sublists.lean",
+    "Mathlib/Data/Nat/Bits.lean",
+    "Mathlib/Data/Nat/Bitwise.lean",
+    "Mathlib/Data/Nat/Log.lean",
+    "Mathlib/Data/Nat/Size.lean",
+    "Mathlib/Data/Rat/Defs.lean",
+    "Mathlib/Data/Real/Basic.lean",
+    "Mathlib/Data/Set/Card.lean",
+    "Mathlib/Data/Set/Function.lean",
+    "Mathlib/Data/ZMod/Basic.lean",
+    "Mathlib/FieldTheory/Finite/GaloisField.lean",
+    "Mathlib/LinearAlgebra/Dimension/Finrank.lean",
+    "Mathlib/LinearAlgebra/Matrix/GeneralLinearGroup/Defs.lean",
+    "Mathlib/LinearAlgebra/Matrix/MvPolynomial.lean",
+    "Mathlib/LinearAlgebra/Matrix/Permanent.lean",
+    "Mathlib/LinearAlgebra/Matrix/Rank.lean",
+    "Mathlib/LinearAlgebra/Span/Defs.lean",
+    "Mathlib/Logic/Equiv/Fin/Basic.lean",
+    "Mathlib/Logic/Relation.lean",
+    "Mathlib/Order/ConditionallyCompleteLattice/Basic.lean",
+    "Mathlib/Order/Disjoint.lean",
+    "Mathlib/Order/Lattice/Nat.lean",
+    "Mathlib/Order/Monotone/Defs.lean",
+    "Mathlib/Order/Nat.lean",
+    "Mathlib/Order/SymmDiff.lean",
+    "Mathlib/Order/WithBot.lean",
+    "Mathlib/RingTheory/MvPolynomial/Homogeneous.lean"
+  ]
+}
