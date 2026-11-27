@@ -1,0 +1,33 @@
+import ExactPlaneChargedWords
+import ExactPlaneChargedBound
+import ExactPlaneClearWork
+import ExactPlaneChargedSolver
+import ExactPlaneChargedSites
+import ExactPlaneDeficitCharged
+import ExactPlaneChargedGenerator
+import ExactPlaneEagerCounts
+import ExactPlaneDeficitScan
+import ExactPlaneChargedOdd
+import ExactPlaneChargedScan
+import ExactPlaneModulusCharges
+import ExactPlaneSeedWork
+#print axioms ExactPlaneSeedWork.counted_eq
+#print axioms ExactPlaneModulusCharges.search_spec
+#print axioms ExactPlaneDeficitScan.counts_bound
+#print axioms ExactPlaneEagerCounts.checkC_spec
+#print axioms ExactPlaneEagerCounts.basisC_spec
+#print axioms ExactPlaneChargedOdd.counted_spec
+#print axioms ExactPlaneChargedScan.counts
+#print axioms ExactPlaneDeficitCharged.run_spec
+#print axioms ExactPlaneChargedGenerator.rows_eq
+#print axioms ExactPlaneChargedGenerator.counts
+#print axioms ExactPlaneChargedSites.answer_eq
+#print axioms ExactPlaneChargedSolver.answer
+#print axioms ExactPlaneChargedSolver.traversal
+#print axioms ExactPlaneChargedSolver.preprocess
+#print axioms ExactPlaneChargedSolver.field
+#print axioms ExactPlaneChargedSolver.enumeration
+#print axioms ExactPlaneChargedSolver.charge_bound
+#print axioms ExactPlaneChargedSolver.no_recovery
+#print axioms ExactPlaneClearWork.reduceWork_spec
+#print axioms ExactPlaneChargedWords.odd_spec

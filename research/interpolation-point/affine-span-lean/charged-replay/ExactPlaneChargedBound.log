@@ -1,0 +1,2 @@
+'ExactPlaneChargedSolver.charge_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneChargedSolver.no_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]

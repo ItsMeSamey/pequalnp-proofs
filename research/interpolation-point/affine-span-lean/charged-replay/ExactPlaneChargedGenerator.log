@@ -1,0 +1,14 @@
+ExactPlaneChargedGenerator.lean:42:38: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+ExactPlaneChargedGenerator.lean:43:35: warning: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [run, q, Nat.succ_ne_zero, if_false, ExactPlaneSeedWork.counted_eq,
+    ExactPlaneEagerField.seedRows_eq, ExactPlaneQuotientRows.count, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ExactPlaneChargedGenerator.rows_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneChargedGenerator.counts' depends on axioms: [propext, Classical.choice, Quot.sound]
