@@ -9,3 +9,11 @@ Run `python verify_orders.py` and `python check_bank.py` for the order and bank 
 ## Implemented quadratic backends
 
 The Gaussian backend accepts systems whose quadratic parts span at most one dimension, together with affine constraints. The character backend accepts a caller-specified bound on the dimension r of that span and evaluates 2^r characters. Inputs exceeding the fragment or budget can be declined. Both reuse the [Gaussian sum](../../direct-sat-algebra/quadratic_image.py) and [affine-domain](../../direct-sat-algebra/quadratic_target.py) implementations. From this directory run `PYTHONPATH=../../direct-sat-algebra python check_gaussian.py` and `PYTHONPATH=../../direct-sat-algebra python check_character.py`. [Gaussian dispatch](gaussian-dispatch.md) · [Character dispatch](character-dispatch.md)
+
+## Complete SAT decision on original inputs
+
+Use `cnf_routes.solve_cnf(n, clauses)` for clauses of width at most three, with signed, one-based integer literals. It returns a witness mask or None, plus the route used. The structural tests solve 2CNF, use bounded tables for a certified elimination order, or search for a small set of variables meeting all remaining ternary clauses. The circuit solver tries sparse substitution and bounded-rank quadratic counting before enumerating the remaining input coordinates. The exhaustive fallback can take exponential time. Successful witnesses are checked against the original clauses. [Circuit algorithm](complete-portfolio.md) · [3CNF routes and examples](structural-cnf.md)
+
+The representation bound concerns encodings whose number of extensions has the correct parity on each raw input. For independent sets of an n-vertex path, any such affine-plus-quadratic encoding has 2r−h at least n, except when n is 1 modulo 3, when it is at least n−1. Here r is the rank of the quadratic parts and h is the number of free auxiliary bits after affine elimination. The path decision problem itself is easy. [Proof](complete-portfolio.md)
+
+Run `PYTHONPATH=../../direct-sat-algebra python check_complete.py` and `PYTHONPATH=../../direct-sat-algebra python check_routes.py` to reproduce the original-input checks.
