@@ -1,0 +1,18 @@
+{
+  "pin_sha256": "9556b3a70f5a9e81160c32bb2dc011764459eaba55c7d2e3ecb60cde8ab54aaf",
+  "limits": [
+    5,
+    10,
+    64
+  ],
+  "canonical": [
+    27,
+    193638
+  ],
+  "status": "passed",
+  "wall": 0.1653057590010576,
+  "cpu": 0.157287,
+  "peak_rss_kib": 11648,
+  "observed_peak_bytes": 11665408,
+  "returncode": 0
+}

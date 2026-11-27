@@ -1,0 +1,1 @@
+Basis enumeration, paired guard, conditional quotient and K4 NAE passed.
