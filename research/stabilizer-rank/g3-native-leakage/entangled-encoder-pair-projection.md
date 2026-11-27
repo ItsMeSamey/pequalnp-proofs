@@ -1,0 +1,11 @@
+# Joint survival, merging and cancellation of two fully entangled parents
+
+For two normalized parents maximally entangled across the same block write them as (I⊗U)|Φ_8> and (I⊗V)|Φ_8> with stabilizer isometric encoders, absorbing their global phases into the actual coefficients a,b. Set x=conj(β) for the normalized local ket defining the bra. Outputs are aUx/√8 and bVx/√8. They are proportional iff λ=⟨x|U†V|x⟩ has magnitude one, by Cauchy–Schwarz. The merged coefficient is (a+bλ)/√8. Savings are one term plus another if the coefficient vanishes.
+
+The probability weight of each of the 1,080 local rays in the Born basis scheme is |⟨β|g⟩|²/135. Each belongs to just one of 135 unsigned bases. Testing all rays by phase-tracked stabilizer inner products costs polynomial time in the remaining register per ray. For unequal code images, intersection membership is necessary, but not sufficient for matching the SAME x. The overlap criterion works for all images. Retain encoder global phases or absorb them into a,b once for all outcomes.
+
+For equal images W=U†V is a Clifford up to its known global phase. Its symplectic map F must preserve x's unsigned maximal subgroup L. For each invariant L choose a multiplicative commuting Pauli section s; write W s(p) W†=(−1)^t(p)s(Fp). The sign characters χ satisfy χ(Fp)+χ(p)=t(p). There are zero solutions or 2^{dim ker((F−I)|_L)}. This counts invariant stabilizer rays. Their phases λ=tr(WΠ_x) require the actual Clifford phase as well.
+
+If V=UP for a nonidentity Hermitian Pauli P, collinearity occurs exactly on P eigenkets x. Its total probability is 1/9 since 15 bases contain P. At eigenvalue λ=±1 the mass is (1+λ⟨g|conj(P)|g⟩)/18. Thus expected savings are 1/9 plus the eigenvalue masses for which a+bλ=0. In any actual expansion choose disjoint pairs; their savings add before any additional merging. Every projected list still represents G_{k−1} at its correct scalar.
+
+Identical code images do not force a merge: take V=U(C⊗I⊗I), where C cycles the unsigned X,Y,Z. Its two eigenspaces are one-dimensional nonstabilizer lines. Every eigenvector of C⊗I⊗I has the first qubit in such a pure state, impossible for a stabilizer ket. Thus no stabilizer bra merges the pair. This is a per-pair obstruction; it does not preclude coordinated merging in the whole list.
