@@ -1,0 +1,11 @@
+# A dirty supplier shared by exceptional ORs
+
+Let W be dirty in a live binary TopForm circuit with excess δ over the minimum of its function. Mark each AND with a forward all-AND path from W. Let d count the direct AND readers of W; k the pre-top OR gates with a marked dirty AND pin; and t=1 if any clean top is marked, 0 otherwise. Then d≤k+t+δ.
+
+Keep W and every direct W→OR pin. For each marked AND a build an auxiliary wire u with a=W∧u. At that AND, replace a direct W pin by symbolic true, a marked input by its auxiliary, and any unmarked factor by its original exact signal. The identity follows from W idempotence; every direct AND reader becomes an alias. At each OR with one marked dirty pin restore its original input by at most one extra AND. With two marked pins combine their auxiliaries by OR and restore W once. All unmarked wires are evaluated exactly. In topological order even an OR exit reentering a later marked AND is thus an exact factor. No assumption of independent side paths is involved.
+
+Restore the union of the marked clean tops by applying W once after aggregating their auxiliaries. Regroup these and the unaffected tops using at most the original clean-aggregation OR count (N live top wires need at least N−1). Symbolic constants fold without extra gates. The size change is at most k+t−d, proving the bound by the original floor. Two distinct marked exits feeding the same OR count once.
+
+If two exceptional ORs already each directly read W in a least circuit, neither can read W or a marked descendant on its opposite pin: W absorbs that wire. Thus those readers spend none of the k allowances. With just these two dirty-AND-to-OR entrances, d≤1. Each subsequent marked dirty AND has no OR exit, so applying the bound there in turn gives a single AND path to one clean terminal if the side exists; it is centreless when W is itself a dirty AND. With one further entrance, d≤2; equality requires both a third OR boundary and a marked clean top.
+
+An exact 19-card may use δ=0 for its own actual readers provided its relevant roots still terminate in a pure OR aggregation. A 20-gate surviving circuit over a 19-gate floor permits δ=1 only. Projection need not preserve TopForm, cleanliness or the original marked reader set; count all actual nonterminal OR boundaries if using a different surviving decomposition.

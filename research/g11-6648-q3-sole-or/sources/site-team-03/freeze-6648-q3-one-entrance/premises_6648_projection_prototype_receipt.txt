@@ -1,0 +1,27 @@
+Source-logic prototype; local executions, not independent replay or Lean.
+H vertices in mask order 0,1,2,4,5,8,9,10. H edges in issued-list order.
+Local per-batch relaxation, U_H of size at least one: (number of batches: max original residuals at exactly this minimum). Exceptions may differ between owners.
+0: {1: 2, 2: 3, 3: 4, 4: 5, 5: 6, 6: 7, 7: 7, 8: 8, 9: 9, 10: 10, 11: 11}
+1: {1: 2, 2: 4, 3: 6, 4: 8, 5: 10, 6: 11}
+2: {1: 3, 2: 6, 3: 9, 4: 10, 5: 11}
+
+Shared-exception search: columns target cardinality, batch limit, number feasible, first feasible mask or None. A zero at n implies exclusion for all n'>=n since any subset of n would retain the same clauses and be allowed at least as many anchor edges. The table below records tool output; no fresh expensive replay was performed while assembling it.
+-- 2 exceptions --
+6 2 0 None
+7 2 0 None
+8 2 0 None
+7 3 0 None
+8 3 0 None
+9 3 0 None
+9 4 0 None
+10 4 0 None
+11 4 0 None
+10 5 0 None
+11 5 0 None
+-- 1 exception --
+4 2 14 270
+6 3 0 None
+8 4 0 None
+10 5 0 None
+
+The 2-exception executions predated adding optional one-exception command-line control: source change added exceptions=2 default, an optional final allow-mask intersection active only when exceptions==1, and CLI dispatch. The 1-exception executions used the frozen version. No shared-exception output yet independently reproduced at this writing.

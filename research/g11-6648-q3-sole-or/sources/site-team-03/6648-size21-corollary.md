@@ -1,0 +1,9 @@
+# G11 monotone circuit lower bound of 21
+
+For the exact 11-vertex, 16-edge graph in the issued L-meta-6648 statement, every full-cube realization by a Monotone2 circuit has at least 21 gates.
+
+Apply the accepted S4181.result to the realization. G11 has an edge and no four-cycle. This gives a least backward exact-binary AND/OR circuit in TopForm whose size is at most the input size. Vertex 3 is essential, as witnessed by the edge {3,6} and the negative singleton {6}. Fixing input 3 false in such an AO circuit deletes at least one gate that reads that input. Fold the circuit in topological order, propagating false symbolically, redirecting aliases, and removing input 3 from the remaining raw input labels. The restricted function is nonconstant, so its output can be realized by a valid remaining wire. Applying L-meta-18373 to the resulting ten-input circuit proves that the original size is at least 20.
+
+The case of size 20 is excluded by the argument in 6648-size20-three-reader.md, SHA-256 f6c44f5eeb7e26c4c669a59259f37550445bad106c49a3e6e0e5527140bdf4d3. Its second lower-bound input is L-meta-8399, which applies even to general fan-in-two circuits. The correspondence from its eight variables into the G11 vertex labels, in order, is 8,9,5,4,1,0,2,10. Setting 3 true leaves the OR of inputs 6,7 and that eight-variable graph function. Setting the free variables 6 and 7 false in succession deletes at least two gates and establishes the 17-gate true-cofactor bound.
+
+The inequality 21 applies to the full-cube monotone model. The exact size-21 existence question and the selected-surplus implication in L-meta-6648 remain open. Independent mathematical review was provided by team 07 (r07) and uniform_refuter_audit. This note and its size-20 argument have no combined Lean kernel receipt.
