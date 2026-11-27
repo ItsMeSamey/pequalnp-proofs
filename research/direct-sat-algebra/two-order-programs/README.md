@@ -1,0 +1,1 @@
+Run the interval checker from this directory with `PYTHONPATH=../../direct-sat-successor/lib python -B check_two_order_intervals.py`. The model-set checker runs with `python -B check_two_order_programs.py`.
