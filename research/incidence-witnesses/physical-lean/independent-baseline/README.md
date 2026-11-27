@@ -1,0 +1,7 @@
+# Independent 12-module replay
+
+Extract commit 23c996386fe9c83d2cc285c1051e63e020bcc56f, subtree research/incidence-witnesses/physical-lean, into a new empty tmpfs directory and record that path in workdir beside replay.py. Extract lean/Research/{IncidenceBound,SparseIncidence,CircuitRewire}.lean from the same commit into its Research directory. Make an empty fresh/Research directory beneath the extracted source root.
+
+On a serially reserved compiler, run python replay.py. To reproduce without the original alternating scheduler, create go-3, go-6, go-9 and go-12 beside replay.py before invoking it. LEAN_PATH contains only the fresh objects, a Mathlib-only cache overlay and pinned third-party package directories. The runner records resolved dependencies per module, compares every new local object and log to the producer, compares native objects against the earlier independent research-library build, and runs an extra axiom check on every public declaration.
+
+official_compare.py is a source-only check against the local posted problem copy (separately hashed, with no import of its unfinished proof). It removes the order binder, substitutes the numeral 401 and verifies the entire resulting type text equals the wrapper's conclusion. The wrapper has an explicit ScalarLower401 premise. counts.json reports public, private and anonymous declarations independently of producer axiom-print count.

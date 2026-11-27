@@ -1,0 +1,8 @@
+{
+  "worktree_head": "b104ff3988c176aae2db960c2a71ddf975ef047c",
+  "official_file_source": "local posted problem copy",
+  "official_file": "lean/PEqualNP/Outside/L_meta_2794.lean",
+  "official_sha256": "51b89e1c8240c29a3775d4147f21fdce934bb19a08f8d684e63d88658ebce931",
+  "specialized_type_sha256": "ba959c00c75705f0a1c94811e131fac979c0e8975cbc1cc3a915688291852db4",
+  "explicit_premise": "ScalarLower401"
+}

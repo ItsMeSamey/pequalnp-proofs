@@ -1,0 +1,244 @@
+{
+  "commit": "23c996386fe9c83d2cc285c1051e63e020bcc56f",
+  "manifest": "0d9a23d84e772971de6eb1f1ad3ba3d66dda5cbce5a9e1d5819008b81f9847e6",
+  "lean": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "modules": {
+    "Research/IncidenceBound.lean": {
+      "source": "9c7334c337413863a89f570412ad31a04b39814d5c67f5fc73225cd19c99f4b6",
+      "object": "a359584c40a90899170b6ff3e38faee3cecf3a45a5c870c67513d75104176eb8",
+      "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Fintype/Card.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Set/Prod.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Fintype/Powerset.olean"
+      ],
+      "prior_native_obj": "a359584c40a90899170b6ff3e38faee3cecf3a45a5c870c67513d75104176eb8"
+    },
+    "Research/SparseIncidence.lean": {
+      "source": "b525d408f79af2a15c4b28ab53bf68b91d6dd4ff6167e5363f475c7fcaae1b61",
+      "object": "7eb20805e937ba777cc750684df535e83f6c4b9c7cb75e5acc48ec1b5f36fb2a",
+      "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/Research/IncidenceBound.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Fintype/Pi.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Set/Prod.olean"
+      ],
+      "prior_native_obj": "7eb20805e937ba777cc750684df535e83f6c4b9c7cb75e5acc48ec1b5f36fb2a"
+    },
+    "Research/CircuitRewire.lean": {
+      "source": "bc6543ac7082c0b85753f4582314f0b0f06fa07509d8b6507a791857e725a661",
+      "object": "1bc0e9dab30c92e630ba33d2d9b6feab7de33da3b7fc3a805c99ca6b5fc8cb6e",
+      "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Finset/Card.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Set/Prod.olean"
+      ],
+      "prior_native_obj": "1bc0e9dab30c92e630ba33d2d9b6feab7de33da3b7fc3a805c99ca6b5fc8cb6e"
+    },
+    "IncidenceOfficialScalar.lean": {
+      "source": "364cf07ad848293af5648822017495cf48d9020b8c41fe6a7f8bab18d1801198",
+      "object": "cdd68b6f8ea6bef76a35dff60808a26a1b68ef1be2f82cd56ef1f85407a91cee",
+      "log": "594d932e03f3ad77b8fbe20367c28d86d90e19694d2d65e1dd2c70d9bb3f3c32",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/Research/CircuitRewire.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/Research/SparseIncidence.olean"
+      ],
+      "prior_native_obj": null
+    },
+    "IncidenceOfficial401.lean": {
+      "source": "56da27be32a4493499719d422a6b5cdcde1733ed0638e9c575af48ea0a9cccd9",
+      "object": "a038c31d38ac5f985fd42e8ebb1343c353b0877afe9c74cf72acc239920f020f",
+      "log": "af2d92af8cafadc02e48d4286b8e7f1e837a2218973e4c55873be4d5efe01728",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/IncidenceOfficialScalar.olean"
+      ],
+      "prior_native_obj": null
+    },
+    "IncidenceOfficial401Type.lean": {
+      "source": "eb0064d1b78b3db3634a370f9605a6b1e2d4c3130a0217496446db72c5569897",
+      "object": "67cb276a861aab38b52a3ab5d096e7f0aa9a8d57966cb9df3fa5f75ff94e38ca",
+      "log": "3c2c0d28ce0c8561f87482cefdfb474768136aeda516ce473c512129ffb30040",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/IncidenceOfficial401.olean"
+      ],
+      "prior_native_obj": null
+    },
+    "IncidenceOperandLedger.lean": {
+      "source": "0f0c69733638214e4b87bb70f94969c0f3edbf0aeb379bc35d1f4aa1cf37fd72",
+      "object": "03b08eb9fa603b67fb158d5dce78b38f1a3cff0b99a382f1eebd10afe05be7f5",
+      "log": "43ed18146cc75025126d61f190bbf32ef7a26708b1272fe1832b432e310ee399",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/Research/CircuitRewire.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Tactic/Ring.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/BigOperators/Group/Finset/Sigma.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/BigOperators/Ring/Finset.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean"
+      ],
+      "prior_native_obj": null
+    },
+    "IncidenceForwardPins.lean": {
+      "source": "bac06b94437ae8fc4cfba62de04b09e29e31fd5dc102dbd0a95752dc8f3b016b",
+      "object": "1aaef873400e9f8cd7496c8e059efc363c7ac80e7204d035bb147309dd10f2b2",
+      "log": "ea502bc247a8a812a9b5d9e17bddebf69ab27105078d32352700d8bc0b25919a",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/IncidenceOperandLedger.olean"
+      ],
+      "prior_native_obj": null
+    },
+    "IncidenceZeroRestriction.lean": {
+      "source": "7f40f6fda05823fb0eebcedd006e4fce04acaecdd53daccb5d4527b253b3c368",
+      "object": "62f3e8527519659173f69181d32cf05f2d44b52e4a75c08d324a89df8a0c1cba",
+      "log": "aa093ca950ec5f845f552c278f5a757c3089c8adbdaa952fb9210249f4c442e4",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/Research/CircuitRewire.olean"
+      ],
+      "prior_native_obj": null
+    },
+    "IncidenceDenseRestriction.lean": {
+      "source": "9bc2e0869e984e4ed81d3d827096681f2edceff911ffcdef3a4b63cca70991d8",
+      "object": "51ebaa9863c4aa7691ec7f6081cfca4f6398e74b961c5385d754cd4e97349093",
+      "log": "f380dca6f4407a8e5af38fcc45c44f6545aac95230096d149dd6de37e44b9554",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/IncidenceZeroRestriction.olean"
+      ],
+      "prior_native_obj": null
+    },
+    "IncidenceLiteralPrefix.lean": {
+      "source": "bda2c600c2db87d07fee6a3e77735d369cd6df9d62988b4e33d022567da9e399",
+      "object": "1ea5a12d98f916753ba8479946c6a935aef9072f73d80fd07354cab2b01fe63d",
+      "log": "4228ddd7954096cbe8b0dfc480181d8bae47c981955b16939f940c295e18691b",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/IncidenceZeroRestriction.olean"
+      ],
+      "prior_native_obj": null
+    },
+    "IncidencePhysicalZeroFlow.lean": {
+      "source": "422a9a341650b51a3f8b3b445aad13c5504e8d7a8bcc7979842b5707c0f95461",
+      "object": "80fa1e0c5c86e42da3e7f5106b2c7b262350af9547e555b9b6600aa9db8e9c66",
+      "log": "d22d34b8864894ef9757d1c8b2f860db823b3bdcb939572a67ee40edd19954ee",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/IncidenceZeroRestriction.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/IncidenceOperandLedger.olean"
+      ],
+      "prior_native_obj": null
+    },
+    "IncidencePinnedCube.lean": {
+      "source": "66e61f8f2c11b2c7cdefddca659489809b0a7c4e1471a7bd22ccfdacb1a4de0e",
+      "object": "7013b64389299b1faa4fb884d13c8be800c86d8783758633cbb9dfb1df1be514",
+      "log": "b56c2ea72ef85fe5b5c4f4c310395d16d03f91689c18cdc3114c89bebc0c1b61",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/IncidenceDenseRestriction.olean"
+      ],
+      "prior_native_obj": null
+    },
+    "IncidenceLiteralExample.lean": {
+      "source": "dcb794c90b9a26ae6b56d20f74b509536823aa39879caf0bf0e94dcad4f60f25",
+      "object": "3cc9bf410ed68c870b99ea4a9ac95ff2e5b1bfed84322101b40d1e6a1fced592",
+      "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-yDSHvC/fresh/IncidencePinnedCube.olean"
+      ],
+      "prior_native_obj": null
+    },
+    "ProtectedIncidenceMoments.lean": {
+      "source": "baf54ea00bba4ac8c03622f7129b623bfd317f5f892384480472705e5a47880b",
+      "object": "eda15608b2633d0a40f1dc57e0a0585fbfa76f7139bb6812e697a6bc16601acd",
+      "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Ring/Finset.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Tactic/Ring.olean"
+      ],
+      "prior_native_obj": null
+    }
+  },
+  "depslib": {
+    "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+    "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Fintype/Card.olean": "138623cd07a62255a9ae45aa4d69e4d1f58f6a39600e242e13400abef598c99d",
+    "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Set/Prod.olean": "e852ab50ad444c9cacb1a592895fb87fd9c31240e3bfd87a0e8c9f7935b23a41",
+    "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Fintype/Powerset.olean": "4284b204416913b68a7fe6b01c1146b82c65785f789ab7248ad17aed9c350c42",
+    "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Fintype/Pi.olean": "51139e0a8ce43a04cc0bfcff179b548bd034c1e6fd35894aac9cddf3192ac650",
+    "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Finset/Card.olean": "24f5e4f54f643fc3b72ede36bcdbb9d05a7d6905d2007b9b932cc95394f3d611",
+    "/dev/shm/gcycle-t2/mathlib/Mathlib/Tactic/Ring.olean": "a8692039dfd1a85e1a1f422f0f9d6ec69ccc4ba24e829b034f94c2e435e815f4",
+    "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/BigOperators/Group/Finset/Sigma.olean": "d5ba2f1b7749d779ff2c7a8ffea957bb26f719d7f44ddcbe3162f1e35db334b6",
+    "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/BigOperators/Ring/Finset.olean": "b52d267868cba593139f03b0fe336b4a76c25d607e00aff01ad83540d91acbc9",
+    "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean": "bde59a44ffedd9f97f9071e2415c5fccb8a3f65c5f8fee882cee69f8e9bffc41",
+    "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Ring/Finset.olean": "ed92fc9b0d69d73de273d7bade76207916de8efdea22d122dfa244eec91a4fcb"
+  },
+  "public": [
+    "IncidenceOfficialScalar.translate",
+    "IncidenceOfficialScalar.tests_three",
+    "IncidenceOfficialScalar.price401",
+    "IncidenceOfficialScalar.posted_401",
+    "IncidenceOfficialScalar.posted_type_exact",
+    "IncidenceOperandLedger.single_slots",
+    "IncidenceOperandLedger.flow",
+    "IncidenceOperandLedger.slot_identity",
+    "IncidenceOperandLedger.literal_ledger",
+    "IncidenceForwardPins.raw_start",
+    "IncidenceForwardPins.unique_start",
+    "IncidenceForwardPins.terminal_injective",
+    "IncidenceForwardPins.high_socket_injective",
+    "IncidenceForwardPins.forward_pin",
+    "IncidenceForwardPins.append",
+    "IncidenceForwardPins.live_route",
+    "IncidenceForwardPins.pred_semantics",
+    "IncidenceForwardPins.route_semantics",
+    "IncidenceForwardPins.sum_positive_losses",
+    "IncidenceForwardPins.compensation_injective",
+    "IncidenceForwardPins.cannot_end_at_wide_operand",
+    "IncidenceZeroRestriction.literal_eval",
+    "IncidenceZeroRestriction.literal_reuse",
+    "IncidenceZeroRestriction.literal_emit",
+    "IncidenceZeroRestriction.literal_correct",
+    "IncidenceZeroRestriction.charged_succ",
+    "IncidenceZeroRestriction.literal_counts",
+    "IncidenceZeroRestriction.zeroAt_step",
+    "IncidenceZeroRestriction.dense_minor",
+    "IncidenceLiteralPrefix.step",
+    "IncidenceLiteralPrefix.single",
+    "IncidenceLiteralPrefix.prefix_stable",
+    "IncidenceLiteralPrefix.emitted",
+    "IncidenceLiteralPrefix.emitted_injective",
+    "IncidenceLiteralPrefix.forwarded",
+    "IncidenceLiteralPrefix.pinned_emit",
+    "IncidenceLiteralPrefix.keep_or_forward",
+    "IncidenceLiteralPrefix.final_pin",
+    "IncidenceLiteralPrefix.alias_high",
+    "IncidenceZeroRestriction.charged_int",
+    "IncidenceZeroRestriction.savings",
+    "IncidenceZeroRestriction.all_masks",
+    "ProtectedIncidenceMoments.packing_exact",
+    "ProtectedIncidenceMoments.marks_401"
+  ],
+  "axioms": "218c58902fa7d3c33889e402ebe3d6aeb335d00ff60d35517e3d8c4d0bd0301e"
+}

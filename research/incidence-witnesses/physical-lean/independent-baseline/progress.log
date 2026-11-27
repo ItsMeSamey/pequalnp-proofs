@@ -1,0 +1,16 @@
+Research/IncidenceBound.lean
+Research/SparseIncidence.lean
+Research/CircuitRewire.lean
+IncidenceOfficialScalar.lean
+IncidenceOfficial401.lean
+IncidenceOfficial401Type.lean
+IncidenceOperandLedger.lean
+IncidenceForwardPins.lean
+IncidenceZeroRestriction.lean
+IncidenceDenseRestriction.lean
+IncidenceLiteralPrefix.lean
+IncidencePhysicalZeroFlow.lean
+IncidencePinnedCube.lean
+IncidenceLiteralExample.lean
+ProtectedIncidenceMoments.lean
+PASS 12 3 44 19885c592cd38f2b0178b3fe277c76b756b0884b25d33b3ca56beb718a59700a

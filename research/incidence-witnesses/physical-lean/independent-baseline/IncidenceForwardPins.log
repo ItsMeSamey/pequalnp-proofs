@@ -1,0 +1,11 @@
+IncidenceForwardPins.lean:167:55: warning: This simp argument is unused:
+  and_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [A, lost, h, and_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'IncidenceForwardPins.compensation_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceForwardPins.terminal_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceForwardPins.live_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceForwardPins.route_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
