@@ -6,3 +6,5 @@ The independently verified full-owner lists in this snapshot contain 156 one-ter
 | Zero terminals | 1,620 | 1,612 | 41 |
 
 The source manifest records the original producer locations and hashes. The lists cover particular evidence packages. The unrestricted residual decision remains open. [Reviewed one-terminal IDs](t1-reviewed-transfer.ids) · [Reviewed zero-terminal IDs](t0-reviewed-four-compounds.ids) · [Source hashes](manifest-with-reviewed.sha256)
+
+A subsequent independent full-owner join brings the reviewed one-terminal subtotal to **1,108 original keys**. The 952 keys with the one-endpoint extension are disjoint from the 156 signed transfer keys. The argument for the same 952 keys now has the required lower-owner and six-owner coverage, including the inherited numerical six-credit obligations. The older 1,230 seven-owner cases are outside this subtotal. [All 1,108 original IDs](t1-signed-transfer-plus-one-end-extension.ids)
