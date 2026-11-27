@@ -1,0 +1,1891 @@
+{
+  "cycle_False_visible": {
+    "n": 6,
+    "clauses": 12,
+    "ands": 23,
+    "rows": {
+      "prior_complete": {
+        "status": "sat",
+        "witness": 1,
+        "verified": true,
+        "route": "normalized_automata",
+        "cost": {
+          "raw_n": 6,
+          "original_ands": 23,
+          "schedule": [
+            "normalized",
+            "raw"
+          ],
+          "attempts": [
+            {
+              "stage": "normalized",
+              "ands": 17,
+              "status": "sat",
+              "cost": {
+                "budget": 250000,
+                "charged_cells": 2906,
+                "operations": 55,
+                "max_pre_width": 3,
+                "max_min_width": 2,
+                "last_product": {
+                  "candidates": 22,
+                  "compact_cells": 40,
+                  "max_reached_rank": 2,
+                  "formal_width": 4,
+                  "formal_cells": 52,
+                  "prior_cells": 2798
+                },
+                "candidates": 314
+              },
+              "elapsed_ns": 6494001
+            }
+          ],
+          "automata_budget_per_attempt": 250000,
+          "rank_cap": 24,
+          "raw_bit_order": null,
+          "prefix": {
+            "proxy": 20700,
+            "budget": 2000000,
+            "applied": true,
+            "ands": 17,
+            "elapsed_ns": 88153
+          },
+          "input_hex_json_bytes": 444,
+          "original_replay_evaluations": 1,
+          "elapsed_ns": 6666701
+        },
+        "outer_ns": 6673832
+      },
+      "prior_pair": {
+        "status": "sat",
+        "cost": {
+          "raw_bits": 6,
+          "gates": 23,
+          "proposal": [
+            {
+              "live_gates": 21,
+              "raw_incidences": 22,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            },
+            {
+              "live_gates": 1,
+              "raw_incidences": 2,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            }
+          ],
+          "attempts": [
+            {
+              "orders": [
+                [
+                  0,
+                  5,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  5,
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "cap": 125000,
+              "status": "sat",
+              "receipt": {
+                "raw_bits": 6,
+                "original_gates": 23,
+                "factor_caps": [
+                  62500,
+                  62500
+                ],
+                "fallback_cap": 0,
+                "factors": [
+                  {
+                    "live_gates": 21,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 2253,
+                    "operations": 51,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 22,
+                      "compact_cells": 40,
+                      "max_reached_rank": 2,
+                      "formal_width": 4,
+                      "formal_cells": 124,
+                      "prior_cells": 2145
+                    },
+                    "candidates": 320
+                  },
+                  {
+                    "live_gates": 1,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 311,
+                    "operations": 11,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 12,
+                      "compact_cells": 12,
+                      "max_reached_rank": 1,
+                      "formal_width": 1,
+                      "formal_cells": 12,
+                      "prior_cells": 203
+                    },
+                    "candidates": 12
+                  }
+                ],
+                "label_checks": [
+                  {
+                    "cut": 2,
+                    "prefixes": [
+                      0,
+                      1,
+                      32
+                    ],
+                    "signatures": [
+                      0,
+                      1,
+                      2
+                    ]
+                  },
+                  {
+                    "max_labels": 2
+                  }
+                ],
+                "joint": {
+                  "branches": 2,
+                  "feasible_pin_systems": 1,
+                  "candidate_rows": 12,
+                  "max_basis": 2
+                }
+              },
+              "reason": null
+            }
+          ]
+        },
+        "witness": 1,
+        "outer_ns": 3132147
+      },
+      "certified_pair": {
+        "status": "sat",
+        "cost": {
+          "raw_bits": 6,
+          "gates": 24,
+          "proposal": [
+            {
+              "live_gates": 1,
+              "raw_incidences": 2,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            },
+            {
+              "live_gates": 21,
+              "raw_incidences": 22,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            }
+          ],
+          "attempts": [
+            {
+              "orders": [
+                [
+                  4,
+                  5,
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  5,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              "cap": 125000,
+              "status": "sat",
+              "receipt": {
+                "raw_bits": 6,
+                "original_gates": 24,
+                "factor_caps": [
+                  62500,
+                  62500
+                ],
+                "fallback_cap": 0,
+                "factors": [
+                  {
+                    "live_gates": 1,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 311,
+                    "operations": 11,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 12,
+                      "compact_cells": 12,
+                      "max_reached_rank": 1,
+                      "formal_width": 1,
+                      "formal_cells": 12,
+                      "prior_cells": 203
+                    },
+                    "candidates": 12
+                  },
+                  {
+                    "live_gates": 21,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 2253,
+                    "operations": 51,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 22,
+                      "compact_cells": 40,
+                      "max_reached_rank": 2,
+                      "formal_width": 4,
+                      "formal_cells": 124,
+                      "prior_cells": 2145
+                    },
+                    "candidates": 320
+                  }
+                ],
+                "label_checks": [
+                  {
+                    "max_labels": 2
+                  }
+                ],
+                "joint": {
+                  "branches": 2,
+                  "feasible_pin_systems": 1,
+                  "candidate_rows": 12,
+                  "max_basis": 2
+                }
+              },
+              "reason": null
+            }
+          ]
+        },
+        "witness": 1,
+        "certificate": {
+          "expand": [
+            22
+          ],
+          "forms": [
+            268435457,
+            134217728
+          ]
+        },
+        "preprocessing_ns": 49455,
+        "elapsed_ns": 2970223,
+        "outer_ns": 2973527
+      }
+    }
+  },
+  "cycle_False_distributed": {
+    "n": 6,
+    "clauses": 12,
+    "ands": 24,
+    "rows": {
+      "prior_complete": {
+        "status": "sat",
+        "witness": 1,
+        "verified": true,
+        "route": "normalized_automata",
+        "cost": {
+          "raw_n": 6,
+          "original_ands": 24,
+          "schedule": [
+            "normalized",
+            "raw"
+          ],
+          "attempts": [
+            {
+              "stage": "normalized",
+              "ands": 18,
+              "status": "sat",
+              "cost": {
+                "budget": 250000,
+                "charged_cells": 3132,
+                "operations": 58,
+                "max_pre_width": 3,
+                "max_min_width": 2,
+                "last_product": {
+                  "candidates": 12,
+                  "compact_cells": 12,
+                  "max_reached_rank": 1,
+                  "formal_width": 2,
+                  "formal_cells": 40,
+                  "prior_cells": 2996
+                },
+                "candidates": 324
+              },
+              "elapsed_ns": 3018295
+            }
+          ],
+          "automata_budget_per_attempt": 250000,
+          "rank_cap": 24,
+          "raw_bit_order": null,
+          "prefix": {
+            "proxy": 23064,
+            "budget": 2000000,
+            "applied": true,
+            "ands": 18,
+            "elapsed_ns": 77998
+          },
+          "input_hex_json_bytes": 464,
+          "original_replay_evaluations": 1,
+          "elapsed_ns": 3151246
+        },
+        "outer_ns": 3156695
+      },
+      "prior_pair": {
+        "status": "skip",
+        "reason": "requires a positive single gate readout",
+        "outer_ns": 8082
+      },
+      "certified_pair": {
+        "status": "sat",
+        "cost": {
+          "raw_bits": 6,
+          "gates": 25,
+          "proposal": [
+            {
+              "live_gates": 1,
+              "raw_incidences": 2,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            },
+            {
+              "live_gates": 21,
+              "raw_incidences": 22,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            }
+          ],
+          "attempts": [
+            {
+              "orders": [
+                [
+                  4,
+                  5,
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  5,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              "cap": 125000,
+              "status": "sat",
+              "receipt": {
+                "raw_bits": 6,
+                "original_gates": 25,
+                "factor_caps": [
+                  62500,
+                  62500
+                ],
+                "fallback_cap": 0,
+                "factors": [
+                  {
+                    "live_gates": 1,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 311,
+                    "operations": 11,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 12,
+                      "compact_cells": 12,
+                      "max_reached_rank": 1,
+                      "formal_width": 1,
+                      "formal_cells": 12,
+                      "prior_cells": 203
+                    },
+                    "candidates": 12
+                  },
+                  {
+                    "live_gates": 21,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 2253,
+                    "operations": 51,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 22,
+                      "compact_cells": 40,
+                      "max_reached_rank": 2,
+                      "formal_width": 4,
+                      "formal_cells": 124,
+                      "prior_cells": 2145
+                    },
+                    "candidates": 320
+                  }
+                ],
+                "label_checks": [
+                  {
+                    "max_labels": 2
+                  }
+                ],
+                "joint": {
+                  "branches": 2,
+                  "feasible_pin_systems": 1,
+                  "candidate_rows": 12,
+                  "max_basis": 2
+                }
+              },
+              "reason": null
+            }
+          ]
+        },
+        "witness": 1,
+        "certificate": {
+          "expand": [
+            22,
+            23
+          ],
+          "forms": [
+            268435457,
+            134217728
+          ]
+        },
+        "preprocessing_ns": 50186,
+        "elapsed_ns": 3211517,
+        "outer_ns": 3215062
+      }
+    }
+  },
+  "cycle_True_visible": {
+    "n": 6,
+    "clauses": 12,
+    "ands": 23,
+    "rows": {
+      "prior_complete": {
+        "status": "unsat",
+        "witness": null,
+        "verified": false,
+        "route": "normalized_automata",
+        "cost": {
+          "raw_n": 6,
+          "original_ands": 23,
+          "schedule": [
+            "normalized",
+            "raw"
+          ],
+          "attempts": [
+            {
+              "stage": "normalized",
+              "ands": 17,
+              "status": "unsat",
+              "cost": {
+                "budget": 250000,
+                "charged_cells": 2817,
+                "operations": 55,
+                "max_pre_width": 3,
+                "max_min_width": 2,
+                "last_product": {
+                  "candidates": 12,
+                  "compact_cells": 10,
+                  "max_reached_rank": 1,
+                  "formal_width": 2,
+                  "formal_cells": 16,
+                  "prior_cells": 2798
+                },
+                "candidates": 304
+              },
+              "elapsed_ns": 2766966
+            }
+          ],
+          "automata_budget_per_attempt": 250000,
+          "rank_cap": 24,
+          "raw_bit_order": null,
+          "prefix": {
+            "proxy": 20700,
+            "budget": 2000000,
+            "applied": true,
+            "ands": 17,
+            "elapsed_ns": 68584
+          },
+          "input_hex_json_bytes": 444,
+          "original_replay_evaluations": 0,
+          "elapsed_ns": 2876361
+        },
+        "outer_ns": 2881910
+      },
+      "prior_pair": {
+        "status": "unsat",
+        "cost": {
+          "raw_bits": 6,
+          "gates": 23,
+          "proposal": [
+            {
+              "live_gates": 21,
+              "raw_incidences": 22,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            },
+            {
+              "live_gates": 1,
+              "raw_incidences": 2,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            }
+          ],
+          "attempts": [
+            {
+              "orders": [
+                [
+                  0,
+                  5,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  5,
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "cap": 125000,
+              "status": "unsat",
+              "receipt": {
+                "raw_bits": 6,
+                "original_gates": 23,
+                "factor_caps": [
+                  62500,
+                  62500
+                ],
+                "fallback_cap": 0,
+                "factors": [
+                  {
+                    "live_gates": 21,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 2220,
+                    "operations": 51,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 22,
+                      "compact_cells": 40,
+                      "max_reached_rank": 2,
+                      "formal_width": 4,
+                      "formal_cells": 124,
+                      "prior_cells": 2145
+                    },
+                    "candidates": 320
+                  },
+                  {
+                    "live_gates": 1,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 311,
+                    "operations": 11,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 12,
+                      "compact_cells": 12,
+                      "max_reached_rank": 1,
+                      "formal_width": 1,
+                      "formal_cells": 12,
+                      "prior_cells": 203
+                    },
+                    "candidates": 12
+                  }
+                ],
+                "label_checks": [
+                  {
+                    "max_labels": 2
+                  }
+                ],
+                "joint": {
+                  "branches": 7,
+                  "feasible_pin_systems": 6,
+                  "candidate_rows": 47,
+                  "max_basis": 1
+                }
+              },
+              "reason": null
+            }
+          ]
+        },
+        "outer_ns": 3033228
+      },
+      "certified_pair": {
+        "status": "unsat",
+        "cost": {
+          "raw_bits": 6,
+          "gates": 24,
+          "proposal": [
+            {
+              "live_gates": 1,
+              "raw_incidences": 2,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            },
+            {
+              "live_gates": 21,
+              "raw_incidences": 22,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            }
+          ],
+          "attempts": [
+            {
+              "orders": [
+                [
+                  4,
+                  5,
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  5,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              "cap": 125000,
+              "status": "unsat",
+              "receipt": {
+                "raw_bits": 6,
+                "original_gates": 24,
+                "factor_caps": [
+                  62500,
+                  62500
+                ],
+                "fallback_cap": 0,
+                "factors": [
+                  {
+                    "live_gates": 1,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 311,
+                    "operations": 11,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 12,
+                      "compact_cells": 12,
+                      "max_reached_rank": 1,
+                      "formal_width": 1,
+                      "formal_cells": 12,
+                      "prior_cells": 203
+                    },
+                    "candidates": 12
+                  },
+                  {
+                    "live_gates": 21,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 2220,
+                    "operations": 51,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 22,
+                      "compact_cells": 40,
+                      "max_reached_rank": 2,
+                      "formal_width": 4,
+                      "formal_cells": 124,
+                      "prior_cells": 2145
+                    },
+                    "candidates": 320
+                  }
+                ],
+                "label_checks": [
+                  {
+                    "max_labels": 2
+                  }
+                ],
+                "joint": {
+                  "branches": 7,
+                  "feasible_pin_systems": 2,
+                  "candidate_rows": 14,
+                  "max_basis": 1
+                }
+              },
+              "reason": null
+            }
+          ]
+        },
+        "certificate": {
+          "expand": [
+            22
+          ],
+          "forms": [
+            268435457,
+            134217728
+          ]
+        },
+        "preprocessing_ns": 47752,
+        "elapsed_ns": 2986167,
+        "outer_ns": 2990303
+      }
+    }
+  },
+  "cycle_True_distributed": {
+    "n": 6,
+    "clauses": 12,
+    "ands": 24,
+    "rows": {
+      "prior_complete": {
+        "status": "unsat",
+        "witness": null,
+        "verified": false,
+        "route": "normalized_automata",
+        "cost": {
+          "raw_n": 6,
+          "original_ands": 24,
+          "schedule": [
+            "normalized",
+            "raw"
+          ],
+          "attempts": [
+            {
+              "stage": "normalized",
+              "ands": 18,
+              "status": "unsat",
+              "cost": {
+                "budget": 250000,
+                "charged_cells": 3051,
+                "operations": 58,
+                "max_pre_width": 3,
+                "max_min_width": 2,
+                "last_product": {
+                  "candidates": 12,
+                  "compact_cells": 12,
+                  "max_reached_rank": 1,
+                  "formal_width": 1,
+                  "formal_cells": 12,
+                  "prior_cells": 2967
+                },
+                "candidates": 316
+              },
+              "elapsed_ns": 2881739
+            }
+          ],
+          "automata_budget_per_attempt": 250000,
+          "rank_cap": 24,
+          "raw_bit_order": null,
+          "prefix": {
+            "proxy": 23064,
+            "budget": 2000000,
+            "applied": true,
+            "ands": 18,
+            "elapsed_ns": 72339
+          },
+          "input_hex_json_bytes": 464,
+          "original_replay_evaluations": 0,
+          "elapsed_ns": 2997984
+        },
+        "outer_ns": 3003332
+      },
+      "prior_pair": {
+        "status": "skip",
+        "reason": "requires a positive single gate readout",
+        "outer_ns": 7161
+      },
+      "certified_pair": {
+        "status": "unsat",
+        "cost": {
+          "raw_bits": 6,
+          "gates": 25,
+          "proposal": [
+            {
+              "live_gates": 1,
+              "raw_incidences": 2,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            },
+            {
+              "live_gates": 21,
+              "raw_incidences": 22,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            }
+          ],
+          "attempts": [
+            {
+              "orders": [
+                [
+                  4,
+                  5,
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  5,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              "cap": 125000,
+              "status": "unsat",
+              "receipt": {
+                "raw_bits": 6,
+                "original_gates": 25,
+                "factor_caps": [
+                  62500,
+                  62500
+                ],
+                "fallback_cap": 0,
+                "factors": [
+                  {
+                    "live_gates": 1,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 311,
+                    "operations": 11,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 12,
+                      "compact_cells": 12,
+                      "max_reached_rank": 1,
+                      "formal_width": 1,
+                      "formal_cells": 12,
+                      "prior_cells": 203
+                    },
+                    "candidates": 12
+                  },
+                  {
+                    "live_gates": 21,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 2220,
+                    "operations": 51,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 22,
+                      "compact_cells": 40,
+                      "max_reached_rank": 2,
+                      "formal_width": 4,
+                      "formal_cells": 124,
+                      "prior_cells": 2145
+                    },
+                    "candidates": 320
+                  }
+                ],
+                "label_checks": [
+                  {
+                    "max_labels": 2
+                  }
+                ],
+                "joint": {
+                  "branches": 7,
+                  "feasible_pin_systems": 2,
+                  "candidate_rows": 14,
+                  "max_basis": 1
+                }
+              },
+              "reason": null
+            }
+          ]
+        },
+        "certificate": {
+          "expand": [
+            22,
+            23
+          ],
+          "forms": [
+            268435457,
+            134217728
+          ]
+        },
+        "preprocessing_ns": 54903,
+        "elapsed_ns": 2908971,
+        "outer_ns": 2911243
+      }
+    }
+  },
+  "K4_False_visible": {
+    "n": 6,
+    "clauses": 16,
+    "ands": 47,
+    "rows": {
+      "prior_complete": {
+        "status": "sat",
+        "witness": 1,
+        "verified": true,
+        "route": "normalized_automata",
+        "cost": {
+          "raw_n": 6,
+          "original_ands": 47,
+          "schedule": [
+            "normalized",
+            "raw"
+          ],
+          "attempts": [
+            {
+              "stage": "normalized",
+              "ands": 31,
+              "status": "sat",
+              "cost": {
+                "budget": 250000,
+                "charged_cells": 6844,
+                "operations": 103,
+                "max_pre_width": 6,
+                "max_min_width": 4,
+                "last_product": {
+                  "candidates": 36,
+                  "compact_cells": 114,
+                  "max_reached_rank": 4,
+                  "formal_width": 8,
+                  "formal_cells": 284,
+                  "prior_cells": 6578
+                },
+                "candidates": 646
+              },
+              "elapsed_ns": 6364235
+            }
+          ],
+          "automata_budget_per_attempt": 250000,
+          "rank_cap": 24,
+          "raw_bit_order": null,
+          "prefix": {
+            "proxy": 137052,
+            "budget": 2000000,
+            "applied": true,
+            "ands": 31,
+            "elapsed_ns": 160052
+          },
+          "input_hex_json_bytes": 1032,
+          "original_replay_evaluations": 1,
+          "elapsed_ns": 6585709
+        },
+        "outer_ns": 6590766
+      },
+      "prior_pair": {
+        "status": "sat",
+        "cost": {
+          "raw_bits": 6,
+          "gates": 47,
+          "proposal": [
+            {
+              "live_gates": 44,
+              "raw_incidences": 45,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            },
+            {
+              "live_gates": 2,
+              "raw_incidences": 3,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            }
+          ],
+          "attempts": [
+            {
+              "orders": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                [
+                  2,
+                  4,
+                  5,
+                  0,
+                  1,
+                  3
+                ]
+              ],
+              "cap": 125000,
+              "status": "sat",
+              "receipt": {
+                "raw_bits": 6,
+                "original_gates": 47,
+                "factor_caps": [
+                  62500,
+                  62500
+                ],
+                "fallback_cap": 0,
+                "factors": [
+                  {
+                    "live_gates": 44,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 4921,
+                    "operations": 91,
+                    "max_pre_width": 6,
+                    "max_min_width": 4,
+                    "last_product": {
+                      "candidates": 36,
+                      "compact_cells": 114,
+                      "max_reached_rank": 4,
+                      "formal_width": 8,
+                      "formal_cells": 284,
+                      "prior_cells": 4655
+                    },
+                    "candidates": 778
+                  },
+                  {
+                    "live_gates": 2,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 275,
+                    "operations": 11,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 12,
+                      "compact_cells": 12,
+                      "max_reached_rank": 1,
+                      "formal_width": 1,
+                      "formal_cells": 12,
+                      "prior_cells": 160
+                    },
+                    "candidates": 24
+                  }
+                ],
+                "label_checks": [
+                  {
+                    "cut": 2,
+                    "prefixes": [
+                      0,
+                      1,
+                      2
+                    ],
+                    "signatures": [
+                      8,
+                      1,
+                      2
+                    ]
+                  },
+                  {
+                    "max_labels": 2
+                  }
+                ],
+                "joint": {
+                  "branches": 2,
+                  "feasible_pin_systems": 1,
+                  "candidate_rows": 28,
+                  "max_basis": 4
+                }
+              },
+              "reason": null
+            }
+          ]
+        },
+        "witness": 50,
+        "outer_ns": 6118274
+      },
+      "certified_pair": {
+        "status": "sat",
+        "cost": {
+          "raw_bits": 6,
+          "gates": 48,
+          "proposal": [
+            {
+              "live_gates": 2,
+              "raw_incidences": 3,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            },
+            {
+              "live_gates": 44,
+              "raw_incidences": 45,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            }
+          ],
+          "attempts": [
+            {
+              "orders": [
+                [
+                  2,
+                  4,
+                  5,
+                  0,
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "cap": 125000,
+              "status": "sat",
+              "receipt": {
+                "raw_bits": 6,
+                "original_gates": 48,
+                "factor_caps": [
+                  62500,
+                  62500
+                ],
+                "fallback_cap": 0,
+                "factors": [
+                  {
+                    "live_gates": 2,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 275,
+                    "operations": 11,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 12,
+                      "compact_cells": 12,
+                      "max_reached_rank": 1,
+                      "formal_width": 1,
+                      "formal_cells": 12,
+                      "prior_cells": 160
+                    },
+                    "candidates": 24
+                  },
+                  {
+                    "live_gates": 44,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 4921,
+                    "operations": 91,
+                    "max_pre_width": 6,
+                    "max_min_width": 4,
+                    "last_product": {
+                      "candidates": 36,
+                      "compact_cells": 114,
+                      "max_reached_rank": 4,
+                      "formal_width": 8,
+                      "formal_cells": 284,
+                      "prior_cells": 4655
+                    },
+                    "candidates": 778
+                  }
+                ],
+                "label_checks": [
+                  {
+                    "max_labels": 2
+                  }
+                ],
+                "joint": {
+                  "branches": 2,
+                  "feasible_pin_systems": 1,
+                  "candidate_rows": 28,
+                  "max_basis": 4
+                }
+              },
+              "reason": null
+            }
+          ]
+        },
+        "witness": 50,
+        "certificate": {
+          "expand": [
+            46
+          ],
+          "forms": [
+            4503599627370497,
+            1125899906842624
+          ]
+        },
+        "preprocessing_ns": 68494,
+        "elapsed_ns": 6165976,
+        "outer_ns": 6169431
+      }
+    }
+  },
+  "K4_False_distributed": {
+    "n": 6,
+    "clauses": 16,
+    "ands": 48,
+    "rows": {
+      "prior_complete": {
+        "status": "sat",
+        "witness": 1,
+        "verified": true,
+        "route": "normalized_automata",
+        "cost": {
+          "raw_n": 6,
+          "original_ands": 48,
+          "schedule": [
+            "normalized",
+            "raw"
+          ],
+          "attempts": [
+            {
+              "stage": "normalized",
+              "ands": 32,
+              "status": "sat",
+              "cost": {
+                "budget": 250000,
+                "charged_cells": 7371,
+                "operations": 106,
+                "max_pre_width": 8,
+                "max_min_width": 4,
+                "last_product": {
+                  "candidates": 24,
+                  "compact_cells": 50,
+                  "max_reached_rank": 4,
+                  "formal_width": 4,
+                  "formal_cells": 104,
+                  "prior_cells": 6942
+                },
+                "candidates": 672
+              },
+              "elapsed_ns": 46429571
+            }
+          ],
+          "automata_budget_per_attempt": 250000,
+          "rank_cap": 24,
+          "raw_bit_order": null,
+          "prefix": {
+            "proxy": 145200,
+            "budget": 2000000,
+            "applied": true,
+            "ands": 32,
+            "elapsed_ns": 145740
+          },
+          "input_hex_json_bytes": 1058,
+          "original_replay_evaluations": 1,
+          "elapsed_ns": 46668812
+        },
+        "outer_ns": 46679338
+      },
+      "prior_pair": {
+        "status": "skip",
+        "reason": "requires a positive single gate readout",
+        "outer_ns": 13721
+      },
+      "certified_pair": {
+        "status": "sat",
+        "cost": {
+          "raw_bits": 6,
+          "gates": 49,
+          "proposal": [
+            {
+              "live_gates": 2,
+              "raw_incidences": 3,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            },
+            {
+              "live_gates": 44,
+              "raw_incidences": 45,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            }
+          ],
+          "attempts": [
+            {
+              "orders": [
+                [
+                  2,
+                  4,
+                  5,
+                  0,
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "cap": 125000,
+              "status": "sat",
+              "receipt": {
+                "raw_bits": 6,
+                "original_gates": 49,
+                "factor_caps": [
+                  62500,
+                  62500
+                ],
+                "fallback_cap": 0,
+                "factors": [
+                  {
+                    "live_gates": 2,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 275,
+                    "operations": 11,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 12,
+                      "compact_cells": 12,
+                      "max_reached_rank": 1,
+                      "formal_width": 1,
+                      "formal_cells": 12,
+                      "prior_cells": 160
+                    },
+                    "candidates": 24
+                  },
+                  {
+                    "live_gates": 44,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 4921,
+                    "operations": 91,
+                    "max_pre_width": 6,
+                    "max_min_width": 4,
+                    "last_product": {
+                      "candidates": 36,
+                      "compact_cells": 114,
+                      "max_reached_rank": 4,
+                      "formal_width": 8,
+                      "formal_cells": 284,
+                      "prior_cells": 4655
+                    },
+                    "candidates": 778
+                  }
+                ],
+                "label_checks": [
+                  {
+                    "max_labels": 2
+                  }
+                ],
+                "joint": {
+                  "branches": 2,
+                  "feasible_pin_systems": 1,
+                  "candidate_rows": 28,
+                  "max_basis": 4
+                }
+              },
+              "reason": null
+            }
+          ]
+        },
+        "witness": 50,
+        "certificate": {
+          "expand": [
+            46,
+            47
+          ],
+          "forms": [
+            4503599627370497,
+            1125899906842624
+          ]
+        },
+        "preprocessing_ns": 82334,
+        "elapsed_ns": 10339194,
+        "outer_ns": 10345353
+      }
+    }
+  },
+  "K4_True_visible": {
+    "n": 6,
+    "clauses": 16,
+    "ands": 47,
+    "rows": {
+      "prior_complete": {
+        "status": "unsat",
+        "witness": null,
+        "verified": false,
+        "route": "normalized_automata",
+        "cost": {
+          "raw_n": 6,
+          "original_ands": 47,
+          "schedule": [
+            "normalized",
+            "raw"
+          ],
+          "attempts": [
+            {
+              "stage": "normalized",
+              "ands": 31,
+              "status": "unsat",
+              "cost": {
+                "budget": 250000,
+                "charged_cells": 6644,
+                "operations": 105,
+                "max_pre_width": 6,
+                "max_min_width": 4,
+                "last_product": {
+                  "candidates": 18,
+                  "compact_cells": 26,
+                  "max_reached_rank": 2,
+                  "formal_width": 4,
+                  "formal_cells": 56,
+                  "prior_cells": 6602
+                },
+                "candidates": 612
+              },
+              "elapsed_ns": 9481089
+            }
+          ],
+          "automata_budget_per_attempt": 250000,
+          "rank_cap": 24,
+          "raw_bit_order": null,
+          "prefix": {
+            "proxy": 137052,
+            "budget": 2000000,
+            "applied": true,
+            "ands": 31,
+            "elapsed_ns": 160022
+          },
+          "input_hex_json_bytes": 1032,
+          "original_replay_evaluations": 0,
+          "elapsed_ns": 9731136
+        },
+        "outer_ns": 9740580
+      },
+      "prior_pair": {
+        "status": "unsat",
+        "cost": {
+          "raw_bits": 6,
+          "gates": 47,
+          "proposal": [
+            {
+              "live_gates": 44,
+              "raw_incidences": 45,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            },
+            {
+              "live_gates": 2,
+              "raw_incidences": 3,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            }
+          ],
+          "attempts": [
+            {
+              "orders": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                [
+                  2,
+                  4,
+                  5,
+                  0,
+                  1,
+                  3
+                ]
+              ],
+              "cap": 125000,
+              "status": "unsat",
+              "receipt": {
+                "raw_bits": 6,
+                "original_gates": 47,
+                "factor_caps": [
+                  62500,
+                  62500
+                ],
+                "fallback_cap": 0,
+                "factors": [
+                  {
+                    "live_gates": 44,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 4735,
+                    "operations": 91,
+                    "max_pre_width": 6,
+                    "max_min_width": 4,
+                    "last_product": {
+                      "candidates": 22,
+                      "compact_cells": 40,
+                      "max_reached_rank": 2,
+                      "formal_width": 4,
+                      "formal_cells": 100,
+                      "prior_cells": 4641
+                    },
+                    "candidates": 762
+                  },
+                  {
+                    "live_gates": 2,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 275,
+                    "operations": 11,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 12,
+                      "compact_cells": 12,
+                      "max_reached_rank": 1,
+                      "formal_width": 1,
+                      "formal_cells": 12,
+                      "prior_cells": 160
+                    },
+                    "candidates": 24
+                  }
+                ],
+                "label_checks": [
+                  {
+                    "cut": 2,
+                    "prefixes": [
+                      0,
+                      1,
+                      3
+                    ],
+                    "signatures": [
+                      2,
+                      0,
+                      1
+                    ]
+                  },
+                  {
+                    "max_labels": 2
+                  }
+                ],
+                "joint": {
+                  "branches": 7,
+                  "feasible_pin_systems": 3,
+                  "candidate_rows": 48,
+                  "max_basis": 2
+                }
+              },
+              "reason": null
+            }
+          ]
+        },
+        "outer_ns": 6126366
+      },
+      "certified_pair": {
+        "status": "unsat",
+        "cost": {
+          "raw_bits": 6,
+          "gates": 48,
+          "proposal": [
+            {
+              "live_gates": 2,
+              "raw_incidences": 3,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            },
+            {
+              "live_gates": 44,
+              "raw_incidences": 45,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            }
+          ],
+          "attempts": [
+            {
+              "orders": [
+                [
+                  2,
+                  4,
+                  5,
+                  0,
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "cap": 125000,
+              "status": "unsat",
+              "receipt": {
+                "raw_bits": 6,
+                "original_gates": 48,
+                "factor_caps": [
+                  62500,
+                  62500
+                ],
+                "fallback_cap": 0,
+                "factors": [
+                  {
+                    "live_gates": 2,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 275,
+                    "operations": 11,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 12,
+                      "compact_cells": 12,
+                      "max_reached_rank": 1,
+                      "formal_width": 1,
+                      "formal_cells": 12,
+                      "prior_cells": 160
+                    },
+                    "candidates": 24
+                  },
+                  {
+                    "live_gates": 44,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 4735,
+                    "operations": 91,
+                    "max_pre_width": 6,
+                    "max_min_width": 4,
+                    "last_product": {
+                      "candidates": 22,
+                      "compact_cells": 40,
+                      "max_reached_rank": 2,
+                      "formal_width": 4,
+                      "formal_cells": 100,
+                      "prior_cells": 4641
+                    },
+                    "candidates": 762
+                  }
+                ],
+                "label_checks": [
+                  {
+                    "max_labels": 2
+                  }
+                ],
+                "joint": {
+                  "branches": 7,
+                  "feasible_pin_systems": 3,
+                  "candidate_rows": 48,
+                  "max_basis": 2
+                }
+              },
+              "reason": null
+            }
+          ]
+        },
+        "certificate": {
+          "expand": [
+            46
+          ],
+          "forms": [
+            4503599627370497,
+            1125899906842624
+          ]
+        },
+        "preprocessing_ns": 76606,
+        "elapsed_ns": 6273678,
+        "outer_ns": 6278405
+      }
+    }
+  },
+  "K4_True_distributed": {
+    "n": 6,
+    "clauses": 16,
+    "ands": 48,
+    "rows": {
+      "prior_complete": {
+        "status": "unsat",
+        "witness": null,
+        "verified": false,
+        "route": "normalized_automata",
+        "cost": {
+          "raw_n": 6,
+          "original_ands": 48,
+          "schedule": [
+            "normalized",
+            "raw"
+          ],
+          "attempts": [
+            {
+              "stage": "normalized",
+              "ands": 32,
+              "status": "unsat",
+              "cost": {
+                "budget": 250000,
+                "charged_cells": 6940,
+                "operations": 108,
+                "max_pre_width": 6,
+                "max_min_width": 4,
+                "last_product": {
+                  "candidates": 12,
+                  "compact_cells": 12,
+                  "max_reached_rank": 1,
+                  "formal_width": 2,
+                  "formal_cells": 28,
+                  "prior_cells": 6856
+                },
+                "candidates": 628
+              },
+              "elapsed_ns": 6188470
+            }
+          ],
+          "automata_budget_per_attempt": 250000,
+          "rank_cap": 24,
+          "raw_bit_order": null,
+          "prefix": {
+            "proxy": 145200,
+            "budget": 2000000,
+            "applied": true,
+            "ands": 32,
+            "elapsed_ns": 148094
+          },
+          "input_hex_json_bytes": 1058,
+          "original_replay_evaluations": 0,
+          "elapsed_ns": 6401071
+        },
+        "outer_ns": 6407921
+      },
+      "prior_pair": {
+        "status": "skip",
+        "reason": "requires a positive single gate readout",
+        "outer_ns": 12790
+      },
+      "certified_pair": {
+        "status": "unsat",
+        "cost": {
+          "raw_bits": 6,
+          "gates": 49,
+          "proposal": [
+            {
+              "live_gates": 2,
+              "raw_incidences": 3,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            },
+            {
+              "live_gates": 44,
+              "raw_incidences": 45,
+              "candidate_forms": 0,
+              "repeated_selector": false
+            }
+          ],
+          "attempts": [
+            {
+              "orders": [
+                [
+                  2,
+                  4,
+                  5,
+                  0,
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "cap": 125000,
+              "status": "unsat",
+              "receipt": {
+                "raw_bits": 6,
+                "original_gates": 49,
+                "factor_caps": [
+                  62500,
+                  62500
+                ],
+                "fallback_cap": 0,
+                "factors": [
+                  {
+                    "live_gates": 2,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 275,
+                    "operations": 11,
+                    "max_pre_width": 2,
+                    "max_min_width": 2,
+                    "last_product": {
+                      "candidates": 12,
+                      "compact_cells": 12,
+                      "max_reached_rank": 1,
+                      "formal_width": 1,
+                      "formal_cells": 12,
+                      "prior_cells": 160
+                    },
+                    "candidates": 24
+                  },
+                  {
+                    "live_gates": 44,
+                    "status": "complete",
+                    "budget": 62500,
+                    "charged_cells": 4735,
+                    "operations": 91,
+                    "max_pre_width": 6,
+                    "max_min_width": 4,
+                    "last_product": {
+                      "candidates": 22,
+                      "compact_cells": 40,
+                      "max_reached_rank": 2,
+                      "formal_width": 4,
+                      "formal_cells": 100,
+                      "prior_cells": 4641
+                    },
+                    "candidates": 762
+                  }
+                ],
+                "label_checks": [
+                  {
+                    "max_labels": 2
+                  }
+                ],
+                "joint": {
+                  "branches": 7,
+                  "feasible_pin_systems": 3,
+                  "candidate_rows": 48,
+                  "max_basis": 2
+                }
+              },
+              "reason": null
+            }
+          ]
+        },
+        "certificate": {
+          "expand": [
+            46,
+            47
+          ],
+          "forms": [
+            4503599627370497,
+            1125899906842624
+          ]
+        },
+        "preprocessing_ns": 73471,
+        "elapsed_ns": 5975628,
+        "outer_ns": 5978824
+      }
+    }
+  }
+}
