@@ -1,0 +1,66 @@
+{
+  "manifest": "13dbb2456e0b1be6583ca92509773367a85f8be73fe6cb693c5495ffccf059b4",
+  "members_checked": 75,
+  "mode": "source, archived kernel output and current first-match object hash audit; no compiler invoked",
+  "modules": {
+    "TightRow": {
+      "imports": {
+        "/dev/shm/official9822-new-objects/TightRowBasics.olean": "fa5e927b836d175b5ea5d147f525ee67b620fc6a402f2332f12288c9bfe05963"
+      },
+      "object": "c7be859bb036d73ecc84da72dcb5d360e67178967cf0261bf0566ad9b2636cc5",
+      "receipt": "receipts/20261127T101743Z/TightRow",
+      "source": "322a63c360f76bcf8a6e78e521c218258818d5a3ceeeadb9c51728e3ae182d19"
+    },
+    "TightRowAudit": {
+      "imports": {
+        "/dev/shm/official9822-new-objects/TightRowExample.olean": "95081cb76ff785158a6df94d9991733d9429dea9232b557c6ecf384ee030e801",
+        "/dev/shm/official9822-new-objects/TightRowIndexed.olean": "5c3d10919e3fb7dfcffcb9719ff2d795a2fcfc593ed74b66b4ca85d41af2386b"
+      },
+      "object": "8f769685d8491c087816eee9fdc078478c663907899539bd93f0b241766d6854",
+      "receipt": "receipts/20261127T101930Z/TightRowAudit",
+      "source": "8df558ddf40b332eaf9e5c1ae674963424ba188dc74441ad8238930fd8cf05b4"
+    },
+    "TightRowBasics": {
+      "imports": {
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/Card.olean": "24f5e4f54f643fc3b72ede36bcdbb9d05a7d6905d2007b9b932cc95394f3d611",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Set/Basic.olean": "445900ea998bb5b15ad7ff8cf9daaed63e5c4bb92891be8759380b1755456661"
+      },
+      "object": "fa5e927b836d175b5ea5d147f525ee67b620fc6a402f2332f12288c9bfe05963",
+      "receipt": "receipts/20261127T101551Z/TightRowBasics",
+      "source": "0a2c0f1f36da239046b81c8fb974d914b83a24917f0ba87f086ca47a18f71496"
+    },
+    "TightRowExample": {
+      "imports": {
+        "/dev/shm/official9822-new-objects/TightRowPhysical.olean": "bf2c3d1ee221c373cf42021b1cb0de9d86aeeb1652e91ebb0967448890cae345"
+      },
+      "object": "95081cb76ff785158a6df94d9991733d9429dea9232b557c6ecf384ee030e801",
+      "receipt": "receipts/20261127T101930Z/TightRowExample",
+      "source": "d9d4ae770d923d5b2f6a661cab0393b30a9f4983f0a691c32e1a33d148c147c9"
+    },
+    "TightRowIndexed": {
+      "imports": {
+        "/dev/shm/official9822-new-objects/TightRowPhysical.olean": "bf2c3d1ee221c373cf42021b1cb0de9d86aeeb1652e91ebb0967448890cae345"
+      },
+      "object": "5c3d10919e3fb7dfcffcb9719ff2d795a2fcfc593ed74b66b4ca85d41af2386b",
+      "receipt": "receipts/20261127T101930Z/TightRowIndexed",
+      "source": "e0bef83a96bcb0802d5e1513b7cdb1778cba36dfd0614f2f473adbcae551cae0"
+    },
+    "TightRowPhysical": {
+      "imports": {
+        "/dev/shm/official9822-new-objects/TightRow.olean": "c7be859bb036d73ecc84da72dcb5d360e67178967cf0261bf0566ad9b2636cc5"
+      },
+      "object": "bf2c3d1ee221c373cf42021b1cb0de9d86aeeb1652e91ebb0967448890cae345",
+      "receipt": "receipts/20261127T101743Z/TightRowPhysical",
+      "source": "b33d833dd05f0406fccac07a461587ceeffce9ce2f709b197bfaf10437ae3fe3"
+    }
+  },
+  "public": [
+    "TightRow.Trace.upper",
+    "TightRow.tightExact",
+    "TightRow.physical_iff_net",
+    "TightRow.chart_iff_clean_at_price",
+    "TightRow.indexed_chart_iff_clean",
+    "TightRow.Example.two_clean_terms"
+  ],
+  "zip": "1d062bf2148c6a7bfdca550c0414ff6bfc230006665283472553d2e0529f5ad7"
+}
