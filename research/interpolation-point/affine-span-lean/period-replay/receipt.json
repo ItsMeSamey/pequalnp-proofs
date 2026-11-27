@@ -1,0 +1,527 @@
+{
+  "commit": "c98288cadf99772e336b6c4e210f642216ff543e",
+  "baseline": "2835d77a9868151d70a102d78273d837823cd169",
+  "baseline_receipt": "92cd60a826711cc63a242e53ceb6c7d4d5204141abce5d488c6e3fbad79e8836",
+  "new_modules": [
+    {
+      "module": "ExactPlanePeriodSlice",
+      "source_sha256": "f24bbe37359bae22c4095dad4a5cc2c18b449060b9d91fe1ef29288ab692beb3",
+      "olean_sha256": "3f9a3781e318aeeee4f9c594e99f9cc6e2d4e2dd289c00b92c45a9384470662d",
+      "log_sha256": "9801580b3e22c346d9500d15dd3f76147816044ec538b9a23b727f6b8519ef30",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/independent-period-iu7gv1fr/prior/ExactPlaneProfileSlice.olean"
+      ]
+    },
+    {
+      "module": "ExactPlanePeriodBranch",
+      "source_sha256": "f860cee378bdf27d88f69a215fd061eddda7ec88b868e7c6092a04b9eb727976",
+      "olean_sha256": "a9b99100afc4e115a8f61fe2c5b5d57dfd3d338da9e4cb7f72452a24c1d62772",
+      "log_sha256": "340c0286c026b88397f8535e8d65c8ca90546e9921c92e922aed21da42f65bd1",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/independent-period-iu7gv1fr/fresh/ExactPlanePeriodSlice.olean",
+        "/dev/shm/independent-period-iu7gv1fr/prior/ExactPlaneProfileBranch.olean"
+      ]
+    },
+    {
+      "module": "ExactPlanePeriodChoice",
+      "source_sha256": "0d523c1143a71e0a1a51107afb9e4d33fd9e4c4b43f66922cae74df7f32fdb7a",
+      "olean_sha256": "b7715110b17116861075d1247b79a54d74ba6dc0ffabee8a3a563b1aaf104d00",
+      "log_sha256": "e389c7c66b15441cd6060511df1e35a336d66e0299a9bca5fa2aa7c8e1b18903",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/independent-period-iu7gv1fr/prior/ExactPlaneCheckedProfile.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneSparseTranslation",
+      "source_sha256": "e7056a32256a59cf1c5d72dc3f9d7f56309288a3095ff91f0d243f69da60d397",
+      "olean_sha256": "d0b586a740d43a507f089eb7855ed24bcc242e9f3f7765b6633fdec9892f04e4",
+      "log_sha256": "d1b9993dc88564524d9b64490732d93c344c15421961601b4104994043358c99",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/independent-period-iu7gv1fr/prior/ExactPlaneSectionCheckComplete.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Data/Finset/Fold.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneSuppliedPeriods",
+      "source_sha256": "ddd74ba1670921d02f5dc9e1ae81344f4c708c16831801d49ab67eca47288780",
+      "olean_sha256": "79b6ad29c4b999649767dbf3c787505a14e3618d95a16e173343ac84d5ca3431",
+      "log_sha256": "2a76cb391e9f34d083663d3bb2d10c826985b20d9731b7f172152d9a10261417",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/independent-period-iu7gv1fr/fresh/ExactPlaneSparseTranslation.olean",
+        "/dev/shm/independent-period-iu7gv1fr/prior/ExactPlaneProfileSolver.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/FiniteDimensional/Lemmas.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneRawPeriod",
+      "source_sha256": "091a9c0017e3d58124a7e6947b46c1daf372070942f1369812895fc84b39b868",
+      "olean_sha256": "b9296c99fc2f471bdc4d1237f9cfdac616879665fff80117c8b1302a7bf87d8e",
+      "log_sha256": "8ba7fe6e19ce5a850a7d75b2d20db5ed0566ae8b459887593aad7c0487d1af8e",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/independent-period-iu7gv1fr/fresh/ExactPlanePeriodBranch.olean",
+        "/dev/shm/independent-period-iu7gv1fr/fresh/ExactPlanePeriodChoice.olean",
+        "/dev/shm/independent-period-iu7gv1fr/fresh/ExactPlaneSuppliedPeriods.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneCheckedPeriod",
+      "source_sha256": "519b052a541cafde13dddb2976fea8beec3e25ac209521c9bb10124b78c9d088",
+      "olean_sha256": "d48168f4205e2ce686792bae44402a2636cf4f18fa155f4f40f19965fed4a5c3",
+      "log_sha256": "e97e8b43605098b34a30c913e30a83f237e2b1897bd774fb3280cbd9a5ac6d81",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/independent-period-iu7gv1fr/fresh/ExactPlaneRawPeriod.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneSemanticPeriod",
+      "source_sha256": "ba1005128c1141588e5594e635accd85458b253ced7d4167998f0191bae3b6cc",
+      "olean_sha256": "3e8202940badac14e0b3062662c6b0db1d52d302b438e2bfee8eb1473502aec2",
+      "log_sha256": "2a3b17ea63e4aa185423aac79907e60423ef34a210035b5c217fae228f52c19f",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/independent-period-iu7gv1fr/fresh/ExactPlaneCheckedPeriod.olean",
+        "/dev/shm/independent-period-iu7gv1fr/prior/ExactPlaneSectionCheckComplete.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneCheckedPeriodExamples",
+      "source_sha256": "5af2310b4adb9e3836fd9d4c1f7cabcd302373d2dcb5ea443631ef02f4c9f347",
+      "olean_sha256": "52aefef448b89cb99cbb6743e550a51eaa5dd915d8da8d8220d7200313104e15",
+      "log_sha256": "e6f741dae1ffe4e16214c2edd51c23609b1b5e63e268dfc67801561c9d3e04cf",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/independent-period-iu7gv1fr/fresh/ExactPlaneCheckedPeriod.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneSuppliedPeriodExamples",
+      "source_sha256": "e38dba1193331dc31866641641750cb6185f249d7c68f9711b764b15f34f527b",
+      "olean_sha256": "2110b901106bb5f9a3ac1bfd3b7a8addbaa7ccf291a4dfdc7d17181bad7c0807",
+      "log_sha256": "912ff10a304f39135d806de28e176757e34fadd875d6dc9131c986d62d360447",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/independent-period-iu7gv1fr/fresh/ExactPlaneSuppliedPeriods.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneCosetDegree",
+      "source_sha256": "e531c45438e9e5703d5e7c41c6aa927cd3f0b8d69222ce1876a5c8b22c125e5a",
+      "olean_sha256": "40271fe890a40887f9c36953c206c72361f6d107b97d07cb216c600acdace543",
+      "log_sha256": "a2e8ab64dda245d02928481eb2293ca1150a542b35be298b24f46025d4b73d85",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/independent-period-iu7gv1fr/prior/ExactPlaneAffineSpanHit.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/BigOperators/Group/Finset/Powerset.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneDirectionalMinors",
+      "source_sha256": "b0c2149035a6a0a8dfebc9151e0e0ce16316281ab0a64844faff4389a1c811f3",
+      "olean_sha256": "b3001b93f3c0de522161ed0fe4d1d4807cef393eb9c2877c9cd40a9adcc347e7",
+      "log_sha256": "cb5d3d28f05e3ffd9eb9a2e7edf7bf4333a48dbe7e779820d0a8417f3bb4513e",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/independent-period-iu7gv1fr/fresh/ExactPlaneCosetDegree.olean",
+        "/dev/shm/independent-period-iu7gv1fr/prior/ExactPlaneDeterminantProfile.olean"
+      ]
+    }
+  ],
+  "reused": {
+    "ExactPlaneBinaryArithmetic": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneBinaryArithmetic.olean",
+      "5c2c014386b98c055690429ebf77fe3395648cbd249db1c7d8bcf2c0769f1a95"
+    ],
+    "ExactPlaneIrreducibleExist": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneIrreducibleExist.olean",
+      "342b60c0e814536931af9f186c5bbe2e22eb4c88dfd5b8b0c57587cff4e78e04"
+    ],
+    "ExactPlaneIrreducibleSearch": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneIrreducibleSearch.olean",
+      "59192e24994adf76d4c71daf4b03f7a0461eeda7f0f1c56e4e4526f0d6519563"
+    ],
+    "ExactPlaneNumericalRows": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneNumericalRows.olean",
+      "9df2552313e48169f78caf5dea8f97bf7d351a6ca8c4710104e564f2060ab01a"
+    ],
+    "ExactPlaneSuppliedCoordinates": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneSuppliedCoordinates.olean",
+      "6b798a88f58c04120438e4d438c3bfce091969dfd4c90846ec13511d7c7689a8"
+    ],
+    "ExactPlaneComputedDeficit": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneComputedDeficit.olean",
+      "b36fae499a38a69745562bc3966f4a8b27ab3a21b2d3b93296bae41c2b3c95e1"
+    ],
+    "ExactPlaneDirectDivision": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneDirectDivision.olean",
+      "a10b3207a09fb4be08bd443324a945f1d0809056107f62559cbf234f0c68afb0"
+    ],
+    "ExactPlaneIrreducibleConstructor": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneIrreducibleConstructor.olean",
+      "a11a5232253d5e9fcf5d8ef9f5f4542d49b857293755b19d20f947be486ad383"
+    ],
+    "ExactPlaneModulusTransport": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneModulusTransport.olean",
+      "88ea05fab3d8e051a3bbdb441c59a5b6688d841bffac1b7b19da41ca93f2451e"
+    ],
+    "ExactPlaneNumericalDual": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneNumericalDual.olean",
+      "fe1615c78939d778da68c61b2823f3056b679ee6c7ca5aea4c85422de6c5b7b7"
+    ],
+    "ExactPlaneFastIrreducibleConstructor": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneFastIrreducibleConstructor.olean",
+      "81059ec2ae3479f62af2b9e3d6fa7c61287bbed0bdf3cb6fa79a260b357efc31"
+    ],
+    "ExactPlaneQuotientRows": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneQuotientRows.olean",
+      "6514814db2c6dbf278ebbf2ac74a94a39bd24704de70f9186b97a2ca3c5b2eac"
+    ],
+    "ExactPlaneWordField": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneWordField.olean",
+      "e7d6e1214d84f7c139760ab3700b4d25e069cfbad7ec4135841ef3b6790969a4"
+    ],
+    "ExactPlaneEagerField": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneEagerField.olean",
+      "3f99bf1fbfab37c420b3625b22936300f7986f4440ef74ad377f15487c544c10"
+    ],
+    "ExactPlaneConstructedRows": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneConstructedRows.olean",
+      "31e247118d68c5c01d718cd6afac15b941effaba3930726e7734f48993881a7f"
+    ],
+    "ExactPlaneGeneratedDecision": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneGeneratedDecision.olean",
+      "e777c96880476e84d75f8328b5abd31677078b92f5cbbfa00d90651c822157ca"
+    ],
+    "ExactPlaneGeneratedWitness": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneGeneratedWitness.olean",
+      "2dc9bf3b70c8fcc3710ae356c5f13afadbd0f68f4e7dc439efdc4bd8d1bde590"
+    ],
+    "ExactPlaneDeficitSolver": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneDeficitSolver.olean",
+      "fc2ffdc2e6ee23ec9c21a100cc1ac8a948e54ebc2b175918166c9075e4ee8ad0"
+    ],
+    "ExactPlaneFiveQueries": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneFiveQueries.olean",
+      "95048ed6d05f34e470c4130ee1ac9ec0c9c5622d75d03bccaf1d708b7c85768c"
+    ],
+    "ExactPlaneGaussian": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussian.olean",
+      "113e40fea2232287d1e80f9099817d7a8f0561b930b9b30dc3a7fa41b8e5510f"
+    ],
+    "ExactPlaneGaussianBasisBound": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianBasisBound.olean",
+      "596003db0d420d6196b77bd5c5203b739a6f923fec60f341507751c4fbe6df93"
+    ],
+    "ExactPlaneGaussianMaterialized": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianMaterialized.olean",
+      "074cc5ab7d14232e6d20118960234b5de23776d87d3e5bfed9c3f1f142b11deb"
+    ],
+    "ExactPlaneGaussianPacking": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianPacking.olean",
+      "bf8b6be68d7c63a69e4ce51d4f87f4ff1c4634d57d3f278b29724e29e9dbfbe2"
+    ],
+    "ExactPlaneGaussianCandidate": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianCandidate.olean",
+      "d405b27d034db816ca8e1a2fe9d40c298119328d79241fda291deace8650a6ec"
+    ],
+    "ExactPlaneGaussianIDs": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianIDs.olean",
+      "f7c2b789f165f2910214931b5c8f795737b5359c2a116cb6d1cfe1e43fef7de1"
+    ],
+    "ExactPlaneGaussianSelector": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianSelector.olean",
+      "8d06193e9819d1ec8a5d2b5acaa18418bf65a615775429d9d442651e39adc754"
+    ],
+    "ExactPlaneGaussianDecision": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianDecision.olean",
+      "310b38b61ebdf14152361a60130dd4db18cdc7478296bcf122e0bd8890f4ed64"
+    ],
+    "ExactPlaneEagerBank": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneEagerBank.olean",
+      "1da7253e67ad9b6c500c6ac4b74ad7ba9f920a7f9e617b6d241ce312c5783b47"
+    ],
+    "ExactPlaneEagerDecision": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneEagerDecision.olean",
+      "08d2b9882fea868e147da4e91f7c68b3932a9326336ef45776095c2ba10865d4"
+    ],
+    "ExactPlaneCandidateCheck": [
+      "/dev/shm/review-executable-yk755law/fresh/ExactPlaneCandidateCheck.olean",
+      "47bf05ebf3d5fff7ed501ef6f581554a527b303a4a18064e206c435c58e0ebbd"
+    ],
+    "ExactPlaneExecutableSelector": [
+      "/dev/shm/review-executable-yk755law/fresh/ExactPlaneExecutableSelector.olean",
+      "193c4482249aae701125083d712c9f3534781d7cd708eaf08da033a8a03fc309"
+    ],
+    "ExactPlaneOddChartList": [
+      "/dev/shm/review-executable-yk755law/fresh/ExactPlaneOddChartList.olean",
+      "e5164458de5202b9edeb348103068e627abf151da07d01b1e407be0d26dbd03d"
+    ],
+    "ExactPlaneListedDecision": [
+      "/dev/shm/review-executable-yk755law/fresh/ExactPlaneListedDecision.olean",
+      "2b2adad2d81357841691da17da27fd8905b91df53b1dffb7ede5fc03ceb73422"
+    ],
+    "ExactPlaneSmallWitness": [
+      "/dev/shm/review-raw-small-dcwx8mvh/fresh/ExactPlaneSmallWitness.olean",
+      "eb5cda1c64b6859ccb59b176dd9919c14cb07f16d2060f6d460944f3d0339a82"
+    ],
+    "ExactPlaneAcceptedSmallWitness": [
+      "/dev/shm/review-raw-small-dcwx8mvh/fresh/ExactPlaneAcceptedSmallWitness.olean",
+      "0331aadb086694e6256efb5d69616b6ecc4e87d932baba19be6333df7b71f9ec"
+    ],
+    "ExactPlaneSubsetPolynomial": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSubsetPolynomial.olean",
+      "996a2af5233b3b512b1aabf672423edd418da7ffe0e470f72f07ba3476f3de8a"
+    ],
+    "ExactPlaneAffineSparse": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneAffineSparse.olean",
+      "8c70a4f6f41f769a906614095fb68f1dd9737a8d08a69aa7a4eef118c73c5654"
+    ],
+    "ExactPlaneAffineSubstitution": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneAffineSubstitution.olean",
+      "a5ec39d0a55b41207c6558e05fa138220a58cf981d131bd173d5632700250410"
+    ],
+    "ExactPlaneAffineSpanHit": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneAffineSpanHit.olean",
+      "ed7800817b24c3d8f45afb4c759a9359c546134d3d16b2bdce751f03aa42ad38"
+    ],
+    "ExactPlaneDeterminant": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneDeterminant.olean",
+      "778f0fdc471ad0b9fccd97fa196efd04ed1b4484e8319cabfd557dbb9eb15641"
+    ],
+    "ExactPlaneTwoBitLookup": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneTwoBitLookup.olean",
+      "7ed396c63cab4fc56341bfe571a82d8649eff643f2bde89a3dd1d39ee7b8fd21"
+    ],
+    "ExactPlaneLookupDeterminant": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneLookupDeterminant.olean",
+      "481eeaac72868b05eb524f6646936a907a591e7dedecd425d8722060cb71c813"
+    ],
+    "ExactPlaneRepresentativeLookup": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneRepresentativeLookup.olean",
+      "620103010c19412517730bc14242e56db978c954865a9d7722f94fda948ed444"
+    ],
+    "ExactPlaneChartCoordinates": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneChartCoordinates.olean",
+      "9df6a4a20db4bcdde863c90a5897b5c205957d3d6aa5cc48f79d2071a101aa49"
+    ],
+    "ExactPlaneFieldCard": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneFieldCard.olean",
+      "d8bac675467343c2aa2b3049b2a2dd5bc06fb386998236f962c21b8ceee2535b"
+    ],
+    "ExactPlaneFieldSampler": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneFieldSampler.olean",
+      "f4ea9ad1aefa9e0cdf85b6ca944d071dc9d57c2ade7d10dc589c50c54050f4c3"
+    ],
+    "ExactPlaneActivationSlice": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneActivationSlice.olean",
+      "5cfedea8f6fb383f5d6a775779cbda99b35b1947ac4c7b0d4b92babfc501bf53"
+    ],
+    "ExactPlaneSamplerSpan": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSamplerSpan.olean",
+      "5e1f471adc907aee1a670050642499be18802ce72b08230eb12cdfdbc7f0e81b"
+    ],
+    "ExactPlaneSamplerRank": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSamplerRank.olean",
+      "1f8e9bbfaee7fc0c5b7aa17d1555252e517313d1d6c2ec529255ddfb0a6f7c5b"
+    ],
+    "ExactPlaneConcreteSampler": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneConcreteSampler.olean",
+      "4789d236953598cfb3a2735db23d331cde4da14edb1419f6cc9cfd3ae27158c3"
+    ],
+    "ExactPlaneActiveDeterminant": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneActiveDeterminant.olean",
+      "4f25e9d365fe33f022da35582f8e3a3edb54e0ccf81a857dbea397f3b5a06173"
+    ],
+    "ExactPlaneActiveReadSpan": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneActiveReadSpan.olean",
+      "5ef30098bd6d96b59a387e6f81da6272c1251617049bb7ee6d2e86fa2ef16880"
+    ],
+    "ExactPlaneOntoReadSpan": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneOntoReadSpan.olean",
+      "59f7ab677858fd1b08e5488c586b7b55b8f9e542c872b16f839b6e75ffa91628"
+    ],
+    "ExactPlaneCoordinateSampler": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneCoordinateSampler.olean",
+      "85a79371321562fc4caa7dd3096fa18e613ae1e816606803f0d4130d98a1101a"
+    ],
+    "ExactPlaneGlobalSeed": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneGlobalSeed.olean",
+      "7f680bbf421f0a062e52687b61c1af16e0b44ee523878965ce85bff63cff1d75"
+    ],
+    "ExactPlaneMatchedBasis": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneMatchedBasis.olean",
+      "a1112cb7736306a5544addb878f1cf4d1fdc3c0dc01f5f9f0a64321f09176d65"
+    ],
+    "ExactPlanePrescribedBasis": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePrescribedBasis.olean",
+      "07ec1ca60c6bef206422c9b15f8933541d190cf7cc1ffcd8b7bd4e442e6dbc6f"
+    ],
+    "ExactPlaneFullDirections": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneFullDirections.olean",
+      "27fc7cb42e250063f48a8f166ab4731720215949d54d2eb12a5818df1a18722d"
+    ],
+    "ExactPlanePinnedSampling": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePinnedSampling.olean",
+      "3d1b58fbd63aaa5aa5ce7347ea9f8ea9bb76535a22ba8a3c876df5329b9f95bb"
+    ],
+    "ExactPlanePhysicalResidual": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePhysicalResidual.olean",
+      "c0c55f5704950213a018c6789e6a7d16ac7886a4078266b6f7d8991d42bd3d41"
+    ],
+    "ExactPlaneResidualPivots": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneResidualPivots.olean",
+      "4bd1ca43a3b80aee14a12381850cfffb4df0ff1b1b39d652da42a6b5e1592b57"
+    ],
+    "ExactPlaneIndexedBranch": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneIndexedBranch.olean",
+      "01e925f19bef98df400fd2a4b6b64b18cc6e3673dbee35dcf572d7e85c36e64a"
+    ],
+    "ExactPlanePhysicalConverse": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePhysicalConverse.olean",
+      "05f132980fadad81455cedc08584dc62c3f1e2a4e52c8d09a5010ac41c1c0638"
+    ],
+    "ExactPlaneFrozenBranch": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneFrozenBranch.olean",
+      "b9bc5a191db04ac7915609ce814c6e5160d634a42f0ec29ddc7426f6a28904e0"
+    ],
+    "ExactPlaneSuccessTrace": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSuccessTrace.olean",
+      "a16a0418264caba4884e41e5dab02c219d1b97597aeb8e68c1419460ef1142b1"
+    ],
+    "ExactPlaneGlobalApplication": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneGlobalApplication.olean",
+      "10933ca18e9487569e20f184d769c5528864d65bb317025fef311f337be9fbc4"
+    ],
+    "ExactPlaneObservedSpan": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneObservedSpan.olean",
+      "425041793b022abeb413be23c13e3db44e43370110d8954b70f6c2579927cd10"
+    ],
+    "ExactPlaneRawApplication": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneRawApplication.olean",
+      "e93eca74732d1c29d57c17fcc23bdec1ae46ad5ccf95edaa182a7f02f5f5a352"
+    ],
+    "ExactPlaneSparseANF": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneSparseANF.olean",
+      "d84d2a5f5b7c174fb6fc61d3745fbeaf1c477be3420a550b8c0adf4dc6e90dec"
+    ],
+    "ExactPlaneDeterminantProfile": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneDeterminantProfile.olean",
+      "58ddf7594b4339ca3eae6441fb8be859b2862c7204d0e2667533dc706adb9f7e"
+    ],
+    "ExactPlaneSparseProfile": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneSparseProfile.olean",
+      "fa74b14b57dd6d3b3a6924d880e204db78242b874d17fbc177c9112dccd699d3"
+    ],
+    "ExactPlaneSparseSections": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneSparseSections.olean",
+      "2458c7829a0db74aeae8b1b0f0c4388a78475c676c6f7bdbad9b342f2edc0b18"
+    ],
+    "ExactPlaneSparseValidation": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneSparseValidation.olean",
+      "6140d57dc5472ad946b44acb7f22934f7a67cdfd9f993df81b698f88713d083a"
+    ],
+    "ExactPlaneProfileCharts": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneProfileCharts.olean",
+      "fc17f2ec90108ba75ef8e97ec9e54ec23e159c7dccbf8e3acf1333743633ec6c"
+    ],
+    "ExactPlaneRawSectionCheck": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneRawSectionCheck.olean",
+      "5ec91836f215eca2e4569ff47a903537d4b7bdf6c9b61d79a6b08f8a99ce4734"
+    ],
+    "ExactPlaneDegreeSpan": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneDegreeSpan.olean",
+      "d4fea292378ed0dc159731b422618b4e12be89400cd366dbfac9c63811264f17"
+    ],
+    "ExactPlaneDegreeSampler": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneDegreeSampler.olean",
+      "455384e31f88c6d1d241abdd7ce8c239741ee3ece8f2c1410ecfa27e4e087d4f"
+    ],
+    "ExactPlaneProfileSlice": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneProfileSlice.olean",
+      "ce91736b590a250ccf6d55b36ce62fb6c356288fbc6f7460ba3bdbd926105440"
+    ],
+    "ExactPlaneSectionGraph": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneSectionGraph.olean",
+      "71f66af650d0bc898a59b404cb3832785638af8fa74520f65d4d8056e78e4dd2"
+    ],
+    "ExactPlaneProfileResidual": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneProfileResidual.olean",
+      "ebbfdcca95a8c8a026e0b61f208c1dd9b2f6013c03a6fb6023d8fd6a664872f2"
+    ],
+    "ExactPlaneSectionComplement": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneSectionComplement.olean",
+      "9685ab7eb46a28da59f5452705810e8a902f9319c13fd6a736fb0612a11f0fe6"
+    ],
+    "ExactPlaneProfileBranch": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneProfileBranch.olean",
+      "42fffa8bafd8aa0096df31e1d89d529610ffe8e1c57620916b96288a439de255"
+    ],
+    "ExactPlaneProfileSolver": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneProfileSolver.olean",
+      "e1b86a55f8a21c33cf32caffd412fc177464945ab3f89e201abe92304721c2dc"
+    ],
+    "ExactPlaneRawSectionAdapter": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneRawSectionAdapter.olean",
+      "c9f4ebdbdf9ba7f0dd190f67f285d80db2e0fd01cebfdbd8c196c2f090ee3355"
+    ],
+    "ExactPlaneCheckedProfile": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneCheckedProfile.olean",
+      "0e14a62e2ca0f8578371019bd515167d272ce0ce531f4182ec355f8bc98020fb"
+    ],
+    "ExactPlaneSectionCheckComplete": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneSectionCheckComplete.olean",
+      "bc41bb25c81a6765f1538404976273e28ea0db405973a07c6096fe69eebbf47d"
+    ],
+    "ExactPlaneSemanticProfile": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneSemanticProfile.olean",
+      "febd873ea5459e289068dcb7d4d305e793263448d5c6be48b1382832ceb9b547"
+    ],
+    "ExactPlaneCheckedProfileExamples": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneCheckedProfileExamples.olean",
+      "6676eb808002b0611abc449dc49db07bb8b8d0533fe2053c0ae7e3a6fd04f7bc"
+    ],
+    "ExactPlaneSparseProfileExamples": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneSparseProfileExamples.olean",
+      "a850572d87b58cdea95d2fda8c29ce2244182fa18dc710390974a51d37f38fa0"
+    ],
+    "ExactPlaneLookupProfile": [
+      "/dev/shm/review-profile-u82q6p3m/fresh/ExactPlaneLookupProfile.olean",
+      "d643e0882c42b4d48a0312f858b804b0755199ad293b4894d36e452e9bd5ff01"
+    ]
+  },
+  "controls": [
+    "(true, false)",
+    "(1, true, false)",
+    "(false, some 2, false)"
+  ],
+  "axioms": [
+    "'ExactPlaneCosetDegree.positive' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ExactPlaneCosetDegree.period' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ExactPlaneDirectionalMinors.positive' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ExactPlaneDirectionalMinors.period' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ExactPlaneCheckedPeriod.solve_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ExactPlaneCheckedPeriod.returned' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ExactPlaneCheckedPeriod.valid_path' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ExactPlaneCheckedPeriod.candidate_count' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ExactPlaneCheckedPeriod.physical_path' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "workdir": "/dev/shm/independent-period-iu7gv1fr"
+}

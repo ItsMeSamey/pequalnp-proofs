@@ -1,0 +1,13 @@
+Preflight passed: 90 hashed, 86 imported, 12 queued
+ExactPlanePeriodSlice
+ExactPlanePeriodBranch
+ExactPlanePeriodChoice
+ExactPlaneSparseTranslation
+ExactPlaneSuppliedPeriods
+ExactPlaneRawPeriod
+ExactPlaneCheckedPeriod
+ExactPlaneSemanticPeriod
+ExactPlaneCheckedPeriodExamples
+ExactPlaneSuppliedPeriodExamples
+ExactPlaneCosetDegree
+ExactPlaneDirectionalMinors
