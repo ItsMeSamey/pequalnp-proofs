@@ -1,0 +1,7 @@
+Run authorized by /root/site_team_04 after explicit release by /root/eth/verification. Hash-checked shell-complete-pins.sha256 9f762a7592c6f12db549c602abcde0d2e9de4cb8b38669d42d436afd2ec0bc75. All eleven files checked in canonical guarded procedure before the sole native child. CPU cap 2s; time 3.9s; AS 128MiB; actual RSS guard 64MiB.
+exit 0; cpu 0.138686s; elapsed 2.295328734006034s; maxrss 8320KiB; sampled peak 8482816 bytes. Explicit release to /root/site_team_11/invariants.
+palette transfer oracle passed
+signed cactus-copy oracle passed
+18 shell fixtures: brute physical fibers, signed residues, replay, module identity
+4 original NAND shell+core verdicts and 4 mutated-netlist rejections passed
+2 literal occurrence-one matching counts verified
