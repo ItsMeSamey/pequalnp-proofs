@@ -1,0 +1,7 @@
+# Triangle and five-vertex path receiver
+
+Take triangle flags a,b,c and path flags p,q,r,s,t in order. The seven single raw edges must reject; each union of two raw edges must accept. The six-OR decoder is abc ∨ (r(p∨t) ∨ qs) ∨ ((a∨b)(q∨s)). Triangle nonemptiness is captured by a∨b on every nonempty triangle edge set, and q∨s hits every path edge. The local path term accepts two or more distinct path edges and rejects each single edge. prepare.py checks all 128 sets of raw edges independently.
+
+The archived graph-cut encoder writes a five-OR decoder as five unrestricted disjunctions of two conjunctive terms, each chosen from flags and earlier OR outputs; the output is a conjunctive term on the entire bank. Thus AND count and fanout are unrestricted. prepare.py captures its DIMACS encoding without invoking a solver. Edge mask 135283207 gives 1,179 variables and 4,644 clauses. The CNF SHA-256 is 6c2fd1ff4935f9a9a34b0e900498ba6e7de83ca6fc7647f9a363a55e7b14700d.
+
+The binary DRAT SHA-256 is 9350892992a60a7889125c9749984810d0ef95ec3271a05678469ba44c8db3c5. The independent drat-trim checker validated the certificate with exit zero, 19,640,761 resolution steps and 51.499 seconds of elapsed time. Thus the OR minimum is exactly six. On the remaining triangle+P5+P5 fourteen-flag case the second five-vertex path contributes five more ORs by peeling and the independent-raw increment: eleven are necessary, while the available residual budget is ten.

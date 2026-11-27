@@ -1,0 +1,9 @@
+# Triangle vertex readers
+
+Assume a size-minimal twenty-gate decoder, with the eight ANDs and hypotheses of triangle-ports.md. Each triangle vertex is essential: compare the singleton edge between the other vertices with a doubled triangle, with the four stars empty.
+
+The false-pin bound implies at most two direct readers per vertex. A vertex with an AND reader has only that reader. After setting x=false, follow a path from that AND toward the output until its first OR. Such an OR exists: an all-AND path to the output would make the output false whenever x is false, despite a surviving outside pair. That OR simplifies in addition to the initial AND. It cannot be another direct reader of x, because its AND-only descendant operand from the initial AND is bounded above by x, so such an OR was already redundant. Thus any other direct reader would exceed the two-gate loss budget.
+
+No direct AND reads two triangle vertices. Each vertex would then have that AND as sole reader, and only its product and the third vertex would export triangle information, contradicting the autonomous-port bound. A direct OR of two triangle vertices requires each of the two to have a second OR reader: if either had only the common reader, changing that vertex on the opposite singleton edge would be invisible. The AND-reader bound ensures both secondary readers are ORs.
+
+In particular the entire triangle-only part of a minimum decoder can contain at most one gate. Any OR of two distinct vertices gives the same nonemptiness bit on the promised edge unions. Once produced, combining it with a vertex yields either that vertex or nonemptiness. A second identical nonemptiness signal can be replaced by the first, so none of these operations needs a gate. This leaves just the possible single OR and excludes an autonomous triangle threshold product.
