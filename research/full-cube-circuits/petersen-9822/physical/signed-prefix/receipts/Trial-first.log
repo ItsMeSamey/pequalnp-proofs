@@ -1,0 +1,4 @@
+/workspace/scratch/official9822/physical/signed-prefix/Trial.lean:30:9: error: ambiguous term, use fully qualified name, possible interpretations [_root_.Repr,
+ PEqualNP.Outside.L_meta_9825.Engine.Repr]
+'Research.Signed9822.binaryFloorOfFace' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Research.Signed9822.notBudgetOfFace' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
