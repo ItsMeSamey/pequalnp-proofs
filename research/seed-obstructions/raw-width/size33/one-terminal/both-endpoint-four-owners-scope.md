@@ -1,0 +1,1 @@
+After the specified both-endpoint high pin at a 26-gate budget, the cumulative argument excludes every circuit with at most four current mandatory owners. The conclusion applies to the restricted instance created by that pin. Transferring it to an original bank requires an additional argument. [Proof and replay](both-endpoint-four-owners.zip)
