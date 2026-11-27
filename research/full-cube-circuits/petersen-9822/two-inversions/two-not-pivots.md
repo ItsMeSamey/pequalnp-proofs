@@ -1,0 +1,5 @@
+# The mixed case on pivotal backgrounds
+
+In the mixed sector, fix every raw except the vertex i with the negative reader. Write y=(NOT x_i) AND H for the reader output, z=NOT K(y) for the second inversion, and J(y,z) for the final bit after cutting the signals y,z. Acyclicity and the sole-reader hypothesis make H independent of x_i. Both K and J are monotone in the displayed arguments since the two physical inverters have been cut. This description permits any number of bypass paths from y to the output.
+
+On a background on which x_i is pivotal the physical H is one. The target must satisfy J(0,NOT K(0))=1 and J(1,NOT K(1))=0. Monotonicity of J rules out a constant K and monotonicity of K rules out a decrease. Thus K(0)=0 and K(1)=1. In the four-entry table of J, J(0,1)=1 forces J(1,1)=1, and J(1,0)=0 forces J(0,0)=0. In short J(y,z)=z everywhere on this background. This four-cofactor constraint applies to each of the 34 pivotal backgrounds of either protected vertex, without requiring z to dominate the reader in the physical graph.

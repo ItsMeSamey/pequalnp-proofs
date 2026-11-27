@@ -1,0 +1,432 @@
+{
+ "0": {
+  "columns": [
+   1,
+   2,
+   3,
+   6,
+   7,
+   8,
+   9
+  ],
+  "exceptions": [
+   136,
+   138,
+   200,
+   768,
+   770,
+   772
+  ],
+  "candidate": [
+   {
+    "extra": [],
+    "truth": "0xfffffff8ffffff88fffcfff8eeccaa88"
+   },
+   {
+    "extra": [
+     138
+    ],
+    "truth": "0xfffffff8ffffff88fffcfff8eeecaa88"
+   },
+   {
+    "extra": [
+     200
+    ],
+    "truth": "0xfffffff8ffffff88fffcfff8feccaa88"
+   },
+   {
+    "extra": [
+     138,
+     200
+    ],
+    "truth": "0xfffffff8ffffff88fffcfff8feecaa88"
+   },
+   {
+    "extra": [
+     136,
+     138,
+     200
+    ],
+    "truth": "0xfffffff8ffffff88fffcfff8fefcaa88"
+   },
+   {
+    "extra": [
+     770
+    ],
+    "truth": "0xfffffffaffffff88fffcfff8eeccaa88"
+   },
+   {
+    "extra": [
+     138,
+     770
+    ],
+    "truth": "0xfffffffaffffff88fffcfff8eeecaa88"
+   },
+   {
+    "extra": [
+     200,
+     770
+    ],
+    "truth": "0xfffffffaffffff88fffcfff8feccaa88"
+   },
+   {
+    "extra": [
+     138,
+     200,
+     770
+    ],
+    "truth": "0xfffffffaffffff88fffcfff8feecaa88"
+   },
+   {
+    "extra": [
+     136,
+     138,
+     200,
+     770
+    ],
+    "truth": "0xfffffffaffffff88fffcfff8fefcaa88"
+   },
+   {
+    "extra": [
+     772
+    ],
+    "truth": "0xfffffffcffffff88fffcfff8eeccaa88"
+   },
+   {
+    "extra": [
+     138,
+     772
+    ],
+    "truth": "0xfffffffcffffff88fffcfff8eeecaa88"
+   },
+   {
+    "extra": [
+     200,
+     772
+    ],
+    "truth": "0xfffffffcffffff88fffcfff8feccaa88"
+   },
+   {
+    "extra": [
+     138,
+     200,
+     772
+    ],
+    "truth": "0xfffffffcffffff88fffcfff8feecaa88"
+   },
+   {
+    "extra": [
+     136,
+     138,
+     200,
+     772
+    ],
+    "truth": "0xfffffffcffffff88fffcfff8fefcaa88"
+   },
+   {
+    "extra": [
+     770,
+     772
+    ],
+    "truth": "0xfffffffeffffff88fffcfff8eeccaa88"
+   },
+   {
+    "extra": [
+     138,
+     770,
+     772
+    ],
+    "truth": "0xfffffffeffffff88fffcfff8eeecaa88"
+   },
+   {
+    "extra": [
+     200,
+     770,
+     772
+    ],
+    "truth": "0xfffffffeffffff88fffcfff8feccaa88"
+   },
+   {
+    "extra": [
+     138,
+     200,
+     770,
+     772
+    ],
+    "truth": "0xfffffffeffffff88fffcfff8feecaa88"
+   },
+   {
+    "extra": [
+     136,
+     138,
+     200,
+     770,
+     772
+    ],
+    "truth": "0xfffffffeffffff88fffcfff8fefcaa88"
+   },
+   {
+    "extra": [
+     768,
+     770,
+     772
+    ],
+    "truth": "0xffffffffffffff88fffcfff8eeccaa88"
+   },
+   {
+    "extra": [
+     138,
+     768,
+     770,
+     772
+    ],
+    "truth": "0xffffffffffffff88fffcfff8eeecaa88"
+   },
+   {
+    "extra": [
+     200,
+     768,
+     770,
+     772
+    ],
+    "truth": "0xffffffffffffff88fffcfff8feccaa88"
+   },
+   {
+    "extra": [
+     138,
+     200,
+     768,
+     770,
+     772
+    ],
+    "truth": "0xffffffffffffff88fffcfff8feecaa88"
+   },
+   {
+    "extra": [
+     136,
+     138,
+     200,
+     768,
+     770,
+     772
+    ],
+    "truth": "0xffffffffffffff88fffcfff8fefcaa88"
+   }
+  ]
+ },
+ "3": {
+  "columns": [
+   0,
+   1,
+   2,
+   5,
+   6,
+   7,
+   9
+  ],
+  "exceptions": [
+   65,
+   69,
+   193,
+   544,
+   546,
+   548
+  ],
+  "candidate": [
+   {
+    "extra": [],
+    "truth": "0xffffffffffffeac0fffcfff0eecceac0"
+   },
+   {
+    "extra": [
+     69
+    ],
+    "truth": "0xffffffffffffeac0fffcfff0eeeceac0"
+   },
+   {
+    "extra": [
+     193
+    ],
+    "truth": "0xffffffffffffeac0fffefff0eecceac0"
+   },
+   {
+    "extra": [
+     69,
+     193
+    ],
+    "truth": "0xffffffffffffeac0fffefff0eeeceac0"
+   },
+   {
+    "extra": [
+     65,
+     69,
+     193
+    ],
+    "truth": "0xffffffffffffeac0fffefff0eeeeeac0"
+   },
+   {
+    "extra": [
+     546
+    ],
+    "truth": "0xffffffffffffeec0fffcfff0eecceac0"
+   },
+   {
+    "extra": [
+     69,
+     546
+    ],
+    "truth": "0xffffffffffffeec0fffcfff0eeeceac0"
+   },
+   {
+    "extra": [
+     193,
+     546
+    ],
+    "truth": "0xffffffffffffeec0fffefff0eecceac0"
+   },
+   {
+    "extra": [
+     69,
+     193,
+     546
+    ],
+    "truth": "0xffffffffffffeec0fffefff0eeeceac0"
+   },
+   {
+    "extra": [
+     65,
+     69,
+     193,
+     546
+    ],
+    "truth": "0xffffffffffffeec0fffefff0eeeeeac0"
+   },
+   {
+    "extra": [
+     548
+    ],
+    "truth": "0xfffffffffffffac0fffcfff0eecceac0"
+   },
+   {
+    "extra": [
+     69,
+     548
+    ],
+    "truth": "0xfffffffffffffac0fffcfff0eeeceac0"
+   },
+   {
+    "extra": [
+     193,
+     548
+    ],
+    "truth": "0xfffffffffffffac0fffefff0eecceac0"
+   },
+   {
+    "extra": [
+     69,
+     193,
+     548
+    ],
+    "truth": "0xfffffffffffffac0fffefff0eeeceac0"
+   },
+   {
+    "extra": [
+     65,
+     69,
+     193,
+     548
+    ],
+    "truth": "0xfffffffffffffac0fffefff0eeeeeac0"
+   },
+   {
+    "extra": [
+     546,
+     548
+    ],
+    "truth": "0xfffffffffffffec0fffcfff0eecceac0"
+   },
+   {
+    "extra": [
+     69,
+     546,
+     548
+    ],
+    "truth": "0xfffffffffffffec0fffcfff0eeeceac0"
+   },
+   {
+    "extra": [
+     193,
+     546,
+     548
+    ],
+    "truth": "0xfffffffffffffec0fffefff0eecceac0"
+   },
+   {
+    "extra": [
+     69,
+     193,
+     546,
+     548
+    ],
+    "truth": "0xfffffffffffffec0fffefff0eeeceac0"
+   },
+   {
+    "extra": [
+     65,
+     69,
+     193,
+     546,
+     548
+    ],
+    "truth": "0xfffffffffffffec0fffefff0eeeeeac0"
+   },
+   {
+    "extra": [
+     544,
+     546,
+     548
+    ],
+    "truth": "0xffffffffffffffc0fffcfff0eecceac0"
+   },
+   {
+    "extra": [
+     69,
+     544,
+     546,
+     548
+    ],
+    "truth": "0xffffffffffffffc0fffcfff0eeeceac0"
+   },
+   {
+    "extra": [
+     193,
+     544,
+     546,
+     548
+    ],
+    "truth": "0xffffffffffffffc0fffefff0eecceac0"
+   },
+   {
+    "extra": [
+     69,
+     193,
+     544,
+     546,
+     548
+    ],
+    "truth": "0xffffffffffffffc0fffefff0eeeceac0"
+   },
+   {
+    "extra": [
+     65,
+     69,
+     193,
+     544,
+     546,
+     548
+    ],
+    "truth": "0xffffffffffffffc0fffefff0eeeeeac0"
+   }
+  ]
+ }
+}
