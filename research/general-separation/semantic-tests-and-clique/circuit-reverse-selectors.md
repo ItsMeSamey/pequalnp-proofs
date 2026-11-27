@@ -1,0 +1,15 @@
+# Reverse enumeration of nonlinear circuit selectors
+
+Work over GF(2). Write each binary gate's ANF. For a nonlinear gate on current signals a,b introduce a fresh formal z_i for their product and express its actual output as z_i plus an affine combination of a,b and a constant. Propagate affine gates without introducing formal variables. All gate signals are now explicit affine forms in the original q primary bits x and earlier z variables. There are m product definitions. Stack their 2m operands in the vector Lx+Bz+c. Write the designated output as l x+e z+c_o. All matrices and supports are obtainable by polynomial-time bit arithmetic from the original DAG. With actual definitions z_i=product_i, every x has a unique full extension.
+
+## Reverse enumeration when the quotient is large
+
+Work in the original formal variables. Let Q_i(x,z) denote each product of its two affine operands. The unnormalized signed output bias is
+
+    S = 2^{−m} Σ_t Σ_{x,z} (−1)^{l x+e z+c_o+Σ_i t_i(z_i+Q_i(x,z))}.
+
+For fixed t the inner sum is again quadratic. Draw j→i whenever z_j occurs with nonzero coefficient in either propagated operand of i. These edges point forward. If none of j's consumers has t_i=1, then z_j appears in the phase only with coefficient t_j+e_j. The sum cancels when that coefficient is one. Hence process gates in reverse order: if there is no active consumer set t_j=e_j, and otherwise try both bits. Evaluate each surviving multiplier by quadratic elimination and divide the signed sum by 2^m exactly. The acceptance count is (2^q−S)/2. For T surviving multipliers the search tree has at most 1+mT nodes, giving deterministic poly(q,m)T time. A polynomial-space DFS suffices. Primary restrictions preserve the dependency graph as an upper bound and keep the same e coefficients in the formal representation, allowing witness self-reduction with polynomial overhead.
+
+For a chain in which only z_{i−1} can enter gate i, e supported on its last gate, survivors are suffixes containing the last gate, at most m+1. Primary affine forms may be arbitrary at each step; m may grow as q log q. For a layered circuit of equal width w where nonlinear dependence only enters from the immediately preceding layer, and e is supported on the last layer, the choice of an empty layer forces all earlier layers empty. With m/w layers this gives at most poly(m)(2^w−1)^{m/w} survivors for fixed w. In the other direction, a final product with one operand the XOR of all earlier products and the other a primary input activates all their multiplier choices; this screen then leaves 2^{m−1} terms. The lower bound on the number of terms visited by this screen makes no claim about the decision complexity of the example.
+
+This method and the [primary rank quotient](circuit-primary-rank-quotient.md) are description-dependent. Arbitrary DAGs can be processed and the cheaper bound used; the analysis does not give a universal sub-brute-force algorithm at q log q gates. [Related exact quadratic-sum implementation](../direct-sat-algebra/quadratic-image.md)
