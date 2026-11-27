@@ -1,0 +1,6 @@
+four fixed targets, labelled dual ranks, matching and certificate controls passed
+F7 retain (2, 4, 9, 5, 6, 8, 7) contract (1,) delete (0, 3)
+F7* retain (2, 5, 6, 4, 9, 8, 7) contract (1,) delete (0, 3)
+M*(K5) retain (2, 4, 5, 12, 7, 8, 6, 11, 9, 10) contract (1,) delete (0, 3)
+M*(K3,3) retain (2, 4, 11, 5, 7, 6, 8, 10, 9) contract (1,) delete (0, 3)
+four original-index minors, forged negative rejection and 34 certified line cases passed
