@@ -15,18 +15,26 @@ def carry_patterns(a, residue):
                 0 <= bit + 2*dest - c <= 2 for dest in viable[-1])})
         if start not in viable[-1]:
             continue
-        def visit(i, carry, path):
-            if i == a:
-                yield tuple(path)
-                return
-            bit = (residue >> i) & 1
-            for dest in viable[a-i-1]:
-                repeats = bit + 2*dest - carry
-                if 0 <= repeats <= 2:
-                    path.append(repeats)
-                    yield from visit(i+1, dest, path)
+        path = []
+        stack = [(start, iter(viable[a-1]))]
+        while stack:
+            i = len(path)
+            carry, choices = stack[-1]
+            dest = next(choices, None)
+            if dest is None:
+                stack.pop()
+                if path:
                     path.pop()
-        yield from visit(0, start, [])
+                continue
+            repeats = ((residue >> i) & 1) + 2*dest - carry
+            if not 0 <= repeats <= 2:
+                continue
+            path.append(repeats)
+            if i+1 == a:
+                yield tuple(path)
+                path.pop()
+            else:
+                stack.append((dest, iter(viable[a-i-2])))
 
 
 class HalfLineMoments:
