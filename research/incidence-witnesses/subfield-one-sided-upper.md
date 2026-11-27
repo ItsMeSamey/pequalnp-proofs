@@ -1,0 +1,7 @@
+# A subfield circuit for a one-sided sparse query
+
+For the classical plane of order q=p², p prime, and 1≤b≤p, an explicit binary monotone circuit of size O(Nb) handles arbitrary active points and at most b lines. Here N=q²+q+1. Choose b+1 distinct one-dimensional kernels of nonzero linear functionals φ:F_q→F_p. For each affine point (x,y) require for every φ that some active nonvertical line (a,t) satisfies φ(y−ax−t)=0. If none is incident, the ≤b residuals y−ax−t are nonzero, and each spoils only one kernel. Some test rejects. Any true incidence passes all tests. AND the point predicate with its raw and OR the results.
+
+For a fixed basis e1,e2 write a=a1 e1+a2 e2 and let v_i=φ(e_i x). Compute A[a1,a2,r] as the OR over active lines with the given a and φ(t)=r, then B[v1,a2,u] as the OR over a1 of A[a1,a2,u−a1v1], then C[v1,v2,u] as the OR over a2 of B[v1,a2,u−a2v2]. Each bank uses p³(p−1) binary OR gates; C at (v1,v2,φ(y)) gives the test since φ(ax)=a1v1+a2v2. This is O(N) gates per φ. Combining predicates costs O(Nb).
+
+Handle vertical lines by grouping affine points by column, ORing each group, and ANDing with its vertical line. For each infinity point OR all affine lines of its direction and AND with the raw point. The line at infinity associates with the OR of all infinity points. OR these correction terms into the output at O(N) total additional cost. Queries of size 0 always reject. No point cardinality constraint is used.

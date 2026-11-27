@@ -1,0 +1,7 @@
+# Balancing the one-sided subfield decoder
+
+For q=p², p prime, and p<h≤q, PG(2,q) has nonuniform monotone circuits of size O(N h² log N/p) for arbitrary active points and at most h active lines. Thus the size is o(Nq) for h=o(q^(3/4)/sqrt(log q)), extending the direct O(Nh) range h≤p.
+
+Let R=ceil(4h/p). In a random assignment of all line raws independently to R bins, a given bin sees mean load ≤p/4 on a fixed legal mask. Its probability of exceeding p is ≤(e/4)^p by a union bound over p-subsets. The probability of any overload is ≤R(e/4)^p≤exp(−cp) for large p as R=O(p). Choose D=ceil(C h log N/p) independent assignments. A union bound over at most (N+1)^h masks shows that, for C large enough, every mask has a balanced assignment in some fixed family. This is a nonuniform existence proof.
+
+For each bin of each assignment instantiate the decoder in subfield-one-sided-upper.md at cap p, with line inputs outside the bin set to zero. OR all bin outputs within each assignment and AND over the assignments. Any flag activates its bin decoder in every assignment even under overload, since the circuit is monotone and accepts each singleton flag. Given an independent input, some assignment has all bins within the cap, so every bin rejects the arbitrary point payload. The physical size is O(DR Np)=O(N h² log N/p), including binary collection and projective boundary. The bound at the full original cap h=q does not yield a circuit below Nq/100.
