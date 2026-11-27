@@ -1,0 +1,21 @@
+# Three specified vertices in an induced even subgraph
+
+The instance is a simple graph G with three named vertices. The question is whether some S contains all three and every vertex of G[S] has even degree, including zero. The support may be disconnected.
+
+## What the primary results decide
+
+Lévêque, Lin, Maffray and Trotignon define Γ³ using two nonadjacent degree-two terminals in a graph of maximum degree three. Theorem 2.7 proves NP-completeness for an induced hole containing both terminals, refining Bienstock’s unrestricted-degree result. Their reduction requires a single hole passing through both gadgets. Simply selecting the two nonadjacent terminals already satisfies induced evenness, on every instance of their reduction. Adding an isolated third pin preserves this false-positive construction. Even forcing terminal incident edges does not ensure a common component: join two squares by a bridge and pin a degree-two vertex away from the bridge in each square. The union of the two squares would include the bridge and fail parity, but subdividing that bridge once permits omission of its internal vertex. Both squares then survive as separate induced cycles, with no cycle through both terminals in the connected host. [Lévêque et al., definition and Theorem 2.7](https://arxiv.org/pdf/1309.0971)
+
+Chudnovsky and Seymour decide in polynomial time whether one induced tree contains three specified vertices. The all-pinned path on three vertices admits such a tree and fails evenness. The all-pinned triangle is even and admits no such tree. [Chudnovsky–Seymour](https://web.math.princeton.edu/~mchudnov/threeinatree.pdf)
+
+Ai, Guo, Gutin, Hao and Yeo study the maximum order of an induced subgraph meeting a vertex-by-vertex degree-parity function on its selected vertices. This is the same local parity rule with a different global requirement. Disjointly adjoining isolated vertices can make an all-even support arbitrarily large without changing feasibility on pinned vertices elsewhere. [Ai et al.](https://arxiv.org/abs/2509.01428)
+
+In graph-state language a local set is D union Odd(D), where Odd(D) consists of vertices with an odd number of neighbors in D. The even-support constraint is D intersection Odd(D) empty, with the pins in D itself. Merely covering the pins by a local set allows them to occur only in Odd(D) or in both. For example, D equal to all vertices of a three-vertex path has local set covering all pins but selects two odd-degree endpoints. The covering result for minimal local sets therefore supplies no extension certificate. [Claudet–Perdrix](https://arxiv.org/abs/2402.10678)
+
+## Direct algorithm on the subcubic hardness host
+
+Every nontrivial component of an induced even subgraph of a subcubic graph is a chordless cycle. With zero or three edges among the pins, select the pins. With two edges forming a–b–c, remove b and all its neighbors other than a,c. A shortest remaining a–c path closes to an induced cycle with b. Conversely the cycle containing the two incident pinned edges gives such a path.
+
+With one edge ab and a third pin c, set H=G−ab and H₀=H−N[c]. If a and b are connected in H₀, use a shortest path, restore ab, and add c as an isolated vertex. Otherwise let A,B be their distinct components in H₀. Any feasible support must now place c on the cycle containing ab. Removing ab leaves a chordless a–b path through c. Enumerate its two distinct, nonadjacent neighbors u,v of c, in path order. Test for an a–u path in H[A∪{u}] avoiding N_H(v) and a b–v path in H[B∪{v}] avoiding N_H(u). Taking shortest paths prevents internal chords. The two components are anticomplete, and removing the cross-neighbors prevents endpoint chords. Joining the paths via u–c–v and ab gives the required induced cycle. Necessity follows from the same path decomposition. The bounded number of searches gives O(|V|+|E|) time using adjacency lists.
+
+The subcubic algorithm and counterexamples exclude a literal transfer of the hole hardness construction. The cited results do not determine unrestricted-degree three-pin even-support feasibility. In degree four, a connected even component can contain degree-four vertices, so the cycle decomposition used by this algorithm no longer applies.
