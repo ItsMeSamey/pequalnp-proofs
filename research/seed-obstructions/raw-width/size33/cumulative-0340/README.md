@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+**340 original cases remain.** The deletion proof and a fresh forest enumeration exclude originals 4075, 4112, 4113 and 4163. The reviewed totals are 3,696 of 4,032 zero-terminal and 6,209 of 6,213 one-terminal cases. [336 remaining zero-terminal IDs](t0-remaining-336.ids) · [4 remaining one-terminal IDs](t1-remaining-4.ids) · [Audit manifest](four-punctured-3696.sha256)
+
 **344 original cases remain.** The degree-two deletion bound and a signed-row check exclude zero-terminal original 312. The cumulative exclusions cover 3,692 of 4,032 zero-terminal and 6,209 of 6,213 one-terminal originals. [340 remaining zero-terminal IDs](t0-remaining-340.ids) · [4 remaining one-terminal IDs](t1-remaining-4.ids) · [Audit manifest](puncture-3692.sha256)
 
 **345 original cases remain.** Using the size-33 budget of 33−2t before charging pinned inputs, independent computations agree on 54 additional zero-terminal exclusions. The totals are 3,691 of 4,032 zero-terminal and 6,209 of 6,213 one-terminal originals. [341 remaining zero-terminal IDs](t0-remaining-341.ids) · [4 remaining one-terminal IDs](t1-remaining-4.ids) · [54 additions](absent-corrected54.ids) · [Audit manifest](absent-3691.sha256)
