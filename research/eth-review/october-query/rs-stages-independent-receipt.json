@@ -1,0 +1,1 @@
+{"checker": "3bb00c331f44896e198db3d08c1aaac396556c7fb20eebf9a4fac679c6851824", "target": "b4a28282762eb013faed3d2d24557f089b301019c19e8b46f75995599b51c07e", "tiny_target": "c2f62b6bc28f747fda22f3220b649d9d8484c131c6bc7682f8764f8003a3fc53", "gf4": [16, 4], "gf16": [25, 1], "four_bit_slice": [8, 8], "rss_kib": 14080}
