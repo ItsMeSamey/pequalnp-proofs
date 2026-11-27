@@ -1,0 +1,9 @@
+# Two distinct OR losses for a low hot singleton
+
+Assume a minimum physical seventeen-gate circuit for the full 9822 graph with one live NOT and seven ANDs, hence nine ORs. Let H be the monotone input to the inverter and z its output, regarded as a formal input to the outer cone.
+
+If H is nonraw and true on singleton s, take the earliest true nonraw gate in its ancestor cone under that input. It is an OR directly reading s. Otherwise both AND operands would be the same raw s and the gate could be bypassed. This OR precedes the inverter. Clamping z to zero also folds a distinct downstream OR. Indeed an AND-only prefix of any live z-to-output path propagates zero; a full AND-only path would force clamped output zero even at all raw inputs true, where H=1 and the graph accepts.
+
+When s=1, monotonicity gives H=1, so the clamped output agrees with the original. The upstream OR reading s folds as well, including if it was already discarded. At most seven ORs remain. For s in {0,1,2,3,4}, this contradicts the positive cofactor's eight-OR lower bound from duality/paid-first-positive.md. Nonraw H therefore rejects all five low singleton inputs regardless of how many positive uses it has.
+
+In the reverse representation let R_r denote raw r's ray mask and Z the mask of z. If R_r is contained in Z, every neighbor s of r must satisfy H(s)=1: otherwise at singleton s the ray union already includes Z. Adding r gains no directions and possibly disables z, whereas the required output changes from false to true. Every r has a neighbor among the five low vertices, impossible for nonraw H. Raw H can be hot on only one neighbor whereas every vertex has degree at least two. Thus no R_r is contained in Z in any one-inverter size-seventeen candidate. This excludes all cases in which Z equals a raw mask.
