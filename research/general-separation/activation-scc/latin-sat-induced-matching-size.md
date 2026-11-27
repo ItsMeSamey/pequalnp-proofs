@@ -1,0 +1,7 @@
+# Uniform size of isolated-clause XOR routing
+
+The rank-one-latin-sat.md reduction needs a tri-colored sum-free set: a_i+b_j=c_k iff i=j=k. Kleinberg proved maximum size 2^{Hd+o(d)} in F₂^d, H=H₂(1/3). [Primary proof](https://arxiv.org/abs/1605.08416)
+
+This existential size suffices for a uniform polynomial-time reduction. For target m set d0=max(1,floor(log₂ log₂(m+2)/2)), u=2^{d0}. Enumerate all pairs of distinct-entry ordered lists of equal length at most u in this base group, determining c by pointwise sums and examining every index triple. Store a maximum list of size L. Time is u^{O(u)}=m^{o(1)} asymptotically and log₂ L=(H+o(1))d0. For L≥2 form words of s=ceil(log_L m) block indices, keeping the first m. Concatenate the corresponding a, b and c labels separately. Equality splits independently across blocks, so the isolated-triple property survives truncation. The payload group order Q satisfies log₂ Q=s d0=(1/H+o(1))log₂ m. Use the original two-coordinate routing when the small base gives L<2.
+
+With the same constant rail tags the sole ternary matrix has rank one. There are Q² explicit ternary clauses and O(Q+m) rail variables and boundary clauses. Thus the deterministic reduction uses m^{2/H+o(1)} clauses and m^{1/H+o(1)} rail variables. Conversely the cited bound gives Q≥m^{1/H−o(1)} when a full binary-group Latin block isolates m clauses via an induced matching. Other reductions are unconstrained. The improvement concerns reduction size, with no unrestricted decision algorithm implied.
