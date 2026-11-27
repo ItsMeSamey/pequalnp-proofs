@@ -1,0 +1,1 @@
+For the interval bound that more than k edges meet k+1 cliques, use the same clique order in each round of the construction. If the order changes between rounds, the last and first clique of adjacent rounds can coincide. An interval longer than 2k still gives the stated asymptotic lower bound. [Reviewed proof](injective-local-interface-count.md)
