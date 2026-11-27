@@ -1,0 +1,2 @@
+'ThresholdStarWindow.native_clashes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThresholdStarWindow.native_seven_ands' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,7 @@
+{
+  "source": "7bc6071ae402ba3a7b1dada9addfdc286339f1834a3951cca8f8c3911e6f158a",
+  "imports": {
+    "/dev/shm/official9822-new-objects/NativeSelector.olean": "a0ade833d61ba6f71ee3de1970bcc4dc7877c78da86d6ef1323c57a3d4b92b31",
+    "/dev/shm/official9822-new-objects/NativeTable.olean": "ee65a991878fa8fc29bbbd8807a937c0417fef97c7e96846f10d8dee23f402cd"
+  }
+}
