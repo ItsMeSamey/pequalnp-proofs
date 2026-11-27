@@ -1,0 +1,9 @@
+# Forecast consistency and SAT search
+
+The [hierarchy](local-forecast-consistency.md) concerns deterministic online forecasts on bounded-size circuit queries. The [positive-threshold reduction](positive-threshold-repair.md) needs a support guarantee only for positive proper-threshold forecasts along a single committed history. It never charges the predictions from a provisional clone as feedback. The [masked support reduction](masked-positive-threshold-support.md) shows why testing the guarantee after a positive forecast can itself require solving SAT, even when one surviving witness is public.
+
+The conditional driver accepts a callback with the mode's stated clock, feasibility and mistake hypotheses. The finite checkers use exhaustive voting only on tiny instances. The published programs implement reductions and test cases; a general polynomial-time learner meeting their hypotheses would imply P=NP.
+
+Chase and Freitag distinguish consistency of total labelings from the stronger problem of extending partial labelings. Their bounds concern the number of learning queries. Bshouty, Cleve, Gavaldà, Kannan and Tamon construct circuit learners using equivalence queries and polynomial-hierarchy oracles. Their work on approximate halving motivates the positive direction here. The statewise conditions, public query cap, uniform bit clock, exact number of mistakes and original SAT witness search in the linked statements should be read together. [Chase and Freitag](https://proceedings.mlr.press/v125/chase20a.html) [Bshouty et al.](https://www.cs.upc.edu/~gavalda/papers/OraclesAndQueries.pdf)
+
+The finite controls check arbitrary tie choices, support of simultaneous forecasts, singleton deletions, all-wrong histories, malformed predictions, original witness verification and the strict masked crossing. The masked voting control works on its designated source and ordinary thresholds. Its code is not a learner for arbitrary circuits.
