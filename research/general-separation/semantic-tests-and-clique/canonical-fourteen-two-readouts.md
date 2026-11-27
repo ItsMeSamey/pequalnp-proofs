@@ -1,0 +1,21 @@
+# Two readouts for unrestricted overlap of the canonical fourteen-state box
+
+Use any number of copies of the [physical six-site box](fourteen-port-uniform-boundary.md), with either orientation on each nonloop edge of the overlap multigraph. Every exposed site has at least one box. The box's head defect is always free. Its tail defect is free except when the tail is selected and its head unselected, in which case the tail defect is forced to one. The two defect choices are independent subject to this single rule. With arbitrary affine exposed drifts having symmetric off-diagonal coefficients and at most two affine occupancy readouts, decision and witness reconstruction take deterministic polynomial time. The readouts need not explicitly fix a hub. This theorem uses this particular table on every edge.
+
+Let U contain every vertex used as a head at least once, and let S be the remaining vertices. Every U-vertex can independently correct its required parity at an incoming head incidence whenever selected. Each S-vertex is a tail on every incidence and every neighboring head belongs to U. Fix y on U, writing x for the occupancies in S. A vertex of S with any occupied head has an independently adjustable defect. Call it unguarded; otherwise it is guarded. At a guarded vertex i the required equation on selection is
+[
+(Ax)_i=c_i(y),
+]
+where A is simple symmetric on S. Incorporate diagonal terms at selected sites, the raw contribution of one per incident box, and all exterior drift contributions into c_i(y). This affine expression may be computed for all i regardless of guard status. The characterization is exact: once the occupancy equations hold, each site can set one of its available slack defects if needed; opposite endpoint choices on the same box are independent. Recover the private vertices from the finite table witnesses.
+
+The readouts have the form Cx+Hy=d. When rank C is zero, choose x=0 and solve for y. When rank C is two, select every site of U so every S-site is unguarded. Then solve the linear equations for x. In both cases discard inconsistent constant rows first. At rank one write the system as an affine slice on y and a single equation β·x=b(y), with β nonzero. If the slice is empty reject; if b(y)=0 somewhere take this y and x=0. It remains to consider the slice where b(y)=1.
+
+For fixed y, let Z⊆S be the unguarded vertices. The one-readout problem has no witness precisely when every connected component D of A containing at least one marked vertex (β_i=1) satisfies both
+[
+D\cap Z=\varnothing,qquad c_D(y)=β_D.
+]
+For necessity, a marked unguarded vertex works alone. Otherwise, if a marked component contains any unguarded vertex, the component E of a marked vertex in the graph of guarded sites has a neighbor j in Z. Set every other unguarded bit to zero and choose x_j so that c_E(y)+A[E,j]x_j differs from β_E; the column is nonzero. Since j is unmarked this does not alter the target. By the [span theorem for prescribed degrees](symmetric-single-row-p3.md), a connected guarded graph admits a support with nonzero β-readout precisely when β is nonzero and differs from its prescribed-degree vector. Use this on E and leave all other guarded sites unselected. If D contains no unguarded vertex, that same theorem applies directly to D. For sufficiency, in every marked D obeying the two displayed conditions, handshaking gives β_D·x_D=c_D(y)·x_D=0. Unmarked components contribute zero.
+
+These failure conditions jointly define an affine space of y, possibly empty. Requiring a marked D to have only guarded sites sets to zero every head occupancy incident with an S-site in D. The other conditions are affine drift equations. Check whether the permitted y-slice is contained in this failure set by Gaussian elimination. If containment fails, adding the negation of a failed scalar equation produces a suitable y; the preceding constructive argument gives x and then all defect and private witnesses. The number of candidate scalar equations and linear systems is polynomial in the input length.
+
+Long minimum witnesses for two readouts remain possible within these boxes. The algorithm bypasses support enumeration. Tables of cardinality fourteen with other omitted pairs may couple the two defects or fail to provide an always-free head; the proof does not cover them.
