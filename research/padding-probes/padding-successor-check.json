@@ -1,0 +1,1 @@
+{"cpu": 0.028582999999999997, "maxrss_kib": 7552, "code": 0, "output": "quadratic disagreement 7 1022\nsingleton-miss unknown 31 4526\nsingleton-hit disagreement 32 4672\nhigh-degree disagreement 7 1022\ncap unknown 6 876\ninfeasible unknown 0 0\nmismatch unknown 2 292\npair pair 2 292\n", "rss": 7471104, "wall": 1.4406652050092816}
