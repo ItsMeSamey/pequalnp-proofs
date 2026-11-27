@@ -1,0 +1,9 @@
+ExactPlaneWedgeCachedExamples.lean:7:9: warning: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+some ([2, 3], [0, 1])
+false
+true

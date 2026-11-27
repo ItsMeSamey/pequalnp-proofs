@@ -1,0 +1,20 @@
+ExactPlaneWedgeDecision.lean:29:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ExactPlaneWedgeDecision.lean:30:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ExactPlaneWedgeDecision.lean:82:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [nz] at bad
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'ExactPlaneWedgeDecision.retained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneWedgeDecision.root_spec' depends on axioms: [propext, Classical.choice, Quot.sound]

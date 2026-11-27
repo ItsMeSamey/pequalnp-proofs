@@ -1,0 +1,10 @@
+ExactPlaneWedgeFused.lean:34:29: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [products, List.foldl_flatMap, List.foldl_map, push]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ExactPlaneWedgeFused.feed_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneWedgeFused.prefix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneWedgeFused.solve_spec' depends on axioms: [propext, Classical.choice, Quot.sound]

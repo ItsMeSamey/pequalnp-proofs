@@ -1,0 +1,9 @@
+ExactPlaneWedgePhysicalCharges.lean:29:83: warning: This simp argument is unused:
+  List.nil_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [inputs, ExactPlaneWedgeLeaf.leaf, List.flatMap_cons, List.flatMap_nil, List.append_nil,
+    List.length_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ExactPlaneWedgePhysicalCharges.physical_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
