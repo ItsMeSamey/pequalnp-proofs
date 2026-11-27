@@ -1,0 +1,16 @@
+IncidenceZeroRestriction.lean:168:12: warning: This simp argument is unused:
+  hl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, hr, literal, advance, deadOut, put]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+IncidenceZeroRestriction.lean:168:15: warning: This simp argument is unused:
+  hr
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, hl, literal, advance, deadOut, put]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'IncidenceZeroRestriction.literal_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceZeroRestriction.literal_counts' depends on axioms: [propext, Classical.choice, Quot.sound]

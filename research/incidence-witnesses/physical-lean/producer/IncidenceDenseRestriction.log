@@ -1,0 +1,1 @@
+'IncidenceZeroRestriction.dense_minor' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'IncidenceOfficialScalar.translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceOfficialScalar.tests_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceOfficialScalar.price401' depends on axioms: [propext, Quot.sound]
