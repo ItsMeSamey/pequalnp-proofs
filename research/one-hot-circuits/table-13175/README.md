@@ -1,0 +1,7 @@
+# Exact size of the three-by-six matrix with mask 13175
+
+The target accepts the columns {0,1,2,4,5}, {0,2,3}, and {0,1}, respectively, in rows 0, 1, and 2. It is evaluated on exactly one active row flag and one active column flag. The row-major bit index is 6r+c.
+
+The theorem ProbeM13175.exact_size quantifies over all budgets: a legal fan-in-at-most-two monotone AND/OR circuit exists with that budget exactly when the budget is at least ten. M13175Upper.lean checks an explicit ten-gate circuit on all 18 promised cells. The lower bound is an instance of finite live-bank simulation, including constant, unary, redundant, out-of-order and unused wires. The 1,350 finite bank states check 181,620 child obligations in the Lean kernel. The supplemental earlier one-fork C++ enumeration is unnecessary to the Lean proof.
+
+The src directory holds every custom imported Lean source. External imports are PEqualNP.Defs and Std; use pequalnp-proofs pinned to Lean 4.36.0. To verify source integrity and dependency closure, run python3 replay.py --audit-only. To build independently, run python3 replay.py --lean-project PATH/TO/pequalnp-proofs/lean --build-dir PATH/TO/EMPTY_BUILD. The binary proofs and cached objects are not needed. M13175Exact.log records the final axiom report. ledger.jsonl is the compact integer-witness ledger; ledger.py and render.py regenerate the data and numerical Lean sources in a working directory.
