@@ -13,3 +13,9 @@ For original banks 0, 7, 17 and 115, the [all-clean certificate](native-clean-se
 The [all-clean proof](native-all-clean-area.zip) extends the exact 34 result to **any number of AND gates** on these four native banks when every AND is zero on every native negative. The [two-dirty certificate](seven-two-dirty-weak.zip) addresses seven total AND gates with exactly two dirty gates, using the three-point deletion theorem and 30 archived UNSAT outcomes. The independent structural reviewer checked coverage of the first-dirty split and all 30 receipt keys. The unrestricted normalized minimum remains 33–34.
 
 A second reviewer checked both two-dirty dependency classes, all 15 mask orbits and all 30 UNSAT log entries, and reran one Glucose4 instance. These numerical exclusions use solver outcomes without proof traces.
+
+## Eight-AND serial cases
+
+In a normalized circuit of size at most 33 with exactly eight AND gates and two exposed serial dirty gates, setting both dirty gates to zero loses between eight and ten positive incidence rows. The lower bound combines the original six-loss and seven-loss checks. The upper bound uses the physical six-terminal exclusion at eleven losses. The two bounds leave the unrestricted minimum at 33–34. [Seven-loss checks](native-serial-seven-loss-complete.zip) · [Eleven-loss exclusion](native-serial-eleven-physical.zip)
+
+If a size-at-most-33 separator with at most eight ANDs exists on one of the four canonical banks, a minimum representative can be selected in which the four private points each touch one socket of a different AND. [Representative selection proof](native-no-saturated-private.zip)
