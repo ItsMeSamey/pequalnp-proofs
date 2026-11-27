@@ -1,0 +1,1 @@
+{"candidate": "56d2c1c422db69c64c0617016f9605cc9741a9b01d04d744b33f8126b5058a35", "checker": "a8c672b9bb8105937ced3d7d10a4b90c5e6e49234f88576a24078b1fb30f04dc", "root_rank": 3, "codim": 3, "lower_budget_no": true, "third_differences": 5120, "returned": [1, 2, 32, 64], "complement_depths": [0, 1, 2, 3], "cpu_s": 0.066805749, "rss_kib": 12160}

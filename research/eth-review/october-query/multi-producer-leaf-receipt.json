@@ -1,0 +1,1 @@
+{"code": 0, "output": "3 4 5\n2 2 0\n3 4 2\nthree original connected CNFs matched true native leaf, including shared variable and UNSAT\n", "rss": 11243520, "wall": 0.09228402300504968}
