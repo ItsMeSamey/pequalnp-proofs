@@ -5,3 +5,5 @@ The producer kernel checked all 61 archived tapes from their initial libraries a
 The [21-profile supplement](official9822-five21-physical-tapes.zip) covers 1,281 exact native roots across 21 excluded five-axis profiles. It contains the 26 incremental kernel-checked modules, original catalogue and native file, incoming-object provenance, and a separate replay program. The Family.complete axiom report lists propext, Classical.choice and Quot.sound. Family.original_headers lists only propext.
 
 The [242-profile archive](official9822-five242.zip) certifies 242 distinct members of the original 617-entry five-axis catalogue. The 221 additional profiles close through the physical contradiction without consuming any runProfile bytes. The previous 21 use at most eight joins. All three standard axioms appear in the producer endpoint. The other 375 entries remain outside this release.
+
+The [atom-width converse](official9822-five-thin-iff.zip) classifies all 617 catalogue entries via iff_short and checks the atom widths of the remaining 396. This classification leaves the count of physical profile exclusions at 242.
