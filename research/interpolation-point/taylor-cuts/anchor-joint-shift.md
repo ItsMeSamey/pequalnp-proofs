@@ -1,0 +1,7 @@
+# Same-selector anchor elimination
+
+Let A be binary alternating and H a rank-three label matrix. The sought bits x satisfy Hx=c and (Ax)_i=b·h_i whenever selected. For any 3-by-n D, set B=A+H^T D+D^T H. Enumerate the eight z=Dx. The exact switched problem is (Hx,Dx)=(c,z) and (Bx)_i=(b+z)·h_i+c·d_i at selected i. The original indicator remains the witness.
+
+Enumerate independent anchor triples E (n-by-3 unit-column matrices). Normalize HE=I by changing label basis and transporting c and dual b. Take K+K^T=E^TAE (strict upper triangle suffices for K). For D=E^TA+KH we obtain B=(I+EH)^TA(I+EH), isolating all anchor vertices. This is polynomial for all O(n³) anchor choices.
+
+Within each component of B let W be the span of its stacked features (h_i,d_i). Rank at most two permits the complete neutral cut response theorem on that component. If each nonzero element of W occurs, the response to incoming functional (b+z,c) is the entire orthogonal subspace in W: choose a singleton of any desired nonzero orthogonal type, or the empty set for zero. Handshake proves necessity. For components meeting either criterion, XOR-convolve the at most 64 local output vectors with witness backpointers, requiring the same total (c,z). When any anchor triple passes everywhere, this decides the original problem and constructs its witness in polynomial time. Failure of all structural tests leaves feasibility open. No exponent bound follows for arbitrary source tensors.
