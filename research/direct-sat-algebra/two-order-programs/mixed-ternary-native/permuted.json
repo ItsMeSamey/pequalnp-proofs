@@ -1,0 +1,434 @@
+[
+  {
+    "seed": 0,
+    "n": 9,
+    "clauses": 24,
+    "status": "sat",
+    "nodes": 5,
+    "cosets": 1,
+    "time_ns": 316818
+  },
+  {
+    "seed": 1,
+    "n": 13,
+    "clauses": 40,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 488597
+  },
+  {
+    "seed": 2,
+    "n": 17,
+    "clauses": 48,
+    "status": "sat",
+    "nodes": 4,
+    "cosets": 1,
+    "time_ns": 674858
+  },
+  {
+    "seed": 3,
+    "n": 21,
+    "clauses": 64,
+    "status": "unsat",
+    "nodes": 4,
+    "cosets": 2,
+    "time_ns": 860117
+  },
+  {
+    "seed": 4,
+    "n": 25,
+    "clauses": 72,
+    "status": "sat",
+    "nodes": 3,
+    "cosets": 1,
+    "time_ns": 689501
+  },
+  {
+    "seed": 5,
+    "n": 29,
+    "clauses": 88,
+    "status": "unsat",
+    "nodes": 3,
+    "cosets": 2,
+    "time_ns": 5206396
+  },
+  {
+    "seed": 6,
+    "n": 33,
+    "clauses": 96,
+    "status": "sat",
+    "nodes": 2,
+    "cosets": 1,
+    "time_ns": 905226
+  },
+  {
+    "seed": 7,
+    "n": 37,
+    "clauses": 112,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 5585358
+  },
+  {
+    "seed": 8,
+    "n": 9,
+    "clauses": 24,
+    "status": "sat",
+    "nodes": 2,
+    "cosets": 1,
+    "time_ns": 226191
+  },
+  {
+    "seed": 9,
+    "n": 13,
+    "clauses": 40,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 4562965
+  },
+  {
+    "seed": 10,
+    "n": 17,
+    "clauses": 48,
+    "status": "sat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 655228
+  },
+  {
+    "seed": 11,
+    "n": 21,
+    "clauses": 64,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 747738
+  },
+  {
+    "seed": 12,
+    "n": 25,
+    "clauses": 72,
+    "status": "sat",
+    "nodes": 2,
+    "cosets": 1,
+    "time_ns": 805605
+  },
+  {
+    "seed": 13,
+    "n": 29,
+    "clauses": 88,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 1044115
+  },
+  {
+    "seed": 14,
+    "n": 33,
+    "clauses": 96,
+    "status": "sat",
+    "nodes": 5,
+    "cosets": 1,
+    "time_ns": 801499
+  },
+  {
+    "seed": 15,
+    "n": 37,
+    "clauses": 112,
+    "status": "unsat",
+    "nodes": 6,
+    "cosets": 2,
+    "time_ns": 1202815
+  },
+  {
+    "seed": 16,
+    "n": 9,
+    "clauses": 24,
+    "status": "sat",
+    "nodes": 5,
+    "cosets": 1,
+    "time_ns": 235686
+  },
+  {
+    "seed": 17,
+    "n": 13,
+    "clauses": 40,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 415607
+  },
+  {
+    "seed": 18,
+    "n": 17,
+    "clauses": 48,
+    "status": "sat",
+    "nodes": 3,
+    "cosets": 1,
+    "time_ns": 410549
+  },
+  {
+    "seed": 19,
+    "n": 21,
+    "clauses": 64,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 870183
+  },
+  {
+    "seed": 20,
+    "n": 25,
+    "clauses": 72,
+    "status": "sat",
+    "nodes": 4,
+    "cosets": 1,
+    "time_ns": 661017
+  },
+  {
+    "seed": 21,
+    "n": 29,
+    "clauses": 88,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 1168463
+  },
+  {
+    "seed": 22,
+    "n": 33,
+    "clauses": 96,
+    "status": "sat",
+    "nodes": 3,
+    "cosets": 1,
+    "time_ns": 1070656
+  },
+  {
+    "seed": 23,
+    "n": 37,
+    "clauses": 112,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 1332020
+  },
+  {
+    "seed": 24,
+    "n": 9,
+    "clauses": 24,
+    "status": "sat",
+    "nodes": 3,
+    "cosets": 2,
+    "time_ns": 289447
+  },
+  {
+    "seed": 25,
+    "n": 13,
+    "clauses": 40,
+    "status": "unsat",
+    "nodes": 3,
+    "cosets": 2,
+    "time_ns": 509899
+  },
+  {
+    "seed": 26,
+    "n": 17,
+    "clauses": 48,
+    "status": "sat",
+    "nodes": 3,
+    "cosets": 1,
+    "time_ns": 430549
+  },
+  {
+    "seed": 27,
+    "n": 21,
+    "clauses": 64,
+    "status": "unsat",
+    "nodes": 3,
+    "cosets": 2,
+    "time_ns": 705204
+  },
+  {
+    "seed": 28,
+    "n": 25,
+    "clauses": 72,
+    "status": "sat",
+    "nodes": 2,
+    "cosets": 1,
+    "time_ns": 650222
+  },
+  {
+    "seed": 29,
+    "n": 29,
+    "clauses": 88,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 950094
+  },
+  {
+    "seed": 30,
+    "n": 33,
+    "clauses": 96,
+    "status": "sat",
+    "nodes": 5,
+    "cosets": 1,
+    "time_ns": 1448876
+  },
+  {
+    "seed": 31,
+    "n": 37,
+    "clauses": 112,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 1157576
+  },
+  {
+    "seed": 32,
+    "n": 9,
+    "clauses": 24,
+    "status": "sat",
+    "nodes": 5,
+    "cosets": 1,
+    "time_ns": 244238
+  },
+  {
+    "seed": 33,
+    "n": 13,
+    "clauses": 40,
+    "status": "unsat",
+    "nodes": 5,
+    "cosets": 2,
+    "time_ns": 472012
+  },
+  {
+    "seed": 34,
+    "n": 17,
+    "clauses": 48,
+    "status": "sat",
+    "nodes": 3,
+    "cosets": 1,
+    "time_ns": 419933
+  },
+  {
+    "seed": 35,
+    "n": 21,
+    "clauses": 64,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 684112
+  },
+  {
+    "seed": 36,
+    "n": 25,
+    "clauses": 72,
+    "status": "sat",
+    "nodes": 2,
+    "cosets": 1,
+    "time_ns": 913778
+  },
+  {
+    "seed": 37,
+    "n": 29,
+    "clauses": 88,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 940980
+  },
+  {
+    "seed": 38,
+    "n": 33,
+    "clauses": 96,
+    "status": "sat",
+    "nodes": 2,
+    "cosets": 1,
+    "time_ns": 898867
+  },
+  {
+    "seed": 39,
+    "n": 37,
+    "clauses": 112,
+    "status": "unsat",
+    "nodes": 3,
+    "cosets": 2,
+    "time_ns": 1789750
+  },
+  {
+    "seed": 40,
+    "n": 9,
+    "clauses": 24,
+    "status": "sat",
+    "nodes": 6,
+    "cosets": 1,
+    "time_ns": 350178
+  },
+  {
+    "seed": 41,
+    "n": 13,
+    "clauses": 40,
+    "status": "unsat",
+    "nodes": 3,
+    "cosets": 2,
+    "time_ns": 676351
+  },
+  {
+    "seed": 42,
+    "n": 17,
+    "clauses": 48,
+    "status": "sat",
+    "nodes": 3,
+    "cosets": 1,
+    "time_ns": 597892
+  },
+  {
+    "seed": 43,
+    "n": 21,
+    "clauses": 64,
+    "status": "unsat",
+    "nodes": 3,
+    "cosets": 2,
+    "time_ns": 996233
+  },
+  {
+    "seed": 44,
+    "n": 25,
+    "clauses": 72,
+    "status": "sat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 909271
+  },
+  {
+    "seed": 45,
+    "n": 29,
+    "clauses": 88,
+    "status": "unsat",
+    "nodes": 2,
+    "cosets": 2,
+    "time_ns": 6437653
+  },
+  {
+    "seed": 46,
+    "n": 33,
+    "clauses": 96,
+    "status": "sat",
+    "nodes": 2,
+    "cosets": 1,
+    "time_ns": 875642
+  },
+  {
+    "seed": 47,
+    "n": 37,
+    "clauses": 112,
+    "status": "unsat",
+    "nodes": 5,
+    "cosets": 2,
+    "time_ns": 1208273
+  }
+]

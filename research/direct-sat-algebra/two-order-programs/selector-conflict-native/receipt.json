@@ -1,0 +1,135 @@
+[
+  {
+    "label": "path",
+    "variables": 3,
+    "physical": 153,
+    "status": "sat",
+    "reason": "full fiber",
+    "witness": 6259416307935775813809614413568805669021269947,
+    "cost": {
+      "n": 153,
+      "clauses": 488,
+      "cells": 1120,
+      "data_probes": 20,
+      "selectors": 3,
+      "data_bits": 54,
+      "compiled_binary_rows": 104,
+      "learned_rows": 4,
+      "elapsed_ns": 5840523
+    }
+  },
+  {
+    "label": "odd cycle",
+    "variables": 3,
+    "physical": 225,
+    "status": "unsat",
+    "reason": "selector 2SAT",
+    "witness": null,
+    "cost": {
+      "n": 225,
+      "clauses": 732,
+      "cells": 1680,
+      "data_probes": 19,
+      "selectors": 3,
+      "data_bits": 78,
+      "compiled_binary_rows": 156,
+      "learned_rows": 6,
+      "elapsed_ns": 7888154
+    }
+  },
+  {
+    "label": "path",
+    "variables": 7,
+    "physical": 453,
+    "status": "sat",
+    "reason": "full fiber",
+    "witness": 5565876787384879919916192024100015769205883476025263720992379494432904126767757130317157159945517303674115901002344159344677673182691135,
+    "cost": {
+      "n": 453,
+      "clauses": 1464,
+      "cells": 3360,
+      "data_probes": 100,
+      "selectors": 7,
+      "data_bits": 158,
+      "compiled_binary_rows": 312,
+      "learned_rows": 12,
+      "elapsed_ns": 86357457
+    }
+  },
+  {
+    "label": "odd cycle",
+    "variables": 7,
+    "physical": 525,
+    "status": "unsat",
+    "reason": "selector 2SAT",
+    "witness": null,
+    "cost": {
+      "n": 525,
+      "clauses": 1708,
+      "cells": 3920,
+      "data_probes": 99,
+      "selectors": 7,
+      "data_bits": 182,
+      "compiled_binary_rows": 364,
+      "learned_rows": 14,
+      "elapsed_ns": 87434393
+    }
+  },
+  {
+    "label": "path",
+    "variables": 15,
+    "physical": 1053,
+    "status": "sat",
+    "reason": "full fiber",
+    "witness": 34255341757025578230875730339655430051348015527231933985126657791474400916419843302012407712239741047972853012251306306071823413755700287001234420098074307311244713281155625748621403505467635296249983038144543388499104841142162656708143126972618036742771264392675906523920263850795680731168139914826683368937236904191,
+    "cost": {
+      "n": 1053,
+      "clauses": 3416,
+      "cells": 7840,
+      "data_probes": 452,
+      "selectors": 15,
+      "data_bits": 366,
+      "compiled_binary_rows": 728,
+      "learned_rows": 28,
+      "elapsed_ns": 698564400
+    }
+  },
+  {
+    "label": "odd cycle",
+    "variables": 15,
+    "physical": 1125,
+    "status": "unsat",
+    "reason": "selector 2SAT",
+    "witness": null,
+    "cost": {
+      "n": 1125,
+      "clauses": 3660,
+      "cells": 8400,
+      "data_probes": 451,
+      "selectors": 15,
+      "data_bits": 390,
+      "compiled_binary_rows": 780,
+      "learned_rows": 30,
+      "elapsed_ns": 668356399
+    }
+  },
+  {
+    "label": "all eight 3-clauses",
+    "variables": 3,
+    "physical": 441,
+    "status": "skip",
+    "reason": "full activation exceeds pair explanations",
+    "witness": null,
+    "cost": {
+      "n": 441,
+      "clauses": 1464,
+      "cells": 3360,
+      "data_probes": 20,
+      "selectors": 3,
+      "data_bits": 150,
+      "compiled_binary_rows": 312,
+      "learned_rows": 0,
+      "elapsed_ns": 16990499
+    }
+  }
+]

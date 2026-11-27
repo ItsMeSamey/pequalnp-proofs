@@ -1,0 +1,318 @@
+[
+  {
+    "m": 4,
+    "bad": false,
+    "new": {
+      "status": "sat",
+      "route": "transversal",
+      "witness": 12982,
+      "cost": {
+        "raw_n": 17,
+        "raw_clauses": 40,
+        "cells": 112,
+        "groups": {
+          "3": 12,
+          "2": 4
+        },
+        "extract_arities": [
+          3
+        ],
+        "search_nodes": 2,
+        "cosets": [
+          {
+            "coset": 0,
+            "bits": 8,
+            "oriented": true,
+            "method": "2sat",
+            "rows": 8,
+            "status": "sat"
+          }
+        ],
+        "fallback_evaluations": 0,
+        "chart_dimension": 9,
+        "residual_clauses": 8,
+        "cover": [
+          9
+        ],
+        "elapsed_ns": 601638
+      }
+    },
+    "prior": [
+      "skip",
+      "original enumeration",
+      null,
+      150149979,
+      128
+    ],
+    "prior_timeout_seconds": 2
+  },
+  {
+    "m": 4,
+    "bad": true,
+    "new": {
+      "status": "unsat",
+      "route": "transversal",
+      "witness": null,
+      "cost": {
+        "raw_n": 17,
+        "raw_clauses": 44,
+        "cells": 120,
+        "groups": {
+          "3": 12,
+          "1": 4,
+          "2": 4
+        },
+        "extract_arities": [
+          3
+        ],
+        "search_nodes": 2,
+        "cosets": [
+          {
+            "coset": 0,
+            "bits": 8,
+            "oriented": true,
+            "method": "2sat",
+            "rows": 11,
+            "status": "unsat"
+          },
+          {
+            "coset": 1,
+            "bits": 8,
+            "oriented": true,
+            "method": "2sat",
+            "rows": 9,
+            "status": "unsat"
+          }
+        ],
+        "fallback_evaluations": 0,
+        "chart_dimension": 9,
+        "residual_clauses": 12,
+        "cover": [
+          9
+        ],
+        "elapsed_ns": 632554
+      }
+    },
+    "prior": [
+      "unsat",
+      "UP",
+      null,
+      938656,
+      0
+    ],
+    "prior_timeout_seconds": 2
+  },
+  {
+    "m": 4,
+    "bad": "odd_exterior",
+    "new": {
+      "status": "unsat",
+      "route": "transversal",
+      "witness": null,
+      "cost": {
+        "raw_n": 17,
+        "raw_clauses": 46,
+        "cells": 124,
+        "groups": {
+          "3": 12,
+          "2": 7
+        },
+        "extract_arities": [
+          3
+        ],
+        "search_nodes": 2,
+        "cosets": [
+          {
+            "coset": 0,
+            "bits": 8,
+            "oriented": true,
+            "method": "2sat",
+            "rows": 14,
+            "status": "unsat"
+          },
+          {
+            "coset": 1,
+            "bits": 8,
+            "oriented": true,
+            "method": "2sat",
+            "rows": 10,
+            "status": "unsat"
+          }
+        ],
+        "fallback_evaluations": 0,
+        "chart_dimension": 9,
+        "residual_clauses": 14,
+        "cover": [
+          9
+        ],
+        "elapsed_ns": 860879
+      }
+    },
+    "prior": [
+      "skip",
+      "original enumeration",
+      null,
+      87071429,
+      128
+    ],
+    "prior_timeout_seconds": 2
+  },
+  {
+    "m": 12,
+    "bad": false,
+    "new": {
+      "status": "sat",
+      "route": "transversal",
+      "witness": 431720649159170,
+      "cost": {
+        "raw_n": 49,
+        "raw_clauses": 120,
+        "cells": 336,
+        "groups": {
+          "3": 36,
+          "2": 12
+        },
+        "extract_arities": [
+          3
+        ],
+        "search_nodes": 3,
+        "cosets": [
+          {
+            "coset": 0,
+            "bits": 24,
+            "oriented": true,
+            "method": "2sat",
+            "rows": 24,
+            "status": "sat"
+          }
+        ],
+        "fallback_evaluations": 0,
+        "chart_dimension": 25,
+        "residual_clauses": 24,
+        "cover": [
+          24
+        ],
+        "elapsed_ns": 1596569
+      }
+    },
+    "prior": [
+      "skip",
+      "original enumeration",
+      null,
+      227024547,
+      128
+    ],
+    "prior_timeout_seconds": 2
+  },
+  {
+    "m": 12,
+    "bad": true,
+    "new": {
+      "status": "unsat",
+      "route": "transversal",
+      "witness": null,
+      "cost": {
+        "raw_n": 49,
+        "raw_clauses": 124,
+        "cells": 344,
+        "groups": {
+          "3": 36,
+          "2": 12,
+          "1": 4
+        },
+        "extract_arities": [
+          3
+        ],
+        "search_nodes": 2,
+        "cosets": [
+          {
+            "coset": 0,
+            "bits": 24,
+            "oriented": true,
+            "method": "2sat",
+            "rows": 27,
+            "status": "unsat"
+          },
+          {
+            "coset": 1,
+            "bits": 24,
+            "oriented": true,
+            "method": "2sat",
+            "rows": 17,
+            "status": "unsat"
+          }
+        ],
+        "fallback_evaluations": 0,
+        "chart_dimension": 25,
+        "residual_clauses": 28,
+        "cover": [
+          24
+        ],
+        "elapsed_ns": 1857873
+      }
+    },
+    "prior": [
+      "unsat",
+      "UP",
+      null,
+      346152,
+      0
+    ],
+    "prior_timeout_seconds": 2
+  },
+  {
+    "m": 12,
+    "bad": "odd_exterior",
+    "new": {
+      "status": "unsat",
+      "route": "transversal",
+      "witness": null,
+      "cost": {
+        "raw_n": 49,
+        "raw_clauses": 126,
+        "cells": 348,
+        "groups": {
+          "3": 36,
+          "2": 15
+        },
+        "extract_arities": [
+          3
+        ],
+        "search_nodes": 2,
+        "cosets": [
+          {
+            "coset": 0,
+            "bits": 24,
+            "oriented": true,
+            "method": "2sat",
+            "rows": 30,
+            "status": "unsat"
+          },
+          {
+            "coset": 1,
+            "bits": 24,
+            "oriented": true,
+            "method": "2sat",
+            "rows": 18,
+            "status": "unsat"
+          }
+        ],
+        "fallback_evaluations": 0,
+        "chart_dimension": 25,
+        "residual_clauses": 30,
+        "cover": [
+          24
+        ],
+        "elapsed_ns": 1429517
+      }
+    },
+    "prior": [
+      "skip",
+      "original enumeration",
+      null,
+      99781546,
+      128
+    ],
+    "prior_timeout_seconds": 2
+  }
+]

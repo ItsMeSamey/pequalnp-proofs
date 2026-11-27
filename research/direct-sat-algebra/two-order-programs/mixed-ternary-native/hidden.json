@@ -1,0 +1,2914 @@
+[
+  {
+    "seed": 0,
+    "copies": 1,
+    "n": 21,
+    "status": "sat",
+    "cost": {
+      "raw_n": 21,
+      "raw_clauses": 60,
+      "cells": 144,
+      "groups": {
+        "3": 15,
+        "2": 6
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 11,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 9,
+      "residual_clauses": 12,
+      "cover_method": "branch_search",
+      "cover": [
+        7
+      ],
+      "elapsed_ns": 810162
+    }
+  },
+  {
+    "seed": 0,
+    "copies": 1,
+    "n": 21,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 21,
+      "raw_clauses": 66,
+      "cells": 156,
+      "groups": {
+        "3": 15,
+        "2": 9
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 17,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 16,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 9,
+      "residual_clauses": 18,
+      "cover_method": "branch_search",
+      "cover": [
+        7
+      ],
+      "elapsed_ns": 784924
+    }
+  },
+  {
+    "seed": 1,
+    "copies": 1,
+    "n": 27,
+    "status": "sat",
+    "cost": {
+      "raw_n": 27,
+      "raw_clauses": 80,
+      "cells": 204,
+      "groups": {
+        "3": 20,
+        "2": 11
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 4,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 14,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 11,
+      "residual_clauses": 15,
+      "cover_method": "branch_search",
+      "cover": [
+        133
+      ],
+      "elapsed_ns": 695570
+    }
+  },
+  {
+    "seed": 1,
+    "copies": 1,
+    "n": 27,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 27,
+      "raw_clauses": 86,
+      "cells": 216,
+      "groups": {
+        "3": 20,
+        "2": 14
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 3,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 20,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 18,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 11,
+      "residual_clauses": 21,
+      "cover_method": "branch_search",
+      "cover": [
+        133
+      ],
+      "elapsed_ns": 879827
+    }
+  },
+  {
+    "seed": 2,
+    "copies": 1,
+    "n": 33,
+    "status": "sat",
+    "cost": {
+      "raw_n": 33,
+      "raw_clauses": 100,
+      "cells": 256,
+      "groups": {
+        "3": 25,
+        "2": 14
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 4,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 17,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 13,
+      "residual_clauses": 20,
+      "cover_method": "branch_search",
+      "cover": [
+        23
+      ],
+      "elapsed_ns": 715510
+    }
+  },
+  {
+    "seed": 2,
+    "copies": 1,
+    "n": 33,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 33,
+      "raw_clauses": 106,
+      "cells": 268,
+      "groups": {
+        "3": 25,
+        "2": 17
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 23,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 24,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 13,
+      "residual_clauses": 26,
+      "cover_method": "branch_search",
+      "cover": [
+        23
+      ],
+      "elapsed_ns": 1090756
+    }
+  },
+  {
+    "seed": 3,
+    "copies": 1,
+    "n": 21,
+    "status": "sat",
+    "cost": {
+      "raw_n": 21,
+      "raw_clauses": 60,
+      "cells": 152,
+      "groups": {
+        "3": 15,
+        "2": 8
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 8,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 12,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 9,
+      "residual_clauses": 12,
+      "cover_method": "branch_search",
+      "cover": [
+        315
+      ],
+      "elapsed_ns": 785505
+    }
+  },
+  {
+    "seed": 3,
+    "copies": 1,
+    "n": 21,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 21,
+      "raw_clauses": 66,
+      "cells": 160,
+      "groups": {
+        "2": 10,
+        "3": 15
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 6,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 17,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 14,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 9,
+      "residual_clauses": 17,
+      "cover_method": "branch_search",
+      "cover": [
+        315
+      ],
+      "elapsed_ns": 679916
+    }
+  },
+  {
+    "seed": 4,
+    "copies": 1,
+    "n": 27,
+    "status": "sat",
+    "cost": {
+      "raw_n": 27,
+      "raw_clauses": 80,
+      "cells": 204,
+      "groups": {
+        "3": 20,
+        "2": 11
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 5,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 13,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 11,
+      "residual_clauses": 16,
+      "cover_method": "branch_search",
+      "cover": [
+        1376
+      ],
+      "elapsed_ns": 596790
+    }
+  },
+  {
+    "seed": 4,
+    "copies": 1,
+    "n": 27,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 27,
+      "raw_clauses": 86,
+      "cells": 212,
+      "groups": {
+        "3": 20,
+        "2": 13
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 5,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 18,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 20,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 11,
+      "residual_clauses": 21,
+      "cover_method": "branch_search",
+      "cover": [
+        1376
+      ],
+      "elapsed_ns": 5197963
+    }
+  },
+  {
+    "seed": 5,
+    "copies": 1,
+    "n": 33,
+    "status": "sat",
+    "cost": {
+      "raw_n": 33,
+      "raw_clauses": 100,
+      "cells": 256,
+      "groups": {
+        "3": 25,
+        "2": 14
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 19,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 13,
+      "residual_clauses": 20,
+      "cover_method": "branch_search",
+      "cover": [
+        15
+      ],
+      "elapsed_ns": 733637
+    }
+  },
+  {
+    "seed": 5,
+    "copies": 1,
+    "n": 33,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 33,
+      "raw_clauses": 106,
+      "cells": 260,
+      "groups": {
+        "2": 15,
+        "3": 25
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 4,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 24,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 21,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 13,
+      "residual_clauses": 25,
+      "cover_method": "branch_search",
+      "cover": [
+        15
+      ],
+      "elapsed_ns": 1005247
+    }
+  },
+  {
+    "seed": 6,
+    "copies": 1,
+    "n": 21,
+    "status": "sat",
+    "cost": {
+      "raw_n": 21,
+      "raw_clauses": 60,
+      "cells": 148,
+      "groups": {
+        "3": 15,
+        "2": 7
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 7,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 10,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 9,
+      "residual_clauses": 12,
+      "cover_method": "branch_search",
+      "cover": [
+        292
+      ],
+      "elapsed_ns": 487305
+    }
+  },
+  {
+    "seed": 6,
+    "copies": 1,
+    "n": 21,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 21,
+      "raw_clauses": 66,
+      "cells": 156,
+      "groups": {
+        "2": 9,
+        "3": 15
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 7,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 15,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 16,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 9,
+      "residual_clauses": 17,
+      "cover_method": "branch_search",
+      "cover": [
+        292
+      ],
+      "elapsed_ns": 2128081
+    }
+  },
+  {
+    "seed": 7,
+    "copies": 1,
+    "n": 27,
+    "status": "sat",
+    "cost": {
+      "raw_n": 27,
+      "raw_clauses": 80,
+      "cells": 204,
+      "groups": {
+        "2": 11,
+        "3": 20
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 13,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 11,
+      "residual_clauses": 16,
+      "cover_method": "branch_search",
+      "cover": [
+        77
+      ],
+      "elapsed_ns": 640756
+    }
+  },
+  {
+    "seed": 7,
+    "copies": 1,
+    "n": 27,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 27,
+      "raw_clauses": 86,
+      "cells": 212,
+      "groups": {
+        "2": 13,
+        "3": 20
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 18,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 20,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 11,
+      "residual_clauses": 21,
+      "cover_method": "branch_search",
+      "cover": [
+        77
+      ],
+      "elapsed_ns": 777113
+    }
+  },
+  {
+    "seed": 8,
+    "copies": 1,
+    "n": 33,
+    "status": "sat",
+    "cost": {
+      "raw_n": 33,
+      "raw_clauses": 100,
+      "cells": 256,
+      "groups": {
+        "3": 25,
+        "2": 14
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 8,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 17,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 13,
+      "residual_clauses": 19,
+      "cover_method": "branch_search",
+      "cover": [
+        302
+      ],
+      "elapsed_ns": 814198
+    }
+  },
+  {
+    "seed": 8,
+    "copies": 1,
+    "n": 33,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 33,
+      "raw_clauses": 106,
+      "cells": 268,
+      "groups": {
+        "2": 17,
+        "3": 25
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 8,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 23,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 22,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 13,
+      "residual_clauses": 25,
+      "cover_method": "branch_search",
+      "cover": [
+        302
+      ],
+      "elapsed_ns": 1224517
+    }
+  },
+  {
+    "seed": 9,
+    "copies": 1,
+    "n": 21,
+    "status": "sat",
+    "cost": {
+      "raw_n": 21,
+      "raw_clauses": 60,
+      "cells": 152,
+      "groups": {
+        "3": 15,
+        "2": 8
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 7,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 11,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 9,
+      "residual_clauses": 12,
+      "cover_method": "branch_search",
+      "cover": [
+        186
+      ],
+      "elapsed_ns": 481997
+    }
+  },
+  {
+    "seed": 9,
+    "copies": 1,
+    "n": 21,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 21,
+      "raw_clauses": 66,
+      "cells": 160,
+      "groups": {
+        "3": 15,
+        "2": 10
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 7,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 16,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 15,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 9,
+      "residual_clauses": 17,
+      "cover_method": "branch_search",
+      "cover": [
+        186
+      ],
+      "elapsed_ns": 811063
+    }
+  },
+  {
+    "seed": 10,
+    "copies": 1,
+    "n": 27,
+    "status": "sat",
+    "cost": {
+      "raw_n": 27,
+      "raw_clauses": 80,
+      "cells": 200,
+      "groups": {
+        "3": 20,
+        "2": 10
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 5,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 13,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 11,
+      "residual_clauses": 16,
+      "cover_method": "branch_search",
+      "cover": [
+        1352
+      ],
+      "elapsed_ns": 663692
+    }
+  },
+  {
+    "seed": 10,
+    "copies": 1,
+    "n": 27,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 27,
+      "raw_clauses": 86,
+      "cells": 208,
+      "groups": {
+        "3": 20,
+        "2": 12
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 5,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 19,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 21,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 11,
+      "residual_clauses": 22,
+      "cover_method": "branch_search",
+      "cover": [
+        1352
+      ],
+      "elapsed_ns": 818846
+    }
+  },
+  {
+    "seed": 11,
+    "copies": 1,
+    "n": 33,
+    "status": "sat",
+    "cost": {
+      "raw_n": 33,
+      "raw_clauses": 100,
+      "cells": 256,
+      "groups": {
+        "3": 25,
+        "2": 14
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 4,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 17,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 13,
+      "residual_clauses": 19,
+      "cover_method": "branch_search",
+      "cover": [
+        324
+      ],
+      "elapsed_ns": 693747
+    }
+  },
+  {
+    "seed": 11,
+    "copies": 1,
+    "n": 33,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 33,
+      "raw_clauses": 106,
+      "cells": 268,
+      "groups": {
+        "3": 25,
+        "2": 17
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 23,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 22,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 13,
+      "residual_clauses": 25,
+      "cover_method": "branch_search",
+      "cover": [
+        324
+      ],
+      "elapsed_ns": 920478
+    }
+  },
+  {
+    "seed": 12,
+    "copies": 1,
+    "n": 21,
+    "status": "sat",
+    "cost": {
+      "raw_n": 21,
+      "raw_clauses": 60,
+      "cells": 156,
+      "groups": {
+        "3": 15,
+        "2": 9
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 5,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 10,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 9,
+      "residual_clauses": 12,
+      "cover_method": "branch_search",
+      "cover": [
+        259
+      ],
+      "elapsed_ns": 767879
+    }
+  },
+  {
+    "seed": 12,
+    "copies": 1,
+    "n": 21,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 21,
+      "raw_clauses": 66,
+      "cells": 168,
+      "groups": {
+        "2": 12,
+        "3": 15
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 5,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 16,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 17,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 9,
+      "residual_clauses": 18,
+      "cover_method": "branch_search",
+      "cover": [
+        259
+      ],
+      "elapsed_ns": 1808589
+    }
+  },
+  {
+    "seed": 13,
+    "copies": 1,
+    "n": 27,
+    "status": "sat",
+    "cost": {
+      "raw_n": 27,
+      "raw_clauses": 80,
+      "cells": 204,
+      "groups": {
+        "3": 20,
+        "2": 11
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 8,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 16,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 11,
+      "residual_clauses": 16,
+      "cover_method": "branch_search",
+      "cover": [
+        292
+      ],
+      "elapsed_ns": 725385
+    }
+  },
+  {
+    "seed": 13,
+    "copies": 1,
+    "n": 27,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 27,
+      "raw_clauses": 86,
+      "cells": 216,
+      "groups": {
+        "3": 20,
+        "2": 14
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 3,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 22,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 10,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 18,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 11,
+      "residual_clauses": 22,
+      "cover_method": "branch_search",
+      "cover": [
+        292
+      ],
+      "elapsed_ns": 945838
+    }
+  },
+  {
+    "seed": 14,
+    "copies": 1,
+    "n": 33,
+    "status": "sat",
+    "cost": {
+      "raw_n": 33,
+      "raw_clauses": 100,
+      "cells": 256,
+      "groups": {
+        "3": 25,
+        "2": 14
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 19,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 13,
+      "residual_clauses": 20,
+      "cover_method": "branch_search",
+      "cover": [
+        228
+      ],
+      "elapsed_ns": 723431
+    }
+  },
+  {
+    "seed": 14,
+    "copies": 1,
+    "n": 33,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 33,
+      "raw_clauses": 106,
+      "cells": 268,
+      "groups": {
+        "3": 25,
+        "2": 17
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 8,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 25,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 12,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 22,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 13,
+      "residual_clauses": 26,
+      "cover_method": "branch_search",
+      "cover": [
+        228
+      ],
+      "elapsed_ns": 1830773
+    }
+  },
+  {
+    "seed": 15,
+    "copies": 1,
+    "n": 21,
+    "status": "sat",
+    "cost": {
+      "raw_n": 21,
+      "raw_clauses": 60,
+      "cells": 148,
+      "groups": {
+        "3": 15,
+        "2": 7
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 8,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 11,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 9,
+      "residual_clauses": 11,
+      "cover_method": "branch_search",
+      "cover": [
+        97
+      ],
+      "elapsed_ns": 596570
+    }
+  },
+  {
+    "seed": 15,
+    "copies": 1,
+    "n": 21,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 21,
+      "raw_clauses": 66,
+      "cells": 160,
+      "groups": {
+        "3": 15,
+        "2": 10
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 17,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 8,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 14,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 9,
+      "residual_clauses": 17,
+      "cover_method": "branch_search",
+      "cover": [
+        97
+      ],
+      "elapsed_ns": 638574
+    }
+  },
+  {
+    "seed": 0,
+    "copies": 2,
+    "n": 42,
+    "status": "sat",
+    "cost": {
+      "raw_n": 42,
+      "raw_clauses": 120,
+      "cells": 312,
+      "groups": {
+        "3": 30,
+        "2": 18
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 3,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 21,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 18,
+      "residual_clauses": 24,
+      "cover_method": "branch_search",
+      "cover": [
+        3584,
+        7
+      ],
+      "elapsed_ns": 931566
+    }
+  },
+  {
+    "seed": 0,
+    "copies": 2,
+    "n": 42,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 42,
+      "raw_clauses": 126,
+      "cells": 324,
+      "groups": {
+        "2": 21,
+        "3": 30
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 3,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 27,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 28,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 26,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 27,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 18,
+      "residual_clauses": 30,
+      "cover_method": "branch_search",
+      "cover": [
+        3584,
+        7
+      ],
+      "elapsed_ns": 1888469
+    }
+  },
+  {
+    "seed": 1,
+    "copies": 2,
+    "n": 54,
+    "status": "sat",
+    "cost": {
+      "raw_n": 54,
+      "raw_clauses": 160,
+      "cells": 416,
+      "groups": {
+        "3": 40,
+        "2": 24
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 12,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 29,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 22,
+      "residual_clauses": 32,
+      "cover_method": "branch_search",
+      "cover": [
+        1188,
+        559112
+      ],
+      "elapsed_ns": 1397448
+    }
+  },
+  {
+    "seed": 1,
+    "copies": 2,
+    "n": 54,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 54,
+      "raw_clauses": 166,
+      "cells": 428,
+      "groups": {
+        "2": 27,
+        "3": 40
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 28,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 35,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 35,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 33,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 33,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 22,
+      "residual_clauses": 38,
+      "cover_method": "branch_search",
+      "cover": [
+        559112,
+        1188
+      ],
+      "elapsed_ns": 2668597
+    }
+  },
+  {
+    "seed": 2,
+    "copies": 2,
+    "n": 66,
+    "status": "sat",
+    "cost": {
+      "raw_n": 66,
+      "raw_clauses": 200,
+      "cells": 516,
+      "groups": {
+        "3": 50,
+        "2": 29
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 57,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 35,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 26,
+      "residual_clauses": 40,
+      "cover_method": "branch_search",
+      "cover": [
+        16641,
+        2105360
+      ],
+      "elapsed_ns": 1961109
+    }
+  },
+  {
+    "seed": 2,
+    "copies": 2,
+    "n": 66,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 66,
+      "raw_clauses": 206,
+      "cells": 528,
+      "groups": {
+        "3": 50,
+        "2": 32
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 54,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 41,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 42,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 40,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 41,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 26,
+      "residual_clauses": 46,
+      "cover_method": "branch_search",
+      "cover": [
+        2105360,
+        16641
+      ],
+      "elapsed_ns": 3472900
+    }
+  },
+  {
+    "seed": 3,
+    "copies": 2,
+    "n": 42,
+    "status": "sat",
+    "cost": {
+      "raw_n": 42,
+      "raw_clauses": 120,
+      "cells": 312,
+      "groups": {
+        "2": 18,
+        "3": 30
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 39,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 24,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 18,
+      "residual_clauses": 24,
+      "cover_method": "branch_search",
+      "cover": [
+        133376,
+        34432
+      ],
+      "elapsed_ns": 1465241
+    }
+  },
+  {
+    "seed": 3,
+    "copies": 2,
+    "n": 42,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 42,
+      "raw_clauses": 126,
+      "cells": 324,
+      "groups": {
+        "2": 21,
+        "3": 30
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 55,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 30,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 27,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 27,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 24,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 18,
+      "residual_clauses": 30,
+      "cover_method": "branch_search",
+      "cover": [
+        133376,
+        34432
+      ],
+      "elapsed_ns": 3542235
+    }
+  },
+  {
+    "seed": 4,
+    "copies": 2,
+    "n": 54,
+    "status": "sat",
+    "cost": {
+      "raw_n": 54,
+      "raw_clauses": 160,
+      "cells": 416,
+      "groups": {
+        "3": 40,
+        "2": 24
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 44,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 25,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 22,
+      "residual_clauses": 32,
+      "cover_method": "branch_search",
+      "cover": [
+        135220,
+        1572928
+      ],
+      "elapsed_ns": 1749500
+    }
+  },
+  {
+    "seed": 4,
+    "copies": 2,
+    "n": 54,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 54,
+      "raw_clauses": 166,
+      "cells": 428,
+      "groups": {
+        "3": 40,
+        "2": 27
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 17,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 31,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 33,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 35,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 37,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 22,
+      "residual_clauses": 38,
+      "cover_method": "branch_search",
+      "cover": [
+        1572928,
+        135220
+      ],
+      "elapsed_ns": 2580634
+    }
+  },
+  {
+    "seed": 5,
+    "copies": 2,
+    "n": 66,
+    "status": "sat",
+    "cost": {
+      "raw_n": 66,
+      "raw_clauses": 200,
+      "cells": 512,
+      "groups": {
+        "2": 28,
+        "3": 50
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 25,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 35,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 26,
+      "residual_clauses": 38,
+      "cover_method": "branch_search",
+      "cover": [
+        264272,
+        16420
+      ],
+      "elapsed_ns": 1968149
+    }
+  },
+  {
+    "seed": 5,
+    "copies": 2,
+    "n": 66,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 66,
+      "raw_clauses": 206,
+      "cells": 520,
+      "groups": {
+        "3": 50,
+        "2": 30
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 20,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 41,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 38,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 40,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 37,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 26,
+      "residual_clauses": 44,
+      "cover_method": "branch_search",
+      "cover": [
+        264272,
+        16420
+      ],
+      "elapsed_ns": 2873766
+    }
+  },
+  {
+    "seed": 6,
+    "copies": 2,
+    "n": 42,
+    "status": "sat",
+    "cost": {
+      "raw_n": 42,
+      "raw_clauses": 120,
+      "cells": 304,
+      "groups": {
+        "3": 30,
+        "2": 16
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 9,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 19,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 18,
+      "residual_clauses": 22,
+      "cover_method": "branch_search",
+      "cover": [
+        9217,
+        4136
+      ],
+      "elapsed_ns": 983414
+    }
+  },
+  {
+    "seed": 6,
+    "copies": 2,
+    "n": 42,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 42,
+      "raw_clauses": 126,
+      "cells": 316,
+      "groups": {
+        "3": 30,
+        "2": 19
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 9,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 25,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 26,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 24,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 25,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 18,
+      "residual_clauses": 28,
+      "cover_method": "branch_search",
+      "cover": [
+        9217,
+        4136
+      ],
+      "elapsed_ns": 2022071
+    }
+  },
+  {
+    "seed": 7,
+    "copies": 2,
+    "n": 54,
+    "status": "sat",
+    "cost": {
+      "raw_n": 54,
+      "raw_clauses": 160,
+      "cells": 400,
+      "groups": {
+        "3": 40,
+        "2": 20
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 33,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 25,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 22,
+      "residual_clauses": 30,
+      "cover_method": "branch_search",
+      "cover": [
+        1441792,
+        34817
+      ],
+      "elapsed_ns": 1632403
+    }
+  },
+  {
+    "seed": 7,
+    "copies": 2,
+    "n": 54,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 54,
+      "raw_clauses": 166,
+      "cells": 412,
+      "groups": {
+        "3": 40,
+        "2": 23
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 55,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 31,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 31,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 33,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 33,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 22,
+      "residual_clauses": 36,
+      "cover_method": "branch_search",
+      "cover": [
+        1441792,
+        34817
+      ],
+      "elapsed_ns": 3018985
+    }
+  },
+  {
+    "seed": 8,
+    "copies": 2,
+    "n": 66,
+    "status": "sat",
+    "cost": {
+      "raw_n": 66,
+      "raw_clauses": 200,
+      "cells": 520,
+      "groups": {
+        "3": 50,
+        "2": 30
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 30,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 35,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 26,
+      "residual_clauses": 40,
+      "cover_method": "branch_search",
+      "cover": [
+        296961,
+        1048752
+      ],
+      "elapsed_ns": 1626745
+    }
+  },
+  {
+    "seed": 8,
+    "copies": 2,
+    "n": 66,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 66,
+      "raw_clauses": 206,
+      "cells": 532,
+      "groups": {
+        "3": 50,
+        "2": 33
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 33,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 41,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 42,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 40,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 41,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 26,
+      "residual_clauses": 46,
+      "cover_method": "branch_search",
+      "cover": [
+        1048752,
+        296961
+      ],
+      "elapsed_ns": 3621765
+    }
+  },
+  {
+    "seed": 9,
+    "copies": 2,
+    "n": 42,
+    "status": "sat",
+    "cost": {
+      "raw_n": 42,
+      "raw_clauses": 120,
+      "cells": 308,
+      "groups": {
+        "3": 30,
+        "2": 17
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 46,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 20,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 18,
+      "residual_clauses": 23,
+      "cover_method": "branch_search",
+      "cover": [
+        674,
+        10304
+      ],
+      "elapsed_ns": 1404068
+    }
+  },
+  {
+    "seed": 9,
+    "copies": 2,
+    "n": 42,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 42,
+      "raw_clauses": 126,
+      "cells": 320,
+      "groups": {
+        "3": 30,
+        "2": 20
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 32,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 26,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 25,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 27,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 26,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 18,
+      "residual_clauses": 29,
+      "cover_method": "branch_search",
+      "cover": [
+        10304,
+        674
+      ],
+      "elapsed_ns": 2403727
+    }
+  },
+  {
+    "seed": 10,
+    "copies": 2,
+    "n": 54,
+    "status": "sat",
+    "cost": {
+      "raw_n": 54,
+      "raw_clauses": 160,
+      "cells": 416,
+      "groups": {
+        "3": 40,
+        "2": 24
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 11,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 28,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 22,
+      "residual_clauses": 32,
+      "cover_method": "branch_search",
+      "cover": [
+        32804,
+        386
+      ],
+      "elapsed_ns": 1411670
+    }
+  },
+  {
+    "seed": 10,
+    "copies": 2,
+    "n": 54,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 54,
+      "raw_clauses": 166,
+      "cells": 424,
+      "groups": {
+        "3": 40,
+        "2": 26
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 13,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 34,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 32,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 36,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 34,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 22,
+      "residual_clauses": 38,
+      "cover_method": "branch_search",
+      "cover": [
+        32804,
+        386
+      ],
+      "elapsed_ns": 2655517
+    }
+  },
+  {
+    "seed": 11,
+    "copies": 2,
+    "n": 66,
+    "status": "sat",
+    "cost": {
+      "raw_n": 66,
+      "raw_clauses": 200,
+      "cells": 516,
+      "groups": {
+        "3": 50,
+        "2": 29
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 14,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 35,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 26,
+      "residual_clauses": 39,
+      "cover_method": "branch_search",
+      "cover": [
+        135232,
+        41009
+      ],
+      "elapsed_ns": 1598582
+    }
+  },
+  {
+    "seed": 11,
+    "copies": 2,
+    "n": 66,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 66,
+      "raw_clauses": 206,
+      "cells": 528,
+      "groups": {
+        "3": 50,
+        "2": 32
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 4,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 41,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 40,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 40,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 39,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 26,
+      "residual_clauses": 45,
+      "cover_method": "branch_search",
+      "cover": [
+        135232,
+        41009
+      ],
+      "elapsed_ns": 2826475
+    }
+  },
+  {
+    "seed": 12,
+    "copies": 2,
+    "n": 42,
+    "status": "sat",
+    "cost": {
+      "raw_n": 42,
+      "raw_clauses": 120,
+      "cells": 304,
+      "groups": {
+        "2": 16,
+        "3": 30
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 22,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 22,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 18,
+      "residual_clauses": 24,
+      "cover_method": "branch_search",
+      "cover": [
+        4236,
+        33072
+      ],
+      "elapsed_ns": 1172699
+    }
+  },
+  {
+    "seed": 12,
+    "copies": 2,
+    "n": 42,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 42,
+      "raw_clauses": 126,
+      "cells": 316,
+      "groups": {
+        "3": 30,
+        "2": 19
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 30,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 28,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 29,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 25,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 26,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 18,
+      "residual_clauses": 30,
+      "cover_method": "branch_search",
+      "cover": [
+        33072,
+        4236
+      ],
+      "elapsed_ns": 2626533
+    }
+  },
+  {
+    "seed": 13,
+    "copies": 2,
+    "n": 54,
+    "status": "sat",
+    "cost": {
+      "raw_n": 54,
+      "raw_clauses": 160,
+      "cells": 412,
+      "groups": {
+        "3": 40,
+        "2": 23
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 16,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 29,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 22,
+      "residual_clauses": 32,
+      "cover_method": "branch_search",
+      "cover": [
+        2184,
+        671808
+      ],
+      "elapsed_ns": 1238489
+    }
+  },
+  {
+    "seed": 13,
+    "copies": 2,
+    "n": 54,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 54,
+      "raw_clauses": 166,
+      "cells": 420,
+      "groups": {
+        "3": 40,
+        "2": 25
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 44,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 35,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 31,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 37,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 20,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 33,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 22,
+      "residual_clauses": 38,
+      "cover_method": "branch_search",
+      "cover": [
+        671808,
+        2184
+      ],
+      "elapsed_ns": 3431687
+    }
+  },
+  {
+    "seed": 14,
+    "copies": 2,
+    "n": 66,
+    "status": "sat",
+    "cost": {
+      "raw_n": 66,
+      "raw_clauses": 200,
+      "cells": 508,
+      "groups": {
+        "2": 27,
+        "3": 50
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 40,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 36,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 26,
+      "residual_clauses": 39,
+      "cover_method": "branch_search",
+      "cover": [
+        9437472,
+        152640
+      ],
+      "elapsed_ns": 2085026
+    }
+  },
+  {
+    "seed": 14,
+    "copies": 2,
+    "n": 66,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 66,
+      "raw_clauses": 206,
+      "cells": 520,
+      "groups": {
+        "3": 50,
+        "2": 30
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 38,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 42,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 39,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 41,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 24,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 38,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 26,
+      "residual_clauses": 45,
+      "cover_method": "branch_search",
+      "cover": [
+        9437472,
+        152640
+      ],
+      "elapsed_ns": 3466120
+    }
+  },
+  {
+    "seed": 15,
+    "copies": 2,
+    "n": 42,
+    "status": "sat",
+    "cost": {
+      "raw_n": 42,
+      "raw_clauses": 120,
+      "cells": 308,
+      "groups": {
+        "2": 17,
+        "3": 30
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 14,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 21,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 18,
+      "residual_clauses": 23,
+      "cover_method": "branch_search",
+      "cover": [
+        33824,
+        2564
+      ],
+      "elapsed_ns": 992908
+    }
+  },
+  {
+    "seed": 15,
+    "copies": 2,
+    "n": 42,
+    "status": "unsat",
+    "cost": {
+      "raw_n": 42,
+      "raw_clauses": 126,
+      "cells": 316,
+      "groups": {
+        "3": 30,
+        "2": 19
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 17,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 26,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 27,
+          "status": "unsat"
+        },
+        {
+          "coset": 2,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 23,
+          "status": "unsat"
+        },
+        {
+          "coset": 3,
+          "bits": 16,
+          "oriented": true,
+          "method": "2sat",
+          "rows": 24,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 18,
+      "residual_clauses": 28,
+      "cover_method": "branch_search",
+      "cover": [
+        33824,
+        2564
+      ],
+      "elapsed_ns": 2177336
+    }
+  }
+]

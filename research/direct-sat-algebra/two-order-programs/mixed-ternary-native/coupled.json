@@ -1,0 +1,326 @@
+[
+  {
+    "status": "sat",
+    "route": "transversal",
+    "witness": 398,
+    "cost": {
+      "raw_n": 9,
+      "raw_clauses": 20,
+      "cells": 56,
+      "groups": {
+        "3": 6,
+        "2": 2
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 4,
+          "oriented": false,
+          "method": "2sat",
+          "rows": 4,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 5,
+      "residual_clauses": 4,
+      "cover_method": "branch_search",
+      "cover": [
+        1
+      ],
+      "elapsed_ns": 324129
+    }
+  },
+  {
+    "status": "unsat",
+    "route": "transversal",
+    "witness": null,
+    "cost": {
+      "raw_n": 9,
+      "raw_clauses": 24,
+      "cells": 64,
+      "groups": {
+        "3": 6,
+        "2": 2,
+        "1": 4
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 4,
+          "oriented": false,
+          "method": "2sat",
+          "rows": 7,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 4,
+          "oriented": false,
+          "method": "2sat",
+          "rows": 7,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 5,
+      "residual_clauses": 8,
+      "cover_method": "branch_search",
+      "cover": [
+        1
+      ],
+      "elapsed_ns": 341074
+    }
+  },
+  {
+    "status": "sat",
+    "route": "transversal",
+    "witness": 25169918,
+    "cost": {
+      "raw_n": 25,
+      "raw_clauses": 60,
+      "cells": 168,
+      "groups": {
+        "3": 18,
+        "2": 6
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 12,
+          "oriented": false,
+          "method": "2sat",
+          "rows": 12,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 13,
+      "residual_clauses": 12,
+      "cover_method": "branch_search",
+      "cover": [
+        1
+      ],
+      "elapsed_ns": 596770
+    }
+  },
+  {
+    "status": "unsat",
+    "route": "transversal",
+    "witness": null,
+    "cost": {
+      "raw_n": 25,
+      "raw_clauses": 64,
+      "cells": 176,
+      "groups": {
+        "3": 18,
+        "2": 6,
+        "1": 4
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 12,
+          "oriented": false,
+          "method": "2sat",
+          "rows": 15,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 12,
+          "oriented": false,
+          "method": "2sat",
+          "rows": 11,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 13,
+      "residual_clauses": 16,
+      "cover_method": "branch_search",
+      "cover": [
+        1
+      ],
+      "elapsed_ns": 736361
+    }
+  },
+  {
+    "status": "sat",
+    "route": "transversal",
+    "witness": 27670116114859294718,
+    "cost": {
+      "raw_n": 65,
+      "raw_clauses": 160,
+      "cells": 448,
+      "groups": {
+        "3": 48,
+        "2": 16
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 32,
+          "oriented": false,
+          "method": "2sat",
+          "rows": 32,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 33,
+      "residual_clauses": 32,
+      "cover_method": "branch_search",
+      "cover": [
+        1
+      ],
+      "elapsed_ns": 1412792
+    }
+  },
+  {
+    "status": "unsat",
+    "route": "transversal",
+    "witness": null,
+    "cost": {
+      "raw_n": 65,
+      "raw_clauses": 164,
+      "cells": 456,
+      "groups": {
+        "3": 48,
+        "2": 16,
+        "1": 4
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 32,
+          "oriented": false,
+          "method": "2sat",
+          "rows": 35,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 32,
+          "oriented": false,
+          "method": "2sat",
+          "rows": 21,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 33,
+      "residual_clauses": 36,
+      "cover_method": "branch_search",
+      "cover": [
+        1
+      ],
+      "elapsed_ns": 5404927
+    }
+  },
+  {
+    "status": "sat",
+    "route": "transversal",
+    "witness": 2192252455996354377305528458000244144113073520638,
+    "cost": {
+      "raw_n": 161,
+      "raw_clauses": 400,
+      "cells": 1120,
+      "groups": {
+        "3": 120,
+        "2": 40
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 80,
+          "oriented": false,
+          "method": "2sat",
+          "rows": 80,
+          "status": "sat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 81,
+      "residual_clauses": 80,
+      "cover_method": "branch_search",
+      "cover": [
+        1
+      ],
+      "elapsed_ns": 48915320
+    }
+  },
+  {
+    "status": "unsat",
+    "route": "transversal",
+    "witness": null,
+    "cost": {
+      "raw_n": 161,
+      "raw_clauses": 404,
+      "cells": 1128,
+      "groups": {
+        "3": 120,
+        "2": 40,
+        "1": 4
+      },
+      "extract_arities": [
+        3
+      ],
+      "search_nodes": 2,
+      "cosets": [
+        {
+          "coset": 0,
+          "bits": 80,
+          "oriented": false,
+          "method": "2sat",
+          "rows": 83,
+          "status": "unsat"
+        },
+        {
+          "coset": 1,
+          "bits": 80,
+          "oriented": false,
+          "method": "2sat",
+          "rows": 45,
+          "status": "unsat"
+        }
+      ],
+      "fallback_evaluations": 0,
+      "chart_dimension": 81,
+      "residual_clauses": 84,
+      "cover_method": "branch_search",
+      "cover": [
+        1
+      ],
+      "elapsed_ns": 7966432
+    }
+  }
+]

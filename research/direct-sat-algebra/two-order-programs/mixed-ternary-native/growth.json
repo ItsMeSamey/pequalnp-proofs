@@ -1,0 +1,114 @@
+[
+  {
+    "b": 1,
+    "n": 21,
+    "clauses": 60,
+    "status": "sat",
+    "cosets": 1,
+    "ns": 534767
+  },
+  {
+    "b": 1,
+    "n": 21,
+    "clauses": 66,
+    "status": "unsat",
+    "cosets": 2,
+    "ns": 702810
+  },
+  {
+    "b": 2,
+    "n": 42,
+    "clauses": 120,
+    "status": "sat",
+    "cosets": 1,
+    "ns": 900850
+  },
+  {
+    "b": 2,
+    "n": 42,
+    "clauses": 126,
+    "status": "unsat",
+    "cosets": 4,
+    "ns": 41382301
+  },
+  {
+    "b": 3,
+    "n": 63,
+    "clauses": 180,
+    "status": "sat",
+    "cosets": 1,
+    "ns": 1662399
+  },
+  {
+    "b": 3,
+    "n": 63,
+    "clauses": 186,
+    "status": "unsat",
+    "cosets": 8,
+    "ns": 13415136
+  },
+  {
+    "b": 4,
+    "n": 84,
+    "clauses": 240,
+    "status": "sat",
+    "cosets": 1,
+    "ns": 4740494
+  },
+  {
+    "b": 4,
+    "n": 84,
+    "clauses": 246,
+    "status": "unsat",
+    "cosets": 16,
+    "ns": 22485774
+  },
+  {
+    "b": 5,
+    "n": 105,
+    "clauses": 300,
+    "status": "sat",
+    "cosets": 1,
+    "ns": 6240828
+  },
+  {
+    "b": 5,
+    "n": 105,
+    "clauses": 306,
+    "status": "unsat",
+    "cosets": 32,
+    "ns": 81074713
+  },
+  {
+    "b": 6,
+    "n": 126,
+    "clauses": 360,
+    "status": "sat",
+    "cosets": 1,
+    "ns": 2540784
+  },
+  {
+    "b": 6,
+    "n": 126,
+    "clauses": 366,
+    "status": "unsat",
+    "cosets": 64,
+    "ns": 164645560
+  },
+  {
+    "b": 7,
+    "n": 147,
+    "clauses": 420,
+    "status": "sat",
+    "cosets": 1,
+    "ns": 2965164
+  },
+  {
+    "b": 7,
+    "n": 147,
+    "clauses": 426,
+    "status": "unsat",
+    "cosets": 128,
+    "ns": 230702650
+  }
+]
