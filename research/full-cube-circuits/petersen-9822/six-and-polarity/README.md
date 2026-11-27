@@ -7,3 +7,5 @@ Both fixed-route evaluations reproduce all 1,024 graph rows, all 64 original sig
 The fixed_controls_lean63.py and audit_direct.py checks are independent Python reimplementations of the original selection rule. Their attached outputs are native receipts. SixH3FlatOriginalDirect21567 and SixH3FlatMoveDirect21567 give the corresponding Lean source interfaces with the actual gate and chosen operand. rowCheck supplies the signed permutation for each candidate. Kernel validation of the complete d4 exclusion remains pending.
 
 This supplement accompanies the immutable source-class21567-v2.zip (SHA-256 03cd24775bacdcee38ba77f81c1aec1426f75731a56d855553c1301468a548d6).
+
+The [standalone v2 supplement](source-class21567-polarity-v2.zip) adds profile21567.txt and SixH3FlatDirect21567.lean, the two inputs needed to rerun the independent topology checker outside the original workspace. V1 preserves the original receipts. The replay outputs and sign transport are identical in both editions.
