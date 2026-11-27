@@ -1,0 +1,1 @@
+{"contradictory-pins": ["UNSAT", "chart", 0], "fallback-0": ["UNKNOWN", "cover", 7], "fallback-8": ["SAT", "cover", 7], "mixed-xor-0": ["SAT", "chart", 4], "mixed-xor-1": ["UNSAT", "chart", 0], "sparse-chart": ["SAT", "chart", 1]}
