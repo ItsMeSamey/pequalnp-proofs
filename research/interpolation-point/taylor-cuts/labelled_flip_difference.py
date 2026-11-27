@@ -47,7 +47,7 @@ def solve(n,edges,target,**kwargs):
 
 
 def find_nonzero(n,edges,b,P,*,strong_order=None,odd_chord=False,connectivity_certificate=None,state_cap=None,
-                 primitive=False,cycle_cap=None):
+                 primitive=False,cycle_cap=None,twin_primitive=False):
     """P is a trit table in lexicographic order. The callback certifies hereditary connectivity."""
     P=tuple(P)
     edges=tuple((u,v,tuple(g)) for u,v,g in edges)
@@ -65,7 +65,9 @@ def find_nonzero(n,edges,b,P,*,strong_order=None,odd_chord=False,connectivity_ce
         groups[tuple(sorted((u,v)))].append(i)
     masks=[(1<<u)|(1<<v) for u,v,g in edges]
     stats=dict(states=0,queries=0,certified=False)
-    if cycle_cap is not None and (not primitive or type(cycle_cap) is not int or cycle_cap<0):
+    if primitive and twin_primitive:
+        raise ValueError("select one catalogue")
+    if cycle_cap is not None and (not (primitive or twin_primitive) or type(cycle_cap) is not int or cycle_cap<0):
         raise ValueError('cycle_cap requires primitive enumeration and a nonnegative integer')
     @lru_cache(None)
     def primitive_flips():
@@ -74,7 +76,16 @@ def find_nonzero(n,edges,b,P,*,strong_order=None,odd_chord=False,connectivity_ce
         stats['catalogue']=metrics
         return templates
     @lru_cache(None)
+    def twin_catalogue():
+        from twin_flip_catalogue import Catalogue
+        cat=Catalogue(n,edges,cycle_cap=cycle_cap)
+        stats['catalogue']=cat.stats
+        return cat
+    @lru_cache(None)
     def certified():
+        if twin_primitive:
+            stats['certified']=twin_catalogue().complete
+            return stats['certified']
         if primitive:
             stats['certified']=primitive_flips() is not None
             return stats['certified']
@@ -127,7 +138,8 @@ def find_nonzero(n,edges,b,P,*,strong_order=None,odd_chord=False,connectivity_ce
         if not certified():
             return 'UNKNOWN',None
         pending=False
-        for used,left,right in flips():
+        templates=twin_catalogue().flips(mask) if twin_primitive else flips()
+        for used,left,right in templates:
             if mask & used != used:
                 continue
             a,c=translate(gain(left)),translate(gain(right))
