@@ -1,0 +1,46 @@
+'PEqualNP.Outside.L_meta_24202' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem PEqualNP.Outside.L_meta_24202 : ¬∃ C,
+    PEqualNP.MetaComplexity.FanInTwo C ∧
+      C.size ≤ 6 ∧
+        ∀ (i j : Fin 6),
+          C.eval (List.ofFn fun k => decide (k = i ∨ k = j)) = Nat.testBit 270549407 (6 * min ↑i ↑j + max ↑i ↑j) :=
+Probe24202.refute_of_ledger Numeric24202.allRows
+  (fun t ht =>
+    if x : 1 ≤ t then
+      Eq.ndrec (motive := fun x =>
+        x ≤ 1 → ∃ w, Numeric24202.checkChild Numeric24202.table (6 - x, x, Numeric24202.start) w = true)
+        (fun ht => Exists.intro 60 Numeric24202.root4)
+        (Eq.symm
+          (le_antisymm
+            (Mathlib.Tactic.IntervalCases.of_le_right ht
+              (Mathlib.Meta.NormNum.IsNat.to_raw_eq (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 1))))
+            x))
+        ht
+    else
+      Eq.ndrec (motive := fun x =>
+        x ≤ 1 → ∃ w, Numeric24202.checkChild Numeric24202.table (6 - x, x, Numeric24202.start) w = true)
+        (fun ht => Exists.intro 1285 Numeric24202.root3) (Eq.symm (le_antisymm (Nat.ge_of_not_lt x) (Nat.zero_le t)))
+        ht)
+  fun t ht =>
+  if x : 1 ≤ t then
+    if x : 2 ≤ t then
+      Eq.ndrec (motive := fun x =>
+        x ≤ 2 →
+          ∃ w, Numeric24202.checkChild Numeric24202.table (6 - x, x, [1986, 30852, 233736, 860688, 1721376]) w = true)
+        (fun ht => Exists.intro 58 Numeric24202.root2)
+        (Eq.symm
+          (le_antisymm
+            (Mathlib.Tactic.IntervalCases.of_le_right ht
+              (Mathlib.Meta.NormNum.IsNat.to_raw_eq (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 2))))
+            x))
+        ht
+    else
+      Eq.ndrec (motive := fun x =>
+        x ≤ 2 →
+          ∃ w, Numeric24202.checkChild Numeric24202.table (6 - x, x, [1986, 30852, 233736, 860688, 1721376]) w = true)
+        (fun ht => Exists.intro 62 Numeric24202.root1) (Eq.symm (le_antisymm (Nat.ge_of_not_lt x) x)) ht
+  else
+    Eq.ndrec (motive := fun x =>
+      x ≤ 2 →
+        ∃ w, Numeric24202.checkChild Numeric24202.table (6 - x, x, [1986, 30852, 233736, 860688, 1721376]) w = true)
+      (fun ht => Exists.intro 1285 Numeric24202.root0) (Eq.symm (le_antisymm (Nat.ge_of_not_lt x) (Nat.zero_le t))) ht

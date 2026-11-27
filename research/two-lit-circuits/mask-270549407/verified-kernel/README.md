@@ -1,0 +1,5 @@
+# Seven gates are necessary and sufficient for L-meta-24202
+
+L_meta_24202.lean excludes every fan-in-two circuit of size at most six evaluated at each ordered pair of six input flags, including singletons. Control24202.lean verifies a seven-gate circuit. The physical proof allows raw flag zero to be unused: the five other flags are essential, yielding exactly two starting supports and five binary/NOT budget cases.
+
+The physical endpoint, its seven-gate control and the numeric ledger compiled with pinned Lean 4.36.0. Its axiom report in receipts/Axioms24202.log gives propext, Classical.choice, Quot.sound. The shared generic physical helper objects came from the checked 25057 certificate. Their sources are bundled here along with all numerical and physical specialization modules. Historical gate search is unnecessary for replay. Run python3 replay.py --audit-only or specify --lean-project and a fresh --build-dir to rebuild from sources. The successful physical stage receipts are the initial three entries of physical.log and all four entries of physical-final.log.
