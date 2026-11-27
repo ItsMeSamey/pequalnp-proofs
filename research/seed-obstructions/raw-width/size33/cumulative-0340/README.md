@@ -1,5 +1,8 @@
 # Reviewed cost-28 snapshot
 
+
+Independent full-owner review now excludes **5,745 of 6,213 one-terminal keys** and **1,652 of 4,032 zero-terminal keys**. This leaves 468 and 2,380 respectively, or 2,848 overall. The latest additions cover 11 one-terminal cost-29 keys and 32 zero-terminal cost-29 triples. Reviewers checked the physical deductions and recorded finite results. [One-terminal union](t1-signed-5745.ids) · [Zero-terminal union](t0-signed-1652.ids) · [11 added IDs](t1-cost29-increment-11.ids) · [32 added IDs](t0-increment-32.ids)
+
 A subsequent native-only increment brings the one-terminal subtotal to 5,734 and leaves the zero-terminal subtotal at 1,620. [18-key update and original-ID union](native-original-increment.md)
 
 The final independent assembly excludes **5,716 of 6,000 cost-28 one-terminal keys** and **1,620 of 4,032 zero-terminal keys**. The remaining one-terminal cases are 284 cost-28 keys plus 213 cost-29 keys, or 497 total. Another 2,412 zero-terminal keys remain. The complete lists leave 2,909 original keys open at this snapshot.
