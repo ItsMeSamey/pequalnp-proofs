@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+A forced repeat on the original pivot supports 699 reviewed zero-terminal cases, including **457 new IDs** after intersections. The reviewed totals are **2,716 of 4,032 zero-terminal cases** and **6,083 of 6,213 one-terminal cases**. The respective 1,316 and 130 outstanding total **1,446 cases**. [457 added IDs](t0-weighted-457.ids) · [Zero-terminal union](t0-signed-2716.ids) · [Audit manifest](t0-weighted457.sha256)
+
 Independent review adds **127 one-terminal cases**. The 118 strict-pivot cases and nine native cases are disjoint. The reviewed totals are **6,083 of 6,213 one-terminal cases** and **2,259 of 4,032 zero-terminal cases**. The 130 and 1,773 outstanding total **1,903 original cases**. [130 remaining one-terminal IDs](t1-remaining-130.ids) · [6,083 reviewed IDs](t1-signed-6083.ids) · [Audit manifest](t1-high-head-native127.sha256)
 
 **All 213 one-terminal cost-29 cases are excluded.** Independent review of the final 60 pairs gives **5,956 of 6,213 one-terminal cases** overall. The remaining 257 all have cost 28. With **2,259 of 4,032 zero-terminal cases** excluded, the two outstanding counts sum to **2,030**. [60 original IDs](t1-native-endpoint-pairs60.ids) · [One-terminal union](t1-signed-5956.ids) · [Audit manifest](t1-native-pair60.sha256)
