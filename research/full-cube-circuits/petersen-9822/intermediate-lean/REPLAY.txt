@@ -1,0 +1,19 @@
+Intermediate Lean supplement for graph 9822
+
+The eleven entry points in closure.json comprise the raw-owner clamp, the mixed positive face and its positive bound, verified progress, physical normalization, the all-full pilot, the five-orbit ledger, the checked orbit-leaf sample, the one-nonfull canonicalization, the common-bank module and signed case 00. Each statement retains the hypotheses in its Lean source. The package contains the accepted intermediate results and the physical monotone eleven-OR proof on which several depend.
+
+The src directory contains the complete 48-module project and research source closure. Sixteen direct Mathlib imports and one Std import are identified by source and object digest in closure.json. The pinned toolchain and Lake manifest accompany the sources. The receipts directory contains the accepted stage logs and available direct-import records. Thirty-five printed reports cover thirty-four distinct theorems across the per-module logs, each listing only a subset of propext, Classical.choice and Quot.sound. A module with no printed theorem still has its original accepted object digest recorded.
+
+From this directory, verify the package without launching any compiler.
+
+    python3 replay.py --verify-only
+
+For an independent rebuild, choose a new output directory and the libraries of the locked Lean 4.36.0 Mathlib installation. Include Lean's own lib/lean path for the direct Std object. Keep the same output directory across checkpoints.
+
+    python3 replay.py --lean /path/to/lean --libraries "$OR9822_LIBRARIES" --output /path/to/replay-out --max-modules 3
+
+Repeat that command until the program reports acceptance of the complete closure. Each invocation checks the frozen package and prior checkpoint object hashes, then compiles at most three new modules sequentially. Its logs and checkpoint.json persist under the requested output directory. The original connected workspace can discover the pinned compiler and libraries automatically.
+
+    python3 replay.py --output /path/to/replay-out --max-modules 3
+
+SHA256SUMS covers the sources, manifest, script and recorded logs. closure.json gives the original source and object digests, the dependency order, the pinned Mathlib revision and the original stage receipt directories where present. Source locations in the historical provenance record refer to the original workspace. The portable replay reads its sources from src.
