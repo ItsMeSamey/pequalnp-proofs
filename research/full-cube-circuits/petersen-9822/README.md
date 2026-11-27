@@ -22,7 +22,7 @@ The monotone proof first bounds the number of AND gates by six. The receiver arg
 
 Any monotone 17-gate realization must use exactly seven AND gates. The six-AND case was eliminated by an exhaustive native computation covering 41,719 profiles. Independent review checked the search programs, the profile coverage and the archived results. For a 16-gate realization with one NOT, the function feeding the NOT must have minimal positive supports with empty intersection. [Six-AND search and replay](six17-cert/README.md) · [Single-NOT support restriction](nonedge-products/cap16-compulsory.md) · [Ninth-vertex cofactor](verification/h9.md)
 
-In the remaining seven-AND monotone case, a 17-gate realization requires at least three nonfull conditional activations in the reverse search. The archive includes the profile accounting, replay programs and positive controls. [Scope and replay](seven-two-cert/scope.md)
+In the remaining seven-AND monotone case, a 17-gate realization requires at least four nonfull conditional activations in the reverse search. The three-activation search checked 17,492 representatives at each of three direct-receiver counts. The archive includes the profile accounting, replay programs and positive controls. [One and two activations](seven-two-cert/scope.md) · [Three-activation archive](seven-three-full-cert/)
 
 The signed binary lower-bound deduction now has a Lean replay from the precise prior face hypothesis. The trial checked the deduction and its helper modules. Completing an end-to-end replay of the supplied wrapper requires the published numerical face certificate. [Lean replay scope](physical/signed-floor-replay.md)
 
