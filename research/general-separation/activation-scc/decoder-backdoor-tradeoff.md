@@ -1,0 +1,9 @@
+# Charging affine decoding in shared 2-CNF extensions
+
+Let an extended CNF on raw bits w project by x=Bw+c onto exactly the models of m disjoint ternary positive clauses. Let a strong 2-CNF backdoor in the extension use k raw bits. Keep any m−h of the original triples. Choose T among the raw bits so every row of B for those retained triples has at most one nonzero position outside T.
+
+After fixing both T and the backdoor, each decoded component on the retained coordinates is majority-closed: the residual formula is 2-CNF with possible extra unit restrictions, and constant coordinates, coordinate copies, negations, repetitions and forgetting coordinates all commute with ternary majority. The projected full relation on the retained triples is exactly the product of their nonzero 3-bit patterns, since each discarded triple can be assigned any nonzero pattern. No branch contains all three singleton words on any retained triple. Each branch covers at most 2^(m−h) of the 3^(m−h) singleton patterns. Consequently the cardinality of the UNION of T and the backdoor is at least (m−h)log₂(3/2).
+
+For fixed retained triples, T is a vertex cover of the graph on raw bits joining every pair occurring in the same retained decoder row. The usual vertex-cover branching therefore finds a minimum T in fixed-parameter time. If the formula backdoor is supplied, remove those vertices from this graph before seeking an additional cover. The result charges raw bits used for conditioning the decoder. An unrestricted low-rank family of affine equations cannot replace these raw unit restrictions, because a parity fiber need not be majority-closed.
+
+This applies to arbitrary shared existential witnesses and fixed affine decoding. Independent triangle sums can evade a low formula backdoor by using a noncoordinate XOR decoder on each of the m triples. This statement does not bound algorithms for testing the original decision problem.
