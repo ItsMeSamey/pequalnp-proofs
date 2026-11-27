@@ -1,0 +1,21 @@
+# One optional leaf and two nonleaf pins force order eight
+
+Let H be a finite connected simple graph of maximum degree five in which every degree is odd. Let p,q be distinct vertices of degree three or five. Suppose H is the only induced all-odd support through p,q and has exactly one degree-one vertex. Then H has exactly eight vertices. The degrees in this statement are those of the selected minimal support.
+
+The pins are nonadjacent, since otherwise their edge suffices. They have a common neighbor by [disjoint-neighborhood descent](five-disjoint-pin-neighborhoods.md), with this extension: unmarked vertices in that proof may also have degree one. An unmarked parent shared by opposite-color leaves has at least two neighbors, hence odd degree at least three. An unmarked parent adjacent to its own leaf and three opposite parents has degree five. No other step uses a positive lower bound exceeding one on unmarked degrees.
+
+Partition the root sites besides the pins into the exclusive neighbor sets A,B and their common neighbors C. All A–B edges are present, since two missing-cross-edge endpoints with p,q would give two disjoint edges. A four-site witness is proper because a connected high/high full word has at least six sites: on four sites with both pins nonadjacent neither could have degree three. No edge leads from C directly outside the root, since its endpoints and the two pins would give a claw. Each site in C already sees the two pins, so its final degree is three or five. The [checker](single_leaf_high_pin_shells.py) enumerates every root obeying these conditions, up to exchanging the two pin names to put |A|≤|B|. It checks closed roots separately. Only A and B sites with current degree below five can have exterior neighbors.
+
+For a prefix of breadth-first layers retain all sites of its last layer that may gain neighbors. The table T[v][u] counts, up to two, the pin-containing prefix selections with occupancy mask u on these sites which would be valid if the unseen vertices contributed parity vector v. Selections differing on any forgotten site count separately. Enumerate the next nonempty layer by its sorted multiset of nonzero adjacency masks into the old frontier and all simple graphs within the layer. Once old sites close, each must have degree one, three, or five; charge the number of degree-one closures against the single-leaf budget. Sites already forgotten at full degree five never cost a leaf. All root vertices outside the initial frontier have known odd degree at least three. Every connected graph with a nonempty exterior is represented in this layer order.
+
+The nonterminal transfer uses the [capped-table recurrence](degree-five-three-connected-shells.md), with both old and new interfaces permitted to have a single site. Its only future-size requirement is that at least one vertex is still unseen. A witness confined to any prefix, including the just-built layer, is then necessarily proper. On the terminal step the checker allows a full singleton or pair layer to complete the graph. It counts remaining degree-one sites exactly, uses the incoming parity of each subset of the last layer, and excludes any satisfying choice except the unique full prefix with the full last layer. For that choice the full prefix indeed satisfies its rows because all closed degrees are odd. Every accepted original graph also undergoes an independent exhaustive check of all proper pin-containing vertex subsets. No decomposition into two- or three-connected pieces is used.
+
+| Nonterminal layers after the root | Physical prefixes | Distinct budgeted tables | Accepted with one more terminal layer |
+|---:|---:|---:|---:|
+| 0 | 1667 | 205 | 48, all of order eight |
+| 1 | 1114 | 94 | 0 |
+| 2 | 1244 | 55 | 0 |
+| 3 | 384 | 14 | 0 |
+| 4 | 0 | 0 | 0 |
+
+No closed root is accepted. Physical counts retain the root labels and sort each layer by its previous-layer incidence mask; these are not isomorphism counts. A sharp example, with pins 0,1, has adjacency bitmasks (112,124,194,98,67,11,31,4) in increasing vertex order. Its unique leaf is vertex 7. The [independent order-eight atlas](single_leaf_high_pin_check.py) lists the four underlying graphs and seven successful unordered pin choices across those representatives.
