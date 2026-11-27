@@ -1,0 +1,6 @@
+star False
+excluded True
+pins_witness True
+pins_conflict False
+outside False
+single True

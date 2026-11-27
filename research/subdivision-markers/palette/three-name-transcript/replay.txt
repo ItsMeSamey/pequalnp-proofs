@@ -1,0 +1,1 @@
+56 physical cases {'star': 8, 'excluded': 12, 'pins_witness': 1, 'pins_conflict': 5, 'outside': 22, 'single': 8} split orders {0: 4, 1: 11, 2: 4} 8 tamper checks passed
