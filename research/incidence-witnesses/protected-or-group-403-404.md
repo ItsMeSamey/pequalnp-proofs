@@ -1,0 +1,21 @@
+# Sharper OR-group count and orders 403–404
+
+Use the no-progress case of protected-dense-signature-401.md. Its small-signature analysis forces each unprotected nonsolo raw to have exactly two uses, both in OR gates. Every such raw is an edge joining its two distinct flattened OR groups, since a repeated raw in one group permits immediate simplification. Write R for the number of these raw labels and V for the number of OR groups. The graph counts only ordinary unprotected twice-read raw labels; other inputs in a group do not affect the argument.
+
+For each edge x and a different edge label y at one endpoint and z at the other, y and z must be incident in the underlying point-line graph. Otherwise y,z together activate both groups. Choose a surviving neighbor of x avoiding incidence with y and z, which is possible since each selected same-shore label blocks at most one of x's at least three neighbors. The resulting independent mask, of size at most three on each shore, and that same mask plus x must have different outputs by the flag test, but the two groups already hide x. The argument includes y=z, so parallel edges are impossible. Also no edge joins two vertices of degree ≥3: two alternatives at either end would give a forbidden incidence K₂,₂.
+
+For a vertex v of degree ≥4 and each neighbor w_i of degree ≥2, denote vw_i by x_i and choose another edge y_i at w_i. The label y_i must be incident with all labels at v other than x_i. For i≠j there are at least two other such labels, so codegree one forces y_i=y_j. This single edge has at most two endpoints w_i. Thus deleting all vertices of original degree zero or one leaves a graph of maximum degree three. Its degree-three vertices are independent by the previous paragraph. If v' vertices survive and a' have degree three, then 3a'≤2(v'−a'), and its edges number at most (2v'+a')/2≤6v'/5. Restoring the deleted vertices adds at most one edge per restored vertex. Hence V≥5R/6. The weaker bound 2R/3 follows from maximum degree three alone. The local incidence constraints allow equality in 5R/6: take two degree-three vertices joined by three length-two paths. At the first vertex use three noncollinear points as labels; at the other use the three opposite sides in the corresponding order.
+
+For completeness, if the group demand is at least (a/d)R and n,p,u are respectively live sites, protected sites, and unprotected sole-AND sites, then R=n−p−u. With G total positive excess of gates and raws, and B the current sole-OR count, the previous live-token group upper estimate is
+```
+1+u+3G+[4(n−p)−2u]/(t+1)+4p−2B.
+```
+After multiplying by d(t+1), the sufficient surplus condition is
+```
+[a(t+1)−4d](n−p) > [(a+d)(t+1)−2d]u+d(t+1)(1+3G+4p−2B).
+```
+Use the original bilateral sole bound S₀ from check-protected-symbolic.py. At stage z, m previously successful literal deletion rounds give S≤S₀+2z−m, B≤2z−m, u≤S−B and G≤S₀+k+z−m−3. Only current sole-OR sites and the permanent theta/geometric sites need protection. Substitute p≤geom+B and u≤S₀+2z−m−B, then maximize over B. Its adverse coefficient is d(t−1)>0. This gives the safe joint substitutions u=S₀ and B=2z−m. Geometry costs geom≤2(q+2)+4 floor[T(H−1)/(H²−T)], where H=q−41 and T bounds sites previously deleted. All batches have size ≤40.
+
+The checker partitions z and m into integer blocks of width 32. Nondecreasing trial caps bound the prior T for any m earlier distinct stages by the sum of the m largest eligible caps. For a stage block z≤hi and m in [ml,mh] this is at most the sum of the last mh caps strictly before hi, counting the current trial cap for other stages in this block. The positive coefficients of G and B then permit z=hi and m=ml for their separate upper bounds. All finite cap choices were tested from 8 to 40 inclusive.
+
+The cap 4N−4+k=ceil(Nq/100)−1 is contradicted at q=403 and 404. For q=403 even 2R/3 suffices with maximum batch 15 and total cap sum 58647; 5R/6 reduces these to 9 and 39841. For q=404, 5R/6 uses maximum 12 and total 62908. For q=405 the same no-reset width-32 checker first fails to find a cap at stage block 6816. That is a limitation of this envelope. No existence of planes of these composite orders is assumed.
