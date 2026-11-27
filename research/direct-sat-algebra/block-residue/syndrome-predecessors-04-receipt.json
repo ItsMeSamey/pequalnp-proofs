@@ -1,0 +1,1 @@
+{"cpu": 0.074363, "maxrss_kib": 8952, "code": 0, "output": "three methods; raw flag fibers, sparse high masks, signed offsets, physical NAND replay\n", "rss": 9068544, "wall": 0.08199593500467017, "kernel_before": ["1: FLOCK  ADVISORY  WRITE 1484503 00:1b:193638 0 EOF"], "kernel_after": ["1: FLOCK  ADVISORY  WRITE 1484503 00:1b:193638 0 EOF"]}
