@@ -1,0 +1,9 @@
+# Degree-one source normalization
+
+The degree-one raw point singletons and line indices are (2,5), (8,1), (16,2), (32,3). For each (p,u), the raw term p AND u accepts just this incidence among the 28 minimal positives and no maximal negative. Pinning p to zero everywhere leaves every other positive unchanged and can only lower the output on negatives. All composite features remain independently valued.
+
+If a raw p has at least two distinct consumer gates, pinning p deletes each of those gates. Original direct operands have become constants even if one such gate precedes another. A minimum live circuit has no duplicated operands in a gate. If p has a unique AND consumer, that gate instead becomes zero, deleting it and any one next consumer. It cannot be the whole output since all other 27 positives must pass. Either way there are at least two deletions. Restore at most one lost positive with p AND u and an OR at the output; this costs at most two gates. If pinning already preserved every positive the original was not minimum.
+
+Successively extract such degree-one sources into a final sum of raw incident products. Each previously extracted product stays separate, so the operation applies inside the remaining core, which still must cover at least 25 positives. A core output equal to p AND x is therefore impossible. Retest core inputs as needed; each extraction permanently moves one of four terms to the output sum. No new raw leaf identity is needed, because all seven lines are compulsory and the repaired point was live already.
+
+Thus there exists a minimum circuit in which every present degree-one raw singleton has one read and is either a terminal p AND u, or the operand of a single OR in the remaining core. Simultaneously minimize width among size minima to retain the smallest raw width under these operations. Locations and mandatory-owner types may change, so this is a choice of a global witness, not a property of every fixed layout.
