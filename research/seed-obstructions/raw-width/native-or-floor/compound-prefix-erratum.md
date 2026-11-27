@@ -17,3 +17,9 @@ This withdrawal corrects the assessment of the literal-bank signoff in erratum c
 ## Independent replacement for the literal bank
 
 The subsequent verifier receipt `review-native-or-operand-coverage.zip` (SHA-256 `7a567ee6a0b226a193ec748c1d37322cb9bf27cf2d96c98d9d00920473036ad2`) checks all raw and paid operands in the replacement literal-bank enumeration. The 306 resulting H,J rows match the independently checked 16-orbit suffix input. Together with `native-unlimited-literal-or15.zip`, this establishes **at least 15 OR gates in the literal bank with any number of AND gates**. Thus an area-33 literal-bank separator has at most 18 ANDs. The original integrated prefix proof remains withdrawn.
+
+## Independent replacement for single-compound banks 7 and 17
+
+Both single-compound banks require **at least 15 OR gates with unrestricted AND count**. The repaired enumeration retains raw operands with a single positive row and uses OR-preserving clean extraction for paid singleton products. The early collector bound and the two suffix checks allow arbitrary AND count. The transport certificate maps bank 7 to bank 17, including the supplied compound signal.
+
+The released envelope `native-unrestricted-single-or15.zip` (`dd8b55c0`) contains the corrected prefix (`d543f2bd`), original suffix check (`4022e19e`), supplemental suffix replay (`ca61c8b0`) and transport (`dbf06eb4`). The independent original-operand map is `single-original-operand-map.zip` (`f42d8b09`). Running `single-union-audit.py` (`51f3a80b`) on the original suffix, corrected prefix and supplemental suffix archives in that order verifies that the 2,218 old and 58 added rows form all 2,276 corrected rows. The supplemental rows contribute 28 signed inventories, all among the 369 already checked. The proof for these two banks uses the corrected enumeration. The earlier incomplete prefix remains withdrawn. This entry leaves paired bank 115 pending.
