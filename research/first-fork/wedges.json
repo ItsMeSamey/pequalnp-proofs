@@ -1,0 +1,922 @@
+{
+  "bank": [
+    42,
+    65,
+    83,
+    86,
+    90,
+    94,
+    95,
+    99,
+    101,
+    102,
+    107,
+    110,
+    115,
+    165,
+    186
+  ],
+  "outputs": [
+    213,
+    222,
+    225
+  ],
+  "triangle": [
+    65,
+    102,
+    107
+  ],
+  "three_coloring": [
+    [
+      42,
+      83,
+      86,
+      99,
+      101,
+      102,
+      115,
+      165,
+      186
+    ],
+    [
+      65,
+      90,
+      94,
+      95
+    ],
+    [
+      107,
+      110
+    ]
+  ],
+  "edges": [
+    {
+      "donors": [
+        65,
+        102
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "010000000100000",
+            "value": 1,
+            "cell": [
+              6,
+              15
+            ]
+          },
+          "flip_first": {
+            "signature": "000000000100000",
+            "value": 0,
+            "cell": [
+              29,
+              21
+            ]
+          },
+          "flip_second": {
+            "signature": "010000000000000",
+            "value": 0,
+            "cell": [
+              29,
+              22
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "000000000010000",
+            "value": 0,
+            "cell": [
+              29,
+              30
+            ]
+          },
+          "flip_first": {
+            "signature": "010000000010000",
+            "value": 1,
+            "cell": [
+              8,
+              22
+            ]
+          },
+          "flip_second": {
+            "signature": "000000000110000",
+            "value": 1,
+            "cell": [
+              6,
+              30
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donors": [
+        65,
+        107
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "010000000010000",
+            "value": 1,
+            "cell": [
+              8,
+              22
+            ]
+          },
+          "flip_first": {
+            "signature": "000000000010000",
+            "value": 0,
+            "cell": [
+              29,
+              30
+            ]
+          },
+          "flip_second": {
+            "signature": "010000000000000",
+            "value": 0,
+            "cell": [
+              29,
+              22
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "000000000100000",
+            "value": 0,
+            "cell": [
+              29,
+              21
+            ]
+          },
+          "flip_first": {
+            "signature": "010000000100000",
+            "value": 1,
+            "cell": [
+              6,
+              15
+            ]
+          },
+          "flip_second": {
+            "signature": "000000000110000",
+            "value": 1,
+            "cell": [
+              6,
+              30
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donors": [
+        86,
+        90
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "000110000000000",
+            "value": 1,
+            "cell": [
+              17,
+              23
+            ]
+          },
+          "flip_first": {
+            "signature": "000010000000000",
+            "value": 0,
+            "cell": [
+              29,
+              13
+            ]
+          },
+          "flip_second": {
+            "signature": "000100000000000",
+            "value": 0,
+            "cell": [
+              26,
+              23
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "000000000001010",
+            "value": 0,
+            "cell": [
+              31,
+              26
+            ]
+          },
+          "flip_first": {
+            "signature": "000100000001010",
+            "value": 1,
+            "cell": [
+              19,
+              23
+            ]
+          },
+          "flip_second": {
+            "signature": "000010000001010",
+            "value": 1,
+            "cell": [
+              19,
+              13
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donors": [
+        90,
+        102
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "000010000100000",
+            "value": 1,
+            "cell": [
+              17,
+              21
+            ]
+          },
+          "flip_first": {
+            "signature": "000000000100000",
+            "value": 0,
+            "cell": [
+              29,
+              21
+            ]
+          },
+          "flip_second": {
+            "signature": "000010000000000",
+            "value": 0,
+            "cell": [
+              29,
+              13
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "001000000000110",
+            "value": 0,
+            "cell": [
+              29,
+              20
+            ]
+          },
+          "flip_first": {
+            "signature": "001010000000110",
+            "value": 1,
+            "cell": [
+              17,
+              20
+            ]
+          },
+          "flip_second": {
+            "signature": "001000000100110",
+            "value": 1,
+            "cell": [
+              10,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donors": [
+        90,
+        110
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "000010000001010",
+            "value": 1,
+            "cell": [
+              19,
+              13
+            ]
+          },
+          "flip_first": {
+            "signature": "000000000001010",
+            "value": 0,
+            "cell": [
+              31,
+              26
+            ]
+          },
+          "flip_second": {
+            "signature": "000010000000010",
+            "value": 0,
+            "cell": [
+              17,
+              26
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "000100000000000",
+            "value": 0,
+            "cell": [
+              26,
+              23
+            ]
+          },
+          "flip_first": {
+            "signature": "000110000000000",
+            "value": 1,
+            "cell": [
+              17,
+              23
+            ]
+          },
+          "flip_second": {
+            "signature": "000100000001000",
+            "value": 1,
+            "cell": [
+              31,
+              23
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donors": [
+        90,
+        115
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "000010000000100",
+            "value": 1,
+            "cell": [
+              28,
+              13
+            ]
+          },
+          "flip_first": {
+            "signature": "000000000000100",
+            "value": 0,
+            "cell": [
+              29,
+              6
+            ]
+          },
+          "flip_second": {
+            "signature": "000010000000000",
+            "value": 0,
+            "cell": [
+              29,
+              13
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "000000000001010",
+            "value": 0,
+            "cell": [
+              31,
+              26
+            ]
+          },
+          "flip_first": {
+            "signature": "000010000001010",
+            "value": 1,
+            "cell": [
+              19,
+              13
+            ]
+          },
+          "flip_second": {
+            "signature": "000000000001110",
+            "value": 1,
+            "cell": [
+              19,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donors": [
+        94,
+        99
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "000001010000000",
+            "value": 1,
+            "cell": [
+              30,
+              29
+            ]
+          },
+          "flip_first": {
+            "signature": "000000010000000",
+            "value": 0,
+            "cell": [
+              30,
+              31
+            ]
+          },
+          "flip_second": {
+            "signature": "000001000000000",
+            "value": 0,
+            "cell": [
+              26,
+              29
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "001000000000110",
+            "value": 0,
+            "cell": [
+              29,
+              20
+            ]
+          },
+          "flip_first": {
+            "signature": "001001000000110",
+            "value": 1,
+            "cell": [
+              0,
+              20
+            ]
+          },
+          "flip_second": {
+            "signature": "001000010000110",
+            "value": 1,
+            "cell": [
+              30,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donors": [
+        94,
+        102
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "000001000100000",
+            "value": 1,
+            "cell": [
+              6,
+              29
+            ]
+          },
+          "flip_first": {
+            "signature": "000000000100000",
+            "value": 0,
+            "cell": [
+              29,
+              21
+            ]
+          },
+          "flip_second": {
+            "signature": "000001000000000",
+            "value": 0,
+            "cell": [
+              26,
+              29
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "000000000010000",
+            "value": 0,
+            "cell": [
+              29,
+              30
+            ]
+          },
+          "flip_first": {
+            "signature": "000001000010000",
+            "value": 1,
+            "cell": [
+              8,
+              29
+            ]
+          },
+          "flip_second": {
+            "signature": "000000000110000",
+            "value": 1,
+            "cell": [
+              6,
+              30
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donors": [
+        94,
+        107
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "000001000010000",
+            "value": 1,
+            "cell": [
+              8,
+              29
+            ]
+          },
+          "flip_first": {
+            "signature": "000000000010000",
+            "value": 0,
+            "cell": [
+              29,
+              30
+            ]
+          },
+          "flip_second": {
+            "signature": "000001000000000",
+            "value": 0,
+            "cell": [
+              26,
+              29
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "000000000100000",
+            "value": 0,
+            "cell": [
+              29,
+              21
+            ]
+          },
+          "flip_first": {
+            "signature": "000001000100000",
+            "value": 1,
+            "cell": [
+              6,
+              29
+            ]
+          },
+          "flip_second": {
+            "signature": "000000000110000",
+            "value": 1,
+            "cell": [
+              6,
+              30
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donors": [
+        95,
+        99
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "000000110000000",
+            "value": 1,
+            "cell": [
+              30,
+              11
+            ]
+          },
+          "flip_first": {
+            "signature": "000000010000000",
+            "value": 0,
+            "cell": [
+              30,
+              31
+            ]
+          },
+          "flip_second": {
+            "signature": "000000100000000",
+            "value": 0,
+            "cell": [
+              27,
+              11
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "001000000000110",
+            "value": 0,
+            "cell": [
+              29,
+              20
+            ]
+          },
+          "flip_first": {
+            "signature": "001000100000110",
+            "value": 1,
+            "cell": [
+              21,
+              20
+            ]
+          },
+          "flip_second": {
+            "signature": "001000010000110",
+            "value": 1,
+            "cell": [
+              30,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donors": [
+        99,
+        110
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "000000010001010",
+            "value": 1,
+            "cell": [
+              19,
+              14
+            ]
+          },
+          "flip_first": {
+            "signature": "000000000001010",
+            "value": 0,
+            "cell": [
+              31,
+              26
+            ]
+          },
+          "flip_second": {
+            "signature": "000000010000010",
+            "value": 0,
+            "cell": [
+              30,
+              26
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "001000000000110",
+            "value": 0,
+            "cell": [
+              29,
+              20
+            ]
+          },
+          "flip_first": {
+            "signature": "001000010000110",
+            "value": 1,
+            "cell": [
+              30,
+              20
+            ]
+          },
+          "flip_second": {
+            "signature": "001000000001110",
+            "value": 1,
+            "cell": [
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donors": [
+        102,
+        107
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "000000000110000",
+            "value": 1,
+            "cell": [
+              6,
+              30
+            ]
+          },
+          "flip_first": {
+            "signature": "000000000010000",
+            "value": 0,
+            "cell": [
+              29,
+              30
+            ]
+          },
+          "flip_second": {
+            "signature": "000000000100000",
+            "value": 0,
+            "cell": [
+              29,
+              21
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "010000000000000",
+            "value": 0,
+            "cell": [
+              29,
+              22
+            ]
+          },
+          "flip_first": {
+            "signature": "010000000100000",
+            "value": 1,
+            "cell": [
+              6,
+              15
+            ]
+          },
+          "flip_second": {
+            "signature": "010000000010000",
+            "value": 1,
+            "cell": [
+              8,
+              22
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donors": [
+        102,
+        110
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "000000000101000",
+            "value": 1,
+            "cell": [
+              31,
+              21
+            ]
+          },
+          "flip_first": {
+            "signature": "000000000001000",
+            "value": 0,
+            "cell": [
+              31,
+              31
+            ]
+          },
+          "flip_second": {
+            "signature": "000000000100000",
+            "value": 0,
+            "cell": [
+              29,
+              21
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "001000000000110",
+            "value": 0,
+            "cell": [
+              29,
+              20
+            ]
+          },
+          "flip_first": {
+            "signature": "001000000100110",
+            "value": 1,
+            "cell": [
+              10,
+              20
+            ]
+          },
+          "flip_second": {
+            "signature": "001000000001110",
+            "value": 1,
+            "cell": [
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donors": [
+        110,
+        186
+      ],
+      "wedges": [
+        {
+          "corner": "11",
+          "center": {
+            "signature": "000000000011011",
+            "value": 1,
+            "cell": [
+              19,
+              8
+            ]
+          },
+          "flip_first": {
+            "signature": "000000000010011",
+            "value": 0,
+            "cell": [
+              13,
+              8
+            ]
+          },
+          "flip_second": {
+            "signature": "000000000011010",
+            "value": 0,
+            "cell": [
+              19,
+              30
+            ]
+          }
+        },
+        {
+          "corner": "00",
+          "center": {
+            "signature": "001000000000110",
+            "value": 0,
+            "cell": [
+              29,
+              20
+            ]
+          },
+          "flip_first": {
+            "signature": "001000000001110",
+            "value": 1,
+            "cell": [
+              19,
+              20
+            ]
+          },
+          "flip_second": {
+            "signature": "001000000000111",
+            "value": 1,
+            "cell": [
+              24,
+              20
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
