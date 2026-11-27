@@ -1,0 +1,5 @@
+108 four-group fixtures; totals [adds,muls,child calls,peak result slots]
+literal [8904, 35616, 35616, 10]
+histogram [97584, 97584, 13392, 45]
+scalar [7872, 7872, 13392, 5]
+64-group scalar 190 Work(adds=996, muls=996, leaf_calls=1024, live=1, peak=13)
