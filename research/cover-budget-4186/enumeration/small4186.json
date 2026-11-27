@@ -1,0 +1,174 @@
+[
+  {
+    "n": 2,
+    "edges": [
+      [
+        0,
+        1
+      ]
+    ],
+    "size": 1,
+    "minima": 2,
+    "non_top": 0,
+    "inequalities": [
+      [
+        1,
+        1,
+        2
+      ]
+    ]
+  },
+  {
+    "n": 3,
+    "edges": [
+      [
+        0,
+        1
+      ]
+    ],
+    "size": 1,
+    "minima": 2,
+    "non_top": 0,
+    "inequalities": [
+      [
+        1,
+        1,
+        2
+      ]
+    ]
+  },
+  {
+    "n": 3,
+    "edges": [
+      [
+        0,
+        2
+      ]
+    ],
+    "size": 1,
+    "minima": 2,
+    "non_top": 0,
+    "inequalities": [
+      [
+        1,
+        1,
+        2
+      ]
+    ]
+  },
+  {
+    "n": 3,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "size": 2,
+    "minima": 4,
+    "non_top": 0,
+    "inequalities": [
+      [
+        1,
+        1,
+        4
+      ]
+    ]
+  },
+  {
+    "n": 3,
+    "edges": [
+      [
+        1,
+        2
+      ]
+    ],
+    "size": 1,
+    "minima": 2,
+    "non_top": 0,
+    "inequalities": [
+      [
+        1,
+        1,
+        2
+      ]
+    ]
+  },
+  {
+    "n": 3,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "size": 2,
+    "minima": 4,
+    "non_top": 0,
+    "inequalities": [
+      [
+        1,
+        1,
+        4
+      ]
+    ]
+  },
+  {
+    "n": 3,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "size": 2,
+    "minima": 4,
+    "non_top": 0,
+    "inequalities": [
+      [
+        1,
+        1,
+        4
+      ]
+    ]
+  },
+  {
+    "n": 3,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "size": 4,
+    "minima": 288,
+    "non_top": 144,
+    "inequalities": [
+      [
+        2,
+        2,
+        144
+      ]
+    ]
+  }
+]

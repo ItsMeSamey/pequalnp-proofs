@@ -1,0 +1,16 @@
+first-in-range 15 gates 4 encodings 2 dirty 0 topform 2 violations 0
+first-in-range 28 gates 4 encodings 1 dirty 0 topform 1 violations 0
+completed 4
+first-in-range 29 gates 5 encodings 10 dirty 0 topform 6 violations 0
+first-in-range 58 gates 5 encodings 2 dirty 0 topform 2 violations 0
+completed 5
+candidate 59 lhs 5 rhs 5 topform 1 short_benchmark 0 truth 4210748128 gates O,0,1 O,2,3 A,5,6 O,7,4 O,0,2 A,8,9
+first-in-range 31 gates 6 encodings 30 dirty 0 topform 15 violations 0
+first-in-range 59 gates 6 encodings 16 dirty 4 topform 10 violations 0
+first-in-range 184 gates 6 encodings 5 dirty 0 topform 4 violations 0
+completed 6
+first-in-range 185 gates 7 encodings 82 dirty 0 topform 36 violations 0
+first-in-range 220 gates 7 encodings 6 dirty 0 topform 4 violations 0
+completed 7
+first-in-range 207 gates 8 encodings 92 dirty 0 topform 42 violations 0
+completed 8

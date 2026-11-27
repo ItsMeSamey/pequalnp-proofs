@@ -1,0 +1,21 @@
+# Triangle with two pendant families
+
+Take b,d ≥ 1. In Fin n, n=3+b+d, put the triangle vertices a,c,w at 0,1,2, then list B₁,…,B_b and D₁,…,D_d. The edges are ac, aw, cw, all cBᵢ and all aDⱼ. Every cycle lies in the triangle, so two distinct vertices cannot have two distinct common neighbours. The edge ac witnesses edgeFinset.Nonempty.
+
+## Wiring
+
+Gate j writes wire n+j, indexing gates from zero. Start with input a and append b binary OR gates successively adjoining B₁ through B_b. Call the last wire P. Start with c and append d binary OR gates adjoining D₁ through D_d, giving Q. Append H=P AND Q, R=H OR w, S=a OR c, and T=R AND S in that order. Output T. Every gate reads two earlier wires and has an allowed operation. The gate count is b+d+4.
+
+For an assignment, T is true iff w and S are true, or P,Q,S are all true. The first case detects aw or cw. In the second case, if a is true then Q supplies c or a D vertex, and otherwise S supplies c and P supplies a B vertex. Conversely each listed edge forces T. This proves equality with graphFun G ∅ on all assignments.
+
+## Terms of the issued inequality
+
+A gate is BelowF if every assignment activating it contains an edge. Each OR gate in either input chain, and each of R and S, is true on a singleton (use w for R). Thus all b+d+2 OR gates belong to orN. On the independent pair B₁,D₁ the gate H is true, making it dirty. T computes F and is clean. Hence tops={T} and junk={H}. The output feeds no other gate, in particular lies strictly inside no AND cone. This proves TopForm.
+
+The OR-only input search at R stops at H and reaches just w. The search at S reaches a,c. Hence centreless is empty, starEdges={aw,cw}, and Ustar consists of ac and the b+d pendant edges. The only operand of a top opposite a singleton side is S. Its OR closure contains precisely S as a gate, and both its children reach inputs. Thus lam={S}. The right side is 1+0+1+(b+d+1)=b+d+3. The cover {a,c} has size two, and the disjoint edges cB₁ and aD₁ force at least two vertices in every cover. The minimum left side is 2+(1+b+d)=b+d+3.
+
+## Global lower bound
+
+For any exact two-input AND/OR circuit for this graph, set a pendant variable to false. Before restriction it is essential, as witnessed by setting only its neighbour true and toggling the pendant. It must therefore feed a gate on the output cone: the output itself cannot be a primary input since the function is false on all singletons and true on ac. Propagate false in topological order, representing each original wire by false or a surviving wire. A gate with a false operand becomes false for AND or the other operand for OR. A gate with two surviving operands may be copied with the remapped indices. At least one gate is omitted because the essential variable fed a gate. The restricted output is nonconstant (ac survives), so it is a surviving wire. Relabel the remaining primary inputs and compact the retained gates in order. This gives an exact two-input AND/OR circuit for the graph with that leaf removed, saving at least one gate. Repeating removes all b+d leaves.
+
+The triangle function is three-variable majority. It needs at least four gates. Discard unused gates and suppose at most three remain. By self-duality of majority, exchanging AND and OR throughout if necessary makes the root OR. Neither child can be a primary input, since the output vanishes on every singleton. If the two child wires coincide, delete the root and apply the same argument to a smallest circuit. Thus both children are distinct gates, using the entire allowance. The earlier child U must be an AND of distinct primary inputs, since it too vanishes on every singleton. If the later child V uses only primary inputs, the same reasoning makes it another two-input conjunction. Their disjunction covers at most two of the three true pairs. If V uses U twice, the output equals U. If V uses U and a primary input x, then V=U AND x contributes nothing beyond U, while V=U OR x would fire on a singleton. This exhausts the possibilities. Four gates suffice by computing (a AND c) OR (w AND (a OR c)). Consequently every circuit for the family has at least b+d+4 gates. The displayed circuit attains the bound and satisfies IsLeastAO.

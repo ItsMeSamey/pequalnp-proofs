@@ -1,0 +1,45 @@
+source /workspace/scratch/site-team-02/release/cover-budget-4186/enumeration/connected_n.cpp sha256 1448a907287bc48718f3f5f4c7126ed8ca3a672aaf149e53399e7e94e2c0a22b
+compile5 command nice -n 15 timeout -k 1s 44s prlimit --cpu=30:30 --as=104857600:104857600 -- /usr/bin/g++ -std=c++17 -O3 -DVERTICES=5 /workspace/scratch/site-team-02/release/cover-budget-4186/enumeration/connected_n.cpp -o /workspace/scratch/site-team-02/4186/replay-independent/n5
+compile5 command_sha256_utf8_no_newline 8c35b69ffc484880e59d8c9684016f3d9401679ccdc39f196c29660c0d622572
+compile5 exit 1 stdout /workspace/scratch/site-team-02/4186/replay-independent/compile5.stdout sha256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+n5 compilation failed, exit 1
+compile5 command nice -n 15 timeout -k 1s 44s prlimit --cpu=30:30 --as=268435456:268435456 -- /usr/bin/g++ -std=c++17 -O2 --param=ggc-min-expand=5 --param=ggc-min-heapsize=4096 -DVERTICES=5 /workspace/scratch/site-team-02/release/cover-budget-4186/enumeration/connected_n.cpp -o /workspace/scratch/site-team-02/4186/replay-independent/n5
+compile5 command_sha256_utf8_no_newline 014641a95a652fbb0467ec0fe86926866edaff9f7ae1c6f453eb6467adbbaf2f
+compile5 peak_sampled_aggregate_RSS_KiB 0 stop live process unreadable
+compile5 exit -9 stdout /workspace/scratch/site-team-02/4186/replay-independent/compile5.stdout sha256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+n5 compilation failed, exit -9
+compile5 initial cc1plus stderr: out of memory allocating 262144 bytes after a total of 2437120 bytes; 100MiB virtual limit. Replacement compile stopped because /proc/<pid>/task/<pid>/children is unavailable for live processes; sampled RSS guard cannot certify descendants via this interface. Capacity authorized independent execution of producer binaries as fallback.
+Producer script /workspace/scratch/site-team-05/extension4186.py records c++ -O2 -std=c++17 -DVERTICES={n} connected_n.cpp -o ./connected_n{n}.
+producer binary /workspace/scratch/site-team-05/connected_n5 sha256 1926e94e0404d4619e9e8064afacaa5a406eb89492a1c94871ac553ed5ace509; independent rerun without independent rebuild
+run5 command nice -n 15 timeout -k 1s 44s prlimit --cpu=1:1 --as=33554432:33554432 -- /workspace/scratch/site-team-05/connected_n5 4 8
+run5 command_sha256_utf8_no_newline 6ea15c9b9d311111868b2d224420a6763def8d450edec2452f25255856d0edc8
+run5 exit 0 stdout /workspace/scratch/site-team-02/4186/replay-independent/n5.stdout sha256 26d4e273480001f8e41e2027c4fffcb49915e5babb5aae9b35834232476932e4
+n5 gates 4 byte-identical
+n5 gates 5 byte-identical
+n5 gates 6 byte-identical
+n5 gates 7 byte-identical
+n5 gates 8 byte-identical
+n5 full_stdout_matches True reference_sha256 26d4e273480001f8e41e2027c4fffcb49915e5babb5aae9b35834232476932e4 exit 0
+producer binary /workspace/scratch/site-team-05/connected_n6 sha256 a75c3e8b0c02918b81f7d7f03ef8fdc8c0f36bec464b41a9e79467eae3aa2f0e; independent rerun without independent rebuild
+run6 command nice -n 15 timeout -k 1s 44s prlimit --cpu=30:30 --as=104857600:104857600 -- /workspace/scratch/site-team-05/connected_n6 5 9
+run6 command_sha256_utf8_no_newline f76d06c5a28c6b02d86020fd66eb8d30a27597ab79c3b9b4ea35c6ae9d8d09fc
+run6 child_maxrss_KiB 10496 child_cpu_seconds 14.841 elapsed_seconds 15.906
+run6 exit -15 stdout /workspace/scratch/site-team-02/4186/replay-independent/n6.stdout sha256 ffa7b31a775f29498f090a981d3de3ca9b9794b87ce8c6ce2ffd1f80eecf5676
+n6 gates 5 byte-identical
+n6 gates 6 byte-identical
+n6 gates 7 byte-identical
+n6 gates 8 byte-identical
+n6 gates 9 missing
+n6 full_stdout_matches False reference_sha256 72540ac0e25b23d8d71e6338519630541cc2ab2bf1fab912cf962c139531f87e exit -15
+n6 interrupted by formal compiler priority during layer 9. Preserved partial stdout in /workspace/scratch/site-team-02/4186/replay-independent/n6-preempted.stdout.
+producer binary /workspace/scratch/site-team-05/connected_n6 sha256 a75c3e8b0c02918b81f7d7f03ef8fdc8c0f36bec464b41a9e79467eae3aa2f0e; independent rerun without independent rebuild
+run6 command nice -n 15 timeout -k 1s 44s prlimit --cpu=30:30 --as=104857600:104857600 -- /workspace/scratch/site-team-05/connected_n6 5 9
+run6 command_sha256_utf8_no_newline f76d06c5a28c6b02d86020fd66eb8d30a27597ab79c3b9b4ea35c6ae9d8d09fc
+run6 child_maxrss_KiB 10496 child_cpu_seconds 17.234 elapsed_seconds 20.903
+run6 exit 0 stdout /workspace/scratch/site-team-02/4186/replay-independent/n6.stdout sha256 72540ac0e25b23d8d71e6338519630541cc2ab2bf1fab912cf962c139531f87e
+n6 gates 5 byte-identical
+n6 gates 6 byte-identical
+n6 gates 7 byte-identical
+n6 gates 8 byte-identical
+n6 gates 9 byte-identical
+n6 full_stdout_matches True reference_sha256 72540ac0e25b23d8d71e6338519630541cc2ab2bf1fab912cf962c139531f87e exit 0
