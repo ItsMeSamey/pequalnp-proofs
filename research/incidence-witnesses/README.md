@@ -7,3 +7,5 @@ For the original one-sided promise of arbitrary point masks and at most q select
 The local lowest-common-ancestor refinement in the [extraction proof](anchored/README.md) extends the verified interval through order 397. At that order it gives 627,678 gates against the 627,288 target.
 
 [Weighted flow through ports](weighted-flow.md) yields s≥4N−1−⌊4N/(q+2)⌋ for the original one-sided promise. This establishes 100s≥Nq through q=399, with three gates to spare at 399. The same estimate falls short at 400.
+
+Two pieces of the formalization have passed the Lean 4.36 kernel. The ledger lemmas derive the numerical order-401 conclusion from explicit physical-count inequalities. The plane-duality lemma derives unique intersection of two lines for every positive order from the posted one-sided hypotheses. The protected circuit restriction and physical-count inequalities still rely on the reviewed mathematical proof. [Ledger lemmas](ProtectedIncidenceLedger.lean) · [Plane-duality lemma](IncidencePlaneDual.lean)
