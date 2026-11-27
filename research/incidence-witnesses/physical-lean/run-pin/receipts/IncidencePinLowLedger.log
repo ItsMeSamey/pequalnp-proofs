@@ -1,0 +1,19 @@
+/workspace/scratch/incidence-run-pin/IncidencePinLowLedger.lean:31:13: warning: Variable name `C` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _C
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/workspace/scratch/incidence-run-pin/IncidencePinLowLedger.lean:69:16: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-run-pin/IncidencePinLowLedger.lean:96:14: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-run-pin/IncidencePinLowLedger.lean:69:16: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/scratch/incidence-run-pin/IncidencePinLowLedger.lean:96:14: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'IncidencePinLowLedger.budget' depends on axioms: [propext, Classical.choice, Quot.sound]

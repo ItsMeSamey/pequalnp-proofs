@@ -1,0 +1,28 @@
+/workspace/scratch/incidence-run-pin/IncidenceRunPinPhysical.lean:42:26: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [upper, (show k ∈ P by simpa [IncidenceEligiblePin.pinMask] using hk)]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/workspace/scratch/incidence-run-pin/IncidenceRunPinPhysical.lean:72:41: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [e, IncidenceRunPinCompile.read] at this
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/workspace/scratch/incidence-run-pin/IncidenceRunPinPhysical.lean:121:12: warning: This simp argument is unused:
+  upper
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [empty]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceRunPinPhysical.lean:122:29: warning: This simp argument is unused:
+  upper
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [empty] at hl
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'IncidenceRunPinPhysical.witnesses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceRunPinPhysical.residual' depends on axioms: [propext, Classical.choice, Quot.sound]
