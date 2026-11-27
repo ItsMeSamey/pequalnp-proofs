@@ -1,0 +1,7 @@
+# Biconnected subcubic obstruction to automatic two-port saturation
+
+Take two disjoint diamonds in series (two internally vertex-disjoint length-two paths between the ends in each diamond). The first has terminals u,c; the second has terminals d,v. Add cd and the bypass uv. This graph is simple, biconnected and subcubic. In F2² the two u-c paths have gains 0,e1, and the d-v paths have gains 0,e2 (one nonzero edge per diamond). Give cd and uv zero. With identity projection the four serial u-v paths realize every gain.
+
+In any two-root spanning forest let U,V be the connected shores of u,v. Neither can use uv internally. Removing uv leaves a series chain. If c belongs to V, no U vertex can lie beyond c because it could not connect to u. Thus all non-bypass crossing edges lie in the first diamond. Similarly if d belongs to U every non-bypass crossing edge lies in the second diamond. Otherwise c is in U and d in V: all vertices of each diamond are in its root's shore because a vertex on the opposite shore would be cut off by the diamond's two terminals. Then only cd crosses in the series graph. If crossings are confined to one diamond, any two forest port-to-port options there have gains differing only by cycles in that diamond: their tree tails across cd and the other diamond coincide. Thus these give at most two distinct gains. The bypass offers at most one more. No forest realizes all four.
+
+This falsifies unconditional scalar-to-rank-two saturation. It does not refute a different algorithm that composes the serial choices.
