@@ -1,0 +1,9 @@
+# One shared-private path defeats two-factor proximity
+
+Take even n≥4. On private vertices 1,...,n−1 use the same undirected path in two binary symmetric adjacency matrices. In the first matrix W₁ attach named root 0 only to vertex 1. In W₂ attach it only to vertex n−1. Their difference has nonzero entries only in the root row and column and has rank at most two.
+
+Impose the single syndrome that the chosen subset contains root 0. For a path forest, its adjacency determinant is one exactly when every run of selected vertices is even: an even path has a unique perfect matching and odd paths have none. Thus the full vertex set is feasible for both matrices. If a proper subset containing the root were feasible in both, the root would force inclusion of 1 and n−1 by the two respective paths. Omit an intermediate vertex. Let the initial contiguous selected run at 1 have length l. In the first graph it joins the root, and l+1 must be even. In the second graph it is separated from the root by the omitted vertex, and l must be even. This is impossible.
+
+The minimum size of a common feasible subset at syndrome rank one is therefore exactly n. Each factor separately admits a two-element solution. This controls the attempted extension of a one-factor proximity proof to a Hadamard product of principal minors, including matrices with identical private-private entries. It says nothing about the general computational complexity or realizability as a specific four-quotient plane instance.
+
+One may also insist each W_i be individually obtained by diagonal completion from a nonsingular binary symmetric baseline. The determinant of I plus a path adjacency on n vertices is F_(n+1) mod 2 (expand at an endpoint). Choose n=6k, k≥1, so both I+W_i are invertible. Then D_i=(I+W_i)⁻¹ realizes W_i=I+D_i⁻¹ with starting control zero. The two D_i still differ by rank at most two; the root-only entry pattern need not persist under inversion.
