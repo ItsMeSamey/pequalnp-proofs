@@ -1,0 +1,921 @@
+import PEqualNP.Defs
+
+
+namespace PEqualNP.Research.MissingCell
+open PEqualNP.CircuitLowerBounds PEqualNP.MetaComplexity
+
+def live : List Gate → ℕ → ℕ → Finset ℕ
+  | [], n, o => if o < n then {o} else ∅
+  | g :: gs, n, o =>
+    let t := live gs (n+1) o
+    if n ∈ t then (t.erase n) ∪ (g.inputs.toFinset.filter (· < n)) else t
+
+theorem live_lt (gs : List Gate) (n o : ℕ) :
+    ∀ i ∈ live gs n o, i < n := by
+  induction gs generalizing n with
+  | nil =>
+    intro i hi
+    by_cases h : o < n <;> simp_all [live]
+  | cons g gs ih =>
+    intro i hi
+    by_cases h : n ∈ live gs (n+1) o
+    · simp only [live, ite_eq_left h, Finset.mem_union, Finset.mem_erase, Finset.mem_filter] at hi
+      rcases hi with ⟨hne, hi⟩ | ⟨_, hi⟩
+      · have := ih (n+1) i hi
+        omega
+      · exact hi
+    · simp only [live, ite_eq_right h] at hi
+      have := ih (n+1) i hi
+      by_contra hn
+      have : i = n := by omega
+      exact h (this ▸ hi)
+
+theorem live_card (gs : List Gate) (n o : ℕ)
+    (h : ∀ g ∈ gs, g.inputs.length ≤ 2) : (live gs n o).card ≤ gs.length + 1 := by
+  induction gs generalizing n with
+  | nil => by_cases ho : o < n <;> simp [live, ho]
+  | cons g gs ih =>
+    have ht := ih (n+1) (fun g hg => h g (List.mem_cons_of_mem _ hg))
+    have hg := h g (List.mem_cons_self ..)
+    by_cases he : n ∈ live gs (n+1) o
+    · simp only [live, ite_eq_left he, List.length_cons]
+      have hu := Finset.card_union_le ((live gs (n+1) o).erase n)
+        (g.inputs.toFinset.filter (· < n))
+      have hz := Finset.card_erase_add_one he
+      have hf := Finset.card_le_card (Finset.filter_subset (· < n) g.inputs.toFinset)
+      have hl := List.toFinset_card_le g.inputs
+      omega
+    · simp only [live, ite_eq_right he, List.length_cons]
+      omega
+
+def advance (g : Gate) (w : List Bool) : List Bool :=
+  w ++ [g.op.eval (g.inputs.map fun i => w.getD i false)]
+
+theorem getD_missing {x : List Bool} {i : ℕ} (h : x.length ≤ i) :
+    x.getD i false = false := by
+  simp [List.getD_eq_getElem?_getD, List.getElem?_eq_none h]
+
+theorem getD_advance_lt (g : Gate) (x : List Bool) (i : ℕ) (h : i < x.length) :
+    (advance g x).getD i false = x.getD i false := by
+  simp [advance, List.getD_eq_getElem?_getD, List.getElem?_append_left h]
+
+theorem getD_advance_eq (g : Gate) (x : List Bool) :
+    (advance g x).getD x.length false = g.op.eval (g.inputs.map fun i => x.getD i false) := by
+  simp [advance, List.getD_eq_getElem?_getD]
+
+theorem advance_len (g : Gate) (x : List Bool) :
+    (advance g x).length = x.length + 1 := by simp [advance]
+
+end PEqualNP.Research.MissingCell
+
+namespace PEqualNP.Research.MissingCell
+open PEqualNP.CircuitLowerBounds
+
+/-- Each reverse step expands one demanded output into two distinct earlier
+inputs, both absent from the surviving demands. -/
+def freshBinarySweep : List Gate → ℕ → ℕ → Prop
+  | [], n, o => o < n
+  | g :: gs, n, o =>
+    let tail := live gs (n + 1) o
+    n ∈ tail ∧ g.inputs.length = 2 ∧ g.inputs.Nodup ∧
+      (∀ i ∈ g.inputs, i < n) ∧ Disjoint (tail.erase n) g.inputs.toFinset ∧
+      freshBinarySweep gs (n + 1) o
+
+theorem freshBinarySweep_of_max (gs : List Gate) (n o : ℕ)
+    (h : ∀ g ∈ gs, g.inputs.length ≤ 2)
+    (eq : (live gs n o).card = gs.length + 1) : freshBinarySweep gs n o := by
+  induction gs generalizing n with
+  | nil =>
+    change o < n
+    by_contra hn
+    simp [live, hn] at eq
+  | cons g gs ih =>
+    let t := live gs (n + 1) o
+    let a := g.inputs.toFinset.filter (· < n)
+    have hgs : ∀ g ∈ gs, g.inputs.length ≤ 2 := fun k hk => h k (List.mem_cons_of_mem _ hk)
+    have ht : t.card ≤ gs.length + 1 := live_card gs (n+1) o hgs
+    have hg := h g (List.mem_cons_self ..)
+    have he : n ∈ t := by
+      by_contra hn
+      change n ∉ live gs (n+1) o at hn
+      simp only [live, ite_eq_right hn, List.length_cons] at eq
+      change t.card = gs.length + 1 + 1 at eq
+      omega
+    have hu : ((t.erase n) ∪ a).card = gs.length + 1 + 1 := by
+      simpa only [live, ite_eq_left he, List.length_cons, t, a] using eq
+    have hc := Finset.card_union_le (t.erase n) a
+    have hz := Finset.card_erase_add_one he
+    have ha : a ⊆ g.inputs.toFinset := Finset.filter_subset _ _
+    have hf := Finset.card_le_card ha
+    have hl := List.toFinset_card_le g.inputs
+    have full : a = g.inputs.toFinset := Finset.eq_of_subset_of_card_le ha (by omega)
+    have nd : g.inputs.Nodup := by
+      change (g.inputs : Multiset ℕ).Nodup
+      apply Multiset.toFinset_card_eq_card_iff_nodup.mp
+      change g.inputs.toFinset.card = g.inputs.length
+      omega
+    refine ⟨he, by omega, nd, ?_, ?_, ih (n := n+1) hgs (by change t.card = _; omega)⟩
+    · intro i hi
+      have hm : i ∈ a := full.symm ▸ (List.mem_toFinset.mpr hi)
+      exact (Finset.mem_filter.mp hm).2
+    · rw [← full]
+      apply Finset.card_union_eq_card_add_card.mp
+      change ((t.erase n) ∪ a).card = (t.erase n).card + a.card
+      omega
+
+end PEqualNP.Research.MissingCell
+
+namespace PEqualNP.Research.MissingCell
+open PEqualNP.CircuitLowerBounds PEqualNP.MetaComplexity
+
+theorem eval_mono_live (C : Circuit) (n : ℕ) (x y : List Bool) (hm : Monotone2 C)
+    (hx : x.length = n) (hy : y.length = n)
+    (h : ∀ i ∈ live C.gates n C.output, x.getD i false = true → y.getD i false = true) :
+    C.eval x = true → C.eval y = true := by
+  obtain ⟨gs,o⟩ := C
+  induction gs generalizing n x y with
+  | nil =>
+    change x.getD o false = true → y.getD o false = true
+    by_cases ho : o < n
+    · exact h o (by simp [live, ho])
+    · rw [getD_missing (by omega : x.length ≤ o)]
+      simp
+  | cons g gs ih =>
+    change (Circuit.mk gs o).eval (advance g x) = true → (Circuit.mk gs o).eval (advance g y) = true
+    apply ih (n+1) (advance g x) (advance g y)
+      (by simp [advance,hx]) (by simp [advance,hy]) (fun a ha => hm a (List.mem_cons_of_mem _ ha))
+    intro i hi
+    have hlt := live_lt gs (n+1) o i hi
+    by_cases he : i = n
+    · subst i
+      rw [show (advance g x).getD n false = _ by simpa only [hx] using getD_advance_eq g x]
+      rw [show (advance g y).getD n false = _ by simpa only [hy] using getD_advance_eq g y]
+      have inj : ∀ j ∈ g.inputs, x.getD j false = true → y.getD j false = true := by
+        intro j hj
+        by_cases hjn : j < n
+        · exact h j (by simp [live, hi, hj, hjn])
+        · rw [getD_missing (by omega : x.length ≤ j)]
+          simp
+      have hg : g.op = .and ∨ g.op = .or := (hm g (List.mem_cons_self ..)).1
+      rcases hg with hg | hg
+      · simp only [hg, GateOp.eval, List.all_eq_true, List.mem_map, id_eq]
+        rintro ha _ ⟨j,hj,rfl⟩
+        exact inj j hj (ha _ ⟨j,hj,rfl⟩)
+      · simp only [hg, GateOp.eval, List.any_eq_true, List.mem_map, id_eq]
+        rintro ⟨_, ⟨j,hj,rfl⟩, ha⟩
+        exact ⟨_, ⟨j,hj,rfl⟩, inj j hj ha⟩
+    · rw [getD_advance_lt _ _ _ (by omega), getD_advance_lt _ _ _ (by omega)]
+      apply h i
+      by_cases hn : n ∈ live gs (n+1) o <;> simp [live, hn, he, hi]
+end PEqualNP.Research.MissingCell
+
+namespace PEqualNP.Research.MissingCell
+open PEqualNP.CircuitLowerBounds
+
+def isOrGate (g : Gate) : Bool :=
+  match g.op with
+  | .or => true
+  | _ => false
+
+def falseParents (g : Gate) (w : List Bool) : Finset ℕ :=
+  match g.op with
+  | .or => g.inputs.toFinset.filter (· < w.length)
+  | .and => match g.inputs.find? (fun i => !(w.getD i false)) with
+    | some i => if i < w.length then {i} else ∅
+    | none => ∅
+  | _ => ∅
+
+def falseLive : List Gate → List Bool → ℕ → Finset ℕ
+  | [], w, o => if o < w.length ∧ w.getD o false = false then {o} else ∅
+  | g :: gs, w, o =>
+    let t := falseLive gs (advance g w) o
+    if w.length ∈ t then (t.erase w.length) ∪ falseParents g w else t
+
+theorem falseParents_lt (g : Gate) (w : List Bool) (i : ℕ)
+    (hi : i ∈ falseParents g w) : i < w.length := by
+  cases h : g.op <;> simp [falseParents, h] at hi
+  · split at hi
+    · split at hi <;> simp_all
+    · simp at hi
+  · exact hi.2
+
+theorem falseLive_lt (gs : List Gate) (w : List Bool) (o i : ℕ)
+    (hi : i ∈ falseLive gs w o) : i < w.length := by
+  induction gs generalizing w with
+  | nil =>
+    simp only [falseLive] at hi
+    split at hi <;> simp_all
+  | cons g gs ih =>
+    have len := advance_len g w
+    by_cases hm : w.length ∈ falseLive gs (advance g w) o
+    · simp only [falseLive, ite_eq_left hm, Finset.mem_union, Finset.mem_erase] at hi
+      rcases hi with ⟨hne, hi⟩ | hi
+      · have := ih (advance g w) hi
+        omega
+      · exact falseParents_lt g w i hi
+    · simp only [falseLive, ite_eq_right hm] at hi
+      have := ih (advance g w) hi
+      by_contra hn
+      have he : i = w.length := by omega
+      exact hm (he ▸ hi)
+
+theorem falseParents_card (g : Gate) (w : List Bool) (h : g.inputs.length ≤ 2) :
+    (falseParents g w).card ≤ (if isOrGate g then 2 else 1) := by
+  cases hop : g.op <;> simp [isOrGate, falseParents, hop]
+  · split
+    · split <;> simp
+    · simp
+  · exact (Finset.card_le_card (Finset.filter_subset _ _)).trans ((List.toFinset_card_le _).trans h)
+
+theorem falseLive_card (gs : List Gate) (w : List Bool) (o : ℕ)
+    (h : ∀ g ∈ gs, g.inputs.length ≤ 2) :
+    (falseLive gs w o).card ≤ (gs.filter isOrGate).length + 1 := by
+  induction gs generalizing w with
+  | nil =>
+    simp only [falseLive, List.filter_nil, List.length_nil]
+    split <;> simp
+  | cons g gs ih =>
+    let t := falseLive gs (advance g w) o
+    have ht : t.card ≤ (gs.filter isOrGate).length + 1 :=
+      ih (advance g w) (fun k hk => h k (List.mem_cons_of_mem _ hk))
+    have hp := falseParents_card g w (h g (List.mem_cons_self ..))
+    by_cases hm : w.length ∈ t
+    · have he := Finset.card_erase_add_one hm
+      have hu := Finset.card_union_le (t.erase w.length) (falseParents g w)
+      change ((if w.length ∈ t then t.erase w.length ∪ falseParents g w else t).card) ≤ _
+      rw [ite_eq_left hm]
+      cases hb : isOrGate g <;> simp [hb] at hp ⊢ <;> omega
+    · change ((if w.length ∈ t then t.erase w.length ∪ falseParents g w else t).card) ≤ _
+      rw [ite_eq_right hm]
+      cases hb : isOrGate g <;> simp [hb] <;> omega
+
+end PEqualNP.Research.MissingCell
+
+namespace PEqualNP.Research.MissingCell
+open PEqualNP.CircuitLowerBounds PEqualNP.MetaComplexity
+
+theorem falseParents_semantic (g : Gate) (x y : List Bool) (hlen : y.length = x.length)
+    (op : g.op = .and ∨ g.op = .or)
+    (agree : ∀ i ∈ falseParents g x, x.getD i false = false → y.getD i false = false)
+    (hx : g.op.eval (g.inputs.map fun i => x.getD i false) = false) :
+    g.op.eval (g.inputs.map fun i => y.getD i false) = false := by
+  rcases op with hand | hor
+  · rw [hand] at hx ⊢
+    cases he : g.inputs.find? (fun i => !(x.getD i false)) with
+    | none =>
+      have hall := List.find?_eq_none.mp he
+      have : GateOp.and.eval (g.inputs.map fun i => x.getD i false) = true := by
+        simp only [GateOp.eval, List.all_map, List.all_eq_true]
+        intro i hi
+        simpa using hall i hi
+      simp_all
+    | some i =>
+      have hi := List.mem_of_find?_eq_some he
+      have hfx : x.getD i false = false := by simpa using List.find?_some he
+      have hfy : y.getD i false = false := by
+        by_cases hb : i < x.length
+        · apply agree i _ hfx
+          simp only [falseParents, hand, he, ite_eq_left hb, Finset.mem_singleton]
+        · exact getD_missing (by omega)
+      have hmem : false ∈ g.inputs.map (fun i => y.getD i false) :=
+        List.mem_map.mpr ⟨i,hi,hfy⟩
+      simpa [GateOp.eval, List.all_eq_false] using hmem
+  · rw [hor] at hx ⊢
+    simp only [GateOp.eval, List.any_map, List.any_eq_false] at hx ⊢
+    intro i hi
+    have hfx : x.getD i false = false := by simpa using hx i hi
+    by_cases hb : i < x.length
+    · have hfy := agree i (by simp [falseParents, hor, hi, hb]) hfx
+      simpa using hfy
+    · have hfy := getD_missing (by omega : y.length ≤ i)
+      simpa using hfy
+
+theorem falseLive_semantic (C : Circuit) (x y : List Bool)
+    (hm : Monotone2 C) (hlen : y.length = x.length)
+    (agree : ∀ i ∈ falseLive C.gates x C.output, x.getD i false = false → y.getD i false = false) :
+    C.eval x = false → C.eval y = false := by
+  obtain ⟨gs,o⟩ := C
+  induction gs generalizing x y with
+  | nil =>
+    change x.getD o false = false → y.getD o false = false
+    intro hf
+    by_cases hb : o < x.length
+    · exact agree o (by change o ∈ falseLive [] x o; simp only [falseLive, ite_eq_left (And.intro hb hf), Finset.mem_singleton]) hf
+    · exact getD_missing (by omega)
+  | cons g gs ih =>
+    change (Circuit.mk gs o).eval (advance g x) = false → (Circuit.mk gs o).eval (advance g y) = false
+    apply ih (advance g x) (advance g y) (by simp [advance, hlen])
+      (fun a ha => hm a (List.mem_cons_of_mem _ ha))
+    intro i hi hfx
+    have hlt := falseLive_lt gs (advance g x) o i hi
+    rw [advance_len] at hlt
+    by_cases he : i = x.length
+    · subst i
+      rw [getD_advance_eq] at hfx
+      rw [← hlen, getD_advance_eq]
+      apply falseParents_semantic g x y hlen (hm g (List.mem_cons_self ..)).1 _ hfx
+      intro j hj
+      exact agree j (by simp [falseLive, hi, hj])
+    · have hb : i < x.length := by omega
+      rw [getD_advance_lt _ _ _ hb] at hfx
+      rw [getD_advance_lt _ _ _ (by omega)]
+      apply agree i _ hfx
+      by_cases hn : x.length ∈ falseLive gs (advance g x) o <;> simp [falseLive, hn, hi, he]
+end PEqualNP.Research.MissingCell
+
+namespace PEqualNP.Research.MissingCell
+open PEqualNP.CircuitLowerBounds PEqualNP.Represents
+
+private theorem left_change {n m : ℕ} (u w : Fin n) (v : Fin m) (i : ℕ)
+    (hi : i ≠ u.val) (h : (oneEach u v).getD i false = true) :
+    (oneEach w v).getD i false = true := by
+  by_cases hn : i < n
+  · have hne : (⟨i, hn⟩ : Fin n) ≠ u := fun he => hi (congrArg Fin.val he)
+    simp [oneEach, List.getD_eq_getElem?_getD, List.getElem?_append_left, hn, hne] at h
+  · simpa [oneEach, List.getD_eq_getElem?_getD, List.getElem?_append_right, Nat.le_of_not_gt hn] using h
+
+private theorem right_change {n m : ℕ} (u : Fin n) (v w : Fin m) (i : ℕ)
+    (hi : i ≠ n + v.val) (h : (oneEach u v).getD i false = true) :
+    (oneEach u w).getD i false = true := by
+  by_cases hn : i < n
+  · simpa [oneEach, List.getD_eq_getElem?_getD, List.getElem?_append_left, hn] using h
+  · by_cases hm : i-n < m
+    · have hne : (⟨i-n, hm⟩ : Fin m) ≠ v := by
+        intro he
+        have := congrArg Fin.val he
+        simp at this
+        omega
+      simp [oneEach, List.getD_eq_getElem?_getD, List.getElem?_append_right, Nat.le_of_not_gt hn, hm, hne] at h
+    · simp [oneEach, List.getD_eq_getElem?_getD, List.getElem?_append_right, Nat.le_of_not_gt hn, hm] at h
+
+theorem mixed_support {n m : ℕ} (A : Fin n → Fin m → Bool) (S : Finset ℕ)
+    (R : Finset (Fin n)) (K : Finset (Fin m))
+    (hr : ∀ u ∈ R, ∃ v w, A u v = true ∧ A w v = false)
+    (hk : ∀ v ∈ K, ∃ u w, A u v = true ∧ A u w = false)
+    (mono : ∀ u v w z, (∀ i ∈ S, (oneEach u v).getD i false = true →
+      (oneEach w z).getD i false = true) → A u v = true → A w z = true) :
+    R.card + K.card ≤ S.card := by
+  let e : Fin n ↪ ℕ := ⟨Fin.val, Fin.val_injective⟩
+  let f : Fin m ↪ ℕ := ⟨fun j => n+j.val, fun a b h => Fin.ext (Nat.add_left_cancel h)⟩
+  have hR : R.map e ⊆ S := by
+    intro i hi
+    obtain ⟨u, hu, rfl⟩ := Finset.mem_map.mp hi
+    obtain ⟨v,w,ht,hf⟩ := hr u hu
+    by_contra miss
+    change u.val ∉ S at miss
+    have := mono u v w v (fun j hj => left_change u w v j (fun h => miss (h ▸ hj))) ht
+    simp_all
+  have hK : K.map f ⊆ S := by
+    intro i hi
+    obtain ⟨v, hv, rfl⟩ := Finset.mem_map.mp hi
+    obtain ⟨u,w,ht,hf⟩ := hk v hv
+    by_contra miss
+    change n+v.val ∉ S at miss
+    have := mono u v u w (fun j hj => right_change u v w j (fun h => miss (h ▸ hj))) ht
+    simp_all
+  have hd : Disjoint (R.map e) (K.map f) := by
+    apply Finset.disjoint_left.mpr
+    intro i hi hk
+    obtain ⟨u,_,rfl⟩ := Finset.mem_map.mp hi
+    obtain ⟨v,_,h⟩ := Finset.mem_map.mp hk
+    change n+v.val = u.val at h
+    omega
+  simpa [Finset.card_union_of_disjoint hd] using Finset.card_le_card (Finset.union_subset hR hK)
+
+end PEqualNP.Research.MissingCell
+
+namespace PEqualNP.Research.MissingCell
+open PEqualNP.Represents
+
+theorem missingCell_bound {n m : ℕ} (i : Fin n) (j : Fin m) (S : Finset ℕ)
+    (cert : ∀ u v, (u ≠ i ∨ v ≠ j) → ∃ k ∈ S,
+      (oneEach u v).getD k false = true ∧ (oneEach i j).getD k false = false) :
+    (n - 1) + (m - 1) ≤ S.card := by
+  let A : Fin n → Fin m → Bool := fun u v => decide (u ≠ i ∨ v ≠ j)
+  have h := mixed_support A S (Finset.univ.erase i) (Finset.univ.erase j)
+    (by
+      intro u hu
+      exact ⟨j, i, by simp [A, (Finset.mem_erase.mp hu).1], by simp [A]⟩)
+    (by
+      intro v hv
+      exact ⟨i, j, by simp [A, (Finset.mem_erase.mp hv).1], by simp [A]⟩)
+    (by
+      intro u v w z hwire hpos
+      by_cases hw : w = i
+      · by_cases hz : z = j
+        · subst w
+          subst z
+          obtain ⟨k, hk, htrue, hfalse⟩ := cert u v (of_decide_eq_true hpos)
+          have hbad := hwire k hk htrue
+          simp_all
+        · simp [A, hz]
+      · simp [A, hw])
+  simpa [Finset.card_erase_of_mem] using h
+
+theorem missingCell_bound_of_eval {n m : ℕ} (i : Fin n) (j : Fin m)
+    (C : PEqualNP.CircuitLowerBounds.Circuit) (S : Finset ℕ)
+    (neg : C.eval (oneEach i j) = false)
+    (pos : ∀ u v, (u ≠ i ∨ v ≠ j) → C.eval (oneEach u v) = true)
+    (keep : ∀ (u : Fin n) (v : Fin m), (∀ k ∈ S, (oneEach i j).getD k false = false →
+      (oneEach u v).getD k false = false) → C.eval (oneEach i j) = false →
+      C.eval (oneEach u v) = false) : (n-1) + (m-1) ≤ S.card := by
+  apply missingCell_bound i j S
+  intro u v huv
+  by_contra hnone
+  have h := keep u v (by
+    intro k hk hb
+    cases ht : (oneEach u v).getD k false with
+    | false => rfl
+    | true => exact False.elim (hnone ⟨k, hk, ht, hb⟩)) neg
+  rw [pos u v huv] at h
+  contradiction
+
+theorem missingCell_or_gate_bound {n m : ℕ} (i : Fin n) (j : Fin m)
+    (C : PEqualNP.CircuitLowerBounds.Circuit) (hm : PEqualNP.MetaComplexity.Monotone2 C)
+    (neg : C.eval (oneEach i j) = false)
+    (pos : ∀ u v, (u ≠ i ∨ v ≠ j) → C.eval (oneEach u v) = true) :
+    (n-1) + (m-1) ≤ (C.gates.filter isOrGate).length + 1 := by
+  let S := falseLive C.gates (oneEach i j) C.output
+  exact (missingCell_bound_of_eval i j C S neg pos (fun u v =>
+    falseLive_semantic C (oneEach i j) (oneEach u v) hm (by simp [oneEach]))).trans
+    (falseLive_card _ _ _ (fun g hg => (hm g hg).2))
+
+end PEqualNP.Research.MissingCell
+
+namespace PEqualNP.Research.MissingCell
+open PEqualNP.CircuitLowerBounds PEqualNP.MetaComplexity PEqualNP.Represents
+
+theorem missingCell_or_count {n m : ℕ} (i : Fin n) (j : Fin m) (C : Circuit)
+    (hm : Monotone2 C)
+    (hr : Represents (fun u v => !(decide (u = i) && decide (v = j))) C) :
+    (n - 1) + (m - 1) ≤ (C.gates.filter isOrGate).length + 1 := by
+  let S := falseLive C.gates (oneEach i j) C.output
+  have lb := missingCell_bound_of_eval i j C S (by simp [hr i j])
+    (by
+      intro u v h
+      rw [hr u v]
+      rcases h with hu | hv <;> simp_all)
+    (fun u v => falseLive_semantic C (oneEach i j) (oneEach u v) hm (by simp [oneEach]))
+  exact lb.trans (falseLive_card C.gates (oneEach i j) C.output (fun g hg => (hm g hg).2))
+
+theorem missingCell_optimal_gates {n m : ℕ} (i : Fin n) (j : Fin m) (C : Circuit)
+    (hm : Monotone2 C)
+    (hr : Represents (fun u v => !(decide (u = i) && decide (v = j))) C)
+    (budget : C.size + 1 ≤ (n - 1) + (m - 1)) : ∀ g ∈ C.gates, g.op = .or := by
+  have lo := missingCell_or_count i j C hm hr
+  change C.gates.length + 1 ≤ _ at budget
+  have hi := List.length_filter_le isOrGate C.gates
+  have eqn : (C.gates.filter isOrGate).length = C.gates.length := by omega
+  intro g hg
+  have hor := List.length_filter_eq_length_iff.mp eqn g hg
+  cases op : g.op <;> simp_all [isOrGate]
+theorem missingCell_optimal_shape {n m : ℕ} (i : Fin n) (j : Fin m) (C : Circuit)
+    (hm : Monotone2 C)
+    (hr : Represents (fun u v => !(decide (u = i) && decide (v = j))) C)
+    (budget : C.size + 1 ≤ (n - 1) + (m - 1)) :
+    (∀ g ∈ C.gates, g.op = .or) ∧ freshBinarySweep C.gates (n+m) C.output := by
+  refine ⟨missingCell_optimal_gates i j C hm hr budget, ?_⟩
+  have lb := missingCell_bound_of_eval i j C (live C.gates (n+m) C.output) (by simp [hr i j])
+    (by
+      intro u v h
+      rw [hr u v]
+      rcases h with hu | hv <;> simp_all)
+    (by
+      intro u v keep hneg
+      by_contra hn
+      have hp : C.eval (oneEach u v) = true := by simpa using hn
+      have hback := eval_mono_live C (n+m) (oneEach u v) (oneEach i j) hm
+        (by simp [oneEach]) (by simp [oneEach]) (by
+          intro k hk hkpos
+          cases hb : (oneEach i j).getD k false with
+          | false => exact Bool.noConfusion (hkpos.symm.trans (keep k hk hb))
+          | true => rfl) hp
+      simp_all)
+  have hfan : ∀ g ∈ C.gates, g.inputs.length ≤ 2 := fun g hg => (hm g hg).2
+  have hi := live_card C.gates (n+m) C.output hfan
+  change C.gates.length + 1 ≤ _ at budget
+  exact freshBinarySweep_of_max C.gates (n+m) C.output hfan (by omega)
+
+end PEqualNP.Research.MissingCell
+
+
+namespace OnePerShore
+
+open PEqualNP.CircuitLowerBounds PEqualNP.MetaComplexity PEqualNP.Represents
+open PEqualNP.Research.MissingCell
+
+/-- A row is charged exactly if a positive cell in it has a zero below it
+in the same column. -/
+def nonminimumRows {n m : ℕ} (A : Fin n → Fin m → Bool) : Finset (Fin n) :=
+  Finset.univ.filter fun u => ∃ v w, A u v = true ∧ A w v = false
+
+/-- Column version of the same physical dependence test. -/
+def nonminimumCols {n m : ℕ} (A : Fin n → Fin m → Bool) : Finset (Fin m) :=
+  Finset.univ.filter fun v => ∃ u w, A u v = true ∧ A u w = false
+
+def charged {n m : ℕ} (A : Fin n → Fin m → Bool) : ℕ :=
+  (nonminimumRows A).card + (nonminimumCols A).card
+
+theorem charged_le_live {n m : ℕ} {A : Fin n → Fin m → Bool}
+    {C : Circuit} (legal : Monotone2 C) (rep : Represents A C) :
+    charged A ≤ (live C.gates (n+m) C.output).card := by
+  apply mixed_support A _ (nonminimumRows A) (nonminimumCols A)
+  · intro u hu
+    exact (Finset.mem_filter.mp hu).2
+  · intro v hv
+    exact (Finset.mem_filter.mp hv).2
+  · intro u v w z h ht
+    rw [←rep w z]
+    apply eval_mono_live C (n+m) (oneEach u v) (oneEach w z) legal
+      (by simp [oneEach]) (by simp [oneEach]) h
+    simpa [rep u v] using ht
+
+theorem physical_size_floor {n m s : ℕ} {A : Fin n → Fin m → Bool}
+    (bound : RepSizeAtMost A s) : charged A - 1 ≤ s := by
+  obtain ⟨C, legal, size, rep⟩ := bound
+  have h := charged_le_live legal rep
+  have cap := live_card C.gates (n+m) C.output (fun g hg => (legal g hg).2)
+  change C.gates.length ≤ s at size
+  omega
+
+/-- At the dependence floor, no repeated use, invalid gate input, dead gate
+or unary gate can remain in the demanded physical circuit. -/
+theorem tight_physical_sweep {n m : ℕ} {A : Fin n → Fin m → Bool}
+    {C : Circuit} (legal : Monotone2 C) (rep : Represents A C)
+    (nonempty : 0 < charged A) (tight : C.size ≤ charged A - 1) :
+    (live C.gates (n+m) C.output).card = charged A ∧
+      C.size + 1 = charged A ∧ freshBinarySweep C.gates (n+m) C.output := by
+  have h := charged_le_live legal rep
+  have fan := fun g hg => (legal g hg).2
+  have cap := live_card C.gates (n+m) C.output fan
+  change C.gates.length ≤ charged A - 1 at tight
+  change _ ∧ C.gates.length + 1 = _ ∧ _
+  exact ⟨by omega, by omega, freshBinarySweep_of_max _ _ _ fan (by omega)⟩
+
+end OnePerShore
+
+
+namespace OnePerShore
+
+open PEqualNP.CircuitLowerBounds PEqualNP.MetaComplexity PEqualNP.Represents
+open PEqualNP.Research.MissingCell
+
+inductive Formula where
+  | atom (i : ℕ)
+  | node (isAnd : Bool) (left right : Formula)
+
+def Formula.leaves : Formula → List ℕ
+  | .atom i => [i]
+  | .node _ l r => l.leaves ++ r.leaves
+
+def Formula.eval (x : ℕ → Bool) : Formula → Bool
+  | .atom i => x i
+  | .node op l r => if op then l.eval x && r.eval x else l.eval x || r.eval x
+
+def Formula.bind (k : ℕ → Formula) : Formula → Formula
+  | .atom i => k i
+  | .node op l r => .node op (l.bind k) (r.bind k)
+
+theorem Formula.bind_leaves (t : Formula) (k : ℕ → Formula) :
+    (t.bind k).leaves = t.leaves.flatMap (fun i => (k i).leaves) := by
+  induction t <;> simp_all [Formula.bind, Formula.leaves, List.flatMap_append]
+
+theorem Formula.bind_eval (t : Formula) (k : ℕ → Formula) (x : ℕ → Bool) :
+    (t.bind k).eval x = t.eval (fun i => (k i).eval x) := by
+  induction t <;> simp_all [Formula.bind, Formula.eval]
+
+private theorem two_inputs {l : List ℕ} (h : l.length = 2) : ∃ a b, l = [a,b] := by
+  cases l with
+  | nil => simp at h
+  | cons a t =>
+    cases t with
+    | nil => simp at h
+    | cons b t =>
+      cases t with
+      | nil => exact ⟨_,_,rfl⟩
+      | cons c t => simp at h
+
+theorem formula_of_sweep (gs : List Gate) (n o : ℕ)
+    (legal : Monotone2 ⟨gs,o⟩) (sweep : freshBinarySweep gs n o) :
+    ∃ t : Formula, t.leaves.Nodup ∧ t.leaves.toFinset = live gs n o ∧
+      ∀ x : List Bool, x.length = n →
+        t.eval (fun i => x.getD i false) = (Circuit.mk gs o).eval x := by
+  induction gs generalizing n with
+  | nil =>
+    change o < n at sweep
+    exact ⟨.atom o, by simp [Formula.leaves], by simp [Formula.leaves, live, sweep],
+      fun _ _ => rfl⟩
+  | cons g gs ih =>
+    obtain ⟨used, len, distinct, earlier, fresh, tail⟩ := sweep
+    obtain ⟨a,b,hargs⟩ := two_inputs len
+    have hab : a ≠ b := by simpa [hargs] using distinct
+    obtain ⟨t, nd, support, semantics⟩ :=
+      ih (n+1) (fun k hk => legal k (List.mem_cons_of_mem _ hk)) tail
+    let op := match g.op with | .and => true | _ => false
+    let k (i : ℕ) : Formula := if i=n then .node op (.atom a) (.atom b) else .atom i
+    have lk (i : ℕ) : (k i).leaves = if i=n then [a,b] else [i] := by
+      by_cases h : i=n <;> simp [k,h,Formula.leaves]
+    have away (i : ℕ) (hi : i ∈ t.leaves) (hn : i ≠ n) : i ≠ a ∧ i ≠ b := by
+      have hs : i ∈ (live gs (n+1) o).erase n :=
+        Finset.mem_erase.mpr ⟨hn, support ▸ List.mem_toFinset.mpr hi⟩
+      have no := Finset.disjoint_left.mp fresh hs
+      constructor <;> rintro rfl <;> exact no (by simp [hargs])
+    refine ⟨t.bind k, ?_, ?_, ?_⟩
+    · rw [Formula.bind_leaves, List.nodup_flatMap]
+      refine ⟨fun i _ => ?_, nd.imp_of_mem ?_⟩
+      · by_cases h : i=n <;> simp [lk,h,hab]
+      · intro i j hi hj hij
+        change List.Disjoint (k i).leaves (k j).leaves
+        rw [lk,lk]
+        by_cases hin : i=n <;> by_cases hjn : j=n
+        · exact (hij (hin.trans hjn.symm)).elim
+        · obtain ⟨na,nb⟩ := away j hj hjn
+          simp [hin,hjn, na, nb]
+        · obtain ⟨na,nb⟩ := away i hi hin
+          simp [hin,hjn, na, nb]
+        · simp [hin,hjn,Ne.symm hij]
+    · have na := earlier a (by simp [hargs])
+      have nb := earlier b (by simp [hargs])
+      ext z
+      simp only [Formula.bind_leaves, List.mem_toFinset, List.mem_flatMap]
+      rw [live, ite_eq_left used]
+      simp only [Finset.mem_union, Finset.mem_erase, Finset.mem_filter, hargs, List.mem_toFinset,
+        List.mem_cons, List.not_mem_nil, or_false]
+      have hmem (i : ℕ) : i ∈ t.leaves ↔ i ∈ live gs (n+1) o := by
+        rw [←support, List.mem_toFinset]
+      constructor
+      · rintro ⟨i,hi,hz⟩
+        by_cases e : i=n
+        · subst i; simp [lk] at hz; exact Or.inr ⟨hz, by rcases hz with rfl|rfl <;> assumption⟩
+        · simp [lk,e] at hz; subst z; exact Or.inl ⟨e,(hmem _).mp hi⟩
+      · rintro (⟨hn,hz⟩|⟨hz,_⟩)
+        · exact ⟨z,(hmem _).mpr hz,by simp [lk,hn]⟩
+        · exact ⟨n,(hmem _).mpr used,by simpa [lk] using hz⟩
+    · intro x hx
+      rw [Formula.bind_eval]
+      change _ = (Circuit.mk gs o).eval (advance g x)
+      rw [←semantics (advance g x) (by simp [advance,hx])]
+      congr 1
+      funext i
+      by_cases eq : i=n
+      · subst i
+        rw [show (advance g x).getD n false = _ by simpa only [hx] using getD_advance_eq g x]
+        have hop : g.op = .and ∨ g.op = .or := (legal g (List.mem_cons_self ..)).1
+        rcases hop with e|e <;>
+          simp [k, op, e, hargs, Formula.eval, GateOp.eval]
+      · by_cases small : i<n
+        · simp only [k, if_neg eq, Formula.eval]
+          exact (getD_advance_lt g x i (by omega)).symm
+        · have big : (advance g x).length ≤ i := by simp [advance,hx]; omega
+          simp only [k, if_neg eq, Formula.eval]
+          rw [getD_missing big, getD_missing (by omega : x.length ≤ i)]
+
+theorem formula_of_tight_circuit {n m : ℕ} {A : Fin n → Fin m → Bool}
+    {C : Circuit} (legal : Monotone2 C) (rep : Represents A C)
+    (positive : 0 < charged A) (cost : C.size ≤ charged A - 1) :
+    ∃ t : Formula, t.leaves.Nodup ∧ t.leaves.toFinset = live C.gates (n+m) C.output ∧
+      ∀ x : List Bool, x.length = n+m →
+        t.eval (fun i => x.getD i false) = C.eval x := by
+  exact formula_of_sweep C.gates (n+m) C.output legal
+    (tight_physical_sweep legal rep positive cost).2.2
+
+end OnePerShore
+
+
+namespace ReadOnceP4
+
+/-- A possible final gate of a positive read-once formula. Its two
+children receive disjoint subsets of the four varying leaves. -/
+def rootValue (useAnd a b c d : Bool) (f g : Bool → Bool → Bool → Bool → Bool)
+    (x y z w : Bool) : Bool :=
+  let l := f (a && x) (b && y) (c && z) (d && w)
+  let r := g (!a && x) (!b && y) (!c && z) (!d && w)
+  if useAnd then l && r else l || r
+
+/-- A connected three-edge bipartite path, with its missing corner
+rejected, cannot have a nontrivial read-once root split. The child
+functions may be arbitrary apart from vanishing on the zero vector. -/
+theorem no_split (op a b c d : Bool) (f g : Bool → Bool → Bool → Bool → Bool)
+    (leftUsed : a || b || c || d = true)
+    (rightUsed : !a || !b || !c || !d = true)
+    (fzero : f false false false false = false)
+    (gzero : g false false false false = false)
+    (sx : rootValue op a b c d f g true false false false = false)
+    (sy : rootValue op a b c d f g false true false false = false)
+    (sz : rootValue op a b c d f g false false true false = false)
+    (sw : rootValue op a b c d f g false false false true = false)
+    (xz : rootValue op a b c d f g true false true false = true)
+    (xw : rootValue op a b c d f g true false false true = true)
+    (yz : rootValue op a b c d f g false true true false = true)
+    (yw : rootValue op a b c d f g false true false true = false) : False := by
+  cases op <;> cases a <;> cases b <;> cases c <;> cases d <;>
+    simp_all [rootValue] <;> grind
+
+end ReadOnceP4
+
+
+namespace OnePerShore
+
+abbrev Four := Bool → Bool → Bool → Bool → Bool
+
+def Corner (f : Four) : Prop :=
+  f true false false false = false ∧ f false true false false = false ∧
+  f false false true false = false ∧ f false false false true = false ∧
+  f true false true false = true ∧ f true false false true = true ∧
+  f false true true false = true ∧ f false true false true = false
+
+/-- Closure of the obstruction under a root split, including an empty
+projected child. The nonempty case is the finite four-variable lemma. -/
+private theorem no_corner_split (op a b c d : Bool) (f g : Four)
+    (fz : f false false false false = false) (gz : g false false false false = false)
+    (hf : ¬ Corner f) (hg : ¬ Corner g) :
+    ¬ Corner (ReadOnceP4.rootValue op a b c d f g) := by
+  by_cases hl : a || b || c || d = true
+  · by_cases hr : !a || !b || !c || !d = true
+    · rintro ⟨sx,sy,sz,sw,xz,xw,yz,yw⟩
+      exact ReadOnceP4.no_split op a b c d f g hl hr fz gz sx sy sz sw xz xw yz yw
+    · cases a <;> cases b <;> cases c <;> cases d <;> cases op <;>
+        simp_all [Corner, ReadOnceP4.rootValue]
+  · cases a <;> cases b <;> cases c <;> cases d <;> cases op <;>
+      simp_all [Corner, ReadOnceP4.rootValue]
+
+def paint (a b c d : ℕ) (x y z w : Bool) (i : ℕ) : Bool :=
+  (decide (i=a) && x) || (decide (i=b) && y) ||
+  (decide (i=c) && z) || (decide (i=d) && w)
+
+def Formula.trace (t : Formula) (a b c d : ℕ) : Four :=
+  fun x y z w => t.eval (paint a b c d x y z w)
+
+theorem Formula.eval_congr (t : Formula) (x y : ℕ → Bool)
+    (h : ∀ i ∈ t.leaves, x i = y i) : t.eval x = t.eval y := by
+  induction t with
+  | atom i => exact h i (by simp [Formula.leaves])
+  | node op l r il ir =>
+    simp only [Formula.eval]
+    rw [il (fun i hi => h i (by simp [Formula.leaves,hi])),
+        ir (fun i hi => h i (by simp [Formula.leaves,hi]))]
+
+theorem Formula.eval_zero (t : Formula) : t.eval (fun _ => false) = false := by
+  induction t <;> simp_all [Formula.eval]
+
+private theorem trace_zero (t : Formula) (a b c d : ℕ) :
+    t.trace a b c d false false false false = false := by
+  change t.eval (paint a b c d false false false false) = false
+  rw [t.eval_congr _ (fun _ => false) (fun i _ => by simp [paint])]
+  exact t.eval_zero
+
+private theorem trace_mask (t : Formula) (a b c d : ℕ) (p : ℕ → Bool)
+    (hp : ∀ i ∈ t.leaves, p i = true) (x y z w : Bool) :
+    t.trace a b c d (p a && x) (p b && y) (p c && z) (p d && w) =
+    t.trace a b c d x y z w := by
+  apply Formula.eval_congr
+  intro i hi
+  have h := hp i hi
+  by_cases ha : i=a <;> by_cases hb : i=b <;> by_cases hc : i=c <;> by_cases hd : i=d <;>
+    simp_all [paint]
+
+theorem Formula.no_corner (t : Formula) (nd : t.leaves.Nodup) (a b c d : ℕ) :
+    ¬ Corner (t.trace a b c d) := by
+  induction t with
+  | atom i =>
+    by_cases ha : i=a <;> by_cases hb : i=b <;> by_cases hc : i=c <;> by_cases hd : i=d <;>
+      simp [Corner,Formula.trace,Formula.eval,paint,ha,hb,hc,hd]
+  | node op l r ihl ihr =>
+    obtain ⟨nl,nr,apart⟩ := List.nodup_append'.mp nd
+    let p := fun i : ℕ => decide (i ∈ l.leaves)
+    have hl : ∀ i ∈ l.leaves, p i = true := fun i hi => by simp [p,hi]
+    have hr : ∀ i ∈ r.leaves, !(p i) = true := by
+      intro i hi
+      have hn : i ∉ l.leaves := fun h => (List.disjoint_left.mp apart) h hi
+      simp [p,hn]
+    have e : ReadOnceP4.rootValue op (p a) (p b) (p c) (p d)
+        (l.trace a b c d) (r.trace a b c d) = (Formula.node op l r).trace a b c d := by
+      funext x y z w
+      unfold ReadOnceP4.rootValue
+      rw [trace_mask l a b c d p hl,
+        trace_mask r a b c d (fun i => !(p i)) hr]
+      rfl
+    rw [←e]
+    exact no_corner_split op _ _ _ _ _ _ (trace_zero ..) (trace_zero ..) (ihl nl) (ihr nr)
+
+end OnePerShore
+
+
+namespace OnePerShore
+open PEqualNP.CircuitLowerBounds PEqualNP.MetaComplexity PEqualNP.Represents
+
+private def pairFlags (i j k : ℕ) : Bool := decide (k=i) || decide (k=j)
+
+private theorem oneEach_getD {n m : ℕ} (u : Fin n) (v : Fin m) (i : ℕ) :
+    (oneEach u v).getD i false = pairFlags u.val (n+v.val) i := by
+  by_cases hn : i<n
+  · have ne : i ≠ n+v.val := by omega
+    have fin : (⟨i,hn⟩ : Fin n) = u ↔ i=u.val := Fin.ext_iff
+    simp [pairFlags,oneEach,List.getD_eq_getElem?_getD,List.getElem?_append_left,hn,ne,fin]
+  · have ne : i ≠ u.val := by omega
+    by_cases hm : i-n<m
+    · have fin : (⟨i-n,hm⟩ : Fin m) = v ↔ i=n+v.val := by
+        rw [Fin.ext_iff]; change i-n=v.val ↔ _; omega
+      simp [pairFlags, oneEach, List.getD_eq_getElem?_getD, List.getElem?_append_right,
+        Nat.le_of_not_gt hn, ne, hm, fin]
+    · have ne' : i ≠ n+v.val := by omega
+      simp [pairFlags, oneEach, List.getD_eq_getElem?_getD, List.getElem?_append_right,
+        Nat.le_of_not_gt hn, ne, hm, ne']
+
+private theorem Formula.eval_mono (t : Formula) (x y : ℕ → Bool)
+    (h : ∀ i, x i = true → y i = true) : t.eval x = true → t.eval y = true := by
+  induction t with
+  | atom i => exact h i
+  | node op l r hl hr =>
+    cases op <;> simp only [Formula.eval,Bool.false_eq_true,ite_false,ite_true,
+      Bool.and_eq_true,Bool.or_eq_true] <;> tauto
+
+/-- A missing corner on nonuniversal vertices raises the physical gate
+floor by one. The missing corner itself witnesses two nonuniversal flags. -/
+theorem physical_corner_lower {n m s : ℕ} {A : Fin n → Fin m → Bool}
+    (u w : Fin n) (v z : Fin m)
+    (uv : A u v = true) (uz : A u z = true) (wv : A w v = true) (wz : A w z = false)
+    (u_nonuniv : ∃ j, A u j = false) (v_nonuniv : ∃ i, A i v = false)
+    (bound : RepSizeAtMost A s) : charged A ≤ s := by
+  by_contra h
+  obtain ⟨C,legal,size,rep⟩ := bound
+  obtain ⟨t,nd,_,sem⟩ := formula_of_tight_circuit legal rep (by omega) (by omega)
+  have trep (i : Fin n) (j : Fin m) : t.eval (pairFlags i.val (n+j.val)) = A i j := by
+    have he := sem (oneEach i j) (by simp [oneEach])
+    simpa only [oneEach_getD, rep i j] using he
+  have row (i : Fin n) (j : Fin m) (zero : A i j = false) :
+      t.eval (fun k => decide (k=i.val)) = false := by
+    cases he : t.eval (fun k => decide (k=i.val)) with
+    | false => rfl
+    | true =>
+      have z := t.eval_mono _ (pairFlags i.val (n+j.val)) (fun k hk => by simp [pairFlags,hk]) he
+      simp [trep i j,zero] at z
+  have col (i : Fin n) (j : Fin m) (zero : A i j = false) :
+      t.eval (fun k => decide (k=n+j.val)) = false := by
+    cases he : t.eval (fun k => decide (k=n+j.val)) with
+    | false => rfl
+    | true =>
+      have z := t.eval_mono _ (pairFlags i.val (n+j.val)) (fun k hk => by simp [pairFlags,hk]) he
+      simp [trep i j,zero] at z
+  obtain ⟨j,hj⟩ := u_nonuniv
+  obtain ⟨i,hi⟩ := v_nonuniv
+  apply t.no_corner nd u.val w.val (n+v.val) (n+z.val)
+  refine ⟨?_,?_,?_,?_,?_,?_,?_,?_⟩
+  · unfold Formula.trace
+    exact (t.eval_congr _ _ (fun k _ => by simp [paint,pairFlags])).trans (row u j hj)
+  · unfold Formula.trace
+    exact (t.eval_congr _ _ (fun k _ => by simp [paint,pairFlags])).trans (row w z wz)
+  · unfold Formula.trace
+    exact (t.eval_congr _ _ (fun k _ => by simp [paint,pairFlags])).trans (col i v hi)
+  · unfold Formula.trace
+    exact (t.eval_congr _ _ (fun k _ => by simp [paint,pairFlags])).trans (col w z wz)
+  · unfold Formula.trace
+    exact (t.eval_congr _ _ (fun k _ => by simp [paint,pairFlags])).trans ((trep u v).trans uv)
+  · unfold Formula.trace
+    exact (t.eval_congr _ _ (fun k _ => by simp [paint,pairFlags])).trans ((trep u z).trans uz)
+  · unfold Formula.trace
+    exact (t.eval_congr _ _ (fun k _ => by simp [paint,pairFlags])).trans ((trep w v).trans wv)
+  · unfold Formula.trace
+    exact (t.eval_congr _ _ (fun k _ => by simp [paint,pairFlags])).trans ((trep w z).trans wz)
+
+end OnePerShore
+
+
+namespace Mask28121121
+open PEqualNP.CircuitLowerBounds PEqualNP.MetaComplexity PEqualNP.Represents
+
+def matrix (u : Fin 5) (v : Fin 5) : Bool :=
+  (28121121 : ℕ).testBit (5 * u.val + v.val)
+
+theorem charged_ten : OnePerShore.charged matrix = 10 := by decide +kernel
+
+theorem lower {s : ℕ} (h : RepSizeAtMost matrix s) : 10 ≤ s := by
+  rw [← charged_ten]
+  exact OnePerShore.physical_corner_lower 2 3 1 2 (by decide) (by decide)
+    (by decide) (by decide) ⟨0, by decide⟩ ⟨0, by decide⟩ h
+
+def witness : Circuit := ⟨[
+  ⟨.or,[0,1]⟩,
+  ⟨.and,[10,5]⟩,
+  ⟨.or,[6,7]⟩,
+  ⟨.and,[2,12]⟩,
+  ⟨.or,[3,4]⟩,
+  ⟨.or,[8,9]⟩,
+  ⟨.or,[6,15]⟩,
+  ⟨.and,[14,16]⟩,
+  ⟨.or,[11,13]⟩,
+  ⟨.or,[18,17]⟩], 19⟩
+
+theorem upper : RepSizeAtMost matrix 10 := by
+  refine ⟨witness, ?_, ?_, ?_⟩
+  · simp [Monotone2, witness]
+  · decide
+  · decide +kernel
+end Mask28121121
+
+theorem PEqualNP.Outside.L_meta_21246 : ¬ (PEqualNP.Represents.RepSizeAtMost
+    (fun (u : Fin 5) (v : Fin 5) => (28121121 : ℕ).testBit (5 * u.val + v.val)) 9) := by
+  intro h
+  have := Mask28121121.lower h
+  omega
+
