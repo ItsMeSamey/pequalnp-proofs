@@ -9,3 +9,5 @@ Identifying inputs 0 and 3 and relabeling the remaining inputs gives the nine-in
 Run `python3 verify.py` from this directory to check both calculations.
 
 For monotone circuits, a size-17 candidate must contain at least two distinct internal AND gates that each accept a nonedge pair. The two pairs can differ. [Rank-two flattening](nonedge-products/rank-two-flattening.md) · [Single exceptional product that accepts a singleton](nonedge-products/sole-hot.md) · [Single exceptional product that rejects singletons](nonedge-products/sole-cold.md)
+
+For unrestricted circuits with at most 17 gates, at least ten gates must be OR or NOT, leaving at most seven AND gates. The proof excludes every possibility with exactly nine OR/NOT gates under the independent binary-gate floor. It still leaves candidates of total size 16 and 17. [Four-inversion exclusion and dependencies](nonedge-products/four-inversions-paid.md)
