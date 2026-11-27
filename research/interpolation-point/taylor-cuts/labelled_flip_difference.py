@@ -46,7 +46,8 @@ def solve(n,edges,target,**kwargs):
     return find_nonzero(n,edges,len(target),P,**kwargs)
 
 
-def find_nonzero(n,edges,b,P,*,strong_order=None,odd_chord=False,connectivity_certificate=None,state_cap=None):
+def find_nonzero(n,edges,b,P,*,strong_order=None,odd_chord=False,connectivity_certificate=None,state_cap=None,
+                 primitive=False,cycle_cap=None):
     """P is a trit table in lexicographic order. The callback certifies hereditary connectivity."""
     P=tuple(P)
     edges=tuple((u,v,tuple(g)) for u,v,g in edges)
@@ -64,8 +65,19 @@ def find_nonzero(n,edges,b,P,*,strong_order=None,odd_chord=False,connectivity_ce
         groups[tuple(sorted((u,v)))].append(i)
     masks=[(1<<u)|(1<<v) for u,v,g in edges]
     stats=dict(states=0,queries=0,certified=False)
+    if cycle_cap is not None and (not primitive or type(cycle_cap) is not int or cycle_cap<0):
+        raise ValueError('cycle_cap requires primitive enumeration and a nonnegative integer')
+    @lru_cache(None)
+    def primitive_flips():
+        from primitive_flip_catalogue import build
+        templates,metrics=build(n,edges,cycle_cap=cycle_cap)
+        stats['catalogue']=metrics
+        return templates
     @lru_cache(None)
     def certified():
+        if primitive:
+            stats['certified']=primitive_flips() is not None
+            return stats['certified']
         ok=(strong_order is not None and check_order(graph,strong_order)
             or connectivity_certificate is not None and connectivity_certificate(graph)
             or odd_chord and odd_chord_host(graph))
@@ -82,6 +94,8 @@ def find_nonzero(n,edges,b,P,*,strong_order=None,odd_chord=False,connectivity_ce
         return tuple(sum(edges[i][2][j] for i in ids)%3 for j in range(b))
     @lru_cache(None)
     def flips():
+        if primitive:
+            return primitive_flips()
         out=[]
         for group in groups.values():
             for i,j in combinations(group,2):
