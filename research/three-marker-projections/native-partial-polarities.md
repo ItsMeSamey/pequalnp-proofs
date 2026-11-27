@@ -1,0 +1,11 @@
+# A guarded good rail forbids opposite selectable polarities even with omissions
+
+In a closed permutation network of independent optional three-cycles, assume every setting induces exactly two first-return cycles on the observed sites. One contains G, permanent guards before clauses, and all good literal probes in fixed clause order. The other contains B and the remaining probes in an arbitrary setting-dependent order. Arbitrary occurrences can be omitted from the good rail, but opposite signs of a variable cannot simultaneously be good.
+
+Then a positive probe p and a negative probe n of the same variable in distinct clauses cannot both be individually selectable, even in different masks. Trace out every other probe, retaining G,B and the guards. For p alone good the return permutation P is determined since B has only n. Likewise N is determined when n alone is good. P and N differ on the successors of both preceding guards, p, and n, which are four distinct tails.
+
+Changing one optional native three-cycle alters at most three complete departures. Each changed first-return tail needs at least one altered departure on its old return segment. Those segments have disjoint departures. If three projected tails change, all three altered complete departures are therefore accounted for on those segments.
+
+Suppose P and N occur. Choose closest masks A,D realizing them. Toggling any switch of their difference at A cannot give N by the four-tail bound, or P by minimum distance. It must give both probes bad. Either possible bad order arises from P by removing p from the good rail and inserting p into one of the two positions on the old (B,n) cycle. The three changed tails are p, its preceding guard, and the bad insertion predecessor. In particular none of the three altered complete departures lies on the old return segment from n's preceding guard. This holds for every switch differing at D. Toggling all of them preserves the entire old segment from that guard, since the native sites have disjoint controlled departures. At D its successor is therefore unchanged, contradicting N which requires n.
+
+Arbitrarily many hidden sockets or auxiliary switches are allowed. A joint decision construction may still use other boundary states, a varying order of the good guards, or interior access.

@@ -1,0 +1,21 @@
+# Small unsatisfiable cores on NO lengths of the unary hierarchy reduction
+
+Assume the unary H, hierarchy bound, fixed indexed width-three clause decoder, and satisfiability equivalence in the October quantitative-circuits proof. Clauses have q=n+O(log n) index bits and polynomial-time uniform decoding. This deduction uses those stated properties. It is not an independent verification of the entire manuscript.
+
+On compact input (1^n,1^K), let G mean that every list of at most K clause indices has a jointly satisfiable set of clauses. This total predicate belongs to Π₂P: universally choose a valid list, existentially supply bits for its at most 3K variable occurrences, and check satisfaction and agreement on equal decoded labels. Invalid lists pass vacuously. All tests run in polynomial time in n+K with one exponent. On YES lengths G always holds. On NO lengths it fails exactly when an unsatisfiable subcollection has size at most K.
+
+If NP=coNP, G has an NP verifier using time O((n+K+2)^c) for one fixed c. Choose a positive rational δ<1/(4c+4) and K=2^floor(δn). If every sufficiently large NO length had a core of at most K clauses, a nondeterministic machine would decide H within 2^(n/2) time, including writing unary K. This contradicts the hierarchy premise. Hence under NP=coNP the minimum core exceeds 2^floor(δn) at infinitely many NO lengths. In particular, proving that every sufficiently large NO length has a core of size 2^o(n) for this exact family would imply NP≠coNP. This condition needs no common YES witness evaluator.
+
+## Direct audit of the stated reduction
+
+The October source fixes a unary hierarchy language and machine. It does not specify its transition table or establish a core bound. Jahanjou–Miles–Viola §§5–6 encode gate consistency for local pair checks, routing and bit retrieval, plus output and constant pins. One rejecting computation gives no short common obstruction to every accepting history. The sources inspected give local decoding and equisatisfiability. No unconditional small-core or large-core bound was identified for the exact unmodified family.
+
+## A modification preserving the same H
+
+Use an auxiliary false formula on n-bit heap labels. Pin node 00…01 true. Each internal node 0u has a clause ¬T(0u) OR T(u0) OR T(u1). The extra clause at node zero is tautological. Pin each leaf 1u false. Omitting the negative unit for any distinct leaf permits a satisfying assignment making exactly its root-to-leaf path true. Every inconsistent subcollection therefore contains all 2^(n−1) distinct leaf types.
+
+Form an OR of the original formula and this false formula by guarding all clauses on the two sides with opposite polarities of one switch. Split width-four clauses to width three with private extension variables named by their clause indices and a fixed tag. For any collection that misses one leaf type, switch off the original side, use that leaf path, and extend the private variables to satisfy every touched split clause. Padding may duplicate leaf clauses, but all distinct leaf types remain mandatory. On NO inputs the modified formula has minimum core at least 2^(n−1), while every length keeps the original satisfiability status. Fixed section tags, shifts and appended child bits, and copying the index for private variable labels keep q=n+O(log n), O(n) total gates, and constant dependence per output bit. Handle bounded small n separately.
+
+This modification is not the literal JMV output. It shows that the stated decoder properties alone cannot imply small cores, not that the original core size is known. Generic constant-gap soundness also need not yield small cores: random 3-XOR systems from Schoenebeck retain linear-size local consistency, while a union bound gives constant global soundness at sufficiently large fixed density. This existence argument does not produce a succinct generator for H.
+
+[October proof](https://github.com/openai/math/tree/42907c9e999cc00d6abe7a50bfc1023250edd1b9/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026) · [Jahanjou, Miles and Viola](https://www.khoury.northeastern.edu/home/viola/papers/explicit.pdf) · [Schoenebeck](https://schoeneb.people.si.umich.edu/papers/LasserreNew.pdf)
