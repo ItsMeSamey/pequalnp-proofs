@@ -49,18 +49,25 @@ def connected_sets(adjacency, limit):
             candidates ^= bit
         raise AssertionError("connected set has no removable vertex")
 
-    def visit(mask):
-        yield mask
-        if mask.bit_count() >= limit:
-            return
-        for vertex in vertices(neighbors(mask) & ~mask):
-            child = mask | (1 << vertex)
-            if parent(child) == mask:
-                yield from visit(child)
+    def children(mask):
+        if mask.bit_count() < limit:
+            for vertex in vertices(neighbors(mask) & ~mask):
+                child = mask | (1 << vertex)
+                if parent(child) == mask:
+                    yield child
 
     if limit:
         for vertex in range(len(adjacency)):
-            yield from visit(1 << vertex)
+            root = 1 << vertex
+            yield root
+            stack = [children(root)]
+            while stack:
+                child = next(stack[-1], None)
+                if child is None:
+                    stack.pop()
+                else:
+                    yield child
+                    stack.append(children(child))
 
 
 def lowbits(m, monomials, k):
