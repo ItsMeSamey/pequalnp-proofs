@@ -1,0 +1,1 @@
+{"cpu": 0.05935599999999999, "maxrss_kib": 8832, "code": 0, "output": "interval costs, partition optimum and original raw witnesses verified\n", "rss": 8986624, "wall": 0.08169891498982906, "kernel_before": ["1: FLOCK  ADVISORY  WRITE 1512815 00:1b:193638 0 EOF"], "kernel_after": ["1: FLOCK  ADVISORY  WRITE 1512815 00:1b:193638 0 EOF"]}
