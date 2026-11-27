@@ -1,0 +1,21 @@
+/workspace/scratch/incidence-warm-traces/IncidenceWarmTraceChart.lean:8:8: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/workspace/scratch/incidence-warm-traces/IncidenceWarmTraceChart.lean:39:10: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/workspace/scratch/incidence-warm-traces/IncidenceWarmTraceChart.lean:42:10: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/workspace/scratch/incidence-warm-traces/IncidenceWarmTraceChart.lean:46:24: warning: Variable name `b` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _b
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'IncidenceWarmTraceChart.factors' depends on axioms: [propext, Classical.choice, Quot.sound]

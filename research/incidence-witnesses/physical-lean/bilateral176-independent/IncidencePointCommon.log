@@ -1,0 +1,14 @@
+IncidencePointCommon.lean:9:21: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+IncidencePointCommon.lean:40:31: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [active, R, Set.ext_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'IncidencePointCommon.common' depends on axioms: [propext, Classical.choice, Quot.sound]

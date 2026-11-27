@@ -1,0 +1,13 @@
+/workspace/scratch/incidence-line-warm/IncidenceActualLineCases.lean:48:70: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [e] at yd
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/workspace/scratch/incidence-line-warm/IncidenceActualLineCases.lean:58:6: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [empty] at xd
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'IncidenceActualLineChoice.cases_for_mask' depends on axioms: [propext, Classical.choice, Quot.sound]

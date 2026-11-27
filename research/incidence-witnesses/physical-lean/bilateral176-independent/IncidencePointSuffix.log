@@ -1,0 +1,9 @@
+IncidencePointSuffix.lean:42:26: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+IncidencePointSuffix.lean:50:33: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+'IncidencePointSuffix.packed' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,7 @@
+IncidenceLinePrivateCut.lean:60:14: warning: This simp argument is unused:
+  Fintype.card_subtype
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

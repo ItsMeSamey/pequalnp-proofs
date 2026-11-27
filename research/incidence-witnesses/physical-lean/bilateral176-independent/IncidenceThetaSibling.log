@@ -1,0 +1,9 @@
+IncidenceThetaSibling.lean:35:41: warning: This simp argument is unused:
+  kind
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [w, Gate.eval, Op.eval]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'IncidenceThetaSibling.monotone_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceThetaSibling.physical' depends on axioms: [propext, Classical.choice, Quot.sound]

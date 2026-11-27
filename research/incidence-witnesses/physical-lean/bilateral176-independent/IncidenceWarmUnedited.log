@@ -1,0 +1,2 @@
+'IncidenceWarmDichotomy.choices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceWarmDichotomy.retained' depends on axioms: [propext, Classical.choice, Quot.sound]

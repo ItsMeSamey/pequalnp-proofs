@@ -1,0 +1,15 @@
+IncidencePointNativeMerge.lean:35:28: warning: This simp argument is unused:
+  u
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fintype.card_subtype]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+IncidencePointNativeMerge.lean:35:30: warning: This simp argument is unused:
+  Fintype.card_subtype
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [u]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'IncidencePointWarmMasks.native_merge' depends on axioms: [propext, Classical.choice, Quot.sound]
