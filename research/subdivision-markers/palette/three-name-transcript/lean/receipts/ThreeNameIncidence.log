@@ -1,0 +1,20 @@
+/workspace/scratch/three-name-transcript/lean/ThreeNameIncidence.lean:17:0: warning: automatically included section variable(s) unused in theorem `ThreeNameIncidence.cycle_of_zero_sum`:
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/workspace/scratch/three-name-transcript/lean/ThreeNameIncidence.lean:24:0: warning: automatically included section variable(s) unused in theorem `ThreeNameIncidence.handshake`:
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/workspace/scratch/three-name-transcript/lean/ThreeNameIncidence.lean:36:8: warning: automatically included section variable(s) unused in theorem `_private.ThreeNameIncidence.0.ThreeNameIncidence.one_end`:
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ThreeNameIncidence.handshake' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNameIncidence.strict_excess' depends on axioms: [propext, Classical.choice, Quot.sound]
