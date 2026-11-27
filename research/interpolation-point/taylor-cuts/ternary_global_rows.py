@@ -94,7 +94,7 @@ def gadget(n,rows,global_ids,fixed):
     return size,edges,target,baseline,tags
 
 
-def solve(n,rows,*,b,h,rounds=1,randbelow_fn=randbelow,potential_budget=None,owner_kappa=None):
+def solve(n,rows,*,b,h,rounds=1,randbelow_fn=randbelow,potential_budget=None,owner_kappa=None,branch_solver=None):
     """Optional potential_budget enables deterministic exact decisions on recognized matching branches."""
     if owner_kappa is not None and (type(owner_kappa) is not int or owner_kappa<0):
         raise ValueError("invalid owner dimension cap")
@@ -115,7 +115,9 @@ def solve(n,rows,*,b,h,rounds=1,randbelow_fn=randbelow,potential_budget=None,own
         if built is None:
             continue
         size,edges,target,baseline,tags=built
-        if potential_budget is None and owner_kappa is None:
+        if branch_solver is not None:
+            status,match=branch_solver(size,edges,target)
+        elif potential_budget is None and owner_kappa is None:
             status,match=search(size,edges,target,rounds=rounds,randbelow_fn=randbelow_fn)
         else:
             from potential_labelled_matching import search as potential_search
@@ -130,4 +132,4 @@ def solve(n,rows,*,b,h,rounds=1,randbelow_fn=randbelow,potential_budget=None,own
             if any(sum(a*s for a,s in zip(row,x))%3 for row in rows):
                 raise ArithmeticError("invalid original-column witness")
             return "SAT",x
-    return ("UNKNOWN" if unresolved or (potential_budget is None and owner_kappa is None) else "UNSAT"),None
+    return ("UNKNOWN" if unresolved or (branch_solver is None and potential_budget is None and owner_kappa is None) else "UNSAT"),None

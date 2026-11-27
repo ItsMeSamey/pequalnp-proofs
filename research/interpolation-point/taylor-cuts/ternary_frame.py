@@ -83,12 +83,19 @@ def palettes(n,edges):
     return frames
 
 
-def color(n,edges,*,cap=None,use_prism=False,check_pencil=True,transfer_rank=None,four_row_high=None):
+def color(n,edges,*,cap=None,use_prism=False,check_pencil=True,transfer_rank=None,four_row_high=None,
+          global_b=None,global_h=0,owner_kappa=0,planar_character_cap=None,global_rounds=0):
     """Return status, coloring or None, and metrics. Cap limits 3**residual_rank."""
     if type(n) is not int or n<0 or cap is not None and (type(cap) is not int or cap<0):
         raise ValueError("invalid dimension or cap")
     if four_row_high is not None and (type(four_row_high) is not int or four_row_high<0):
         raise ValueError("four_row_high must be a nonnegative integer")
+    for value in (global_b,planar_character_cap):
+        if value is not None and (type(value) is not int or value<0):
+            raise ValueError("invalid optional global matching cap")
+    for value in (global_h,owner_kappa,global_rounds):
+        if type(value) is not int or value<0:
+            raise ValueError("invalid global matching cap")
     edges=tuple(edges)
     frames=palettes(n,edges)
     stats={"frames":0,"peeled_groups":0,"residual_rank":0}
@@ -130,7 +137,7 @@ def color(n,edges,*,cap=None,use_prism=False,check_pencil=True,transfer_rank=Non
             cols[rep][k]=(cols[rep][k]+scale*row[i])%3
     corrections=[]
     slopes={}
-    raw_cols=cols.copy() if four_row_high is not None else None
+    raw_cols=cols.copy() if four_row_high is not None or global_b is not None else None
     while True:
         groups={}
         for i,col in list(cols.items()):
@@ -161,20 +168,35 @@ def color(n,edges,*,cap=None,use_prism=False,check_pencil=True,transfer_rank=Non
         if certificate is not None:
             stats["certificate"]=certificate
             return "UNSAT",None,stats
-    four_row_signs=None
+    raw_signs=None
     if raw_cols is not None and rank:
-        from ternary_four_signs import solve
         ids=tuple(raw_cols)
         # Equivalent scalar multiples impose one constraint.
         system=tuple(dict.fromkeys(_projective(row) for row in zip(*raw_cols.values()) if any(row)))
-        status,signs,metrics=solve(system,n=len(ids),high_cap=four_row_high)
-        stats["four_row"]={**metrics,"status":status}
-        if status=="UNSAT":
-            return status,None,stats
-        if status=="SAT":
-            four_row_signs=dict(zip(ids,signs,strict=True))
-    if four_row_signs is not None:
-        slopes=four_row_signs
+        if four_row_high is not None:
+            from ternary_four_signs import solve
+            status,signs,metrics=solve(system,n=len(ids),high_cap=four_row_high)
+            stats["four_row"]={**metrics,"status":status}
+            if status=="UNSAT":
+                return status,None,stats
+            if status=="SAT":
+                raw_signs=dict(zip(ids,signs,strict=True))
+        if raw_signs is None and global_b is not None:
+            from ternary_global_rows import solve as solve_global
+            from ternary_matching_portfolio import search as branch_search
+            from functools import partial
+            from secrets import randbelow
+            metrics=dict.fromkeys(("owner_calls","planar_calls","hull_calls","random_calls"),0)
+            branch=partial(branch_search,owner_kappa=owner_kappa,planar_cap=planar_character_cap,
+                           rounds=global_rounds,randbelow_fn=randbelow,metrics=metrics)
+            status,signs=solve_global(len(ids),system,b=global_b,h=global_h,branch_solver=branch)
+            stats["global_matching"]={**metrics,"status":status}
+            if status=="UNSAT":
+                return status,None,stats
+            if status=="SAT":
+                raw_signs=dict(zip(ids,signs,strict=True))
+    if raw_signs is not None:
+        slopes=raw_signs
         corrections=[]
     elif transfer_rank is not None:
         from ternary_transfer_condition import full_support
