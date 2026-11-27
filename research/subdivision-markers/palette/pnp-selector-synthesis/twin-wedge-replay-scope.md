@@ -1,1 +1,3 @@
 The charged-twin theorem and the implementation at SHA-256 3250e760e824bd8974a0028751bf7ce614b7a5565630be1c7d24a6290f07f8c9 received independent review under a complete callback that supplies feasible compressed pairs. The source included here has SHA-256 abb40ad160bc6e3f01f930879f4663bbd3f5a6bc5ce9ffc264d28304431bb958. It adds checks for each offered pair. The callback's completeness remains a hypothesis.
+
+The current implementation at SHA-256 2ff86ace5e309765de93e61a3ff3dfa779f2ec0d3b4975191541595e9ee26488 received an independent exact-source review. It checks compressed cut masks, charge compatibility and compatibility on the final original labels. Callback completeness remains a premise.

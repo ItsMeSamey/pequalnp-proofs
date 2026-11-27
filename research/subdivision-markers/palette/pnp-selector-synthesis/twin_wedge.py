@@ -91,4 +91,9 @@ def solve(n, edges, solve_compressed):
             flip=(1<<u)|(1<<v)
             offer(x^(flip if ((x>>u)^(x>>v))&1 else 0),
                   y^(flip if ((y>>u)^(y>>v))&1 else 0))
-    return [(host.cut(x),host.cut(y)) for x,y in actual]
+    output = []
+    for x,y in actual:
+        if not host.compatible(x,y):
+            raise ValueError("original indexed witness failed its component charge check")
+        output.append((host.cut(x),host.cut(y)))
+    return output
