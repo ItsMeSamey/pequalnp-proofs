@@ -1,0 +1,2 @@
+'ExactPlanePhysicalWedgeTree.root_hit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlanePhysicalWedgeTree.table_exact' depends on axioms: [propext, Classical.choice, Quot.sound]

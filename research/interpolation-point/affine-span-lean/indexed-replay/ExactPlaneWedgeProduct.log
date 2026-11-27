@@ -1,0 +1,16 @@
+ExactPlaneWedgeProduct.lean:35:46: warning: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [multiply, actual, wedge]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ExactPlaneWedgeProduct.lean:35:59: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ExactPlaneWedgeProduct.lean:35:59: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ExactPlaneWedgeProduct.actual_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneWedgeProduct.retained_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneWedgeProduct.witnesses' depends on axioms: [propext, Classical.choice, Quot.sound]

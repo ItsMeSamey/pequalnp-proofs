@@ -1,0 +1,2 @@
+'ExactPlaneFirstRank.forced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneFirstRank.original_union' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,35 @@
+ExactPlaneFirstRelation.lean:17:0: warning: automatically included section variable(s) unused in theorem `ExactPlaneFirstRelation.aggregate_support`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ExactPlaneFirstRelation.lean:40:0: warning: automatically included section variable(s) unused in theorem `ExactPlaneFirstRelation.mem_relation`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ExactPlaneFirstRelation.lean:74:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ExactPlaneFirstRelation.lean:66:0: warning: automatically included section variable(s) unused in theorem `ExactPlaneFirstRelation.nonorthogonal`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ExactPlaneFirstRelation.lean:98:8: warning: automatically included section variable(s) unused in theorem `_private.ExactPlaneFirstRelation.0.ExactPlaneFirstRelation.span_support`:
+  [Fintype I]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ExactPlaneFirstRelation.scalar_iff_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneFirstRelation.extract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneFirstRelation.charge_rep' depends on axioms: [propext, Classical.choice, Quot.sound]

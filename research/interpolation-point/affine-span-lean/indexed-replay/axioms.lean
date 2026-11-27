@@ -1,0 +1,54 @@
+import ExactPlaneWedgeProduct
+import ExactPlaneWedgeTree
+import ExactPlaneWedgeBoundary
+import ExactPlaneWedgeSplit
+import ExactPlanePhysicalWedgeTree
+import ExactPlaneFirstRelation
+import ExactPlaneFirstSpaceRecovery
+import ExactPlaneFirstSpaceQueries
+import ExactPlaneFirstSpaceScalarRows
+import ExactPlaneRelationPair
+import ExactPlaneForcedLine
+import ExactPlaneFirstRank
+import ExactPlanePairSearch
+import ExactPlaneFirstRankOracle
+import ExactPlaneFirstRankBasis
+import ExactPlaneWinningPair
+import ExactPlanePairSearchExamples
+import ExactPlaneMaskCompatibility
+import ExactPlaneEnumeratedFirst
+import ExactPlaneEnumeratedFirstExamples
+#print axioms ExactPlaneWedgeProduct.actual_join
+#print axioms ExactPlaneWedgeProduct.retained_span
+#print axioms ExactPlaneWedgeProduct.witnesses
+#print axioms ExactPlaneWedgeTree.run_exact
+#print axioms ExactPlaneWedgeBoundary.glue
+#print axioms ExactPlaneWedgeBoundary.parent_determined
+#print axioms ExactPlaneWedgeBoundary.partial_sum_iff
+#print axioms ExactPlaneWedgeSplit.split_family
+#print axioms ExactPlanePhysicalWedgeTree.root_hit
+#print axioms ExactPlanePhysicalWedgeTree.table_exact
+#print axioms ExactPlaneFirstRelation.scalar_iff_trace
+#print axioms ExactPlaneFirstRelation.extract
+#print axioms ExactPlaneFirstRelation.charge_rep
+#print axioms ExactPlaneFirstSpaceRecovery.recover
+#print axioms ExactPlaneFirstSpaceQueries.contract
+#print axioms ExactPlaneFirstSpaceQueries.recover_physical
+#print axioms ExactPlaneRelationPair.exact_pair
+#print axioms ExactPlaneForcedLine.named_independent
+#print axioms ExactPlaneForcedLine.forced_iff
+#print axioms ExactPlaneForcedLine.axis_yes
+#print axioms ExactPlaneForcedLine.named_injective
+#print axioms ExactPlaneFirstRank.forced
+#print axioms ExactPlaneFirstRank.original_union
+#print axioms ExactPlanePairSearch.count
+#print axioms ExactPlanePairSearch.returned
+#print axioms ExactPlanePairSearch.complete
+#print axioms ExactPlaneFirstRankOracle.bound
+#print axioms ExactPlaneFirstRankOracle.conditional
+#print axioms ExactPlanePairSearch.finite_pair_bound
+#print axioms ExactPlanePairSearch.compatible_winner
+#print axioms ExactPlaneMaskCompatibility.test_iff
+#print axioms ExactPlaneEnumeratedFirst.decision
+#print axioms ExactPlaneEnumeratedFirst.returned
+#print axioms ExactPlaneEnumeratedFirst.pair_count
