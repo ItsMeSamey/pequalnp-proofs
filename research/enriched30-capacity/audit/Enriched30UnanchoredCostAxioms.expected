@@ -1,0 +1,2 @@
+'Enriched30ActualCost.unanchored_physical_size_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Enriched30ActualCost.unanchored_physical_live_floor' depends on axioms: [propext, Classical.choice, Quot.sound]

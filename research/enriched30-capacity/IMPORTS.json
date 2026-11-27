@@ -1,0 +1,423 @@
+{
+  "ActualUses": {
+    "inputs": [
+      "SignedTrace"
+    ],
+    "sha256": "435e1a380272fd92e98c7fa376a9a69fdc1bbf19d9ce8edcc834cb139e86fbc1",
+    "source": "site-team-08/path-parity/ActualUses.lean"
+  },
+  "BinateCapacity": {
+    "inputs": [
+      "BinateFirstFork",
+      "PhysicalExceptionalPrefix"
+    ],
+    "sha256": "077b6a9b8ac9365be7905a25d3fa9aa94ba2d7f7edf821d09b7bd627c73f52db",
+    "source": "site-team-08/path-parity/BinateCapacity.lean"
+  },
+  "BinateFirstFork": {
+    "inputs": [
+      "BinatePins",
+      "LiveUses"
+    ],
+    "sha256": "3e2406d2a124067c06245b776e3b34d0a34298ca157782eb0397d9d1ffdf8eff",
+    "source": "site-team-08/path-parity/BinateFirstFork.lean"
+  },
+  "BinateInverterCharge": {
+    "inputs": [
+      "OriginalCircuitCapacity"
+    ],
+    "sha256": "ed1be3e78417b3482cf80d6b3474bfee8616098d624a479d917486041780193c",
+    "source": "site-team-09/BinateInverterCharge.lean"
+  },
+  "BinatePins": {
+    "inputs": [
+      "SignedPhysicalPath"
+    ],
+    "sha256": "2818b7a1c264f194b080ac58f6db9026733ffba31e689b606dc2d57e0184b18b",
+    "source": "site-team-08/path-parity/BinatePins.lean"
+  },
+  "ChangingDonorLive": {
+    "inputs": [
+      "LiveUsesIncidenceBridge",
+      "BinatePins"
+    ],
+    "sha256": "80d924cb4838b80bce9f82ebddd773fbecf472c3adb140724538cf1f30641ca9",
+    "source": "site-team-08/path-parity/ChangingDonorLive.lean"
+  },
+  "Enriched30ActualCost": {
+    "inputs": [
+      "Enriched30RetainedBinding",
+      "Enriched30Candidate",
+      "BinateInverterCharge",
+      "LiveChargeSize"
+    ],
+    "sha256": "ddb72b6d45d1f7754852ebce74e34cecb4eecfbc6fd6dca66424f55370a2c411",
+    "source": "site-team-09/Enriched30ActualCost.lean"
+  },
+  "Enriched30ActualCostAxioms": {
+    "inputs": [
+      "Enriched30ActualCost"
+    ],
+    "sha256": "4d1069a6439bc71dc3a6b8b67ee96ceb1ff788ff8e48f72f70802ffa4e776634",
+    "source": "site-team-09/Enriched30ActualCostAxioms.lean"
+  },
+  "Enriched30Candidate": {
+    "inputs": [
+      "Enriched30Pivot",
+      "ChangingDonorLive"
+    ],
+    "sha256": "75acc275b07821f85195bf04ac35a15ab9757d2b9366e32e84df216d0497398b",
+    "source": "site-team-09/Enriched30Candidate.lean"
+  },
+  "Enriched30Data": {
+    "inputs": [
+      "PEqualNP.Defs.CircuitLowerBounds"
+    ],
+    "sha256": "06f1881c98971698b527d7b3ce2220011ccc6407fc450a14984bb8c03aa47c30",
+    "source": "site-team-09/Enriched30Data.lean"
+  },
+  "Enriched30Pivot": {
+    "inputs": [
+      "Enriched30PivotFacts"
+    ],
+    "sha256": "7323676ad8478d1afee71767e78e8fca92be7d4825255d3ff707d3615a89c8a9",
+    "source": "site-team-09/Enriched30Pivot.lean"
+  },
+  "Enriched30PivotChunk01": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "da0af0831599bbf9a02cbf7dbdc98e45233548a3211be653e13b810f7e0756c4",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk01.lean"
+  },
+  "Enriched30PivotChunk03": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "6c83ed688318a58295adf4500c913ca04894c9e4e9162ece4f1a20d387f139db",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk03.lean"
+  },
+  "Enriched30PivotChunk05": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "eb8810cc15c6ce755026203fb59efaaa7bb5fd3189e60227d783e3a022b2a88f",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk05.lean"
+  },
+  "Enriched30PivotChunk07": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "b73c17daba0722952bbadbde26c33567870be430cb95218ea0dff1c5899b40db",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk07.lean"
+  },
+  "Enriched30PivotChunk09": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "591fe7b7960fd408674891e9574553a876d587c0bf81505789a027c1f6770da2",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk09.lean"
+  },
+  "Enriched30PivotChunk11": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "da1c56c032c77d077f7a63bc5931c42e168e6cd56fceee58c80aaeb556902f60",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk11.lean"
+  },
+  "Enriched30PivotChunk13": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "326bf46c241234016905f4db2ba11ace53fcc385750f89efd2cd35bdc0d3a080",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk13.lean"
+  },
+  "Enriched30PivotChunk15": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "e7f18242e8705211467efa1d1d28f63627d7cb8f9dedf14b56bf6e3e427094de",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk15.lean"
+  },
+  "Enriched30PivotChunk17": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "ce4694d9b53bb9272ae4e5134276cf0879e5ebc7ae644cf93601099ded69e8e3",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk17.lean"
+  },
+  "Enriched30PivotChunk19": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "d22c2e2e452967494ac39fd7d523757ceb630ad9096c279570636d46b87af62d",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk19.lean"
+  },
+  "Enriched30PivotChunk21": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "2b8060f0e4adf2914e9abeae9b200fd136f094c7c4f43b1934f5d3c7c2dfc858",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk21.lean"
+  },
+  "Enriched30PivotChunk23": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "575d8ec5654da62cc4c0d11da8238d34c93219393442bcf0c417e8f80177bb31",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk23.lean"
+  },
+  "Enriched30PivotChunk25": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "4266e8d5da9762e747b1365c564b7aafde94d540b72b4c3b313e2297fbf07b25",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk25.lean"
+  },
+  "Enriched30PivotChunk27": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "1f4e75dae4081d2cd90160cb768c8e00eba193a56e76b429e67760bbbf02e507",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk27.lean"
+  },
+  "Enriched30PivotChunk29": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "45a680cc231a68e68af27ae20a7bd8bae09b7e12f6e84e1598323856e41e9292",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk29.lean"
+  },
+  "Enriched30PivotChunk31": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "c0327e947037dcd80f70f7a36d3b4726ddec7697f005704222fbc8b30f0ccbea",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk31.lean"
+  },
+  "Enriched30PivotChunk33": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "d5221f34b3248fa108c3fd9d1970ad0279e95f7344d677cbeb7d5fe76df14359",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk33.lean"
+  },
+  "Enriched30PivotChunk35": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "bb6cd946d1fb02ae6ac7a85d7da48d0b107404a9095b30c01d81ae7282ec99ca",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk35.lean"
+  },
+  "Enriched30PivotChunk37": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "2e46647a3729518e6742aaf7ac5c5e4f4bec1305d6baa6324a8d19d025ff2001",
+    "source": "site-team-09/pivot-steward/Enriched30PivotChunk37.lean"
+  },
+  "Enriched30PivotCore": {
+    "inputs": [
+      "Enriched30Data",
+      "Mathlib.Data.List.GetD"
+    ],
+    "sha256": "972835d5ed75ad5f1c7bf5a80acb77bcfb6e709ef8cae08826a3736f7a6afac6",
+    "source": "site-team-09/Enriched30PivotCore.lean"
+  },
+  "Enriched30PivotFacts": {
+    "inputs": [
+      "Enriched30PivotProbe",
+      "Enriched30PivotChunk01",
+      "Enriched30PivotChunk03",
+      "Enriched30PivotChunk05",
+      "Enriched30PivotChunk07",
+      "Enriched30PivotChunk09",
+      "Enriched30PivotChunk11",
+      "Enriched30PivotChunk13",
+      "Enriched30PivotChunk15",
+      "Enriched30PivotChunk17",
+      "Enriched30PivotChunk19",
+      "Enriched30PivotChunk21",
+      "Enriched30PivotChunk23",
+      "Enriched30PivotChunk25",
+      "Enriched30PivotChunk27",
+      "Enriched30PivotChunk29",
+      "Enriched30PivotChunk31",
+      "Enriched30PivotChunk33",
+      "Enriched30PivotChunk35",
+      "Enriched30PivotChunk37"
+    ],
+    "sha256": "596a9e8ce48ea7c42392cedea116a919ff673d2d8aa03f4c666c8c3fc0e3a665",
+    "source": "site-team-09/pivot-steward/Enriched30PivotFacts.lean"
+  },
+  "Enriched30PivotProbe": {
+    "inputs": [
+      "Enriched30PivotCore"
+    ],
+    "sha256": "bc91332fe1ca614b3c0d990a3573a92e53fcf122588de1f9c0e56b86babb0b53",
+    "source": "site-team-09/Enriched30PivotProbe.lean"
+  },
+  "Enriched30Retained": {
+    "inputs": [
+      "Mathlib.Data.Finset.Card",
+      "Mathlib.Data.Finset.Image",
+      "Mathlib.Data.Finset.Lattice.Union",
+      "Mathlib.Order.Interval.Finset.Nat"
+    ],
+    "sha256": "df6f1ad6b3585d414206fe12efed4d60bb0c9cdc6b1fa3f024c8188593a791b4",
+    "source": "site-team-09/Enriched30Retained.lean"
+  },
+  "Enriched30RetainedBinding": {
+    "inputs": [
+      "Enriched30Data",
+      "Enriched30Retained"
+    ],
+    "sha256": "ad76f4d0eec81d59adf2cc2f38e8f2d0c5fa71e411fd17299fe65fa836183ff7",
+    "source": "site-team-09/Enriched30RetainedBinding.lean"
+  },
+  "Enriched30UnanchoredCost": {
+    "inputs": [
+      "Enriched30ActualCost"
+    ],
+    "sha256": "4d06d7a1c56d4024c6c6857a32bf0dbbffcb8963505aeca24197e684ac980a23",
+    "source": "site-team-09/Enriched30UnanchoredCost.lean"
+  },
+  "Enriched30UnanchoredCostAxioms": {
+    "inputs": [
+      "Enriched30UnanchoredCost"
+    ],
+    "sha256": "caa7b130a506aea1a885d5b7013c1ded8056308815a2300ee18060161df1c212",
+    "source": "site-team-09/Enriched30UnanchoredCostAxioms.lean"
+  },
+  "EnrichedCapacity": {
+    "inputs": [
+      "OriginalCircuitCapacity",
+      "ChangingDonorLive",
+      "Enriched30Candidate",
+      "Enriched30RetainedBinding",
+      "BinateInverterCharge",
+      "LiveChargeSize"
+    ],
+    "sha256": "fca554c03f922c849f44cb4887d63f70ce0a3afc12934ce4e9b628866a070be9",
+    "source": "site-team-08/path-parity/EnrichedCapacity.lean"
+  },
+  "EnrichedCapacityAxioms": {
+    "inputs": [
+      "EnrichedCapacity"
+    ],
+    "sha256": "19bd9c208b58508bfaa34f061ffd91f0594a3c0767d5de9363ecb731f9c0fd0a",
+    "source": "site-team-08/path-parity/EnrichedCapacityAxioms.lean"
+  },
+  "ExceptionalPrefixCard": {
+    "inputs": [
+      "Mathlib.Data.Finset.Card",
+      "Mathlib.Data.Finset.Max"
+    ],
+    "sha256": "9139dbd5e6e7088d2ba48e8d587cb2bc37984619ccbb5d29953fb2deca7c3216",
+    "source": "site-team-09/ExceptionalPrefixCard.lean"
+  },
+  "FirstDivergence": {
+    "inputs": [
+      "SignedPhysicalPath"
+    ],
+    "sha256": "4d56b138c48a9c7d35412a3f15a1c7d825e4a8f384ffbaf3cafe96a7a5a19aff",
+    "source": "site-team-08/path-parity/FirstDivergence.lean"
+  },
+  "ForkWalk": {
+    "inputs": [
+      "ActualUses"
+    ],
+    "sha256": "6167e29e6fcec23eb3974a4fe68cb428424f890e0a8fd4c723b1c93a45739458",
+    "source": "site-team-08/path-parity/ForkWalk.lean"
+  },
+  "LiveChargeSize": {
+    "inputs": [
+      "OriginalCircuitCapacity"
+    ],
+    "sha256": "901e423d6ca81056e83d7cf6bd5050a4f8f41b87bc7281f38d5b2c895377fff0",
+    "source": "site-team-09/LiveChargeSize.lean"
+  },
+  "LiveIncidenceCapacity": {
+    "inputs": [
+      "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "Mathlib.Data.Fintype.Card"
+    ],
+    "sha256": "507f6bd7a848929a50eb7f8a6804dda36a5581f50056bc23ab6d87ea80ff4a9a",
+    "source": "site-team-09/LiveIncidenceCapacity.lean"
+  },
+  "LiveUses": {
+    "inputs": [
+      "ForkWalk",
+      "FirstDivergence"
+    ],
+    "sha256": "864416ff50326ee1e0e644431214e53ddc42e919a7c3dac5855ff32ddf4b303d",
+    "source": "site-team-08/path-parity/LiveUses.lean"
+  },
+  "LiveUsesIncidenceBridge": {
+    "inputs": [
+      "PhysicalLiveIncidence",
+      "LiveUses"
+    ],
+    "sha256": "119b8226fe5e08653b82baab6e777b42f6046fdfdc1d8f05c3941509d006207d",
+    "source": "site-team-09/LiveUsesIncidenceBridge.lean"
+  },
+  "OriginalCircuitCapacity": {
+    "inputs": [
+      "BinateCapacity",
+      "OutgoingPins",
+      "LiveUsesIncidenceBridge"
+    ],
+    "sha256": "a85d9335ce11f148a2223342d68f324727e7767d8d8f4cdbb10e9f2953d410a6",
+    "source": "site-team-08/path-parity/OriginalCircuitCapacity.lean"
+  },
+  "OutgoingPins": {
+    "inputs": [
+      "LiveUses",
+      "Mathlib.Data.List.Nodup"
+    ],
+    "sha256": "6ed46b41dc1836eb8a906b8be6979279b17db5a02fe56a2e92de366930fb1d3e",
+    "source": "site-team-08/path-parity/OutgoingPins.lean"
+  },
+  "PEqualNP.Defs.CircuitLowerBounds": {
+    "inputs": [
+      "Mathlib.Computability.Language",
+      "Mathlib.Algebra.Polynomial.Eval.Defs",
+      "Mathlib.Algebra.BigOperators.Fin",
+      "Mathlib.Computability.TuringMachine.Computable"
+    ],
+    "sha256": "695e454d3e424e2cae4fa4677741681eac11de0462d0d9bc087a0e6a6ba03f69",
+    "source": "site-team-08/capacity-release/PEqualNP/Defs/CircuitLowerBounds.lean"
+  },
+  "PhysicalExceptionalPrefix": {
+    "inputs": [
+      "LiveUses",
+      "ExceptionalPrefixCard"
+    ],
+    "sha256": "3c72c6bd6ceac4052b7920f3088b366aff5672e544d813e3fc71a2f578c43f71",
+    "source": "site-team-09/PhysicalExceptionalPrefix.lean"
+  },
+  "PhysicalLiveIncidence": {
+    "inputs": [
+      "LiveIncidenceCapacity",
+      "PEqualNP.Defs.CircuitLowerBounds"
+    ],
+    "sha256": "03c85538e87794966e05401ff5b02b51180507370813364ecb6d2796ad0e145e",
+    "source": "site-team-09/PhysicalLiveIncidence.lean"
+  },
+  "SignedPhysicalPath": {
+    "inputs": [
+      "SignedTrace"
+    ],
+    "sha256": "e81ecfd22535f2adf53bce444f2981bdb724cc8850ab0320c53be2c112a894c9",
+    "source": "site-team-08/path-parity/SignedPhysicalPath.lean"
+  },
+  "SignedTrace": {
+    "inputs": [
+      "PEqualNP.Defs.CircuitLowerBounds",
+      "Mathlib.Data.List.GetD"
+    ],
+    "sha256": "9b2f47549b120f131dfb3727377452fc32cb9ca595a744b07c5c69388f5d9449",
+    "source": "site-team-08/path-parity/SignedTrace.lean"
+  }
+}

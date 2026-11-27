@@ -1,0 +1,3 @@
+'SignedTrace.Enriched.enriched30_retained_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedTrace.Enriched.enriched30_retained_marker_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedTrace.Enriched.enriched30_tail_size' depends on axioms: [propext, Classical.choice, Quot.sound]

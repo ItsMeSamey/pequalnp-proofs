@@ -1,0 +1,14 @@
+name = "pequalnp"
+defaultTargets = ["EnrichedCapacityRelease"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "fc4f59e577feb1a4956671bc04ac18aaaf8cd842"
+
+[[lean_lib]]
+name = "PEqualNP"
+
+[[lean_lib]]
+name = "EnrichedCapacityRelease"
+roots = ["ActualUses", "BinateCapacity", "BinateFirstFork", "BinateInverterCharge", "BinatePins", "ChangingDonorLive", "Enriched30ActualCost", "Enriched30ActualCostAxioms", "Enriched30Candidate", "Enriched30Data", "Enriched30Pivot", "Enriched30PivotChunk01", "Enriched30PivotChunk03", "Enriched30PivotChunk05", "Enriched30PivotChunk07", "Enriched30PivotChunk09", "Enriched30PivotChunk11", "Enriched30PivotChunk13", "Enriched30PivotChunk15", "Enriched30PivotChunk17", "Enriched30PivotChunk19", "Enriched30PivotChunk21", "Enriched30PivotChunk23", "Enriched30PivotChunk25", "Enriched30PivotChunk27", "Enriched30PivotChunk29", "Enriched30PivotChunk31", "Enriched30PivotChunk33", "Enriched30PivotChunk35", "Enriched30PivotChunk37", "Enriched30PivotCore", "Enriched30PivotFacts", "Enriched30PivotProbe", "Enriched30Retained", "Enriched30RetainedBinding", "Enriched30UnanchoredCost", "Enriched30UnanchoredCostAxioms", "EnrichedCapacity", "EnrichedCapacityAxioms", "ExceptionalPrefixCard", "FirstDivergence", "ForkWalk", "LiveChargeSize", "LiveIncidenceCapacity", "LiveUses", "LiveUsesIncidenceBridge", "OriginalCircuitCapacity", "OutgoingPins", "PhysicalExceptionalPrefix", "PhysicalLiveIncidence", "SignedPhysicalPath", "SignedTrace"]

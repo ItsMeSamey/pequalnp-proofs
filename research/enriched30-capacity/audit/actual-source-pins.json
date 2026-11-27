@@ -1,0 +1,18 @@
+{
+  "theorems": [
+    "Enriched30ActualCost.physical_size_floor",
+    "Enriched30ActualCost.physical_live_floor"
+  ],
+  "scope": "Restricted 30-port physical decoder. The receipt verifies source bytes; kernel attestation belongs to the release steward.",
+  "public_asset_sha256": "a875746e0199324bc110e968ec84b07ea551b573b44d3d11b5beec021bde0877",
+  "issued_statement_file_sha256": "e233b9b26bab1a8856b41abefce91ad2660f5139effd3df1ad8e11582240f816",
+  "graph_1024_row_major_uint8_sha256": "2da90bbbf4dfc2c06b7cf64594db490d80ffd838ed15054719868109f35b31b8",
+  "graph_128_bytes_uint32_rows_little_endian_sha256": "d812fbc326ce5654e256e14ec09a0b6fb7cd2ff042a5e8e6bb5d6106e9fa1afc",
+  "candidate_raw_sha256": "77e03122cec007ad85fdb752649fa2f19b4f65cf5d06317a66e411e68009a062",
+  "gates": 170,
+  "output": 233,
+  "fixture_sha256": "06f1881c98971698b527d7b3ce2220011ccc6407fc450a14984bb8c03aa47c30",
+  "consumer_source_sha256": "ddb72b6d45d1f7754852ebce74e34cecb4eecfbc6fd6dca66424f55370a2c411",
+  "recursive_local_source_count": 48,
+  "recursive_local_source_map_sha256": "431e662407c211fbf482ab8ba631cdff9293fa79c8dbb9f73a7d9ca5b0004ddd"
+}
