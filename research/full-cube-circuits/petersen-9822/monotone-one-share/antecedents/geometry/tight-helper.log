@@ -1,0 +1,8 @@
+two-leaf controls 264
+templates 51 weight 17.0 tight-protocol (0, 3) False states 5289
+two-leaf controls 256
+templates 52 weight 17.0 tight-protocol (0, 9) False states 2802
+two-leaf controls 308
+templates 55 weight 17.0 tight-protocol (3, 9) False states 4136
+two-leaf controls 162
+templates 51 weight 16.0 tight-protocol (0, 3, 9) False states 1660

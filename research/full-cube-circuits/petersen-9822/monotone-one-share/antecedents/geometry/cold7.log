@@ -1,0 +1,9 @@
+left 1 1012 10 77
+left 2 885 136 402
+left 4 954 65 116
+left 8 1010 5 139
+left 16 747 260 402
+left 16 973 34 116
+left 64 954 5 116
+left 128 885 10 402
+Counter({'cases': 1829, 'table': 1768, 'inner': 1105, 'both': 8})

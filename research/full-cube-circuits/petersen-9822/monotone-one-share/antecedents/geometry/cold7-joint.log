@@ -1,0 +1,8 @@
+done 1 1012 10 77 Counter({'nodes': 7})
+done 2 885 136 402 Counter({'nodes': 9})
+done 4 954 65 116 Counter({'nodes': 7})
+done 8 1010 5 139 Counter({'nodes': 9})
+done 16 747 260 402 Counter({'nodes': 3})
+done 16 973 34 116 Counter({'nodes': 5})
+done 64 954 5 116 Counter({'nodes': 9})
+done 128 885 10 402 Counter({'nodes': 5})
