@@ -1,6 +1,6 @@
 # Projective-plane incidence circuits
 
-At order 401, every scalar monotone circuit satisfying the original sparse promise uses at least **644,809 gates**, with arbitrary fanout. The target of 646,425 gates is 1,616 higher. [Proof that equality at 644,808 is impossible](strict-dense-signature.md)
+At order 401, every scalar monotone circuit satisfying the original sparse promise uses at least **644,844 gates**, with arbitrary fanout. The target of 646,425 gates is 1,581 higher. [Iterated dense-signature bound](iterated-dense-signature.md) · [Proof that equality at 644,808 is impossible](strict-dense-signature.md)
 
 For the original one-sided promise of arbitrary point masks and at most q selected lines, [producer-component extraction](anchored/README.md) and its [combined cost bound](anchored/pruned-cost.md) give s≥4N−O(q) and verify 100s≥Nq through order 396. Here N=q²+q+1. The proof uses stronger tests than correctness restricted to input weight two.
 
