@@ -1,0 +1,9 @@
+# Sharp field sizes for one determinant zero test on an anchored chart
+
+Using the binary anchor A and variables of one-row-extension-gate.md, the two tag columns of a chart plane above the H basis are (u,v),(w,z). All sixteen transfers occur at the level of possible trace planes. Consider a K-linear projection of the four named coordinates to two output rows over K=GF(2^m) whose determinant on this chart vanishes exactly at F=0.
+
+For m=3, use a^3=a+1 and named projection columns (1,0),(a,0),(0,1),(1,a^2). The determinant on the chart is
+(w+v+vw+uz) + a(u+v) + a^2 z.
+Vanishing forces z=0 and u=v, then w+v+wv=0 forces both bits zero. Every chart plane besides H gives a nonzero determinant. Thus augmenting unchanged private rows with these two outputs gives the exact base-containment reduction with a binary anchor over GF(8). Off-chart planes may also have determinant zero.
+
+For any such projection, bilinearity gives a constant, a binary-linear function of the four transfer bits, and the sole quadratic term k(uz+vw), where k is the determinant of the two projected pure-tag columns. Choose an output basis over GF(2) with k in its first coordinate direction if k is nonzero. At most one scalar coordinate is quadratic and the others are linear; if k=0 all are linear. A singleton test on four binary variables has Boolean degree four, whereas the product of the scalar vanishing indicators has degree at most m+1. Hence m>=3. If the named projection's two-row span shares a nonzero row with the two anchor height rows, their tag restrictions have rank at most one and k=0. In this one-row-change model the vanishing condition is linear and m>=4. The one-row GF(16) gate attains four. These lower bounds concern linear named projections with fixed private rows and a separate binary chart anchor. They need not hold for other embeddings or decision-only reductions.
