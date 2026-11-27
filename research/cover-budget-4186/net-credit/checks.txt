@@ -1,0 +1,3 @@
+36 full-cube parameter controls passed, including all structural counts and split losses
+Net canonical six-input graph mask: 691
+Restriction truth tables verified, including reindexed raw, missing and constant-false outputs
