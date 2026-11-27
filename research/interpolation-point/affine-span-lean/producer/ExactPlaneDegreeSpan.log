@@ -1,0 +1,1 @@
+'ExactPlaneAffineSpanHit.degree_span_hit' depends on axioms: [propext, Classical.choice, Quot.sound]

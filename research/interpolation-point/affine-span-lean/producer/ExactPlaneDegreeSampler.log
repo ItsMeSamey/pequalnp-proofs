@@ -1,0 +1,9 @@
+ExactPlaneDegreeSampler.lean:27:36: warning: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ordered, List.length_flatMap, ExactPlaneOddChartList.length_words]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ExactPlaneDegreeSampler.generated_hit' depends on axioms: [propext, choice, Quot.sound]
+'ExactPlaneDegreeSampler.search_complete' depends on axioms: [propext, choice, Quot.sound]

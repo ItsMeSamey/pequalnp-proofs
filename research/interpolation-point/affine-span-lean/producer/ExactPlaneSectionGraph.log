@@ -1,0 +1,9 @@
+ExactPlaneSectionGraph.lean:113:21: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+ExactPlaneSectionGraph.lean:115:21: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+'ExactPlaneSectionGraph.exact_iff_pivots' depends on axioms: [propext, Classical.choice, Quot.sound]

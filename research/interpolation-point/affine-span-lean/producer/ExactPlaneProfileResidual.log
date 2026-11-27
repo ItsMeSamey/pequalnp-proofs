@@ -1,0 +1,8 @@
+ExactPlaneProfileResidual.lean:36:45: warning: This simp argument is unused:
+  Fintype.sum_bool
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [combo, eval_lc, Fintype.sum_sum_type, weights, augmented, eval_const, val, fixed, Prod.fst_sum,
+    Prod.snd_sum, smul_eq_mul, add_comm, add_left_comm, add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
