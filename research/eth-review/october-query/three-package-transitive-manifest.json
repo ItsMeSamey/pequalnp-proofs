@@ -1,0 +1,198 @@
+{
+  "method": "Static Python AST imports, including function-local imports. Recursively includes existing sibling modules and literal Python file references. Source and checker hashes compared with target/checker fields in the three executed primary receipts. Standard-library imports and runtime flock path are environment prerequisites, not artifact files. No import or checker execution. Component companion references provide separate existing validation of expected residues; author control is not substituted for an execution receipt.",
+  "packages": {
+    "component": {
+      "author_control_without_attached_receipt": [
+        "check_component_grid_public.py"
+      ],
+      "checker": "check_component_grid_independent.py",
+      "literal_local_file_references": {},
+      "local_ast_imports": {
+        "all_center_packet_jets.py": [
+          "packet_entry_tape.py",
+          "partial_shift_affine.py",
+          "tapered_jet_machine.py",
+          "variable_packet_machine.py"
+        ],
+        "all_grid_cnf_band.py": [
+          "extreme_cnf_band.py",
+          "extreme_cnf_digit.py"
+        ],
+        "check_component_grid_independent.py": [
+          "all_grid_cnf_band.py",
+          "component_grid_band.py"
+        ],
+        "check_component_grid_public.py": [
+          "component_grid_band.py",
+          "source_grid_cnf_band.py"
+        ],
+        "check_extreme_large_product.py": [
+          "extreme_cnf_digit.py"
+        ],
+        "check_large_band_independent.py": [
+          "extreme_cnf_band.py",
+          "normalized_affine_digits.py"
+        ],
+        "check_normalized_affine_independent.py": [
+          "normalized_affine_digits.py"
+        ],
+        "component-grid-independent-receipt.json": [],
+        "component_grid_band.py": [
+          "all_grid_cnf_band.py",
+          "extreme_cnf_band.py",
+          "extreme_cnf_digit.py",
+          "source_grid_cnf_band.py"
+        ],
+        "endpoint_cover_jets.py": [
+          "all_center_packet_jets.py",
+          "variable_packet_machine.py"
+        ],
+        "extreme-large-product-independent-receipt.json": [],
+        "extreme_cnf_band.py": [
+          "all_center_packet_jets.py",
+          "extreme_cnf_digit.py",
+          "normalized_affine_digits.py",
+          "packet_entry_tape.py",
+          "variable_packet_machine.py"
+        ],
+        "extreme_cnf_digit.py": [
+          "partial_shift_affine.py"
+        ],
+        "large-band-independent-receipt.json": [],
+        "normalized-affine-independent-receipt.json": [],
+        "normalized_affine_digits.py": [
+          "partial_shift_affine.py"
+        ],
+        "one_packet_layer.py": [
+          "packet_entry_tape.py",
+          "tapered_jet_machine.py"
+        ],
+        "packet_entry_tape.py": [],
+        "packet_layout.py": [],
+        "partial_shift_affine.py": [
+          "variable_packet_machine.py"
+        ],
+        "source_grid_cnf_band.py": [
+          "all_grid_cnf_band.py",
+          "endpoint_cover_jets.py",
+          "extreme_cnf_band.py",
+          "packet_layout.py"
+        ],
+        "tapered_jet_machine.py": [],
+        "variable_packet_machine.py": [
+          "one_packet_layer.py",
+          "packet_entry_tape.py",
+          "tapered_jet_machine.py"
+        ]
+      },
+      "receipt": "component-grid-independent-receipt.json",
+      "reference_evidence": [
+        "check_large_band_independent.py",
+        "large-band-independent-receipt.json",
+        "check_extreme_large_product.py",
+        "extreme-large-product-independent-receipt.json",
+        "check_normalized_affine_independent.py",
+        "normalized-affine-independent-receipt.json"
+      ],
+      "sha256": {
+        "all_center_packet_jets.py": "6695a0bb51b31d042215a06b07e0ff4b63a67f7ee24588af4125fcb13d01d6c5",
+        "all_grid_cnf_band.py": "804c487cb43e689e59cee96ed05c4f8f2f6ef38123cbcab3b2be611f6392caec",
+        "check_component_grid_independent.py": "6614f568506f4f2731397b946ee9f8adde9a3bdd9e8ea95add35c93af242436e",
+        "check_component_grid_public.py": "a7a27c7e2c99d24b1f5ea49757a961c54521dcda053c129cf2ffd9415132476e",
+        "check_extreme_large_product.py": "63bae346acf27f40f6dc8072e6e09b1efe493c6f9bfca7f825c207476fb8ae06",
+        "check_large_band_independent.py": "355824b595bb7038a509ee4cebfe1aa5431353c7ee5c93e4c7b915c21af7471b",
+        "check_normalized_affine_independent.py": "f038de3cc0f23f294c2d3da586bc807ff9dc154039e2d88c41a2fbe038dc7680",
+        "component-grid-independent-receipt.json": "d932954193bcaed02c563a9ae42ffb4614dbd1ffe35f674a01b7c55e1024c6e0",
+        "component_grid_band.py": "65454545f0d106c25134bfa9747327ede2cef717408ab41e110b4bbafb03d82e",
+        "endpoint_cover_jets.py": "244e9f7f6e2027c3d1fdd7ee19899f42b55086cb84c70dfb99961952021ccee8",
+        "extreme-large-product-independent-receipt.json": "f9aa5187278aea55d8e04e2a98de35a53102e0d265b2aeb5955827d5ae83fdb0",
+        "extreme_cnf_band.py": "cdf97776e0bb58ce6abee67174b4e5295acfcbba386cbdcff490fcdeba1852cf",
+        "extreme_cnf_digit.py": "decc3e8416bdc29e18ca5292b4efc7f6c8a6539e1e799694e7d8d7a6afadebf0",
+        "large-band-independent-receipt.json": "173a1feba6715bced779a4b8332f9109fb86ca48a70ce2d0e43c98fce154770d",
+        "normalized-affine-independent-receipt.json": "a2d88f84b4123c25a7c7a89896d5e0e68940d591b95974afee3b7e90621818d2",
+        "normalized_affine_digits.py": "59aa85f9b553a84911f8625e6a1cb718bd95b09b1243fe210fa54f62e7ced357",
+        "one_packet_layer.py": "8fba7d91711fbdb253f303fce8e96cdc9625f2a151ed6da06344109a79b5e2d9",
+        "packet_entry_tape.py": "390c250b26127e0da223718282816fb523796a90a7a61104ace434dce1915c26",
+        "packet_layout.py": "c3c53009a1e554fbe5040ec31cbaa3eabeed5fd5761b66ae0e08eb3c8cdddb42",
+        "partial_shift_affine.py": "37bc2c87ce5e3e001c89c55d40b3a801719d6de8a3a79d04a94940a395ddeba5",
+        "source_grid_cnf_band.py": "25be4b16eedb540169d41fc9c865fcc2b4a46e5957b6a00d98259966da4271f4",
+        "tapered_jet_machine.py": "d4abe4b073db9c1dad55e187823d8fd06b0960dce0ac11d7ae7b349e415ee571",
+        "variable_packet_machine.py": "f0b5ecad4c0189f5752aa0c91ae00286cb44fade9bdb9466230272329a596e5d"
+      },
+      "target": "component_grid_band.py"
+    },
+    "endpoint": {
+      "author_control_without_attached_receipt": [],
+      "checker": "check_single_endpoint_independent.py",
+      "literal_local_file_references": {},
+      "local_ast_imports": {
+        "check_single_endpoint_independent.py": [
+          "single_endpoint_cnf.py"
+        ],
+        "single-endpoint-independent-receipt.json": [],
+        "single_endpoint_cnf.py": []
+      },
+      "receipt": "single-endpoint-independent-receipt.json",
+      "reference_evidence": [],
+      "sha256": {
+        "check_single_endpoint_independent.py": "2d25dc9b4e324633009f2a817cb9b723838d9c8e35f9a7c7a3c2dfab608a1885",
+        "single-endpoint-independent-receipt.json": "0a937db304a6604a8983135913fb40c1b9e27842af9e84216c51821c52adf055",
+        "single_endpoint_cnf.py": "218c82bdbc06d0ca122563ae8e082a7800e36170f5722eb7dc6a4ca76325a935"
+      },
+      "target": "single_endpoint_cnf.py"
+    },
+    "fourier": {
+      "author_control_without_attached_receipt": [],
+      "checker": "check_fourier_width_independent.py",
+      "literal_local_file_references": {},
+      "local_ast_imports": {
+        "all_center_packet_jets.py": [
+          "packet_entry_tape.py",
+          "partial_shift_affine.py",
+          "tapered_jet_machine.py",
+          "variable_packet_machine.py"
+        ],
+        "center_jet_fourier.py": [
+          "all_center_packet_jets.py",
+          "packet_entry_tape.py",
+          "variable_packet_machine.py"
+        ],
+        "check_fourier_width_independent.py": [
+          "all_center_packet_jets.py",
+          "center_jet_fourier.py",
+          "packet_entry_tape.py"
+        ],
+        "fourier-width-independent-receipt.json": [],
+        "one_packet_layer.py": [
+          "packet_entry_tape.py",
+          "tapered_jet_machine.py"
+        ],
+        "packet_entry_tape.py": [],
+        "partial_shift_affine.py": [
+          "variable_packet_machine.py"
+        ],
+        "tapered_jet_machine.py": [],
+        "variable_packet_machine.py": [
+          "one_packet_layer.py",
+          "packet_entry_tape.py",
+          "tapered_jet_machine.py"
+        ]
+      },
+      "receipt": "fourier-width-independent-receipt.json",
+      "reference_evidence": [],
+      "sha256": {
+        "all_center_packet_jets.py": "6695a0bb51b31d042215a06b07e0ff4b63a67f7ee24588af4125fcb13d01d6c5",
+        "center_jet_fourier.py": "c2d3e1ff0787fe8ab88f426906d6be1d0eb0664cbd5c80cf3a5babd18a04cd28",
+        "check_fourier_width_independent.py": "81ff188e2302bfe3b8b59041f27541eb2b51fda2b0aeea35573eeae200ff7d17",
+        "fourier-width-independent-receipt.json": "c03775585c97ccac99f46829fb56a996e5c40c744715f40ec0f0bdef63ec7d86",
+        "one_packet_layer.py": "8fba7d91711fbdb253f303fce8e96cdc9625f2a151ed6da06344109a79b5e2d9",
+        "packet_entry_tape.py": "390c250b26127e0da223718282816fb523796a90a7a61104ace434dce1915c26",
+        "partial_shift_affine.py": "37bc2c87ce5e3e001c89c55d40b3a801719d6de8a3a79d04a94940a395ddeba5",
+        "tapered_jet_machine.py": "d4abe4b073db9c1dad55e187823d8fd06b0960dce0ac11d7ae7b349e415ee571",
+        "variable_packet_machine.py": "f0b5ecad4c0189f5752aa0c91ae00286cb44fade9bdb9466230272329a596e5d"
+      },
+      "target": "center_jet_fourier.py"
+    }
+  },
+  "root": "/workspace/scratch/eth-october-primary"
+}

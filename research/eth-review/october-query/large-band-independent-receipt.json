@@ -1,0 +1,1 @@
+{"checker": "355824b595bb7038a509ee4cebfe1aa5431353c7ee5c93e4c7b915c21af7471b", "target": "cdf97776e0bb58ce6abee67174b4e5295acfcbba386cbdcff490fcdeba1852cf", "component_kernel_results": [[55, 56, 7], [57, 56, 21]], "full_dispatch": "declined at 255 of 256 words", "small_public_calls": 3, "rss_kib": 14464}
