@@ -29,3 +29,5 @@ The signed binary lower-bound deduction now has a Lean replay from the precise p
 Every possible 17-gate realization must share a binary gate output. In the monotone formula model the exact minimum is 18, as established by a 14,603-state protocol calculation. The separate one-NOT argument also excludes size 17 without a shared binary producer. [Monotone formula proof and controls](formula/tight-monotone-formula.md) · [One-NOT formula exclusion](formula/one-not-formula.md)
 
 For four, five or six nonfull conditional activations, 25,563 further profile checks exclude the case in which at most one distinct activation is nonprimitive. The remaining monotone profiles have at least two distinct nonprimitive activations. [Source, controls and ledgers](seven-high-one-cert/)
+
+In the one-NOT case at size 17 the outer cone needs at least seven AND gates. The full circuit has at most seven ANDs by the OR/NOT lower bound, so it has exactly seven. The finite exclusion of six outer ANDs covers the three possible direct-receiver counts. The package contains native source, coverage ledgers and positive controls. [One-NOT finite proof and replay](one-not-six-cert/)
