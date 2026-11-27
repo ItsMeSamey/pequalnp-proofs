@@ -1,0 +1,13 @@
+# Earlier mixed receivers with a prescribed logarithmic point payload
+
+Let A≥0 be fixed and q grow. Suppose a monotone circuit retains all singleton incidence flags and rejects the maximal negative (query set Y, all points outside its union) for all but an ε fraction of the uniform q-subsets Y of lines. Choose any prescribed point set R of size r≤A log q and write U for the M lines missing R. A sufficient uniform error condition is N exp(A log q+o(1)) ε=o(1), in particular ε=o(q^(−A−2)). The result applies to any normalization having these two properties and the indicated circuit size.
+
+Indeed M≥N−r(q+1). For a uniform q-set in U, its density relative to the unrestricted q-set distribution is bounded by
+     
+    binom(N,q)/binom(M,q) ≤ exp(q (N−M)/(M−q+1)) ≤ exp(r+O((r+1)²/q)).
+     
+Take W uniform of size q−1 inside U. By double counting its M−q+1 possible final extensions inside U, the expected number of failed maximal negatives among them is at most (M−q+1)exp(r+o(1))ε=o(1). With high probability all extensions are clean. For X the points off W outside R, and any l in U through p in X, the input selecting R and X outside l together with W_i+l lies below the clean maximal input on W+l. Also R+p with W_i lies below a clean extension by any l' in U outside W avoiding p, which exists by the bounds on M. The flag positives persist by monotonicity. Thus the three tests needed in the chain trace all hold on this same physical circuit.
+
+A point p outside R loses at most r lines from its pencil, since each excluded neighbor label contains p and at least one point of R. Consequently M=(1+o(1))N and degrees into U are (1+o(1))q, uniformly. Apply the proof of bilateral-earlier-mixed-receivers.md (712f6ca7…) with a=1 and deterministic R. Its upper bounds on costs apply without conditioning on the clean event: on a failing draw use an empty assignment. Sampling estimates for a fixed gate or fixed candidate set use the unconditional prefix law. On clean draws all assignments exist and the unsigned intersection of good events has high probability for s=o(N√log q), or positive probability for s≤c₀N√log q with sufficiently small absolute c₀.
+
+Specifically T=⌊√log q⌋ and the surviving distinct flag-stages total (1/e+o(1))TNq in the little-o regime; in the small-constant regime they total at least TNq/(2e). At one stage Ω(Nq) distinct mixed flags have at most O(q(log q)^(3/2)) candidate lines per receiver/point. The receiver is evaluated with all points of R active and its earlier query prefix V. For every prescribed R this experiment succeeds with the stated probability; the draw of W may depend on R.
