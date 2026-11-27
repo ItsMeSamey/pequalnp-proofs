@@ -1,0 +1,11 @@
+# Validator operation counts
+
+Write n for the number of original positions, s for the padded site count, w for physical word width, h for the vertex count and p for the pivot count. Let u be the interface table size in a given transition. These counts describe comparisons and bounded linear algebra over materialized data.
+
+* Checking attachment injectivity can use at most n² ID comparisons. Each optional label is checked against the initial ground, roots and its checked pin projection. Each projection uses at most p bit tests and p word XORs.
+* The initial checker enumerates at most eight root subsets and eight named words per subset, plus a separate axis check. This gives 65 projected-name comparisons. Evaluation by separate vector coordinates can recompute a name up to w times per comparison. The packed root checker uses the explicit pivot loop.
+* Each transition fixes at most s retained values and checks at most s discarded values against up to u interface values. Comparing one projected vector costs at most w² scalar product terms by direct row multiplication. Closure checks at most u² pairs against up to u stored words per pair. Each of at most u fresh-copy searches scans at most s sites. Finite-set membership adds list scans.
+* Terminal endpoint agreement checks at most s·h bits. The two row-map checks use at most 2·s·h·w scalar product terms, followed by three root-incidence tests. The same equations cover loops and parallel edges.
+* The positive branch checks witness membership, the target XOR and both parity rows on every selected or pinned column. The conflict branch checks forced witness membership and its XOR. The outside branch evaluates one parity row on all n columns and the target.
+
+Counts exclude finite-set construction, list lookup, integer arithmetic costs and evaluation of arbitrary caller-defined functions in the typed API. In the signed-list API every lookup costs at most a scan of the corresponding table. The dimensions here are expanded dimensions. A very large width encoded in binary can cost more than its encoding length, including during word-bound checks. These counts give neither a kernel-verified running time nor a producer-size or completeness theorem.

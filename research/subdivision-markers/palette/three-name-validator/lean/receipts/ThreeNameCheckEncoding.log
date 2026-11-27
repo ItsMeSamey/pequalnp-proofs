@@ -1,0 +1,16 @@
+/workspace/scratch/three-name-validator/lean/ThreeNameCheckEncoding.lean:123:20: warning: This simp argument is unused:
+  bind
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ht, Option.bind] at ok
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/three-name-validator/lean/ThreeNameCheckEncoding.lean:123:25: warning: This simp argument is unused:
+  Option.bind
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ht, bind] at ok
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ThreeNameCheckEncoding.readColumns_sound' depends on axioms: [propext, Quot.sound]
+'ThreeNameCheckEncoding.readAttachment_sound' depends on axioms: [propext, Quot.sound]
