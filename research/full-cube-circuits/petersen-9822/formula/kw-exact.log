@@ -1,0 +1,4 @@
+/workspace/scratch/official9822/geometry/kw-exact.py:21: OptimizeWarning: Unrecognized options detected: {'threads': 1}. These will be passed to HiGHS verbatim.
+  op=linprog(obj,A_ub=A,b_ub=B,bounds=[(None,None)]*nvar+[(0,None)]*(V-nvar),method='highs-ds', options={'threads':1,'time_limit':17})
+vertices 16 status Optimization terminated successfully. (HiGHS Status 7: Optimal) weight 18.0
+exact 18 worst 1
