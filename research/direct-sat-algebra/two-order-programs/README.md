@@ -1,1 +1,3 @@
 Run the interval checker from this directory with `PYTHONPATH=../../direct-sat-successor/lib python -B check_two_order_intervals.py`. The model-set checker runs with `python -B check_two_order_programs.py`.
+
+For the two-state recognizer and original-circuit factor compiler, set `PYTHONPATH=../../direct-sat-successor/lib` from this directory and run `python -B compression/check_two_state_other_order.py` and `python -B two-order-native/check_native_intersection.py`. The shared-input algorithm uses supplied variable orders and returns a witness on the original bits when it reports SAT. The multi-order run bound assumes a supplied decomposition tree.
