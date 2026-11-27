@@ -1,0 +1,12 @@
+# A common induced cycle certified by two guards per selected site
+
+Take a simple subcubic graph G and two named nonadjacent degree-two vertices x,y, as in the [common-hole hardness theorem](https://arxiv.org/pdf/1309.0971). Use an occupancy bit s_v at each vertex and one optional midpoint bit m_e on each original edge uv. Require x,y selected. At every selected original vertex require both binary equations
+
+    sum of s_w over original neighbors w = 0
+    sum of m_e over incident original edges = 1 at x,y and 0 elsewhere.
+
+At each selected midpoint require s_u+s_v=0. Feasibility is equivalent to an induced cycle through x and y. The first layer makes the induced support a disjoint union of isolated vertices and cycles, since original degree is at most three. Every selected midpoint meeting that support has both endpoints in it. Summing the second equations in any selected component shows that its number of terminals is even. The terminals must therefore share a component, and neither can be isolated because its second equation requires an incident selected midpoint. Their cycle is chordless and has length at least four by nonadjacency. Conversely take the cycle's original vertices and the midpoints on either of its x–y arcs. This gives actual witnesses in both directions.
+
+This is a linear-size NP-completeness reduction for the model with two simultaneous equations at the same selected original site. Each layer is a symmetric neighborhood test with at most three terms per original vertex. Taking their union at a native vertex tests only the XOR of the two equations. This collapsed test accepts every connected source: select only the original vertices of a shortest x–y path and no midpoints. Its induced degrees already have exactly x,y odd, as demanded by the XOR.
+
+For a triangle-free biconnected source NO, take two disjoint squares, with x,y in different squares. In each square choose an adjacent pair of attachment vertices excluding its terminal. Connect the corresponding attachments across the squares by two paths of length two with distinct interiors. Any cycle through x,y uses both connecting paths and the long arc in each square; its two attachment edges are chords. The collapsed test accepts by the path construction. Replacing the conjunction by a faithful single native guard while retaining the same original selections remains a missing reduction step.
