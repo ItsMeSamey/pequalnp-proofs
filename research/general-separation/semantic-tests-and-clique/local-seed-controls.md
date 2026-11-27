@@ -1,0 +1,19 @@
+# Finite controls for three common-seed witness proposals
+
+The following are local decoders built as tests. None is identified with the October hierarchy decoder.
+
+## Real address weights and isolation
+
+Use witness variables indexed by binary strings a of length d. For every a impose X(a)=X(rot(a)) and X(a xor e₁)=1−X(a). Each is expressed by two width-two clauses. Cyclic rotation is fixed wiring, and output label bits use only a fixed clause-type tag and constantly many index bits. Rotation conjugates flipping the first coordinate to flipping any coordinate. Consequently the only satisfying assignments are the parity function and its complement. Every weight function w on addresses of real multilinear degree less than d gives the two assignments equal additive cost: each monomial omits some coordinate and its signed sum against parity cancels. All components of a lexicographic vector of such additive objectives tie too. At d=2 the assignments are 0110 and 1001 and both cost 2c+u+v for weights c+u a₁+v a₂. The checker check_local_selector.py enumerates every table through d=4 and compares 26 monomial costs.
+
+Keeping r extra leading address bits fixed across each constraint produces 2^r independent blocks. If each seed supplies a vector of base weights of real suffix degree below d and makes arbitrary corrections on fewer than 2^r distinct addresses across the vector, at least one block is untouched. Flipping only its parity orientation preserves every cost coordinate, so all optimal assignments are nonunique. This counterexample does not apply to GF(2) degree. The positive weight 1+parity(suffix) isolates one orientation on every block. A seedless P predicate computes a valid assignment.
+
+The ordinary isolation lemma allows independent weights for all variables. This test restricts how one seed describes exponentially many weights. Distinct valid seeds may select different assignments without violating the hierarchy theorem. [Mulmuley, Vazirani, and Vazirani](https://ics.uci.edu/~vazirani/MVV.pdf)
+
+## Low-degree bits with exceptional addresses
+
+To force X(a) to indicate a zero prefix of length t, generate positive repeated-literal unit clauses for every zero-prefix address and negative units for exactly the other addresses. For the latter, starting from t cyclic bits b, form h_j=b_j xor b_(j+1) xor [j=1]. The image is all odd-parity words (the cyclic difference has kernel the two constants). Form output prefix h OR c for arbitrary c. This ranges over all nonzero prefixes: one can place a singleton h on any desired one bit and fill in the rest. Append freely generated suffixes on both branches. The decoder has constant dependency per label bit. The forced bit polynomial has exact GF(2) degree t. Its difference from any polynomial of smaller degree retains degree t and has Hamming weight at least 2^(m−t) on m bits. For the minimum-weight bound, differentiate in a variable belonging to a degree-t monomial and induct on t: each nonzero derivative value requires at least one nonzero value on its pair of original inputs. Thus fewer exceptions cannot repair a lower-degree evaluator, though the actual prefix test has a seedless P algorithm.
+
+## Local histories and census
+
+On a three-edge path pinned to opposite end bits, demand equality on each edge. The two adjacent three-vertex windows have local solutions 000 and 111; their shared vertices receive inconsistent values. In a prefix census of the witnesses 01 and 10, certificates checking additions and positive leaves alone can retain either leaf and falsely declare the other subtree empty. With a single fixed seed selecting one surviving valid witness, this is harmless for bit selection; it is fatal for any claimed exact census. Enforcing all transitions of one common history and checking the correct start and final answer restores soundness. Constructing that succinct history within a uniform clock is the unresolved step.
