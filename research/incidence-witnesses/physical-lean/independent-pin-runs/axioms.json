@@ -1,0 +1,211 @@
+{
+  "IncidenceHoistSingleton.agrees": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceHoistSingleton.agrees_prefix": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceHoistSlotMap.kept_ref": [
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceHoistSlotMap.embedding": [
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceHoistSlotMap.physical_ports": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinHoistSparse.selected": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinHoistSparse.pure_point": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinHoistSparse.line_exit_used": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceEligibleSlotTransport.mapping": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceEligibleSlotTransport.preserved": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePostHoistPinExpectation.expected": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceTwoLineNormalize.normalize": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinCompact.law": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinCompact.physical_gate_reader": [
+    "propext"
+  ],
+  "IncidencePinLowLedger.budget": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinCompensation.raw_budget": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinCompensation.forced_separate": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinPlaneGeometry.collinear_card": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinPlaneGeometry.free_point_degree": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinPlaneGeometry.free_line_degree": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceResidualCut.erased": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceResidualStar.star": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceResidualWeight.ledger": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceResidualPorts.balance": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceResidualPorts.residual": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceResidualDemand.demand": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceResidualEndLedger.endpoint_bound": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceResidualPath.endpoint": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceResidualLower.lower": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceResidualPair.lower": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinRunModel.lower": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceRunPinCompile.sandwich": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceRunPinCompile.room": [
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceRunPinCompile.wires_model": [
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinLosses.separate_loss": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceRunPinPhysical.witnesses": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceRunPinPhysical.residual": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinRunRoom.room": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinRunTests.pair": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinRunTests.singleton": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidencePinRunBound.bound": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceWeightedPlane.bound": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "IncidenceWeightedEdits.edit_cap": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

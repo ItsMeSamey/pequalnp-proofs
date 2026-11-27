@@ -1,0 +1,3 @@
+'IncidencePinPlaneGeometry.collinear_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidencePinPlaneGeometry.free_point_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidencePinPlaneGeometry.free_line_degree' depends on axioms: [propext, Classical.choice, Quot.sound]

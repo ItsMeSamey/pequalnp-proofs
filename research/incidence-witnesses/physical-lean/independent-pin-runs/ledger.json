@@ -1,0 +1,327 @@
+{
+  "IncidenceHoistSingleton": {
+    "stage": "pin-hoist",
+    "source": "7aa98fae8c41ab30bc6b8eb2e73597bb627069eb0029d756ba78481782436809",
+    "object": "04eab9d71430183d51dbb62c1ae551f6a6e02c6620ff00cf3a537b8b6f6c1a6d",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistRealize.olean": "f749211e2ff4958301a1591d2ce402790b12a81695c994f34e30e541467e702b",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistEndpoint.olean": "5c21c0ac3ed4d62c1c3ce6884a7b9314fec9f4cafaad124d890d4fcdffd4da88",
+      "/dev/shm/incidence-q401-physical/IncidenceLineRoutedSlots.olean": "f4235ffc9951696861a730198af81854462ac329ed9abff9201717b9ac3d6b81"
+    },
+    "log": "326c7261d886c1729379372dfecbcc5432a64123e737fc2424c2b42fa4fc3e6a"
+  },
+  "IncidenceHoistSlotMap": {
+    "stage": "pin-hoist",
+    "source": "f0d8af3df6d95d4da13de49d7aeb0f983abfb926937701cb7a5f524342ede175",
+    "object": "feb8797963de5c2dd9094398b93485a15f0b1c15af99db4cadbd82e0db82b04f",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistEndpoint.olean": "5c21c0ac3ed4d62c1c3ce6884a7b9314fec9f4cafaad124d890d4fcdffd4da88"
+    },
+    "log": "c84167d7ffdd52c76e022f1f00fd4ae0f4340d2edd0322762bfd52a59bf4a9b8"
+  },
+  "IncidencePinHoistSparse": {
+    "stage": "pin-hoist",
+    "source": "d30f7d58821544baafdb4038ce57d891ba1246e544590a9e7754771955eabd64",
+    "object": "a7021338b6f4c720cbaed34670c3613bd1ef11087ebebd4e3d585a4d4d927216",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistSensitive.olean": "703a4d4777cbc73c51fa9efe02a03ac39b4c5c42c9dfcfee48d5276bb4ba3333"
+    },
+    "log": "b0d4ad58e6a5b282206eac88dd727b21dcba540783e6089e4e122b44821bdfd0"
+  },
+  "IncidenceEligibleSlotTransport": {
+    "stage": "pin-hoist",
+    "source": "2c680d1fe837383b5f5472c7ebf999ff87a9136cb9397f4c9c5695b1144e5651",
+    "object": "ec00106cbc87bb541c960aa391a7096164abad018572625264249fad884d5289",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceHoistSingleton.olean": "04eab9d71430183d51dbb62c1ae551f6a6e02c6620ff00cf3a537b8b6f6c1a6d",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceHoistSlotMap.olean": "feb8797963de5c2dd9094398b93485a15f0b1c15af99db4cadbd82e0db82b04f",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinHoistSparse.olean": "a7021338b6f4c720cbaed34670c3613bd1ef11087ebebd4e3d585a4d4d927216"
+    },
+    "log": "fc66969d3d8813007537c5bce7b518324309be30380da19693cf74f25840944f"
+  },
+  "IncidencePostHoistPinExpectation": {
+    "stage": "pin-hoist",
+    "source": "b05cc01bf8400060fb4332a497b0d208597041bf14d5a1f7a309bf00f3b0906e",
+    "object": "90c44f4d6d9b63719c643629fe87f46082d35c7480fa231e982fd67a4de6fdc0",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceEligibleSlotTransport.olean": "ec00106cbc87bb541c960aa391a7096164abad018572625264249fad884d5289",
+      "/dev/shm/incidence-q401-physical/IncidencePhysicalPinExpectation.olean": "3d12b08775d040d38e5b48c7ba0ca30acbf04c6bc39cb264b96a49b91bce0b02"
+    },
+    "log": "9060003b3f0c02b47addf860fbd0d9d044321696a500d86f7929174a19895ef5"
+  },
+  "IncidenceTwoLineNormalize": {
+    "stage": "pin-hoist",
+    "source": "170b4e0c38dbfe2765928277ffdb4c1387895cc841c327b046e2c74f0dac53ed",
+    "object": "6c660dba4bf25a172217596cd6c5bb136ef6e99e8d6f0ac4edd580986740ca12",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinHoistSparse.olean": "a7021338b6f4c720cbaed34670c3613bd1ef11087ebebd4e3d585a4d4d927216",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistNormalize.olean": "57c83665305a031d05d205b522c7dc4711150abefbd3301f3c46496ed7970b8c",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistLive.olean": "a9d159dda12a6f8cf64ecbbdf6fc546e09ec8859c6efe2ae7ae82cdc75ed35b0"
+    },
+    "log": "8093d6e482ccf509911a45391ee0fecd46a7361ebb6e8bbf67ce58b8e2c2822a"
+  },
+  "IncidencePinCompact": {
+    "stage": "run-pin",
+    "source": "66a09a371cb37feaebfd5adbe5d453a65dc689e4a778fb13ece5d014cf77f0f9",
+    "object": "c778b858cb5c53c8753279c8eda54ab512e4a32c8ec1329f76b8ac45a0d0202d",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistPrune.olean": "996a0de8440a941175fe53444b071f5862218cbe304d2b19e8cb3bad43023a63",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistReaders.olean": "a5fef5fd4e992cd87380439dfaa8d49c42aa20beb6d834c68247785fa9405885"
+    },
+    "log": "a6515fdf456de0f73183c83184e81eb6e40e08b7d7f9463beac73070ac78aeab"
+  },
+  "IncidencePinLowLedger": {
+    "stage": "run-pin",
+    "source": "97376d17614b2b219ad12b56110601a9bd4b4edb35ddc952f115a9b1a6f4fc68",
+    "object": "ba918af13b49714bb0986a9d0ea49fd3517f66ee458f4099e1b2e85881008750",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidencePhysicalZeroFlow.olean": "80fa1e0c5c86e42da3e7f5106b2c7b262350af9547e555b9b6600aa9db8e9c66",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistPrune.olean": "996a0de8440a941175fe53444b071f5862218cbe304d2b19e8cb3bad43023a63",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistReaders.olean": "a5fef5fd4e992cd87380439dfaa8d49c42aa20beb6d834c68247785fa9405885"
+    },
+    "log": "6fa0ed6f73f7dc794eeff2ad9f3e9c51f2d85ed26d12af9d935540047e1342a9"
+  },
+  "IncidencePinCompensation": {
+    "stage": "run-pin",
+    "source": "ae492ba3df8404312f9359a5f15a651636bb4ad6323f0b1dc5e31d8def97579f",
+    "object": "d3ecc2887dc2ae6d75004b29b20f9293319af335211720633e33d3895f4c8f7f",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinLowLedger.olean": "ba918af13b49714bb0986a9d0ea49fd3517f66ee458f4099e1b2e85881008750",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinHoistSparse.olean": "a7021338b6f4c720cbaed34670c3613bd1ef11087ebebd4e3d585a4d4d927216",
+      "/dev/shm/incidence-q401-physical/IncidenceThetaSibling.olean": "0e271d4d4dad8b666a8562dfcdccf981074f3f1064bd9e2ea8e18157467c426c",
+      "/dev/shm/incidence-q401-physical/IncidencePhysicalPinExpectation.olean": "3d12b08775d040d38e5b48c7ba0ca30acbf04c6bc39cb264b96a49b91bce0b02"
+    },
+    "log": "67ca6dff0db9e880a40e74cc71b5bdd061e6085e29ec6b48a58d88270426a23f"
+  },
+  "IncidencePinPlaneGeometry": {
+    "stage": "run-pin",
+    "source": "da7b3406b94ad9354b62bcc6be2e9f6d6413082ceae30a511ec09cd23638db5a",
+    "object": "4252d7bf3c2a4d6c6623c719ac12e2d4350c482d932a673aa0c4271a1fb42927",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/IncidenceRobust.olean": "d70972e0a5a7d95c0640cb3448bf765dd412f7c802097eb03ad920d9de9f2042",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean": "bde59a44ffedd9f97f9071e2415c5fccb8a3f65c5f8fee882cee69f8e9bffc41"
+    },
+    "log": "bd93d949b4bea589088bf71571e96e8791fb46b4195a81586e2029e469e90e61"
+  },
+  "IncidencePinFreeSites": {
+    "stage": "run-pin",
+    "source": "6679046be70ff414cbe96baed4e470efdcd68cf768a4f55bc86832de16b4eada",
+    "object": "31fedf88af0994a98928133df3b1cab45a3a04752576c36ae64c92e0c3e93565",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinPlaneGeometry.olean": "4252d7bf3c2a4d6c6623c719ac12e2d4350c482d932a673aa0c4271a1fb42927",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinCompact.olean": "c778b858cb5c53c8753279c8eda54ab512e4a32c8ec1329f76b8ac45a0d0202d",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Fintype/EquivFin.olean": "706709a7c74d6854350cec003b9ab008ab5df46c8c86ef02b040d29f38340c61",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Finset/Sum.olean": "1b04295e389cf5ca117b34d274a8ce426b554e40de4b972c288ad0edb8eaaf22"
+    },
+    "log": "a57fa3b05b9f3c79f33fd232633ce57cf04de62d8b8b7e167045f1f6c966b25c"
+  },
+  "IncidenceResidualCut": {
+    "stage": "run-pin",
+    "source": "7d544eafeb9dca6259387f1f6c5c482f8fa6a32fece5a7017041918cfcd8775f",
+    "object": "00c0f86777aca5494f2dc9c40e36d05d56cb877774f8e2b58db8fa197115a9bd",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/CircuitRewire.olean": "1bc0e9dab30c92e630ba33d2d9b6feab7de33da3b7fc3a805c99ca6b5fc8cb6e",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Finset/Card.olean": "24f5e4f54f643fc3b72ede36bcdbb9d05a7d6905d2007b9b932cc95394f3d611"
+    },
+    "log": "eb4aab26d4a5b1159495085b23ee784da3d278e5c2fdc3131035163cb0b01553"
+  },
+  "IncidenceResidualStar": {
+    "stage": "run-pin",
+    "source": "76e59dbada64a589f1bf55eab3330b85ad1aa5e7f9d9fc9341c62b32ade630e1",
+    "object": "3c8247c9ad3912ef2e71686df51146b116dd0e8144cd180366d0ba35c15c9d00",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/CircuitRewire.olean": "1bc0e9dab30c92e630ba33d2d9b6feab7de33da3b7fc3a805c99ca6b5fc8cb6e"
+    },
+    "log": "2c29d0c62e8d745aa9280e8d04b92280dfe6edea4f808f898f2c5426c2308852"
+  },
+  "IncidenceResidualWeight": {
+    "stage": "run-pin",
+    "source": "9ad386bcc32aade05964be4cdbf16d67b4b97feb8148a8ba7058e0e2f35a926c",
+    "object": "15889b9f8be96bdbbfdffac0dd8fd9e070fa3a85ec0b18e0a5f3ebbddee66b08",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean": "bde59a44ffedd9f97f9071e2415c5fccb8a3f65c5f8fee882cee69f8e9bffc41",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/BigOperators/Ring/Finset.olean": "b52d267868cba593139f03b0fe336b4a76c25d607e00aff01ad83540d91acbc9",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Tactic/Linarith.olean": "93dc12bfc3fc322fc4ed054e013bdaba10b97da70f02f3eb2f177512e6a3f373"
+    },
+    "log": "0deb67d38d5272b39146b9a11ac20d98c9eff8e6192e1aa851c9e1617ebe10b5"
+  },
+  "IncidenceResidualPorts": {
+    "stage": "run-pin",
+    "source": "5bcd8d6d5a6c3f50c13185b9e18e8a699cdddae21bb314c9115255a4aa8b9cc9",
+    "object": "09c936c8d5585cb5cbdbe4ae8dcb0006c207307cd2d75704db53d2f51aefd7cd",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceResidualWeight.olean": "15889b9f8be96bdbbfdffac0dd8fd9e070fa3a85ec0b18e0a5f3ebbddee66b08",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/CircuitRewire.olean": "1bc0e9dab30c92e630ba33d2d9b6feab7de33da3b7fc3a805c99ca6b5fc8cb6e"
+    },
+    "log": "b33aa93416d8e4d7b62196b617bbc884d74dc2659a1147fabf8381734b2db267"
+  },
+  "IncidenceResidualDemand": {
+    "stage": "run-pin",
+    "source": "bd303d6965c878905be535f648f6c249a5d2f084af77b594a03da9b8fbfdd206",
+    "object": "f7b35ea1a43c3d57bf5fc9e4296eea30b1cc20310c23f0e25da9a740296f2c27",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceResidualPorts.olean": "09c936c8d5585cb5cbdbe4ae8dcb0006c207307cd2d75704db53d2f51aefd7cd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceResidualStar.olean": "3c8247c9ad3912ef2e71686df51146b116dd0e8144cd180366d0ba35c15c9d00"
+    },
+    "log": "a34a926461c9b11809f0bb126fefbd767626a06add9576060ec256c299dcf310"
+  },
+  "IncidenceResidualEndLedger": {
+    "stage": "run-pin",
+    "source": "bb59849b5e10d145bcd0f778b76585c5701800c37c186ce46717e1ba03890c68",
+    "object": "d215bc30946dd039bf1a3eeb2d537c2da5a7fca4488e79fe19f0280fe22012a7",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceResidualPorts.olean": "09c936c8d5585cb5cbdbe4ae8dcb0006c207307cd2d75704db53d2f51aefd7cd"
+    },
+    "log": "1cf03a66b280a6ad6104398d991c42235fe5cddc4fc9fb02f9da45f80fd84f33"
+  },
+  "IncidenceResidualPath": {
+    "stage": "run-pin",
+    "source": "9d884cf9484db8e98bd8302d725ecb83bc4e20831e411df180c0c6f40503880f",
+    "object": "94cc15be374747a888f4dc48402417ff241d83ae8b57565f1e7b2c5e8c8c3076",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceResidualCut.olean": "00c0f86777aca5494f2dc9c40e36d05d56cb877774f8e2b58db8fa197115a9bd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceResidualPorts.olean": "09c936c8d5585cb5cbdbe4ae8dcb0006c207307cd2d75704db53d2f51aefd7cd"
+    },
+    "log": "c573473db582e2bfbf2df8049a7731bf2571a230a637da517b7bd8f800937399"
+  },
+  "IncidenceResidualLower": {
+    "stage": "run-pin",
+    "source": "0f358930bd7948ff5534e1592a8f7f18354521e418dbabc148e3a56b06e6ff55",
+    "object": "6ec78541386275964b3a1347306b4036e722bda85049508dc8e8e8160fcc2840",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceResidualPath.olean": "94cc15be374747a888f4dc48402417ff241d83ae8b57565f1e7b2c5e8c8c3076",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceResidualEndLedger.olean": "d215bc30946dd039bf1a3eeb2d537c2da5a7fca4488e79fe19f0280fe22012a7",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceResidualDemand.olean": "f7b35ea1a43c3d57bf5fc9e4296eea30b1cc20310c23f0e25da9a740296f2c27"
+    },
+    "log": "26780b162bfb05afd10d4d916fafceadf0778d34d83fbace78d614c254b42214"
+  },
+  "IncidenceResidualPair": {
+    "stage": "run-pin",
+    "source": "6d9f1560d0b3a2a6c827c74fa71eff0cc94ce5b2b59648d9c62936a566ab80f7",
+    "object": "7fb5dd13187abf9b700232040c650ffde413e54241eb9ee7a40b16a5c831c03c",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceResidualLower.olean": "6ec78541386275964b3a1347306b4036e722bda85049508dc8e8e8160fcc2840"
+    },
+    "log": "2c614669ac957a3c9ec524811e34f2e153ae88c28c677b77b3c2373f1afbf383"
+  },
+  "IncidencePinRunModel": {
+    "stage": "run-pin",
+    "source": "f09ac33db8de4e911bf03db64093bfd44774baf5535687eb0fcf84b77d745ef8",
+    "object": "4f1ee50d5e24c58420b177ed1d9de6ddde5995d623e8ea904c514f0672b632ee",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinCompact.olean": "c778b858cb5c53c8753279c8eda54ab512e4a32c8ec1329f76b8ac45a0d0202d",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceResidualPair.olean": "7fb5dd13187abf9b700232040c650ffde413e54241eb9ee7a40b16a5c831c03c"
+    },
+    "log": "e1e00b4a3166c4f091d5f193d9262afa1975c7801cffceb4ca789add9ba22549"
+  },
+  "IncidenceRunPinCompile": {
+    "stage": "run-pin",
+    "source": "baf7319b0b9929e6b5e72cc26ca6340746d5a000c8b70a18d4fc2743790332f8",
+    "object": "3e16f2ca1e21516f2d51c5e225c3e93f59f4a8c53e0738459efe7918233a02dc",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistRealize.olean": "f749211e2ff4958301a1591d2ce402790b12a81695c994f34e30e541467e702b",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceZeroRestriction.olean": "62f3e8527519659173f69181d32cf05f2d44b52e4a75c08d324a89df8a0c1cba"
+    },
+    "log": "12eb3a05c3feb46a9d1fb07be801f440be245ca051d51e293c0ace57a0730ccd"
+  },
+  "IncidencePinLosses": {
+    "stage": "run-pin",
+    "source": "14a3559e4d0ef4a9d877ebfba56902b24d566f230835f67ec607efca8d86e35a",
+    "object": "a7d0fa4ab02903fd6ae74eb55dfd6235f3563feee6cd76171201765879aba2d3",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinCompensation.olean": "d3ecc2887dc2ae6d75004b29b20f9293319af335211720633e33d3895f4c8f7f",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceRunPinCompile.olean": "3e16f2ca1e21516f2d51c5e225c3e93f59f4a8c53e0738459efe7918233a02dc"
+    },
+    "log": "a4b0690f3991f1e7f831c55fca68fe41f0ae06c38e5ced2630c5bd34b71241c9"
+  },
+  "IncidenceRunPinPhysical": {
+    "stage": "run-pin",
+    "source": "8f679b88b7c3d8fe3c19ed4f0c8603b83d53260e7c2a8b54b31eb9ed2162171d",
+    "object": "1d5df5f4a80ecb0f0c19b1590cb620c652508ffe537e5a8a7765b934f0047775",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinLosses.olean": "a7d0fa4ab02903fd6ae74eb55dfd6235f3563feee6cd76171201765879aba2d3"
+    },
+    "log": "1dd2cfc9a3a996e8e9014d272d09924b4c442450f36c43ddc825f458c23148e7"
+  },
+  "IncidencePinRunRoom": {
+    "stage": "run-pin",
+    "source": "3a09718ead072a2327c0a245d7507b2b279b4519fc24726e13b869529cfd2435",
+    "object": "674ac752702607ac191dad6f9f7863b36c0232e1c80cc7b454b57a856d8dfc17",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceRunPinPhysical.olean": "1d5df5f4a80ecb0f0c19b1590cb620c652508ffe537e5a8a7765b934f0047775",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinPlaneGeometry.olean": "4252d7bf3c2a4d6c6623c719ac12e2d4350c482d932a673aa0c4271a1fb42927"
+    },
+    "log": "d679794ce825f9582a03b72294e7aa04bc9437f0c1402112c82998d5c95700a6"
+  },
+  "IncidencePinRunTests": {
+    "stage": "run-pin",
+    "source": "4d8959be020dc060b6bb60f40c9f20ef8f4fc23de294d6b25fa10f54bd8a8e88",
+    "object": "787a5a28fc69cea41035e1549726642cd27008039c1e9893552c19e5be03cb23",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinFreeSites.olean": "31fedf88af0994a98928133df3b1cab45a3a04752576c36ae64c92e0c3e93565",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceRunPinPhysical.olean": "1d5df5f4a80ecb0f0c19b1590cb620c652508ffe537e5a8a7765b934f0047775"
+    },
+    "log": "0c6f819858fe9a66b8f4b73df665686842565c04816cd01939595a31ddf7a552"
+  },
+  "IncidencePinRunBound": {
+    "stage": "run-pin",
+    "source": "719c234110fce4f135dc1a2153d4b416449abb11595011a47faa6d6cf3cc8ee4",
+    "object": "8858fb8cf64357259f2848b48b6d97e1ca61fe0b2998c5f899c06ca7f9c4155d",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinRunTests.olean": "787a5a28fc69cea41035e1549726642cd27008039c1e9893552c19e5be03cb23",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinRunRoom.olean": "674ac752702607ac191dad6f9f7863b36c0232e1c80cc7b454b57a856d8dfc17",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinRunModel.olean": "4f1ee50d5e24c58420b177ed1d9de6ddde5995d623e8ea904c514f0672b632ee"
+    },
+    "log": "3236fc8cca6fcf4acb9df197636cc8f9e4baeaadecc530042a124a07ce71e2ee"
+  },
+  "IncidenceWeightedPlane": {
+    "stage": "weighted-plane",
+    "source": "59e74989f5fa3ef1d38e7d76b9c11d7336ef8f30ca396c9c4b3bc27cb3962baa",
+    "object": "76f18d51d147a640a356215d6c6ceec0d2a9a621e9319c32745db0d1d721bc23",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinRunModel.olean": "4f1ee50d5e24c58420b177ed1d9de6ddde5995d623e8ea904c514f0672b632ee",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidencePinFreeSites.olean": "31fedf88af0994a98928133df3b1cab45a3a04752576c36ae64c92e0c3e93565",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceRunPinPhysical.olean": "1d5df5f4a80ecb0f0c19b1590cb620c652508ffe537e5a8a7765b934f0047775"
+    },
+    "log": "93049551d70563faa9ab70bd352c0f92db5841c3ece10ff0c3c65c9971d1e9f7"
+  },
+  "IncidenceWeightedEdits": {
+    "stage": "weighted-plane",
+    "source": "3d9032b317d449d06341d538e46ebf82658ea7c33c5a9debd0ecd4969a214e8d",
+    "object": "ea8ed1b7875e465048620aa6b1467a297cc6d65f5fef3659c69c7717adda83de",
+    "deps": {
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean": "e619b6b24a1bf6a1b961271e047545ebe2c15a5e642f3c08033cb2f9a7accafd",
+      "/dev/shm/review-pinrun-n1lp7s7e/fresh/IncidenceWeightedPlane.olean": "76f18d51d147a640a356215d6c6ceec0d2a9a621e9319c32745db0d1d721bc23",
+      "/dev/shm/incidence-q401-physical/IncidenceWarmPhysical.olean": "fc7215020cd08cbf03a0132b7b181a9711daae307540fa96c542a142b0c8f33f"
+    },
+    "log": "9966fcd23dd48a231a07a13e337cbc13fc088e0b40b1455600172a3bbe380238"
+  }
+}

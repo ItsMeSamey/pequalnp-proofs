@@ -1,0 +1,2 @@
+'IncidenceResidualPorts.balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceResidualPorts.residual' depends on axioms: [propext, Classical.choice, Quot.sound]

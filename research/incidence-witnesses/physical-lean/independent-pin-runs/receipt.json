@@ -1,0 +1,13 @@
+{
+  "counts": {
+    "pin-hoist": 6,
+    "run-pin": 21,
+    "weighted-plane": 2
+  },
+  "ledger": "84fef60ceecdb040e763db4d061bb21aad4f0e79962509bb1026ee191d9abe69",
+  "axioms": "a405cf3b5d0ce9e0bacdeacbb3a3aed574ed70dc577e6d66ae56c64da701681a",
+  "public_reports": 43,
+  "lean": "4.36.0",
+  "input_locks": "replay.py",
+  "replay": "7d10c5785f19cdf9778a5943f98a91419ce725557b8f69a623bc4e6208e24409"
+}

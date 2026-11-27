@@ -1,0 +1,6 @@
+/workspace/scratch/incidence-run-pin/IncidencePinCompact.lean:35:13: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+'IncidencePinCompact.law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidencePinCompact.physical_gate_reader' depends on axioms: [propext]

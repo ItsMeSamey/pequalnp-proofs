@@ -1,0 +1,31 @@
+/workspace/scratch/incidence-run-pin/IncidencePinCompensation.lean:23:74: warning: This simp argument is unused:
+  not_and_or
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [z, IncidenceOperandLedger.zeroAt, op, C.law j hj, Gate.eval, Op.eval]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidencePinCompensation.lean:132:81: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/workspace/scratch/incidence-run-pin/IncidencePinCompensation.lean:132:89: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/workspace/scratch/incidence-run-pin/IncidencePinCompensation.lean:132:81: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/workspace/scratch/incidence-run-pin/IncidencePinCompensation.lean:132:89: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/workspace/scratch/incidence-run-pin/IncidencePinCompensation.lean:135:0: warning: automatically included section variable(s) unused in theorem `IncidencePinCompensation.free_pair`:
+  [DecidableRel I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableRel I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'IncidencePinCompensation.raw_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidencePinCompensation.forced_separate' depends on axioms: [propext, Classical.choice, Quot.sound]
