@@ -1,0 +1,13 @@
+# An analytic obstruction to six gates for 270549407
+
+On six shared flags, the accepted singleton flags are 0 through 4. The accepted distinct pairs are 01,02,03,04,12, using bit 6 min(i,j)+max(i,j).
+
+Pin flag 2 to zero. Adding it to singleton 3 changes acceptance to rejection. Pin flag 5 to zero next; it is still essential since singleton 1 is accepted but pair 15 is rejected. Each pin saves a gate: simplify constants, aliases, ignored operands and dead logic first, then the first live reader of the pinned raw folds. Pin flag 0 to zero as well, with no savings required. A six-gate circuit would leave at most four gates on flags 1,3,4, accepting every singleton and rejecting every pair. No value on the empty or full assignment is needed.
+
+All three inputs are essential by a singleton-to-pair transition. No monotone circuit suffices. With at least two NOTs there are at most two binary gates. Connecting all three essential inputs with only two binary gates forces a read-once tree by edge counting. Each raw is negatively influential, so every raw has odd negation parity. Pushing negations to the leaves gives a monotone read-once function of the complemented raws. Its values, zero at their singletons and one at their pairs, force ordinary threshold two by monotonicity. No read-once tree on three inputs computes it: a leaf at the root split has a value making the output constant, while neither value of any threshold input does so.
+
+With one NOT, let H be its monotone operand. The rest of the circuit is monotone in the NOT output and the raw flags, even when earlier monotone signals have other users. For every singleton contained in a pair the output decreases. Thus the NOT output decreases on every such transition. H rejects all singletons and accepts all pairs, forcing threshold two on the full three-bit cube.
+
+That threshold requires at least four binary monotone gates. By self-duality consider a final OR. Both live inputs must reject all singletons and neither is a raw. If there are only two earlier gates, the first is an AND of two distinct raws, hitting just their pair. A second gate reading only raws and rejecting singletons can hit at most one pair. If it uses the first gate, that gate is zero on both other pairs; the second gate there is either zero or a raw also accepted on its singleton. Neither can supply both missing pairs and reject all singletons. Equal root inputs reduce to a smaller circuit. Hence the one NOT and its operand cost at least five gates after restriction, contradicting the four available.
+
+The seven-gate upper negates flag 5 OR threshold two on (flag 1 OR flag 2), flag 3, and flag 4. It ignores flag 0. The lower argument permits using all six physical raws.
