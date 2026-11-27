@@ -1,0 +1,28 @@
+{
+  "recipe": "theta_cover.py",
+  "recipe_sha256": "d910ebb31c47a3f74d3911de2e7bfd5f3f2cdfd9efa66426c2e26e26cf20227c",
+  "module": {
+    "CoveredThetaA9822": {
+      "wall": 12.794,
+      "rss_kib": 2164704,
+      "last_sample": 12.633,
+      "source_sha256": "de34380619231e1df4cccaf4d549db1690e5703b7b5528528c07da3d9fe68e10",
+      "receipt": "/workspace/scratch/official9822-lean/receipts/20261127T064626Z",
+      "object_sha256": "7ebc80a7efd37d1a24a2641f54796d0d33d22e3a2fabfc81308991259d648371",
+      "original_sha256": "1d522b467c353409d6d8f07fb284b05793702cf2229d2bcd778c4b72cd0f6c2f",
+      "original_bytes": 17127,
+      "new_bytes": 10292
+    },
+    "CoveredThetaB9822": {
+      "wall": 8.469,
+      "rss_kib": 2182568,
+      "last_sample": 8.308,
+      "source_sha256": "74092d60a55243f7707636ed266aed0362c701c295fd406007478e791643b010",
+      "receipt": "/workspace/scratch/official9822-lean/receipts/20261127T064701Z",
+      "object_sha256": "c0810e9c0d3e12a15482b1e51511c886e5e5816e69d77d2ea275c02fecf5772c",
+      "original_sha256": "ce10a7f369fe11336bf747336da4360084e478d1aa1ff83a81fc8d43e0467994",
+      "original_bytes": 11431,
+      "new_bytes": 5988
+    }
+  }
+}
