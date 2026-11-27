@@ -1,0 +1,1 @@
+{"cpu": 0.06411599999999999, "maxrss_kib": 8832, "code": 0, "output": "Fourier flag, declared vertex, raw gauge and full NAND counts verified\n", "rss": 9039872, "wall": 0.06145056799869053, "kernel_before": ["17: FLOCK  ADVISORY  WRITE 1488972 00:1b:193638 0 EOF"], "kernel_after": ["17: FLOCK  ADVISORY  WRITE 1488972 00:1b:193638 0 EOF"]}
