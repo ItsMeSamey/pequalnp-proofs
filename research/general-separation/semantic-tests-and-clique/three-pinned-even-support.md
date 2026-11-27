@@ -1,0 +1,11 @@
+# Three pins can force an all-even induced support with quadratically many independent cycles
+
+Take an even n≥6. Complement the cycle on n rim vertices, then add a hub joined to every rim vertex. Require the hub and two consecutive vertices of the original cycle to be selected. These are three independent coordinate readouts with target (1,1,1).
+
+Write S for the selected rim vertices and k for their number. Even degree at the pinned hub forces k even. For any selected rim vertex i, its induced degree in the host is k minus its degree in the original cycle restricted to S. Thus each selected rim vertex has either zero or two cycle neighbors in S. The two consecutive pins give each other one selected cycle neighbor, forcing both other neighbors and propagating to the entire rim. The full support satisfies all conditions since the rim vertices have degree n−2 and the hub degree n. It is the unique witness for this target.
+
+Every vertex in this witness is a branch vertex of degree at least four. The host is connected with n(n−1)/2 edges and n+1 vertices, so the binary cycle space has dimension n(n−3)/2. The original degree-two cycle already required all vertices under two consecutive pins, although that witness had no branch vertices and only one independent cycle. The complement and hub preserve the propagation while making all added chords part of the required induced witness.
+
+For binary adjacency rank, a kernel vector consists of a rim vector x and a hub bit z. The hub row gives even parity of x; the rim rows reduce to (I+A_C)x=z·1 where A_C is the cycle adjacency. One solution is x=z·1. Subtracting it gives the recurrence y_(i+1)=y_i+y_(i−1), whose solutions repeat each three positions. When three does not divide n only the zero solution closes up on the cycle. When six divides n both initial bits are free, and every three successive bits of y sum to zero, so the parity condition still holds. The full adjacency rank is n in the first case and n−2 in the second.
+
+This example rules out bounding the witness's branch count, adjacency rank or cycle-space dimension solely by the number of readouts. Its witness is found by the elementary propagation above. [Finite checker](three_pinned_even_support_check.py)
