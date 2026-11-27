@@ -1,0 +1,7 @@
+# Replay
+
+Use the research/subdivision-markers/palette/three-name-generic subtree of befc469db2feb23cefd8a98347525d7780068679 for the eight fixed objects and of da395fb35b959ef6bd28c1585be0b882b1efde65 for the additional three controls. In a fresh tmpfs directory named by workdir, extract the first tree, create fresh and prior directories, and extract the second under final. Reconstruct the independent nine-module host and ten-module packed predecessor if their temporary objects have been retired. The driver checks their sealed receipts and rehashes each object before linking it. It uses the separately verified Gaussian dependency as well.
+
+Run python replay.py (precreate go-3 and go-6 unless interleaving compiler slots), then python samples.py. Each source is compiled under its producer's canonical absolute path with bytes verified against the frozen Git snapshot pre- and post-build. Every compiled object, full log and resolved local import is checked. Each stage runs an additional import-only axiom probe.
+
+The five-data control replay uses final/replay_samples.py and final/check_produce_direct.py. For the two star emitter invocations, set PYTHONPATH to the frozen predecessor's packed-fixture-producer directory containing generate.py. Run emit_star.py on star-transcript.json and split-transcript.json, comparing each raw output and each generated Lean source byte-for-byte to the matching frozen sample. The smaller eight-module snapshot lacks the split Lean module later supplied by the full eleven-module snapshot.

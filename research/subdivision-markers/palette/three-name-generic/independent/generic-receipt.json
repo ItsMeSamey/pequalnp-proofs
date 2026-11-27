@@ -1,0 +1,109 @@
+{
+  "commit": "befc469db2feb23cefd8a98347525d7780068679",
+  "manifest": "7e47e94ce34c96412994d7f0553bbe4020c089495f4834c03baac4c185224138",
+  "objects_lock": "7e47e94ce34c96412994d7f0553bbe4020c089495f4834c03baac4c185224138",
+  "old_nine": "5c84515b600b7273f265f0e5714b2e6b2b042809a0c4440841adeba1b2b47402",
+  "gaussian": "e5044cd45b4e0a39472c77bff59f451eacb7f3b3f58e3e25a0c2003ca61b3f93",
+  "modules": {
+    "ThreeNameGenericCarrier": {
+      "source": "f07133ec8724d106f15f534336a294f3e84471da3b3ef77d3a82964ab6d32bd3",
+      "object": "db1fcc87e70fb6521c2ce792cfcd4897f2fc6d87bd8ad85eedad0f0775a9578a",
+      "log": "212147e0bcfd40053cb5b9d83c9bc494705891fb1ffb8369144e5828e7737e72",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-generic-eight-yMq64N/prior/ThreeNamePackedPins.olean",
+        "/dev/shm/review-generic-eight-yMq64N/prior/ThreeNameChain.olean"
+      ]
+    },
+    "ThreeNameGenericPositive": {
+      "source": "edeab4f2789ee0c4c67c49fc4507a3c3a3bedf86a0036e57b52ce7001f038df7",
+      "object": "0c6217e31ad6258172ee01010d1758a6756465b06d4ebb39919a55304b3d19b6",
+      "log": "f395ba6820ffe7d9c68a942984c928a6579b5600d5669a4bb67cbb576eb57265",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-generic-eight-yMq64N/prior/ThreeNamePackedPins.olean"
+      ]
+    },
+    "ThreeNameGenericDirect": {
+      "source": "189fa7e47cfd73c89bf5935014a27064b7e208fc4ce9c1a8087531ef4f133e91",
+      "object": "905b3e41f9208cf0b8a562ea092b4d7efd4334a9d228776d9b890dde62e239be",
+      "log": "cafc0ab71833d5c68484a3ff8bfdf11bf10d68f35c0f44fbff7f00d6ef2d4b1c",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-generic-eight-yMq64N/fresh/ThreeNameGenericPositive.olean"
+      ]
+    },
+    "ThreeNameEmittedSamples": {
+      "source": "52456b64eb51a674e31592bd1cfe780f4a6966d133034c9988d1acd5c0581d79",
+      "object": "6fffb046ce3b917c251b2627da70203cf245cb1b603b0ede269fac59ef4e4011",
+      "log": "5d5d6855f8be654445a60380ca0e77b75054c56f410cbeb1aa3c946b2af8dd2c",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-generic-eight-yMq64N/fresh/ThreeNameGenericDirect.olean"
+      ]
+    },
+    "ThreeNameGenericTrail": {
+      "source": "01d19b686021f9f0bb723d9a4b2f2d4ea330c8eaa1568c28b6e108b4231bfefb",
+      "object": "6a5919acdd54002bb0154eaadd41a1e04906bf30d579088fc1f5308b06f36490",
+      "log": "948764c23443c0996b273ec5f0110d7ebdca21824d25fd135481cb3fc1fe023f",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-generic-eight-yMq64N/prior/ThreeNameProjectionStep.olean",
+        "/dev/shm/review-generic-eight-yMq64N/prior/ThreeNamePackedTerminal.olean"
+      ]
+    },
+    "ThreeNameGenericRoots": {
+      "source": "fd95d17f4ee7c3ff52922cb5be350a6ed790fcfd05736ef61f8cebbd20d0ec94",
+      "object": "348bdf1cacb823347c992d4d4e3c2460fe3e03e27bf37e8f9b132cfc5bf9ffcd",
+      "log": "d4abffaa500bb8099782b8c9b65433047a18c059c88ad6727138f5754e00be3f",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-generic-eight-yMq64N/fresh/ThreeNameGenericPositive.olean",
+        "/dev/shm/review-generic-eight-yMq64N/fresh/ThreeNameGenericTrail.olean"
+      ]
+    },
+    "ThreeNameGenericHost": {
+      "source": "c4c87d0adea7ffdd4ebf12823b8ecc9b375f5563e411e15a52b5a6bdead39f41",
+      "object": "d87936125a87d506b333ac696c61f3b3e097a65cbe8ba71518e06b8c995ddd27",
+      "log": "d6604b14f2584fb313f693cd92aea31a354e309c61a31df2628ecf476fac6958",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-generic-eight-yMq64N/fresh/ThreeNameGenericRoots.olean",
+        "/dev/shm/review-generic-eight-yMq64N/fresh/ThreeNameGenericCarrier.olean"
+      ]
+    },
+    "ThreeNameEmittedStar": {
+      "source": "a6632ac2f58a5c69a9aba174bc439a7d5264b70f2c6e8874ab44d23a33e3a179",
+      "object": "8ca8d4658133d641ea4625890e0986da18dda35938f34d3a7e0a5532f857b6e1",
+      "log": "fbe68a0cd911deeb23eddd822ac90889a8fe5915148a5cb64ca35f112e0df593",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-generic-eight-yMq64N/fresh/ThreeNameGenericHost.olean"
+      ]
+    }
+  },
+  "axioms": [
+    "ThreeNameGenericCarrier.ordinary_support",
+    "ThreeNameGenericPositive.sound",
+    "ThreeNameGenericPositive.pins_only",
+    "ThreeNameGenericDirect.conflict_no",
+    "ThreeNameGenericDirect.outside_no",
+    "DirectInstance_feb6f1db2ffddcaab37df0439282c7f0458718dddc195ac9c87b29e90f8050fb.result",
+    "DirectInstance_d701e8d81dbf263083e4530f126adf2fc6c49243e7dae5ecb429feb113d72cd5.result",
+    "DirectInstance_3e5814f0920d11bc76663870e6e34abb3e832ec0ec9410ecf6c9737b399fb644.result",
+    "ThreeNameGenericTrail.Trail.path",
+    "ThreeNameGenericTrail.Terminal.kernel",
+    "ThreeNameGenericRoots.rootFacts",
+    "ThreeNameGenericHost.rejects",
+    "ThreeNameEmittedStar.no"
+  ],
+  "axioms_sha256": "5499adabf5f5933bb30b0afa0654a4ab4efaf24051e9b711bee8d15d27fdfcd1"
+}

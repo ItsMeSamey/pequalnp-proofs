@@ -1,0 +1,8 @@
+import ThreeNameEmittedSplit
+import ThreeNameGenericSamples
+import ThreeNameGenericStar
+#print axioms ThreeNameEmittedSplit21124e661929.no
+#print axioms ThreeNameGenericSamples.positiveExact
+#print axioms ThreeNameGenericSamples.conflictExactNo
+#print axioms ThreeNameGenericSamples.outsideExactNo
+#print axioms ThreeNameGenericStar.no

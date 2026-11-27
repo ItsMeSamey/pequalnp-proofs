@@ -1,0 +1,5 @@
+'ThreeNameEmittedSplit21124e661929.no' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNameGenericSamples.positiveExact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNameGenericSamples.conflictExactNo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNameGenericSamples.outsideExactNo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNameGenericStar.no' depends on axioms: [propext, Classical.choice, Quot.sound]

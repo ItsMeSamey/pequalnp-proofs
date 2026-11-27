@@ -1,0 +1,8 @@
+positive feb6f1db2ffddcaab37df0439282c7f0458718dddc195ac9c87b29e90f8050fb 16 3
+outside 3e5814f0920d11bc76663870e6e34abb3e832ec0ec9410ecf6c9737b399fb644 8 0
+conflict d701e8d81dbf263083e4530f126adf2fc6c49243e7dae5ecb429feb113d72cd5 8 0
+star f675daaacb82285d16389a42a683b69f56b894a5361fc523fa6ba13d5bef585e 4 0
+split 21124e66192983f961ef8069961cccd21dad15a82e0953b191bcc04d1964ecbb 8 0
+42563 independent tiny-physical certificate checks passed
+all three emitted Lean instances reproduced byte-for-byte
+Star and order-zero split: both raw bytes and both emitted sources reproduced with frozen predecessor generator.

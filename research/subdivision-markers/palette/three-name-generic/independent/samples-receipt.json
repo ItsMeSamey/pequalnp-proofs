@@ -1,0 +1,47 @@
+{
+  "commit": "da395fb35b959ef6bd28c1585be0b882b1efde65",
+  "manifest": "cfefdf78da7126bbb794dc669e71640b0368aace6281a43957a47417bfb46517",
+  "objects_lock": "cfefdf78da7126bbb794dc669e71640b0368aace6281a43957a47417bfb46517",
+  "old_nine": "5c84515b600b7273f265f0e5714b2e6b2b042809a0c4440841adeba1b2b47402",
+  "gaussian": "e5044cd45b4e0a39472c77bff59f451eacb7f3b3f58e3e25a0c2003ca61b3f93",
+  "modules": {
+    "ThreeNameEmittedSplit": {
+      "source": "2b2b52353860433888c7ac96136f862522d2b0592e78ed92ba2894fbfeee8f81",
+      "object": "fb7e0b0e97ac56c7b5650a89b8eb4eaad0b766edc6e84194dcf7e81f69909f0c",
+      "log": "5fa69a7cc65131db9013d2696279b235f7c90c24223eb0c3afbde3ebb486acb6",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-generic-eight-yMq64N/fresh/ThreeNameGenericHost.olean"
+      ]
+    },
+    "ThreeNameGenericSamples": {
+      "source": "c84430ac08c0ddbd99135a831fa062f08dc6190b28cb0a61ebb7203a0d610f95",
+      "object": "4720d9def631873ecf36193346a912c55b2041f66e3ac3150300c597a02a486f",
+      "log": "f9f9b1a34820081573bf96372c225c36dd45ebded6c2f79e724991d1765fa4d7",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-generic-eight-yMq64N/fresh/ThreeNameGenericDirect.olean"
+      ]
+    },
+    "ThreeNameGenericStar": {
+      "source": "2557fdf5463593f19e65c6ff5349ec57e202e140eb28b49e99a5f5c28faacb6e",
+      "object": "965142e6c93dbf0a7d94b371656c9ba939fa4c0c2229cb7e8e32b2d365727813",
+      "log": "e72810df46af22fa7903dcbbfc08bfcfc737b72104216814d492a5fded775352",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-generic-eight-yMq64N/fresh/ThreeNameGenericHost.olean"
+      ]
+    }
+  },
+  "axioms": [
+    "ThreeNameEmittedSplit21124e661929.no",
+    "ThreeNameGenericSamples.positiveExact",
+    "ThreeNameGenericSamples.conflictExactNo",
+    "ThreeNameGenericSamples.outsideExactNo",
+    "ThreeNameGenericStar.no"
+  ],
+  "axioms_sha256": "ced0056f413ea377e684e2bbd641792f52f1d96f59d5f35965ef1537a093cfc7"
+}

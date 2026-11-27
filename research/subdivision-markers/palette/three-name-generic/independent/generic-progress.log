@@ -1,0 +1,13 @@
+ThreeNameGenericCarrier
+ThreeNameGenericPositive
+ThreeNameGenericDirect
+ThreeNameEmittedSamples
+ThreeNameGenericTrail
+ThreeNameGenericRoots
+ThreeNameGenericHost
+ThreeNameEmittedStar
+Traceback (most recent call last):
+  File "/workspace/scratch/review-three-name-generic/replay.py", line 69, in <module>
+    assert len(out.splitlines())==len(ax) and 'sorryAx' not in out
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
