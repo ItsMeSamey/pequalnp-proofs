@@ -1,0 +1,13 @@
+# One joined pair recognizes all-good ordered probes
+
+Index the probes x1 through xn and distinguish anchors G and B. The projected successor permutation has two cycles, G followed by all good probes in increasing order, and B followed by all bad probes in increasing order. A lone anchor is a fixed point. For n at least three set x0=G and x(-1)=B. Apply feedback F after the successor, sending xj to x(j−2) for j<n, G to x(n−2), B to xn and xn to x(n−1). The images are distinct. Mark B and xn.
+
+When all probes are good, B goes directly to xn. When the first bad probe is x1, B closes on itself. If the first bad probe is xj for 2≤j<n, the successor sends the set consisting of B,G and the first j−2 probes onto the first j probes. Feedback sends these back onto that set. It contains B and excludes xn. If only xn is bad, xn closes on itself. The checker supplies the two small caps.
+
+For a physical realization allocate three sockets uj,vj,wj to each optional native rotation in that order. Use reference cycles (G,u1,v1,...,un,vn) and (B,w1,...,wn). Switching j removes vj from the first and inserts it directly after wj in the second. Observing G,B and the vj therefore gives exactly the stipulated successor. Extend F by the identity on other sockets. The companion checker traces all 8190 settings through twelve gates. The switches here are independent and can always be set all good.
+
+## Inserting a literal
+
+Treat each inactive probe as fixed by F. The first-return permutation of the closed device on the active cuts is exactly the device with the inactive probes removed from the two ordered lists. Indeed inactive cuts just continue on their reference orbit. Consider an interior insertion between consecutive active probes p,s, with predecessor p' and successor s' respectively, away from either end. On the three tails s,s',j the former feedback images are p',p,j. The new images are p,j,p'. Every other image stays fixed. Thus one optional native rotation on those three tails implements the insertion. With two permanently active probes on either side of each candidate, the tails for its insertion are known regardless of other choices. Applying the all-good criterion with this padding requires that all padding probes be good in every admissible setting.
+
+This insertion does not enforce that a selected subset meets every clause. It also presupposes good padding in the desired sorted order. The checker separately exhausts permutations of six boundary cuts and unordered pairs of those cuts for four probes. Exactly the singleton target patterns 6 and 9 (low bit first) have no such fixed feedback. This last statement concerns roots chosen among boundary cuts only.
