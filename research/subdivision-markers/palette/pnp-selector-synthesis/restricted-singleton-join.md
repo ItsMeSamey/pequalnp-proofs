@@ -1,0 +1,11 @@
+# Exact join from restricted singleton rank
+
+Separate dense crossing links (at least two tags available) and sparse links (one tag). Full links resolve the pair directly. Let d_j be the affine violations of all dense missing-tag equations. Each d_j vanishes when its own link is inactive. If A={all d_j=0} is empty, the affine parity merge already applies. Otherwise write a_i,b_i for the two agreement indicators at sparse link i: its actual activation is δ_i=a_i b_i. Let q be the rank of the linear parts of all a_i restricted to the direction space of A. Choose q corresponding globally defined reads forming a basis on A.
+
+In each of 2^q fibers of these reads, a_i is a computable constant ε_i on A. A chart avoiding all links solves precisely the affine constraints for this fiber, the dense equations, and ε_i b_i=0. This gives exact deterministic universal join recognition or an actual disabling coloring in 2^q poly time.
+
+For constructive routing suppose every system is inconsistent. Each fiber meets A by independence. Gaussian elimination gives on the entire fiber 1=sum_j u_j d_j + sum_i v_i ε_i b_i. All coefficients are binary constants specific to the fiber. Moreover a_i+ε_i=sum_j c_ij d_j on the entire fiber, since it vanishes on the nonempty intersection with A. Substitution gives the identity
+
+1 = sum_i v_i δ_i + sum_j d_j (u_j + sum_i v_i c_ij b_i).
+
+This selects an odd number of actual crossings on every assignment in this fiber, including assignments outside A. Each dense summand vanishes when its own link is unavailable, regardless of the other reads. Aggregate crossing degree is ≤2. Choosing the canonical indexed representative of actual tag t costs ≤3 for a dense link: d_j becomes constant at tag t and the other affine factor multiplies its quadratic tag indicator. Sparse representatives cost ≤2. Multiply by each fiber's q-read indicator and sum. If internal routes have degree s, the new physical chain has degree ≤q+max(3,s+2). Treewise XOR through simultaneous joins preserves the worst bound. Construction costs 2^q polynomial per pair using shared affine expressions. Nonlocal coefficients multiplying dense violations are essential to this extension. It does not claim an unrestricted low-degree route.
