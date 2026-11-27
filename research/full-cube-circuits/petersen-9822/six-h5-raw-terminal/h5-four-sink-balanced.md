@@ -1,0 +1,7 @@
+# Four sinks split two on each arm
+
+Of five live hidden AND gates, suppose four are sinks in the dependency graph and each final arm receives two of their labels. Normalize hidden signals to be leaky. The only non-sink H has no earlier hidden ancestor, so H is the AND of two raw disjunctions. All sink operands and both residual terminal scopes are disjunctions on raw inputs and possibly H.
+
+Expand each terminal OR of two sink products plus its residual into four conjunctive clauses. Each clause is a disjunction over raw variables and potentially H. If it contains H, substitute H=A AND B and distribute to obtain two raw disjunctions. Otherwise it already is a raw disjunction. At least one of the eight initial clauses does not contain H: otherwise H being true would imply the entire output, contrary to an actual maximal-negative leak. Therefore at most fifteen raw disjunctions are needed in the whole conjunction computing F.
+
+Each raw disjunction in that conjunction accepts every minimal positive edge. Its raw support is a vertex cover. Its complement is thus an independent set and can contain at most one maximal independent set. Such a disjunction rejects at most one maximal negative; all sixteen must be rejected. This contradiction holds for arbitrary initial OR sharing, duplicate clauses or operands, both-arm H markers at a sink, and arbitrary residual raw/H labels. No circuit refactor or cost claim is needed. This excludes the balanced 2+2 sink distribution, not 1+3 or 0+4.
