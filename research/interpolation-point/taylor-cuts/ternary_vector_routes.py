@@ -1,7 +1,7 @@
 """Deterministic recursive GF(3)^b matching search using scalar-neutral portals."""
 from collections import defaultdict, deque
 from itertools import combinations, product
-from math import ceil, log, log2, sqrt
+from math import log, sqrt
 
 import networkx as nx
 
@@ -105,8 +105,9 @@ def solve(n,edges,target,*,threshold=None,portal_cap=None):
             return 'SAT',ids
         m=len(base)
         log_factor=max(1,log(2*m)*log(log(4*m))) if m else 1
-        limit=threshold or max(1,int(sqrt(m*log_factor)/b))
-        s=ceil(b*log2(3))+1
+        # Number of bases in the character-sum bound, ceil(log2(4*b)).
+        s=(4*b-1).bit_length()
+        limit=threshold or max(1,int(sqrt(m*log_factor/(b*s))))
         all_normals=tuple(v for v in product(range(3),repeat=b) if any(v) and next(x for x in v if x)==1)
         remain=set(sites)
         cycles=[]

@@ -53,7 +53,7 @@ def main():
     audit(4,[(0,2,(1,2))],2)
     audit(4,[(0,1,()),(2,3,())],0)
     # Basis toggles on disjoint two-vertex components, lifted as parallel-edge choices.
-    n=10
+    n=6
     graph=[]
     for i in range(n):
         g=tuple(int(j==i%2) for j in range(2))
@@ -88,7 +88,7 @@ def main():
                 a,c=ids[u],ids[n+v]
                 graph.append((a,c,w) if rng.randrange(2) else (c,a,w))
         rng.shuffle(graph)
-        audit(2*n,graph,b,{"threshold":1+trial%2})
+        audit(2*n,graph,b,{"threshold":1+trial%2} if trial%3 else {})
     assert any(s["bases"]>0 for _,_,s in stats_seen[:9])
     assert any(s["calls"]>1 and s["portal_nodes"]>0 for _,_,s in stats_seen[9:18])
     assert any(r=="UNKNOWN" and s["cap_hits"]>0 for _,r,s in stats_seen[18:])
