@@ -1,0 +1,53 @@
+{
+  "lock": [
+    "INCREMENT-MARKS",
+    "f30f670ade769d075d3abd76d046c0c3196f9ef0fef0c3e5f388a380961637ab",
+    "e4ead8b0a3b9c84e2d8d0208cf3f6272c95a7469"
+  ],
+  "prior": {
+    "review-q401": "19885c592cd38f2b0178b3fe277c76b756b0884b25d33b3ca56beb718a59700a",
+    "review-q401-increment": "1e4842385824637539c18566211590dd784e3e03331c01cf530f77c69e038108",
+    "review-q401-plus2": "069212e67dd7fa75784e9eba5d88ab2b72b62e4365bd332c586df31d684edaa2"
+  },
+  "modules": {
+    "IncidenceLiteralLabelStep.lean": {
+      "stage": "marks",
+      "source": "a91350235c405be6c931c8416ac10652f29b6c1c289fc2c7ee16de9313d7a1dd",
+      "object": "eb4863a7d4851de87bbcf35809f122adedaec01c15aef4f73b1774fd84765435",
+      "log": "f8f62efef3ea55ad47c55aba4abebdf1b585bc6da53f291d90f179b83651b9b9",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceCleanupLabels.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceSoleAndRetention.olean"
+      ],
+      "axioms": [
+        "IncidenceLiteralLabelStep.step"
+      ]
+    },
+    "IncidenceMarkTransition.lean": {
+      "stage": "marks",
+      "source": "062aeeedcb243c40eaf6a51f63384d239c9a47343a8db76ad6ac688ae1be38c8",
+      "object": "69453b4bfd5c839ef3f9513bf328826da4a8a386b062f1c6cf99c1c2922c929c",
+      "log": "b89f9eb748c4e04471e975c491c69f1e7fa873de83b273418d5697dc40b0cfb1",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/ProtectedIncidenceMoments.olean"
+      ],
+      "axioms": [
+        "IncidenceMarkTransition.transition",
+        "IncidenceMarkTransition.guard_count401"
+      ]
+    }
+  },
+  "public": [
+    "IncidenceLiteralLabelStep.old_reads",
+    "IncidenceLiteralLabelStep.old_and_kept",
+    "IncidenceLiteralLabelStep.step",
+    "IncidenceMarkTransition.transition",
+    "IncidenceMarkTransition.marked_low",
+    "IncidenceMarkTransition.guard_count401"
+  ],
+  "axioms": "b6680dc0c9a8023cd9ce9fc745d17542377e2f21aa66c04f245f501bc57bcd05"
+}

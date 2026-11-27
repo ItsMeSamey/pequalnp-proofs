@@ -1,0 +1,6 @@
+'IncidenceLiteralLabelStep.old_reads' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceLiteralLabelStep.old_and_kept' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceLiteralLabelStep.step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceMarkTransition.transition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceMarkTransition.marked_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceMarkTransition.guard_count401' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,8 @@
+import IncidenceLiteralLabelStep
+import IncidenceMarkTransition
+#print axioms IncidenceLiteralLabelStep.old_reads
+#print axioms IncidenceLiteralLabelStep.old_and_kept
+#print axioms IncidenceLiteralLabelStep.step
+#print axioms IncidenceMarkTransition.transition
+#print axioms IncidenceMarkTransition.marked_low
+#print axioms IncidenceMarkTransition.guard_count401

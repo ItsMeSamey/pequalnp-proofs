@@ -1,0 +1,207 @@
+{
+  "lock": [
+    "INCREMENT-10",
+    "3d9ffc82e2525cfc50f487efd311900fe0ad5d032f2ca486194a228c0914c5ce",
+    "d1e393589ce75e5fe93ed25716a3a0263395e3f0"
+  ],
+  "prior": {
+    "review-q401": "19885c592cd38f2b0178b3fe277c76b756b0884b25d33b3ca56beb718a59700a",
+    "review-q401-increment": "1e4842385824637539c18566211590dd784e3e03331c01cf530f77c69e038108",
+    "review-q401-plus2": "069212e67dd7fa75784e9eba5d88ab2b72b62e4365bd332c586df31d684edaa2"
+  },
+  "modules": {
+    "IncidenceCleanupLabels.lean": {
+      "stage": "ten",
+      "source": "dc578550a0976c24b9e05de15a675b1053015ee16f3b12adcc75fea44265512e",
+      "object": "87a2ad6a9a7ff0d6e0bbc5c38c9c2ce26febc867dfbc73741a9e23f2b08ccf3a",
+      "log": "ba348f4c03e8bbd0c72c0be8b6f9c949891285287ea65555289edfae08dc7e6a",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceLabelHistory.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceSurvivingReads.olean"
+      ],
+      "axioms": [
+        "IncidenceCleanupLabels.bill"
+      ]
+    },
+    "IncidenceLabelHistory.lean": {
+      "stage": "ten",
+      "source": "3a21b96a86cd5f5409901ce8173dc282f09a317424947306b199487e85dfce12",
+      "object": "119da19f0047f5ea818dcff862369c95d293cb489b9b8d8a0b7012113c344ce1",
+      "log": "c79f358a5bce74a0c35445d360dcf0fe785d4509143aaedec56461a0c8f21ca1",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Tactic/Tauto.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/BigOperators/Ring/Finset.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Finset/Card.olean"
+      ],
+      "axioms": [
+        "IncidenceLabelHistory.protected_census401"
+      ]
+    },
+    "IncidenceLineGateBooking.lean": {
+      "stage": "ten",
+      "source": "afb631a87f670623db2775b8bd5c70956b31db160edd5fa71a26996016fd63a8",
+      "object": "a779c3cec52aef0d179bd33aa54bc26e8ff5f78deb43e41393ff91f61a78059a",
+      "log": "297157caf5f71afac2113f920f2b8a89c7dda30c65bdbc177e66a69401ce42a0",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/IncidenceRobust.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean"
+      ],
+      "axioms": [
+        "IncidenceLineGateBooking.booked_disjoint"
+      ]
+    },
+    "IncidenceLineTrieWeight.lean": {
+      "stage": "ten",
+      "source": "1413e1ed84297ef060d911a3258e0e5f92039b230c259445abfa06c29d5f3c76",
+      "object": "4fb543da48eb9756db450d4b74aab576401b4d3c3307cf0775af814e56be8504",
+      "log": "18eaf83700446bbdbb6f49cf81d57f47bb558a35666175ca70ca7b8b4475fc72",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Lean/Elab/Tactic/Omega.olean"
+      ],
+      "axioms": [
+        "IncidenceLineTrieWeight.eligible_402"
+      ]
+    },
+    "IncidenceNoExtra.lean": {
+      "stage": "ten",
+      "source": "f3392b8f9ab04cf18ac66620b9dbed7d330b9337cd17c04c7dc49161bbb93c11",
+      "object": "280105c9f189dff72076d6018b362d2ca306b7089bbba24ec88efb2114e8fe63",
+      "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidencePhysicalZeroFlow.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceDenseSignature.olean"
+      ],
+      "axioms": []
+    },
+    "IncidencePointBooking.lean": {
+      "stage": "ten",
+      "source": "fed002c8ab770332f7ddd7daeb1c6ff22956f392b7e3ef3a2bc5820ff999afbe",
+      "object": "6e55a318824f6923caebb5a0eff35d45731f481f659657350b975ea35be7e089",
+      "log": "412b797dd0cf2ad7d5aa169b79b795051d342ff5de909750eeb60f038df5e9b6",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidencePointHeavy.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean"
+      ],
+      "axioms": [
+        "IncidencePointBooking.booking",
+        "IncidencePointBooking.census"
+      ]
+    },
+    "IncidencePointHeavy.lean": {
+      "stage": "ten",
+      "source": "85b132274fd174f97b4eca5fcd2dc42836469e3c72be3d798cff2e9618c0c835",
+      "object": "15c3f34b43216a5c2e8d0f47574af8d233705846fd1ba3d9dba92ca8c9245d96",
+      "log": "06ee4e7586cbb0451c35c6bfb99ae195559b0c732e667919836e323df3b17164",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/SparseQueryCut.olean"
+      ],
+      "axioms": [
+        "IncidencePointHeavy.physical_charge"
+      ]
+    },
+    "IncidencePointNativeCensus.lean": {
+      "stage": "ten",
+      "source": "56052bf3707db6e5a92007a0ecb850ac876f008e330c7ab9e109218858d84e5c",
+      "object": "085388421bcd0377c7a31a1aa38c84006545ed584fde90d9a7eb48ce5f24218a",
+      "log": "67ec8220dab458323d35b104c308f4519cf6373f9f88d46543304b53faa56667",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidencePointBooking.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceNativePin.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/IncidenceRobust.olean"
+      ],
+      "axioms": [
+        "IncidencePointBooking.native_census"
+      ]
+    },
+    "IncidencePointShield.lean": {
+      "stage": "ten",
+      "source": "9598c5ef4db68e63dccb972be4d3347e9b28fc5bfd1d137104fe149ef54d7b69",
+      "object": "c4a73264517a84f01c5586a52d0b5e358013d2fda24ca820f03eaeb5bb878410",
+      "log": "180b053e857bf0e2391ded4d0f0828b5d7252457995100bd57dd691533cc6d6b",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean"
+      ],
+      "axioms": [
+        "IncidencePointShield.low_at_cut"
+      ]
+    },
+    "IncidenceSoleAndRetention.lean": {
+      "stage": "ten",
+      "source": "29de3ab090c3abbe4f279b16190f7d029e8d71bb6b6e70d16d822efd8a5c6fd3",
+      "object": "e6040c4b7aa613983825a97025e7094cfc8801d8b8dd6b70bba6a46f20dffc3b",
+      "log": "d3fc82552bce79a6e86dc8a137371bb308db5c28953bbfb334cb844e773a61d8",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceSoleReservation.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceRouteAlias.olean"
+      ],
+      "axioms": [
+        "IncidenceSoleAndRetention.physical"
+      ]
+    }
+  },
+  "public": [
+    "IncidenceCleanupLabels.touched_le",
+    "IncidenceCleanupLabels.bill",
+    "IncidenceLabelHistory.drops_le_debit",
+    "IncidenceLabelHistory.newly_sole",
+    "IncidenceLabelHistory.newly_vulnerable",
+    "IncidenceLabelHistory.census",
+    "IncidenceLabelHistory.charged",
+    "IncidenceLabelHistory.guarded_labels",
+    "IncidenceLabelHistory.protected_census401",
+    "IncidenceLineGateBooking.wire_mono",
+    "IncidenceLineGateBooking.support_covered",
+    "IncidenceLineGateBooking.heavy_owner",
+    "IncidenceLineGateBooking.gate_single_owner",
+    "IncidenceLineGateBooking.booked_disjoint",
+    "IncidenceLineGateBooking.actual_pair_bound",
+    "IncidenceLineTrieWeight.count_pos",
+    "IncidenceLineTrieWeight.loss_le_count",
+    "IncidenceLineTrieWeight.weight_length",
+    "IncidenceLineTrieWeight.external",
+    "IncidenceLineTrieWeight.eligible_402",
+    "IncidenceNoExtra.raw_floor",
+    "IncidenceNoExtra.raw_sum",
+    "IncidenceNoExtra.vanish",
+    "IncidenceNoExtra.literal",
+    "IncidenceNoExtra.equal_flags",
+    "IncidenceNoExtra.copy_wire",
+    "IncidenceNoExtra.no_small_branch",
+    "IncidencePointBooking.booking",
+    "IncidencePointBooking.census",
+    "IncidencePointHeavy.dominate_heavy",
+    "IncidencePointHeavy.physical_charge",
+    "IncidencePointBooking.native_census",
+    "IncidencePointShield.old",
+    "IncidencePointShield.raw",
+    "IncidencePointShield.gate",
+    "IncidencePointShield.shield",
+    "IncidencePointShield.low_at_cut",
+    "IncidenceSoleAndRetention.test_gate",
+    "IncidenceSoleAndRetention.reader_nonempty",
+    "IncidenceSoleAndRetention.physical"
+  ],
+  "axioms": "26d266684b9273affba122d4866d974449d2bc42a59c15218dc856e32ce96c36"
+}

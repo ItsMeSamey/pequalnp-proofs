@@ -1,0 +1,51 @@
+{
+  "lock": [
+    "INCREMENT-ROUND",
+    "87060e929d93da451ebec3e966456e344b8bb17649fd22e25369560a852e7475",
+    "6e355d094d7a2213d4a11a3c398d4a84b8b5ee3a"
+  ],
+  "prior": {
+    "review-q401": "19885c592cd38f2b0178b3fe277c76b756b0884b25d33b3ca56beb718a59700a",
+    "review-q401-increment": "1e4842385824637539c18566211590dd784e3e03331c01cf530f77c69e038108",
+    "review-q401-plus2": "069212e67dd7fa75784e9eba5d88ab2b72b62e4365bd332c586df31d684edaa2"
+  },
+  "modules": {
+    "IncidenceCleanupGate.lean": {
+      "stage": "round",
+      "source": "e5d4da74f2495739c10a5fc3c31b67ed6ab0f2d5adf5f75d7517a738f70674f5",
+      "object": "22cf9f4995ebe9a87d750f729e8c51bedf631b752f441db3575cc6bb19a85a8b",
+      "log": "c1679b436e3c703c3b93498c2a584fe74f1eb448f798f1717480b0e3ee463c8d",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceCleanupLabels.olean"
+      ],
+      "axioms": [
+        "IncidenceCleanupGate.shock"
+      ]
+    },
+    "IncidenceRoundProtection.lean": {
+      "stage": "round",
+      "source": "07ff050ac819f8ba8e01ee1a37c6b787525d7c73c54c3388013d40abe31d213d",
+      "object": "b38ba0451a3327fb9a8e12522d6cf330597a632af32cfa093bafdbcb1fe27074",
+      "log": "472213b71cbf2b38e95f9bdd28d598deeefbe214c5898893935aceede3280644",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceMarkTransition.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceLabelHistory.olean"
+      ],
+      "axioms": [
+        "IncidenceRoundProtection.bounds401",
+        "IncidenceRoundProtection.plan_next"
+      ]
+    }
+  },
+  "public": [
+    "IncidenceCleanupGate.backward",
+    "IncidenceCleanupGate.shock",
+    "IncidenceRoundProtection.bounds401",
+    "IncidenceRoundProtection.plan_next"
+  ],
+  "axioms": "d866c32345da1876066a48d919dafa29914d0a772b39ead50b4453550d36a469"
+}

@@ -1,0 +1,4 @@
+'IncidenceCleanupGate.backward' depends on axioms: [propext, Quot.sound]
+'IncidenceCleanupGate.shock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceRoundProtection.bounds401' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceRoundProtection.plan_next' depends on axioms: [propext, Classical.choice, Quot.sound]
