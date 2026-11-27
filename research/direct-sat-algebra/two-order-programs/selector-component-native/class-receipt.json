@@ -1,0 +1,104 @@
+[
+  {
+    "label": "affine",
+    "status": "sat",
+    "reason": "projected AFFINE",
+    "witness": 72415395368701742887765847876869030654008151960103548509755780932075769992,
+    "cost": {
+      "n": 246,
+      "clauses": 789,
+      "cells": 1812,
+      "data_probes": 0,
+      "selectors": 4,
+      "data_bits": 86,
+      "compiled_binary_rows": 165,
+      "component_widths": [
+        3,
+        3,
+        3,
+        3,
+        1,
+        1,
+        1
+      ],
+      "table_probes": 38,
+      "traceback_probes": 7,
+      "fallback_evaluations": 0,
+      "components": 7,
+      "projected_table_cells": 38,
+      "merged_scopes": 2,
+      "projected_forbidden_rows": 4,
+      "join": "AFFINE",
+      "join_table_cells": 8,
+      "join_generated": 1,
+      "selector_word": 0,
+      "elapsed_ns": 16643895
+    },
+    "decoded_source": 0
+  },
+  {
+    "label": "meet",
+    "status": "sat",
+    "reason": "projected MEET",
+    "witness": 481254998977374784633831709930652776,
+    "cost": {
+      "n": 120,
+      "clauses": 366,
+      "cells": 840,
+      "data_probes": 0,
+      "selectors": 4,
+      "data_bits": 44,
+      "compiled_binary_rows": 78,
+      "component_widths": [
+        3,
+        3
+      ],
+      "table_probes": 16,
+      "traceback_probes": 2,
+      "fallback_evaluations": 0,
+      "components": 2,
+      "projected_table_cells": 16,
+      "merged_scopes": 2,
+      "projected_forbidden_rows": 2,
+      "join": "MEET",
+      "join_table_cells": 16,
+      "join_generated": 2,
+      "selector_word": 0,
+      "elapsed_ns": 11976692
+    },
+    "decoded_source": 0
+  },
+  {
+    "label": "majority",
+    "status": "sat",
+    "reason": "projected MAJORITY",
+    "witness": 527378270807534582686778518330379913,
+    "cost": {
+      "n": 120,
+      "clauses": 366,
+      "cells": 840,
+      "data_probes": 0,
+      "selectors": 4,
+      "data_bits": 44,
+      "compiled_binary_rows": 78,
+      "component_widths": [
+        2,
+        2,
+        2
+      ],
+      "table_probes": 12,
+      "traceback_probes": 3,
+      "fallback_evaluations": 0,
+      "components": 3,
+      "projected_table_cells": 12,
+      "merged_scopes": 3,
+      "projected_forbidden_rows": 3,
+      "join": "MAJORITY",
+      "join_table_cells": 12,
+      "join_generated": 3,
+      "selector_word": 7,
+      "elapsed_ns": 3115521
+    },
+    "decoded_source": 11
+  }
+]

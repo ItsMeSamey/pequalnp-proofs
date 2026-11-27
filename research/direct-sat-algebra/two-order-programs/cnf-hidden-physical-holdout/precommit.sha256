@@ -1,0 +1,4 @@
+a3918b2d2c3ac6bd3678da64078df0b35001084e5fd0474ebe81d6335e81f116  protocol.md
+882fac9e60e7ba851a021c656f5a92b6e0b8a2358f11586c7b6a909ddecc7818  ../cnf-hidden-holdout/corpus.py
+a52e100fff36c96e567a9326a546f6b18ffd7a254dd3fa917cb16d6e7abc6c29  ../selector-variable-compiler/compiler.py
+0cd93ea6b9fbf4783895bdd9047eab47182ef65aad637c7f038f04af8c96685f  ../selector-component-native/projection.py
