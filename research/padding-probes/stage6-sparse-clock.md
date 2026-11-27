@@ -1,0 +1,9 @@
+# Decision clock with sparse original variable names
+
+The sparse front end validates signed literals against the binary declared bound n, sorts only appearing or pinned names, and renames them densely. It maps the normalized solver's witness back and checks all original clauses and pins. Unlisted source names are false. No original name is used as a bit shift. The physical signed and byte-DFA replay is still performed.
+
+Let L be the encoded length of the formula, variable declaration and pins, m the number of clauses, and v the number of distinct appearing unpinned variables. Repeating literals in short clauses is constant work per clause, aside from their encoded name lengths. A detected empty clause uses a constant-size impossible helper. The template has O(m+1) marker choices; its words and dense alias list have O((m+1)log(m+2)) encoded length. The transition table is fixed. Sorting, remapping, and checking sparse original true names is polynomial in L.
+
+With the default constant stage budgets, preparation and searches are polynomial in L before source enumeration: the fixed table entails bounded record domains, all local relations are explicit, branch/width checks precede their costly steps, and recognition at preset width is polynomial. Custom chart factories and nonconstant caps must be charged. For fallback_limit=None the default stages followed by complete enumeration yield O(2^v poly(L)) time. A disabled or capped fallback can leave UNKNOWN. Sequential uncapped custom stages do not automatically enjoy a minimum-of-clocks bound. Binary n need not be polynomial in L: this entry point returns only a sorted list of true names, not an n-bit vector.
+
+Normalized positive words count assignments to occurring variables with fixed dummy choices. This is a decision/witness interface; it neither emits a full assignment vector on unnamed variables nor writes a factor of 2^(unused declared variables).
