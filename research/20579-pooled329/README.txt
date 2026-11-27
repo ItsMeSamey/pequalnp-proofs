@@ -1,0 +1,11 @@
+L-meta-20579 / range 53 / finite catalogue exclusion at cap 170
+
+The supplied binary DRAT proof refutes the supplied DIMACS formula. Independent replay verified the proof and independently reconstructed all 54,157 clauses over 23,220 variables. This excludes only the model described below. It supplies no general 170-gate circuit lower bound and does not discharge range 53.
+
+Each of 1,024 legal inputs activates exactly one row and one column wire. The fixed truth dictionary contains 329 functions and 544 indexed gate recipes. Only row/column input wires (0 through 63) are free. Selecting a nonraw truth function costs one gate and selects exactly one AND, OR or NOT recipe for it. The formula enforces reachable acyclic recipes and a total gate budget of 170, including the optional output-disconnected marker cone. The selected goal is function 268. The first NOT of a computed gate must have diagonal signature 53; exactly one of the two eligible recipes is designated, with a prefix schedulability condition. NOT gates directly reading input wires may precede the designated marker. This model permits one producer per nonraw truth function.
+
+The 110 lemma uses (row, column) pairs (25,13), (25,28), (25,0). No raw input has pattern 110 on them. The goal does. In an acyclic schedule, its first 110-valued gate must have no 110-valued predecessor. The four possible entry recipes are catalogue indices 126, 144, 417 and 497. The independent binding checker reconstructs this clause. Near-circuit warm hints do not restrict the formula.
+
+Unpack in a scratch directory. Run python replay.py for payload integrity, python replay.py binding to regenerate the semantic CNF binding, and python replay.py proof to check the proof. The binding uses Python and python-sat (original version 1.9.dev25). Proof replay uses the supplied Linux checker; its C source and license are included. The byte-original generator scripts and the independent audit scripts retain their original run paths; replay.py redirects only the independent binder's three input paths after verifying payload hashes. The logs preserve the original paths and locked checker run.
+
+The proof was independently checked in 0.265 seconds wall time, with 67,456 KiB peak RSS. The original search guardian undercounted worker RSS; its recorded peak is not a reliable solver memory measurement.
