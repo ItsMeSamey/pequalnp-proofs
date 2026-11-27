@@ -1,4 +1,8 @@
-# Reviewed cost-28 snapshot
+# Reviewed original-key exclusions
+
+Independent review covers **5,824 of 6,213 one-terminal cases** and **1,652 of 4,032 zero-terminal cases**. The latest 70 one-terminal cost-29 cases use their original raw quartets, 52 with one quartet and 18 with two. The remaining 389 one-terminal and 2,380 zero-terminal cases total 2,769. [5,824 original IDs](t1-signed-5824.ids) · [70 added IDs](quartet29-70.ids) · [Numerical dependencies](quartet29-increment.sha256)
+
+## Earlier snapshots
 
 The cumulative one-terminal count is **5,754 of 6,213** after nine further original cost-28 exclusions. There are 459 one-terminal and 2,380 zero-terminal cases left, or 2,839 overall. The nine cases carry no zero-terminal donor transfer. [Nine IDs](native4096-9.ids) · [Complete one-terminal IDs](t1-signed-5754.ids) · [Physical case evidence](t1-both4096-nine.zip)
 
