@@ -1,0 +1,2 @@
+'IncidenceHoistSparse.line_safe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceHoistSparse.point_safe' depends on axioms: [propext, Classical.choice, Quot.sound]

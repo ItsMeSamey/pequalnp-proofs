@@ -1,0 +1,3 @@
+'IncidenceHoistPorts.opposite_soleAnd' depends on axioms: [propext, Quot.sound]
+'IncidenceHoistPorts.circuit_transfer' depends on axioms: [propext, Quot.sound]
+'IncidenceHoistPorts.private_transfer' depends on axioms: [propext, Quot.sound]
