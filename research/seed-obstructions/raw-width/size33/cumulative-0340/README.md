@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+**30 original cases remain.** A fresh 676-row replay and a physical argument about the tag path exclude 274 more zero-terminal originals. The cumulative exclusions cover **4,006 of 4,032 zero-terminal** and **6,209 of 6,213 one-terminal** cases. The normalized minimum remains 33–34. [26 remaining zero-terminal IDs](t0-remaining-26.ids) · [4 remaining one-terminal IDs](t1-remaining-4.ids) · [274 additions](allpresent-final274.ids) · [Audit manifest](allpresent-4006.sha256)
+
 **304 original cases remain.** A fresh verifier replay and original-ID comparison exclude the final 36 zero-terminal cases in the missing-input-2 sector. The totals are 3,732 of 4,032 zero-terminal and 6,209 of 6,213 one-terminal cases. [300 remaining zero-terminal IDs](t0-remaining-300.ids) · [4 remaining one-terminal IDs](t1-remaining-4.ids) · [36 additions](missing2-final36.ids) · [Audit manifest](missing2-3732.sha256)
 
 **340 original cases remain.** The deletion proof and a fresh forest enumeration exclude originals 4075, 4112, 4113 and 4163. The reviewed totals are 3,696 of 4,032 zero-terminal and 6,209 of 6,213 one-terminal cases. [336 remaining zero-terminal IDs](t0-remaining-336.ids) · [4 remaining one-terminal IDs](t1-remaining-4.ids) · [Audit manifest](four-punctured-3696.sha256)
