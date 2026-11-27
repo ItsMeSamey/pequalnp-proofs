@@ -1,0 +1,6 @@
+{
+  "source": "96a79defdcf60a6657939ad40a198c199df935703808c1e63112e4ed0d56972b",
+  "imports": {
+    "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Std.olean": "01fc63642199164e1130e6867823dffe0615999951681094917158c263a42c1e"
+  }
+}

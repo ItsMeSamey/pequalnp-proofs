@@ -1,0 +1,5 @@
+# Exact order of the OR cost for the subfield projected tables
+
+In the circuit for q=p² each requested test has index (kernel K, x, affine coset C of K) and raw support {(a,t):ax+t∈C}, of size qp. For distinct x,x' the two evaluation coordinates give a bijection from (a,t) to (ax+t,ax'+t), so two supports intersect in p²=q line raws. For the same x, distinct cosets of chosen one-dimensional kernels intersect in at most one field element, giving intersection at most q. Thus every OR-only physical gate with more than q raw inputs in its support can feed at most one requested output.
+
+For each output, trace backward stopping at support size at most q. Covering qp raw inputs requires at least p distinct boundary wires and hence at least p−1 distinct larger OR gates by connectivity, including reconvergence. All k q p tests for k distinct kernels therefore require at least k q p(p−1)=k(q²−qp) distinct physical OR gates. For k=b+1 this gives Θ(Nb) within this projected-table architecture. It does not bound circuits which avoid computing these intermediates.
