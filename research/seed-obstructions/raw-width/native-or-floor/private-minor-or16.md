@@ -1,0 +1,5 @@
+# Sixteen OR gates on each native bank
+
+Removing the four private points lowers the minimum number of OR gates by exactly four. The richest restricted bank has 24 positive rows and 249 negative rows. Its 18 critical negatives constrain the first OR to two of 37 conjunctions; no pair satisfies all 18 rows. The minor therefore needs at least 12 ORs, giving at least 16 on every full bank, with arbitrary AND count and sharing. At area 33 this permits at most 17 ANDs. Existence at area 33 remains open.
+
+The proof and both numerical checkers are in `native-private-or16.zip`. To reproduce the stored logs, extract its files. From `native-unrestricted-single-or15.zip`, extract `native-or14-raw-singleton-repair-bank1.zip` and its member `L-meta-18968.json`. Run each of `private-or-minor.py` and `private-tight.py` with that inner ZIP and JSON path as its two arguments. Both outputs reproduced the supplied logs byte for byte. The tight-row proof used by the second checker is in the all-four dispatch as `tight-row-clean-dnf.zip`.
