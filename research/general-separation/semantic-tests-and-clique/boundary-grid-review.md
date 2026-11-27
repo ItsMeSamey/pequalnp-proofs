@@ -1,0 +1,3 @@
+# Scope of the boundary-grid transfer
+
+The binary-grid construction projects the cited formal state-sum polynomial exactly. The circuit lower bound it transfers relies on Theorem 1.1 of the linked preprint as an external premise. Two reviewers checked the projection. The short-trace corollary received one source review and assumes the stated odd parity on each minimal true set. Its gate DAG uses variable leaves after constant pruning. Apply the trace condition to that pruned DAG, since simplification can change trace multiplicities. These hypotheses restrict the Boolean circuits covered by the transfer.
