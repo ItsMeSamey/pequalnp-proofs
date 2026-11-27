@@ -1,0 +1,111 @@
+{
+  "modules": {
+    "Bull18802": {
+      "path": "/workspace/scratch/site-team-02/18802/bulls/Bull18802.lean",
+      "sha256": "9fd9078ac19f18e44bac3566d17023e30b098c4787e7d653c628b5ef50678c7a",
+      "imports": [
+        "PEqualNP.Defs"
+      ]
+    },
+    "Bull18802Classes": {
+      "path": "/workspace/scratch/site-team-02/18802/bulls/Bull18802Classes.lean",
+      "sha256": "2607dea7b02e1fa9e5afbc897dc8e90f5796aeb16eacc64ac39ada125f73faef",
+      "imports": [
+        "Bull18802"
+      ]
+    },
+    "Bull18802Facts": {
+      "path": "/workspace/scratch/site-team-02/18802/bulls/Bull18802Facts.lean",
+      "sha256": "c112c264ad45a4c6641cdc26c348b6c93155e82e6da09235c89aa80fe5462c7a",
+      "imports": [
+        "Bull18802Classes"
+      ]
+    },
+    "BullCore18802": {
+      "path": "/workspace/scratch/site-team-02/18802/bulls/BullCore18802.lean",
+      "sha256": "3dc1fc20312f89e8f61cb7f87cab015f041ebd191d2f63d4105cdc40f30f4fb7",
+      "imports": [
+        "PEqualNP.Defs"
+      ]
+    },
+    "PEqualNP.MetaComplexity.Helpers.Shannon": {
+      "path": "/workspace/pequalnp-proofs/lean/PEqualNP/MetaComplexity/Helpers/Shannon.lean",
+      "sha256": "561c30045e047ee7169c30da6c33382f809f7885c2a6dc6632479ec611f1f0fb",
+      "imports": [
+        "PEqualNP.Defs"
+      ]
+    },
+    "PEqualNP.MetaComplexity.Helpers.Support": {
+      "path": "/workspace/pequalnp-proofs/lean/PEqualNP/MetaComplexity/Helpers/Support.lean",
+      "sha256": "3dd59846b791fea1391addc012be943cfedc1b47951752455adb79b76d5cfda0",
+      "imports": [
+        "PEqualNP.MetaComplexity.Helpers.Shannon"
+      ]
+    },
+    "PEqualNP.MetaComplexity.Helpers.Elim": {
+      "path": "/workspace/pequalnp-proofs/lean/PEqualNP/MetaComplexity/Helpers/Elim.lean",
+      "sha256": "e9c069bb76cdbd425b8be404c6c65680a1a831c18e6f841b640daf4f5cc6b4b7",
+      "imports": [
+        "PEqualNP.MetaComplexity.Helpers.Support"
+      ]
+    },
+    "Bull18802Least": {
+      "path": "/workspace/scratch/site-team-02/18802/bulls/Bull18802Least.lean",
+      "sha256": "264e43971ea4302f74f59c99cbf17cf97442c96231866f7ce1efa1c4430373fb",
+      "imports": [
+        "Bull18802",
+        "BullCore18802",
+        "PEqualNP.MetaComplexity.Helpers.Elim"
+      ]
+    },
+    "Neg18802": {
+      "path": "/workspace/scratch/site-team-02/18802/bulls/Neg18802.lean",
+      "sha256": "22e53841547a9fb1313f9f593846e083c23da3204e7ee41c2f8f7d6d5184674d",
+      "imports": [
+        "Bull18802Facts",
+        "Bull18802Least"
+      ]
+    }
+  },
+  "flattened_sha256": "1e902c8b5fcab6bdff213107267f616a6288bb1bf7491eacc8a90966307d9915",
+  "bytes": 106537,
+  "axiom_reports": {
+    "BullCoreAxioms18802": {
+      "declaration": "PEqualNP.Outside.L_meta_927_aux.conj_37",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "raw": "'PEqualNP.Outside.L_meta_927_aux.conj_37' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    "Neg18802Axioms": {
+      "declaration": "PEqualNP.Research.L_meta_18802_refuted",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "raw": "'PEqualNP.Research.L_meta_18802_refuted' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    "Neg18802FlatAxioms": {
+      "declaration": "PEqualNP.Research.L_meta_18802_refuted",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "raw": "'PEqualNP.Research.L_meta_18802_refuted' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  },
+  "issued_proposition_sha256": "a366843296ef4a0c0ad26196b14ba1b4941423bc8127017469432664f7c87184",
+  "parent_blob": "092c20c2ee647d99669735126db27c94c4dfaec1",
+  "parent_blob_sha256": "b3be42c285a9430ec0c4349dc2599bc682b63643793caf38a0f42468eb9772f8",
+  "core_extraction_sha256": "3dc1fc20312f89e8f61cb7f87cab015f041ebd191d2f63d4105cdc40f30f4fb7",
+  "kernel_sha256": "7064f730b3a8d23ad9ff2e8d2ebff907a1eb09871d1e8156a6f53ea62166d952",
+  "upstream": "https://github.com/ItsMeSamey/pequalnp-proofs",
+  "source_checkout": "b104ff3988c176aae2db960c2a71ddf975ef047c",
+  "checker_checkout": "555f89d6f2b1a71ebc31d58faf2e8e960ec4d4b9",
+  "lean_toolchain": "leanprover/lean4:v4.36.0",
+  "lake_lock_sha256": "d0af863cde532caaef1b1bee0d63ec47100208e33e488309cb80abc88b8f1509"
+}

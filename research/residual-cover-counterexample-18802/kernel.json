@@ -1,0 +1,263 @@
+{
+  "modules": {
+    "PEqualNP.Defs": {
+      "source_path": "/workspace/pequalnp-proofs/lean/PEqualNP/Defs.lean",
+      "source_sha256": "76a3954170372cea159b1b31fcdd01f7aeffe00286e88964ebae2bc34b1971c5",
+      "object_path": "/dev/shm/official-20579-imports/PEqualNP/Defs.olean",
+      "object_sha256": "d3e6f162686d750a100f97338abcecab6f40b1b52cf6a120003134afb650bdcf",
+      "imports": {},
+      "evidence": "pinned-build-boundary",
+      "receipt": null
+    },
+    "Bull18802": {
+      "source_path": "/workspace/scratch/site-team-02/18802/bulls/Bull18802.lean",
+      "source_sha256": "9fd9078ac19f18e44bac3566d17023e30b098c4787e7d653c628b5ef50678c7a",
+      "object_path": "/dev/shm/official-20579-imports/Bull18802.olean",
+      "object_sha256": "1e2dc3142888728abf1fd4997fd30e644896f1fe6ebfc5b116d61b24fc319528",
+      "imports": {
+        "PEqualNP.Defs": "d3e6f162686d750a100f97338abcecab6f40b1b52cf6a120003134afb650bdcf"
+      },
+      "evidence": "current-scratch-kernel-receipt",
+      "receipt": {
+        "exit": 0,
+        "imports": {
+          "PEqualNP.Defs": "d3e6f162686d750a100f97338abcecab6f40b1b52cf6a120003134afb650bdcf"
+        },
+        "object": "/dev/shm/official-20579-imports/Bull18802.olean",
+        "output": "1e2dc3142888728abf1fd4997fd30e644896f1fe6ebfc5b116d61b24fc319528",
+        "path": "/workspace/scratch/site-team-02/18802/bulls/Bull18802.lean",
+        "source": "9fd9078ac19f18e44bac3566d17023e30b098c4787e7d653c628b5ef50678c7a",
+        "utc": 1795818708.7850335
+      }
+    },
+    "Bull18802Classes": {
+      "source_path": "/workspace/scratch/site-team-02/18802/bulls/Bull18802Classes.lean",
+      "source_sha256": "2607dea7b02e1fa9e5afbc897dc8e90f5796aeb16eacc64ac39ada125f73faef",
+      "object_path": "/dev/shm/official-20579-imports/Bull18802Classes.olean",
+      "object_sha256": "d686f1b698b94106094685fa789ec753c55982f54bc1ad6c0341a91fbc51f672",
+      "imports": {
+        "Bull18802": "1e2dc3142888728abf1fd4997fd30e644896f1fe6ebfc5b116d61b24fc319528"
+      },
+      "evidence": "current-scratch-kernel-receipt",
+      "receipt": {
+        "exit": 0,
+        "imports": {
+          "Bull18802": "1e2dc3142888728abf1fd4997fd30e644896f1fe6ebfc5b116d61b24fc319528"
+        },
+        "object": "/dev/shm/official-20579-imports/Bull18802Classes.olean",
+        "output": "d686f1b698b94106094685fa789ec753c55982f54bc1ad6c0341a91fbc51f672",
+        "path": "/workspace/scratch/site-team-02/18802/bulls/Bull18802Classes.lean",
+        "source": "2607dea7b02e1fa9e5afbc897dc8e90f5796aeb16eacc64ac39ada125f73faef",
+        "utc": 1795818742.2638571
+      }
+    },
+    "Bull18802Facts": {
+      "source_path": "/workspace/scratch/site-team-02/18802/bulls/Bull18802Facts.lean",
+      "source_sha256": "c112c264ad45a4c6641cdc26c348b6c93155e82e6da09235c89aa80fe5462c7a",
+      "object_path": "/dev/shm/official-20579-imports/Bull18802Facts.olean",
+      "object_sha256": "a464ed8d6f9f29b6595563506c332e58d8b53cbd3e357b2b594243ed090a445f",
+      "imports": {
+        "Bull18802Classes": "d686f1b698b94106094685fa789ec753c55982f54bc1ad6c0341a91fbc51f672"
+      },
+      "evidence": "current-scratch-kernel-receipt",
+      "receipt": {
+        "exit": 0,
+        "imports": {
+          "Bull18802Classes": "d686f1b698b94106094685fa789ec753c55982f54bc1ad6c0341a91fbc51f672"
+        },
+        "object": "/dev/shm/official-20579-imports/Bull18802Facts.olean",
+        "output": "a464ed8d6f9f29b6595563506c332e58d8b53cbd3e357b2b594243ed090a445f",
+        "path": "/workspace/scratch/site-team-02/18802/bulls/Bull18802Facts.lean",
+        "source": "c112c264ad45a4c6641cdc26c348b6c93155e82e6da09235c89aa80fe5462c7a",
+        "utc": 1795818760.100077
+      }
+    },
+    "BullCore18802": {
+      "source_path": "/workspace/scratch/site-team-02/18802/bulls/BullCore18802.lean",
+      "source_sha256": "3dc1fc20312f89e8f61cb7f87cab015f041ebd191d2f63d4105cdc40f30f4fb7",
+      "object_path": "/dev/shm/official-20579-imports/BullCore18802.olean",
+      "object_sha256": "4281ba8b9018ba5b0f800222f8c59937b6f727aef3e4a35362d6fb7b65108112",
+      "imports": {
+        "PEqualNP.Defs": "d3e6f162686d750a100f97338abcecab6f40b1b52cf6a120003134afb650bdcf"
+      },
+      "evidence": "current-scratch-kernel-receipt",
+      "receipt": {
+        "exit": 0,
+        "imports": {
+          "PEqualNP.Defs": "d3e6f162686d750a100f97338abcecab6f40b1b52cf6a120003134afb650bdcf"
+        },
+        "object": "/dev/shm/official-20579-imports/BullCore18802.olean",
+        "output": "4281ba8b9018ba5b0f800222f8c59937b6f727aef3e4a35362d6fb7b65108112",
+        "path": "/workspace/scratch/site-team-02/18802/bulls/BullCore18802.lean",
+        "source": "3dc1fc20312f89e8f61cb7f87cab015f041ebd191d2f63d4105cdc40f30f4fb7",
+        "utc": 1795818614.6563313
+      }
+    },
+    "PEqualNP.MetaComplexity.Helpers.Shannon": {
+      "source_path": "/workspace/pequalnp-proofs/lean/PEqualNP/MetaComplexity/Helpers/Shannon.lean",
+      "source_sha256": "561c30045e047ee7169c30da6c33382f809f7885c2a6dc6632479ec611f1f0fb",
+      "object_path": "/dev/shm/official-20579-imports/PEqualNP/MetaComplexity/Helpers/Shannon.olean",
+      "object_sha256": "04db95fd55eb414519fd03475280a478d4826a19f2e5acb44dc46eb780c1e518",
+      "imports": {
+        "PEqualNP.Defs": "d3e6f162686d750a100f97338abcecab6f40b1b52cf6a120003134afb650bdcf"
+      },
+      "evidence": "observed-upstream-helper",
+      "receipt": null
+    },
+    "PEqualNP.MetaComplexity.Helpers.Support": {
+      "source_path": "/workspace/pequalnp-proofs/lean/PEqualNP/MetaComplexity/Helpers/Support.lean",
+      "source_sha256": "3dd59846b791fea1391addc012be943cfedc1b47951752455adb79b76d5cfda0",
+      "object_path": "/dev/shm/official-20579-imports/PEqualNP/MetaComplexity/Helpers/Support.olean",
+      "object_sha256": "af4c284c6bfb2af759f6a1bdf434f972704767f4e75ceeee68ea7ae051249cab",
+      "imports": {
+        "PEqualNP.MetaComplexity.Helpers.Shannon": "04db95fd55eb414519fd03475280a478d4826a19f2e5acb44dc46eb780c1e518"
+      },
+      "evidence": "observed-upstream-helper",
+      "receipt": null
+    },
+    "PEqualNP.MetaComplexity.Helpers.Elim": {
+      "source_path": "/workspace/pequalnp-proofs/lean/PEqualNP/MetaComplexity/Helpers/Elim.lean",
+      "source_sha256": "e9c069bb76cdbd425b8be404c6c65680a1a831c18e6f841b640daf4f5cc6b4b7",
+      "object_path": "/dev/shm/official-20579-imports/PEqualNP/MetaComplexity/Helpers/Elim.olean",
+      "object_sha256": "156edd1f998601145806560d125e80baf56d80c45be797e797a45022f17d5d4a",
+      "imports": {
+        "PEqualNP.MetaComplexity.Helpers.Support": "af4c284c6bfb2af759f6a1bdf434f972704767f4e75ceeee68ea7ae051249cab"
+      },
+      "evidence": "observed-upstream-helper",
+      "receipt": null
+    },
+    "Bull18802Least": {
+      "source_path": "/workspace/scratch/site-team-02/18802/bulls/Bull18802Least.lean",
+      "source_sha256": "264e43971ea4302f74f59c99cbf17cf97442c96231866f7ce1efa1c4430373fb",
+      "object_path": "/dev/shm/official-20579-imports/Bull18802Least.olean",
+      "object_sha256": "cb90d5d8dee1f4ea02836436f909438a53be1c7246b7fe6070d02a6cd6120ba6",
+      "imports": {
+        "Bull18802": "1e2dc3142888728abf1fd4997fd30e644896f1fe6ebfc5b116d61b24fc319528",
+        "BullCore18802": "4281ba8b9018ba5b0f800222f8c59937b6f727aef3e4a35362d6fb7b65108112",
+        "PEqualNP.MetaComplexity.Helpers.Elim": "156edd1f998601145806560d125e80baf56d80c45be797e797a45022f17d5d4a"
+      },
+      "evidence": "current-scratch-kernel-receipt",
+      "receipt": {
+        "exit": 0,
+        "imports": {
+          "Bull18802": "1e2dc3142888728abf1fd4997fd30e644896f1fe6ebfc5b116d61b24fc319528",
+          "BullCore18802": "4281ba8b9018ba5b0f800222f8c59937b6f727aef3e4a35362d6fb7b65108112",
+          "PEqualNP.MetaComplexity.Helpers.Elim": "156edd1f998601145806560d125e80baf56d80c45be797e797a45022f17d5d4a"
+        },
+        "object": "/dev/shm/official-20579-imports/Bull18802Least.olean",
+        "output": "cb90d5d8dee1f4ea02836436f909438a53be1c7246b7fe6070d02a6cd6120ba6",
+        "path": "/workspace/scratch/site-team-02/18802/bulls/Bull18802Least.lean",
+        "source": "264e43971ea4302f74f59c99cbf17cf97442c96231866f7ce1efa1c4430373fb",
+        "utc": 1795818836.0370464
+      }
+    },
+    "Neg18802": {
+      "source_path": "/workspace/scratch/site-team-02/18802/bulls/Neg18802.lean",
+      "source_sha256": "22e53841547a9fb1313f9f593846e083c23da3204e7ee41c2f8f7d6d5184674d",
+      "object_path": "/dev/shm/official-20579-imports/Neg18802.olean",
+      "object_sha256": "045b3f02307f41b4b362866fd551826bd6402300050d34f2f2d50a5835328edf",
+      "imports": {
+        "Bull18802Facts": "a464ed8d6f9f29b6595563506c332e58d8b53cbd3e357b2b594243ed090a445f",
+        "Bull18802Least": "cb90d5d8dee1f4ea02836436f909438a53be1c7246b7fe6070d02a6cd6120ba6"
+      },
+      "evidence": "current-scratch-kernel-receipt",
+      "receipt": {
+        "exit": 0,
+        "imports": {
+          "Bull18802Facts": "a464ed8d6f9f29b6595563506c332e58d8b53cbd3e357b2b594243ed090a445f",
+          "Bull18802Least": "cb90d5d8dee1f4ea02836436f909438a53be1c7246b7fe6070d02a6cd6120ba6"
+        },
+        "object": "/dev/shm/official-20579-imports/Neg18802.olean",
+        "output": "045b3f02307f41b4b362866fd551826bd6402300050d34f2f2d50a5835328edf",
+        "path": "/workspace/scratch/site-team-02/18802/bulls/Neg18802.lean",
+        "source": "22e53841547a9fb1313f9f593846e083c23da3204e7ee41c2f8f7d6d5184674d",
+        "utc": 1795818853.2589061
+      }
+    },
+    "Neg18802Axioms": {
+      "source_path": "/workspace/scratch/site-team-02/18802/bulls/Neg18802Axioms.lean",
+      "source_sha256": "5bc988168c6f76e51cce8416ca9165f88d77051770e1ff16345b6f3f28971e22",
+      "object_path": "/dev/shm/official-20579-imports/Neg18802Axioms.olean",
+      "object_sha256": "c8d4a6b41badfea7390a0bdad4de18713a7ffb8c56c716ff981efabd3b3e0aca",
+      "imports": {
+        "Neg18802": "045b3f02307f41b4b362866fd551826bd6402300050d34f2f2d50a5835328edf"
+      },
+      "evidence": "current-scratch-kernel-receipt",
+      "receipt": {
+        "exit": 0,
+        "imports": {
+          "Neg18802": "045b3f02307f41b4b362866fd551826bd6402300050d34f2f2d50a5835328edf"
+        },
+        "object": "/dev/shm/official-20579-imports/Neg18802Axioms.olean",
+        "output": "c8d4a6b41badfea7390a0bdad4de18713a7ffb8c56c716ff981efabd3b3e0aca",
+        "path": "/workspace/scratch/site-team-02/18802/bulls/Neg18802Axioms.lean",
+        "source": "5bc988168c6f76e51cce8416ca9165f88d77051770e1ff16345b6f3f28971e22",
+        "utc": 1795818867.0886612
+      }
+    },
+    "BullCoreAxioms18802": {
+      "source_path": "/workspace/scratch/site-team-02/18802/bulls/BullCoreAxioms18802.lean",
+      "source_sha256": "e4644138ed08de233a7e30b8eac60671919cc3b1f12ee55c1e768f023e367094",
+      "object_path": "/dev/shm/official-20579-imports/BullCoreAxioms18802.olean",
+      "object_sha256": "cb027142ba69698e833f3a8f5e9ba0f272d0ed33ccf87ce47abe9dffeb1ee730",
+      "imports": {
+        "BullCore18802": "4281ba8b9018ba5b0f800222f8c59937b6f727aef3e4a35362d6fb7b65108112"
+      },
+      "evidence": "current-scratch-kernel-receipt",
+      "receipt": {
+        "exit": 0,
+        "imports": {
+          "BullCore18802": "4281ba8b9018ba5b0f800222f8c59937b6f727aef3e4a35362d6fb7b65108112"
+        },
+        "object": "/dev/shm/official-20579-imports/BullCoreAxioms18802.olean",
+        "output": "cb027142ba69698e833f3a8f5e9ba0f272d0ed33ccf87ce47abe9dffeb1ee730",
+        "path": "/workspace/scratch/site-team-02/18802/bulls/BullCoreAxioms18802.lean",
+        "source": "e4644138ed08de233a7e30b8eac60671919cc3b1f12ee55c1e768f023e367094",
+        "utc": 1795819072.9050298
+      }
+    },
+    "Neg18802Flat": {
+      "source_path": "/dev/shm/Neg18802Flat.lean",
+      "source_sha256": "1e902c8b5fcab6bdff213107267f616a6288bb1bf7491eacc8a90966307d9915",
+      "object_path": "/dev/shm/official-20579-imports/Neg18802Flat.olean",
+      "object_sha256": "c9bf9345b165de02d20cbb3a1b4abeaa085646de800665a97f7a032cc781f17e",
+      "imports": {
+        "PEqualNP.Defs": "d3e6f162686d750a100f97338abcecab6f40b1b52cf6a120003134afb650bdcf"
+      },
+      "evidence": "current-scratch-kernel-receipt",
+      "receipt": {
+        "exit": 0,
+        "imports": {
+          "PEqualNP.Defs": "d3e6f162686d750a100f97338abcecab6f40b1b52cf6a120003134afb650bdcf"
+        },
+        "object": "/dev/shm/official-20579-imports/Neg18802Flat.olean",
+        "output": "c9bf9345b165de02d20cbb3a1b4abeaa085646de800665a97f7a032cc781f17e",
+        "path": "/dev/shm/Neg18802Flat.lean",
+        "source": "1e902c8b5fcab6bdff213107267f616a6288bb1bf7491eacc8a90966307d9915",
+        "utc": 1795818991.1287045
+      }
+    },
+    "Neg18802FlatAxioms": {
+      "source_path": "/dev/shm/Neg18802FlatAxioms.lean",
+      "source_sha256": "0bf1c492635037337a520871dd91acd1c4581300391b81ff3965eb64ebd099ac",
+      "object_path": "/dev/shm/official-20579-imports/Neg18802FlatAxioms.olean",
+      "object_sha256": "2b86c5001a2699ba07e33bf3d34a5c3c2e5f93543d6f60a7f4db72462534194a",
+      "imports": {
+        "Neg18802Flat": "c9bf9345b165de02d20cbb3a1b4abeaa085646de800665a97f7a032cc781f17e"
+      },
+      "evidence": "current-scratch-kernel-receipt",
+      "receipt": {
+        "exit": 0,
+        "imports": {
+          "Neg18802Flat": "c9bf9345b165de02d20cbb3a1b4abeaa085646de800665a97f7a032cc781f17e"
+        },
+        "object": "/dev/shm/official-20579-imports/Neg18802FlatAxioms.olean",
+        "output": "2b86c5001a2699ba07e33bf3d34a5c3c2e5f93543d6f60a7f4db72462534194a",
+        "path": "/dev/shm/Neg18802FlatAxioms.lean",
+        "source": "0bf1c492635037337a520871dd91acd1c4581300391b81ff3965eb64ebd099ac",
+        "utc": 1795819013.7711742
+      }
+    }
+  },
+  "pending": []
+}
