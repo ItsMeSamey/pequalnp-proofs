@@ -1,0 +1,9 @@
+# Full incidence without addressed row signals
+
+For q≥2 and N=q²+q+1, exactly N+q+2 proper incidence rectangles suffice to cover the N(q+1) flags, and they can form a partition. Proper means a rectangle other than a complete degree-(q+1) star. Each rectangle is a star, since two points share only one line, and thus covers at most q flags. Rounding N(q+1)/q up gives the lower bound N+q+2.
+
+Choose o, a pencil line d through o, a point u on d distinct from o, and another line e through u. Defer one flag at each point: at o defer d; at u defer e; elsewhere defer the unique line to o. Each point has a proper star of its q remaining flags. Each of the q+1 pencil lines receives exactly q deferred flags (on d the center replaces u), while e receives only u. This partitions all flags into N+q+2 proper stars.
+
+Build each k-edge star by ORing the leaves then ANDing with its central selector. OR the products using a left comb whose first three products are point stars at noncollinear points. Total physical size is N(q+1)+N+q+1: the stars cost exactly their cardinalities and the final comb costs one less than their number. This computes scalar incidence on the entire cube. The usual one-shore star circuit uses N(q+1)+N−1 gates; the difference is only q+2 (31 versus 27 at q=2).
+
+On fixing all queries present, no pre-comb signal is a full line payload OR: each nonconstant one has at most q singleton labels. The first comb union has only two points, the next and all later unions contain three noncollinear points. On fixing all points present, no pre-comb wire has more than q query labels; the first union already contains q≥2 different lines at each of two distinct centers and hence is contained in no pencil. Thus neither family of full addressed receivers occurs anywhere in this exact DAG under its usual common fixing. The rectangle count is optimal within the stated proper-rectangle model; the gate count is a construction, not an unrestricted minimum.
