@@ -1,0 +1,14 @@
+ExactPlaneWedgeFusedCharges.lean:28:29: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [products, List.foldl_flatMap, List.foldl_map]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ExactPlaneWedgeFusedCharges.lean:37:2: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'ExactPlaneWedgeFusedCharges.fused_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
