@@ -94,8 +94,12 @@ def gadget(n,rows,global_ids,fixed):
     return size,edges,target,baseline,tags
 
 
-def solve(n,rows,*,b,h,rounds=1,randbelow_fn=randbelow):
-    """Return SAT with a tuple of nonzero trits, otherwise UNKNOWN."""
+def solve(n,rows,*,b,h,rounds=1,randbelow_fn=randbelow,potential_budget=None,owner_kappa=None):
+    """Optional potential_budget enables deterministic exact decisions on recognized matching branches."""
+    if owner_kappa is not None and (type(owner_kappa) is not int or owner_kappa<0):
+        raise ValueError("invalid owner dimension cap")
+    if potential_budget is not None and (type(potential_budget) is not int or potential_budget<0):
+        raise ValueError("invalid potential modulator budget")
     if any(type(x) is not int or x<0 for x in (n,b,h)):
         raise ValueError("invalid dimension or parameter")
     rows=[tuple(a%3 for a in row) for row in rows]
@@ -105,12 +109,18 @@ def solve(n,rows,*,b,h,rounds=1,randbelow_fn=randbelow):
     if parts is None:
         return "UNKNOWN",None
     globals_,marked=parts
+    unresolved=False
     for signs in product((1,2),repeat=len(marked)):
         built=gadget(n,rows,globals_,dict(zip(marked,signs)))
         if built is None:
             continue
         size,edges,target,baseline,tags=built
-        status,match=search(size,edges,target,rounds=rounds,randbelow_fn=randbelow_fn)
+        if potential_budget is None and owner_kappa is None:
+            status,match=search(size,edges,target,rounds=rounds,randbelow_fn=randbelow_fn)
+        else:
+            from potential_labelled_matching import search as potential_search
+            status,match,_=potential_search(size,edges,target,budget=potential_budget or 0,kappa_cap=owner_kappa)
+        unresolved |= status=="UNKNOWN"
         if status=="SAT":
             for e in match:
                 if e in tags:
@@ -120,4 +130,4 @@ def solve(n,rows,*,b,h,rounds=1,randbelow_fn=randbelow):
             if any(sum(a*s for a,s in zip(row,x))%3 for row in rows):
                 raise ArithmeticError("invalid original-column witness")
             return "SAT",x
-    return "UNKNOWN",None
+    return ("UNKNOWN" if unresolved or (potential_budget is None and owner_kappa is None) else "UNSAT"),None
