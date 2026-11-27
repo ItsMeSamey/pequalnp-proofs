@@ -1,0 +1,81 @@
+{
+  "branch": "shorter",
+  "sizes": [
+    11,
+    7
+  ],
+  "selected_wires": [
+    5
+  ],
+  "before": {
+    "computes": true,
+    "topForm": false,
+    "D": -8,
+    "k": 0,
+    "D_plus_k": -8,
+    "frontiers": []
+  },
+  "after": {
+    "computes": true,
+    "topForm": true,
+    "D": -3,
+    "k": 0,
+    "D_plus_k": -3,
+    "frontiers": []
+  },
+  "circuit": {
+    "n": 5,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "gates": [
+      [
+        "and",
+        0,
+        1
+      ],
+      [
+        "or",
+        2,
+        0
+      ],
+      [
+        "and",
+        2,
+        6
+      ],
+      [
+        "and",
+        7,
+        3
+      ],
+      [
+        "and",
+        7,
+        4
+      ],
+      [
+        "or",
+        8,
+        9
+      ],
+      [
+        "or",
+        5,
+        10
+      ]
+    ],
+    "output": 11
+  }
+}

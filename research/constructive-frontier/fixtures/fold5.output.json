@@ -1,0 +1,258 @@
+{
+  "branch": "equal-size-topform",
+  "sizes": [
+    22,
+    22
+  ],
+  "selected_wires": [
+    15,
+    23,
+    16,
+    24,
+    18
+  ],
+  "before": {
+    "computes": true,
+    "topForm": false,
+    "D": -5,
+    "k": 5,
+    "D_plus_k": 0,
+    "frontiers": [
+      {
+        "gate": 5,
+        "clean_input_gates": [
+          4
+        ],
+        "strict_and_descendants": [
+          11
+        ]
+      },
+      {
+        "gate": 7,
+        "clean_input_gates": [
+          6
+        ],
+        "strict_and_descendants": [
+          11
+        ]
+      },
+      {
+        "gate": 10,
+        "clean_input_gates": [
+          9
+        ],
+        "strict_and_descendants": [
+          11
+        ]
+      },
+      {
+        "gate": 17,
+        "clean_input_gates": [
+          16
+        ],
+        "strict_and_descendants": [
+          20
+        ]
+      },
+      {
+        "gate": 19,
+        "clean_input_gates": [
+          18
+        ],
+        "strict_and_descendants": [
+          20
+        ]
+      }
+    ]
+  },
+  "after": {
+    "computes": true,
+    "topForm": true,
+    "D": 0,
+    "k": 0,
+    "D_plus_k": 0,
+    "frontiers": []
+  },
+  "circuit": {
+    "n": 11,
+    "edges": [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "gates": [
+      [
+        "or",
+        0,
+        7
+      ],
+      [
+        "or",
+        11,
+        5
+      ],
+      [
+        "or",
+        12,
+        8
+      ],
+      [
+        "or",
+        8,
+        2
+      ],
+      [
+        "and",
+        5,
+        14
+      ],
+      [
+        "and",
+        8,
+        1
+      ],
+      [
+        "or",
+        3,
+        6
+      ],
+      [
+        "and",
+        7,
+        17
+      ],
+      [
+        "or",
+        6,
+        2
+      ],
+      [
+        "or",
+        19,
+        4
+      ],
+      [
+        "or",
+        20,
+        0
+      ],
+      [
+        "or",
+        1,
+        8
+      ],
+      [
+        "and",
+        4,
+        22
+      ],
+      [
+        "and",
+        3,
+        6
+      ],
+      [
+        "and",
+        21,
+        10
+      ],
+      [
+        "and",
+        13,
+        9
+      ],
+      [
+        "or",
+        26,
+        25
+      ],
+      [
+        "or",
+        15,
+        27
+      ],
+      [
+        "or",
+        23,
+        28
+      ],
+      [
+        "or",
+        16,
+        29
+      ],
+      [
+        "or",
+        24,
+        30
+      ],
+      [
+        "or",
+        18,
+        31
+      ]
+    ],
+    "output": 32
+  }
+}

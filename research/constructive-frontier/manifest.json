@@ -1,0 +1,67 @@
+[
+  {
+    "name": "fold3",
+    "input": "fixtures/fold3.input.json",
+    "output": "fixtures/fold3.output.json",
+    "branch": "equal-size-topform",
+    "sizes": [
+      22,
+      22
+    ],
+    "D": -3,
+    "k": 3,
+    "final_D": 0
+  },
+  {
+    "name": "fold4",
+    "input": "fixtures/fold4.input.json",
+    "output": "fixtures/fold4.output.json",
+    "branch": "equal-size-topform",
+    "sizes": [
+      22,
+      22
+    ],
+    "D": -4,
+    "k": 4,
+    "final_D": 0
+  },
+  {
+    "name": "fold5",
+    "input": "fixtures/fold5.input.json",
+    "output": "fixtures/fold5.output.json",
+    "branch": "equal-size-topform",
+    "sizes": [
+      22,
+      22
+    ],
+    "D": -5,
+    "k": 5,
+    "final_D": 0
+  },
+  {
+    "name": "hostile-1",
+    "input": "fixtures/hostile-1.input.json",
+    "output": "fixtures/hostile-1.output.json",
+    "branch": "shorter",
+    "sizes": [
+      11,
+      7
+    ],
+    "D": -8,
+    "k": 0,
+    "final_D": -3
+  },
+  {
+    "name": "dead-gate",
+    "input": "fixtures/dead-gate.input.json",
+    "output": "fixtures/dead-gate.output.json",
+    "branch": "shorter",
+    "sizes": [
+      2,
+      1
+    ],
+    "D": -1,
+    "k": 0,
+    "final_D": 0
+  }
+]

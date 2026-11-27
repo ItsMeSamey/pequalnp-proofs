@@ -1,0 +1,41 @@
+{
+  "branch": "shorter",
+  "sizes": [
+    2,
+    1
+  ],
+  "selected_wires": [],
+  "before": {
+    "computes": true,
+    "topForm": true,
+    "D": -1,
+    "k": 0,
+    "D_plus_k": -1,
+    "frontiers": []
+  },
+  "after": {
+    "computes": true,
+    "topForm": true,
+    "D": 0,
+    "k": 0,
+    "D_plus_k": 0,
+    "frontiers": []
+  },
+  "circuit": {
+    "n": 3,
+    "edges": [
+      [
+        0,
+        1
+      ]
+    ],
+    "gates": [
+      [
+        "and",
+        0,
+        1
+      ]
+    ],
+    "output": 3
+  }
+}
