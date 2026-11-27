@@ -1,0 +1,11 @@
+# Cross-cut coefficient transport forms stars
+
+In a seven-ray decomposition of G3 the seven normalized parents must be linearly independent by χ(G3)≥7. Draw an arrow i→j when, on any original cut, i is full Schmidt and only j has nonzero cross map A_i†A_j. The reviewed degree-one lemma gives A_i†A_j=μI and c_i=−8μ c_j. Taking traces gives the cut-independent transport rule
+    c_i=−⟨φ_i|φ_j⟩ c_j.
+Every other parent k has zero global inner product with i since its cross map on this cut vanishes. The arrow's overlap is nonzero and strictly smaller than one in modulus by independence. Consequently the coefficient magnitude strictly increases along every arrow, excluding directed cycles even when successive arrows arise from different cuts.
+
+In fact arrows form disjoint inward-pointing stars (isolates allowed). Any other arrow out of i must end at j because its nonzero global overlap persists across every cut. If j had an arrow out on any cut, then i would necessarily be its sole neighbor and the reverse arrow would violate the strict increase. In particular no realization with a directed path of length two can represent the target with seven terms. These exclusions apply to actual nonzero cross-map degree-one events; an optional Pauli-eigenvalue merger does not by itself impose a ratio.
+
+If |⟨φ_i|φ_j⟩|²=1/2, even a single such arrow is impossible. Nonorthogonal stabilizer states with squared overlap 1/2 share n−1 independent signed stabilizers on n qubits. In the resulting two-dimensional stabilizer code the orthogonal complement of φ_i is its opposite logical Pauli eigenspace, a stabilizer ray. Hence the transported pair c_iφ_i+c_jφ_j=c_j(I−|φ_i><φ_i|)φ_j is at most one stabilizer term, contradicting χ(G3)≥7. Every permitted arrow thus has overlap magnitude at most 1/2 and |c_j|≥2|c_i|.
+
+For full normalized parents with identical remote image and relative nonidentity Hermitian Pauli, the global overlap is tr(P)/8=0, so the pair never supplies one of these mandatory arrows. Its two possible merger eigenvalues have opposite signs; without knowledge that the corresponding projected terms MUST cancel one cannot assign a transport ratio from Pauli proportionality alone. This theorem imposes restrictions on residual patterns, without proving that any entire previously open signed Pauli orbit has been removed.
