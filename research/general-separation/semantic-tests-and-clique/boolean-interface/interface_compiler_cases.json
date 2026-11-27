@@ -1,0 +1,5 @@
+[
+ {"inputs":["x","y","z"],"gates":[["var","x"],["var","y"],["var","z"],["gate",6,0,1],["gate",8,3,2],["gate",14,3,0],["gate",6,4,5]],"output":6},
+ {"inputs":["x","y"],"gates":[["var","x"],["var","y"],["const",1],["const",0],["gate",3,0,2],["gate",6,4,0],["gate",8,5,5],["gate",14,6,3]],"output":7},
+ {"inputs":["x","y","z"],"gates":[["var","x"],["var","y"],["var","z"],["gate",8,0,1],["gate",6,3,2],["gate",14,3,0],["gate",9,4,5],["gate",8,6,3]],"output":7}
+]
