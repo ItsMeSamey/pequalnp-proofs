@@ -1,0 +1,8 @@
+'ExactPlaneWedgeFused.solve_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneWedgeFused.evaluate_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneWedgeFused.every_join_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneWedgeFused.solve_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneWedgeFused.feed_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneWedgeFused.prefix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneWedgePhysicalCharges.physical_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneWedgeCodeCharges.predicate_visits' depends on axioms: [propext, Classical.choice, Quot.sound]

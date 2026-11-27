@@ -1,0 +1,11 @@
+# Independent executable tree audit
+
+ExactPlaneWedgeFused.solve takes raw indexed vectors, tags, heights and a binary tree. Correctness requires separated children and full leaf coverage. The cut basis is computed. decorate calls cutFor, which runs materialized Gaussian intersection on the sorted physical and exterior sites, then selects a basis from d residual generators. No chart or subset enumeration over the ambient/private dimension appears on this path. The separate decorated entry point requires valid cut bases. An empty physical input admits no tree constructor.
+
+The evaluator builds the strict child row vectors once per tree occurrence, outside the parent state loop. State codes use four words of cut rank. Each join binds its code arrays outside compatibility checks. Compatibility requires a common chart on both original masks. A positive result certifies independent height sums and two zero key sums; the returned masks may overlap. Elimination retains the unmodified candidate at a fresh pivot.
+
+Fused.solve calls evaluate with feed. Its ordered nested folds pass products immediately into the bank. The equality feed_eq proves identity with the joined-list reference, including ordering. The upper-triangle coordinate lookup is shared across the whole run. At each candidate prefix the bank and retained list each hold at most D = 1+2n+choose(n,2) rows. The bound is local to the current elimination. Child tables persist and a cached feature takes 1+2n+n² scalar entries in addition to structure overhead.
+
+The state, predicate and candidate counts use distinct units: 2^(4w) codes per cut, at most 2^(12w) compatibility calls per join and at most 2^(15w) boundary-word triple visits per join. The reference plan sends at most 4·2^(4w) candidates per leaf and 2^(12w)·D² per join to thinning. These separate event counts do not measure total wall time, machine operations or peak bytes.
+
+width_control.py and its log contain six independent 36-site controls with 32 private directions, width at most one and coordinate positions up to 289. controls.lean exercises the actual released fused backend on a six-site skew tree and opposing versus compatible original indexed tags.

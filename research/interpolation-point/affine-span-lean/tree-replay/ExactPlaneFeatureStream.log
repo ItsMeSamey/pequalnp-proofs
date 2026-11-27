@@ -1,0 +1,9 @@
+ExactPlaneFeatureStream.lean:140:41: warning: This simp argument is unused:
+  Function.flip_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [select, back, List.foldr_reverse]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ExactPlaneFeatureStream.select_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneFeatureStream.positions' depends on axioms: [propext, Classical.choice, Quot.sound]

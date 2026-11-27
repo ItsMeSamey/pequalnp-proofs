@@ -1,0 +1,999 @@
+{
+  "commit": "ec21602f9f090c2aeb9b7d60268bbcbb3c7c0775",
+  "locks": {
+    "TREE-SOURCES.sha256": "9643016324a09bced2ec51ec19dbc4d1aa7651bcb61d4006295749a9f195bc28",
+    "TREE-INCREMENT.sha256": "a87f5bc83cab6a71c87800af445ed9431d56ec8649c6042e3d8b108488955e58",
+    "producer/tree-full.sha256": "a476e5a1ae661356eb68487fa79f46bb538f221879f21bc834043b156168d98b",
+    "producer/tree-increment.sha256": "b89f678c1df60543127b188dd43bc9a3d9a3c3c83fa19a75bafa01ead76285c1"
+  },
+  "compiler": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "workdir": "/dev/shm/review-plane-tree-Qv6TZt",
+  "closure": {
+    "ExactPlaneGaussian": "5f816a10b095a7c195f6651d30f47829aeba2722cd040d3e3ffad8a268736637",
+    "ExactPlaneGaussianMaterialized": "a5bf7ca2ea187d5df2803dca65bddcc264bf3c991eabf6832dad78a4e9ae662e",
+    "ExactPlanePivotCount": "d53bbd612fca640e416fae280c4dc14709f41db401848810e00962bc4f0f655d",
+    "ExactPlaneFeatureStream": "2cf3c5b15ebc61ffc5246f0b7f8c7fe9340fc92ff614c4c2e70dccf33acc0c24",
+    "ExactPlaneFeaturePrefix": "83595427ad7484c7e65d1adf760d9c6699cc170213136a5fc8a4236c92a6e49c",
+    "ExactPlaneWedgeProduct": "657a4d2f6eeff0d594210abfcd6fc8373d170e47448caf158f17b799d7d81a7f",
+    "ExactPlaneWedgeLayout": "33777516c123024283f2e5ae8bc4082ec5e011ae88e34c80d180c84416be6f95",
+    "ExactPlaneFeatureSelect": "fea25518b51efc242906e0c528317aa9064eacda43835cc701bb40d55d5e1098",
+    "ExactPlaneIntersectionKernel": "ce75e3ce1b31e76e74bebb98924266e779c798e04a9798d1db87ab72f91e4956",
+    "ExactPlaneIntersectionBasis": "5fbfa553a9aefe920a5e93669d0a63b6943b1a1e568147acc544b62755cebf9e",
+    "ExactPlaneIntersectionCoordinates": "049c7e920dbc1c0250fffb15cba7b3c84e22947355982192b5c6fb5c6dd1cecb",
+    "ExactPlaneIntersectionDense": "ced5add8662c5bbc211b043a73aa6e3933aabe551c6ee003c12c6d6095f6ea6e",
+    "ExactPlaneWedgeTree": "f960900be1468a0379b275913e6c78c3d4ea36dde0b8a223d00632d2bf3e6642",
+    "ExactPlaneWedgeBoundary": "cb2aeed2817822ee49394a1a5b630b4c8a38f29ba8ac00c5e606cbcedebc35f2",
+    "ExactPlaneWedgeSplit": "063d6daf7a66937145a78e448be8eea1498550a86133665605774c2a06c1c004",
+    "ExactPlanePhysicalWedgeTree": "6b92212cdff21bd9ee0db8e77cc423550897a9960b56a691917ed998f6346aec",
+    "ExactPlanePhysicalIntersection": "056e6172e4507dd08eb25932eae7ec6b96c9123e86df05d4b900e8396dc49fb4",
+    "ExactPlaneIntersectionExamples": "c3428f9a6505f7df969377bf9860c71f7be176646b7d2c2f6cf1a86e45687da2",
+    "ExactPlaneWedgeArrayDP": "bc156dfab3d4f3a4af0d5bf6134e4e56906c1d073618f404cceac4d1e176ee1b",
+    "ExactPlaneWedgeJoinCharges": "c7409a19de26baa76e83ffb1e526ea8647a4a1519952b5251d86ab90c81b6116",
+    "ExactPlaneWedgeArrayCharges": "40074ca35781fba5691110348ca9aa812409be3f288a76bc8b15a9ce3bd6c240",
+    "ExactPlaneFieldCard": "f985a4ed152d124d53c4c0a2779377559a74b10a19819f795f107ce1b6c3cf91",
+    "ExactPlaneFieldSampler": "2248194621b0400a7df7df9407bee6c7f16f1016f6c39635c127fd4a1602d146",
+    "ExactPlaneSubsetPolynomial": "bd5cc5aa1d585628ea108315589eb7f09e66a1806b9b5ad354149867aa8c3c8c",
+    "ExactPlaneAffineSparse": "772fe34db6398fca022032c696d25b180af07277dd69368eeea64fc03490a871",
+    "ExactPlaneAffineSubstitution": "c20691b274a3d645230225b4e5b5e68bc43464a9fb0d6602e6a11875af60f0a8",
+    "ExactPlaneAffineSpanHit": "2c6f17f44a095553635bec4530f33ddd41004db9d952f155e0e44c655d62a51a",
+    "ExactPlaneActivationSlice": "d62457deb63ca716aabb66c16b10571528ea83a187410df24fef173f783f61e3",
+    "ExactPlaneSamplerSpan": "d318999f9e0eaa4dd1ae95fbcc0dc59f713a869e15d2e1e8ff709ee16eae7e00",
+    "ExactPlaneSamplerRank": "6bf1ad59c6df477e4eb105b3c3ffe478b6a8899e8e3f9a8824fe496f44df6ada",
+    "ExactPlaneConcreteSampler": "4b7bcd88d184e3b9a13e0154305e2ed7ff114a646ab2278de4cc257dfdb8c83b",
+    "ExactPlanePhysicalConverse": "b5ccd43875c6c65d3d00892d8d0ca8d855779d74fa9fd4c3294a568e75d37602",
+    "ExactPlanePhysicalResidual": "0bd10e525dd8a3cdee961bfd600b496c4f72d856f6ef8dcdc7154abc9dbbdd2c",
+    "ExactPlaneCandidateCheck": "d696f1ad843b192c0139afb753076a2a0f7244dbe0cae7ea603d7140c62e902f",
+    "ExactPlaneFiveQueries": "4414ee4407ef8992828c84ef8bf828cc1bf035a341e2a359054922be369b2a03",
+    "ExactPlaneGaussianPacking": "170c35cff1b8968474ab954d53d8bd0bfc5a0752fc26d0e976209c5eb54a8125",
+    "ExactPlaneGaussianCandidate": "45ea404231e0d73524894bfbd8fd9b0bdc05985a66c4e6f3e3e68c7b7778a12a",
+    "ExactPlaneExecutableSelector": "7acf5dcc73bca21bfee80b6cce05e31e5f670bfef45a634469dad40ec847a9b2",
+    "ExactPlaneOddChartList": "b592dae593d33292303cae8ea4986e80fd408978f08feb4c95e3e9579f460486",
+    "ExactPlaneDeterminant": "6d7dc7449f366ef396c6b30b17a1ba6132f63540c000a42c205a21de1e45b3dc",
+    "ExactPlaneTwoBitLookup": "68befb5e083f49e367efffd5d3486091ef1769aa0638cdf03c5d65987f285cba",
+    "ExactPlaneLookupDeterminant": "14ddba89238f2ee7c155fa3295d4485ea4b97976a31bc844de300365b218628a",
+    "ExactPlaneRepresentativeLookup": "bf423aedca226199d9102058b7d97c71627453e75d4d45452541a4d0342bc4b5",
+    "ExactPlaneChartCoordinates": "e0c29e1fdbd9f9fb93cbbb50615cee67aabfacc13e1ea0b92714681a41ec5e1c",
+    "ExactPlaneActiveDeterminant": "cb14786f985aeda0b9c9f86d61032f43128751a97ad425f0c03775e9f88a410b",
+    "ExactPlaneActiveReadSpan": "92f3898316e002843fbf73ce6efd872de7ddfd9f1ad79d0d9c4974ae70ac1be5",
+    "ExactPlaneOntoReadSpan": "3f43290ecdd6da10f010545962d97b1cd024ade6ecf015a2591dccd201245371",
+    "ExactPlaneCoordinateSampler": "123d428780442b243bb810fc7bdfd85ea73c61654dee47f58816e29ceeb7927a",
+    "ExactPlaneGlobalSeed": "b2eb39c342ad46b740f2641b69069e9b25d43013a49591e4cefbb73712dcae20",
+    "ExactPlaneMatchedBasis": "ce2b5a2313c72b6e22584b3af1a540882658b44a4ee8ad2535c3f55096039405",
+    "ExactPlanePrescribedBasis": "a64dc354af9f734f92cb9b34b19a186fd730bd9079ff18ba66ec83f9baf6a808",
+    "ExactPlaneFullDirections": "2f8d5dc7b6512150de4c9f8c0ba7ebc5a5fb5f6f570a2e325f250109247ca341",
+    "ExactPlanePinnedSampling": "6a498b128bd91e6b9736e9d313ba37fa4e7db9020dc409490b45c0686225491f",
+    "ExactPlaneResidualPivots": "0515fa723a6fb8b1bb51819f7b4ac811376fece30bd2df0a031aa909bd604c18",
+    "ExactPlaneIndexedBranch": "1dde5f7e5e4aea9746d4018f52d4d8f1112ac19dc15f606529dda4038ab2fb42",
+    "ExactPlaneFrozenBranch": "6f6646d06afe02e9bc4c543bf34daf6c70dd442db15ae5ba36058fb3ebacc7ba",
+    "ExactPlaneSuccessTrace": "906a0bff9748f04ab2f333d7c1b1433ece83bbf0b1283965beb548e2e4e42eca",
+    "ExactPlaneGlobalApplication": "21ebd94defb8a64454c13cb186bfc66165e31f3a3df7bf0c68a27ab3769954d3",
+    "ExactPlaneObservedSpan": "0021a60364e6ee7d6d43c7a9cf371e386eb38d15640e023764bb96b2f1f11ecf",
+    "ExactPlaneRawApplication": "d633089150a6acaf9fd7aa5f4bcf42fb76586b3dce743007b22c57a98904023a",
+    "ExactPlaneListedDecision": "e51a7225f7ff2b33cb300c555df70144553d3907a039248cd6d473d7027ab3a4",
+    "ExactPlaneGaussianSelector": "6219da56d7c35281230f89dec1f21ef6b43f3b6d95662aeaed938e70f0c0a4d5",
+    "ExactPlaneSmallWitness": "16f18919c68ad0e759e5b45d1c056eaee2ff7147578743059329c49a1c338492",
+    "ExactPlaneAcceptedSmallWitness": "457fb48a7a13bc3043b1d25cacb6b380c4d583bff7fbead0225ac353d66fad8d",
+    "ExactPlaneGaussianBasisBound": "7bb7371e1e2e907b293e9ab4e7e63c114fc73be129aeb12382d2fe7598b067c0",
+    "ExactPlaneGaussianIDs": "c4e8d1afb6ca14c6c07ac78391c8908bf7af9cfb6e8e34441be8bf24964438b8",
+    "ExactPlaneGaussianDecision": "ec455cde46b057fb558ad581d219b7fd712b203574afeccf5f222dcabe2e75c8",
+    "ExactPlaneEagerBank": "9b51b499208d7263f1a26e5d6aa0291d9485afa816292142d9f1068927bc016f",
+    "ExactPlaneEagerDecision": "d93c2dcd7a5a67b7f8fa618ed1cbc5b3fcbbe834252bf38dfe9aea8a495a770b",
+    "ExactPlaneNumericalRows": "06e498db2ef80099ca0c51da18975838b1f98213c356a071a175830ddee9263b",
+    "ExactPlaneWedgeCodec": "acd6322a9067d4d7a344e2bc50ac013cb9fd6adf23335acbaef400724bb93799",
+    "ExactPlaneWedgePlan": "2b46200997fa95e22f768fc469aa12d2dc46d04fd1364f182d8bb62aeca74714",
+    "ExactPlaneWedgeLeaf": "c5d282df915a0c8e2072b055b61cf4761873134a8604c49654733ca381b66928",
+    "ExactPlaneFirstRelation": "9afb2389db97f9cd833be790aaaf1fd2215d26cdddfed5d49200bb30ff10a5c7",
+    "ExactPlaneRelationPair": "7c6a094ac87b558c61d5e1e05ab2fba2f3ede7339b0f513b30047bfaa37fa805",
+    "ExactPlaneWedgeHeight": "aa3fd075a69ebd3db13c3b57d0dedc337e7625dbfd6c9a1d15131f9fd19b7098",
+    "ExactPlaneWedgeDecision": "0dceb046aaaaf2b40d62992961c3a3e4e8b716f09ddc9416e2172689e8d8edae",
+    "ExactPlaneWedgeRun": "d2ef1f79aa7c198574feabc9e5467a3f5190ae4ef194a1ea7de6b53e6e1bd782",
+    "ExactPlaneWedgeCodecCorrect": "27726936f7cafc20ad62eddcc11b12312532b6ac44248d2054079bca8b0a72e4",
+    "ExactPlaneWedgeCodecState": "c56a5290b9a7a3658d3d6519a51fa3eb9d404f05f022bb3177964c21dbeb9a64",
+    "ExactPlaneWedgePlanPhysical": "b21934b12eb444e3643989469c4330b8bb351f5319da5ba84b2d4205d9b98d45",
+    "ExactPlaneWedgePublic": "5721797df0378481f89d5fec040ec024d1422bdaed38f04be27ba6e6385fef5f",
+    "ExactPlaneWedgeDecorate": "a0f93536c1b33113e85943ec8e93b4b77066efe0ab826e0f00f51dde97fed134",
+    "ExactPlaneWedgeRawTree": "9dac9ce823d28363f7d183a6e7f1f4bb240371088531ba433a7f4fe1ba0537bb",
+    "ExactPlaneWedgeCached": "a6e2f7f85efbee7881420877b8ab2b69164ac6976e06eeace554480d4c1e7bd3",
+    "ExactPlaneWedgeCachedExamples": "6017b5690f89886d2de169816696ae197684a234dc0e4177457dd34f8880bf85",
+    "ExactPlaneWedgeCodeCharges": "3a99a2c3b51b766efca3b6d7292fee7166deebaeb2141e5684c60bc5b636f9e7",
+    "ExactPlaneWedgeDecoratedExamples": "da541cd488287481c753387e7b33b4ce9a59a72a6c9dd014115e702181d54dbf",
+    "ExactPlaneWedgeStore": "286c8f7892315706b9084e5c9b3f5729cb5fd1af17d92878802216e38375e897",
+    "ExactPlaneWedgeFused": "b2655c179ad800f865848c5d9452f312b59d91fc0a60d0046c028c9e94ba943c",
+    "ExactPlaneWedgeFusedExamples": "b9d3f448f244fc60df0d3e7030d331fbac9a28fe99e79972b63ead9bbb03e6db",
+    "ExactPlaneWedgePayload": "a8c5786006e067f0dccfec05c8a35af1f9dc1fde06f1a1ded357eefa16b59f16",
+    "ExactPlaneWedgeTreeCharges": "e2d5e2826821bb20385106caf964f7ec69d259360e3606a992e5acd587534173",
+    "ExactPlaneWedgeTotalCandidates": "ff106193aaede793da07a3bef63012278f1845837b563a2889699949bc574132",
+    "ExactPlaneWedgePhysicalCharges": "5d0f83bd66d0d5503613a4f82fde8fa9a09e5a2d6d3833e339570c507f0cafb1",
+    "ExactPlaneWedgePivotCharges": "9e05db57fd100c5dfe0f6f8927badeaa739c7d51510b9840bc8770f02835beb3",
+    "ExactPlaneWedgeRunExamples": "13d336434f537a64e5c329ff20f6e95dd1a512c6c969612deeee42f7d2729459",
+    "ExactPlaneWedgeUniqueParent": "565400761125e638dcfbcdbb0eb2c951057d79d22dc62e2be82bd883a5082d84"
+  },
+  "reused": {
+    "ExactPlaneAcceptedSmallWitness": [
+      "/dev/shm/review-raw-small-dcwx8mvh/fresh/ExactPlaneAcceptedSmallWitness.olean",
+      "0331aadb086694e6256efb5d69616b6ecc4e87d932baba19be6333df7b71f9ec"
+    ],
+    "ExactPlaneFieldSampler": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneFieldSampler.olean",
+      "f4ea9ad1aefa9e0cdf85b6ca944d071dc9d57c2ade7d10dc589c50c54050f4c3"
+    ],
+    "ExactPlaneResidualPivots": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneResidualPivots.olean",
+      "4bd1ca43a3b80aee14a12381850cfffb4df0ff1b1b39d652da42a6b5e1592b57"
+    ],
+    "ExactPlaneGaussianMaterialized": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianMaterialized.olean",
+      "074cc5ab7d14232e6d20118960234b5de23776d87d3e5bfed9c3f1f142b11deb"
+    ],
+    "ExactPlaneSamplerSpan": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSamplerSpan.olean",
+      "5e1f471adc907aee1a670050642499be18802ce72b08230eb12cdfdbc7f0e81b"
+    ],
+    "ExactPlaneActiveReadSpan": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneActiveReadSpan.olean",
+      "5ef30098bd6d96b59a387e6f81da6272c1251617049bb7ee6d2e86fa2ef16880"
+    ],
+    "ExactPlaneIndexedBranch": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneIndexedBranch.olean",
+      "01e925f19bef98df400fd2a4b6b64b18cc6e3673dbee35dcf572d7e85c36e64a"
+    ],
+    "ExactPlaneCandidateCheck": [
+      "/dev/shm/review-executable-yk755law/fresh/ExactPlaneCandidateCheck.olean",
+      "47bf05ebf3d5fff7ed501ef6f581554a527b303a4a18064e206c435c58e0ebbd"
+    ],
+    "ExactPlaneWedgeBoundary": [
+      "/dev/shm/review-plane-indexed-mZ2gN3/fresh/ExactPlaneWedgeBoundary.olean",
+      "8c5c0c78a4df30e63cfca2dd46442c60433924d84581afda352dc84d069b3bf8"
+    ],
+    "ExactPlaneActiveDeterminant": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneActiveDeterminant.olean",
+      "4f25e9d365fe33f022da35582f8e3a3edb54e0ccf81a857dbea397f3b5a06173"
+    ],
+    "ExactPlaneGaussianDecision": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianDecision.olean",
+      "310b38b61ebdf14152361a60130dd4db18cdc7478296bcf122e0bd8890f4ed64"
+    ],
+    "ExactPlaneGaussian": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussian.olean",
+      "113e40fea2232287d1e80f9099817d7a8f0561b930b9b30dc3a7fa41b8e5510f"
+    ],
+    "ExactPlaneSamplerRank": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSamplerRank.olean",
+      "1f8e9bbfaee7fc0c5b7aa17d1555252e517313d1d6c2ec529255ddfb0a6f7c5b"
+    ],
+    "ExactPlaneRepresentativeLookup": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneRepresentativeLookup.olean",
+      "620103010c19412517730bc14242e56db978c954865a9d7722f94fda948ed444"
+    ],
+    "ExactPlaneFrozenBranch": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneFrozenBranch.olean",
+      "b9bc5a191db04ac7915609ce814c6e5160d634a42f0ec29ddc7426f6a28904e0"
+    ],
+    "ExactPlaneSubsetPolynomial": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSubsetPolynomial.olean",
+      "996a2af5233b3b512b1aabf672423edd418da7ffe0e470f72f07ba3476f3de8a"
+    ],
+    "ExactPlaneCoordinateSampler": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneCoordinateSampler.olean",
+      "85a79371321562fc4caa7dd3096fa18e613ae1e816606803f0d4130d98a1101a"
+    ],
+    "ExactPlaneWedgeSplit": [
+      "/dev/shm/review-plane-indexed-mZ2gN3/fresh/ExactPlaneWedgeSplit.olean",
+      "f87e75914fa2b560bd9e812e42d457c7858880e91ba56b32b9c83641b1a2e510"
+    ],
+    "ExactPlanePhysicalResidual": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePhysicalResidual.olean",
+      "c0c55f5704950213a018c6789e6a7d16ac7886a4078266b6f7d8991d42bd3d41"
+    ],
+    "ExactPlaneGaussianCandidate": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianCandidate.olean",
+      "d405b27d034db816ca8e1a2fe9d40c298119328d79241fda291deace8650a6ec"
+    ],
+    "ExactPlaneOntoReadSpan": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneOntoReadSpan.olean",
+      "59f7ab677858fd1b08e5488c586b7b55b8f9e542c872b16f839b6e75ffa91628"
+    ],
+    "ExactPlaneSmallWitness": [
+      "/dev/shm/review-raw-small-dcwx8mvh/fresh/ExactPlaneSmallWitness.olean",
+      "eb5cda1c64b6859ccb59b176dd9919c14cb07f16d2060f6d460944f3d0339a82"
+    ],
+    "ExactPlaneGaussianBasisBound": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianBasisBound.olean",
+      "596003db0d420d6196b77bd5c5203b739a6f923fec60f341507751c4fbe6df93"
+    ],
+    "ExactPlaneFiveQueries": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneFiveQueries.olean",
+      "95048ed6d05f34e470c4130ee1ac9ec0c9c5622d75d03bccaf1d708b7c85768c"
+    ],
+    "ExactPlaneGaussianSelector": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianSelector.olean",
+      "8d06193e9819d1ec8a5d2b5acaa18418bf65a615775429d9d442651e39adc754"
+    ],
+    "ExactPlaneExecutableSelector": [
+      "/dev/shm/review-executable-yk755law/fresh/ExactPlaneExecutableSelector.olean",
+      "193c4482249aae701125083d712c9f3534781d7cd708eaf08da033a8a03fc309"
+    ],
+    "ExactPlanePivotCount": [
+      "/dev/shm/independent-charges-n_fjkmt7/fresh/ExactPlanePivotCount.olean",
+      "50620f917efd2a0f681679ac37d2a5c6027bbded0a61686df85ca3781bd247d4"
+    ],
+    "ExactPlaneOddChartList": [
+      "/dev/shm/review-executable-yk755law/fresh/ExactPlaneOddChartList.olean",
+      "e5164458de5202b9edeb348103068e627abf151da07d01b1e407be0d26dbd03d"
+    ],
+    "ExactPlaneActivationSlice": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneActivationSlice.olean",
+      "5cfedea8f6fb383f5d6a775779cbda99b35b1947ac4c7b0d4b92babfc501bf53"
+    ],
+    "ExactPlaneChartCoordinates": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneChartCoordinates.olean",
+      "9df6a4a20db4bcdde863c90a5897b5c205957d3d6aa5cc48f79d2071a101aa49"
+    ],
+    "ExactPlaneNumericalRows": [
+      "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneNumericalRows.olean",
+      "9df2552313e48169f78caf5dea8f97bf7d351a6ca8c4710104e564f2060ab01a"
+    ],
+    "ExactPlaneDeterminant": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneDeterminant.olean",
+      "778f0fdc471ad0b9fccd97fa196efd04ed1b4484e8319cabfd557dbb9eb15641"
+    ],
+    "ExactPlaneGlobalSeed": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneGlobalSeed.olean",
+      "7f680bbf421f0a062e52687b61c1af16e0b44ee523878965ce85bff63cff1d75"
+    ],
+    "ExactPlaneFieldCard": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneFieldCard.olean",
+      "d8bac675467343c2aa2b3049b2a2dd5bc06fb386998236f962c21b8ceee2535b"
+    ],
+    "ExactPlaneRelationPair": [
+      "/dev/shm/review-plane-indexed-mZ2gN3/fresh/ExactPlaneRelationPair.olean",
+      "0f798f4644746e80c17818e8ef8d3d201265a2e43c6d333c5ad57bc6849b19e0"
+    ],
+    "ExactPlaneGaussianIDs": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianIDs.olean",
+      "f7c2b789f165f2910214931b5c8f795737b5359c2a116cb6d1cfe1e43fef7de1"
+    ],
+    "ExactPlaneTwoBitLookup": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneTwoBitLookup.olean",
+      "7ed396c63cab4fc56341bfe571a82d8649eff643f2bde89a3dd1d39ee7b8fd21"
+    ],
+    "ExactPlaneObservedSpan": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneObservedSpan.olean",
+      "425041793b022abeb413be23c13e3db44e43370110d8954b70f6c2579927cd10"
+    ],
+    "ExactPlanePhysicalConverse": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePhysicalConverse.olean",
+      "05f132980fadad81455cedc08584dc62c3f1e2a4e52c8d09a5010ac41c1c0638"
+    ],
+    "ExactPlaneFullDirections": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneFullDirections.olean",
+      "27fc7cb42e250063f48a8f166ab4731720215949d54d2eb12a5818df1a18722d"
+    ],
+    "ExactPlaneMatchedBasis": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneMatchedBasis.olean",
+      "a1112cb7736306a5544addb878f1cf4d1fdc3c0dc01f5f9f0a64321f09176d65"
+    ],
+    "ExactPlaneAffineSparse": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneAffineSparse.olean",
+      "8c70a4f6f41f769a906614095fb68f1dd9737a8d08a69aa7a4eef118c73c5654"
+    ],
+    "ExactPlaneAffineSpanHit": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneAffineSpanHit.olean",
+      "ed7800817b24c3d8f45afb4c759a9359c546134d3d16b2bdce751f03aa42ad38"
+    ],
+    "ExactPlaneRawApplication": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneRawApplication.olean",
+      "e93eca74732d1c29d57c17fcc23bdec1ae46ad5ccf95edaa182a7f02f5f5a352"
+    ],
+    "ExactPlaneSuccessTrace": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneSuccessTrace.olean",
+      "a16a0418264caba4884e41e5dab02c219d1b97597aeb8e68c1419460ef1142b1"
+    ],
+    "ExactPlaneGaussianPacking": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneGaussianPacking.olean",
+      "bf8b6be68d7c63a69e4ce51d4f87f4ff1c4634d57d3f278b29724e29e9dbfbe2"
+    ],
+    "ExactPlaneLookupDeterminant": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneLookupDeterminant.olean",
+      "481eeaac72868b05eb524f6646936a907a591e7dedecd425d8722060cb71c813"
+    ],
+    "ExactPlaneGlobalApplication": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneGlobalApplication.olean",
+      "10933ca18e9487569e20f184d769c5528864d65bb317025fef311f337be9fbc4"
+    ],
+    "ExactPlaneWedgeProduct": [
+      "/dev/shm/review-plane-indexed-mZ2gN3/fresh/ExactPlaneWedgeProduct.olean",
+      "da5def64892f7052944da02229585cd1147dac4e943d3d222c3dba26b1e8ca2a"
+    ],
+    "ExactPlanePhysicalWedgeTree": [
+      "/dev/shm/review-plane-indexed-mZ2gN3/fresh/ExactPlanePhysicalWedgeTree.olean",
+      "8b6b25b5297910f24a1230214ab42a9965ad8bb71949499a755b21d842b792dd"
+    ],
+    "ExactPlaneWedgeTree": [
+      "/dev/shm/review-plane-indexed-mZ2gN3/fresh/ExactPlaneWedgeTree.olean",
+      "d48b167e89052624135383a4fc12110b0b357cab441b08e0b1d18deb9c356376"
+    ],
+    "ExactPlaneEagerBank": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneEagerBank.olean",
+      "1da7253e67ad9b6c500c6ac4b74ad7ba9f920a7f9e617b6d241ce312c5783b47"
+    ],
+    "ExactPlaneAffineSubstitution": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneAffineSubstitution.olean",
+      "a5ec39d0a55b41207c6558e05fa138220a58cf981d131bd173d5632700250410"
+    ],
+    "ExactPlaneListedDecision": [
+      "/dev/shm/review-executable-yk755law/fresh/ExactPlaneListedDecision.olean",
+      "2b2adad2d81357841691da17da27fd8905b91df53b1dffb7ede5fc03ceb73422"
+    ],
+    "ExactPlanePinnedSampling": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePinnedSampling.olean",
+      "3d1b58fbd63aaa5aa5ce7347ea9f8ea9bb76535a22ba8a3c876df5329b9f95bb"
+    ],
+    "ExactPlaneConcreteSampler": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlaneConcreteSampler.olean",
+      "4789d236953598cfb3a2735db23d331cde4da14edb1419f6cc9cfd3ae27158c3"
+    ],
+    "ExactPlanePrescribedBasis": [
+      "/dev/shm/review-plane-raw-1pgqyp8b/fresh/ExactPlanePrescribedBasis.olean",
+      "07ec1ca60c6bef206422c9b15f8933541d190cf7cc1ffcd8b7bd4e442e6dbc6f"
+    ],
+    "ExactPlaneEagerDecision": [
+      "/dev/shm/review-gaussian-xi8jkqlt/fresh/ExactPlaneEagerDecision.olean",
+      "08d2b9882fea868e147da4e91f7c68b3932a9326336ef45776095c2ba10865d4"
+    ],
+    "ExactPlaneFirstRelation": [
+      "/dev/shm/review-plane-indexed-mZ2gN3/fresh/ExactPlaneFirstRelation.olean",
+      "3de9d6d26e9fa24819472e1f58cc07a20b26ff8dfd1ce617a9e8ce470107c160"
+    ]
+  },
+  "prior_receipts": [
+    "93baeeacc345ead358357cee7fa897b6fba552b1dae6ce1c4b5b458dec34b978",
+    "a090e95a9d580536accffdf66f64b5fa0b8bb70c135100bf8d9ec443998027b0"
+  ],
+  "new_modules": [
+    {
+      "module": "ExactPlaneFeatureStream",
+      "source_sha256": "2cf3c5b15ebc61ffc5246f0b7f8c7fe9340fc92ff614c4c2e70dccf33acc0c24",
+      "olean_sha256": "ee956a3eff4166900f29bb2abccaf19c1a8ec5aaa3846a22eaf6331a110cae7e",
+      "log_sha256": "b71e8bf2611b67700934b9f3028f28ccba26fb81a438d78d37216001a4500559",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlaneGaussianMaterialized.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlanePivotCount.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/LinearIndependent/Lemmas.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Data/List/Nodup.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneFeaturePrefix",
+      "source_sha256": "83595427ad7484c7e65d1adf760d9c6699cc170213136a5fc8a4236c92a6e49c",
+      "olean_sha256": "597a2dd27f1382096c6fd6ba7342b8941e2dd14d2c647de8615e704fca647f40",
+      "log_sha256": "dc17e9b5970d5402b76f9eae004e287585d802684900f1cbc347d7121e1bbd72",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneFeatureStream.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeLayout",
+      "source_sha256": "33777516c123024283f2e5ae8bc4082ec5e011ae88e34c80d180c84416be6f95",
+      "olean_sha256": "220c7de33e30e9c0116283fadff030b7a356268b397d4f78bf390635f4b0b36c",
+      "log_sha256": "5c9bc329ac1ebe0793e2eb9ce55545702929fe56eda28260de9ae12beb43610b",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlaneWedgeProduct.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Data/Finset/Sort.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Data/Fintype/Prod.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Logic/Equiv/Fin/Basic.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Data/Fin/Tuple/Basic.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneFeatureSelect",
+      "source_sha256": "fea25518b51efc242906e0c528317aa9064eacda43835cc701bb40d55d5e1098",
+      "olean_sha256": "37c2498347ca22602c0cd5eec5ff5115a744ad2e42baafb4273a3e7a71edf467",
+      "log_sha256": "745fcc6a45552f45041abd4f727dee1064ff7598b23828500a5db7c131a2aff2",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneFeatureStream.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeLayout.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneIntersectionKernel",
+      "source_sha256": "ce75e3ce1b31e76e74bebb98924266e779c798e04a9798d1db87ab72f91e4956",
+      "olean_sha256": "9f54b8b624a2364a643e2b0e6e832b4132e4e1542df8b11a6550dafa844c5922",
+      "log_sha256": "e62dc35210f24b898884629fc7120ec7be1928ea6cb0ef22d126233d0cf9e72f",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlaneGaussian.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/StdBasis.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Tactic/Abel.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/batteries/.lake/build/lib/lean/Batteries/Tactic/OpenPrivate.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneIntersectionBasis",
+      "source_sha256": "5fbfa553a9aefe920a5e93669d0a63b6943b1a1e568147acc544b62755cebf9e",
+      "olean_sha256": "d988aa0918ae814c05ccf7bcf5342fe11ec4dfa9ab1ea074db54937b007cef59",
+      "log_sha256": "e8ada3b9098ae6fef500445c9a47b3beaa25885b1ce10b427c567a0f414742fa",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneIntersectionKernel.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneFeatureStream.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Data/Fin/Tuple/Basic.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneIntersectionCoordinates",
+      "source_sha256": "049c7e920dbc1c0250fffb15cba7b3c84e22947355982192b5c6fb5c6dd1cecb",
+      "olean_sha256": "264e10b878fcc9f1a6f46ca67eb37ad5a08b5c6b7fbe2ca9bce0e8fd8785bd0d",
+      "log_sha256": "e3df376b2e91fd6bbcba127a906edd626a84fa0b574e754ffb7de537c3f94bf6",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneIntersectionBasis.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Basis/Basic.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneIntersectionDense",
+      "source_sha256": "ced5add8662c5bbc211b043a73aa6e3933aabe551c6ee003c12c6d6095f6ea6e",
+      "olean_sha256": "f6f14e47b0066101b6ecad5cd88953f9c637052b6a7b4bfc1aa8b88e5fee4003",
+      "log_sha256": "94faa714df4ad07d679f679fc5f5f3596263f5a4ba86af91d4bd1d0203ae2fc1",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneIntersectionBasis.olean"
+      ]
+    },
+    {
+      "module": "ExactPlanePhysicalIntersection",
+      "source_sha256": "056e6172e4507dd08eb25932eae7ec6b96c9123e86df05d4b900e8396dc49fb4",
+      "olean_sha256": "43ba82f8d51fb6bf002eb9be769cc0ce11d0677f6b6556d2d8c7136fb6b0fc04",
+      "log_sha256": "f17a83ee8b8b5163de72df1a202839cbb68a8f8bf3678b8e86287fde66ad0643",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/LinearAlgebra/Dimension/Constructions.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Data/Finset/Sort.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneIntersectionDense.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneIntersectionCoordinates.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlanePhysicalWedgeTree.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneIntersectionExamples",
+      "source_sha256": "c3428f9a6505f7df969377bf9860c71f7be176646b7d2c2f6cf1a86e45687da2",
+      "olean_sha256": "6b4341a1652b73a19aab16660a72c3743d59f509898a63cd0390466d4495c600",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlanePhysicalIntersection.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeArrayDP",
+      "source_sha256": "bc156dfab3d4f3a4af0d5bf6134e4e56906c1d073618f404cceac4d1e176ee1b",
+      "olean_sha256": "d4b802d0e35d3c6702c17f4be62e257c06f2f98e10301dad0cafdf688f2cc63e",
+      "log_sha256": "caf753c30de41f2eb60beff620139132b6c8a08813a2bf404f249ae2a456aec5",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlaneWedgeTree.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeJoinCharges",
+      "source_sha256": "c7409a19de26baa76e83ffb1e526ea8647a4a1519952b5251d86ab90c81b6116",
+      "olean_sha256": "309aa2fe57272e29fb4cc47215e4ccd92f50e70cdd8586669d88ac918e5561b9",
+      "log_sha256": "fc021f282c5e9e9701720f3ee43b5a916643d51e92ff2f8a428ad2c5f5c71d8c",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Data/List/Basic.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Algebra/BigOperators/Group/List/Basic.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeArrayCharges",
+      "source_sha256": "40074ca35781fba5691110348ca9aa812409be3f288a76bc8b15a9ce3bd6c240",
+      "olean_sha256": "7ac161c5eafed18ba375d6e223d3dbf5737809695744cd00b2fdfa33e419b732",
+      "log_sha256": "c56bccd98d277f5b79e981cc34751b483c87990dcecf4e3f0c3ef596f78850a0",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeArrayDP.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeJoinCharges.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeCodec",
+      "source_sha256": "acd6322a9067d4d7a344e2bc50ac013cb9fd6adf23335acbaef400724bb93799",
+      "olean_sha256": "53dff6c54d2e59134ae38fd53b09be4651f8b47e5a0a4fe2a32d1d45bceee9a1",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlaneNumericalRows.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlaneWedgeSplit.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgePlan",
+      "source_sha256": "2b46200997fa95e22f768fc469aa12d2dc46d04fd1364f182d8bb62aeca74714",
+      "olean_sha256": "e5857a6591276ce9fc2168d00ecc41f52a339a14bf94ea9005954d272ae868c4",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeArrayDP.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeCodec.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeLeaf",
+      "source_sha256": "c5d282df915a0c8e2072b055b61cf4761873134a8604c49654733ca381b66928",
+      "olean_sha256": "da26526d92a832cedd99d98e039cbf55d39e36ae8a76039b6eabd33782256cc2",
+      "log_sha256": "d2a605232bbf5a97496c5acc22ec26ab57a7708d7b41ff916ead2bb05b93110c",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeCodec.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeHeight",
+      "source_sha256": "aa3fd075a69ebd3db13c3b57d0dedc337e7625dbfd6c9a1d15131f9fd19b7098",
+      "olean_sha256": "2801c8a1b0d1d6407a01a197881bf4359541748a80dcbe7cafb84f61f0692d12",
+      "log_sha256": "24797d51c3a1e545e11de5e7004b19f93d985eea5662c7036478022b0ef7b3f6",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlaneWedgeProduct.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlaneRelationPair.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeDecision",
+      "source_sha256": "0dceb046aaaaf2b40d62992961c3a3e4e8b716f09ddc9416e2172689e8d8edae",
+      "olean_sha256": "e76ff6462bffa58dba97e467c15086f5a44ed42c8096dd749750bcf2e53f6b55",
+      "log_sha256": "56677d0fb97bff32920d799e0f284e799769123877fb0ff015743595f0bcd35e",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeHeight.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlanePhysicalWedgeTree.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeRun",
+      "source_sha256": "d2ef1f79aa7c198574feabc9e5467a3f5190ae4ef194a1ea7de6b53e6e1bd782",
+      "olean_sha256": "ed2288f9bf99bf97cee6cdea8b3a49c7fac33aac4c5552f1b5f119aef19f8599",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgePlan.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeLeaf.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneFeatureSelect.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeDecision.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeCodecCorrect",
+      "source_sha256": "27726936f7cafc20ad62eddcc11b12312532b6ac44248d2054079bca8b0a72e4",
+      "olean_sha256": "9bdaf9207633958804f99a11681e60529db6914065d22a47002352586b4181a3",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeCodec.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeCodecState",
+      "source_sha256": "c56a5290b9a7a3658d3d6519a51fa3eb9d404f05f022bb3177964c21dbeb9a64",
+      "olean_sha256": "591613a6b1ef35b65b335da65ca9400dd6456abafd2d8e4b5fb37ef8f0ce570b",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeCodecCorrect.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgePlanPhysical",
+      "source_sha256": "b21934b12eb444e3643989469c4330b8bb351f5319da5ba84b2d4205d9b98d45",
+      "olean_sha256": "0833824cfa8f391d5db8add768a52d6794fab81e36e74bae14341e6202820612",
+      "log_sha256": "7762e52ce3ac91a1378b32ff0327627bdf241487549060b287b6b6311a1d5a94",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgePlan.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeCodecState.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeLeaf.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlanePhysicalWedgeTree.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgePublic",
+      "source_sha256": "5721797df0378481f89d5fec040ec024d1422bdaed38f04be27ba6e6385fef5f",
+      "olean_sha256": "267f32d78cffc78eab8f6f074c451eba3fc47bc9f63670e0d333f748e35c7d1b",
+      "log_sha256": "b77820e915113bd91902350ddf75f608fe412fd0da6962945787ad627e3bccff",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeRun.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgePlanPhysical.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeDecorate",
+      "source_sha256": "a0f93536c1b33113e85943ec8e93b4b77066efe0ab826e0f00f51dde97fed134",
+      "olean_sha256": "1a3073d78a400605ae31b0a8ae3a005a6af6ab4d897ceb173a2e1ff58c050170",
+      "log_sha256": "af3d335b660f925e5771a490075d755a977ad992626403ca4e2a2196446d5e0c",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgePlanPhysical.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneIntersectionCoordinates.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneIntersectionDense.olean",
+        "/dev/shm/review-plane-raw-1pgqyp8b/prerequisites/Mathlib/Data/List/Nodup.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeRawTree",
+      "source_sha256": "9dac9ce823d28363f7d183a6e7f1f4bb240371088531ba433a7f4fe1ba0537bb",
+      "olean_sha256": "6879ba0c6f4ce2d15664e1de5822d2a01bb4de3569795af33da197e2980575df",
+      "log_sha256": "969b34641eeac10ea4219334611c188947c8b9b2f6e6301f7568050669c25261",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgePublic.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeDecorate.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeCached",
+      "source_sha256": "a6e2f7f85efbee7881420877b8ab2b69164ac6976e06eeace554480d4c1e7bd3",
+      "olean_sha256": "7103a0f89dea34faa42f5a11baf6b610367fd758808ac1f770db85c08a957d65",
+      "log_sha256": "182470ede758e861a4265f66afe78a48be5956646db4ee75cdc7817a77fb6f15",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeRawTree.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeCachedExamples",
+      "source_sha256": "6017b5690f89886d2de169816696ae197684a234dc0e4177457dd34f8880bf85",
+      "olean_sha256": "bff4531d2afebf7bf10fca55e5387616943c2af1e87e1e8cc6080e466ac91edc",
+      "log_sha256": "410487b337137338216122a54875f81d4b0941ca99c41d5575bb9520db3be3b2",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeCached.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeCodeCharges",
+      "source_sha256": "3a99a2c3b51b766efca3b6d7292fee7166deebaeb2141e5684c60bc5b636f9e7",
+      "olean_sha256": "03089ac594938ed89780d4e14274a4424c47f1f516e37720b66b632fea7af53e",
+      "log_sha256": "2430cc393df200c6a2718fb444add2e2c05d9aed8ade09737a8ca3ae390d7622",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeCodec.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeJoinCharges.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeDecoratedExamples",
+      "source_sha256": "da541cd488287481c753387e7b33b4ce9a59a72a6c9dd014115e702181d54dbf",
+      "olean_sha256": "67c33c85de70a2aeb3e93a0e212fcdc43ba138945b2961a2dc1f266a8ba12e8a",
+      "log_sha256": "2b3694c78bbff25e093f97e58d1eca8d531d95c180226e52b6567ab7329aa35f",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeRawTree.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeStore",
+      "source_sha256": "286c8f7892315706b9084e5c9b3f5729cb5fd1af17d92878802216e38375e897",
+      "olean_sha256": "9c1642b047df021b853ea28be2ec7d5e8944bbee90816b05d02c97b43469c5aa",
+      "log_sha256": "ec1d215781e6469f98011156de013924a5ed2b36f0f21cb3b3cb52b2d79f0466",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeLayout.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeFused",
+      "source_sha256": "b2655c179ad800f865848c5d9452f312b59d91fc0a60d0046c028c9e94ba943c",
+      "olean_sha256": "b9442279eae347c12badd5cf797a53ff132c9b5c39f7259b59e85e4158588c9b",
+      "log_sha256": "921b6b94b2782686c3d5a25fe572614f7bbdf3b60f2b5a0e496271de47992f97",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeCached.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneFeaturePrefix.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeStore.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeFusedExamples",
+      "source_sha256": "b9d3f448f244fc60df0d3e7030d331fbac9a28fe99e79972b63ead9bbb03e6db",
+      "olean_sha256": "641c4e2ab9678a11c105e38c12dfed780e1bfcfc45335e28a800071bd61867a2",
+      "log_sha256": "bda1f18b03d503237af27f2c2e43cb3c4f4dbf7d466395d922782df586b88214",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeFused.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgePayload",
+      "source_sha256": "a8c5786006e067f0dccfec05c8a35af1f9dc1fde06f1a1ded357eefa16b59f16",
+      "olean_sha256": "a1b86b1c4e43c5ab454b1d89d9d45895cdc292b04dc1471bff5923dabc931be8",
+      "log_sha256": "ebba9d7c7aa0d8bcd338e86f5a08ef8c64588d1f9705a58b1f5f53cd535c5093",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeLayout.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlaneWedgeSplit.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/batteries/.lake/build/lib/lean/Batteries/Tactic/OpenPrivate.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeTreeCharges",
+      "source_sha256": "e2d5e2826821bb20385106caf964f7ec69d259360e3606a992e5acd587534173",
+      "olean_sha256": "317b7e8ca99086b73317e33784e5716caec69dfa24baea0e4648240c6ba9c4ee",
+      "log_sha256": "5d6b54c2cb4b467384a7682956c292c124af49dd62df702d8a86ab9265fb1073",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeArrayDP.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeTotalCandidates",
+      "source_sha256": "ff106193aaede793da07a3bef63012278f1845837b563a2889699949bc574132",
+      "olean_sha256": "eb74e878884a1c58e54e1da18b5432a4f7e960fb2ccb51b34edaba5218dece17",
+      "log_sha256": "cd4a0c7e594360f7a64ef0ff54aa6fed5d6e993148d8379cd4a262770de0d007",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeArrayCharges.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeTreeCharges.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/batteries/.lake/build/lib/lean/Batteries/Tactic/OpenPrivate.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgePhysicalCharges",
+      "source_sha256": "5d0f83bd66d0d5503613a4f82fde8fa9a09e5a2d6d3833e339570c507f0cafb1",
+      "olean_sha256": "3e7eb2888eb1180f1360b37a0b73f1e5adf4249dec54b46f83c1d9de8f0d15ca",
+      "log_sha256": "e13640234211a17244a424fb553facdd3d32ca42da1c867784a9a07fb306f063",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeTotalCandidates.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeCodeCharges.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeRun.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgePivotCharges",
+      "source_sha256": "9e05db57fd100c5dfe0f6f8927badeaa739c7d51510b9840bc8770f02835beb3",
+      "olean_sha256": "c12e9ff3ef124d02e7cef22e0af256c6e374643c7717db4aa61a508f60c86909",
+      "log_sha256": "f5c42cfefafd130f9249692dcea071a768f00eb4e384404ea91509eb625b901f",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneFeatureStream.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/batteries/.lake/build/lib/lean/Batteries/Tactic/OpenPrivate.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeRunExamples",
+      "source_sha256": "13d336434f537a64e5c329ff20f6e95dd1a512c6c969612deeee42f7d2729459",
+      "olean_sha256": "ba92bad8ac3f6927cc23fe82a71399dc31df36295fb166ba03e313887839383f",
+      "log_sha256": "76594091b740fbf8a35da00c421375627d3b239def50cb9799d4887b2fa4a1e2",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeRun.olean"
+      ]
+    },
+    {
+      "module": "ExactPlaneWedgeUniqueParent",
+      "source_sha256": "565400761125e638dcfbcdbb0eb2c951057d79d22dc62e2be82bd883a5082d84",
+      "olean_sha256": "e544f86e8743df4e4d52d0cce8db30addd33ddd430bfacea62ec2248e428236c",
+      "log_sha256": "e68c81fe67e2a0469e8b9b8564fff9cd6ec6069f567afea79f32f12ae6c4825b",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-tree-Qv6TZt/prior/ExactPlaneWedgeSplit.olean"
+      ]
+    }
+  ],
+  "prerequisites": [
+    {
+      "module": "Mathlib.Algebra.Torsor.Basic",
+      "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+      "git_blob": "3ca713ea2ce4ecf368b8ccbe18e975366bcc3d74",
+      "source_sha256": "530eedbdadacccb884de6c00baffd775a3b75e59dab9df0e641d8da3904e41ba",
+      "olean_sha256": "015dbd8413bd84a279db0d961b5d736bee612ed3681f3b3681c690820e3c1daf",
+      "path": "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Torsor/Basic.olean",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/Action/Pi.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/End.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/Pointwise/Set/Scalar.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Torsor/Defs.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/Action/Basic.olean"
+      ]
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.AffineSpace.AffineMap",
+      "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+      "git_blob": "89584e27796d2806d8e813668c6fc77fab958613",
+      "source_sha256": "f728a89e4b7ca7584e8b37acb226378ab34f5ec2f5fe5c45ce4e45b042c5141f",
+      "olean_sha256": "9aab9e56785138e145882751410e3a1bcc41e2b192e63bdba23b8018eacf8529",
+      "path": "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineMap.olean",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/Action/FunLike.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/FunLike.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/GroupWithZero/Action/FunLike.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Module/FunLike.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Order/Group/Pointwise/Interval.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Order/Module/Defs.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Torsor/Basic.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/Defs.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/BilinearMap.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/Pi.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Tactic/Abel.olean"
+      ]
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.AffineSpace.AffineEquiv",
+      "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+      "git_blob": "a61ebf02878f5ff2188892fac554e547dcb03fba",
+      "source_sha256": "f97a9ecbaa53f1b610f0911f2ca7730297ea78f6b7f031108fb6b67083321bfc",
+      "olean_sha256": "f8b2134431a3d343b04e693a0434559b12dfa9d48be7ec99a609b2807cad14fd",
+      "path": "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineEquiv.olean",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineMap.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/GeneralLinearGroup/Basic.olean"
+      ]
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.AffineSpace.AffineSubspace.Basic",
+      "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+      "git_blob": "8c944b319771aed55dcef0ee1eba3746df40d18e",
+      "source_sha256": "4a0cf020f5d8a29481f4b83a5271f145dcf5ddb8c86a156390d6cbea3a73a0dc",
+      "olean_sha256": "8a947a06dc68730ab4f88fce868940fb4513d6aa798642e2391da4ce06a735f3",
+      "path": "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineSubspace/Basic.olean",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/NoZeroSMulDivisors/Basic.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineEquiv.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineSubspace/Defs.olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Data.List.ToFinsupp",
+      "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+      "git_blob": "93eec00c0e9340549bbf9122a5d2337014cf7d6e",
+      "source_sha256": "aec3d275f7819e5c15c0cbd855192ef58960b88ae759425c882ae31bf788b2f5",
+      "olean_sha256": "c8716847207ed5e96ca636154ba7c824a9318938f3376563278b1e7324683dc4",
+      "path": "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Data/List/ToFinsupp.olean",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/Embedding.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Group/Finsupp.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Data/List/GetD.olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.Polynomial.OfFn",
+      "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+      "git_blob": "0adaf62fde93df0f8ba3f0a04840d2c94ea66c2c",
+      "source_sha256": "df715ca82f2a6e32e42b3260be8f3e177078130ea2cffcc08b869421d88b510f",
+      "olean_sha256": "b7b7b5aff8f9a83f59bd8aafb9ee36bbb76fc2e3bb631f1b79f640589da3989b",
+      "path": "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Polynomial/OfFn.olean",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/Polynomial/Degree/Lemmas.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Data/List/ToFinsupp.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/LinearAlgebra/Pi.olean",
+        "/dev/shm/review-plane-sampler-hya1l8tu/prerequisites/Mathlib/Algebra/BigOperators/Fin.olean"
+      ]
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.AffineSpace.Defs",
+      "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+      "git_blob": "814489ed4f8c0cc1cbf0c42de75ea0de0b7bebc6",
+      "source_sha256": "ae10245023daef1ba4197a71857bcb119dba4f347bbcbfbc3585d0b69fac8a1b",
+      "olean_sha256": "8e8b4a6f11720ae9dd5e43e2cebc7f1768dc9d0b3f18d799c48261572cae7573",
+      "path": "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/LinearAlgebra/AffineSpace/Defs.olean",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/Algebra/Torsor/Defs.olean"
+      ]
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.AffineSpace.AffineSubspace.Defs",
+      "git_revision": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+      "git_blob": "a0b2b7af682871259884382e43588e2b1525ab3f",
+      "source_sha256": "ca05a821ae0c4a5b6c32215e0b4720edfaa6112db4e281e2277cf013ae2aa8ca",
+      "olean_sha256": "4dfb7167c1b3f3a6ac0197f35883816bcd14ab7c246346319546401d165f280e",
+      "path": "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/LinearAlgebra/AffineSpace/AffineSubspace/Defs.olean",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/LinearAlgebra/AffineSpace/Defs.olean",
+        "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/LinearAlgebra/Span/Defs.olean",
+        "/dev/shm/review-exact-plane-blc725jv/prerequisites/Mathlib/Order/Atoms.olean"
+      ]
+    }
+  ],
+  "axioms": [
+    "ExactPlaneFeatureStream.select_spec",
+    "ExactPlaneFeatureStream.positions",
+    "ExactPlaneFeatureStream.prefix_bank_bound",
+    "ExactPlaneFeatureStream.skip_equal",
+    "ExactPlaneWedgeLayout.flatten_injective",
+    "ExactPlaneFeatureStream.selectPayloads_spec",
+    "ExactPlaneFeatureStream.selectFeatures_spec",
+    "ExactPlaneIntersectionKernel.span_generators",
+    "ExactPlaneIntersectionBasis.basisRows_spec",
+    "ExactPlaneIntersectionBasis.coordinates",
+    "ExactPlaneIntersectionDense.basisRows_eq",
+    "ExactPlanePhysicalIntersection.rows_length",
+    "ExactPlanePhysicalIntersection.tree_coordinates",
+    "ExactPlaneWedgeArrayDP.exact",
+    "ExactPlaneWedgeJoinCharges.product_cap",
+    "ExactPlaneWedgeJoinCharges.triple_cap",
+    "ExactPlaneWedgeArrayCharges.actual_cap",
+    "ExactPlaneWedgeLeaf.leaf_exact",
+    "ExactPlaneWedgeHeight.score_actual",
+    "ExactPlaneWedgeDecision.retained",
+    "ExactPlaneWedgeDecision.root_spec",
+    "ExactPlaneWedgePlanPhysical.exact",
+    "ExactPlaneWedgeRun.physical",
+    "ExactPlaneWedgeDecorate.decorate_valid",
+    "ExactPlaneWedgeRun.raw_spec",
+    "ExactPlaneWedgeRun.cached_spec",
+    "ExactPlaneWedgeCodeCharges.predicate_visits",
+    "ExactPlaneWedgeLayout.makeStore_eq",
+    "ExactPlaneWedgeFused.feed_eq",
+    "ExactPlaneWedgeFused.prefix_bound",
+    "ExactPlaneWedgeFused.solve_spec",
+    "ExactPlaneWedgePayload.join_packed",
+    "ExactPlaneWedgeTreeCharges.checks_cap",
+    "ExactPlaneWedgeTotalCandidates.total_cap",
+    "ExactPlaneWedgePhysicalCharges.physical_cap",
+    "ExactPlaneWedgePivotCharges.visit_cap",
+    "ExactPlaneWedgeUniqueParent.unique_parent"
+  ],
+  "axioms_sha256": "e82c1a7c24fd1c2f8a4b018b7d13609fd0b59b19fc7b760dbb67de1f592de0fb"
+}

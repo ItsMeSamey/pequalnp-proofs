@@ -1,0 +1,2 @@
+'ExactPlaneWedgeJoinCharges.product_cap' depends on axioms: [propext, Quot.sound]
+'ExactPlaneWedgeJoinCharges.triple_cap' depends on axioms: [propext, Quot.sound]

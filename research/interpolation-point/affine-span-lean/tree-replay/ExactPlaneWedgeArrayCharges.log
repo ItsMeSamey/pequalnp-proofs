@@ -1,0 +1,17 @@
+ExactPlaneWedgeArrayCharges.lean:16:4: warning: This simp argument is unused:
+  List.map_map
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [joined, List.length_flatMap, ExactPlaneWedgeJoinCharges.perLeft, ExactPlaneWedgeJoinCharges.perRight,
+    Function.comp_def, lengths, apply_ite]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ExactPlaneWedgeArrayCharges.lean:16:17: warning: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [joined, List.length_flatMap, ExactPlaneWedgeJoinCharges.perLeft, ExactPlaneWedgeJoinCharges.perRight,
+    List.map_map, lengths, apply_ite]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ExactPlaneWedgeArrayCharges.actual_cap' depends on axioms: [propext, Classical.choice, Quot.sound]

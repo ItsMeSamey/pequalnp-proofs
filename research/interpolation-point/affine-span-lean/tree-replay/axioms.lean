@@ -1,0 +1,76 @@
+import ExactPlaneFeatureStream
+import ExactPlaneFeaturePrefix
+import ExactPlaneWedgeLayout
+import ExactPlaneFeatureSelect
+import ExactPlaneIntersectionKernel
+import ExactPlaneIntersectionBasis
+import ExactPlaneIntersectionCoordinates
+import ExactPlaneIntersectionDense
+import ExactPlanePhysicalIntersection
+import ExactPlaneIntersectionExamples
+import ExactPlaneWedgeArrayDP
+import ExactPlaneWedgeJoinCharges
+import ExactPlaneWedgeArrayCharges
+import ExactPlaneWedgeCodec
+import ExactPlaneWedgePlan
+import ExactPlaneWedgeLeaf
+import ExactPlaneWedgeHeight
+import ExactPlaneWedgeDecision
+import ExactPlaneWedgeRun
+import ExactPlaneWedgeCodecCorrect
+import ExactPlaneWedgeCodecState
+import ExactPlaneWedgePlanPhysical
+import ExactPlaneWedgePublic
+import ExactPlaneWedgeDecorate
+import ExactPlaneWedgeRawTree
+import ExactPlaneWedgeCached
+import ExactPlaneWedgeCachedExamples
+import ExactPlaneWedgeCodeCharges
+import ExactPlaneWedgeDecoratedExamples
+import ExactPlaneWedgeStore
+import ExactPlaneWedgeFused
+import ExactPlaneWedgeFusedExamples
+import ExactPlaneWedgePayload
+import ExactPlaneWedgeTreeCharges
+import ExactPlaneWedgeTotalCandidates
+import ExactPlaneWedgePhysicalCharges
+import ExactPlaneWedgePivotCharges
+import ExactPlaneWedgeRunExamples
+import ExactPlaneWedgeUniqueParent
+#print axioms ExactPlaneFeatureStream.select_spec
+#print axioms ExactPlaneFeatureStream.positions
+#print axioms ExactPlaneFeatureStream.prefix_bank_bound
+#print axioms ExactPlaneFeatureStream.skip_equal
+#print axioms ExactPlaneWedgeLayout.flatten_injective
+#print axioms ExactPlaneFeatureStream.selectPayloads_spec
+#print axioms ExactPlaneFeatureStream.selectFeatures_spec
+#print axioms ExactPlaneIntersectionKernel.span_generators
+#print axioms ExactPlaneIntersectionBasis.basisRows_spec
+#print axioms ExactPlaneIntersectionBasis.coordinates
+#print axioms ExactPlaneIntersectionDense.basisRows_eq
+#print axioms ExactPlanePhysicalIntersection.rows_length
+#print axioms ExactPlanePhysicalIntersection.tree_coordinates
+#print axioms ExactPlaneWedgeArrayDP.exact
+#print axioms ExactPlaneWedgeJoinCharges.product_cap
+#print axioms ExactPlaneWedgeJoinCharges.triple_cap
+#print axioms ExactPlaneWedgeArrayCharges.actual_cap
+#print axioms ExactPlaneWedgeLeaf.leaf_exact
+#print axioms ExactPlaneWedgeHeight.score_actual
+#print axioms ExactPlaneWedgeDecision.retained
+#print axioms ExactPlaneWedgeDecision.root_spec
+#print axioms ExactPlaneWedgePlanPhysical.exact
+#print axioms ExactPlaneWedgeRun.physical
+#print axioms ExactPlaneWedgeDecorate.decorate_valid
+#print axioms ExactPlaneWedgeRun.raw_spec
+#print axioms ExactPlaneWedgeRun.cached_spec
+#print axioms ExactPlaneWedgeCodeCharges.predicate_visits
+#print axioms ExactPlaneWedgeLayout.makeStore_eq
+#print axioms ExactPlaneWedgeFused.feed_eq
+#print axioms ExactPlaneWedgeFused.prefix_bound
+#print axioms ExactPlaneWedgeFused.solve_spec
+#print axioms ExactPlaneWedgePayload.join_packed
+#print axioms ExactPlaneWedgeTreeCharges.checks_cap
+#print axioms ExactPlaneWedgeTotalCandidates.total_cap
+#print axioms ExactPlaneWedgePhysicalCharges.physical_cap
+#print axioms ExactPlaneWedgePivotCharges.visit_cap
+#print axioms ExactPlaneWedgeUniqueParent.unique_parent

@@ -1,0 +1,11 @@
+import ExactPlaneWedgeFused
+import ExactPlaneWedgePhysicalCharges
+import ExactPlaneWedgeCodeCharges
+#print axioms ExactPlaneWedgeFused.solve_eq
+#print axioms ExactPlaneWedgeFused.evaluate_eq
+#print axioms ExactPlaneWedgeFused.every_join_prefix
+#print axioms ExactPlaneWedgeFused.solve_spec
+#print axioms ExactPlaneWedgeFused.feed_eq
+#print axioms ExactPlaneWedgeFused.prefix_bound
+#print axioms ExactPlaneWedgePhysicalCharges.physical_cap
+#print axioms ExactPlaneWedgeCodeCharges.predicate_visits

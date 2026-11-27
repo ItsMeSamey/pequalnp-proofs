@@ -1,0 +1,2 @@
+'ExactPlaneFeatureStream.prefix_bank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneFeatureStream.skip_equal' depends on axioms: [propext, Classical.choice, Quot.sound]
