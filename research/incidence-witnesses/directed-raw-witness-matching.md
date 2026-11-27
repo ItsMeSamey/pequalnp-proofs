@@ -1,0 +1,11 @@
+# A weighted matching for nonprivate ANDs with singleton witnesses
+
+Work on the same bilateral normalized order-401 DAG and the independent random planted theta of matched-raw-and-planted-theta.md. Select m distinct raw-pair ANDs, and n additional distinct nonprivate gates x AND H with a nonraw sibling and a fixed raw y distinct from x such that H is true on singleton y. Give the unordered raw pair weight two per raw-pair gate and one per chosen directed witness gate. Aggregate all weights even for repeated or reversed witness pairs. Choose a maximum-weight matching of weight W. Select R actual raw excess units above degree two, counted at their respective raw. On the matching draw independent random opposite bits, use independent fair bits elsewhere, then overwrite the plant.
+
+Let a=1−1606/161203, delta=.000032, p=(1−1/161203)/2 and b be the bad probability upper bound in matched-raw-and-planted-theta.md. The expected credit on good outcomes is at least
+
+    (1−delta)(2m+n)/4 + a W/4 + p R − (m+n+R)b.
+
+Indeed any two raws disagree with probability at least (1−delta)/2 and gain at least a/2 if matched. This follows by conditioning on their planted status: with at least one free endpoint disagreement is fair, except when both are free and matched, when it is certain. Unconditionally every raw has the same deletion marginal p. Hence the probability of either specified orientation of disagreement is exactly half their disagreement probability. For a directed gate the event that x is deleted and y survives makes H nonzero by monotonicity and earns a physical one-zero AND credit. Each directed gate is counted once regardless of shared y or H. The raw-pair gates earn both orientations and the raw slots are a separate term in the zero-flow identity. Delete at most m+n+R total selected credits on bad events. Requiring the displayed lower bound to exceed 1616 suffices for the full target on this same circuit.
+
+For example, 6465 directed gates suffice without any matching bonus or raw excess; with 3250 distinct directed gates whose chosen witness pairs form a matching, the result also follows. Counts are sufficient criteria. A sole-use private AND with a rich sibling cannot be included among the n terms.
