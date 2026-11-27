@@ -1,0 +1,9 @@
+# Tree elimination with singular eight-dimensional Gram blocks
+
+Start with B_i=A_i, G_i=B_i†B_i, M_ij=B_i†B_j. At a leaf i adjacent to j set P_i=B_iG_i^+B_i† (projection onto its current remote image), replace B_j by (I−P_i)B_j, and delete i. The diagonal update is G'_j=G_j−M_ij†G_i^+M_ij. All other remaining cross maps are unchanged because the other images are orthogonal to B_i. Singular and zero self Grams are allowed. Arithmetic uses only eight-dimensional exact local matrices once the original overlaps are known, with at most seven eliminations.
+
+The component map has its input row in span(g) exactly when
+ (c_i G_i+c_j M_ij)(I−|g><g|)=0
+at each leaf and c_jG_j(I−|g><g|)=0 at the final node. Use normalized real g. Each leaf equation says B_i†T vanishes on g-perpendicular inputs, equivalent to the removed P_i T vanishing there. The remaining weighted sum uses the projected B_j with all surviving coefficients unchanged. Removed maps and final residual have mutually orthogonal images; zero residuals are allowed. This tests the input row, not the remote G2 amplitude. Across all three block cuts, imposing the native row condition on every component with the SAME coefficients forces the total into the one-dimensional target span. Check a nonzero amplitude to fix the scalar. This tests specified lists, without discovering the rays.
+
+A one-edge core gives a further coefficient-sensitive condition: outside the union of self- and other-cross-map supports, let m_P=tr(P A_u†A_v). The target vector ⟨g|P|g⟩ must lie in the real linear span of the two vectors Re(m_P), Im(m_P), including its zero entries. Indeed the Pauli expectation of the component Gram is 2Re(conj(c_u)c_v m_P), equal to a common positive target factor times the native expectation. Failure rejects all possible complex coefficients; a passing test need not be sufficient.
