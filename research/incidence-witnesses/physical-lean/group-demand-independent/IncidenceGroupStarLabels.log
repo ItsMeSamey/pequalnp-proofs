@@ -1,0 +1,36 @@
+IncidenceGroupStarLabels.lean:11:0: warning: automatically included section variable(s) unused in theorem `IncidenceGroupStarLabels.touches`:
+  [Fintype E]
+  [DecidableEq E]
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype E] [DecidableEq E] [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+IncidenceGroupStarLabels.lean:16:0: warning: automatically included section variable(s) unused in theorem `IncidenceGroupStarLabels.reverse`:
+  [Fintype E]
+  [DecidableEq E]
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype E] [DecidableEq E] [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+IncidenceGroupStarLabels.lean:18:0: warning: automatically included section variable(s) unused in theorem `IncidenceGroupStarLabels.fan_unique`:
+  [Fintype E]
+  [DecidableEq E]
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype E] [DecidableEq E] [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+IncidenceGroupStarLabels.lean:42:0: warning: automatically included section variable(s) unused in theorem `IncidenceGroupStarLabels.opposite`:
+  [Fintype E]
+  [DecidableEq E]
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype E] [DecidableEq E] [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

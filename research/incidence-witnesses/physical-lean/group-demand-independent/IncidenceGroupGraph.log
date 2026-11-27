@@ -1,0 +1,2 @@
+'IncidenceGroupGraph.core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceGroupGraph.restore' depends on axioms: [propext, Quot.sound]

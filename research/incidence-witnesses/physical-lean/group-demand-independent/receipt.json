@@ -1,0 +1,9 @@
+{
+  "ref": "a72dd601c52589b8f739c5920b68791159e94971:research/incidence-witnesses/physical-lean/group-demand-eight.zip",
+  "archive": "4ac3dcf15ef48945aa95625bf4026555cf17b1d0190c9608516f4c31d09ff71d",
+  "prior": "caf96c854293e11c1c046b704ecc9a12b2054b23aa31b6a0d68e9129602cd09b",
+  "fresh": 8,
+  "prior_count": 18,
+  "ledger": "6bbc700033afab7601325065a6f19a2561697d20d971b1ee9cf43a85d218b8bf",
+  "guard": "7feeff9f27dd3a32dac49bda864f80f59bb841c5d4acab546f90ca2e21828842"
+}

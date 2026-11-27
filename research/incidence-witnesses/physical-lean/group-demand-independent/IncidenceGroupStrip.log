@@ -1,0 +1,15 @@
+IncidenceGroupStrip.lean:10:0: warning: automatically included section variable(s) unused in theorem `IncidenceGroupGraph.high_survivors`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+IncidenceGroupStrip.lean:44:0: warning: automatically included section variable(s) unused in theorem `IncidenceGroupGraph.stripped_degree`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'IncidenceGroupGraph.high_survivors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceGroupGraph.stripped_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceGroupGraph.stripped_density' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+'IncidenceGroupGraph.leaf_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceGroupGraph.density_with_isolated_loops' depends on axioms: [propext, Classical.choice, Quot.sound]
