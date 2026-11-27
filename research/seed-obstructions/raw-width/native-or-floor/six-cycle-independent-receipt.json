@@ -1,0 +1,84 @@
+{
+  "manifest": "f824a27a86975b60fe6fbd018f79e0e3d29416787ff41485dfe46bb43c14f517",
+  "members_checked": 100,
+  "mode": "source, archived kernel output and current first-match object hash audit; no compiler invoked",
+  "modules": {
+    "SixCycleAudit": {
+      "imports": {
+        "/dev/shm/official9822-new-objects/SixCycleTerminal.olean": "a7c9d6b2751919070975c651bae0822abf4ac9584e26b34a566658b80364a5a9"
+      },
+      "object": "f44528311e7dd91305bdc4700de90b7a8157c1cc8bedbac838e553117119b4fb",
+      "receipt": "receipts/20261127T103446Z/SixCycleAudit",
+      "source": "7b2cbbd6a0f9874952091550ae4d0a38ae59bbfa593c3a2c5eb6e8b37ebfa55d"
+    },
+    "SixCycleCore": {
+      "imports": {
+        "/dev/shm/official9822-new-objects/SixCycleTable.olean": "494d09daa297723debc56e921e417bf19fc7906539fba64f499d43e3f4462f89"
+      },
+      "object": "3663ddbdcf709c92b7e6fe4fb733feab51d691d0796fd0df162946fb72be1df8",
+      "receipt": "receipts/20261127T103425Z/SixCycleCore",
+      "source": "067f842df6a72d365baf8d67b1fc0b6bfbb6a790040027f564d014e40b9f226c"
+    },
+    "SixCycleEncoded": {
+      "imports": {
+        "/dev/shm/official9822-new-objects/SixCycleMasks.olean": "e6f6a6a86ccdff2912b30ad12f44eab078a6613f7f0b9158da908cf150bec265"
+      },
+      "object": "9dbb06fbdd75d4b2207149b7761b34f6292751289247cb6bdd7aca475440f7bd",
+      "receipt": "receipts/20261127T103113Z/SixCycleEncoded",
+      "source": "dadad7e85b2a13cb0fd715510d1f09cd8364834de377e7793aa3c56658c5637e"
+    },
+    "SixCycleMasks": {
+      "imports": {
+        "/dev/shm/official9822-new-objects/TightRowPhysical.olean": "bf2c3d1ee221c373cf42021b1cb0de9d86aeeb1652e91ebb0967448890cae345"
+      },
+      "object": "e6f6a6a86ccdff2912b30ad12f44eab078a6613f7f0b9158da908cf150bec265",
+      "receipt": "receipts/20261127T102927Z/SixCycleMasks",
+      "source": "65631e2743aeff25a98c9f39f08ba9dcdbd1df61912592dd5a0540e295297931"
+    },
+    "SixCyclePacking": {
+      "imports": {
+        "/dev/shm/official9822-new-objects/SixCycleEncoded.olean": "9dbb06fbdd75d4b2207149b7761b34f6292751289247cb6bdd7aca475440f7bd",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/Fin.olean": "3f1eb1db54ed40afb0ba451baf4f16e94e813c604b00c6b4925f568ccba962af"
+      },
+      "object": "5ad15dc17ad33f6a8a76843fad25834a3f45b748f83a93640b9d81d6846c18ac",
+      "receipt": "receipts/20261127T103113Z/SixCyclePacking",
+      "source": "b64847a961980478504832c9f3e0c534cbe5088069bb764ceb9facc48fc4b368"
+    },
+    "SixCycleTable": {
+      "imports": {
+        "/dev/shm/official9822-new-objects/SixCyclePacking.olean": "5ad15dc17ad33f6a8a76843fad25834a3f45b748f83a93640b9d81d6846c18ac"
+      },
+      "object": "494d09daa297723debc56e921e417bf19fc7906539fba64f499d43e3f4462f89",
+      "receipt": "receipts/20261127T103425Z/SixCycleTable",
+      "source": "beb545d6d122c5896f570e6ae3c54187b14b6a38fe220c38eddd6707541319c3"
+    },
+    "SixCycleTerminal": {
+      "imports": {
+        "/dev/shm/official9822-new-objects/SixCycleCore.olean": "3663ddbdcf709c92b7e6fe4fb733feab51d691d0796fd0df162946fb72be1df8",
+        "/dev/shm/official9822-new-objects/SixCycleWitness.olean": "e42d93981e8e68d9b5e75d8aa2aacb20dfa1b05d3e71950193bccc9cf291fc0f",
+        "/dev/shm/official9822-new-objects/TightRowIndexed.olean": "5c3d10919e3fb7dfcffcb9719ff2d795a2fcfc593ed74b66b4ca85d41af2386b"
+      },
+      "object": "a7c9d6b2751919070975c651bae0822abf4ac9584e26b34a566658b80364a5a9",
+      "receipt": "receipts/20261127T103425Z/SixCycleTerminal",
+      "source": "72d3e4985ccf1ea8f5816f045ebb353792243581cebfde19558313b70c786a01"
+    },
+    "SixCycleWitness": {
+      "imports": {
+        "/dev/shm/official9822-new-objects/SixCycleMasks.olean": "e6f6a6a86ccdff2912b30ad12f44eab078a6613f7f0b9158da908cf150bec265",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/Fin.olean": "3f1eb1db54ed40afb0ba451baf4f16e94e813c604b00c6b4925f568ccba962af"
+      },
+      "object": "e42d93981e8e68d9b5e75d8aa2aacb20dfa1b05d3e71950193bccc9cf291fc0f",
+      "receipt": "receipts/20261127T103137Z/SixCycleWitness",
+      "source": "a017741f3552df018a6d517c41b1586b2c24f2494fb5d55ef9d97ad470c9f430"
+    }
+  },
+  "public": [
+    "TightRow.SixCycle.productsClosed",
+    "TightRow.SixCycle.allFirst",
+    "TightRow.SixCycle.noFour",
+    "TightRow.SixCycle.fiveWitness",
+    "TightRow.SixCycle.literalBank",
+    "TightRow.SixCycle.terminal_five_minimum"
+  ],
+  "zip": "550fb75f77366a6548639b02fc9c19f993572fa13348aea02f8fb34b7d4500a3"
+}
