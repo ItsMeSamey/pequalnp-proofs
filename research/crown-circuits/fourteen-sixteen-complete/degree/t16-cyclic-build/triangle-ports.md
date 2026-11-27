@@ -1,0 +1,15 @@
+# The triangle needs at least three exported signals
+
+Suppose a twenty-gate monotone decoder receives the three triangle vertex indicators and the four two-edge stars. Each star provides two independent leaf inputs and their disjunction. Assume that all triangle information reaches the rest of the decoder through two signals computed solely from the triangle. Write k for the number of gates used in this autonomous encoder.
+
+The empty triangle and each singleton edge must be distinguishable with one fixed outside edge enabled. Each singleton and each two-edge subset containing it must be distinguishable with the outside empty. Monotonicity now gives a strict chain in the two-bit cube on every such three-term input chain. Thus empty has code 00, each singleton has one of 01 and 10, and every pair has 11.
+
+If both singleton codes occur, use two independent new raw variables as the code bits. The four valuations have valid triangle interpretations of weights zero, one, one and at least two, respectively. Building the four star centers on the eight other raws costs four ORs. The resulting ten-variable threshold-two circuit has at most 24−k gates. The established ten-variable minimum of 24 implies k=0. Any two distinct unprocessed triangle vertices, however, are simultaneously true at their common singleton edge. Repeated ports cannot give both singleton codes.
+
+If all singletons have the same code, the two ports compute nonemptiness and the two-edge threshold, in some order. Compute the ports on two independent surrogate raws by one OR and one AND. The ten-variable lower bound now implies k≤2. Neither port equals a raw vertex. Threshold cannot be produced in one gate: any pair of vertices is simultaneously present on a singleton, and any vertex is present on a singleton. Thus nonemptiness must be the first gate, computed by an OR. At the second gate, using nonemptiness as an operand with any vertex yields either the vertex or nonemptiness on every valid triangle, and using two raw vertices again fails. This contradicts k≤2.
+
+This result allows arbitrary fanout and arbitrary use of the triangle ports by the exterior decoder. It concerns a triangle-only encoder with two exported signals in the triangle-plus-four-stars residual.
+
+## Pinning a vertex false
+
+Fix any triangle vertex false, then identify its other two vertex indicators with one new raw z. Each valuation represents a valid original triangle, containing its opposite edge exactly when z is true. Rebuild the four star centers with four ORs to obtain threshold two on nine independent raws. For a twenty-gate decoder with eight ANDs, at most two decoder gates can be removed by constant propagation, aliasing, absorption or deletion of dead gates in this restriction. Indeed three removals would leave at most 21 gates overall, with at least five AND gates if exactly three gates were removed. The established nine-variable minimum is 21, with exactly four ANDs at that size. Four or more deletions contradict the size minimum directly. This bound is for reductions which simply bypass or delete gates while preserving the operations on surviving gates.
