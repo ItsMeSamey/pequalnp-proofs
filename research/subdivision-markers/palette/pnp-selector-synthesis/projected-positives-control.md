@@ -1,0 +1,5 @@
+# An original NO with three positive charge projections
+
+Use K6 with charges 1,2,3 on A,B,C, the other vertices D,E,F neutral. Realize these charges by tags on the three original edges from A,B,C to F. For a cut potential z define α=z_A+z_B, β=z_A+z_C, f=z_D+z_F, g=z_E+z_F; these are the indexed reads of four physical edges. Test Ω=α∧f+β∧g, rank four on the cut space.
+
+Original neutrality forces A,B,C into one component because their charges form a minimal zero-sum triple. Thus α and β vanish on both cuts of every actual pair. In a one-bit projection exactly two charged vertices read one. Put those two together at joint color 0, the remaining charged vertex at e1, and F=0. If A or B is the singleton choose D=e2,E=0; if C is the singleton choose D=0,E=e2. With A alone α=β=e1; with B alone α=e1 and β=0; with C alone α=0 and β=e1. In all three cases Ω evaluates to one. All three used color classes are physically connected in K6 and neutral under the selected projection. Thus every separate scalar charge test can succeed on the same original Ω, even though the original two-bit problem has no witness. The same-forest verification in the full reduction is essential.
