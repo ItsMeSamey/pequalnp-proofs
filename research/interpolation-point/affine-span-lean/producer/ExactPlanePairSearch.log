@@ -1,0 +1,3 @@
+'ExactPlanePairSearch.count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlanePairSearch.returned' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlanePairSearch.complete' depends on axioms: [propext, Classical.choice, Quot.sound]

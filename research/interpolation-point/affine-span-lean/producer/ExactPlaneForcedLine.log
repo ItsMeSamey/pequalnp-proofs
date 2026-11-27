@@ -1,0 +1,28 @@
+ExactPlaneForcedLine.lean:8:8: warning: automatically included section variable(s) unused in theorem `_private.ExactPlaneForcedLine.0.ExactPlaneForcedLine.span_image`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ExactPlaneForcedLine.lean:57:0: warning: automatically included section variable(s) unused in theorem `ExactPlaneForcedLine.axis_yes`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ExactPlaneForcedLine.lean:65:0: warning: automatically included section variable(s) unused in theorem `ExactPlaneForcedLine.named_injective`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ExactPlaneForcedLine.lean:78:0: warning: automatically included section variable(s) unused in theorem `ExactPlaneForcedLine.compatible_of_chart`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ExactPlaneForcedLine.named_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneForcedLine.forced_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneForcedLine.axis_yes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneForcedLine.named_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
