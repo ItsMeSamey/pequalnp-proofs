@@ -1,0 +1,7 @@
+# The universal fixed-padding branch count is exactly ceil(N/2)
+
+Let l₁,l₂ be distinct original query labels and v their intersection. Choose the point restriction A=l₁∪l₂, the query restriction Q={l₁,l₂}, and the fixed padding set T of the q−1 other lines through v. The branch uses both local presence guards and calls D(P∩A,(Y∩Q)∪T). The same construction works for every monotone oracle D agreeing with incidence on all exact-q line masks.
+
+If exactly one l_i is queried, the padded mask has size q. Within A, its point union is exactly l_i: each padding line meets both chosen lines only at v, which lies on l_i. Thus the branch accepts exactly a flag on that queried line. If both are queried and P∩A is nonempty, choose an active point x on a queried l_i. The exact-q submask T∪{l_i} already gives an incidence at x. Monotonicity forces acceptance on the padded (q+1)-set. If no query in Q or no point in A is selected, a local presence guard rejects. Therefore this one branch represents the union of the two full line stars on arbitrary masks.
+
+Pair all N lines, pairing an odd leftover with a previously covered line. OR the ceil(N/2) branches. This matches the lower bounds of fixed-padding-or-black-box-bound.md and separated-oracle-double-star-bound.md in even the more restrictive fixed-padding model. It is an exact branch count, not a lower bound on the size of physically shared oracle computations.
