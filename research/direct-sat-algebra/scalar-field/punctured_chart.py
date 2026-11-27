@@ -31,7 +31,7 @@ class TableField(BinaryField):
     def mul(self,a,b):
         return apply_basis([apply_basis(row,b) for row in self.table],a)
 
-    def certify(self):
+    def certify(self, *, product=False):
         units=[1<<j for j in range(self.m)]
         if any(self.mul(1,x)!=x for x in units):
             return False
@@ -45,8 +45,11 @@ class TableField(BinaryField):
         # Finite reduced commutative algebras are products of fields. Bijective
         # squaring excludes nilpotents. Fixed dimension counts field factors.
         squares=[self.mul(x,x) for x in units]
-        if len(independent(squares))!=self.m or len(independent(
-                a^b for a,b in zip(units,squares)))!=self.m-1:
+        if len(independent(squares))!=self.m:
+            return False
+        if product:
+            return True
+        if len(independent(a^b for a,b in zip(units,squares)))!=self.m-1:
             return False
         self.trace_mask=sum(self._trace(x)<<j for j,x in enumerate(units))
         return True

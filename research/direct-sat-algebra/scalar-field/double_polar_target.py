@@ -8,11 +8,11 @@ For arbitrary ANFs the binary Fourier fallback uses 2^m polynomial-cost
 Gauss sums (a polynomial number of repetitions for a witness). A certified
 chart with h recovered pins also supports counting using 2^h polynomial
 operations and at most 2^h curve-count calls. point_count(field,D) must count
-projective points of y^2+xy=x^3+D^2 exactly. When no curve oracle is supplied,
-the default avoids exponential per-curve calls by using the direct Fourier
-fallback whenever a nontrivial mixed phase could require one. On a promised
-hidden slice decision takes 2^O(h) poly(input), and exact counting has this
-bound with a polynomial-time binary curve point counter.
+projective points of y^2+xy=x^3+D^2 exactly. A chart is selected when h<m;
+otherwise the direct character sum is used. The default curve backend scans
+at most 63 nonzero coordinates on tiny fields, then switches to polynomial
+Laurent carries. On a promised hidden slice both decision and exact counting
+take 2^O(h) times polynomial bit work.
 """
 from itertools import combinations
 from double_polar_chart import recover
@@ -76,8 +76,7 @@ class Target:
         self._check(t)
         if self.chart is not None and len(self.chart.normals)<self.m:
             form,goal,pins,_=self.chart.homogeneous(t)
-            if point_count is not None or not goal or not pins:
-                return form.count(goal,pins,point_count=point_count)
+            return form.count(goal,pins,point_count=point_count)
         return self._fourier(t)
 
     def decide(self,t):
@@ -155,6 +154,26 @@ def self_test():
                 expect=sum(hidden(x)==t for x in range(1<<n))
                 assert problem.count(t)==expect
                 assert problem.count(t,point_count=small_field_point_count)==expect
+    # Verify the native default through a densely recoded raw chart. The
+    # spy calls the actual carry routine, while the public call has no override.
+    from unittest.mock import patch
+    import laurent_carry
+    d=2
+    diagonal=tr_one
+    def dense(x):
+        v=x^(x>>1)^(x>>3)^(x>>5)
+        z=offset2^apply_basis(basis2,v^412)
+        a,b=z&127,z>>7
+        y=f.mul(a,b)^f.mul(a,a)^f.mul(diagonal,f.mul(b,b))
+        return y^(y>>1)^(y>>3)^47
+    offset2,basis2,_=affine_domain(14,[(1|(2<<7),1)])
+    instance=Target(13,7,*interpolate(dense,13))
+    assert instance.chart is not None
+    goal=dense(0)
+    with patch.object(laurent_carry,"point_count",wraps=laurent_carry.point_count) as native:
+        observed=instance.count(goal)
+        assert native.call_count>0
+    assert observed==sum(dense(x)==goal for x in range(8192))
     # Frobenius squared is binary linear and leaves the bilinear polar intact.
     # Its degree-four coordinate cannot be fitted by field linear/square terms.
     from double_polar_chart import polar_field

@@ -94,13 +94,13 @@ def gram_coordinates(gram,f):
     return chosen,tuple(embedding)
 
 
-def linear_data(n,m,linear,pairs,field,output_basis):
+def linear_data(n,m,linear,pairs,field,output_basis, *, projected=False):
     enc=coordinates(output_basis)
     gram=tuple(tuple(enc(pairs.get(tuple(sorted((i,j))),0)) for i in range(n))
                for j in range(n))
     selected,embedding=gram_coordinates(gram,field)
     d=len(selected)
-    if not d or d%2 or len(independent(embedding))!=n:
+    if not d or d%2 or (not projected and len(independent(embedding))!=n):
         return None
     subgram=tuple(tuple(gram[i][j] for j in selected) for i in selected)
     zs=[chunks(z,m,d) for z in embedding]
@@ -112,8 +112,8 @@ def linear_data(n,m,linear,pairs,field,output_basis):
     return embedding,subgram,tuple(enc(l)^cross(z) for l,z in zip(linear,zs))
 
 
-def fit(n,m,constant,linear,pairs,field,output_basis):
-    data=linear_data(n,m,linear,pairs,field,output_basis)
+def fit(n,m,constant,linear,pairs,field,output_basis, *, projected=False):
+    data=linear_data(n,m,linear,pairs,field,output_basis,projected=projected)
     if data is None:
         return None
     embedding,subgram,values=data

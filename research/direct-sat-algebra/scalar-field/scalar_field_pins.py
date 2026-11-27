@@ -4,9 +4,10 @@ ScalarForm(field,squares,cross) represents sum squares[i]*x_i^2 plus
 sum cross[i,j]*x_i*x_j over a supplied binary field with identity 1.
 Packed inputs concatenate field coordinates starting at low bits. Pins
 are (input mask, rhs bit). count accepts point_count(field,D) for the
-number of projective rational points of y^2+xy=x^3+D^2. The default
-enumerates the field and is exponential in its binary degree. A supplied
-polynomial-time point counter yields 2^h times polynomial counting work.
+number of projective rational points of y^2+xy=x^3+D^2. By default, fields of size
+at most 64 use direct counting (at most 63 nonzero x-coordinates). Larger
+fields use the polynomial-time Laurent carry counter. A supplied callback
+overrides both choices. Default counting costs 2^h times polynomial bit work.
 plane_witness is independent of point counting.
 """
 from itertools import combinations
@@ -25,6 +26,17 @@ def small_field_point_count(field, d):
         if not field.trace(x ^ field.mul(d, field.inverse(x))):
             count += 2
     return count
+
+
+DIRECT_CURVE_MAX_SIZE = 64
+
+
+def default_point_count(field, d):
+    """Bound direct enumeration by a fixed 63 trials, then use signed carries."""
+    if field.size <= DIRECT_CURVE_MAX_SIZE:
+        return small_field_point_count(field, d)
+    from laurent_carry import point_count
+    return point_count(field, d)
 
 
 class ScalarForm:
@@ -101,7 +113,7 @@ class ScalarForm:
         reduced, dual = checked
         rhs = sum(c << i for i,(_,c) in enumerate(reduced))
         f = self.field
-        backend = small_field_point_count if point_count is None else point_count
+        backend = default_point_count if point_count is None else point_count
         cache = {}
         total = 0
         for s in range(1 << len(dual)):

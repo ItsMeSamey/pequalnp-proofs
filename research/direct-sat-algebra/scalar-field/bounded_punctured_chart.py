@@ -50,7 +50,7 @@ def rows_for(basis):
     return rows
 
 
-def complete(m,lp,lr,cross, *, known_unit=None):
+def complete(m,lp,lr,cross, *, known_unit=None, product=False):
     """Complete a partial product and check the field and every supplied pair."""
     enc_l,enc_r=coordinates(lp),coordinates(lr)
     rows=rows_for(lr)
@@ -104,7 +104,7 @@ def complete(m,lp,lr,cross, *, known_unit=None):
         matrix=unpack(apply_basis(algebra,alg_coords(z)))
         table.append(tuple(encode(apply_basis(matrix,y)) for y in basis))
     field=TableField(tuple(table))
-    if not field.certify():
+    if not field.certify(product=product):
         return None
     li,ri=tuple(map(encode,lp)),tuple(map(encode,lr))
     if any(field.mul(x,y)!=encode(cross[i][j]) for i,x in enumerate(li)
