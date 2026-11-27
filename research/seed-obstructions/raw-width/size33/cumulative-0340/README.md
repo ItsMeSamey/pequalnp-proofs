@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+**18 zero-terminal originals remain.** Exact native checks close IDs 120 and 143. The totals are 4,014 of 4,032 zero-terminal and all 6,213 one-terminal originals. The normalized minimum remains 33–34. [18 remaining IDs](t0-remaining-18.ids) · [Two-case check](../residual620/two-actual.log) · [Audit manifest](direct-two-4014.sha256)
+
 **20 zero-terminal originals remain.** A physical argument closes two width-23 originals directly and leaves one possible ordinary pair for each of four others. A fresh native run rejects those four pairs. The totals are 4,012 of 4,032 zero-terminal and all 6,213 one-terminal originals. The normalized minimum remains 33–34. [20 remaining IDs](t0-remaining-20.ids) · [Six-case source and checks](../residual620/general-six.sha256) · [Audit manifest](direct-six-4012.sha256)
 
 **All 6,213 one-terminal originals are excluded.** Independent physical review and 12 signed pivot checks close the final four. The remaining 26 cases are all zero-terminal, with 4,006 of 4,032 excluded. The normalized minimum remains 33–34. [26 remaining IDs](t0-remaining-26.ids) · [Complete one-terminal ID list](t1-signed-6213.ids) · [Audit manifest](all-t1-6213.sha256)
