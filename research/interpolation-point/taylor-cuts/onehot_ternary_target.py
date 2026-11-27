@@ -3,7 +3,7 @@ from onehot_colour_folds import recognize
 from ternary_frame import color
 
 
-def decide(n, clauses, equations, *, state_cap, use_prism=True):
+def decide(n, clauses, equations, *, state_cap, use_prism=True, four_row_high=None):
     if type(state_cap) is not int or state_cap < 0:
         raise ValueError("state_cap must be a nonnegative integer")
     clauses = tuple(tuple(row) for row in clauses)
@@ -13,7 +13,8 @@ def decide(n, clauses, equations, *, state_cap, use_prism=True):
         return "UNKNOWN", None, {"reason": "unrecognized source"}
     names, graph = parsed
     edges = [(u, v) for u, neighbors in graph.items() for v in neighbors if u < v]
-    status, coloring, stats = color(len(names), edges, cap=state_cap, use_prism=use_prism)
+    status, coloring, stats = color(len(names), edges, cap=state_cap, use_prism=use_prism,
+                                    four_row_high=four_row_high)
     if coloring is None:
         return status, None, stats
     witness = 0

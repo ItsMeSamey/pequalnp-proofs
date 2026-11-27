@@ -83,10 +83,12 @@ def palettes(n,edges):
     return frames
 
 
-def color(n,edges,*,cap=None,use_prism=False,check_pencil=True):
+def color(n,edges,*,cap=None,use_prism=False,check_pencil=True,transfer_rank=None,four_row_high=None):
     """Return status, coloring or None, and metrics. Cap limits 3**residual_rank."""
     if type(n) is not int or n<0 or cap is not None and (type(cap) is not int or cap<0):
         raise ValueError("invalid dimension or cap")
+    if four_row_high is not None and (type(four_row_high) is not int or four_row_high<0):
+        raise ValueError("four_row_high must be a nonnegative integer")
     edges=tuple(edges)
     frames=palettes(n,edges)
     stats={"frames":0,"peeled_groups":0,"residual_rank":0}
@@ -128,6 +130,7 @@ def color(n,edges,*,cap=None,use_prism=False,check_pencil=True):
             cols[rep][k]=(cols[rep][k]+scale*row[i])%3
     corrections=[]
     slopes={}
+    raw_cols=cols.copy() if four_row_high is not None else None
     while True:
         groups={}
         for i,col in list(cols.items()):
@@ -158,21 +161,44 @@ def color(n,edges,*,cap=None,use_prism=False,check_pencil=True):
         if certificate is not None:
             stats["certificate"]=certificate
             return "UNSAT",None,stats
-    if rank and cap is not None and 3**rank>cap:
-        return "UNKNOWN",None,stats
-    zero=(0,)*rank
-    states={zero:0}
-    for i,v in cols.items():
-        v=tuple(v[p] for p in sorted(basis))
-        nxt={}
-        for state,mask in states.items():
-            for s in (1,2):
-                nxt.setdefault(sub(state,v,-s),mask | ((s-1)<<i))
-        states=nxt
-    if zero not in states:
-        return "UNSAT",None,stats
-    for i in cols:
-        slopes[i]=1+((states[zero]>>i)&1)
+    four_row_signs=None
+    if raw_cols is not None and rank:
+        from ternary_four_signs import solve
+        ids=tuple(raw_cols)
+        # Equivalent scalar multiples impose one constraint.
+        system=tuple(dict.fromkeys(_projective(row) for row in zip(*raw_cols.values()) if any(row)))
+        status,signs,metrics=solve(system,n=len(ids),high_cap=four_row_high)
+        stats["four_row"]={**metrics,"status":status}
+        if status=="UNSAT":
+            return status,None,stats
+        if status=="SAT":
+            four_row_signs=dict(zip(ids,signs,strict=True))
+    if four_row_signs is not None:
+        slopes=four_row_signs
+        corrections=[]
+    elif transfer_rank is not None:
+        from ternary_transfer_condition import full_support
+        status,signs,metrics=full_support(cols,search_rank=transfer_rank,cap=cap)
+        stats.update(metrics)
+        if status!="SAT":
+            return status,None,stats
+        slopes.update(signs)
+    else:
+        if rank and cap is not None and 3**rank>cap:
+            return "UNKNOWN",None,stats
+        zero=(0,)*rank
+        states={zero:0}
+        for i,v in cols.items():
+            v=tuple(v[p] for p in sorted(basis))
+            nxt={}
+            for state,mask in states.items():
+                for s in (1,2):
+                    nxt.setdefault(sub(state,v,-s),mask | ((s-1)<<i))
+            states=nxt
+        if zero not in states:
+            return "UNSAT",None,stats
+        for i in cols:
+            slopes[i]=1+((states[zero]>>i)&1)
     for scales,rest in reversed(corrections):
         need=-sum(a*slopes[i] for i,a in rest.items())
         ids=list(scales)
