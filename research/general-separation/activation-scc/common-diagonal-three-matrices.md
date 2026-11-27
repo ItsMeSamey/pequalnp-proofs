@@ -1,0 +1,9 @@
+# Three independent matrices on one Boolean diagonal
+
+Given three binary symmetric matrices on the same indexed ground set, deciding whether all three become nonsingular after adding the same variable diagonal is NP-complete. A successful diagonal is a polynomial-size verifiable witness. The reduction uses balanced perfect tripartite 3D matching. Deal directly with an isolated source vertex (NO). Duplicate one incident triple at every first-shore vertex of even degree, leaving distinct physical indices for the added copies. The duplicate shares the same three endpoints. Every first-shore degree is now odd.
+
+For each shore form the direct sum of all-ones blocks on its incident triple sets, indexed in the same original order. After adding the diagonal, a block of order r has determinant Πd_i + Σ_i Π_{j≠i}d_j over GF(2), by multilinearity of a rank-one update. Two zeros kill the determinant; one zero gives one; no zeros gives 1+r mod 2. Thus all three matrices admit at most one selected (zero) triple per vertex, with exactly one on the entire first shore. Balanced shores then force a perfect matching. Parallel copies cannot both be chosen, hence either direction returns an original witness. The construction uses no fixed borders. Simultaneously complementing all diagonal variables makes all three fixed matrices zero-diagonal clique unions.
+
+An alternative reduction from exact-three-occurrence balanced 3DM uses triangle blocks directly. The determinant of the zero-diagonal K3 plus diagonal x,y,z is x+y+z+xyz, which recognizes exactly one selected bit. [Primary restricted 3DM theorem, Theorem 2.7](https://www.sciencedirect.com/science/article/pii/S0166218X12004428)
+
+This reduction needs three different base matrices and does not establish complexity for principal neighbors of a single matrix.
