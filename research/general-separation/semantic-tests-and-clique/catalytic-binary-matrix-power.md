@@ -1,0 +1,34 @@
+# Catalytic streaming of binary matrix powers
+
+For each n put N=2^n. On address x let A_x be a w-by-w binary matrix, a_x,b_x binary w-vectors, and T_x a nonnegative integer in k binary digits, allowing leading zeroes. Supply one charged nonuniform Boolean circuit answering indexed entries of A, a, b and the exponent using x and a type/index selector. Assume w≥1, 0≤k≤N, w(log(w+2)+log(k+2))=o(N/n), and that the entry circuit uses at most αN/(4n) bounded-fanin gates. Here α is the fixed description-counting constant of the stream theorem. A controller computes every bit b_xᵀ A_x^{T_x} a_x over F₂ exactly, with at most Cn initialized bits for an absolute C and O(w(log(w+2)+log(k+2))) borrowed bits. It restores every borrowed string at each emission. State and gates each fit αN/n eventually. This includes w up to N/n^{2+ε} for any fixed ε>0. With w,k and the entry circuits constructible and evaluable in time poly(N), the target is in ordinary E by binary matrix powering.
+
+**Products on borrowed registers.** For L compatible linear maps of dimensions at most W, compute Y ← Y + (M_L…M_1)X for disjoint X,Y, restoring O(W log(L+2)) other initially arbitrary bits. At a leaf loop over row-column pairs and XOR each entry times its source bit into the destination. Split a product as B A and allocate a disjoint dirty intermediate Z. Apply in order
+     
+    Z ← Z + A X
+    Y ← Y + B Z
+    Z ← Z + A X
+    Y ← Y + B Z.
+
+For every initial Z the net increment is B A X. Recurse with one intermediate per depth. Append identities to make L a power of two, allowing scalar endpoint layers. The empty product is an identity. Generate leaves by a base-four counter of O(log(L+2)) bits. Its digits 0,2 select the left half and endpoint pair (source, depth-reserved intermediate), while 1,3 select the right half and (depth-reserved intermediate, destination). Scanning digits from the root computes the layer number and endpoint register numbers without a recursion stack. For the dimension and indexing rules below, ordinary binary indices require O(log(W+2)+log(L+2)) initialized bits. There are O((L+1)^2) leaf calls. This is a transparent register computation in the tradition of Cleve and Buhrman et al. A quantitative catalytic evaluation of layered products is given by [Chakraborty, Datta and Shandilya, Theorem 3.4](https://arxiv.org/html/2610.41723v1#S3.SS2).
+
+**Decimating the requested time.** If F(z)=P(z)/Q(z) over F₂ with Q(0)=1, deg Q≤w and deg P<w, then F=PQ/Q(z²). For d∈{0,1} put Λ_d(H)_j=H_{2j+d}. The subsequence of F at indices 2j+d has series Λ_d(PQ)/Q. The new numerator still has degree below w, and its coefficient at j is the linear combination of P_i with weights Q_{2j+d−i}, where out-of-range coefficients are zero. Read the k digits of T_x least significant first. Thus coefficient T_x uses k width-w linear maps. Prepend one layer mapping a scalar to P's coefficient vector and append projection onto coefficient zero. At index zero the series value equals the numerator constant, also covering k=0. This is the characteristic-two form of [Bostan and Mori's even/odd rational-series algorithm](https://arxiv.org/abs/2008.08822).
+
+**Extracting the series.** Suppress x and put Q_A(z)=det(I−zA). In formal series bᵀ(I−zA)⁻¹a has coefficient bᵀA^t a at t. Its numerator P=bᵀadj(I−zA)a has degree at most w−1. Determinant multilinearity under the rank-one update gives
+
+    zP(z) = Q_A(z) + Q_{A+abᵀ}(z)   over F₂.
+
+Indeed terms with two replaced columns vanish since these columns share a vector, and the one-column terms give the cofactor expression. Both polynomials can use a single characteristic-coefficient procedure. A modified entry needs A_ij, a_i and b_j, queried on separate ticks if necessary.
+
+Write D in blocks [d R; S M] with trailing principal submatrix M. The formal Schur complement gives
+
+    Q_D(z) = Q_M(z)·(1 − dz − z² ∑_{j≥0}(R M^j S) z^j).
+
+This follows by block row operations over F₂[[z]], where I−zM has a formal inverse. Only degrees through dim D matter, and signs equal plus. The coefficient vector of Q_D thus equals a rectangular Toeplitz matrix times that of Q_M: diagonal offset zero has entry 1, lower offset one has d, lower offset r≥2 has R M^{r−2} S, and upper entries vanish. Starting with the empty matrix and adjoining one row/column at a time gives the [Berkowitz characteristic-polynomial product](https://www.sciencedirect.com/science/article/pii/0020019084900188) with at most w layers of width w+1. A nonconstant entry R M^j S uses another product of at most w+2 maps of width at most w with scalar endpoints. Rows, columns, trailing submatrix sizes and offsets need O(log(w+2)) bits. No coefficient table is stored on clean tape.
+
+**Resources.** At most three product evaluators are live: one for numerator decimation, one for the requested polynomial coefficient, and one for a Toeplitz entry. They use disjoint dirty vectors. Each nested scalar evaluation starts with clean scalar source one and accumulator zero, restores its borrowed bits and returns one bit. The nested calls for a numerator difference, or the given entry circuit calls for a single perturbed matrix entry, are sequential. Total dirty space is O(w(log(k+2)+log(w+2))). The three controllers need O(log(k+2)+log(w+2)+n) clean bits including heads and finite control. Since k≤N and w≤N eventually, the coefficient of n is absolute. The polynomial number of leaf calls at each of three fixed levels gives a total time polynomial in w,k and n in the indexed-entry model.
+
+Use binary-address multiplexers and shared prefix decoders for read/write tape access at O(s) gates for s state bits plus poly(n) control gates. Reuse the supplied entry circuit as a single combinational block. All other gates cost o(N/n). Emit the scalar, reset clean fields and move to the next external address. All borrowed strings are restored. Ignored dirty wires may pad s to at least n. Consequently K≥2^{s−Cn} distinct terminal states produce the same correct transcript. An order-w scalar recurrence supplied directly as P/Q needs only the outer evaluator and O(w log(k+2)) dirty bits. When T≤2^{dn} for a fixed but arbitrary native time exponent d, only O(log n+log(d+1)) bits address its binary digits once leading padding is removed.
+
+The construction accelerates address-dependent linear evolutions. State-dependent switching between linear maps can encode general computation, and the argument supplies no transfer matrix for arbitrary E machines. [Two linear modes](two-linear-mode-reachability.md) · [Terminal diversity](terminal-diversity-clock.md).
+
+The [scalar checker](catalytic_recurrence_check.py) compared direct coefficients and dirty evaluations in 960 cases. The [matrix checker](catalytic_matrix_power_check.py) compared the Toeplitz product, direct determinant expansion and direct matrix powers in 1,152 cases at widths through six, including zero vectors, exponent zero and 101-bit exponents.
