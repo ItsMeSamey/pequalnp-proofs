@@ -1,0 +1,3 @@
+# Controls fixed before running the point solver
+
+Use h=3,5,9, three colors A,B,C with h ordered vertices each. Bank zero forbids same-color pairs and incompatible cross-color pairs. AB allows i≤j, BC allows j≤k, CA allows k<i. YES additionally permits CA pair k=i=floor(h/2); NO has no exception. Enforce one per color using per-color XOR chains and a fresh selector equal to each physical selection bit, with raw start=0/end=1. All original selectors come first by color. Expected NO by strict cyclic inequality, YES uniquely all three designated indices. Test FD cap 256, point rank cap 3 and rejection at 2, original SAT replay and no fallback. Charge actual oracle/transition work and times; keep skips. This is a fixed-color clique baseline, not a general SAT advance.
