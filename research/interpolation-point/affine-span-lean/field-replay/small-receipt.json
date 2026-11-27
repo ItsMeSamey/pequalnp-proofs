@@ -1,0 +1,37 @@
+{
+  "commit": "1dad86ad9a420051ca30d84c2ffe9c35570a4ec6",
+  "increment_sha256": "8f9d68a160169625f01726db3323956a997e70b9fd1a6c476d21180c948b38e7",
+  "field_receipt_sha256": "c2eda6c3b5b3343d68f2947febc4187473f34d043589f95ec39e51aa30cec85f",
+  "new_modules": [
+    {
+      "module": "ExactPlaneSmallChartFallback",
+      "source_sha256": "08df7287beebd20f41cdaa0042568c049a6eeba0f2902c99d7ae64c725a9cfb3",
+      "olean_sha256": "5cf075de68361c36a489f179598fc3676a37ab39274798468e7d17e09283828d",
+      "dependencies": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-field-yygvzoia/fresh/ExactPlaneDeficitSolver.olean"
+      ],
+      "axioms": [
+        "'ExactPlaneSmallChartFallback.solve_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExactPlaneSmallChartFallback.witness' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExactPlaneSmallChartExamples",
+      "source_sha256": "a558790b652fc1862548525db1528cea81b123c04915e15c0916d3b7f6158625",
+      "olean_sha256": "bd7585b02bcdf9dd0c2e1e4883ca18c3817d79d9f1c4ff6517f7e0a9c1d2b667",
+      "dependencies": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-small-chart-noc_4asx/fresh/ExactPlaneSmallChartFallback.olean"
+      ],
+      "axioms": []
+    }
+  ],
+  "demo": "(some 3, false)",
+  "axioms": [
+    "'ExactPlaneSmallChartFallback.solve_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ExactPlaneSmallChartFallback.witness' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ]
+}

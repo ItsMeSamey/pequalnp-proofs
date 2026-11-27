@@ -1,0 +1,8 @@
+ExactPlaneDirectDivision.lean:13:20: warning: This simp argument is unused:
+  i.isLt
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [materialize]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ExactPlaneDirectDivision.fastFind_eq' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,40 @@
+ExactPlaneConstructedRows.lean:23:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+ExactPlaneConstructedRows.lean:25:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+ExactPlaneConstructedRows.lean:26:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+ExactPlaneConstructedRows.lean:30:10: warning: This simp argument is unused:
+  V
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [F, ZMod.card]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ExactPlaneConstructedRows.lean:30:12: warning: This simp argument is unused:
+  F
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [V, ZMod.card]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ExactPlaneConstructedRows.generate_hits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneConstructedRows.generate_count' depends on axioms: [propext, Classical.choice, Quot.sound]

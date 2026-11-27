@@ -1,0 +1,8 @@
+ExactPlaneIrreducibleSearch.lean:38:56: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ExactPlaneIrreducibleSearch.lean:38:56: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ExactPlaneIrreducibleSearch.good_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneIrreducibleSearch.find_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
