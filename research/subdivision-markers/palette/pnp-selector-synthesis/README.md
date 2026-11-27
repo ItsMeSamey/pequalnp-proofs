@@ -11,3 +11,5 @@ For degree s and returned private rank d−t, solve tests either the entire char
 Run python witness_tests.py for 96 small examples compared to literal physical subset spans at each of three degrees and three structural degree-rank checks. These exercise the direct-cube fallback.
 
 The fixed-height variant in fixed_height.py implements height-aware.md and accepts the extra height_degree argument. The recognizer keeps distinct indexed heights at coincident keys/tags and permits unrestricted Boolean selectors on pure-height columns. Run python fixed_height_checks.py for independent truth-equation image, reconstructed height-degree and literal physical witness comparisons.
+
+The fixed-seven-terminal weighted grove theorem covers arbitrary terminal placement in a supplied planar embedding. The source gives a polynomial-time extraction through a fixed surface and recovers original edge choices through the median decomposition. The full extraction is a mathematical algorithm with independently reviewed topology, arithmetic and complexity. [Planar interior grove theorem](planar-interior-grove-candidate.md)
