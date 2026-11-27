@@ -1,0 +1,19 @@
+# Four ANDs cannot compute the monotone 9822 edge predicate
+
+A direction selects one operand per AND. Replacing all ANDs by their selected operands yields an OR of raw variables dominating the circuit. Every false assignment has a rejecting direction: select a false operand at every originally false AND. Induction shows that all originally false gates remain false. This choice is consistent under fanout.
+
+The complement of the raw support of each resulting OR is an independent set. Every maximal independent set occurs as such a complement, by taking a direction rejecting its assignment and using maximality. The sixteen maximal independent sets in vertex-bit order are
+
+    50 77 108 116 139 201 208 276 387 402 523 525 554 556 771 773.
+
+With four ANDs, the sixteen directions must have pairwise different complements. Backwards from the output, every switch must be reached on every direction: flipping an unreached switch would leave the raw support unchanged. A raw is then present precisely if it has an OR-only path to the output or if some switch selects an operand reachable from it by an OR-only path. Thus absence is a subcube, possibly empty, whose nonzero size is a power of two. The actual counts of maximal independent sets containing the ten vertices are 8,7,7,8,5,5,5,5,5,6. The count seven contradicts this requirement. With fewer switches there would already be too few directions. The monotone lower bound is five AND gates, at arbitrary OR count.
+
+## Five switches and seventeen total gates
+
+In a live binary circuit with g gates, count 2g+1 outgoing wire occurrences including the output observation. Every one of g+10 live vertices has a use. Backwards mask propagation therefore uses g−9 binary unions, at most eight. The ten raw receiver masks are mutually incomparable on the maximal witness directions. For adjacent vertices extend each singleton to a maximal independent set. For nonadjacent u,v, choose a neighbor of u nonadjacent to v (minimum degree two and no four-cycle), then extend that neighbor and v together.
+
+At least two raw masks must be direct signed switch branches. Distinct direct raws cannot share a branch. They cannot occupy opposite branches of a switch, since some maximal independent set avoids them both: all vertex counts sum pairwise to less than sixteen except for 0 and 3, which coexist in a maximal independent set. Thus each direct raw has its own axis. Choosing the opposite signs on those axes omits all the direct raws at once, so they form an independent set. For d direct raws, the number of maximal independent sets avoiding all d is at most 2^(5−d), since each requires all d raw signs selected.
+
+If exactly two raws are direct, each of the eight nondirect raws is made by one of the eight unions. Each is an OR of two individual signed branch masks: another raw mask cannot be an operand by incomparability. The activation of a switch feeding a direct raw is either universal or itself an earlier single branch. Otherwise the activation consumes a union and equals a raw mask, impossible: it contains the direct raw and is distinct from it by independence of the current switch sign. A directly split single branch of another axis can contribute at most eight of the 32 directions. Hence any direct raw other than 0 and 3 in the two-direct case requires an unconditional switch, since at least nine distinct maximal independent sets omit it.
+
+For a neighbor v of direct x, v's two-branch receiver must cover the entire sign half opposite x. If neither of its two branches carries that opposite literal, their literal signs must be complementary on another common axis, since otherwise both can be falsified when x's literal is false. In this exceptional case v equals the activation mask of that common axis. These conditions do not exclude five switches.
