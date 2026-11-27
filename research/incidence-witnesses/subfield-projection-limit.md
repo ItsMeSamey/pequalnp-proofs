@@ -1,0 +1,5 @@
+# Sharp cap of ungrouped kernel tests
+
+For a fixed affine point (x,y) in F_{p²}², consider k distinct one-dimensional subfield kernels, each required to contain y−ax−t for some selected line (a,t). In a negative input each line spoils at most one kernel, so the test is sound through k−1 lines. It fails at exactly k: choose a nonzero residual d_i in every kernel and activate the k parallel lines of a fixed slope a with intercepts t_i=y−ax−d_i. These lines are distinct, none is incident to the singleton payload, and every kernel fires. Enlarging that payload to the maximal independent payload also yields a false positive. For all p+1 directions the exact first failure is p+1.
+
+More generally, for q−1 queries no conjunction of ungrouped tests of this form suffices if each residual set allowed by each test contains zero and at least one nonzero value, even for sets other than subfield kernels. Realize ALL nonzero residuals with q−1 parallel lines. This excludes only the stated residual tests, not balanced partitions or unrestricted circuits.
