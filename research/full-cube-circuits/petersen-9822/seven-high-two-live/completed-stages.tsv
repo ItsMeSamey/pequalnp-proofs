@@ -1,0 +1,15 @@
+c5 d2 0 55484 lowdirect
+c6 d2 0 67349 lowdirect
+c5 d3 0 43901 jointclasses3
+c5 d3b 43901 55484 jointclasses3
+c6 d3 0 62695 jointclasses3
+c6 d3b 62695 67349 jointclasses3
+c5 d4 0 4903 jointdomains
+c5 d4b 4903 11512 jointquick
+c5 d4c 11512 14428 jointfixed
+c5 d4d 14428 21820 jointquick
+c5 d4e 21820 35099 jointpair
+c5 d4f 35099 51365 jointpair
+c5 d4g 51365 55484 jointpair
+c6 d4 0 45498 jointpair
+c6 d4b 45498 67349 jointpair
