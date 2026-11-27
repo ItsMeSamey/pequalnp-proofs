@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+**16 original banks remain directly open. Four labels in three equivalence classes suffice for the global search.** Native rank and routing checks exclude originals 110 and 142. Of the 4,032 zero-terminal originals, 4,016 are directly excluded. All 6,213 one-terminal originals are excluded. A globally tie-minimal size-33 circuit has a representative among 0, 7, 17 and 115, with 7 and 17 equivalent. The normalized minimum remains 33–34. [16 directly open banks](direct-16.ids) · [Four canonical labels](canonical-four.ids) · [Audit manifest](direct-4016-canonical4.sha256)
+
 **Six labels in four equivalence classes suffice for the global minimum search.** A hypothetical size-33 witness minimizing raw width and then total support can be represented by 0, 7, 17, 110, 142 or 115. The direct fixed-bank ledger still has 18 zero-terminal originals open. The normalized minimum remains 33–34. [Canonical reduction and orbit representatives](canonical-six.md) · [Six canonical labels](canonical-six.ids) · [18 directly unresolved labels](direct-18.ids) · [Audit manifest](canonical-six.sha256)
 
 **18 zero-terminal originals remain.** Exact native checks close IDs 120 and 143. The totals are 4,014 of 4,032 zero-terminal and all 6,213 one-terminal originals. The normalized minimum remains 33–34. [18 remaining IDs](t0-remaining-18.ids) · [Two-case check](../residual620/two-actual.log) · [Audit manifest](direct-two-4014.sha256)
