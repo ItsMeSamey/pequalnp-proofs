@@ -1,0 +1,146 @@
+{
+  "commit": "c6579c408d7e62745749685bcbe8f707f4c9eab9",
+  "locks": {
+    "LEAN-SOURCES.sha256": "0cbfd79befce0a6aea58e21a77f61028506801db165bf5359c71a9a868dedd7b",
+    "semantic-manifest.sha256": "1c0e2b23de7ce3a3d1b68b87492fcd002533278d66302e27c11bc4986f50baeb",
+    "receipts/digests.txt": "a3319fd5810a9d70f00daa49fa326023e5b47e0ad6f7cf5735b2e27264ba1ceb"
+  },
+  "lean": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "modules": {
+    "ThreeNameStar": {
+      "source": "c866672dc249f6a27538b4f906ad81e3df5066cc65a6cadf7818597168add477",
+      "object": "ce0e71828ca1a419f084a07bc6b46982f2e6fb3c41b0093ef4faf1549613adf5",
+      "rawlog": "a1a2350f74e791aedaf24764ca56a18eb03786185ec9ff61cbef9415b98781b4",
+      "producer_log": "a1a2350f74e791aedaf24764ca56a18eb03786185ec9ff61cbef9415b98781b4",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean"
+      ]
+    },
+    "ThreeNameSplitCircuit": {
+      "source": "5888fbde9da91ba664e1098f3e91d5c209dc4b81bf0c44bd457346c0fbde6986",
+      "object": "a0f9d7417eaab32b6dd2223f041da755f56ce359b31059027876ec3490c3ba2d",
+      "rawlog": "9c27b27b13b68fce3e834f6f3ffa728dec8fdb574587600e1532915e2ab268a6",
+      "producer_log": "9c27b27b13b68fce3e834f6f3ffa728dec8fdb574587600e1532915e2ab268a6",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Group/Finset/Basic.olean"
+      ]
+    },
+    "ThreeNameFixtures": {
+      "source": "e2a0c4365a5c259f84f22f1c577141ba4609cce816fd8168404720de202acfaa",
+      "object": "339a26a351b74606aaa749603bc43aa7ef045666f444ac248f4e1a417d86c828",
+      "rawlog": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "producer_log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean"
+      ]
+    },
+    "ThreeNameIncidence": {
+      "source": "cd3eab7e341468fb5af96a28e0a64311e87693133855c2d8d7fe36cb98e69d01",
+      "object": "12859513558169f323c14ef3818f65bc8637c8f0413fc7f2df36a73667c7da08",
+      "rawlog": "588b8ea3c26a83f373af65d6f8b79a76af3ecdda35faf15b67a2926a91b8541c",
+      "producer_log": "588b8ea3c26a83f373af65d6f8b79a76af3ecdda35faf15b67a2926a91b8541c",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Ring/Finset.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/ZMod/Basic.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Group/Finset/Basic.olean"
+      ]
+    },
+    "ThreeNameIncidenceRank": {
+      "source": "24019c00c7460d6245334a736dd7c6dbe96b1d5a60f2cb9eab948ff76134afe4",
+      "object": "f589b2e5e8135789addd5a9bd0eb82b4fdf1ebab45b33b9eb7843f3e1b0ee79b",
+      "rawlog": "dfb69dbaed5b0e8673cf4f8968ad67866d8c239825a6403c662195831b1ee5af",
+      "producer_log": "dfb69dbaed5b0e8673cf4f8968ad67866d8c239825a6403c662195831b1ee5af",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-three-name-IAZgYJ/fresh-canonical/ThreeNameSplitCircuit.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Field/ZMod.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/LinearAlgebra/Dimension/Constructions.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/LinearAlgebra/Dimension/Finite.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Pi.olean"
+      ]
+    },
+    "ThreeNameUsedRank": {
+      "source": "bde09cd24454b5d704eac12bfeddc28fbba1e6a03853927e966e36d23f5bd54d",
+      "object": "b41cc242c65f944f29178c4badd2bbb53103466f1cc60643d3826734acecd409",
+      "rawlog": "df293380b157ca5cea3a514c74351166b7fc3371edecb57a9595ffb75cab6930",
+      "producer_log": "df293380b157ca5cea3a514c74351166b7fc3371edecb57a9595ffb75cab6930",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-three-name-IAZgYJ/fresh-canonical/ThreeNameIncidenceRank.olean",
+        "/dev/shm/review-three-name-IAZgYJ/fresh-canonical/ThreeNameIncidence.olean"
+      ]
+    },
+    "ThreeNameRootLift": {
+      "source": "dbbafe1ec6d0833dc91426af7a2c6f84def6c4d002c8dec761a464e33a565112",
+      "object": "96636a2dab3be5f2541a000fe5d92468af85feed47f17e9ce873e6e9cda2b0dc",
+      "rawlog": "d95985ab77d630311040cc366b64d1b6a2f530d0985ee0d53e46a966f72b3135",
+      "producer_log": "d95985ab77d630311040cc366b64d1b6a2f530d0985ee0d53e46a966f72b3135",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-three-name-IAZgYJ/fresh-canonical/ThreeNameSplitCircuit.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/Card.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/SDiff.olean"
+      ]
+    },
+    "ThreeNameChain": {
+      "source": "ba72568e7089d2132f685e7661323a1454ace3d178157de69ff46606db4979a9",
+      "object": "0df0fe6209cfc5945105dc5bf601516d793472af8f2449e9cc700c79449c51b1",
+      "rawlog": "293cf2d48c4f7fddf619bea3fb323fb1a5de7898ae743d895ef8223df3275b65",
+      "producer_log": "293cf2d48c4f7fddf619bea3fb323fb1a5de7898ae743d895ef8223df3275b65",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-three-name-IAZgYJ/fresh-canonical/ThreeNameSplitCircuit.olean",
+        "/workspace/pequalnp-proofs/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/SDiff.olean"
+      ]
+    },
+    "ThreeNameRejection": {
+      "source": "3ba01b79af8f30a1b84b73664b5b01afd967514520a22d8250ba5fde598ada9f",
+      "object": "3635b9c30038c8bd2d39818c71177d9eb5df8617c8f9012babf3a359f0c469d4",
+      "rawlog": "5552a2aa0e638c00c50796e978203de48dc1be259685cb478b98642a02d98954",
+      "producer_log": "5552a2aa0e638c00c50796e978203de48dc1be259685cb478b98642a02d98954",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-three-name-IAZgYJ/fresh-canonical/ThreeNameRootLift.olean",
+        "/dev/shm/review-three-name-IAZgYJ/fresh-canonical/ThreeNameChain.olean",
+        "/dev/shm/review-three-name-IAZgYJ/fresh-canonical/ThreeNameUsedRank.olean"
+      ]
+    }
+  },
+  "axioms": [
+    "ThreeNameSplitCircuit.crossing",
+    "ThreeNameSplitCircuit.contained",
+    "ThreeNameIncidence.handshake",
+    "ThreeNameIncidence.strict_excess",
+    "ThreeNameIncidenceRank.incidence_card_le",
+    "ThreeNameIncidenceRank.circuit_excludes_three",
+    "ThreeNameIncidenceRank.used_card_bound",
+    "ThreeNameRootLift.from_trace",
+    "ThreeNameRootLift.lift",
+    "ThreeNameRootLift.extract",
+    "ThreeNameChain.rejects",
+    "ThreeNameChain.forward",
+    "ThreeNameRejection.no_support",
+    "ThreeNameFixtures.star_fixture",
+    "ThreeNameFixtures.excluded_fixture",
+    "ThreeNameFixtures.pins_witness_fixture",
+    "ThreeNameFixtures.pins_conflict_fixture",
+    "ThreeNameFixtures.outside_fixture",
+    "ThreeNameFixtures.single_fixture"
+  ],
+  "axioms_sha256": "ef86d8cb67fd58cf53485551d5a4caa0dba73ed45032c2541415ba563c01e825",
+  "controls_json": "3068a32c22b7df8d6f2fed610aed224945d74797a224862fc27e9dc7cf3c16f1"
+}

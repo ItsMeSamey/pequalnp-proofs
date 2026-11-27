@@ -1,0 +1,2 @@
+'ThreeNameIncidenceRank.circuit_excludes_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNameIncidenceRank.used_card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

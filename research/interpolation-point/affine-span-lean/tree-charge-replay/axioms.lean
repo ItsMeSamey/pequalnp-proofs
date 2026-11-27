@@ -1,0 +1,4 @@
+import ExactPlaneWedgeFusedCharges
+#print axioms ExactPlaneWedgeFusedCharges.callbacks
+#print axioms ExactPlaneWedgeFusedCharges.same_count
+#print axioms ExactPlaneWedgeFusedCharges.fused_cap

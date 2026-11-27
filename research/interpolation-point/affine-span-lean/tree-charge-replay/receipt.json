@@ -1,0 +1,16 @@
+{
+  "commit": "40a5fb5160a2211b7cbc3c2548ba873135012c06",
+  "baseline": "f8e223ae10c7c45aaec284e6d1e44b00b3a06c316b100f65cb51c3d314811402",
+  "files": {
+    ".lean": "b69c5e8ce61876cbcca6f6a7b8a0aed533bae866996ac250a450edce0999fe54",
+    ".olean": "31bc1a4e1deb7a6456b8dd63391bb7cb76e04a7da4f9477b1f4cf1025b5e1fc0",
+    ".log": "b4d62a3cc089ea411174d81a923db7d082127a1fa35fc27a2238f8b31c811e97"
+  },
+  "deps": [
+    "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+    "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+    "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgeFused.olean",
+    "/dev/shm/review-plane-tree-Qv6TZt/fresh/ExactPlaneWedgePhysicalCharges.olean"
+  ],
+  "axioms": "0fc98a40e7258931f1d534672411a90e3a39c8f6b17866769472b3329d25a13d"
+}
