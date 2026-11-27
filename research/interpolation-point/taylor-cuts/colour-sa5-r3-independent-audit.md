@@ -1,0 +1,9 @@
+# Five-vertex consistency for distance cutoff three
+
+The companion check_colour_sa5_r3_independent.py independently generates the proximity profiles of zero through five marked vertices in a forest. It starts from one mark. When adding a mark to a connected proximity component, choose any attachment vertex of the current minimal marked tree and add a fresh path, possibly of length zero, so that the new mark lies within distance three of an existing mark. Every connected profile admits a mark ordering with this property by traversal of a spanning tree of its proximity graph. In a tree, the newly added portion is precisely such a pendant path. Enumerating disjoint unions then supplies every disconnected profile.
+
+In a host of girth at least sixteen, for each connected proximity component of size k, take a short geodesic per edge of a spanning tree of its proximity graph. The union is connected and contains at most 3(k−1) edges, so is a tree. Adding any remaining short geodesic would give a cycle of length at most 3k if it introduced a different route. Hence this tree gives exactly the host's truncated distances. Distinct components have no recorded cross-distance. This argument requires no bound on vertex degree.
+
+The checker reads one rational weight per proper assignment orbit. It validates complete coverage both of profile types and of every orbit, nonnegativity, and mass one at the empty set. For every profile it checks every deleted vertex and each of the ordered three-colour assignments on the remaining vertices, summing the three named extensions separately. Improper colourings have zero mass. Normalization and all submarginals follow by iterated deletion. These are local assignment laws for the five-variable Sherali–Adams relaxation of edge disequality.
+
+Table SHA-256: 1e8d35b3eba6c2452bbdc7322992c70870d11302994395f4ba756c74e96b7a76.
