@@ -1,0 +1,8 @@
+/workspace/scratch/three-name-transcript/lean/ThreeNameSplitCircuit.lean:14:0: warning: automatically included section variable(s) unused in theorem `ThreeNameSplitCircuit.contained`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ThreeNameSplitCircuit.crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNameSplitCircuit.contained' depends on axioms: [propext, Classical.choice, Quot.sound]

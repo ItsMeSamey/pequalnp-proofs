@@ -1,0 +1,6 @@
+c866672dc249f6a27538b4f906ad81e3df5066cc65a6cadf7818597168add477  /workspace/scratch/three-name-transcript/lean/ThreeNameStar.lean
+ce0e71828ca1a419f084a07bc6b46982f2e6fb3c41b0093ef4faf1549613adf5  /workspace/scratch/three-name-transcript/lean/objects/ThreeNameStar.olean
+5888fbde9da91ba664e1098f3e91d5c209dc4b81bf0c44bd457346c0fbde6986  /workspace/scratch/three-name-transcript/lean/ThreeNameSplitCircuit.lean
+a0f9d7417eaab32b6dd2223f041da755f56ce359b31059027876ec3490c3ba2d  /workspace/scratch/three-name-transcript/lean/objects/ThreeNameSplitCircuit.olean
+e2a0c4365a5c259f84f22f1c577141ba4609cce816fd8168404720de202acfaa  /workspace/scratch/three-name-transcript/lean/ThreeNameFixtures.lean
+339a26a351b74606aaa749603bc43aa7ef045666f444ac248f4e1a417d86c828  /workspace/scratch/three-name-transcript/lean/objects/ThreeNameFixtures.olean
