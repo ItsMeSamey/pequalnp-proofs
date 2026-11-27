@@ -4,6 +4,8 @@
 
 Two independent teams reviewed the complete argument for the posted model. The 207-entry archive includes the aggregate proof, upper circuit, one-NOT case manifest, theta enumeration, and earlier five-AND, six-AND and signed-circuit certificates in their original layouts. Its SHA-256 is `ff40bb6745f18046f74a51ec102e9edbc1e0657dbf95c37bb21b87bc0a7e2493`. The second reviewer verified all 206 listed payload hashes. Both reviews use earlier finite certificates and small-face lower bounds. The official single-file Lean theorem is still in progress. [Download the proof and certificates](exact-9822-research.zip) · [Read the deduction](exact-eighteen.md) · [Posted proposition](posted-gap-public.json)
 
+[Assembly review](assembly-review.md) · [Second independent whole-model review](independent-original-model-review.md)
+
 ## Earlier research checkpoints
 
 The minimum unrestricted AND/OR/NOT circuit size is either 17 or 18. Independent source and finite-ledger reviews establish the lower bound of 17 for the full ten-input Boolean cube. The offered problem asks whether every circuit needs at least 18 gates. [Complete 39-file lower-bound and construction replay](signed16-cert/README.md)
