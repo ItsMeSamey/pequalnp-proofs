@@ -1,0 +1,5 @@
+rays 1080 good bras 926 first-ray orbits 15 {'pairs': 16200, 'failure in span': 5811, 'pair spans g': 3} counterexamples []
+real 0m4.280s
+user 0m1.221s
+sys 0m0.059s
+pnp-light-verify.lock, one thread, 15-second timeout.
