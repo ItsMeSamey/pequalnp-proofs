@@ -1,0 +1,9 @@
+# At least nine ANDs at area 33 in the four native banks
+
+For the original signed native separator on banks 0, 7, 17 and 115, every monotone fan-in-two circuit of total size at most 33 has at least nine AND gates. All graphs and fanouts allowed by the original model are included. The four banks supply neither additional point disjunction, the first disjunction, the second disjunction or both.
+
+The hereditary signed floor excludes at most six ANDs. The physical exact-seven theorem and its clean-area bound exclude seven. An eight-AND separator would yield the protected representative in BRIDGE-v2.md with the same bank, at most the same area and all eight ANDs still present. Its number of dirty sites d falls between zero and seven, with clean and dirty defined on the original signed negatives. The cited earlier strata cover d=0 through six. At d=7 the complete selected-role theorem 99f4c275 uses eight and twelve whole-role certificates for the only two possible dirty-private counts. The union of the eight dirty-count strata rules out the protected representative, so the assumed original eight-AND separator cannot exist.
+
+The separate signed OR floor is 23 in every bank. Thus a separator of size at most 33 has either nine or ten ANDs. With nine ANDs it may use at most 24 ORs; with ten it may use at most 23 ORs. Both counts remain open here. The full residual size interval remains 33–34 and all four canonical banks are still present.
+
+The component sources carry distinct forms of evidence. D7 supplies whole-CNF DRAT certificates, as does the numerical closure of D6; the original lower-dirty sources contain the validated mathematical, finite enumeration, native solver and certificate receipts specified in their own manifests. The whole proof is a mathematical and computational result. No kernel formalization of this assembly is asserted.
