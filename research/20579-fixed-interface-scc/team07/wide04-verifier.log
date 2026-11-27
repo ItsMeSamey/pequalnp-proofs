@@ -1,0 +1,29 @@
+c parsing input formula with 11010 variables and 23772 clauses
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 18887
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 18890
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 18929
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 18932
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 18944
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 18947
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 19061
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 19064
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 19076
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 19079
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 19118
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 19121
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 19133
+c WARNING: detected and deleted duplicate literal -3332 at position 1 of proof line 19136
+c WARNING: deleted clause on proof line 25098 does not occur: [0] -7039 8448 0
+c WARNING: deleted clause on proof line 25137 does not occur: [0] -5505 9218 0
+c WARNING: deleted clause on proof line 26083 does not occur: [0] -7563 7614 0
+c WARNING: deleted clause on proof line 27374 does not occur: [0] -7375 7382 0
+c WARNING: deleted clause on proof line 27406 does not occur: [0] -7419 7438 0
+c WARNING: deleted clause on proof line 27531 does not occur: [0] -7995 8126 0
+c WARNING: deleted clause on proof line 28359 does not occur: [0] -7363 7366 0
+c finished parsing
+c detected empty clause; start verification via backward checking
+c 5002 of 23772 clauses in core                            
+c 319 of 543 lemmas in core using 118681 resolution steps
+c 0 RAT lemmas in core; 211 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.187 seconds

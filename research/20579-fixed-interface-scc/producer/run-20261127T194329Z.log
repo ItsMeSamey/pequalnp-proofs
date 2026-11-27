@@ -1,0 +1,7 @@
+a6dc51a58a56e2e6c00f472fdc647fe43ae51b9fa3bef9e91115c0477f6537f8  /dev/shm/team04-relaxed170-scc/base.cnf
+0f5a84c9bf8c977ce6e3399311e6ce6d55a8972b3be45d9ee6506c97a005a734  /dev/shm/team04-relaxed170-scc/run.py
+{"status": "UNSAT_UNVERIFIED", "pins": [], "conflicts": 520, "rup_kept": null, "pending": 1, "proof": "branch-0000", "peak_rss_kib": 25240}
+
+real	0m7.223s
+user	0m0.111s
+sys	0m0.086s

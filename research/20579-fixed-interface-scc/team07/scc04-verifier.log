@@ -1,0 +1,54 @@
+c parsing input formula with 10257 variables and 22552 clauses
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 17061
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 17175
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 17178
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 17190
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 17193
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 17232
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 17235
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 17247
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 17250
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18042
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18045
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18057
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18060
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18099
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18102
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18114
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18117
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18231
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18234
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18246
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18249
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18288
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18291
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18303
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18306
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18615
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18618
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18630
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18633
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18672
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18675
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18687
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18690
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18804
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18807
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18819
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18822
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18861
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18864
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18876
+c WARNING: detected and deleted duplicate literal -3221 at position 1 of proof line 18879
+c WARNING: deleted clause on proof line 23575 does not occur: [0] -6348 6367 0
+c WARNING: deleted clause on proof line 23604 does not occur: [0] -6798 6929 0
+c WARNING: deleted clause on proof line 23638 does not occur: [0] -5394 9107 0
+c WARNING: deleted clause on proof line 24471 does not occur: [0] -152 6303 0
+c WARNING: deleted clause on proof line 25239 does not occur: [0] -6240 6417 0
+c finished parsing
+c detected empty clause; start verification via backward checking
+c 3599 of 22552 clauses in core                            
+c 254 of 521 lemmas in core using 55627 resolution steps
+c 0 RAT lemmas in core; 51 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.176 seconds

@@ -1,0 +1,1 @@
+{"fixed": 31, "budget": 139, "cap": 170, "scc_sizes": [64, 4, 4, 3, 3, 3, 3, 3, 3], "internal_edges": 233, "cnf_sha256": "2271f119fd9f1e567feffcb8df46f3721a6deb27bc6cef508f2d94218a2b4c20", "clauses": 23772, "variables": 11010, "static_cycle_clauses": 246, "change_guard": 54, "warm_verified": 5}
