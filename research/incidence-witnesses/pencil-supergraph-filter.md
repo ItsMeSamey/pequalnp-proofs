@@ -1,0 +1,9 @@
+# Pencil negatives for intersections of supergraph filters
+
+Let V=N(q+1) count the flags in a plane of order q, N=q²+q+1. Add a nonempty set M of m nonflags to its incidence graph. A filter accepts when an active point and active line span an edge of this supergraph. For flag (c,l), take the q other lines through c and q other points on l. This is the maximal complementary negative for that query. The correctly rejected fraction f of these V tests satisfies
+
+    f ≤ min(1, (3q²+2q+1)V / ((q+1)² m)).
+
+Use a matrix A with rows flags (c,l), columns nonflags (p,y), and incidence when p is on l and c is on y. Row degree is q² and column degree q+1. Distinct rows (c,l),(d,h) share exactly one neighbor if c is off h and d is off l, and otherwise none. In the former case the column is (l∩h,cd), a nonflag. Rows sharing point or line have disjoint neighborhoods. Thus AAᵀ=q²I+J−D, where D records failure of the two cross-nonincidences, diagonal included. There are q³ opposite rows for a fixed row: choose d outside l and any line through d other than dc. Hence D is symmetric regular of degree V−q³=2q²+2q+1. On vectors perpendicular to the constants the Gram norm is at most 3q²+2q+1. The hit counts A1_M have mean (q+1)m/V. Subtracting the mean gives squared norm at most (3q²+2q+1)m by the projected operator bound. Each untouched pencil contributes the square of the mean, proving the inequality.
+
+An intersection of k such filters with at least m extras each can satisfy the original promise only if k ≥ (q+1)²m/((3q²+2q+1)V), by the union bound on correctly rejected tests. With a positive fraction of all Nq² nonflags added per filter, k is at least order q. A shared output override accepting all queries of size greater than q leaves this bound intact, since each pencil has exactly q active lines. This count allows internal sharing and supplies no standalone gate-size lower bound of order Nq.
