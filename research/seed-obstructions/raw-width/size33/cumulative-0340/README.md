@@ -1,3 +1,11 @@
+# Reviewed cost-28 snapshot
+
+The final independent assembly excludes **5,716 of 6,000 cost-28 one-terminal keys** and **1,620 of 4,032 zero-terminal keys**. The remaining one-terminal cases are 284 cost-28 keys plus 213 cost-29 keys, or 497 total. Another 2,412 zero-terminal keys remain. The complete lists leave 2,909 original keys open at this snapshot.
+
+The zero-terminal total comprises 1,315 donor transfers, 264 three-compound keys and 41 four-compound keys. The final assembly includes the independently checked WILD argument on the same unweighted projected sample. The earlier WILD-withheld totals and source history are preserved below. [5,716 one-terminal IDs](t1-signed-5716.ids) · [1,620 zero-terminal IDs](t0-signed-1620.ids) · [Final audit manifest](signed-5716-1620.sha256)
+
+## Earlier receipt history
+
 The independently verified full-owner lists in this snapshot contain 156 one-terminal IDs from the signed dominance transfer and 41 zero-terminal IDs from the four-compound cost-29 proof. The larger producer lists have independently reproduced arithmetic. Several physical proof obligations used to build those lists were still awaiting review at the snapshot.
 
 | Original labels | Producer subtotal | Withholding WILD-dependent labels | Full-owner IDs backed by the listed independent reviews |
