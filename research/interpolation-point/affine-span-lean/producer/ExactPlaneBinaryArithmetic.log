@@ -1,0 +1,3 @@
+'ExactPlaneBinaryArithmetic.encode_evaluate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneBinaryArithmetic.encode_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneBinaryArithmetic.encode_power' depends on axioms: [propext, Classical.choice, Quot.sound]
