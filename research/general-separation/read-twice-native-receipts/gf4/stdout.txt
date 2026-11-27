@@ -1,0 +1,1 @@
+Both primitive specializations, physical read-two clauses, and all source activity pairs passed.

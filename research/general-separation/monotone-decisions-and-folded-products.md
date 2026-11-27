@@ -1,0 +1,27 @@
+# Monotone graph decisions and the lowest multilinear component of a product
+
+Let N≥2 and use all N² variables of a directed adjacency matrix, including the diagonal. Over any field F, write ML(P) for the unique multilinear representative on the Boolean cube. This operation also applies to an F-valued function on the cube. If it vanishes on all inputs with fewer than N selected entries, every coefficient below degree N is zero. At degree N the coefficient on S is exactly the function's value on the indicator of S. Both statements follow from subset inversion. [Coefficient identity](easy-tour-hard-multilinear-layer.md)
+
+## Monotone Boolean circuits
+
+Directed strong connectivity is monotone. Initialize reachability by the input edges and identity. At stage k add paths through k by setting R'(i,j) to R(i,j) OR (R(i,k) AND R(k,j)). After N stages take the conjunction over all ordered pairs. The uniform Boolean circuit uses O(N³) binary AND/OR gates. A strongly connected graph requires an incoming and an outgoing edge at each vertex. With exactly N edges it is a permutation digraph, and strong connectivity says that the permutation consists of a single cycle. Thus its degree-N canonical multilinear component is HC_N, including in characteristic two.
+
+The predicate that every row and column be nonempty is a monotone CNF of 2N positive clauses of width N. Each raw entry occurs twice, and a binary formula of fewer than 2N² gates suffices. Its accepting inputs of weight N are exactly the permutation matrices, including fixed points, and all lower weights are rejected. The same two facts hold for bipartite perfect-matching existence. Both have Per_N as their lowest multilinear component. The read-twice bound applies to the displayed CNF. Its behavior on larger supports can differ from perfect-matching existence.
+
+Thus the November quantitative lower bound on a formal degree component obstructs polynomial-size lifting even for explicit polynomial-size monotone Boolean computations. For Per_N this lower bound requires characteristic different from two. In characteristic two the permanent equals the determinant. All displayed Boolean predicates have polynomial algorithms. [November theorem and model](https://github.com/openai/math/blob/92b516ef8e2abf66c3db7aa31438d3010bc7956f/preprints/Circuit-lower-bounds-for-Hamiltonian-cycle-and-the-permanent-November-24-2026/build/intro.tex#L11-L45)
+
+## A product of two small multilinear polynomials
+
+For homogeneous multilinear A and B of degree N, the ordinary product AB has total degree 2N and individual degree at most two when nonzero. In ML(AB), two size-N supports I and J produce the squarefree monomial on their union. Its degree is at least N, with equality exactly when I=J. Thus the degree-N component is the coefficientwise (Hadamard) product of A and B over F.
+
+Take A to be the product of the N column sums. For the permanent, take B to be the product of the N row sums. The common monomials select one entry of each row and each column, and every coefficient is one. Both factors have read-once arithmetic formulas with N²−1 binary gates. Only their final product multiplies operands with shared variables. The permanent Hadamard factorization by two quadratic-size monotone multilinear formulas is due to Arvind, Joglekar and Srinivasan. The quotient identity gives its consequence for degree-component lifting. [Arvind, Joglekar and Srinivasan, FSTTCS 2009](https://doi.org/10.4230/LIPIcs.FSTTCS.2009.2304)
+
+For HC_N keep A. Fix a root r, form the outgoing Laplacian L with diagonal L_ii equal to the sum of X_ij over j≠i and off-diagonal entries −X_ij, and delete row and column r to obtain L'. Use the factor
+
+    B = (sum over j of X_rj) det(L').
+
+B is homogeneous of degree N and formally multilinear. Each row of L' uses only the variables of one nonroot tail, the determinant is linear in each row, and the root-row factor uses separate variables. The determinant has a division-free polynomial-size circuit over every field. Multilinearity here is an assertion about the output of the circuit for B. [Berkowitz's determinant construction](https://doi.org/10.1016/0020-0190(84)90018-8)
+
+On fewer than N edges, AB vanishes because A has an empty column. At size N, A vanishes unless every column is used once, when A=1. If a row has no outgoing edge, the root factor or a row of L' vanishes. The remaining inputs are permutation matrices. A permutation cycle avoiding r gives a singular block in L' with its all-ones vector in the kernel. This includes a nonroot loop. For one spanning cycle, order the nonroot vertices by their distance to r along successor links. The minor is triangular with diagonal ones and the root factor equals one. These conclusions hold in every characteristic. Subset inversion now gives HC_N as the degree-N part of ML(AB), with coefficient one per directed cycle regardless of its starting point.
+
+Consequently two formally multilinear, homogeneous, polynomial-size factors can have a hard lowest quotient layer even though their product has individual degree at most two. The formulas for the permanent additionally isolate the shared-variable multiplication at one gate. No syntactic multilinearity of the determinant circuit is required or asserted. For denser cube inputs AB may be field-valued and need not equal the graph predicate from the first construction. The formal lower bound applies to the slice obtained after reducing by x²=x.

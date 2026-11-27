@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys,runpy;assert __debug__ and sys.flags.optimize==0;sys.path.insert(0,sys.argv[1]);runpy.run_path(sys.argv[1]+'/'+sys.argv[2],run_name='__main__')
+                                                                                               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/dev/shm/04-gs-gf4-edge-cover-guard/receipt-tt2cb94j/source/check_gf4_edge_cover.py", line 95, in <module>
+    main()
+    ~~~~^^
+  File "/dev/shm/04-gs-gf4-edge-cover-guard/receipt-tt2cb94j/source/check_gf4_edge_cover.py", line 85, in main
+    actual,scale=physical(edges,[x,1,1,1,1,1,1,y],t)
+                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/04-gs-gf4-edge-cover-guard/receipt-tt2cb94j/source/check_gf4_edge_cover.py", line 68, in physical
+    return partition(factors),times([k]*len(edges))
+           ~~~~~~~~~^^^^^^^^^
+  File "/dev/shm/04-gs-gf4-edge-cover-guard/receipt-tt2cb94j/source/check_gf4_edge_cover.py", line 30, in partition
+    values.append(times(t[sum(env[a]<<j for j,a in enumerate(scope))]
+                  ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        for scope,t in used))
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/04-gs-gf4-edge-cover-guard/receipt-tt2cb94j/source/check_gf4_edge_cover.py", line 11, in times
+    return reduce(mul,values,1)
+  File "/dev/shm/04-gs-gf4-edge-cover-guard/receipt-tt2cb94j/source/check_gf4_edge_cover.py", line 30, in <genexpr>
+    values.append(times(t[sum(env[a]<<j for j,a in enumerate(scope))]
+                          ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/04-gs-gf4-edge-cover-guard/receipt-tt2cb94j/source/check_gf4_edge_cover.py", line 30, in <genexpr>
+    values.append(times(t[sum(env[a]<<j for j,a in enumerate(scope))]
+                              ~~~^^^
+KeyError: 16

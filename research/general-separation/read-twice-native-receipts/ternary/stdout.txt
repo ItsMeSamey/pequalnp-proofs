@@ -1,0 +1,1 @@
+559 original-cube comparisons and ten malformed inputs passed.
