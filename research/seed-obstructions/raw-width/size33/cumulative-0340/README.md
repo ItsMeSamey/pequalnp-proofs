@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+**All 424 zero-terminal cost-29 three-compound cases are excluded.** The complete review adds 120 original IDs to the previous union. It uses archived SAT receipts, including four definitive outcomes for a truncated intermediate trace. The reviewed totals are **2,836 of 4,032 zero-terminal cases** and **6,083 of 6,213 one-terminal cases**. The 1,196 and 130 outstanding total **1,326 cases**. [Complete 424-case package](t0-424-three-compound-primary.zip) · [Zero-terminal union](t0-signed-2836.ids) · [Audit manifest](t0-triple120.sha256)
+
 A forced repeat on the original pivot supports 699 reviewed zero-terminal cases, including **457 new IDs** after intersections. The reviewed totals are **2,716 of 4,032 zero-terminal cases** and **6,083 of 6,213 one-terminal cases**. The respective 1,316 and 130 outstanding total **1,446 cases**. [457 added IDs](t0-weighted-457.ids) · [Zero-terminal union](t0-signed-2716.ids) · [Audit manifest](t0-weighted457.sha256)
 
 Independent review adds **127 one-terminal cases**. The 118 strict-pivot cases and nine native cases are disjoint. The reviewed totals are **6,083 of 6,213 one-terminal cases** and **2,259 of 4,032 zero-terminal cases**. The 130 and 1,773 outstanding total **1,903 original cases**. [130 remaining one-terminal IDs](t1-remaining-130.ids) · [6,083 reviewed IDs](t1-signed-6083.ids) · [Audit manifest](t1-high-head-native127.sha256)
