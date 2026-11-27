@@ -1,0 +1,11 @@
+# Matching low bits can hide the modulo-three decision on a cycle
+
+For infinitely many m there are two perfect-cubic-matching phases on 3m variables whose normalized signed gaps agree modulo 2^{m+1}, while exactly one normalized gap vanishes modulo three. Their quadratic graphs have maximum degree two and both gaps are computable in polynomial time. Inferring this odd-modulus decision from the low bits alone thus requires Ω(m) bits in the worst case.
+
+Use one matched triple u_i a_i b_i per vertex of a cycle and one quadratic u_i u_j per cycle edge. Summing a_i,b_i gives unary weights (4,2)=2(2,1). For a simple cycle of length j≥3 the normalized gap Z/2^j is tr(M^j), where M has rows (2,2) and (1,−1). Each local factor is 2 or 1 according to u_i, times (−1)^{u_i u_{i+1}}, with the final bit linked to the first.
+
+Choose L≥6 with L≡2 modulo four and m=2L. Compare one cycle of length 2L with two disjoint cycles of length L. Their normalized gaps are tr(M^{2L}) and tr(M^L)^2. The second minus the first is 2 det(M)^L=2(−4)^L by the two-by-two trace identity. They agree modulo 2^{2L+1} and differ modulo 2^{2L+2}. Moreover tr(M²)=9≡0 modulo three, and det(M) is a unit there. Cayley–Hamilton makes (M²)² a nonzero scalar matrix modulo three, so every odd power of M² has trace zero. The two-cycle square vanishes modulo three but its difference from the one-cycle answer is a unit. Multiplying by 2^m preserves this distinction.
+
+Viewed as graphs on triple blocks, both examples have equal counts of every unlabeled rooted neighborhood at each radius strictly below (L−1)/2: every neighborhood there is a path. For a connected interaction graph, add one extra cde+d on each side. Summing d,e gives 2 when c=1 and zero when c=0. Link c to one chosen logical vertex in each original component with cu_i+u_i. These terms vanish when c=1. This makes the block interaction graph connected, uses quadratic degree at most three and preserves each normalized gap. The equal-neighborhood assertion is for the original cycles.
+
+The companion algorithm computes logarithmically many low bits in polynomial time at fixed degree. These examples exclude inferring the modulo-three decision even from the displayed linear precision using only the residue and common size/degree bound. They impose no lower bound on algorithms that inspect the graph.
