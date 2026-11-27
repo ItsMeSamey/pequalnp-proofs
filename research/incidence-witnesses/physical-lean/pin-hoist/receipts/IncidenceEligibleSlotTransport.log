@@ -1,0 +1,2 @@
+'IncidenceEligibleSlotTransport.mapping' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceEligibleSlotTransport.preserved' depends on axioms: [propext, Classical.choice, Quot.sound]

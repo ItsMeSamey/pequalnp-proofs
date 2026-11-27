@@ -1,0 +1,25 @@
+/workspace/scratch/incidence-pin-hoist/IncidencePinHoistSparse.lean:115:0: warning: automatically included section variable(s) unused in theorem `IncidencePinHoistSparse.witness_neg`:
+  [DecidableRel I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableRel I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/workspace/scratch/incidence-pin-hoist/IncidencePinHoistSparse.lean:151:52: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/workspace/scratch/incidence-pin-hoist/IncidencePinHoistSparse.lean:151:60: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/workspace/scratch/incidence-pin-hoist/IncidencePinHoistSparse.lean:151:52: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/workspace/scratch/incidence-pin-hoist/IncidencePinHoistSparse.lean:151:60: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+'IncidencePinHoistSparse.selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidencePinHoistSparse.pure_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidencePinHoistSparse.line_exit_used' depends on axioms: [propext, Classical.choice, Quot.sound]
