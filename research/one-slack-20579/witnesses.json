@@ -1,0 +1,400 @@
+{
+  "bank": [
+    42,
+    65,
+    83,
+    86,
+    90,
+    94,
+    95,
+    99,
+    101,
+    102,
+    107,
+    110,
+    115,
+    165,
+    186
+  ],
+  "outputs": [
+    213,
+    222,
+    225
+  ],
+  "oriented": {
+    "42": {
+      "positive": [
+        30,
+        10
+      ],
+      "negative": [
+        30,
+        31
+      ],
+      "positive_bits": 129,
+      "negative_bits": 128
+    },
+    "65": {
+      "positive": [
+        6,
+        15
+      ],
+      "negative": [
+        29,
+        21
+      ],
+      "positive_bits": 514,
+      "negative_bits": 512
+    },
+    "83": {
+      "positive": [
+        10,
+        12
+      ],
+      "negative": [
+        28,
+        21
+      ],
+      "positive_bits": 4612,
+      "negative_bits": 4608
+    },
+    "86": {
+      "positive": [
+        17,
+        23
+      ],
+      "negative": [
+        29,
+        13
+      ],
+      "positive_bits": 24,
+      "negative_bits": 16
+    },
+    "90": {
+      "positive": [
+        17,
+        21
+      ],
+      "negative": [
+        29,
+        21
+      ],
+      "positive_bits": 528,
+      "negative_bits": 512
+    },
+    "94": {
+      "positive": [
+        0,
+        4
+      ],
+      "negative": [
+        29,
+        4
+      ],
+      "positive_bits": 4384,
+      "negative_bits": 4352
+    },
+    "95": {
+      "positive": [
+        30,
+        11
+      ],
+      "negative": [
+        30,
+        31
+      ],
+      "positive_bits": 192,
+      "negative_bits": 128
+    },
+    "99": {
+      "positive": [
+        30,
+        29
+      ],
+      "negative": [
+        26,
+        29
+      ],
+      "positive_bits": 160,
+      "negative_bits": 32
+    },
+    "101": {
+      "positive": [
+        30,
+        3
+      ],
+      "negative": [
+        30,
+        31
+      ],
+      "positive_bits": 384,
+      "negative_bits": 128
+    },
+    "102": {
+      "positive": [
+        6,
+        29
+      ],
+      "negative": [
+        26,
+        29
+      ],
+      "positive_bits": 544,
+      "negative_bits": 32
+    },
+    "107": {
+      "positive": [
+        8,
+        29
+      ],
+      "negative": [
+        26,
+        29
+      ],
+      "positive_bits": 1056,
+      "negative_bits": 32
+    },
+    "110": {
+      "positive": [
+        19,
+        6
+      ],
+      "negative": [
+        28,
+        26
+      ],
+      "positive_bits": 14336,
+      "negative_bits": 12288
+    },
+    "115": {
+      "positive": [
+        0,
+        4
+      ],
+      "negative": [
+        15,
+        29
+      ],
+      "positive_bits": 4384,
+      "negative_bits": 288
+    },
+    "165": {
+      "positive": [
+        19,
+        8
+      ],
+      "negative": [
+        31,
+        8
+      ],
+      "positive_bits": 27648,
+      "negative_bits": 19456
+    },
+    "186": {
+      "positive": [
+        15,
+        8
+      ],
+      "negative": [
+        8,
+        3
+      ],
+      "positive_bits": 17664,
+      "negative_bits": 1280
+    }
+  },
+  "triangle": [
+    {
+      "pair": [
+        65,
+        102
+      ],
+      "or_corners": [
+        {
+          "corner": 144,
+          "value": 0,
+          "original_mask": 144,
+          "cell": [
+            30,
+            13
+          ]
+        },
+        {
+          "corner": 146,
+          "value": 1,
+          "original_mask": 130,
+          "cell": [
+            30,
+            22
+          ]
+        },
+        {
+          "corner": 656,
+          "value": 1,
+          "original_mask": 528,
+          "cell": [
+            17,
+            21
+          ]
+        }
+      ],
+      "and_corners": [
+        {
+          "corner": 2,
+          "value": 0,
+          "original_mask": 34,
+          "cell": [
+            0,
+            22
+          ]
+        },
+        {
+          "corner": 512,
+          "value": 0,
+          "original_mask": 512,
+          "cell": [
+            29,
+            21
+          ]
+        },
+        {
+          "corner": 514,
+          "value": 1,
+          "original_mask": 514,
+          "cell": [
+            6,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "pair": [
+        65,
+        107
+      ],
+      "or_corners": [
+        {
+          "corner": 72,
+          "value": 0,
+          "original_mask": 72,
+          "cell": [
+            12,
+            11
+          ]
+        },
+        {
+          "corner": 74,
+          "value": 1,
+          "original_mask": 10,
+          "cell": [
+            12,
+            15
+          ]
+        },
+        {
+          "corner": 1096,
+          "value": 1,
+          "original_mask": 1088,
+          "cell": [
+            21,
+            30
+          ]
+        }
+      ],
+      "and_corners": [
+        {
+          "corner": 2,
+          "value": 0,
+          "original_mask": 34,
+          "cell": [
+            0,
+            22
+          ]
+        },
+        {
+          "corner": 1024,
+          "value": 0,
+          "original_mask": 17408,
+          "cell": [
+            29,
+            8
+          ]
+        },
+        {
+          "corner": 1026,
+          "value": 1,
+          "original_mask": 1026,
+          "cell": [
+            8,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "pair": [
+        102,
+        107
+      ],
+      "or_corners": [
+        {
+          "corner": 2,
+          "value": 0,
+          "original_mask": 34,
+          "cell": [
+            0,
+            22
+          ]
+        },
+        {
+          "corner": 514,
+          "value": 1,
+          "original_mask": 514,
+          "cell": [
+            6,
+            15
+          ]
+        },
+        {
+          "corner": 1026,
+          "value": 1,
+          "original_mask": 1026,
+          "cell": [
+            8,
+            22
+          ]
+        }
+      ],
+      "and_corners": [
+        {
+          "corner": 512,
+          "value": 0,
+          "original_mask": 512,
+          "cell": [
+            29,
+            21
+          ]
+        },
+        {
+          "corner": 1024,
+          "value": 0,
+          "original_mask": 17408,
+          "cell": [
+            29,
+            8
+          ]
+        },
+        {
+          "corner": 1536,
+          "value": 1,
+          "original_mask": 1536,
+          "cell": [
+            6,
+            30
+          ]
+        }
+      ]
+    }
+  ]
+}
