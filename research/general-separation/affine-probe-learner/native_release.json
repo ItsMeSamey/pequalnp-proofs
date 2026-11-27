@@ -1,0 +1,1 @@
+{"cpu": 1.056969, "maxrss_kib": 21480, "code": 0, "output": "Structural chain and adversarial certificate checks passed.\nBoth repairs, original witnesses, and interval-solver counters agree.\nThe production learner matches virtual counts and the median traversal.\nFive frozen native forecast replays and parser controls passed.\n", "rss": 22122496, "wall": 1.0772192459844518}
