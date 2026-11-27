@@ -1,0 +1,5 @@
+# Four dirty AND gates in a protected eight-AND separator
+
+The [aggregate proof](../four-dirty-complete-scope.zip) gives a lower bound of 34 gates on each of the four native banks when the selected representative has eight AND gates, exactly four dirty sites and four isolated clean terminals. Attainment of 34 remains open. Combined with the earlier sectors, a size-33 witness with eight AND gates must admit a selected representative with five, six or seven dirty sites. The nine- and ten-AND cases and all four original banks remain open.
+
+The [source review](d4-release.md) covers the physical case partition and pricing. In the subsequent numerical review all 63 workers exited successfully. For two dirty private sites, the reviewers freshly verified all 60 regenerated CNF/DRAT pairs and repriced all 61 boxes. For one dirty private site they replayed the corrected donor regression and both priced certificates and matched all 60 proof hashes. The other 58 certificates in that branch retain their producer verification. The [hash crosswalk](hash-crosswalk.txt) and [individual results](results.jsonl) identify the checked cases.
