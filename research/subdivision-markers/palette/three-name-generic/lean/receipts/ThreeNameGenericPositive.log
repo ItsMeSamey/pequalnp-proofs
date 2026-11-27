@@ -1,0 +1,2 @@
+'ThreeNameGenericPositive.sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNameGenericPositive.pins_only' depends on axioms: [propext, Classical.choice, Quot.sound]

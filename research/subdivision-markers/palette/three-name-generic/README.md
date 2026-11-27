@@ -1,0 +1,11 @@
+# Original-index three-name certificates
+
+For original binary columns, forced positions and a named triple (target, a, b), a support is exact when it contains all forced positions, spans the target, and the images of a and b are independent modulo its span. Positions with the same column may be chosen independently.
+
+`ThreeNameGenericHost.rejects` proves every such support impossible from a checked MSB pin table, checked initial attachments and root data, a finite sequence of checked projections and a checked labeled graphic terminal with three incident root edges. The initial carrier may have additional columns because the argument only needs every original optional column embedded with its correct value. Each projection preserves a possible rooted circuit in the direction needed for rejection. Both directions of the final labeled cycle-kernel equality are checked. These conditions suffice for sound rejection without a minimal-separation computation in the proof.
+
+`ThreeNameGenericPositive.sound` verifies an original support with an XOR witness for the target and two parity functionals separating the named tag directions. `ThreeNameGenericDirect.conflict_no` certifies an off-axis named word already in the forced span. `outside_no` certifies a parity functional annihilating every original column and separating the target. These conclusions apply to arbitrary finite original index types and packed widths in their Lean signatures.
+
+`emit_star.py` produces a Lean invocation of the generic graph theorem and adjacent canonical raw bytes from a supplied star transcript. `produce_direct.py` constructs witnesses for original positive and direct negative cases. Each generated example binds its raw data to a SHA-256 string for external matching. The logical conclusion applies to the literal typed values in the compiled Lean file. Input decoding, digest comparison and generation remain replay tools outside the trusted proof. Check `replay_samples.py` to enumerate five bounded controls, and `check_produce_direct.py` to replay the direct producer controls.
+
+The host proves soundness given accepted certificate values. It does not establish that a producer returns a certificate on every input, give a kernel resource bound for evaluating arbitrary generated examples, or resolve P versus NP.

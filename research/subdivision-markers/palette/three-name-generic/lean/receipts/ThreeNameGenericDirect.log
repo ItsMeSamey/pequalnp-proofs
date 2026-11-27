@@ -1,0 +1,2 @@
+'ThreeNameGenericDirect.conflict_no' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeNameGenericDirect.outside_no' depends on axioms: [propext, Classical.choice, Quot.sound]
