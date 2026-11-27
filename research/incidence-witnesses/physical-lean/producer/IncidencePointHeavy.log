@@ -1,0 +1,1 @@
+'IncidencePointHeavy.physical_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
