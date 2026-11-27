@@ -1,0 +1,2 @@
+'IncidenceHoistBinarySource.exists_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceHoistBinarySource.source' depends on axioms: [propext, Classical.choice, Quot.sound]

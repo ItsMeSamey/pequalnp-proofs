@@ -1,0 +1,577 @@
+{
+  "IncidenceLabelHistory.lean": {
+    "stage": "ten",
+    "source": "3a21b96a86cd5f5409901ce8173dc282f09a317424947306b199487e85dfce12",
+    "object": "119da19f0047f5ea818dcff862369c95d293cb489b9b8d8a0b7012113c344ce1",
+    "log": "c79f358a5bce74a0c35445d360dcf0fe785d4509143aaedec56461a0c8f21ca1",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Tactic/Tauto.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/BigOperators/Ring/Finset.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Finset/Card.olean"
+    ],
+    "axioms": [
+      "IncidenceLabelHistory.protected_census401"
+    ]
+  },
+  "IncidenceCleanupLabels.lean": {
+    "stage": "ten",
+    "source": "dc578550a0976c24b9e05de15a675b1053015ee16f3b12adcc75fea44265512e",
+    "object": "87a2ad6a9a7ff0d6e0bbc5c38c9c2ce26febc867dfbc73741a9e23f2b08ccf3a",
+    "log": "ba348f4c03e8bbd0c72c0be8b6f9c949891285287ea65555289edfae08dc7e6a",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceLabelHistory.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceSurvivingReads.olean"
+    ],
+    "axioms": [
+      "IncidenceCleanupLabels.bill"
+    ]
+  },
+  "IncidenceLineTrieWeight.lean": {
+    "stage": "ten",
+    "source": "1413e1ed84297ef060d911a3258e0e5f92039b230c259445abfa06c29d5f3c76",
+    "object": "4fb543da48eb9756db450d4b74aab576401b4d3c3307cf0775af814e56be8504",
+    "log": "18eaf83700446bbdbb6f49cf81d57f47bb558a35666175ca70ca7b8b4475fc72",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Lean/Elab/Tactic/Omega.olean"
+    ],
+    "axioms": [
+      "IncidenceLineTrieWeight.eligible_402"
+    ]
+  },
+  "IncidenceNoExtra.lean": {
+    "stage": "ten",
+    "source": "f3392b8f9ab04cf18ac66620b9dbed7d330b9337cd17c04c7dc49161bbb93c11",
+    "object": "280105c9f189dff72076d6018b362d2ca306b7089bbba24ec88efb2114e8fe63",
+    "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidencePhysicalZeroFlow.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceDenseSignature.olean"
+    ],
+    "axioms": []
+  },
+  "IncidencePointShield.lean": {
+    "stage": "ten",
+    "source": "9598c5ef4db68e63dccb972be4d3347e9b28fc5bfd1d137104fe149ef54d7b69",
+    "object": "c4a73264517a84f01c5586a52d0b5e358013d2fda24ca820f03eaeb5bb878410",
+    "log": "180b053e857bf0e2391ded4d0f0828b5d7252457995100bd57dd691533cc6d6b",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean"
+    ],
+    "axioms": [
+      "IncidencePointShield.low_at_cut"
+    ]
+  },
+  "IncidenceSoleAndRetention.lean": {
+    "stage": "ten",
+    "source": "29de3ab090c3abbe4f279b16190f7d029e8d71bb6b6e70d16d822efd8a5c6fd3",
+    "object": "e6040c4b7aa613983825a97025e7094cfc8801d8b8dd6b70bba6a46f20dffc3b",
+    "log": "d3fc82552bce79a6e86dc8a137371bb308db5c28953bbfb334cb844e773a61d8",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceSoleReservation.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceRouteAlias.olean"
+    ],
+    "axioms": [
+      "IncidenceSoleAndRetention.physical"
+    ]
+  },
+  "Research/IncidenceRobust.lean": {
+    "stage": "native",
+    "source": "f002cc4c6e9120d24628e638b946cfa0a2a38c1ec570476e0a858dd65ad4715f",
+    "object": "d70972e0a5a7d95c0640cb3448bf765dd412f7c802097eb03ad920d9de9f2042",
+    "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/BigOperators/Group/Finset/Basic.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Fintype/Card.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Tactic/Ring.olean"
+    ],
+    "axioms": []
+  },
+  "Research/UniqueStarCost.lean": {
+    "stage": "native",
+    "source": "03f04de9bf90ddee5f10216e7a8c6a29f56858c042dda83903f9d89e07ee5f1a",
+    "object": "3f92ac4a15648107eee877818551647ebddd8a94e84225f3b463c8d66ed9c037",
+    "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Fintype/Card.olean"
+    ],
+    "axioms": []
+  },
+  "Research/SparseBoundary.lean": {
+    "stage": "native",
+    "source": "5598bad1a72fb963d41a5ef52baa1df22718859018fffd1612cb68a02399c96d",
+    "object": "5a4173f52c4395fddf894f213513e836f0373beef6e6e43ac18b003a9b2c3703",
+    "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Fintype/Card.olean"
+    ],
+    "axioms": []
+  },
+  "Research/LocalGateCut.lean": {
+    "stage": "native",
+    "source": "5615065a34d78b93c83816e3e19dd82e97225121b1f51bac6fdd3cfc05ccf90c",
+    "object": "013809be518f7c4af9aad176e37b976c58e97b9bfc34a3607f9282d4d112eb09",
+    "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/CircuitRewire.olean"
+    ],
+    "axioms": []
+  },
+  "Research/SparseQueryCut.lean": {
+    "stage": "native",
+    "source": "cfe8612be9a61865e6f24d9587d201df1bb553cd3ede5131fdf59f2cb64f28c4",
+    "object": "bdac1f8d5a0d640a53a48bd62bbb7be2983f3cf8da190f28b624bb1fc33dd731",
+    "log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/LocalGateCut.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/SparseBoundary.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/UniqueStarCost.olean"
+    ],
+    "axioms": []
+  },
+  "IncidenceLineGateBooking.lean": {
+    "stage": "ten",
+    "source": "afb631a87f670623db2775b8bd5c70956b31db160edd5fa71a26996016fd63a8",
+    "object": "a779c3cec52aef0d179bd33aa54bc26e8ff5f78deb43e41393ff91f61a78059a",
+    "log": "297157caf5f71afac2113f920f2b8a89c7dda30c65bdbc177e66a69401ce42a0",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/IncidenceRobust.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean"
+    ],
+    "axioms": [
+      "IncidenceLineGateBooking.booked_disjoint"
+    ]
+  },
+  "IncidencePointHeavy.lean": {
+    "stage": "ten",
+    "source": "85b132274fd174f97b4eca5fcd2dc42836469e3c72be3d798cff2e9618c0c835",
+    "object": "15c3f34b43216a5c2e8d0f47574af8d233705846fd1ba3d9dba92ca8c9245d96",
+    "log": "06ee4e7586cbb0451c35c6bfb99ae195559b0c732e667919836e323df3b17164",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/SparseQueryCut.olean"
+    ],
+    "axioms": [
+      "IncidencePointHeavy.physical_charge"
+    ]
+  },
+  "IncidencePointBooking.lean": {
+    "stage": "ten",
+    "source": "fed002c8ab770332f7ddd7daeb1c6ff22956f392b7e3ef3a2bc5820ff999afbe",
+    "object": "6e55a318824f6923caebb5a0eff35d45731f481f659657350b975ea35be7e089",
+    "log": "412b797dd0cf2ad7d5aa169b79b795051d342ff5de909750eeb60f038df5e9b6",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidencePointHeavy.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean"
+    ],
+    "axioms": [
+      "IncidencePointBooking.booking",
+      "IncidencePointBooking.census"
+    ]
+  },
+  "IncidencePointNativeCensus.lean": {
+    "stage": "ten",
+    "source": "56052bf3707db6e5a92007a0ecb850ac876f008e330c7ab9e109218858d84e5c",
+    "object": "085388421bcd0377c7a31a1aa38c84006545ed584fde90d9a7eb48ce5f24218a",
+    "log": "67ec8220dab458323d35b104c308f4519cf6373f9f88d46543304b53faa56667",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidencePointBooking.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceNativePin.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/IncidenceRobust.olean"
+    ],
+    "axioms": [
+      "IncidencePointBooking.native_census"
+    ]
+  },
+  "IncidenceLiteralLabelStep.lean": {
+    "stage": "marks",
+    "source": "a91350235c405be6c931c8416ac10652f29b6c1c289fc2c7ee16de9313d7a1dd",
+    "object": "eb4863a7d4851de87bbcf35809f122adedaec01c15aef4f73b1774fd84765435",
+    "log": "f8f62efef3ea55ad47c55aba4abebdf1b585bc6da53f291d90f179b83651b9b9",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceCleanupLabels.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceSoleAndRetention.olean"
+    ],
+    "axioms": [
+      "IncidenceLiteralLabelStep.step"
+    ]
+  },
+  "IncidenceMarkTransition.lean": {
+    "stage": "marks",
+    "source": "062aeeedcb243c40eaf6a51f63384d239c9a47343a8db76ad6ac688ae1be38c8",
+    "object": "69453b4bfd5c839ef3f9513bf328826da4a8a386b062f1c6cf99c1c2922c929c",
+    "log": "b89f9eb748c4e04471e975c491c69f1e7fa873de83b273418d5697dc40b0cfb1",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/ProtectedIncidenceMoments.olean"
+    ],
+    "axioms": [
+      "IncidenceMarkTransition.transition",
+      "IncidenceMarkTransition.guard_count401"
+    ]
+  },
+  "IncidenceCleanupGate.lean": {
+    "stage": "round",
+    "source": "e5d4da74f2495739c10a5fc3c31b67ed6ab0f2d5adf5f75d7517a738f70674f5",
+    "object": "22cf9f4995ebe9a87d750f729e8c51bedf631b752f441db3575cc6bb19a85a8b",
+    "log": "c1679b436e3c703c3b93498c2a584fe74f1eb448f798f1717480b0e3ee463c8d",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceCleanupLabels.olean"
+    ],
+    "axioms": [
+      "IncidenceCleanupGate.shock"
+    ]
+  },
+  "IncidenceRoundProtection.lean": {
+    "stage": "round",
+    "source": "07ff050ac819f8ba8e01ee1a37c6b787525d7c73c54c3388013d40abe31d213d",
+    "object": "b38ba0451a3327fb9a8e12522d6cf330597a632af32cfa093bafdbcb1fe27074",
+    "log": "472213b71cbf2b38e95f9bdd28d598deeefbe214c5898893935aceede3280644",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceMarkTransition.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceLabelHistory.olean"
+    ],
+    "axioms": [
+      "IncidenceRoundProtection.bounds401",
+      "IncidenceRoundProtection.plan_next"
+    ]
+  },
+  "IncidenceHoistFlow.lean": {
+    "stage": "hoist",
+    "source": "a8df2edce9ca02c8d7ec206bed7655576f192decfc3988f6f859d2e058f7dfb5",
+    "object": "281e90c0c76d35642a02482731cf0fed7d4cc2e5f2e5b75818b2893b9e753fe5",
+    "log": "3e016941da3e4042418010a272bc80e6484da3b704fe33a3ff19b78a71405f79",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistFlow.law",
+      "IncidenceHoistFlow.sandwich"
+    ]
+  },
+  "IncidenceHoistPorts.lean": {
+    "stage": "hoist",
+    "source": "9ba977239380328453253843a39564671dae3a552a18b29bda2f7069abd61a1c",
+    "object": "7754848e8eead720eb49541f79dc13b23e88a1d19cd57318e1ab8f78ad2a3429",
+    "log": "2e1e208e167c469fe1e42d740415191d561d9093a6f629b4ec0e27ba25642baf",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistPorts.opposite_soleAnd",
+      "IncidenceHoistPorts.circuit_transfer",
+      "IncidenceHoistPorts.private_transfer"
+    ]
+  },
+  "IncidenceHoistSparse.lean": {
+    "stage": "hoist",
+    "source": "a44bc9fc489c6b3e285f9e8513c6800ef811614797bc6d3bdfe4bff9061c6d82",
+    "object": "d553200516f64ac9e525d465b4e19c61e7eec1da924cf73d7e6239e1f9eafbec",
+    "log": "a9648b97e1d7f19e5e2415237318491db9d52ebaba3e707a3ba92c7a6539311b",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/Research/IncidenceRobust.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistSparse.line_safe",
+      "IncidenceHoistSparse.point_safe"
+    ]
+  },
+  "IncidenceHoistShield.lean": {
+    "stage": "hoist",
+    "source": "967428466a8f44c5c4499c9c86f514cfea26460e3d21d1376b76939d7459e746",
+    "object": "f59b05f3caaaf43864582ae29524178fdfb4485b1ba778e61500fecfdf54d016",
+    "log": "165e8f6f22f8e86a3352e36331e0b0e8c9556d678d34ddca442a44d264c052e8",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistSparse.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistShield.shield"
+    ]
+  },
+  "IncidenceHoistCompile.lean": {
+    "stage": "hoist",
+    "source": "657481a1d89dac4e31c44946b7523970ee6a405be644590d21a2466e85a8005e",
+    "object": "1b7a763b0aed7de1bd6b04d9112e08ed125247140824ec9eb2e9ff787835b1c6",
+    "log": "23926ddd7d9d4e7a40d0a23c66da69d09b398f980c5747a57806cf339303291f",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistFlow.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistCompile.physical_size",
+      "IncidenceHoistCompile.well_prefix",
+      "IncidenceHoistCompile.circuit"
+    ]
+  },
+  "IncidenceHoistRealize.lean": {
+    "stage": "hoist",
+    "source": "73518ded9fe6ef5404189884a8fc190507cf86fbda21106d50459a1df0128b46",
+    "object": "f749211e2ff4958301a1591d2ce402790b12a81695c994f34e30e541467e702b",
+    "log": "8b04f6483acfdc6e4579af646c6a7ded6ec16aa84acc9a1b9da32981a6b46386",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistCompile.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistRealize.realize"
+    ]
+  },
+  "IncidenceHoistPrefix.lean": {
+    "stage": "hoist",
+    "source": "7818d60715830d8cc4ddf36d61d770650e00fe2496f96262f773c2343c95c2f4",
+    "object": "328ca3ecaa87a853bd0cdf363e6be5dbcda9b9e6e45d71d1d643d4e4c5edbcd6",
+    "log": "ac2703ae98b58d593e7b832d47ee41ec092829057fb59968ce19c05558372f1b",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistShield.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistFlow.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistPrefix.grow",
+      "IncidenceHoistPrefix.shielding"
+    ]
+  },
+  "IncidenceHoistReaders.lean": {
+    "stage": "hoist",
+    "source": "43b6cb7eecde50d2be2925aa15799001edcaf83caa8b09c98026d0ff734e942c",
+    "object": "a5fef5fd4e992cd87380439dfaa8d49c42aa20beb6d834c68247785fa9405885",
+    "log": "34699b5f8a58e2a9f5f6468b6b3f50a0343c8d6c39de4a565749c8d48473b0c6",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistReaders.unique_reader"
+    ]
+  },
+  "IncidenceHoistWalk.lean": {
+    "stage": "hoist",
+    "source": "579191e3f86851ccba3be59e8b01677d8bfe1ffc35787bb3a303c888c1698057",
+    "object": "31a2e240fa04260c4d0ed946769ea4b99c6627b321904ca619354717b107f30c",
+    "log": "378aeba2458ce2a1f34489dff42d8ddf5c577fb5d63208644dbd4dbdf7c52ce5",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistPrefix.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistReaders.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistWalk.walk_shields",
+      "IncidenceHoistWalk.selected_safe"
+    ]
+  },
+  "HoistPhysicalPorts.lean": {
+    "stage": "fullhoist",
+    "source": "ad1377eb599fb8d893b5dbe8d5b81a92a2fbf788156376381a4c62773b59fdbf",
+    "object": "251727aae7ccbba399fc5c43f8f0a2f9ad768a3475b554364cc43993017a8bc2",
+    "log": "0e760f6746146afcf04f364aab7d46c2d7163c42f57f46945368ed76b8887392",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistWalk.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistCompile.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistPorts.olean"
+    ],
+    "axioms": [
+      "HoistPhysicalPorts.opposite_and_line",
+      "HoistPhysicalPorts.opposite_count",
+      "HoistPhysicalPorts.opposite_uses",
+      "HoistPhysicalPorts.exit_count_le"
+    ]
+  },
+  "IncidenceHoistBinarySource.lean": {
+    "stage": "fullhoist",
+    "source": "c5e0cc343e7781f19a3a636ae82f50eba5ea6dd0fada9b35567c4825d6f4f852",
+    "object": "833b54790d20d3fc9ed2515ab0060fbfc7c9e90fdabbf9aa34f5601def67df64",
+    "log": "e2387d45362ecb1f7b128c84d1e4f2a41b311bce45b22253eec471bb03268739",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistBinarySource.exists_binary",
+      "IncidenceHoistBinarySource.source"
+    ]
+  },
+  "IncidenceHoistDisjoint.lean": {
+    "stage": "fullhoist",
+    "source": "dd02a242e3b15ff523e95b0f8629c181dd65871e3f54feab8f366f05540d8833",
+    "object": "89bbe655b0cbf4bcb725fcdc3c2bc504d831d295bccc297e9ef520f7ca21369f",
+    "log": "44a0e3b40e9e05331fcbba9cbdac7d2a44a8723b41762d53008b1ca8423e0837",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistWalk.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistDisjoint.chooses",
+      "IncidenceHoistDisjoint.no_opposite"
+    ]
+  },
+  "IncidenceHoistEndpoint.lean": {
+    "stage": "fullhoist",
+    "source": "5c2d6ba6eda1e070b49aa2a040481b5bd3fcb2fe7abf76d87b6be2ebb582d1d3",
+    "object": "5c21c0ac3ed4d62c1c3ce6884a7b9314fec9f4cafaad124d890d4fcdffd4da88",
+    "log": "6af13374322b81452e33a4f0c076557cb45f0e05f4f77014b7b0cd5cf790a69d",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistDisjoint.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistCompile.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistEndpoint.complete",
+      "IncidenceHoistEndpoint.ref_walk"
+    ]
+  },
+  "IncidenceHoistPrune.lean": {
+    "stage": "fullhoist",
+    "source": "ceb18420161f6a82763451b2af26fc16467e1697ff00369eff6e53b43616f74b",
+    "object": "996a0de8440a941175fe53444b071f5862218cbe304d2b19e8cb3bad43023a63",
+    "log": "715796e964aa3deba8eff4956f4633d6bc25abc89c397e71d49d4a7e83238051",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistBinarySource.olean",
+      "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Finset/Sort.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistPrune.source_live",
+      "IncidenceHoistPrune.prune"
+    ]
+  },
+  "IncidenceHoistLive.lean": {
+    "stage": "fullhoist",
+    "source": "8b0f4e6fcdbdcf352a117d1eb0f6cf785559565ef38652a062650b8a43fe68b1",
+    "object": "a9d159dda12a6f8cf64ecbbdf6fc546e09ec8859c6efe2ae7ae82cdc75ed35b0",
+    "log": "0085c4b1f1679127b267bc10d8fd023cca881009fe45dab85aac9aaeaa358213",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistPrune.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistCompile.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistLive.live"
+    ]
+  },
+  "IncidenceHoistSensitive.lean": {
+    "stage": "fullhoist",
+    "source": "e3f717652397839bf6e08f4a9f8e293791dd3c00a46e32e7e57c609960c6babf",
+    "object": "703a4d4777cbc73c51fa9efe02a03ac39b4c5c42c9dfcfee48d5276bb4ba3333",
+    "log": "e3d04868712ce7ab405c6f5356d76681ee928305085dfdbe893b11104ab7e667",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistWalk.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistSensitive.exit_used",
+      "IncidenceHoistSensitive.output_not_raw"
+    ]
+  },
+  "IncidenceHoistStage.lean": {
+    "stage": "fullhoist",
+    "source": "11db139a40ea060384224bcb4cbe8302705f52cb833720cc59ccc77ec4a5a51a",
+    "object": "592cc14e7a5604adb77f3c5c01baca261cdce5c61e313d3782c22dba73492b87",
+    "log": "d1f138f8db6868fb1dd7690b785b4f6b5a7d8289700c58b08c81bb9d83573da1",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistWalk.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistRealize.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistStage.positive",
+      "IncidenceHoistStage.line_negative",
+      "IncidenceHoistStage.point_negative"
+    ]
+  },
+  "IncidenceHoistNormalize.lean": {
+    "stage": "fullhoist",
+    "source": "e837e74090441748b271f1ad8dbc0b8683794087df176c6238c8b6335d0f8e6f",
+    "object": "57c83665305a031d05d205b522c7dc4711150abefbd3301f3c46496ed7970b8c",
+    "log": "514e711813e3f53960b9e497dc3a084fcf22878cfa968391e98e5fc9eea8a7e9",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistEndpoint.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistStage.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistSensitive.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/HoistPhysicalPorts.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistNormalize.owner_private"
+    ]
+  },
+  "IncidenceHoistBilateral.lean": {
+    "stage": "fullhoist",
+    "source": "0156eba0cdeac0d5b9b0f4b2a3c9b235d4c5149edd10069db464c7771db99378",
+    "object": "86f8c0676227160baf42c92457d93ff6d9294af72800480a43f9d9bf2e1a4353",
+    "log": "c62eb6986664f73dc46d32143ffbd85e309914f0b7d1a0a6f846d1f7edaa7250",
+    "deps": [
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistNormalize.olean",
+      "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistLive.olean"
+    ],
+    "axioms": [
+      "IncidenceHoistBilateral.start_of_censuses",
+      "IncidenceHoistBilateral.stages"
+    ]
+  }
+}

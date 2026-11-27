@@ -1,0 +1,57 @@
+/workspace/scratch/incidence-hoist/IncidenceHoistStage.lean:70:54: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/workspace/scratch/incidence-hoist/IncidenceHoistStage.lean:70:62: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/workspace/scratch/incidence-hoist/IncidenceHoistStage.lean:70:54: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/workspace/scratch/incidence-hoist/IncidenceHoistStage.lean:70:62: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/workspace/scratch/incidence-hoist/IncidenceHoistStage.lean:52:0: warning: automatically included section variable(s) unused in theorem `IncidenceHoistStage.output_bounds`:
+  [DecidableRel I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableRel I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/workspace/scratch/incidence-hoist/IncidenceHoistStage.lean:88:54: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/workspace/scratch/incidence-hoist/IncidenceHoistStage.lean:88:62: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/workspace/scratch/incidence-hoist/IncidenceHoistStage.lean:88:54: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/workspace/scratch/incidence-hoist/IncidenceHoistStage.lean:88:62: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/workspace/scratch/incidence-hoist/IncidenceHoistStage.lean:100:54: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/workspace/scratch/incidence-hoist/IncidenceHoistStage.lean:100:62: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/workspace/scratch/incidence-hoist/IncidenceHoistStage.lean:100:54: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/workspace/scratch/incidence-hoist/IncidenceHoistStage.lean:100:62: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+'IncidenceHoistStage.positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceHoistStage.line_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceHoistStage.point_negative' depends on axioms: [propext, Classical.choice, Quot.sound]

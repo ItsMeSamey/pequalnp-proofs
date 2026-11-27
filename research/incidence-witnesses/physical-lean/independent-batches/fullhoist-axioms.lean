@@ -1,0 +1,46 @@
+import HoistPhysicalPorts
+import IncidenceHoistBilateral
+import IncidenceHoistBinarySource
+import IncidenceHoistDisjoint
+import IncidenceHoistEndpoint
+import IncidenceHoistLive
+import IncidenceHoistNormalize
+import IncidenceHoistPrune
+import IncidenceHoistSensitive
+import IncidenceHoistStage
+#print axioms HoistPhysicalPorts.physical_count
+#print axioms HoistPhysicalPorts.selected_main
+#print axioms HoistPhysicalPorts.circuit_code
+#print axioms HoistPhysicalPorts.opposite_count
+#print axioms HoistPhysicalPorts.opposite_uses
+#print axioms HoistPhysicalPorts.exit_count_le
+#print axioms HoistPhysicalPorts.count_pos_iff
+#print axioms HoistPhysicalPorts.circuit_count_pos
+#print axioms HoistPhysicalPorts.opposite_and_line
+#print axioms IncidenceHoistBilateral.stages
+#print axioms IncidenceHoistBilateral.start_of_censuses
+#print axioms IncidenceHoistBinarySource.exists_binary
+#print axioms IncidenceHoistBinarySource.source
+#print axioms IncidenceHoistDisjoint.cold
+#print axioms IncidenceHoistDisjoint.no_opposite
+#print axioms IncidenceHoistDisjoint.chooses
+#print axioms IncidenceHoistEndpoint.complete
+#print axioms IncidenceHoistEndpoint.walk_reads
+#print axioms IncidenceHoistEndpoint.not_principal
+#print axioms IncidenceHoistEndpoint.ref_stable
+#print axioms IncidenceHoistEndpoint.ref_gate
+#print axioms IncidenceHoistEndpoint.ref_walk
+#print axioms IncidenceHoistLive.live
+#print axioms IncidenceHoistNormalize.owner_private
+#print axioms IncidenceHoistPrune.prune
+#print axioms IncidenceHoistPrune.source_live
+#print axioms IncidenceHoistSensitive.output_ne_owner
+#print axioms IncidenceHoistSensitive.output_not_raw
+#print axioms IncidenceHoistSensitive.exit_used_of_neighbor
+#print axioms IncidenceHoistSensitive.exit_used
+#print axioms IncidenceHoistStage.budget
+#print axioms IncidenceHoistStage.ops
+#print axioms IncidenceHoistStage.output_bounds
+#print axioms IncidenceHoistStage.positive
+#print axioms IncidenceHoistStage.line_negative
+#print axioms IncidenceHoistStage.point_negative

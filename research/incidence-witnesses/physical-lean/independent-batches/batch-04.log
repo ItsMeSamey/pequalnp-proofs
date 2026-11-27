@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/review-q401-batches/replay.py", line 47, in <module>
+    for ip in imports(s/n):assert any(P(x).resolve()==known[ip].resolve() for x in deps)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

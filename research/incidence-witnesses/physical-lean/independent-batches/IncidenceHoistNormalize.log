@@ -1,0 +1,7 @@
+/workspace/scratch/incidence-hoist/IncidenceHoistNormalize.lean:47:81: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-hoist/IncidenceHoistNormalize.lean:47:81: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'IncidenceHoistNormalize.owner_private' depends on axioms: [propext, Classical.choice, Quot.sound]

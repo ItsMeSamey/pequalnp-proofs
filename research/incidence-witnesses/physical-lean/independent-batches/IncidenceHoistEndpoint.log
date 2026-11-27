@@ -1,0 +1,2 @@
+'IncidenceHoistEndpoint.complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceHoistEndpoint.ref_walk' depends on axioms: [propext, Quot.sound]

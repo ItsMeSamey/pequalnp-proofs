@@ -1,0 +1,214 @@
+{
+  "lock": [
+    "all-lean",
+    "5b6e357837f67d5ae4254ea6f04a1c7164a1a0581e1bfe244208a9cc6fdf0cc2",
+    "8808fdae5012178edbd92c5485d4dac82eb7894b"
+  ],
+  "prior": {
+    "review-q401": "19885c592cd38f2b0178b3fe277c76b756b0884b25d33b3ca56beb718a59700a",
+    "review-q401-increment": "1e4842385824637539c18566211590dd784e3e03331c01cf530f77c69e038108",
+    "review-q401-plus2": "069212e67dd7fa75784e9eba5d88ab2b72b62e4365bd332c586df31d684edaa2"
+  },
+  "modules": {
+    "HoistPhysicalPorts.lean": {
+      "stage": "fullhoist",
+      "source": "ad1377eb599fb8d893b5dbe8d5b81a92a2fbf788156376381a4c62773b59fdbf",
+      "object": "251727aae7ccbba399fc5c43f8f0a2f9ad768a3475b554364cc43993017a8bc2",
+      "log": "0e760f6746146afcf04f364aab7d46c2d7163c42f57f46945368ed76b8887392",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistWalk.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistCompile.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistPorts.olean"
+      ],
+      "axioms": [
+        "HoistPhysicalPorts.opposite_and_line",
+        "HoistPhysicalPorts.opposite_count",
+        "HoistPhysicalPorts.opposite_uses",
+        "HoistPhysicalPorts.exit_count_le"
+      ]
+    },
+    "IncidenceHoistBilateral.lean": {
+      "stage": "fullhoist",
+      "source": "0156eba0cdeac0d5b9b0f4b2a3c9b235d4c5149edd10069db464c7771db99378",
+      "object": "86f8c0676227160baf42c92457d93ff6d9294af72800480a43f9d9bf2e1a4353",
+      "log": "c62eb6986664f73dc46d32143ffbd85e309914f0b7d1a0a6f846d1f7edaa7250",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistNormalize.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistLive.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistBilateral.start_of_censuses",
+        "IncidenceHoistBilateral.stages"
+      ]
+    },
+    "IncidenceHoistBinarySource.lean": {
+      "stage": "fullhoist",
+      "source": "c5e0cc343e7781f19a3a636ae82f50eba5ea6dd0fada9b35567c4825d6f4f852",
+      "object": "833b54790d20d3fc9ed2515ab0060fbfc7c9e90fdabbf9aa34f5601def67df64",
+      "log": "e2387d45362ecb1f7b128c84d1e4f2a41b311bce45b22253eec471bb03268739",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/prior/IncidenceStartNormalization.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistBinarySource.exists_binary",
+        "IncidenceHoistBinarySource.source"
+      ]
+    },
+    "IncidenceHoistDisjoint.lean": {
+      "stage": "fullhoist",
+      "source": "dd02a242e3b15ff523e95b0f8629c181dd65871e3f54feab8f366f05540d8833",
+      "object": "89bbe655b0cbf4bcb725fcdc3c2bc504d831d295bccc297e9ef520f7ca21369f",
+      "log": "44a0e3b40e9e05331fcbba9cbdac7d2a44a8723b41762d53008b1ca8423e0837",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistWalk.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistDisjoint.chooses",
+        "IncidenceHoistDisjoint.no_opposite"
+      ]
+    },
+    "IncidenceHoistEndpoint.lean": {
+      "stage": "fullhoist",
+      "source": "5c2d6ba6eda1e070b49aa2a040481b5bd3fcb2fe7abf76d87b6be2ebb582d1d3",
+      "object": "5c21c0ac3ed4d62c1c3ce6884a7b9314fec9f4cafaad124d890d4fcdffd4da88",
+      "log": "6af13374322b81452e33a4f0c076557cb45f0e05f4f77014b7b0cd5cf790a69d",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistDisjoint.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistCompile.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistEndpoint.complete",
+        "IncidenceHoistEndpoint.ref_walk"
+      ]
+    },
+    "IncidenceHoistLive.lean": {
+      "stage": "fullhoist",
+      "source": "8b0f4e6fcdbdcf352a117d1eb0f6cf785559565ef38652a062650b8a43fe68b1",
+      "object": "a9d159dda12a6f8cf64ecbbdf6fc546e09ec8859c6efe2ae7ae82cdc75ed35b0",
+      "log": "0085c4b1f1679127b267bc10d8fd023cca881009fe45dab85aac9aaeaa358213",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistPrune.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistCompile.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistLive.live"
+      ]
+    },
+    "IncidenceHoistNormalize.lean": {
+      "stage": "fullhoist",
+      "source": "e837e74090441748b271f1ad8dbc0b8683794087df176c6238c8b6335d0f8e6f",
+      "object": "57c83665305a031d05d205b522c7dc4711150abefbd3301f3c46496ed7970b8c",
+      "log": "514e711813e3f53960b9e497dc3a084fcf22878cfa968391e98e5fc9eea8a7e9",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistEndpoint.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistStage.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistSensitive.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/HoistPhysicalPorts.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistNormalize.owner_private"
+      ]
+    },
+    "IncidenceHoistPrune.lean": {
+      "stage": "fullhoist",
+      "source": "ceb18420161f6a82763451b2af26fc16467e1697ff00369eff6e53b43616f74b",
+      "object": "996a0de8440a941175fe53444b071f5862218cbe304d2b19e8cb3bad43023a63",
+      "log": "715796e964aa3deba8eff4956f4633d6bc25abc89c397e71d49d4a7e83238051",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistBinarySource.olean",
+        "/dev/shm/gcycle-t2/mathlib/Mathlib/Data/Finset/Sort.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistPrune.source_live",
+        "IncidenceHoistPrune.prune"
+      ]
+    },
+    "IncidenceHoistSensitive.lean": {
+      "stage": "fullhoist",
+      "source": "e3f717652397839bf6e08f4a9f8e293791dd3c00a46e32e7e57c609960c6babf",
+      "object": "703a4d4777cbc73c51fa9efe02a03ac39b4c5c42c9dfcfee48d5276bb4ba3333",
+      "log": "e3d04868712ce7ab405c6f5356d76681ee928305085dfdbe893b11104ab7e667",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistWalk.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistSensitive.exit_used",
+        "IncidenceHoistSensitive.output_not_raw"
+      ]
+    },
+    "IncidenceHoistStage.lean": {
+      "stage": "fullhoist",
+      "source": "11db139a40ea060384224bcb4cbe8302705f52cb833720cc59ccc77ec4a5a51a",
+      "object": "592cc14e7a5604adb77f3c5c01baca261cdce5c61e313d3782c22dba73492b87",
+      "log": "d1f138f8db6868fb1dd7690b785b4f6b5a7d8289700c58b08c81bb9d83573da1",
+      "deps": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.36.0/lib/lean/Init.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistWalk.olean",
+        "/dev/shm/review-q401-batches-ZiTvS6/fresh/IncidenceHoistRealize.olean"
+      ],
+      "axioms": [
+        "IncidenceHoistStage.positive",
+        "IncidenceHoistStage.line_negative",
+        "IncidenceHoistStage.point_negative"
+      ]
+    }
+  },
+  "public": [
+    "HoistPhysicalPorts.physical_count",
+    "HoistPhysicalPorts.selected_main",
+    "HoistPhysicalPorts.circuit_code",
+    "HoistPhysicalPorts.opposite_count",
+    "HoistPhysicalPorts.opposite_uses",
+    "HoistPhysicalPorts.exit_count_le",
+    "HoistPhysicalPorts.count_pos_iff",
+    "HoistPhysicalPorts.circuit_count_pos",
+    "HoistPhysicalPorts.opposite_and_line",
+    "IncidenceHoistBilateral.stages",
+    "IncidenceHoistBilateral.start_of_censuses",
+    "IncidenceHoistBinarySource.exists_binary",
+    "IncidenceHoistBinarySource.source",
+    "IncidenceHoistDisjoint.cold",
+    "IncidenceHoistDisjoint.no_opposite",
+    "IncidenceHoistDisjoint.chooses",
+    "IncidenceHoistEndpoint.complete",
+    "IncidenceHoistEndpoint.walk_reads",
+    "IncidenceHoistEndpoint.not_principal",
+    "IncidenceHoistEndpoint.ref_stable",
+    "IncidenceHoistEndpoint.ref_gate",
+    "IncidenceHoistEndpoint.ref_walk",
+    "IncidenceHoistLive.live",
+    "IncidenceHoistNormalize.owner_private",
+    "IncidenceHoistPrune.prune",
+    "IncidenceHoistPrune.source_live",
+    "IncidenceHoistSensitive.output_ne_owner",
+    "IncidenceHoistSensitive.output_not_raw",
+    "IncidenceHoistSensitive.exit_used_of_neighbor",
+    "IncidenceHoistSensitive.exit_used",
+    "IncidenceHoistStage.budget",
+    "IncidenceHoistStage.ops",
+    "IncidenceHoistStage.output_bounds",
+    "IncidenceHoistStage.positive",
+    "IncidenceHoistStage.line_negative",
+    "IncidenceHoistStage.point_negative"
+  ],
+  "axioms": "866bcaaf321616706e002d640cd34e6dc3edb2e1cc0c8ccece735772b8a61482"
+}
