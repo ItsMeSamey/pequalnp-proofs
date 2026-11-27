@@ -1,3 +1,5 @@
 The endpoint omission excludes 952 additional original one-terminal labels in the seven-owner, two-compound, cost-28 sector. The independent review covers those 952 labels. The producer adds 1,230 earlier exclusions to obtain 2,182 of 2,654 labels in that sector. The underlying independent physical review for those 1,230 has yet to be located. The 472 labels outside that cumulative producer tally use both endpoints. Other owner counts require separate proofs before these figures can enter a full one-terminal count.
 
 [Original endpoint proof](t1-seven-one-end-virtual.zip) · [Reviewed constant-folding explanation](t1-seven-one-end-virtual-reviewed.zip) · [Preceding quartet proof](t1-seven-pair-top.zip)
+
+The subsequent independent source review reconciled all 862 plus 368 predecessor records. The cumulative 2,182 cases now have complete owner coverage. [Current cumulative ledger](../cumulative-0340/README.md)
