@@ -1,0 +1,5 @@
+600 forced and 600 vertical minimum-partition checks passed
+128 exhaustive + 160 seeded decisions and witnesses passed
+30 first-space bases matched exhaustive charts; ranks [0, 1, 2, 3, 4]
+2 excluded minors, 60 recognition comparisons, 62 exact-line controls and 30 first-space bases passed
+12 W bases and original-index co-chart witnesses verified; dimensions [0, 3, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
