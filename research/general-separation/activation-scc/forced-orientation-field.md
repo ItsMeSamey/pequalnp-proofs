@@ -1,0 +1,7 @@
+# Single-exponential deterministic orientation search
+
+In forced-orientation-code.md standard small-bias sample spaces give uniform time 4^t poly(input) and polynomial space. A logarithmic forced-site promise suffices for polynomial time.
+
+For m≥1 and t≤m choose the least power of two q>m·2^t. Fix a nonzero binary linear functional L on the binary field of order q (e.g. constant coefficient). Enumerate q² field pairs (x,y) and put b_i=L(y x^i), 0≤i<m, with x^0=1. For every nonempty S, P_S=Σ_{i∈S}X^i is nonzero of degree ≤m−1. The signed bias of the parity on S is Pr[P_S(x)=0]≤(m−1)/q, because multiplication by a nonzero value permutes y and L is balanced. Expanding the indicator of a fixed pattern on h≤t positions in binary characters bounds its probability below by 2^{-h}(1−(2^h−1)(m−1)/q)>0. Thus enumerating all rows covers each forced pattern; one 2-SAT call per row returns an actual original assignment when successful.
+
+For degree d=log₂ q, enumerate monic binary polynomials and reject candidates having a nontrivial gcd with X^{2^j}−X for some 1≤j≤floor(d/2). Every reducible degree-d candidate has an irreducible factor of degree ≤d/2. Repeated squaring makes the tests polynomial in d, and at most q candidates precede the first irreducible. Total preprocessing and row searches cost 4^t poly(input) time, polynomial space. The deterministic exhaustion only certifies global NO under the stated promise.
