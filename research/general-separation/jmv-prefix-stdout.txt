@@ -1,0 +1,1 @@
+Five reduced transition families, ordered prefix covers and signed AND clauses passed.

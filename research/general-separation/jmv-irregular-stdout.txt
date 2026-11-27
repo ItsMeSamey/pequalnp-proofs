@@ -1,0 +1,1 @@
+Irregular shapes, raw clauses, canonical padding and full-row literal repairs passed.
