@@ -1,0 +1,9 @@
+# Tight private two-arm projections
+
+Suppose the two projected clean conjunctions AW,BW are assigned disjoint two-edge batches; each batch is an induced matching in the ambient graph by the anchored-clause lemma. This argument uses the original graph and the literal projected predicates, and imposes no leastness condition on the projection.
+
+For a projection with exactly four clauses, let its matching edges be aa′ and bb′. Each of the four independent transversal assignments falsifies a clause, and a clause hitting both assigned edges can be missed by at most one transversal. Thus the four misses are unique, and each clause includes exactly the opposite transversal on these endpoints. For a clause containing a,b, any outsider z in its support would make the opposite transversal {a′,b′} plus z satisfy every clause, hence include a graph edge. Therefore z neighbors a′ or b′. The clause's star anchor s neighbors a,b,z. It cannot equal a′ or b′ as either equality makes a residual edge a star edge, nor z since there are no loops. Thus z attaches to a′ or b′ by a forbidden four-cycle with s and the corresponding mate. Every clause of a tight projection equals its designated two-element support.
+
+At (a,b;w)=(2,2;2) or (2,3;2), AW is tight. Its two guard supports are distinct pairs, containing at least three endpoints in total. Each support hits both disjoint BW edges and has only two vertices, so all its vertices are also BW endpoints. On any three common endpoints the induced graph has exactly one edge, since deleting one endpoint of a two-edge induced matching leaves one edge. Both batches would contain that edge, violating disjoint assignment. Four assigned edges are impossible.
+
+At (3,3;1) the tight projection's unique guard is a two-vertex cover of all four assigned edges (every edge hits the guard), giving the desired local cover saving directly.
