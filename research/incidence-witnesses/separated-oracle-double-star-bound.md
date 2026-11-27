@@ -1,0 +1,9 @@
+# Half-the-plane call bound with arbitrary shore-separated preprocessing
+
+Under the universal OR-reduction model of separated-oracle-preprocessing-bound.md (bf7abe5e…), each branch covers at most 2(q+1) flags under D₋. Thus at least ⌈N/2⌉ oracle branches are required even with arbitrary monotone point-only and line-only maps and guards.
+
+Use that proof's enabled points A and relevant raw lines. An overfull codeword line must meet every enabled point. Each exact-q codeword class contributes an incidence rectangle with at most q+1 flags. All nonincident relevant lines for a fixed enabled point belong to at most one such class.
+
+If |A|≤2 or there are at most two relevant lines, the bound follows from the individual star sizes. Otherwise consider an exact-q class G containing two or more distinct lines. At most one enabled point is on every line of G, by uniqueness of intersection. At least two enabled points therefore have a miss in G. Every relevant line outside G passes through both of these points; otherwise a point would have a second miss class or an overfull miss. There is at most one such outside line. The rectangle for G and this additional line each contribute at most q+1 flags.
+
+Finally suppose every exact-q class consists of a single raw line. Every enabled point then misses at most one relevant line, including the overfull lines which it cannot miss. Four or more relevant lines would force two distinct enabled points to have at least two common lines. For three lines, if concurrent, only the concurrency point can meet two; otherwise only their three pairwise intersections can do so, each on two of the three lines. In either case there are at most six flags. Since q≥2, this also gives at most 2(q+1). Summing across branches on D₋ proves the bound. This does not establish tightness of the constant or a circuit-size lower bound.
