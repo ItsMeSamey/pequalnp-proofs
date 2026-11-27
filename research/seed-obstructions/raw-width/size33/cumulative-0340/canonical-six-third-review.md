@@ -1,0 +1,5 @@
+# Third independent review of the six canonical labels
+
+The reviewer verified the original legal wire indices, selection of a globally tie-minimal witness, replacement by native pairs, 28 positive incidence patterns, 245 maximal negatives, 24 signed automorphisms, transport of the whole selected bank and the physical alias argument. This review uses the previously certified 26-gate chart floor. It confirms six labels in four equivalence classes for the global search and leaves 18 labels on the direct fixed-bank ledger. [Original proof and scope](canonical-six.md) · [Frozen manifest](canonical-six.sha256)
+
+The separate single-source search tested 45 prefix candidates on representatives 0, 7, 110 and 115. Each result was empty. The criterion requires a universally safe substitution that strictly improves the tie-breaking tuple. It supplies no further exclusion. To reproduce it, extract the [combined source archive](t0-twelve-support-union.zip), set `PYTHONPATH=.` in the extracted directory and run the [checker](canonical-six-independent.py) by absolute path. Its SHA-256 is `0279dba5fea18f734fb04e3785762447784d5538965590af8af7128859bc8544`.
