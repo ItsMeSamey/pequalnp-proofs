@@ -1,0 +1,25 @@
+# What a witnessed loss permits in a principal-support search
+
+Use H=adjacency+diag(c), K=H+ωbbᵀ, J=K+aaᵀ over GF(4). A gain means K[S] singular and J[S] nonsingular. A loss reverses these statuses. The [sieve](two-readout-principal-sieve.md) converts a gain to an actual binary support. The [equality oracle](quaternary-support-equality.md) can return either orientation.
+
+A loss cannot justify discarding all its supersets. Take a binary edge x—y with both endpoint diagonals one, plus an isolated z of diagonal zero. Let a=e_x,b=e_z. At {x} the old determinant is one and the new determinant zero. At {x,y} the old matrix is all ones and toggling its first diagonal makes it nonsingular. Every gain contains x since the matrices agree on subsets excluding x. The actual feasible witness selects x,y. Two independent readouts already give a two-index control for scalar t=1+ω: H is the all-ones matrix, a=e₁,b=e₁+e₂. The singleton {1} is a loss; the full pair is a gain because its unique kernel vector is (1,1).
+
+## Exponentially many inclusion-minimal losses at scalar one
+
+Let u=v₀ and v=v_m. Join successive v_{i−1},v_i by two internally disjoint length-two paths on private lane vertices. Add an even-prescription leaf w adjacent only to u, and an odd-prescription leaf v' adjacent to v. The only odd-prescription vertices are v and v'. Set a=e_u and b=e_u+e_w+c. Every actual feasible support satisfies c·x=0 by handshaking, so the target a·x=1,b·x=0 would select both u,w, impossible at w. Their singletons are individually feasible and give independent readout vectors, so the linear span screen accepts the target.
+
+Each choice of one lane per diamond gives an induced u–v path P. On every S⊆P the restricted b equals a+c. In a singular binary H[S], c_S=diag H[S] is orthogonal to its kernel, by zᵀH[S]z=c_S·z. At corank one the two bordered determinants A and B of the sieve thus agree by the symmetric adjugate; at larger corank both vanish. If D=0 a scalar-one loss would require A=0 by comparing binary parts of D+ωB and A+ωC, and B≠0, impossible.
+
+If H[S] is invertible put α=a_SᵀH[S]^{-1}a_S. For z=H[S]^{-1}a_S, zᵀH[S]z=c_S·z implies a_SᵀH[S]^{-1}b_S=0. The rank-one inverse formula leaves a_SᵀK[S]^{-1}a_S=α. A scalar-one loss occurs exactly for α=1. On the full P the path matrix with just its v diagonal one has determinant one, as does the path obtained by removing u. Expand at the unlooped end to reduce by two. Hence α=1 by the diagonal cofactor. On a proper subset lacking u the update vanishes. Otherwise u is disconnected from v or v is absent; its component is alternating, so its inverse if nonsingular is alternating. Thus α=0. The 2^m paths are inclusion-minimal losses on 3m+3 vertices. A NO certificate that lists every minimal loss can require exponential size. [Bounded checker](diamond_principal_loss_check.py)
+
+## A coordinate deletion and contraction lower bound
+
+Consider trees splitting one original membership coordinate at a time. Permit closing a face whenever (i) the two support indicators agree throughout it, (ii) K is nonsingular throughout it, or (iii) J is singular throughout it. Grant these three tests unit cost. Joint Schur contraction on a common nonsingular pinned block is permitted: both determinant prefactors are nonzero, so the three closure conditions keep their meanings. A twist by a common feasible mask translates subset membership by symmetric difference and preserves coordinate faces. Arbitrary factorizations and parity queries are outside this tree model.
+
+Take disjoint sets A,B of m vertices each, plus u,w. Join u to every A and B vertex and to w. The A vertices are independent, the B vertices form a clique, and w has no other neighbor. Give precisely A diagonal one; let c be their incidence vector. Set a=c+e_u and b=e_u+e_w. This connected input again has no genuine gain: handshaking gives c·x=0, and the target would select the even leaf w together with u. Their singleton supports give full two-dimensional readout span. The explicit matrix costs quadratic space. Its parity rows have linear shared-circuit size using one shared B parity and one global row for u.
+
+Restrict the subset mask to exclude u,w. Write p_A,p_B for its parities on A,B. On this face b_S=0; the old matrix splits as identity on A and identity plus the all-ones matrix on B. The update adds the all-ones matrix on A. The support indicators are therefore
+
+old = 1+p_B,     new = (1+p_A)(1+p_B)
+
+as bits. If a subface has a free A bit and a free B bit, all four parity combinations occur. There is a loss, a common nonsingular mask and a common singular mask. None of the three tests closes this subface. Every leaf intersecting the restricted face must consequently fix all A bits or all B bits. Its intersection covers at most 2^m masks, whereas the face contains 2^{2m}. At least 2^m leaves are necessary regardless of branching order. This is a lower bound for the stated single-coordinate closure rules; parity branching immediately reads the displayed predicates.
