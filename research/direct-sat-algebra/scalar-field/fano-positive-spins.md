@@ -1,0 +1,11 @@
+# Connected positive-spin expander after exact CNF preprocessing
+
+For each edge uv of a simple connected bounded-degree expander G introduce private bits a,b and six ordinary width-four clauses forbidding full assignments. At boundary x_u=x_v=0 allow only private 00, and otherwise allow 00,01,10. Summing the private bits yields K=[[1,3],[3,3]], a strictly positive integer interaction. There are N=|V|+2|E| variables so far.
+
+Attach to each old bit v its own seven-coordinate linear simplex code indexed by nonzero F₂³, identifying one coordinate with v. Require even parity on each Fano line i,j,i+j, using exactly four ordinary ternary clauses. A valid word is precisely a linear functional on F₂³; every v has four extensions. The target CNF count is 4^N times the two-spin partition function on G and there are 7N variables.
+
+The formula is connected, bounded occurrence, has no units, binary clauses, pure variables, subsumptions or blocked clauses. Indeed at each literal another Fano line intersects its clause only at this variable and supplies its opposite sign. Every variable occurs twelve times in Fano clauses; any nonempty variable set S touches ≥3|S| clauses by width≤4, excluding matching autarkies. All visible assignments extend. Private edge variables can be separated when an adjacent visible is one, and distinct Fano coordinates are distinct linear functionals; no variables are forced or logically equal. Gaussian recognition genuinely removes the Fano codes with their stated multiplicity.
+
+Across any balanced cut in G take an induced matching of t=Ω(|V|) in the bounded-degree bipartite crossing graph and fix all other visible bits. Internal factors give odd unit diagonal row/column scalings. The submatrix is K tensor-powered t times up to these scalings. Its Smith factors are tensor products of 1 and 2 up to 2-adic units, since det K=−6. They all survive at native precision 7N+1 bits even with the multiplier 4^N. This concerns the reduced integrand, not the final scalar computational complexity.
+
+Expanding K=3−2·1[x_u=x_v=0] gives a sum over edge sets S of 3^{|E|−|S|}(−2)^{|S|}2^{|V|−|V(S)|}. Since |V(S)|−|S|≤ν(G), the scalar has valuation ≥|V|−ν(G). On graphs with oddly many perfect matchings the valuation equals |V|/2: |V(S)|≤2|S| and |V(S)|≤|V| imply the only minimizers are the perfect matchings. The 4^N multiplier adds 2N.
