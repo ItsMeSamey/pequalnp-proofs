@@ -5,9 +5,9 @@ import pickle
 import tempfile
 from time import monotonic
 
-STAGES=("anf","resource","choice","horn","semilattice","tree","brute")
+STAGES=("anf","resource","choice","closure_cover","horn","semilattice","tree","brute")
 MAX_RESULT_BYTES=8 << 20
-DEFAULTS=dict(anf=.5,resource=.5,choice=.5,horn=.5,semilattice=.5,tree=.5,brute=None)
+DEFAULTS=dict(anf=.5,resource=.5,choice=.5,closure_cover=.5,horn=.5,semilattice=.5,tree=.5,brute=None)
 
 
 def _valid(x,n,clauses,rows):
@@ -70,6 +70,13 @@ def _run(name,n,clauses,rows):
             return "SKIP",None,{"reason":str(exc)},()
         metrics.update(stalled=len(stalled),cover_rows=sum(len(c)>=3 for c in clauses))
         return status,x,metrics,()
+    if name=="closure_cover":
+        if any(len(c)>2 for c in clauses):
+            return "SKIP",None,{"reason":"requires normalized clause width at most two"},()
+        from two_sat_closure_cover import solve as solve_cover
+        x,details=solve_cover(n,clauses,rows)
+        metrics.update(details)
+        return finish(x)
     if name in ("horn","semilattice"):
         core=[c for c in clauses if sum(l>0 for l in c)<=1]
         extra=[c for c in clauses if sum(l>0 for l in c)>1]
