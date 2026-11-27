@@ -1,0 +1,25 @@
+/workspace/scratch/incidence-run-pin/IncidenceRoundPlaneIds.lean:15:23: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/workspace/scratch/incidence-run-pin/IncidenceRoundPlaneIds.lean:15:39: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-run-pin/IncidenceRoundPlaneIds.lean:15:39: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/scratch/incidence-run-pin/IncidenceRoundPlaneIds.lean:22:23: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/workspace/scratch/incidence-run-pin/IncidenceRoundPlaneIds.lean:22:34: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/workspace/scratch/incidence-run-pin/IncidenceRoundPlaneIds.lean:22:50: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-run-pin/IncidenceRoundPlaneIds.lean:22:50: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'IncidenceRoundPlaneIds.geometry' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,9 @@
+/workspace/scratch/incidence-dead-erase/IncidenceRoundLiteralInputs.lean:57:24: warning: This simp argument is unused:
+  small
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'IncidenceRoundLiteralInputs.reject' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceRoundLiteralInputs.flips' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+'IncidenceGroupPlaneTests.up' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceGroupPlaneTests.neg' depends on axioms: [propext, Classical.choice, Quot.sound]

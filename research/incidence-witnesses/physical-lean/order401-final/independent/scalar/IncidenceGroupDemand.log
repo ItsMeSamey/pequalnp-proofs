@@ -1,0 +1,12 @@
+IncidenceGroupDemand.lean:54:0: warning: automatically included section variable(s) unused in theorem `IncidenceGroupDemand.count`:
+  [DecidableEq β]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq β] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+IncidenceGroupDemand.lean:91:0: warning: automatically included section variable(s) unused in theorem `IncidenceGroupDemand.all_sites`:
+  [DecidableEq β]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq β] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

@@ -1,0 +1,500 @@
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:52:54: warning: This simp argument is unused:
+  Bool.false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 0 = true from rfl, not_false_eq_true, eq_self, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:52:74: warning: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 0 = true from rfl, Bool.false_eq_true, eq_self, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:52:112: warning: This simp argument is unused:
+  iff_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 0 = true from rfl, Bool.false_eq_true, not_false_eq_true, eq_self, iff_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:53:56: warning: This simp argument is unused:
+  view
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 0 = true from rfl,
+    show (38 : Mask).getLsbD 0 = false from rfl, show (19 : Mask).getLsbD 0 = true from rfl,
+    show (196 : Mask).getLsbD 0 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:53:97: warning: This simp argument is unused:
+  show (137 : Mask).getLsbD 0 = true from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (38 : Mask).getLsbD 0 = false from rfl,
+    show (19 : Mask).getLsbD 0 = true from rfl, show (196 : Mask).getLsbD 0 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:53:140: warning: This simp argument is unused:
+  show (38 : Mask).getLsbD 0 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 0 = true from rfl,
+    show (19 : Mask).getLsbD 0 = true from rfl, show (196 : Mask).getLsbD 0 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:53:183: warning: This simp argument is unused:
+  show (19 : Mask).getLsbD 0 = true from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 0 = true from rfl,
+    show (38 : Mask).getLsbD 0 = false from rfl, show (196 : Mask).getLsbD 0 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:53:225: warning: This simp argument is unused:
+  show (196 : Mask).getLsbD 0 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 0 = true from rfl,
+    show (38 : Mask).getLsbD 0 = false from rfl, show (19 : Mask).getLsbD 0 = true from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:54:54: warning: This simp argument is unused:
+  Bool.false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 1 = true from rfl, not_false_eq_true, eq_self, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:54:74: warning: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 1 = true from rfl, Bool.false_eq_true, eq_self, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:54:112: warning: This simp argument is unused:
+  iff_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 1 = true from rfl, Bool.false_eq_true, not_false_eq_true, eq_self, iff_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:55:56: warning: This simp argument is unused:
+  view
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 1 = false from rfl,
+    show (38 : Mask).getLsbD 1 = true from rfl, show (19 : Mask).getLsbD 1 = true from rfl,
+    show (196 : Mask).getLsbD 1 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:55:97: warning: This simp argument is unused:
+  show (137 : Mask).getLsbD 1 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (38 : Mask).getLsbD 1 = true from rfl,
+    show (19 : Mask).getLsbD 1 = true from rfl, show (196 : Mask).getLsbD 1 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:55:141: warning: This simp argument is unused:
+  show (38 : Mask).getLsbD 1 = true from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 1 = false from rfl,
+    show (19 : Mask).getLsbD 1 = true from rfl, show (196 : Mask).getLsbD 1 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:55:183: warning: This simp argument is unused:
+  show (19 : Mask).getLsbD 1 = true from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 1 = false from rfl,
+    show (38 : Mask).getLsbD 1 = true from rfl, show (196 : Mask).getLsbD 1 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:55:225: warning: This simp argument is unused:
+  show (196 : Mask).getLsbD 1 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 1 = false from rfl,
+    show (38 : Mask).getLsbD 1 = true from rfl, show (19 : Mask).getLsbD 1 = true from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:56:54: warning: This simp argument is unused:
+  Bool.false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 2 = true from rfl, not_false_eq_true, eq_self, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:56:74: warning: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 2 = true from rfl, Bool.false_eq_true, eq_self, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:56:112: warning: This simp argument is unused:
+  iff_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 2 = true from rfl, Bool.false_eq_true, not_false_eq_true, eq_self, iff_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:57:56: warning: This simp argument is unused:
+  view
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 2 = false from rfl,
+    show (38 : Mask).getLsbD 2 = true from rfl, show (19 : Mask).getLsbD 2 = false from rfl,
+    show (196 : Mask).getLsbD 2 = true from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:57:97: warning: This simp argument is unused:
+  show (137 : Mask).getLsbD 2 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (38 : Mask).getLsbD 2 = true from rfl,
+    show (19 : Mask).getLsbD 2 = false from rfl, show (196 : Mask).getLsbD 2 = true from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:57:141: warning: This simp argument is unused:
+  show (38 : Mask).getLsbD 2 = true from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 2 = false from rfl,
+    show (19 : Mask).getLsbD 2 = false from rfl, show (196 : Mask).getLsbD 2 = true from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:57:183: warning: This simp argument is unused:
+  show (19 : Mask).getLsbD 2 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 2 = false from rfl,
+    show (38 : Mask).getLsbD 2 = true from rfl, show (196 : Mask).getLsbD 2 = true from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:57:226: warning: This simp argument is unused:
+  show (196 : Mask).getLsbD 2 = true from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 2 = false from rfl,
+    show (38 : Mask).getLsbD 2 = true from rfl, show (19 : Mask).getLsbD 2 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:58:75: warning: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 3 = false from rfl, Bool.false_eq_true, eq_self, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:58:94: warning: This simp argument is unused:
+  eq_self
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 3 = false from rfl, Bool.false_eq_true, not_false_eq_true, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:58:103: warning: This simp argument is unused:
+  iff_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 3 = false from rfl, Bool.false_eq_true, not_false_eq_true, eq_self, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:59:91: warning: This simp argument is unused:
+  show (137 : Mask).getLsbD 3 = true from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (38 : Mask).getLsbD 3 = false from rfl,
+    show (19 : Mask).getLsbD 3 = false from rfl, show (196 : Mask).getLsbD 3 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:59:134: warning: This simp argument is unused:
+  show (38 : Mask).getLsbD 3 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 3 = true from rfl,
+    show (19 : Mask).getLsbD 3 = false from rfl, show (196 : Mask).getLsbD 3 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:59:177: warning: This simp argument is unused:
+  show (19 : Mask).getLsbD 3 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 3 = true from rfl,
+    show (38 : Mask).getLsbD 3 = false from rfl, show (196 : Mask).getLsbD 3 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:59:220: warning: This simp argument is unused:
+  show (196 : Mask).getLsbD 3 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 3 = true from rfl,
+    show (38 : Mask).getLsbD 3 = false from rfl, show (19 : Mask).getLsbD 3 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:60:75: warning: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 4 = false from rfl, Bool.false_eq_true, eq_self, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:60:94: warning: This simp argument is unused:
+  eq_self
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 4 = false from rfl, Bool.false_eq_true, not_false_eq_true, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:60:103: warning: This simp argument is unused:
+  iff_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 4 = false from rfl, Bool.false_eq_true, not_false_eq_true, eq_self, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:61:91: warning: This simp argument is unused:
+  show (137 : Mask).getLsbD 4 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (38 : Mask).getLsbD 4 = false from rfl,
+    show (19 : Mask).getLsbD 4 = true from rfl, show (196 : Mask).getLsbD 4 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:61:135: warning: This simp argument is unused:
+  show (38 : Mask).getLsbD 4 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 4 = false from rfl,
+    show (19 : Mask).getLsbD 4 = true from rfl, show (196 : Mask).getLsbD 4 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:61:178: warning: This simp argument is unused:
+  show (19 : Mask).getLsbD 4 = true from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 4 = false from rfl,
+    show (38 : Mask).getLsbD 4 = false from rfl, show (196 : Mask).getLsbD 4 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:61:220: warning: This simp argument is unused:
+  show (196 : Mask).getLsbD 4 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 4 = false from rfl,
+    show (38 : Mask).getLsbD 4 = false from rfl, show (19 : Mask).getLsbD 4 = true from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:62:75: warning: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 5 = false from rfl, Bool.false_eq_true, eq_self, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:62:94: warning: This simp argument is unused:
+  eq_self
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 5 = false from rfl, Bool.false_eq_true, not_false_eq_true, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:62:103: warning: This simp argument is unused:
+  iff_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 5 = false from rfl, Bool.false_eq_true, not_false_eq_true, eq_self, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:63:92: warning: This simp argument is unused:
+  show (137 : Mask).getLsbD 5 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (38 : Mask).getLsbD 5 = true from rfl,
+    show (19 : Mask).getLsbD 5 = false from rfl, show (196 : Mask).getLsbD 5 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:63:136: warning: This simp argument is unused:
+  show (38 : Mask).getLsbD 5 = true from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 5 = false from rfl,
+    show (19 : Mask).getLsbD 5 = false from rfl, show (196 : Mask).getLsbD 5 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:63:178: warning: This simp argument is unused:
+  show (19 : Mask).getLsbD 5 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 5 = false from rfl,
+    show (38 : Mask).getLsbD 5 = true from rfl, show (196 : Mask).getLsbD 5 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:63:221: warning: This simp argument is unused:
+  show (196 : Mask).getLsbD 5 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 5 = false from rfl,
+    show (38 : Mask).getLsbD 5 = true from rfl, show (19 : Mask).getLsbD 5 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:64:75: warning: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 6 = false from rfl, Bool.false_eq_true, eq_self, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:64:94: warning: This simp argument is unused:
+  eq_self
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 6 = false from rfl, Bool.false_eq_true, not_false_eq_true, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:64:103: warning: This simp argument is unused:
+  iff_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 6 = false from rfl, Bool.false_eq_true, not_false_eq_true, eq_self, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:65:92: warning: This simp argument is unused:
+  show (137 : Mask).getLsbD 6 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (38 : Mask).getLsbD 6 = false from rfl,
+    show (19 : Mask).getLsbD 6 = false from rfl, show (196 : Mask).getLsbD 6 = true from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:65:136: warning: This simp argument is unused:
+  show (38 : Mask).getLsbD 6 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 6 = false from rfl,
+    show (19 : Mask).getLsbD 6 = false from rfl, show (196 : Mask).getLsbD 6 = true from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:65:179: warning: This simp argument is unused:
+  show (19 : Mask).getLsbD 6 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 6 = false from rfl,
+    show (38 : Mask).getLsbD 6 = false from rfl, show (196 : Mask).getLsbD 6 = true from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:65:222: warning: This simp argument is unused:
+  show (196 : Mask).getLsbD 6 = true from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 6 = false from rfl,
+    show (38 : Mask).getLsbD 6 = false from rfl, show (19 : Mask).getLsbD 6 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:66:75: warning: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 7 = false from rfl, Bool.false_eq_true, eq_self, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:66:94: warning: This simp argument is unused:
+  eq_self
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 7 = false from rfl, Bool.false_eq_true, not_false_eq_true, iff_true, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:66:103: warning: This simp argument is unused:
+  iff_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show target.getLsbD 7 = false from rfl, Bool.false_eq_true, not_false_eq_true, eq_self, iff_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:67:90: warning: This simp argument is unused:
+  show (137 : Mask).getLsbD 7 = true from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (38 : Mask).getLsbD 7 = false from rfl,
+    show (19 : Mask).getLsbD 7 = false from rfl, show (196 : Mask).getLsbD 7 = true from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:67:133: warning: This simp argument is unused:
+  show (38 : Mask).getLsbD 7 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 7 = true from rfl,
+    show (19 : Mask).getLsbD 7 = false from rfl, show (196 : Mask).getLsbD 7 = true from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:67:176: warning: This simp argument is unused:
+  show (19 : Mask).getLsbD 7 = false from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 7 = true from rfl,
+    show (38 : Mask).getLsbD 7 = false from rfl, show (196 : Mask).getLsbD 7 = true from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:67:219: warning: This simp argument is unused:
+  show (196 : Mask).getLsbD 7 = true from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [r, rows, sites, view, IncidencePinHoistSparse.mask_single, show (137 : Mask).getLsbD 7 = true from rfl,
+    show (38 : Mask).getLsbD 7 = false from rfl, show (19 : Mask).getLsbD 7 = false from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:53:33: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:55:33: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:57:33: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:59:27: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:61:27: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:63:28: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:65:28: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:67:26: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:53:33: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:55:33: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:57:33: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:59:27: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:61:27: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:63:28: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:65:28: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/scratch/incidence-run-pin/IncidenceThetaPath.lean:67:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'IncidenceThetaPath.path' depends on axioms: [propext, Classical.choice, Quot.sound]

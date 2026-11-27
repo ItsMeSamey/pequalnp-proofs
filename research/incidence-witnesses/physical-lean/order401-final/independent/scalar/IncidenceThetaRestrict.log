@@ -1,0 +1,30 @@
+/workspace/scratch/incidence-pin-hoist/IncidenceThetaRestrict.lean:98:85: warning: This simp argument is unused:
+  inject
+
+Hint: Omit it from the simp argument list.
+  [apply] simp at e
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-pin-hoist/IncidenceThetaRestrict.lean:101:85: warning: This simp argument is unused:
+  inject
+
+Hint: Omit it from the simp argument list.
+  [apply] simp at e
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-pin-hoist/IncidenceThetaRestrict.lean:104:46: warning: This simp argument is unused:
+  inject
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [no] at ap
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-pin-hoist/IncidenceThetaRestrict.lean:105:46: warning: This simp argument is unused:
+  inject
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [no] at bl
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'IncidenceThetaRestrict.restrict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceThetaRestrict.tests' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,11 @@
+/workspace/scratch/incidence-run-pin/IncidenceRoundAndMass.lean:27:19: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+/workspace/scratch/incidence-run-pin/IncidenceRoundAndMass.lean:28:50: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/scratch/incidence-run-pin/IncidenceRoundAndMass.lean:28:50: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'IncidenceRoundAndMass.physical' depends on axioms: [propext, Classical.choice, Quot.sound]

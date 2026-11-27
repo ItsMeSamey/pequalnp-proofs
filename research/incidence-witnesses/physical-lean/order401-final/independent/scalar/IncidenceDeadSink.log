@@ -1,0 +1,2 @@
+'IncidenceDeadSink.exists_sink' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceDeadSink.zero_uses' depends on axioms: [propext, Classical.choice, Quot.sound]

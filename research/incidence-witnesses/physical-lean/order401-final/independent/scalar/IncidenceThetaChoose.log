@@ -1,0 +1,8 @@
+/workspace/scratch/incidence-pin-hoist/IncidenceThetaChoose.lean:32:71: warning: This simp argument is unused:
+  mask
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [s, t, same, opp, view, mask_single, witness]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'IncidenceThetaBatchHoist.no_opposite' depends on axioms: [propext, Classical.choice, Quot.sound]

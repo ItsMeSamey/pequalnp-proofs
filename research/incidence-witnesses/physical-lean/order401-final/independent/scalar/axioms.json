@@ -1,0 +1,215 @@
+{
+  "IncidenceThetaBatchHoist.cold": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaBatchHoist.stage": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaRestrict.restrict": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaRestrict.tests": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaBatchHoist.no_opposite": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaBatchHoist.private_after": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaRestrict.step": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaCredits.line": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaCredits.point": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaPaid.room": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaFour.physical": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaPath.path": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaCore.core": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaProtected.baseline": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaPencil.pencil": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaPlaneResidual.order401": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaPlaneResidual.plane": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceThetaBatch.payment": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceRoundNoExtraPhysical.bundle": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceCleanupGate.erase_unused": [
+    "propext",
+    "Quot.sound"
+  ],
+  "IncidenceDeadRowErase.erase": [
+    "propext",
+    "Quot.sound"
+  ],
+  "IncidenceDeadSink.exists_sink": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceDeadSink.zero_uses": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceDeadRowErase.run": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceRoundPhysicalMove.live_of_stop": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidencePhysicalBudgetStop.stopAt": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceGroupPlaneTests.up": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceGroupPlaneTests.neg": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceGroupPhysicalDemand.residual": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceGroupNativeIds.demand": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceRoundDenseSignature.physical": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceRoundBigMeets.physical": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceRoundAndMass.physical": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceRoundSigPayments.unbranched": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceRoundAndBound.bound": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceRoundPlaneIds.geometry": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceRoundShockPrice.price": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceTrackedLiteral.step": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceRoundLiteralInputs.reject": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceRoundLiteralInputs.flips": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceRoundLiteralShock.physical": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidencePhysical401Caller.scalar": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "IncidenceOfficialScalar.physical_posted401": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

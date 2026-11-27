@@ -1,0 +1,20 @@
+/workspace/scratch/incidence-run-pin/IncidenceRoundReservations.lean:66:31: warning: This simp argument is unused:
+  Fintype.card_subtype
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [single]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceRoundReservations.lean:70:31: warning: This simp argument is unused:
+  Fintype.card_subtype
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [single]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/incidence-run-pin/IncidenceRoundReservations.lean:127:50: warning: Variable name `eligible` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _eligible
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

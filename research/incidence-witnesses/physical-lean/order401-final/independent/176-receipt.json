@@ -1,0 +1,14 @@
+{
+  "modules": 176,
+  "previous": 76,
+  "fresh": 100,
+  "point": 39,
+  "additional": 61,
+  "verified_hashes": "45c11ebdc0031a1cea535fa1126338fc5273cbd81cf67dbb2edcca85173dfb3c",
+  "axiom_reports": 85,
+  "axioms": "953d3cd04be5a95179fcbb85ca9046a616bcd08a93f3f550dd2b0e71d65ae0db",
+  "ledger": "1622d062c027a6020fafbb153c92bd89ff8926f4499c2ac71a581d5bd0b5916c",
+  "additional_ledger": "78099fee7e3b03fcac9b48a51ce4cbf49c97cb5b8711cedb375e17ac1a1a6bb1",
+  "archive_ref": "43a0b625638dab5f2fe9dc1646561c1fe75f851d:research/incidence-witnesses/physical-lean/line-freeze/bilateral-actual-9843.zip",
+  "archive_sha": "6a6c61561d249c861cd9644c4e6162004682d5746e41c6ef38be13f71548692c"
+}

@@ -1,0 +1,26 @@
+{
+  "frozen": {
+    "ref": "64ab75d69600321806b85959c1a8c9ae1b749573:research/incidence-witnesses/physical-lean/order401-final/order401-posted.zip",
+    "sha": "440ac6787116fe2c5c7bf495588b9043574d06f307165513543e84c07e6e091e"
+  },
+  "compiler": "Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)",
+  "modules": 255,
+  "sealed_bilateral": 176,
+  "other_prior": 10,
+  "fresh": 69,
+  "dependency_pins": 23,
+  "earlier_bilateral_receipt": "66c4a9eceeead01c05bd4b7f571ec543a7f71651ef4a9eca4a0c1b9e08abfec3",
+  "new_object_ledger": "526c95fc9c7216efdd18a7ed53a16db58228a778eec21a5c67af330b67e100e0",
+  "all255": "5a0974afe5ecb6f8765f6d8511398bca41d707bfc4425e50d2bf3196c5f04602",
+  "axioms": "5b8af0190ef7d68589c18d309b531194db5c9adcbb98aa83a67d6da2aad2a90b",
+  "scalar": {
+    "source": "de09d943a25f8e281cb30ee7d926c91cf6e76c798d20d97f2ffc7d4d97b1047b",
+    "object": "95619af6d6fb4cd3f3e203c408d077d57cac78a058af5cc9f1173b628d628777",
+    "stage": "new"
+  },
+  "posted": {
+    "source": "3af35580cab0fd25cad5acf80703c85ff847e003541fbc4e94ff328f41601244",
+    "object": "3deb0074347d6e3117437c82e4372db1c24a8af815ad47d6e8774a18ce3c44ee",
+    "stage": "new"
+  }
+}

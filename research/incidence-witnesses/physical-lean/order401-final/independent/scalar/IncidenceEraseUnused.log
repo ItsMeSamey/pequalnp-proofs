@@ -1,0 +1,8 @@
+/workspace/scratch/incidence-dead-erase/IncidenceEraseUnused.lean:19:25: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/workspace/scratch/incidence-dead-erase/IncidenceEraseUnused.lean:21:14: warning: Unused tactic linter: `(try split)` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'IncidenceCleanupGate.erase_unused' depends on axioms: [propext, Quot.sound]

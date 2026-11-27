@@ -1,0 +1,15 @@
+/workspace/scratch/incidence-run-pin/IncidenceRoundPhysicalFunding.lean:15:23: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+/workspace/scratch/incidence-run-pin/IncidenceRoundPhysicalFunding.lean:41:17: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/workspace/scratch/incidence-run-pin/IncidenceRoundPhysicalFunding.lean:41:17: warning: This simp argument is unused:
+  if_neg e
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
