@@ -1,0 +1,1 @@
+{"code": 0, "output": "PASS RS first gate: 24 wires, projected states 256 ambient 16777216 ring output (3808, 0, 0, 0) elapsed seconds 0.004812 ; affine projected fiber, mixed birth/V, duplicate cancellation and cap controls\nPASS empty COPY/affine graph and out-of-range physical edge rejection\n", "rss": 11587584, "wall": 0.07124365199706517}
