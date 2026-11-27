@@ -1,0 +1,330 @@
+[
+  {
+    "m": 3,
+    "bad": false,
+    "strict": 3,
+    "tests": 6,
+    "status": "sat",
+    "route": "raw binary projection",
+    "witness": 524279,
+    "cost": {
+      "n": 19,
+      "raw_clauses": 36,
+      "layers": [
+        {
+          "frontier": 0,
+          "candidates": 1,
+          "retained": 1
+        },
+        {
+          "frontier": 2,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 4,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 6,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 0,
+          "candidates": 2,
+          "retained": 1
+        }
+      ],
+      "binary_probes": 233,
+      "highwater": 1,
+      "elapsed_ns": 8083018
+    }
+  },
+  {
+    "m": 3,
+    "bad": true,
+    "strict": 3,
+    "tests": 6,
+    "status": "unsat",
+    "route": "no extendible prefix",
+    "witness": null,
+    "cost": {
+      "n": 19,
+      "raw_clauses": 38,
+      "layers": [
+        {
+          "frontier": 0,
+          "candidates": 1,
+          "retained": 1
+        },
+        {
+          "frontier": 2,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 4,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 6,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 0,
+          "candidates": 2,
+          "retained": 0
+        }
+      ],
+      "binary_probes": 233,
+      "highwater": 1,
+      "elapsed_ns": 7616414
+    }
+  },
+  {
+    "m": 5,
+    "bad": false,
+    "strict": 5,
+    "tests": 10,
+    "status": "sat",
+    "route": "raw binary projection",
+    "witness": 2147483615,
+    "cost": {
+      "n": 31,
+      "raw_clauses": 60,
+      "layers": [
+        {
+          "frontier": 0,
+          "candidates": 1,
+          "retained": 1
+        },
+        {
+          "frontier": 2,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 4,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 6,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 8,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 10,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 0,
+          "candidates": 2,
+          "retained": 1
+        }
+      ],
+      "binary_probes": 893,
+      "highwater": 1,
+      "elapsed_ns": 77043845
+    }
+  },
+  {
+    "m": 5,
+    "bad": true,
+    "strict": 5,
+    "tests": 10,
+    "status": "unsat",
+    "route": "no extendible prefix",
+    "witness": null,
+    "cost": {
+      "n": 31,
+      "raw_clauses": 62,
+      "layers": [
+        {
+          "frontier": 0,
+          "candidates": 1,
+          "retained": 1
+        },
+        {
+          "frontier": 2,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 4,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 6,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 8,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 10,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 0,
+          "candidates": 2,
+          "retained": 0
+        }
+      ],
+      "binary_probes": 893,
+      "highwater": 1,
+      "elapsed_ns": 66778077
+    }
+  },
+  {
+    "m": 8,
+    "bad": false,
+    "strict": 8,
+    "tests": 16,
+    "status": "sat",
+    "route": "raw binary projection",
+    "witness": 562949953421055,
+    "cost": {
+      "n": 49,
+      "raw_clauses": 96,
+      "layers": [
+        {
+          "frontier": 0,
+          "candidates": 1,
+          "retained": 1
+        },
+        {
+          "frontier": 2,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 4,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 6,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 8,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 10,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 12,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 14,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 16,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 0,
+          "candidates": 2,
+          "retained": 1
+        }
+      ],
+      "binary_probes": 3283,
+      "highwater": 1,
+      "elapsed_ns": 477122299
+    }
+  },
+  {
+    "m": 8,
+    "bad": true,
+    "strict": 8,
+    "tests": 16,
+    "status": "unsat",
+    "route": "no extendible prefix",
+    "witness": null,
+    "cost": {
+      "n": 49,
+      "raw_clauses": 98,
+      "layers": [
+        {
+          "frontier": 0,
+          "candidates": 1,
+          "retained": 1
+        },
+        {
+          "frontier": 2,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 4,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 6,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 8,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 10,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 12,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 14,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 16,
+          "candidates": 2,
+          "retained": 1
+        },
+        {
+          "frontier": 0,
+          "candidates": 2,
+          "retained": 0
+        }
+      ],
+      "binary_probes": 3283,
+      "highwater": 1,
+      "elapsed_ns": 525315705
+    }
+  }
+]
