@@ -1,0 +1,17 @@
+ExactPlaneGaussian.lean:244:16: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ne, Ne.symm ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ExactPlaneGaussian.lean:244:35: warning: This simp argument is unused:
+  Ne.symm ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Pi.single_apply, ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ExactPlaneGaussian.solve_hits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneGaussian.build_echelon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactPlaneGaussian.solve_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
