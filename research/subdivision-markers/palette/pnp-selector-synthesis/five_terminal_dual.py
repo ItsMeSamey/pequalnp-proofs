@@ -68,26 +68,30 @@ def generators(n,edges,first_space):
         raise ValueError("two-anchor packing condition not certified")
     if not dual.terminals:
         return ((dual.cut(1<<u),dual.cut(1<<v)) for u,v in combinations(range(n-1),2))
-    def stream():
-        for z,q in enumerate(dual.charge):
-            if q or not dual.compatible(1<<z,0):
+    return neutral_generators(dual,first_space)
+
+
+def neutral_generators(dual,first_space):
+    """Baseline W0, valid with any terminal count."""
+    n=len(dual.graph)
+    for z,q in enumerate(dual.charge):
+        if q or not dual.compatible(1<<z,0):
+            continue
+        seen={z}
+        for root in range(n):
+            if root in seen:
                 continue
-            seen={z}
-            for root in range(n):
-                if root in seen:
-                    continue
-                vertices=[root];seen.add(root);ids=set()
-                for u in vertices:
-                    for v,i in dual.graph[u]:
-                        if v!=z:
-                            ids.add(i)
-                            if v not in seen:
-                                seen.add(v);vertices.append(v)
-                subedges=[dual.edges[i][:2] for i in sorted(ids)]
-                for x in component_lifts(vertices,subedges,dual.charge,first_space):
-                    if not dual.compatible(1<<z,x):
-                        raise ValueError("invalid physical paired witness")
-                    a,b=dual.cut(1<<z),dual.cut(x)
-                    if a and b and a!=b:
-                        yield a,b
-    return stream()
+            vertices=[root];seen.add(root);ids=set()
+            for u in vertices:
+                for v,i in dual.graph[u]:
+                    if v!=z:
+                        ids.add(i)
+                        if v not in seen:
+                            seen.add(v);vertices.append(v)
+            subedges=[dual.edges[i][:2] for i in sorted(ids)]
+            for x in component_lifts(vertices,subedges,dual.charge,first_space):
+                if not dual.compatible(1<<z,x):
+                    raise ValueError("invalid physical paired witness")
+                a,b=dual.cut(1<<z),dual.cut(x)
+                if a and b and a!=b:
+                    yield a,b
