@@ -1,0 +1,6 @@
+import check_biclique_physical_raw
+import check_dual_period_raw
+
+if __name__ == "__main__":
+    check_biclique_physical_raw.main()
+    check_dual_period_raw.main()

@@ -1,0 +1,1 @@
+{"cpu": 0.026841999999999998, "maxrss_kib": 7808, "code": 0, "output": "opposite-signed induced P4: both verdicts, 8192 raw words, conflicting pins\n", "rss": 8015872, "wall": 0.03093437000643462, "kernel_before": ["1: FLOCK  ADVISORY  WRITE 1460245 00:1b:193638 0 EOF"], "kernel_after": ["1: FLOCK  ADVISORY  WRITE 1460245 00:1b:193638 0 EOF"]}

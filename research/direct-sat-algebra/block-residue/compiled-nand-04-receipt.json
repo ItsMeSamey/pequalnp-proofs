@@ -1,0 +1,1 @@
+{"cpu": 0.043569000000000004, "maxrss_kib": 9472, "code": 0, "output": "5 compiled NAND truth tables: 143360 physical words, P4 YES/NO, guard/suffix replay\n", "rss": 9109504, "wall": 0.05101970399846323, "kernel_before": ["1: FLOCK  ADVISORY  WRITE 1455982 00:1b:193638 0 EOF"], "kernel_after": ["1: FLOCK  ADVISORY  WRITE 1455982 00:1b:193638 0 EOF"]}

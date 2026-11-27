@@ -1,0 +1,9 @@
+# Conditional syndrome directions and original NAND witnesses
+
+Use biclique_total.total_block_witness(shells,pins) for original signed copy coordinates, or total_comparison_witness(vertices, comparisons) for paired indexed requests. It groups identical signed requests when the resulting conflicts are disjoint complete bipartite components. If grouping gives any other conflict graph, it keeps each occurrence separately and preserves all cycle equations. Both paths replay the returned assignment. With k residual components, the runtime is polynomial in explicit bit length times 2^k. The unconditional fallback has k at most the number of shells.
+
+The main proofs are biclique-period.md, dual-shore-directions.md, and dual-proof-calculus.md. The two physical families collective-period-source.md and dual-quadratic-theta.md separate the successive rules. triangle-conflict-bicliques.md explains which part of a connected SAT reduction can be factored and why its source CNF can survive. marked-cycle-span-barrier.md proves that extracting every direction common to all original orientations is coNP-complete. This differs from deciding existential feasibility or computing the translation stabilizer of the full feasible syndrome set. biclique-prior.md includes the SAT and polynomial-calculus sources.
+
+The 04 total runner recorded passing collective and dual suites, then its entrypoint for the last P4 checker failed. The standalone P4 checker has its own entrypoint. The independent compiled NAND test ran separately and passed all five truth tables. The solver sources were held fixed. Model counts are outside the guarantee.
+
+The standalone P4 replay passed both verdicts, all 8,192 raw words, and conflicting pins. See p4-standalone-04-receipt.json. The convenience runner check_total_bundle.py calls the same two P4 cases. The three historical manifests and original wrapper preserve the first failed invocation for reproducibility.
