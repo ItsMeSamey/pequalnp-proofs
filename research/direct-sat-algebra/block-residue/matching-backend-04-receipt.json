@@ -1,0 +1,1 @@
+{"cpu": 0.05674699999999999, "maxrss_kib": 8320, "code": 0, "output": "10 connected matching-covered tight-cut oracle fixtures\nmatching hull and blossom oracle cases 184\n", "rss": 7000064, "wall": 0.07224998399033211, "kernel_before": ["17: FLOCK  ADVISORY  WRITE 1473330 00:1b:193638 0 EOF"], "kernel_after": ["17: FLOCK  ADVISORY  WRITE 1473330 00:1b:193638 0 EOF"]}
