@@ -1,0 +1,1 @@
+{"checker": "462db31caf01af8ee9cd77a5c7dabacd4503046477bd85c60260581febbfe8ca", "targets": ["6695a0bb51b31d042215a06b07e0ff4b63a67f7ee24588af4125fcb13d01d6c5", "4e95eb81b525f06d1a0424bce8a67aab17574eef8016962504c97b4d33b81ffa"], "parity_cases": 24, "or_cases": 16, "mixed_VZ": 24, "native_precision": 243, "native_J": 6, "rss_kib": 15360}
