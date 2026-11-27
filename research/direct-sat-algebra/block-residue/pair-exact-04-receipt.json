@@ -1,0 +1,1 @@
+{"cpu": 0.7475999999999999, "maxrss_kib": 31816, "code": 0, "output": "five original NAND controls, both exact seed costs and raw SAT/UNSAT checked\n", "rss": 32911360, "wall": 0.8354092350054998, "kernel_before": ["9: FLOCK  ADVISORY  WRITE 1522921 00:1b:193638 0 EOF"], "kernel_after": ["9: FLOCK  ADVISORY  WRITE 1522921 00:1b:193638 0 EOF"]}
