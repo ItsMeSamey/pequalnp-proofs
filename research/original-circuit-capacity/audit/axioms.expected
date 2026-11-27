@@ -1,0 +1,1 @@
+'SignedTrace.original_circuit_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]

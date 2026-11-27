@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")"
+exec python3 -IB fixtures/replay_trace_fixtures.py fixtures/gate-list-trace-fixtures.json

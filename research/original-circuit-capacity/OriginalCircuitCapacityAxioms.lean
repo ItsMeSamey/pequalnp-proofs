@@ -1,0 +1,2 @@
+import OriginalCircuitCapacity
+#print axioms SignedTrace.original_circuit_capacity

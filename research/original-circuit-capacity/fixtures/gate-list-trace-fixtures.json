@@ -1,0 +1,245 @@
+[
+  {
+    "name": "duplicate-and",
+    "inputs": 1,
+    "gates": [
+      [
+        "and",
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "output": 1,
+    "donor": 0,
+    "truth_lsb_coordinate0": [
+      0,
+      1
+    ],
+    "donor_paths": [
+      {
+        "odd": 0,
+        "pins": [
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "odd": 0,
+        "pins": [
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "not-ignores-second-pin",
+    "inputs": 2,
+    "gates": [
+      [
+        "not",
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "output": 2,
+    "donor": 1,
+    "truth_lsb_coordinate0": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "donor_paths": []
+  },
+  {
+    "name": "forward-read-and-empty-not",
+    "inputs": 1,
+    "gates": [
+      [
+        "or",
+        [
+          2
+        ]
+      ],
+      [
+        "not",
+        []
+      ],
+      [
+        "and",
+        [
+          1,
+          2
+        ]
+      ]
+    ],
+    "output": 3,
+    "donor": 0,
+    "truth_lsb_coordinate0": [
+      0,
+      0
+    ],
+    "donor_paths": []
+  },
+  {
+    "name": "empty-and",
+    "inputs": 1,
+    "gates": [
+      [
+        "and",
+        []
+      ]
+    ],
+    "output": 1,
+    "donor": 0,
+    "truth_lsb_coordinate0": [
+      1,
+      1
+    ],
+    "donor_paths": []
+  },
+  {
+    "name": "bad-output",
+    "inputs": 1,
+    "gates": [],
+    "output": 88,
+    "donor": 0,
+    "truth_lsb_coordinate0": [
+      0,
+      0
+    ],
+    "donor_paths": []
+  },
+  {
+    "name": "essential-descending-only",
+    "inputs": 1,
+    "gates": [
+      [
+        "not",
+        [
+          0
+        ]
+      ]
+    ],
+    "output": 1,
+    "donor": 0,
+    "truth_lsb_coordinate0": [
+      1,
+      0
+    ],
+    "donor_paths": [
+      {
+        "odd": 1,
+        "pins": [
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "both-signs-xor",
+    "inputs": 2,
+    "gates": [
+      [
+        "or",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "and",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "not",
+        [
+          3
+        ]
+      ],
+      [
+        "and",
+        [
+          2,
+          4
+        ]
+      ]
+    ],
+    "output": 5,
+    "donor": 0,
+    "truth_lsb_coordinate0": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "donor_paths": [
+      {
+        "odd": 0,
+        "pins": [
+          [
+            5,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "odd": 1,
+        "pins": [
+          [
+            5,
+            1
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "comparable-multiple-donors",
+    "inputs": 2,
+    "gates": [
+      [
+        "not",
+        [
+          1
+        ]
+      ]
+    ],
+    "output": 2,
+    "donor": 0,
+    "truth_lsb_coordinate0": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "donor_paths": []
+  }
+]
