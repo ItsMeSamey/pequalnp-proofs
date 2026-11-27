@@ -1,0 +1,5 @@
+# The two-dirty case for eight AND gates
+
+On each of the four native banks, a size-at-most-33 separator with eight AND gates would have a selected representative with at least three dirty gates. The proof chooses the representative by the objectives in the [scope and dependency ledger](native-eight-scope-crosswalk-v2.zip). A dirty AND gate accepts at least one signed negative. The 624 indexed negatives give 468 distinct masks and 245 inclusion-maximal masks.
+
+The independent assembly audit checked the final same-arm proof through the alternative full-petal argument, the physical cost of restoring the private tag, and coverage by 22 labelled cases. It matched the decompressed DRAT proof digests against their verification records. This audit used the recorded DRAT verification for that step. The [proof archive](zero-guest-common-dirty-drat.zip) preserves those records. Three or more dirty gates at eight ANDs and the nine- and ten-AND cases require separate arguments. The original four-bank counts are unchanged.
