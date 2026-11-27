@@ -1,0 +1,11 @@
+# The connected maximum for a strict selected guard
+
+Privatize terminal b in a physical two-terminal graph box by a constant prescription. If the effective defect at a has just one attainable value whenever a is selected, the connected maximum is ten raw rows, attained on five sites. For disconnected terminals twelve is sharp, and equality forces a three-state by four-state product.
+
+Absorb the cap's constant at b into its local offset. If symmetric terminal drift terms are allowed, toggle the edge ab to absorb the off-diagonal bit and absorb each selected-site diagonal into its offset. These translations preserve the raw table cardinality. Connectivity is measured after that toggle.
+
+Delete a. For each remaining connected component K meeting its neighborhood, let u be the nonzero neighborhood vector and c its effective prescribed bits, treating b as a guarded private site. With a selected the private prescription on K is c+u. Since the empty private support is feasible and each component varies independently, constancy of the defect forces u to annihilate all legal supports. The [connected span theorem](symmetric-single-row-p3.md) gives c+u=u, hence c=0 on K. This covers the entire connected component of a except a itself.
+
+If b lies there, reopen it as a raw terminal. The effective offset at b and all private prescribed bits in this component are zero. Handshaking shows that every raw row of occupancies p,q and defects e,f has p e+q f=p c_a. At occupancy 00 there are at most four defect pairs and at each other occupancy at most two. A connected example has zero offsets and three independent private sites with terminal neighborhoods {a}, {b}, {a,b}. At 00 both defect directions are available; at 10 and 01 only the opposite endpoint's singleton helper is free; at 11 only the common helper is free. All ten rows occur. Capping b at zero prescription forces e=0 on a=1.
+
+If a,b are in distinct components their raw relations factor. The b component satisfies its cap on the all-zero support. The a factor has at most three states since a=1 fixes its defect, and the b factor has at most four. Equality at twelve requires both maxima. The [five-site disconnected example](thirteen-state-physical-guard.md) attains them.
