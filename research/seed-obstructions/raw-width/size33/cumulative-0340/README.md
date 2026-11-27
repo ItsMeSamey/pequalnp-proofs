@@ -1,5 +1,7 @@
 # Reviewed original-key exclusions
 
+Eight native zero-terminal cases bring the subtotal to **1,916 of 4,032**. There are 2,116 zero-terminal and 387 one-terminal cases left, or **2,503 overall**. [Eight added IDs](t0-native-eight.ids) · [Zero-terminal union](t0-signed-1916.ids) · [Audit manifest](native-inert-eight.sha256)
+
 Independent full-owner review now excludes **1,908 of 4,032 zero-terminal keys**. The 222 double-quartet cases include six previously counted, adding 216. Together with **5,826 of 6,213 one-terminal keys**, the unresolved counts are 2,124 and 387 respectively, or **2,511 overall**. [Zero-terminal IDs](t0-signed-1908.ids) · [Component evidence](t0-increment-256.sha256)
 
 Independent review added 40 zero-terminal keys, bringing that subtotal to **1,692 of 4,032**. The additions comprise ten inert transfers, 24 original single-OR transfers and six double-quartet keys. With 387 one-terminal and 2,340 zero-terminal keys open, **2,727 cases remain**. [Forty added IDs](t0-increment-40.ids) · [Zero-terminal union](t0-signed-1692.ids)
