@@ -1,0 +1,1 @@
+Counter({('all-small', 4, True): 7709, ('all-small', 4, False): 5791, ('all-small', 5, False): 4476, ('all-small', 5, True): 3600, ('all-two-cherries', 4, True): 1817, ('all-two-cherries', 4, False): 231, ('sample', 4, True): 53, ('sample', 6, False): 50, ('sample', 5, False): 40, ('sample', 5, True): 35, ('sample', 6, True): 25, ('sample', 4, False): 22})
