@@ -1,0 +1,25 @@
+# A polynomial algorithm for a singular P3 family with dense conditional rows
+
+Consider the Boolean P3 feasibility problem with one exceptional center whose two diagonal coefficients are opposite. For each balanced center assume that at least one of its two affine right sides is identically zero; the other may depend on all centers. Fix either value of the exceptional center. Write x_i=1 when balanced center i takes its unsafe value. Its only remaining check is
+
+x_i=1 implies Σ_{j≠i} M_ij x_j = c_i.
+
+The diagonal term can be absorbed into c_i on x_i=1. The safe-value translations and the pinned exceptional bit similarly change only the constants. The unique zero leaf coefficient in the exceptional pair checks one additional affine equation ℓ(x)=d. Other private leaves impose no constraints. Suppose the off-diagonal matrix M is symmetric. Then this whole feasibility problem has a deterministic polynomial-time algorithm, including construction of the original center and leaf bits. Every assignment of the exceptional selector has a singular leaf matrix.
+
+## Linear span of permitted supports
+
+Let G be the simple undirected graph with edge ij when M_ij=1. A feasible support S induces a graph in which the degree of each i in S has the specified parity c_i. Let V be the binary linear span of incidence vectors of feasible supports, before imposing the extra equation. Then
+
+V = {x : for each connected component D of G, Σ_{i∈D : c_i=1} x_i = 0}.
+
+Necessity follows by counting the two endpoints of every induced edge separately in each connected component. For sufficiency, every vertex with c_i=0 gives a feasible singleton. In a component, join two distinct vertices with c_i=1 by a shortest path. The path is induced. Split it at each internal vertex with c_i=1. Each segment by itself is an induced path with prescribed odd endpoints and even internal vertices, hence a feasible support. Sum the segment vectors modulo two. Each internal split vertex appears twice; each other internal vertex appears once and has prescribed parity zero, so its feasible singleton removes it. The result is the sum of the two endpoint units. Such pairs, together with all even-vertex singletons, generate the displayed space. This proof gives a polynomial-size list of actual feasible supports spanning V: per component connect one fixed odd vertex by shortest paths to each other odd vertex, record the segments, and include every even singleton. Here ‘odd vertex’ refers to its prescribed c_i, including isolated vertices.
+
+If the zero support satisfies the additional affine check, use it. Otherwise the linear part of ℓ must be one on a feasible vector. This holds exactly when it is nonzero on V; scanning the actual feasible supports just constructed supplies a witness whenever it holds. With zero or one odd vertex per component the same formula applies directly. Undo the bit translations. In each unit-coefficient P3 row take the corresponding evaluated right side for its leaf. In a zero-coefficient row take leaf zero after confirming its right side is zero. Repeat for the two exceptional choices. Adjacency construction, breadth-first searches, segment enumeration and checks all use polynomial bit time in the supplied input.
+
+Gallai's even-induced partition theorem and subsequent work study degree-parity constraints on induced graphs. The argument above uses the handshake identity, feasible singletons and induced paths. It asks for one affine readout using the span of their incidence vectors. [Ai, Guo, Gutin, Hao and Yeo, Large induced subgraphs with prescribed degree parity](https://arxiv.org/abs/2509.01428)
+
+## Boundaries and size comparison
+
+Symmetry matters to the displayed span. With an arc 1→2 only and prescriptions (1,0), support {1,2} is feasible and has a single selected odd vertex. Multiple affine readouts cannot be handled merely by testing membership in the linear image of V: for a single undirected edge and prescriptions (0,0), the empty set and each singleton are feasible but the simultaneous target x₁=x₂=1 is impossible even though V is the full space.
+
+The general one-exception Circuit-SAT construction permits two nonzero active right sides on a balanced center and directed dependence. Its short right sides read at most two centers, so after existentially eliminating every leaf each row is a predicate on at most three center bits. Forbidding the violating patterns produces O(p) clauses of width at most three on p centers. The pinned fixed-density counting theorem gives deterministic 2^{O(p/√log p)} time on that restricted sparse family, including when every leaf matrix is singular. The symmetric single-row algorithm instead permits dense right sides and gives polynomial time in its stated family. A general compiled circuit can have p proportional to its gate count. [One-exception reduction](single-unequal-p3.md) [October fixed-density theorem](https://github.com/openai/math/blob/92b516ef8e/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/build/main_full_version.tex)
