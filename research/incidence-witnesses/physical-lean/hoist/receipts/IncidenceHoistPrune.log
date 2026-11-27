@@ -1,0 +1,2 @@
+'IncidenceHoistPrune.source_live' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceHoistPrune.prune' depends on axioms: [propext, Classical.choice, Quot.sound]

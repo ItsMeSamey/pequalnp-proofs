@@ -1,0 +1,2 @@
+'IncidenceHoistSensitive.exit_used' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IncidenceHoistSensitive.output_not_raw' depends on axioms: [propext, Classical.choice, Quot.sound]
