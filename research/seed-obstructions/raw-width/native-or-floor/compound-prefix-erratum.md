@@ -1,4 +1,4 @@
-# Four missing operands in the compound-bank prefix enumeration
+# Four missing raw operands in the physical prefix enumerations
 
 The 19-AND, 14-OR exclusion at area 33 is **pending for the single-compound banks 7 and 17 and the paired-compound bank 115**. The physical third-prefix enumerator in `physicalK.hpp` skips four raw signals whose positive support consists of a singleton. Each is an eligible operand of K. Introducing a clean AND to simulate a skipped signal can exceed the gate budget. A suffix check on the supplied prefixes therefore leaves open the prefixes that the enumerator missed.
 
@@ -8,4 +8,8 @@ The 19-AND, 14-OR exclusion at area 33 is **pending for the single-compound bank
 | `native-or14-paired-third.zip` | `3ed3caae73aa695a8a3009ed5761c2f4f0fe59adeafe1102bd83db74df09105d` | Same omission for bank 115 |
 | `native-or14-single7-17-suffix.zip` | `4022e19ee4d83e5a5d96716c414a8e54ff6d543c9ffc9f921be541c65db2bf14` | Suffix result conditional on the supplied prefix list |
 
-The research branch through `38aade59e` published the selected **literal-bank** corner at `5b668c0f8` and the **14-OR lower bound** for all four banks at `9e14ce04d`. Those results use separate coverage. The literal-only unrestricted 15-OR argument also admits all 28 singleton K operands. Resolving the compound-bank corner requires a complete enumeration admitting the four raw operands and coverage of every resulting suffix, or a proof that eliminates the operands within both gate budgets.
+## Withdrawal of the original literal-bank signoff
+
+The verifier also withdrew the integrated literal-bank signoff in `review-selected-literal-h19.zip` (SHA-256 `6082ece0910dace9a7defb860e7d86382a66fd164418ecea7e7f9684be07e1e4`), published in commit `5b668c0f8`. That proof restricted each third-gate arm to at least two positive rows. The restriction applies to a paid dirty AND, but four degree-one bare raw point inputs are legitimate operands. The checks on the 306 recorded states and 16 surviving suffix pairs retain their original scope. The archive does not establish that its prefix list is exhaustive. Its conclusion that a minimum-area, minimum-AND literal representative at area at most 33 has at most 18 ANDs is **on hold**.
+
+This withdrawal corrects the assessment of the literal-bank signoff in erratum commit `e0dfe6714`. The all-bank 14-OR lower bound in `9e14ce04d` retains separate coverage. A candidate unrestricted literal-bank 15-OR proof, `native-unlimited-literal-or15.zip` (SHA-256 `d727e86e99f65dbe71aad1d5e84983cea5a98da7c938ef391ee1ced42afd7d16`), enumerates all 28 singleton K traces. Coverage and its connection to the corrected conclusion await an explicit verification receipt. Each compound-bank corner likewise requires complete prefix and suffix coverage or an operand-elimination proof that preserves both budgets.
