@@ -1,0 +1,2 @@
+vertices 308 canonical layers 150 checked 646 Counter({('paired', ('p',)): 210, ('common', ('p',)): 203, ('common', ('u',)): 203, ('paired', ('p', 'q')): 30})
+vertices 310 canonical layers 151 checked 1158 Counter({('common', ('p',)): 427, ('common', ('u',)): 427, ('paired', ('p',)): 210, ('common', ('p', 'q')): 32, ('common', ('u', 'q')): 32, ('paired', ('p', 'q')): 30})
