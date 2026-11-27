@@ -1,0 +1,23 @@
+# Carry spectra for balanced indirect addressing
+
+Use the two-half XOR bit F and layout of the [overlap theorem](independent-isa-overlap.md). Its balanced parity sign D has E D=0 and |E FD|=1/2 under the uniform distribution. Fix b≥0 and d≥1. Let S≤N^d Boolean features have size at most N(log N)^b each. For binary formulas set r=Θ(√N), and for acyclic existential node-query programs set r=Θ(N^{1/4}), as specified by the pertinent half. Treat the models separately. The [product correlation estimate](dictionary-certificate-control.md) gives c₀>0 such that every product of at most c₀r/(log N)^{b+1} features has absolute correlation with D at most 4^{-r}. The empty product has zero correlation. Conditioning on the other half gives the full-layout bound. Logs below are base two.
+
+**Exact real sums.** Suppose F=Σ_i w_i A_i pointwise, allowing arbitrary real weights. For ANY integer k choose ANY representatives c_i∈[−1,1] of (2k+1)w_i/2 modulo one. Write T=Σ_i c_i A_i. Then T−F/2 is integer valued. Its number K of distinct attained values satisfies
+
+    K ≥ c₁ r/(log N)^{b+1}
+
+for c₁>0 depending on b,d and all sufficiently large N. The statement allows an explicit bias as a constant feature.
+
+Indeed T lies in [−S,S]. The attained levels are among j and j+1/2 for K integers j. Each level determines F uniquely and distinct levels have separation at least 1/2. Interpolate the bit by Lagrange on the attained levels only. Each numerator factor after substituting T has coefficient norm at most 2S, and each inverse difference is at most 2. This yields an exact polynomial of degree at most 2K−1 in the atoms, with total absolute coefficient weight at most 2K(4S+2)^{2K−1}. Repeated Boolean factors may be collapsed. For 2K−1≤c₀r/(log N)^{b+1}, correlation forces that weight to be at least 4^r/2. Taking logs and choosing c₁ small gives the claim. The proof does not bound the original weights or assume they are rational.
+
+**Modular sums.** For any integer modulus M≥2 suppose Σ_i u_i A_i≡hF mod M with integer u_i and h nonzero mod M. Set e=M/gcd(h,M)≥2. Choose integer λ so a=λh mod M satisfies a/M=floor(e/2)/e∈[1/3,1/2]; this follows because h generates all multiples of gcd(h,M). Replace λu_i by any integral lifts of absolute value ≤M, divide by M, and sum against the atoms to obtain T'. Its attainable carry integers T'−(a/M)F again have count Ω_{b,d}(r/(log N)^{b+1}), regardless of the modulus size. In the proof above the minimum spacing is now 1/3, giving weight at most 2K(6S+3)^{2K−1}. A zero output scale yields no test. These are the carries after scaling and reduction, which need not match the original carries.
+
+For the unscaled unit-output case take T=Σ_i u_i A_i with |u_i|≤M and T≡F mod M. Let K count values of (T−F)/M. In the interpolation at levels of T/M at most one inverse difference per Lagrange term can exceed 2: it comes from the same carry and has size M, while distinct carries give spacing at least 1−1/M. Thus if 2K−1≤c₀r/(log N)^{b+1},
+
+    2r−1 ≤ log(2K)+log M+(2K−1)log(4S+2).
+
+In particular log M≤r and K≤c₁r/(log N)^{b+1} are incompatible for sufficiently small c₁. Take 2c₁≤c₀ and 2c₁(d+4)<1/2 to make the right side at most (3/2+o(1))r. This includes every polynomial modulus and every indicated signed lift. For unbounded lifts the numerator estimate must use Σ_i|u_i|/M in place of S.
+
+**Conversion and control.** For an exact real combination choose linearly independent evaluation columns and an invertible Boolean row minor. Cramer's rule and Hadamard's inequality give a common positive integer denominator h of bit length O(S log(S+1)). Every prime p not dividing h yields a unit-output modular representation on the same dictionary. Some such prime is O(S log(S+1)) up to adjusting constants at bounded S, since the logarithm of the product of primes up to X is Ω(X). No prime conversion is needed for the real result above.
+
+For the ordinary XOR bit use one unit-weight mod-two feature per bank and pointer row: check that this row is selected and its indexed payload bit is one. Each feature uses O(m) logical formula leaves by a row guard and a selector tree; the full list has polynomial size, and the same selector can be implemented by a query program within the cap. With R banks across the two halves, the ordinary sum realizes every value 0,…,R. Thus its carry floor(T/2) has exactly floor(R/2)+1 values. For the complemented convention include a constant-one feature, shifting the range to 1,…,R+1. This modular shortcut explains why a carry lower bound alone does not force a sparsity lower bound for arbitrary signed real weights.
