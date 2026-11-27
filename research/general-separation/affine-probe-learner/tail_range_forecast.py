@@ -68,14 +68,16 @@ def _conjunction(h, rows):
     return tuple(gates), out
 
 
-def posterior(h, history, query, *, max_latents=None):
+def posterior(h, history, query, *, max_latents=None, range_engine=None):
     """Return exact counts and original witnesses, or a structured budget refusal.
 
-    For m the maximum of the two independently selected suffix widths, runtime
+    For m the maximum of the two independently selected enumeration widths, runtime
     is 2**m times a polynomial in h and the combined raw description length.
     Unrecognized structure can require m=h. Empty intervals need no enumeration.
     """
     _natural(h, 'arity')
+    if range_engine is None:
+        range_engine = recognize
     if max_latents is not None:
         _natural(max_latents, 'max_latents')
     query = _source(h, query)
@@ -103,7 +105,7 @@ def posterior(h, history, query, *, max_latents=None):
                 hi = min(hi, j)
             else:
                 lo = max(lo, j+1)
-        state = recognize(h, _conjunction(h, system)) if lo <= hi else None
+        state = range_engine(h, _conjunction(h, system)) if lo <= hi else None
         states.append((state, lo, hi))
         widths.append(None if state is None else state.m)
 
@@ -128,8 +130,9 @@ def posterior(h, history, query, *, max_latents=None):
 
 class TailRangeForecast:
     """Exact majority over original assignments consistent with mistaken rows."""
-    def __init__(self, h, cap, *, max_latents=None):
+    def __init__(self, h, cap, *, max_latents=None, range_engine=None):
         self.h = _natural(h, 'arity')
+        self._range_engine = range_engine
         self.cap = _natural(cap, 'gate cap')
         self.max_latents = None if max_latents is None else _natural(max_latents, 'max_latents')
         self.history = ()
@@ -146,7 +149,8 @@ class TailRangeForecast:
             result = dict(status='exact', counts=(0, 0), witnesses=(None, None),
                           prediction=0, witness=None, latent_widths=(None, None))
         else:
-            result = posterior(self.h, self.history, query, max_latents=self.max_latents)
+            result = posterior(self.h, self.history, query, max_latents=self.max_latents,
+                               range_engine=self._range_engine)
         self._cache = query, result
         return self._cache
 
@@ -168,13 +172,13 @@ class TailRangeForecast:
         return True
 
 
-def learner_factory(max_latents=None):
+def learner_factory(max_latents=None, *, range_engine=None):
     """Replay raw labeled rounds; propagate UNKNOWN immediately on budget refusal."""
     if max_latents is not None:
         _natural(max_latents, 'max_latents')
 
     def forecast(h, cap, history, query):
-        learner = TailRangeForecast(h, cap, max_latents=max_latents)
+        learner = TailRangeForecast(h, cap, max_latents=max_latents, range_engine=range_engine)
         for row, label in history:
             corrected = learner.observe(row, label)
             if isinstance(corrected, dict):
