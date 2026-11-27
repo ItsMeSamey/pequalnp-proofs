@@ -1,0 +1,202 @@
+{
+  "dependency_level": "theorem or historical certificate packet",
+  "topological_order": [
+    "C8-size19",
+    "C9-size21",
+    "local-transfer",
+    "OR-tight",
+    "C10-size24",
+    "two-stars",
+    "C9-four-AND",
+    "C11-size27",
+    "T10-minor",
+    "T10-local-forest",
+    "q16",
+    "T10-unrestricted-A7",
+    "q17-star",
+    "q17-P5",
+    "T11-cubic",
+    "q17-nonstar",
+    "T11-nonstar",
+    "T11-unrestricted-A8"
+  ],
+  "nodes": {
+    "C8-size19": {
+      "requires": [],
+      "sources": [
+        "verification/threshold-eight/eight-proof.md",
+        "verification/threshold-eight/checksums.txt"
+      ]
+    },
+    "C9-size21": {
+      "requires": [],
+      "sources": [
+        "verification/threshold-nine/nine-proof.md",
+        "verification/threshold-nine/checksums.txt"
+      ]
+    },
+    "OR-tight": {
+      "requires": [
+        "C8-size19"
+      ],
+      "sources": [
+        "fourteen-sixteen-complete-cert/degree/t13-31/or-optimal.md",
+        "fourteen-sixteen-complete-cert/verification/threshold-twelve/or-tight.md"
+      ]
+    },
+    "C9-four-AND": {
+      "requires": [
+        "C8-size19",
+        "C9-size21",
+        "OR-tight"
+      ],
+      "sources": [
+        "degree/t13-seven/nine-five/README.md",
+        "degree/t13-seven/nine-six/README.md"
+      ]
+    },
+    "C10-size24": {
+      "requires": [
+        "C8-size19",
+        "C9-size21"
+      ],
+      "sources": [
+        "ten-exact-cert/PROOF.md",
+        "ten-exact-cert/SHA256SUMS"
+      ]
+    },
+    "C11-size27": {
+      "requires": [
+        "C10-size24"
+      ],
+      "sources": [
+        "eleven-unrestricted-27-cert/PROOF.md",
+        "eleven-unrestricted-27-cert/SHA256SUMS"
+      ]
+    },
+    "T10-minor": {
+      "requires": [
+        "C9-four-AND",
+        "C10-size24"
+      ],
+      "sources": [
+        "fourteen-sixteen-complete-cert/degree/t13-seven/ten-minor.md",
+        "fourteen-sixteen-complete-cert/degree/t13-seven/ten-three-groups.md",
+        "fourteen-sixteen-complete-cert/degree/t13-seven/ten-doubletons.md"
+      ]
+    },
+    "local-transfer": {
+      "requires": [],
+      "sources": [
+        "fourteen-sixteen-complete-cert/comb/fourteen-construct/independent-raw-or-increment.md",
+        "fourteen-sixteen-complete-cert/duality/uniform/fourteen-cycle-component-transfer.md"
+      ]
+    },
+    "T10-local-forest": {
+      "requires": [
+        "T10-minor",
+        "local-transfer"
+      ],
+      "sources": [
+        "fourteen-sixteen-complete-cert/degree/t16-cyclic-build/ten-forest.md"
+      ]
+    },
+    "two-stars": {
+      "requires": [
+        "local-transfer"
+      ],
+      "sources": [
+        "fourteen-sixteen-complete-cert/degree/t16-pair-stars/two-three-stars.md",
+        "fourteen-sixteen-complete-cert/degree/t16-pair-stars/check.py"
+      ]
+    },
+    "q16": {
+      "requires": [
+        "C8-size19",
+        "C9-four-AND",
+        "C10-size24",
+        "C11-size27",
+        "OR-tight",
+        "T10-local-forest",
+        "two-stars"
+      ],
+      "sources": [
+        "fourteen-sixteen-complete-cert/SHA256-MANIFEST",
+        "fourteen-sixteen-complete-cert/README.md"
+      ]
+    },
+    "T10-unrestricted-A7": {
+      "requires": [
+        "T10-local-forest",
+        "two-stars",
+        "T10-minor"
+      ],
+      "sources": [
+        "duality/uniform/ten-unrestricted-seven-and.md"
+      ]
+    },
+    "q17-P5": {
+      "requires": [
+        "q16",
+        "T10-unrestricted-A7"
+      ],
+      "sources": [
+        "fourteen-seventeen-nonstar-cert/degree/t17/path-five.md",
+        "fourteen-seventeen-nonstar-cert/degree/t17/local-path-floors.md"
+      ]
+    },
+    "q17-nonstar": {
+      "requires": [
+        "q17-P5",
+        "q16"
+      ],
+      "sources": [
+        "fourteen-seventeen-nonstar-cert/SHA256-MANIFEST",
+        "fourteen-seventeen-nonstar-cert/degree/t17/cyclic-extra-edges.md",
+        "fourteen-seventeen-nonstar-cert/degree/t17/path-four.md"
+      ]
+    },
+    "q17-star": {
+      "requires": [
+        "q16",
+        "T10-local-forest",
+        "two-stars"
+      ],
+      "sources": [
+        "duality/uniform/seventeen-star-four-paths.md"
+      ]
+    },
+    "T11-cubic": {
+      "requires": [
+        "T10-unrestricted-A7",
+        "q17-star"
+      ],
+      "sources": [
+        "duality/uniform/eleven-cubic.md"
+      ]
+    },
+    "T11-nonstar": {
+      "requires": [
+        "T11-cubic",
+        "q17-nonstar",
+        "q16"
+      ],
+      "sources": [
+        "duality/uniform/eleven-nonstar.md",
+        "degree/t18/nonstars.md"
+      ]
+    },
+    "T11-unrestricted-A8": {
+      "requires": [
+        "T11-cubic",
+        "T11-nonstar",
+        "OR-tight",
+        "C9-four-AND"
+      ],
+      "sources": [
+        "duality/uniform/eleven-unrestricted-eight-and.md",
+        "degree/t18/five-short.md"
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# Six-vertex path receiver
+
+The exact OR complexity of the six-vertex path is four, allowing arbitrary binary ANDs and fanout. A four-OR upper bound on flags a,b,c,d,e,f in path order is ((a∨e)∧c)∨((b∨f)∧d)∨(a∧e). The five edges reject and each union of two different edges accepts. The lower bound is a direct finite Python calculation on the fifteen assignments. Run python -B path.py.
+
+Each signal is a bit set of assignments it accepts. Include the empty conjunction (constant true) as an overgrant. Before any OR, the available bank is exactly the closure under intersection of the six raw signals. Given a bank closed under intersection, adjoining an OR result h and every previous bank member intersected with h is precisely its new intersection closure. Repeated operand choices or an already present OR value yield no new ability. Thus enumerating two successive OR insertions covers all possible histories up to the final OR. The script also checks shorter histories separately.
+
+For the last stage conjoin all previous signals that accept every positive assignment. Their intersection gives exactly the negative assignments not already rejectable by these available factors. Any extra final OR must reject all these residual negatives and accept every positive. Both operands therefore have to vanish on the residual negatives, and their union must cover all positives. This necessary condition is sufficient by using the chosen OR with all the previous admissible output factors. The exhaustive count gives 30 initial conjunctions, 157 first OR values and 27,801 ordered two-OR banks. No three-OR solution survived. The four-OR upper bound passed the same promised patterns.
+
+The supplementary recipes.py defines four other six-vertex instances using this checker. Its inclusion does not claim any additional computed lower bound.
