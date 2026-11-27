@@ -1,0 +1,11 @@
+# Choosing between affine restriction and quadratic phases
+
+A direction space T of codimension a has p linearly independent scalar polar forms after restriction of the quadratic tuple. Equivalently, the vector ANF cross-term coefficient columns span a dimension-p output space U. A coset translation changes only affine terms, so the same U applies to every coset of T. On each of 2^a cosets solve the affine residual target equations modulo U. On their solution space the remaining residual lies in U, hence checking its p independent pivot coordinates suffices. For a binary vector of p quadratic residuals g restricted to d free bits, the exact zero count is
+
+    2^(−p) sum_z sum_x (−1)^(z·g(x)).
+
+The inner sum is an exact quadratic Gauss sum. Pin d bits successively to recover one witness in a nonempty coset. Numerators and counts use O(n+p+1) bits. The full running time is 2^(a+p) poly(explicit input length). Gaussian elimination finds a and p along all the polynomially many greedy radical prefixes. Minimize a+p on these prefixes, optionally preferring a low-rank coordinate to restrict next. The resulting exponent is bounded above by both the original polar span dimension and twice the optimal common-isotropic codimension.
+
+The family consisting of h x_i for i=1,...,t and one unrelated full-rank quadratic on 2t other variables has initial polar span t+1 and common isotropic codimension at least t. Restricting by the radical of one gated output costs two and leaves polar span one. Choosing a minimum-rank nonzero coordinate achieves this prefix for t≥2.
+
+For the raw graph-color determinant tuple let M be a matching of t edges. For any proposed T, the kernel of the restricted-polars map on the matching coefficient space has dimension at least t−p. If p<t, setting every systematic pivot to one gives a codeword of weight at least t−p. Its original alternating polar has rank four times this weight, because matching-edge polars have independent nonsingular four-by-four blocks. Its restriction to T is zero, so its rank is at most 2a. Consequently a/2+p≥t. For six-regular simple graphs t≥3n/11 by maximal matching. This lower bound holds for all T, including ones chosen with knowledge of the target. It does not bound target-specific implication or counting after alternate encodings.
