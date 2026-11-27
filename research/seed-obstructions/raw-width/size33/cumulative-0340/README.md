@@ -1,6 +1,6 @@
 # Reviewed original-key exclusions
 
-An independently checked lower bound and two evaluated upper circuits establish **26 gates for the fixed literal core**. Its first transfer excludes 102 additional zero-terminal originals. The cumulative exclusions are **2,938 of 4,032 zero-terminal cases** and **6,083 of 6,213 one-terminal cases**, leaving **1,224** (1,094 and 130). [Zero-terminal union](t0-signed-2938.ids) · [Transfer and core evidence](literal26-novel102.sha256)
+**Current aggregate release** covers 2,836 of 4,032 zero-terminal cases and 6,083 of 6,213 one-terminal cases. The 1,196 and 130 remaining total **1,326**. Independent review establishes 26 gates for the fixed literal core and verifies a 102-ID component intersection. The combined dispatch also requires the compound cases. Its component list is staged separately pending that full review. [Released zero-terminal union](t0-signed-2836.ids) · [Literal component evidence](literal26-novel102.sha256)
 
 **All 424 zero-terminal cost-29 three-compound cases are excluded.** The complete review adds 120 original IDs to the previous union. It uses archived SAT receipts, including four definitive outcomes for a truncated intermediate trace. The reviewed totals are **2,836 of 4,032 zero-terminal cases** and **6,083 of 6,213 one-terminal cases**. The 1,196 and 130 outstanding total **1,326 cases**. [Complete 424-case package](t0-424-three-compound-primary.zip) · [Zero-terminal union](t0-signed-2836.ids) · [Audit manifest](t0-triple120.sha256)
 
