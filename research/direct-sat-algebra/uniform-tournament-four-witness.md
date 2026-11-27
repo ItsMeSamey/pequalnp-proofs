@@ -1,0 +1,17 @@
+# Odd-mark witnesses in a tournament with uniform odd indegrees
+
+Let D be a finite loopless tournament and A its marked vertices. Seek a vertex set S containing an odd number of marks such that every vertex has odd indegree in D[S]. Throughout, u→v contributes one to the indegree of v. A witness exists if and only if one exists on three or four vertices. Enumerating these subsets therefore gives a deterministic polynomial-time decision and witness algorithm.
+
+A directed triangle has all three indegrees odd. Return one if it contains an odd number of marks. Otherwise the marked subtournament contains no directed triangle and is transitive. List it as a_1,…,a_m with all arcs directed from smaller to larger indices. With no marked vertices the answer is negative. Write B for the unmarked vertices.
+
+For any marked a, partition B into P={b:b→a} and Q={b:a→b}. Every edge between P and Q goes from P to Q, since an edge q→p gives the directed triangle a→q→p→a with exactly one mark. Each strongly connected component of B therefore lies wholly in P or wholly in Q. The condensation of a tournament is an acyclic tournament, so these components are linearly ordered with all arcs directed forward. P is a prefix in that order.
+
+A nonsingleton strongly connected component contains a directed triangle, since a triangle-free tournament is transitive. If any such component precedes a marked vertex, its triangle plus that vertex has induced indegrees 1,1,1,3 and exactly one mark. Otherwise every such component follows every marked vertex. Discard the entire suffix of B beginning at its first nonsingleton component, if one exists. Every edge between the remaining vertices and this suffix points into the suffix. Removing suffix vertices from a witness preserves its mark and retained indegrees, and any witness in the remaining graph is a witness in D. We now have a transitive unmarked chain b_1,…,b_l, ordered with edges directed forward.
+
+Let k_i be the number of unmarked predecessors of a_i. Then b_j→a_i iff j≤k_i. If i<i'<i'' and k_i≥j, k_i'<j, k_i''≥j, the four vertices (a_i,a_i',a_i'',b_j) have respective indegrees (1,1,3,1), with three marks. Otherwise every superlevel set of k is an interval. The sequence is weakly increasing up to a maximum and weakly decreasing thereafter: a decrease before a maximum, or an increase after it, would yield a high–low–high triple at an integer threshold.
+
+Assign a maximum to the left arm. Process the left arm in increasing index and the right arm in decreasing index, merging the two lists by nondecreasing k while preserving each arm order. Interleave the b_j in increasing index so that a_i precedes b_j iff k_i<j.
+
+Suppose S is a witness. For a selected left-arm a_i, all earlier marked indices have already been processed. For a selected right-arm a_i, the numbers of selected marks of smaller and larger index have the same parity, since their sum is the odd total mark count minus one. Thus its marked predecessor parity can be computed using only larger indices, already processed on the right arm. On both arms all unmarked predecessors b_j with j≤k_i have already been processed. The predecessors of b_j are the earlier b's and the a_i with k_i<j, again all processed earlier. The first selected vertex in this merged order consequently has even indegree parity, a contradiction.
+
+The theorem uses one odd-mark condition and uniform odd induced indegrees. Diagonal terms must first be absorbed into the required parities. A resulting mixture of required parities is outside these hypotheses.
