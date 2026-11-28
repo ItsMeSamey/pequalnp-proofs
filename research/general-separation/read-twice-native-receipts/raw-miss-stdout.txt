@@ -1,0 +1,2 @@
+Direct miss-vector ranks, retained models, original sparse witnesses and both budgets passed.
+Guard fixture count 262113 rank 11 terms including lift 38912

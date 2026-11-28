@@ -1,0 +1,1 @@
+Physical theta+C4: 8 perfect matchings, 6 nonaffine misses, Gram rank 4, 4 models.
