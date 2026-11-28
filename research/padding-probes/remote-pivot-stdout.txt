@@ -1,0 +1,4 @@
+connected SAT one pivot vs three source hits {'discovery_work': 141, 'projection_calls': 105, 'branch_calls': 1, 'base_binary_rows': 3}
+connected UNSAT one pivot vs three source hits {'discovery_work': 206, 'projection_calls': 154, 'branch_calls': 2, 'base_binary_rows': 8}
+SAT and UNSAT source replay, both fibres, cap and malformed sparse controls passed
+one-shot nested source pins passed
