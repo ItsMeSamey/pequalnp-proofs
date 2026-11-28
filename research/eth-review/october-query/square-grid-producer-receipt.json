@@ -1,0 +1,1 @@
+{"code": 0, "output": "PASS physical normalized product, even= False full/trimmed node and jet requests (7, 102) (6, 60)\nPASS physical normalized product, even= True full/trimmed node and jet requests (7, 51) (6, 30)\n", "rss": 8867840, "wall": 0.07141486598993652}
