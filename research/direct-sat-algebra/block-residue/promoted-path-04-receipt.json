@@ -1,0 +1,1 @@
+{"cpu": 0.16046, "maxrss_kib": 18940, "code": 0, "output": "two original NAND paths, 128 raw words; domains, edges and forest checked\n", "rss": 19431424, "wall": 0.16385636900668032, "kernel_before": ["1: FLOCK  ADVISORY  WRITE 1591009 00:1b:193638 0 EOF"], "kernel_after": ["1: FLOCK  ADVISORY  WRITE 1591009 00:1b:193638 0 EOF"]}
