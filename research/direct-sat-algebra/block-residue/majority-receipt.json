@@ -1,0 +1,1 @@
+{"cpu": 0.11193, "maxrss_kib": 9088, "code": 0, "output": "64 exhaustive binary/ternary relations, ternary nonchart/transport, odd cycle, empty CSP, raw skip/SAT/UNSAT\n", "rss": 9404416, "wall": 0.11240082199219614, "kernel_before": ["17: FLOCK  ADVISORY  WRITE 1611760 00:1b:193638 0 EOF"], "kernel_after": ["17: FLOCK  ADVISORY  WRITE 1611760 00:1b:193638 0 EOF"]}

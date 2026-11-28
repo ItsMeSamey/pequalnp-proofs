@@ -1,0 +1,11 @@
+3baac314654a53200ba452e2e01a459f157592cc4799132fca7c8677f94e9bee  /workspace/scratch/direct-sat-algebra/block-residue/majority_row_csp.py
+90a429dde66de97ea87134c216c9aacf533e0321a130a9713ada114fe3b7612b  /workspace/scratch/direct-sat-algebra/block-residue/promoted_row_csp.py
+1b174ffa1d6d283bf717c86276211577268772191ca397199a90ce76ae902b56  /workspace/scratch/direct-sat-algebra/block-residue/row_csp.py
+b2cfdb12c1b81428dbb56f2d63288eb8d44ed2fb2a2f82d6be8c7084f88c5d3b  /workspace/scratch/direct-sat-algebra/block-residue/joint_choice.py
+bd4d807813aa46f8a69a5d0e05f03b70ec58f8337d339e1d3f7a03310f5e750c  /workspace/scratch/direct-sat-algebra/block-residue/signed_cone_nand.py
+b99c7f7d57a0b9e58996fd034ba99cb79380f87868cc0c65f10961a45db24c7b  /workspace/scratch/direct-sat-algebra/block-residue/pair_optimizer.py
+3ab16ebe07fe04c80f8e0a76de234d926c48d98deebdbf7fe0ea19397e89c776  /workspace/scratch/direct-sat-algebra/block-residue/interval_optimizer.py
+8cff0d42f46acedf1b5dc7551620cc10230aa88c5523a5fd51d5d4147a69dddb  /workspace/scratch/direct-sat-algebra/block-residue/corridor_nand.py
+8bcada0e7345b66393808f171cfdfe72c2dff995cfb9f42b56a5d3354c268891  /workspace/scratch/direct-sat-algebra/block-residue/distinct_cones.py
+230507490dd29f524b6e5025ca389b88059f671547542571bb452ae3ff39b701  /dev/shm/algebra-block-residue/majority-row-csp.md
+da9f4ec244294ce33cb202719fda0c2c74598bb1f7214e1c3debe3b911821b42  /dev/shm/algebra-block-residue/check_majority_row_04.py
