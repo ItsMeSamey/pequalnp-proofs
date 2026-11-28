@@ -1,0 +1,2 @@
+strict pivot reduction 3 to 2, rank 5, marginal gains 3 and 2
+32 binary backgrounds vs complete GF2 truth-vector ranks, rank-8 UNSAT, three caps and nested pin replay passed

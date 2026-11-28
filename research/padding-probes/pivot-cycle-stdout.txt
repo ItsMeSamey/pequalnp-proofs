@@ -1,0 +1,2 @@
+{'m': 3, 'models': 0, 'ordinary_opt': 3, 'rank_opt': 1, 'rank': 24, 'selected': (10,), 'status': 'UNSAT'}
+{'m': 4, 'models': 36, 'ordinary_opt': 4, 'rank_opt': 1, 'rank': 30, 'selected': (13,), 'status': 'SAT'}
