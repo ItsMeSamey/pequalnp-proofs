@@ -1,0 +1,1 @@
+{"cap-decline": ["UNKNOWN", 44, "cutoff", 3, 8], "cover_queries": 96, "greedy": ["SAT", 44, "cutoff", 3, 8], "sparse-opt": ["SAT", 44, "optimal", 2, 4], "strict-inconsistent": ["UNSAT", 0, "optimal", 2, 2]}
