@@ -1,0 +1,1 @@
+Physical saturation, fallback and wide delegation, witness, charges and residues passed.

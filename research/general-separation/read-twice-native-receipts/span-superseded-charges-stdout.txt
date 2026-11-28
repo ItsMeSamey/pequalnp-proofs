@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys,runpy;assert __debug__ and sys.flags.optimize==0;sys.path[:0]=[sys.argv[1],sys.argv[1]+'/dep.zip'];runpy.run_path(sys.argv[1]+'/'+sys.argv[2],run_name='__main__')
+                                                                                                                  ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/dev/shm/04rank-gs-physical-pivots/physical-receipt-sbi_6emi/source/check_ring_binary_saturation.py", line 48, in <module>
+    main()
+    ~~~~^^
+  File "/dev/shm/04rank-gs-physical-pivots/physical-receipt-sbi_6emi/source/check_ring_binary_saturation.py", line 36, in main
+    assert ans['charges']['saturated_terms']==1+2+4
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,19 @@
+{
+  "pin_sha256": "73d6cbc3dc8719d51f3311e876a194838521f9dfe8fdc699552e100c4ff26ae1",
+  "limits": [
+    5,
+    10,
+    64
+  ],
+  "canonical": [
+    27,
+    193638
+  ],
+  "status": "failed",
+  "wall": 0.8706287700042594,
+  "cpu": 0.860406,
+  "peak_rss_kib": 34932,
+  "observed_peak_bytes": 35688448,
+  "returncode": 1,
+  "reason": "checker failed"
+}
