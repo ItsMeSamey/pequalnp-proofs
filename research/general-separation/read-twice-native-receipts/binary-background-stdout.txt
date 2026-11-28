@@ -1,0 +1,2 @@
+Ranks 7/6, 24 models, forest/cycle costs and original physical witness passed.
+Five independent ternary misses share one hit; exactly two 2-SAT branches.
